@@ -380,13 +380,13 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
+  enable: true
   appid:  gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz
   appkey: 7xvFncnnyG2QI60iDY3E4PuO
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
-  placeholder: ヾﾉ≧∀≦)o 来呀！快活呀！~ # comment box placeholder
-  avatar:  # gravatar style
+  placeholder: '&#x270d;写评论' # comment box placeholder
+  avatar: mm # gravatar style
   guest_info: nick,mail,Link # custom comment header
   pageSize: 10 # pagination size
 
@@ -450,9 +450,9 @@ gitment:
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
-  enable: true
+  enable: false
   postbottom:
-    enable: true
+    enable: false
     options:
       iconStyle: box
       boxForm: horizontal
