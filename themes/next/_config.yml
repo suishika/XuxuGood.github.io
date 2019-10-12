@@ -434,6 +434,10 @@ gitment:
 # Share
 #duoshuo_share: true
 
+# Share
+sharesdk: true
+shareSDKappkey: 2cb7c3d34ad2c
+
 # NeedMoreShare2
 # This plugin is a pure javascript sharing lib which is useful in China.
 # See: https://github.com/revir/need-more-share2
