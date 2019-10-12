@@ -27,8 +27,8 @@ override: false
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  small: /images/favicon.png
-  medium: /images/favicon.png
+  small: /images/favicon-16x16-next.png
+  medium: /images/favicon-32x32-next.png
   apple_touch_icon: /images/apple-touch-icon-next.png
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
@@ -380,10 +380,10 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: true
+  enable: false
   appid:  gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz
   appkey: 7xvFncnnyG2QI60iDY3E4PuO
-  notify: true # mail notifier , https://github.com/xCss/Valine/wiki
+  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: '&#x270d;写评论' # comment box placeholder
   avatar: mm # gravatar style
@@ -437,6 +437,8 @@ gitment:
 # Share
 #sharesdk: true
 #shareSDKappkey: 2cb7c3d34ad2c
+
+share_js: true
 
 # NeedMoreShare2
 # This plugin is a pure javascript sharing lib which is useful in China.

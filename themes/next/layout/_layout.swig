@@ -13,7 +13,10 @@
   <!-- 页面点击小红心 -->
   <script type="text/javascript" src="/js/src/clicklove.js"></script>
   <!--崩溃欺骗-->
-<script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+  <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+  <!--share.js-->
+  <link rel="stylesheet" href="/sharejs/css/share.min.css">
+  <script src="/sharejs/js/social-share.min.js"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
