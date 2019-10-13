@@ -22,6 +22,7 @@
       {% for post in page.posts %}
         {{ post_template.render(post) }}
       {% endfor %}
+	  
     </div>
 
   </div>

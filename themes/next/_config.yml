@@ -248,7 +248,9 @@ post_meta:
 # Post wordcount display settings
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
+  # 文本显示
   item_text: false
+  # 文章字数统计
   wordcount: true
   min2read: false
   totalcount: false
@@ -897,7 +899,7 @@ typing_effect:
 # type: | tagcanvas | color | love | bubble |
 # PS：tagcanvas依赖hexo-tag-cloud插件
 tagcloud:
-  type: love # 为空则使用默认标签页
+  type: bubble # 为空则使用默认标签页
 
 # 侧栏自定义时间
 diy_time:

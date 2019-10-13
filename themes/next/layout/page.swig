@@ -68,6 +68,9 @@
               {{ list_categories() }}
             </div>
           </div>
+		{# 自定义爱心分类云 #}
+		{% include 'category-love.swig' %}
+
 
         <!-- 友情链接-->
         {% elif page.type === 'links' %}
