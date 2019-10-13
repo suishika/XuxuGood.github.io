@@ -3,6 +3,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="{{ theme.android_chrome_color }}">
 
+{% if theme.google_ads.enable %}
+  <!--接入谷歌广告-->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-2723999557244339",
+      enable_page_level_ads: true
+    });
+  </script>
+{% endif %}
+
+{% if theme.google_ads.enable and theme.google_ads.auto_ads %}
+  <!-- 谷歌amp-auto-ads https://www.google.com/adsense/new/u/0/pub-2723999557244339/myads/auto-ads/amp-->
+  <script async custom-element="amp-auto-ads"
+          src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+  </script>
+{% endif %}
 
 {% if theme.pace %}
   {% set pace_css_uri = url_for(theme.vendors._internal + '/pace/'+ theme.pace_theme +'.min.css?v=1.0.2') %}
@@ -17,6 +34,15 @@
   <link href="{{ pace_css_uri }}" rel="stylesheet">
 {% endif %}
 
+{% if theme.daovoice %}
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "{{theme.daovoice_app_id}}"
+    });
+  daovoice('update');
+  </script>
+{% endif %}
 
 {% if theme.han %}
   {% set Han_uri = url_for(theme.vendors._internal + '/Han/dist/han.min.css?v=3.3') %}
@@ -52,6 +78,10 @@
 
 {% if theme.qihu_site_verification %}
   <meta name="360-site-verification" content="{{ theme.qihu_site_verification }}" />
+{% endif %}
+
+{% if theme.sogou_site_verification %}
+  <meta name="sogou_site_verification" content="{{ theme.sogou_site_verification }}" />
 {% endif %}
 
 
@@ -156,3 +186,15 @@
 {% endif %}
 
 {% include 'head/custom-head.swig' %}
+
+<!-- 设置文章需要密码访问 -->
+<script>
+    (function(){
+        if('{{ page.password }}'){
+            if (prompt('请输入文章密码') !== '{{ page.password }}'){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>

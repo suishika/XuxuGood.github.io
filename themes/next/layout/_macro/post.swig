@@ -62,12 +62,20 @@
 
         <div class="post-meta">
           <span class="post-time">
-		    {% if post.top %}
-				<i class="fa fa-thumb-tack"></i>
-				<font color=7D26CD>置顶</font>
-				<span class="post-meta-divider">|</span>
-		    {% endif %}
-		  
+
+             {% if post.top %}
+                 <i class="fa fa-thumb-tack"></i>
+                 <font color=7D26CD>置顶</font>
+                 <span class="post-meta-divider">|</span>
+             {% endif %}
+
+             {% if post.essential%}
+                 <span class="post-meta-item-icon">
+                     <i class="fa fa-newspaper-o jingping">精品</i>
+                 </span>
+                 <span class="post-meta-divider">|</span>
+             {% endif %}
+
             {% if theme.post_meta.created_at %}
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -219,15 +227,17 @@
              </span>
           {% endif %}
 
+          <!--
           {% if not is_index and theme.busuanzi_count.enable and theme.busuanzi_count.page_pv %}
             <span class="post-meta-divider">|</span>
             <span class="page-pv">{{ theme.busuanzi_count.page_pv_header }}
             <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>{{ theme.busuanzi_count.page_pv_footer }}
             </span>
           {% endif %}
+          -->
 
           {% if theme.post_wordcount.wordcount or theme.post_wordcount.min2read %}
-            <div class="post-wordcount">
+            <span class="post-wordcount">
               {% if theme.post_wordcount.wordcount %}
                 {% if not theme.post_wordcount.separated_meta %}
                   <span class="post-meta-divider">|</span>
@@ -255,17 +265,19 @@
                   <span class="post-meta-item-text">{{ __('post.min2read') }} &asymp;</span>
                 {% endif %}
                 <span title="{{ __('post.min2read') }}">
-                  {{ min2read(post.content) }}
+                  {{ min2read(post.content) }} 分钟
                 </span>
               {% endif %}
-            </div>
+            </span>
           {% endif %}
 
+          <!-- 隐藏文章内标题下，内容描述
           {% if post.description and (not theme.excerpt_description or not is_index) %}
               <div class="post-description">
                   {{ post.description }}
               </div>
           {% endif %}
+          -->
 
         </div>
       </header>
@@ -334,23 +346,41 @@
         {% endif %}
       {% else %}
         {{ post.content }}
+
+        {% if theme.google_ads.enable and theme.google_ads.post_ads %}
+           <!-- 文章正文下方引入谷歌广告 -->
+           {% include '../_custom/google_adsense.swig' %}
+        {% endif %}
+
       {% endif  %}
     </div>
+
+      <!-- 相关文章推荐 -->
+     {% if theme.related_posts.enable and (theme.related_posts.display_in_home or not is_index) %}
+          {% include 'post-related.swig' with { post: post } %}
+     {% endif %}
+
     {#####################}
     {### END POST BODY ###}
     {#####################}
+
+    <div>
+          {% if not is_index %}
+            {% include 'my-copyright.swig' %}
+          {% endif %}
+    </div>
 
     {% if theme.wechat_subscriber.enabled and not is_index %}
       <div>
         {% include 'wechat-subscriber.swig' %}
       </div>
     {% endif %}
-	
-	<div>
-	  {% if not is_index %}
-		{% include 'passage-end-tag.swig' %}
-	  {% endif %}
-	</div>
+
+    <div>
+      {% if not is_index %}
+        {% include 'passage-end-tag.swig' %}
+      {% endif %}
+    </div>
 
     {% if (theme.alipay or theme.wechatpay or theme.bitcoin) and not is_index %}
       <div>
@@ -368,7 +398,7 @@
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
           {% for tag in post.tags %}
-            <a href="{{ url_for(tag.path) }}" rel="tag"># {{ tag.name }}</a>
+            <a href="{{ url_for(tag.path) }}" rel="tag"> <i class="fa fa-tag"></i> {{ tag.name }}</a>
           {% endfor %}
         </div>
       {% endif %}
@@ -378,6 +408,7 @@
         <div class="post-widgets">
         {% if theme.rating.enable %}
           <div class="wp_rating">
+            <div style="color:rgba(0,0,0,.75);font-size:13px;letter-spacing:4px;margin-bottom:5px;">(&gt;看完记得五星好评哦亲&lt;)</div>
             <div id="wpac-rating"></div>
           </div>
         {% endif %}

@@ -10,13 +10,14 @@
   -webkit-transform: none;
 }
 
-
+// 修改【站点概况】背景透明度 background: rgba(255,255,255,0.7); //0.7是透明度
 .sidebar-inner {
 //padding: 20px 10px 0;
   box-sizing: border-box;
   width: 240px;
   color: $text-color;
-  background: white;
+  //background: white;
+  background: rgba(255,255,255,0.8);
   box-shadow: $box-shadow;
   border-radius: $border-radius;
   if (hexo-config('motion.enable') and hexo-config('motion.transition.sidebar')) { opacity: 0; }
@@ -66,7 +67,8 @@
 }
 
 .feed-link a {
-  display: block;
+  //display: block;
+  display: inline-block;
   color: $orange;
   border: none;
 

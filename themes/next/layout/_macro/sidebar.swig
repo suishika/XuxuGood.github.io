@@ -30,9 +30,11 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             {% if theme.avatar %}
+              <a href="/">
               <img class="site-author-image" itemprop="image"
                 src="{{ url_for( theme.avatar | default(theme.images + '/avatar.gif') ) }}"
                 alt="{{ theme.author }}" />
+              </a>
             {% endif %}
               <p class="site-author-name" itemprop="name">{{ theme.author }}</p>
               <p class="site-description motion-element" itemprop="description">{#
@@ -89,6 +91,8 @@
                 <i class="fa fa-rss"></i>
                 RSS
               </a>
+              <!-- 为Hexo Next主题添加哈林摇特效  -->
+              {% include 'high.swig' %}
             </div>
           {% endif %}
 
@@ -96,7 +100,7 @@
             <div class="links-of-author motion-element">
                 {% for name, link in theme.social %}
                   <span class="links-of-author-item">
-                    <a href="{{ link.split('||')[0] | trim }}" target="_blank" title="{{ name }}">
+                    <a rel="external nofollow" href="{{ link.split('||')[0] | trim }}" target="_blank" title="{{ name }}">
                       {% if theme.social_icons.enable %}
                         <i class="fa fa-fw fa-{{ link.split('||')[1] | trim | default('globe') }}"></i>{#
                     #}{% endif %}{#
@@ -109,10 +113,16 @@
             </div>
           {% endif %}
 
+            <!--
+            <div id="music163player">
+                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1336790004&auto=1&height=66"></iframe>
+            </div>
+            -->
+
           {% set cc = {'by': 1, 'by-nc': 1, 'by-nc-nd': 1, 'by-nc-sa': 1, 'by-nd': 1, 'by-sa': 1, 'zero': 1} %}
           {% if theme.creative_commons in cc %}
             <div class="cc-license motion-element" itemprop="license">
-              <a href="https://creativecommons.org/{% if theme.creative_commons === 'zero' %}publicdomain/zero/1.0{% else %}licenses/{{ theme.creative_commons }}/4.0{% endif %}/" class="cc-opacity" target="_blank">
+              <a href="https://creativecommons.org/{% if theme.creative_commons === 'zero' %}publicdomain/zero/1.0{% else %}licenses/{{ theme.creative_commons }}/4.0{% endif %}/" rel="external nofollow" class="cc-opacity" target="_blank">
                 <img src="{{ url_for(theme.images) }}/cc-{{ theme.creative_commons }}.svg" alt="Creative Commons" />
               </a>
             </div>
@@ -123,19 +133,44 @@
             <div class="links-of-blogroll motion-element {{ "links-of-blogroll-" + theme.links_layout | default('inline') }}">
               <div class="links-of-blogroll-title">
                 <i class="fa  fa-fw fa-{{ theme.links_icon | default('globe') | lower }}"></i>
-                {{ theme.links_title }}
+                {{ theme.links_title }}&nbsp;
+                <i class="fa  fa-fw fa-{{ theme.links_icon | default('globe') | lower }}"></i>
               </div>
               <ul class="links-of-blogroll-list">
                 {% for name, link in theme.links %}
                   <li class="links-of-blogroll-item">
-                    <a href="{{ link }}" title="{{ name }}" target="_blank">{{ name }}</a>
+                    <a href="{{ link }}" title="{{ name }}" rel="external nofollow" target="_blank">{{ name }}</a>
                   </li>
                 {% endfor %}
               </ul>
             </div>
           {% endif %}
 
-          {% include '../_custom/sidebar.swig' %}
+          <!--近期文章版块 began-->
+          {% if theme.recent_posts %}
+              <div class="links-of-blogroll motion-element {{ "links-of-blogroll-" + theme.recent_posts_layout  }}">
+                <div class="links-of-blogroll-title">
+                  <i class="fa fa-history fa-{{ theme.recent_posts_icon | lower }}" aria-hidden="true"></i>
+                  {{ theme.recent_posts_title }}
+                </div>
+                <ul class="links-of-blogroll-list">
+                  {% set posts = site.posts.sort('-date') %}
+                  {% for post in posts.slice('0', '5') %}
+                    <li class='my-links-of-blogroll-li'>
+                      <a href="{{ url_for(post.path) }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+          {% endif %}
+          <!--近期文章版块 end-->
+
+          {% if theme.diy_time.clock %}
+              <!-- canvas粒子时钟 -->
+              {% include '../_custom/clock.swig' %}
+          {% endif %}
+         
+
         </div>
       </section>
 
@@ -169,6 +204,28 @@
           {% endif %}
         </div>
       {% endif %}
+
+      {% if theme.google_ads.enable and theme.google_ads.sidebar_ads %}
+         <!-- 侧边栏谷歌广告 -->
+         {% include '../_custom/google_adsense.swig' %}
+      {% endif %}
+
+      <!-- 标签云 -->
+      <!--
+      {% if site.tags.length > 1 %}
+      <script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"></script>
+      <script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"></script>
+      <div class="widget-wrap">
+      <h3 class="widget-title">Tag Cloud</h3>
+      <div id="myCanvasContainer" class="widget tagcloud">
+          <canvas width="250" height="250" id="resCanvas" style="width=100%">
+              {{ list_tags() }}
+          </canvas>
+      </div>
+      </div>
+      {% endif %}
+      -->
+      <!-- 标签云 -->
 
     </div>
   </aside>

@@ -62,9 +62,17 @@
       {% endif %}
     </div>
 
+   {% elseif theme.gitalk.enable %}
+    <div id="gitalk-container"></div>
+
   {% elseif theme.valine.appid and theme.valine.appkey %}
     <div class="comments" id="comments">
     </div>
   {% endif %}
 
+{% endif %}
+
+{% if theme.google_ads.enable and theme.google_ads.comments_ads %}
+  <!-- 评论区谷歌广告 -->
+  {% include '../_custom/google_adsense.swig' %}
 {% endif %}

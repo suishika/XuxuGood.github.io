@@ -1,9 +1,10 @@
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <div class="copyright">{#
-#}{% set current = date(Date.now(), "YYYY-MM-DD") %}{#
+#}{% set current = date(Date.now(), "YYYY") %}{#
 #}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }} &mdash; {% endif %}{#
 #}<span itemprop="copyrightYear">{{ current }}</span>
-  <span class="with-love" id="animate">
-    <i class="fa fa-heart"></i>
+  <span class="with-love">
+       <i class="fa fa-{{ theme.footer.icon }}"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright || config.author }}</span>
 
@@ -21,9 +22,11 @@
   {% endif %}
 </div>
 
+<!--
+
 {% if theme.footer.powered %}
   <div class="powered-by">{#
-  #}{{ __('footer.powered', '<a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a>') }}{#
+  #}{{ __('footer.powered', '<a rel="external nofollow" class="theme-link" target="_blank" href="https://hexo.io">Hexo</a>') }}{#
 #}</div>
 {% endif %}
 
@@ -34,7 +37,7 @@
 {% if theme.footer.theme.enable %}
   <div class="theme-info">{#
   #}{{ __('footer.theme') }} &mdash; {#
-  #}<a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">{#
+  #}<a rel="external nofollow" class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">{#
     #}NexT.{{ theme.scheme }}{#
   #}</a>{% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
 #}</div>
@@ -46,6 +49,7 @@
 #}</div>
 {% endif %}
 
+-->
 <!-- 在网页底部添加网站运行时间 -->
 <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
 <script>
@@ -64,4 +68,3 @@
     }
 setInterval("createtime()",250);
 </script>
-

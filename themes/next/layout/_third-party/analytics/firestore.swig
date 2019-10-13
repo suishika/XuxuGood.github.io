@@ -12,7 +12,7 @@
         projectId: '{{ theme.firestore.projectId }}'
       })
 
-      function getCount(doc, increaseCount) {
+      function getCount(doc, url, increaseCount) {
         //increaseCount will be false when not in article page
 
         return doc.get().then(function (d) {
@@ -20,7 +20,8 @@
           if (!d.exists) { //has no data, initialize count
             if (increaseCount) {
               doc.set({
-                count: 1
+                count: 1,
+                'url': url
               })
               count = 1
             }
@@ -33,7 +34,8 @@
             if (increaseCount) {
               if (!(window.localStorage && window.localStorage.getItem(title))) { //if first view this article
                 doc.set({ //increase count
-                  count: count + 1
+                  count: count + 1,
+                  'url': url
                 })
                 count++
               }
@@ -54,9 +56,10 @@
               $('<span>').addClass('post-meta-divider').text('|')
             ).append(
               $('<span>').addClass('post-meta-item-icon').append(
-                $('<i>').addClass('fa fa-users')
+               // $('<i>').addClass('fa fa-users')
+                $('<i>').addClass('fa fa-eye')
               )
-              ).append($('<span>').text('{{ __("post.visitors")}} ' + count))
+              ).append($('<span>').text('{{ __("post.visitors")}} ' + count + ' 次'))
           )
         }
       }
@@ -70,13 +73,28 @@
       var isCategory = '{{ category }}'.length > 0
       var isTag = '{{ tag }}'.length > 0
 
-      if (isPost) { //is article page
+      var urlPath = '{{ page.path }}';
+      var urlFullPath = '{{ page.permalink }}';
+      var indexPath = 'index.html'; //首页链接
+      var isMenu = false;
+      {% for name, path in theme.menu %}
+         {# 判断当前链接是否是左侧菜单栏链接 #}
+         var menuLink = '{{ url_for(path.split('||')[0]) | trim }}';
+         if(urlPath.indexOf(menuLink) > 0 || urlPath == indexPath){
+            isMenu = true;
+         }
+      {% endfor %}
+
+    //  if (isPost) { //is article page
+      if (!isMenu) { // 非菜单页、非主页（即在某篇文章链接里）
         var title = '{{ page.title }}'
         var doc = articles.doc(title)
 
-        getCount(doc, true).then(appendCountTo($('.post-meta')))
+      //  getCount(doc, true).then(appendCountTo($('.post-meta')))
+        getCount(doc, urlFullPath, true).then(appendCountTo($('.post-wordcount')))
       }
-      else if (!isArchive && !isCategory && !isTag) { //is index page
+     // else if (!isArchive && !isCategory && !isTag) { //is index page
+      else if (urlPath == indexPath) { // 主页
         var titles = [] //array to titles
 
         var postsstr = '{% for post in page.posts %}titles.push("{{ post.title }}");{% endfor %}' //if you have a better way to get titles of posts, please change it
@@ -88,7 +106,8 @@
           return getCount(doc)
         })
         Promise.all(promises).then(function (counts) {
-          var metas = $('.post-meta')
+          // var metas = $('.post-meta')
+          var metas = $('.post-wordcount')
           counts.forEach(function (val, idx) {
             appendCountTo(metas[idx])(val)
           })
