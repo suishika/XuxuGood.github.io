@@ -912,7 +912,7 @@ live2d:
 
 # aplayer音乐播放器
 aplayer:
-  enable: true
+  enable: false
 
 # 谷歌广告
 google_ads:
