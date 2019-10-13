@@ -23,10 +23,6 @@
 <script src="https://lib.baomitu.com/jquery/2.2.4/jquery.min.js"></script>
 <!-- JQuery-mousewheel 3.1.9 -->
 <script src="https://lib.baomitu.com/jquery-mousewheel/3.1.9/jquery.mousewheel.min.js"></script>
-<!-- Scrollbar -->
-<script src="https://static.https.badapple.top/BadApplePlayer/js/scrollbar.js"></script>
-<!-- BadApplePlayer -->
-<script src="https://static.https.badapple.top/BadApplePlayer/Player.js"></script>
 
   {% include '_third-party/analytics/index.swig' %}
 </head>
@@ -149,8 +145,11 @@
   <!--
   <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
   -->
-
-
+  
+<!-- Scrollbar -->
+<script src="https://static.https.badapple.top/BadApplePlayer/js/scrollbar.js"></script>
+<!-- BadApplePlayer -->
+<script src="https://static.https.badapple.top/BadApplePlayer/Player.js"></script>
 
 </body>
 </html>
