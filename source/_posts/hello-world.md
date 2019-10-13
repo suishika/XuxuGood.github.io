@@ -1,6 +1,9 @@
 title: Hello World
-tags: []
-categories: []
+tags:
+  - qwe
+  - weq
+categories:
+  - qwe
 top: true
 date: 2019-10-11 12:08:00
 ---

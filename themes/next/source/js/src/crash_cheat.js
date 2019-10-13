@@ -9,8 +9,8 @@ window.onload = function() {
       document.title = '(●—●)喔哟，崩溃啦！';
       clearTimeout(titleTime);
     } else {
-      $('[rel="icon"]').attr('href', "../../images/favicon-32x32-next.png");
-      $('[rel="shortcut icon"]').attr('href', "../../images/favicon-32x32.png");
+      $('[rel="icon"]').attr('href', "../../images/favicon.png");
+      $('[rel="shortcut icon"]').attr('href', "../../images/favicon.png");
       document.title = '(/≧▽≦/)咦！页面又好了！';
       titleTime = setTimeout(function() {
         document.title = OriginTitile;
