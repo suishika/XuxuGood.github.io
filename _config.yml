@@ -114,13 +114,13 @@ admin:
   secret: my blog
   deployCommand: './admin_script/hexo-g.sh'
 
-# offline config passed to sw-precache.
-service_worker:
-  maximumFileSizeToCacheInBytes: 5242880
-  staticFileGlobs:
-  - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
-  stripPrefix: public
-  verbose: true
+# offline config passed to sw-precache. Service Worker相关配置
+#service_worker:
+#  maximumFileSizeToCacheInBytes: 5242880
+#  staticFileGlobs:
+#  - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+#  stripPrefix: public
+#  verbose: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
