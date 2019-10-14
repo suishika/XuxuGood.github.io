@@ -131,7 +131,7 @@ baidusitemap:
 nofollow:
     enable: true
     exclude:
-    - xuxugood.github.io
+    - https://xuxugood.github.io
     - 友链地址  
 
 # Deployment
