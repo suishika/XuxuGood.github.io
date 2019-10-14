@@ -128,6 +128,12 @@ sitemap:
 baidusitemap:
   path: baidusitemap.xml
 
+nofollow:
+    enable: true
+    exclude:
+    - xuxugood.github.io
+    - 友链地址  
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
