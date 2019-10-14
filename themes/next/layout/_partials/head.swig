@@ -3,6 +3,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="{{ theme.android_chrome_color }}">
 
+// 每个人的content值都不一致，请注意更换成你的content值
+
+{% if theme.baidu_site_verification %}
+  <meta name="baidu-site-verification" content="hViDwuoylp" />
+{% endif %}
+
 {% if theme.google_ads.enable %}
   <!--接入谷歌广告-->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

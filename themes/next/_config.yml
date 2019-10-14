@@ -510,7 +510,7 @@ google_site_verification:
 # Google Analytics
 #google_analytics:
 
-baidu_site_verification:  
+baidu_site_verification: true
 
 qihu_site_verification:  
 
