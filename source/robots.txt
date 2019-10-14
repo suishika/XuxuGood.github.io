@@ -8,5 +8,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://xuxugood.github.io//sitemap.xml
+Sitemap: http://xuxugood.github.io/sitemap.xml
 Sitemap: http://xuxugood.github.io/baidusitemap.xml
