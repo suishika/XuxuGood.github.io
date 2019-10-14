@@ -43,4 +43,4 @@ gulp.task('minify-images', function() {
         .pipe(gulp.dest('./public/images'))
 });
 // 默认任务
-gulp.task('default',gulp.series(gulp.parallel('minify-html','minify-css','minify-js','minify-images')));
+gulp.task('default',gulp.series(gulp.parallel('minify-html','minify-css','minify-images')));
