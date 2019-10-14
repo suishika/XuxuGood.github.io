@@ -71,7 +71,7 @@
 {% endif %}
 
 {% if theme.baidu_site_verification %}
-  <meta name="baidu-site-verification" content="hViDwuoylp" />
+  <meta name="baidu-site-verification" content="3fz9uSo9Xo" />
 {% endif %}
 
 
