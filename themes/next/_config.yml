@@ -914,6 +914,11 @@ live2d:
 aplayer:
   enable: false
 
+# http://www.badapple.top
+badApplePlayer:
+  enable: true
+  XlchKey: 960211 # 播放器Key
+  
 # 谷歌广告
 google_ads:
   enable: false
