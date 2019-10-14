@@ -25,9 +25,9 @@ gulp.task('minify-css', function() {
         }))
         .pipe(gulp.dest('./public'));
 });
-// 压缩js
+// 压缩js !代表排除的js
 gulp.task('minify-js', function() {
-    return gulp.src('./public/js/**/*.js')
+    return gulp.src(['./public/js/**/.js','!./public/js/**/*min.js'])
         .pipe(uglify())
         .pipe(gulp.dest('./public'));
 });
@@ -43,4 +43,4 @@ gulp.task('minify-images', function() {
         .pipe(gulp.dest('./public/images'))
 });
 // 默认任务
-gulp.task('default',gulp.series(gulp.parallel('minify-html','minify-css','minify-images')));
+gulp.task('default',gulp.series(gulp.parallel('minify-html','minify-css','minify-js','minify-images')));
