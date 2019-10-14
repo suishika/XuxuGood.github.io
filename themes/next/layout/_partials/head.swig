@@ -70,7 +70,6 @@
   <meta name="yandex-verification" content="{{ theme.yandex_site_verification }}" />
 {% endif %}
 
-// 每个人的content值都不一致，请注意更换成你的content值
 {% if theme.baidu_site_verification %}
   <meta name="baidu-site-verification" content="hViDwuoylp" />
 {% endif %}
