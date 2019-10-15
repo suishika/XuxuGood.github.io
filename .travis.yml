@@ -14,9 +14,9 @@ env:
    # Github Pages
    - GH_REF: https://github.com/XuxuGood/XuxuGood.github.io
    # Coding Pages
-   - CO_REF: https://e.coding.net/xuxugood/XuxuGood.coding.me.git
+   - CO_REF: https://git.dev.tencent.com/XuxuGood/XuxuGood.coding.me.git
 
-# 指定博客分支（Coding和Github一样分支）
+# 指定博客分支
 branches:
   only:
     - blog-source # build master branch only
