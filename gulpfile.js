@@ -4,7 +4,7 @@ var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
 var htmlclean = require('gulp-htmlclean');
 var imagemin = require('gulp-imagemin');
- 
+
 // 压缩html
 gulp.task('minify-html', function() {
     return gulp.src('./public/**/*.html')
@@ -15,7 +15,7 @@ gulp.task('minify-html', function() {
             minifyCSS: true,
             minifyURLs: true,
         }))
-        .pipe(gulp.dest('./public'))
+        .pipe(gulp.dest('./public'));
 });
 // 压缩css
 gulp.task('minify-css', function() {
@@ -27,7 +27,7 @@ gulp.task('minify-css', function() {
 });
 // 压缩js !代表排除的js
 gulp.task('minify-js', function() {
-    return gulp.src(['./public/js/**/.js','!./public/js/**/*min.js'])
+    return gulp.src('./public/js/**/.js')
         .pipe(uglify())
         .pipe(gulp.dest('./public'));
 });
@@ -35,12 +35,12 @@ gulp.task('minify-js', function() {
 gulp.task('minify-images', function() {
     return gulp.src('./public/images/**/*.*')
         .pipe(imagemin(
-        [imagemin.gifsicle({'optimizationLevel': 3}), 
-        imagemin.jpegtran({'progressive': true}), 
-        imagemin.optipng({'optimizationLevel': 7}), 
+        [imagemin.gifsicle({'optimizationLevel': 3}),
+        imagemin.jpegtran({'progressive': true}),
+        imagemin.optipng({'optimizationLevel': 7}),
         imagemin.svgo()],
         {'verbose': true}))
-        .pipe(gulp.dest('./public/images'))
+        .pipe(gulp.dest('./public/images'));
 });
 // 默认任务
 gulp.task('default',gulp.series(gulp.parallel('minify-html','minify-css','minify-js','minify-images')));

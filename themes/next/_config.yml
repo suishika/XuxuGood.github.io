@@ -274,7 +274,7 @@ alipay: /images/alipay.jpg
 
 # Declare license on posts
 post_copyright:
-  enable: 
+  enable:
   license: CC BY-NC-SA 3.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 
@@ -380,7 +380,7 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID 百度统计
-baidu_analytics: 
+baidu_analytics:
 
 # Duoshuo ShortName
 #duoshuo_shortname:
@@ -446,11 +446,11 @@ gitment:
 
 gitalk:
   enable: false
-  githubID: 
-  repo: 
-  ClientID: 
-  ClientSecret: 
-  adminUser: 
+  githubID:
+  repo:
+  ClientID:
+  ClientSecret:
+  adminUser:
   distractionFreeMode: true
 
 # Baidu Share
@@ -505,20 +505,20 @@ needmoreshare2:
 #  站点验证
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-google_site_verification: 
+google_site_verification:
 
 # Google Analytics
 #google_analytics:
 
 baidu_site_verification: true
 
-qihu_site_verification:  
+qihu_site_verification:
 
-sogou_site_verification:  
+sogou_site_verification:
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
-bing_site_verification: 
+bing_site_verification:
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
@@ -918,7 +918,7 @@ aplayer:
 badApplePlayer:
   enable: true
   XlchKey: 960211 # 播放器Key
-  
+
 # 谷歌广告
 google_ads:
   enable: false
