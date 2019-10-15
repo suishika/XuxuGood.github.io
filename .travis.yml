@@ -33,13 +33,12 @@ install:
 # 执行清缓存，生成网页操作
 script:
   - hexo clean
-  - hexo generate
-  #gulp压缩文件
-  - gulp
 
 # 设置git提交名，邮箱；替换真实token到_config.yml文件，最后depoy部署
 after_script:
   # Build Master Repository(Coding Pages)
+  - hexo generate
+  - gulp #gulp压缩文件
   - cd ./public
   - git init
   - git config user.name "xuxu"
@@ -49,6 +48,8 @@ after_script:
   - git push --force --quiet "https://${CO_TOKEN}@${CO_REF}" master:master
 
   # Build Salver Repository(Github Pages)
+  - hexo generate
+  - gulp #gulp压缩文件
   - cd ./public
   - git init
   - git config user.name "xuxu"
