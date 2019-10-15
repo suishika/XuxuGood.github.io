@@ -46,8 +46,8 @@ after_script:
   - git add .
   - git commit -m "TravisCI 自动部署"
 
-  # Build Master Repository(Coding Pages)
-  - git push --force --quiet "https://${CO_TOKEN}@${CO_REF}" master:master
+  # Build Salver Repository(Github Pages)
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
   # Github Pages
   #- git push --force --quiet "https://${CI_TOKEN}@${GH_REF}" master:master
   # Coding Pages
