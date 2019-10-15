@@ -45,9 +45,20 @@ after_script:
   - git config user.email "22476705@qq.com"
   - git add .
   - git commit -m "TravisCI 自动部署"
+
+  # Github Pages
+  - git push --force --quiet "https://${CI_TOKEN}@${GH_REF}" master:master
+  # Coding Pages
+  - git push --force --quiet "https://XuxuGood:${CO_TOKEN}@${CO_REF}" master:master
+  - git tag v0.0.$TRAVIS_BUILD_NUMBER -a -m "Auto Taged By TravisCI With Build $TRAVIS_BUILD_NUMBER"
+  # Github Pages
+  - git push --quiet "https://${CI_TOKEN}@${GH_REF}" master:master --tags
+  # Coding Pages
+  - git push --quiet "https://XuxuGood:${CO_TOKEN}@${CO_REF}" master:master --tags
+
   # Build Master Repository(Coding Pages)
   #- git push --force --quiet "https://${CO_TOKEN}@${CO_REF}" master:master
   # Build Salver Repository(Github Pages)
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+  #- git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 
 # End: Build LifeCycle
