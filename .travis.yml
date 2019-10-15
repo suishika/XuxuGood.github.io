@@ -16,7 +16,7 @@ env:
    # Coding Pages
    - CO_REF: https://e.coding.net/xuxugood/xuxugood.coding.me.git
 
-# 指定博客分支
+# 指定博客分支（Coding和Github一样分支）
 branches:
   only:
     - blog-source # build master branch only
@@ -39,6 +39,16 @@ script:
 
 # 设置git提交名，邮箱；替换真实token到_config.yml文件，最后depoy部署
 after_script:
+  # Build Master Repository(Coding Pages)
+  - cd ./public
+  - git init
+  - git config user.name "xuxu"
+  - git config user.email "22476705@qq.com"
+  - git add .
+  - git commit -m "Update docs"
+  - git push --force --quiet "https://${CO_TOKEN}@${CO_REF}" master:master
+
+  # Build Salver Repository(Github Pages)
   - cd ./public
   - git init
   - git config user.name "xuxu"
