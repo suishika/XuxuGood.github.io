@@ -1,0 +1,2 @@
+Sitemap: https://xuxugood.github.io/sitemap.xml
+Sitemap: https://xuxugood.github.io/baidusitemap.xml
