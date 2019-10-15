@@ -12,9 +12,9 @@ cache:
 env:
  global:
    # Github Pages
-   - GH_REF: https://github.com/XuxuGood/XuxuGood.github.io
+   - GH_REF: github.com/XuxuGood/XuxuGood.github.io
    # Coding Pages
-   - CO_REF: https://git.dev.tencent.com/XuxuGood/XuxuGood.coding.me.git
+   - CO_REF: git.dev.tencent.com/XuxuGood/XuxuGood.coding.me.git
 
 # 指定博客分支
 branches:
