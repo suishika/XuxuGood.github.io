@@ -70,8 +70,9 @@
   <meta name="yandex-verification" content="{{ theme.yandex_site_verification }}" />
 {% endif %}
 
+
 {% if theme.baidu_site_verification %}
-  <meta name="baidu-site-verification" content="{{ baidu_site_verification }}" />
+  <meta name="baidu-site-verification" content="{{ theme.baidu_site_verification }}" />
 {% endif %}
 
 
