@@ -11,7 +11,10 @@ cache:
 # 指定博客的仓库地址
 env:
  global:
+   # Github Pages
    - GH_REF: https://github.com/XuxuGood/XuxuGood.github.io
+   # Coding Pages
+   - CO_REF: https://e.coding.net/xuxugood/xuxugood.coding.me.git
 
 # 指定博客分支
 branches:
