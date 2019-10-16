@@ -101,7 +101,7 @@
     root.share = {
       "weibo": function (el) {
         var myoptions = getOptions(el);
-        var url = "http://v.t.sina.com.cn/share/share.php?title=" +
+        var url = "https://v.t.sina.com.cn/share/share.php?title=" +
           encodeURIComponent(myoptions.title) +
           "&url=" + encodeURIComponent(myoptions.url) +
           "&pic=" + encodeURIComponent(myoptions.image);
@@ -132,7 +132,7 @@
       },
       "qqzone": function (el) {
         var myoptions = getOptions(el);
-        var url = "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?title=" +
+        var url = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?title=" +
           encodeURIComponent(myoptions.title) +
           "&url=" + encodeURIComponent(myoptions.url) +
           "&pics=" + encodeURIComponent(myoptions.image) +
@@ -141,7 +141,7 @@
       },
       "renren": function (el) {
         var myoptions = getOptions(el);
-        var url = "http://widget.renren.com/dialog/share?title=" +
+        var url = "https://widget.renren.com/dialog/share?title=" +
           encodeURIComponent(myoptions.title) +
           "&resourceUrl=" + encodeURIComponent(myoptions.url) +
           "&pic=" + encodeURIComponent(myoptions.image) +
@@ -465,8 +465,8 @@
 
 
       // fill fropdown with buttons
-      var iconClass = myoptions.iconStyle == "default" ? 
-                      "need-share-button_link need-share-button_" : 
+      var iconClass = myoptions.iconStyle == "default" ?
+                      "need-share-button_link need-share-button_" :
                       "need-share-button_link-" + myoptions.iconStyle + " need-share-button_link need-share-button_";
       for (var network in myoptions.networks) {
         if (myoptions.networks.hasOwnProperty(network)) {
