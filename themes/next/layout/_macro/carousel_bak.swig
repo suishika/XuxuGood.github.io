@@ -333,7 +333,7 @@
   	   </a>
 
   	   <!-- 时光留影 -->
-  	   <a href="/">
+  	   <a href="#">
   	     <img class="right-siders nofancybox" src="/images/time.png"/>
   	   </a>
 
