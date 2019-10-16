@@ -15,3 +15,5 @@ Sitemap: https://xuxugood.github.io/sitemap.xml
 Sitemap: https://xuxugood.github.io/baidusitemap.xml
 Sitemap: https://xuxugood.coding.me/sitemap.xml
 Sitemap: https://xuxugood.coding.me/baidusitemap.xml
+Sitemap: https://hasaik.com/sitemap.xml
+Sitemap: https://hasaik.com/baidusitemap.xml
