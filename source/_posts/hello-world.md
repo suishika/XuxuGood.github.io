@@ -37,17 +37,6 @@ More info: [Server](https://hexo.io/docs/server.html)
 $ hexo generate
 ```
 
-
-<a href="https://leafjame.github.io/photos/" class="LinkCard">我的相册——时光留影</a>
-
-Hexo NexT主题整合步骤如下：
-   1. asd
-   2. sdasd
-
-需要修改/images/linkcard.png为你自己的图片。附上我在用的：<a class="btn" href="https://leafjame.github.io/images/linkcard.png"><i class="fa fa-download fa-lg fa-fw"></i>linkcard.png</a>
-![blockchain](http://img2.imgtn.bdimg.com/it/u=2690387131,3828772643&fm=26&gp=0.jpg)
-<center>11</center>
-
 More info: [Generating](https://hexo.io/docs/generating.html)
 
 ### Deploy to remote sites
