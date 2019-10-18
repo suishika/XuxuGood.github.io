@@ -159,11 +159,10 @@ links:
   #daovoice: http://www.daovoice.io/
 
 mylinks:
-- nickname: John Xu的博客  #友链名称
-  avatar: http://localhost:4001/images/avatar.jpg  #友链头像
-  site: https://hasaik.com  #友链地址
-  info: 博观而约取，厚积而薄发  #友链说明
-
+- nickname: 北宸的博客  #友链名称
+  avatar: https://leafjame.github.io/images/beichen.png  #友链头像
+  site: https://leafjame.github.io  #友链地址
+  info: 因心造境，风云由我！  #友链说明
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
