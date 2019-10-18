@@ -5,5 +5,5 @@ tags:
 categories:
 top:
 keywords:
-copyright: true #新增,开启
+copyright: true #新增,开启版权说明
 ---
