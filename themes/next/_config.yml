@@ -242,7 +242,7 @@ auto_excerpt:
 post_meta:
   item_text: false #隐藏文章标题下方'发表于'..文字
   created_at: true
-  updated_at: false
+  updated_at: true
   categories: true
 
 # Post wordcount display settings
@@ -274,9 +274,9 @@ alipay: /images/alipay.jpg
 
 # Declare license on posts
 post_copyright:
-  enable:
+  enable: false
   license: CC BY-NC-SA 3.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 
 # ---------------------------------------------------------------
