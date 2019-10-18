@@ -99,13 +99,14 @@ menu:
   archives: /archives/ || archive
   tags: /tags/ || tags
   about: /about/ || user
-# movies: /movies/ || film
+  links: /links/ || link
+
+  # movies: /movies/ || film
 #  xiaohutong: /xiaohutong || map
 #  sitemap: /sitemap.xml || sitemap
 
   #schedule: /schedule/ || calendar
   #commonweal: /404/ || heartbeat
-  #links: /links/ || link
 
 # Enable/Disable menu icons.
 menu_icons:
@@ -157,15 +158,11 @@ links_layout: block
 links:
   #daovoice: http://www.daovoice.io/
 
-#mylinks:
-#- nickname: 北宸的博客  #友链名称
-#  avatar: https://leafjame.github.io/images/beichen.png  #友链头像
-#  site: https://leafjame.github.io  #友链地址
-#  info: 因心造境，风云由我！  #友链说明
-#- nickname: 北宸的博客
-#  avatar: https://leafjame.github.io/images/beichen.png
-#  site: https://leafjame.github.io
-#  info: 因心造境，风云由我！
+mylinks:
+- nickname: John Xu的博客  #友链名称
+  avatar: http://localhost:4001/images/avatar.jpg  #友链头像
+  site: https://hasaik.com  #友链地址
+  info: 博观而约取，厚积而薄发  #友链说明
 
 
 # Sidebar Avatar

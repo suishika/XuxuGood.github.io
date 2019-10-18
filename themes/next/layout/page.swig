@@ -75,7 +75,6 @@
         <!-- 友情链接-->
         {% elif page.type === 'links' %}
             {% include 'links.swig' %}
-
         {% else %}
           {{ page.content }}
         {% endif %}

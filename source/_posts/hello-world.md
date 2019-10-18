@@ -1,18 +1,14 @@
 title: Hello World
 tags:
-  - qwe
-  - weq
+  - 你好世界
 categories:
-  - qwe
-  - Nexy
 top: true
 keywords: 
 copyright: false #新增,开启
 abbrlink: 27514
 date: 2019-10-11 12:08:00
 ---
-<font size=4>Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
-</font>
+<font size=4>Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).</font>
 ## Quick Start
 
 ### Create a new post
