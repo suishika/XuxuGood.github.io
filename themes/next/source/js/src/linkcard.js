@@ -17,6 +17,7 @@ window.onload=function(){
 
   //整合页面欺骗特效 window.onload有冲突
   var OriginTitile = document.title;
+  debugger
   var titleTime;
   document.addEventListener('visibilitychange', function() {
     if(document.hidden) {
