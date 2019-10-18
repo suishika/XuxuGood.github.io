@@ -1,4 +1,4 @@
-// window.onload=function(){
+$(window).load(function() {
   // linkcard链接
   var LinkCards=document.getElementsByClassName('LinkCard');
   if(LinkCards.length != 0){
@@ -33,5 +33,4 @@
       }, 2000);
     }
   });
-
-// };
+});
