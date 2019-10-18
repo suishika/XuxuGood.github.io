@@ -81,7 +81,7 @@ pagination_dir: page
 theme: next
 
 live2d:
-  enable: false
+  enable: true
   scriptFrom: local
   pluginRootPath: live2dw/
   pluginJsPath: lib/
