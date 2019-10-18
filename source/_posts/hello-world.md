@@ -45,7 +45,7 @@ Hexo NexT主题整合步骤如下：
    2. sdasd
 
 需要修改/images/linkcard.png为你自己的图片。附上我在用的：<a class="btn" href="https://leafjame.github.io/images/linkcard.png"><i class="fa fa-download fa-lg fa-fw"></i>linkcard.png</a>
-![blockchain](http://pic26.nipic.com/20121221/9252150_142515375000_2.jpg)
+![blockchain](http://img2.imgtn.bdimg.com/it/u=2690387131,3828772643&fm=26&gp=0.jpg)
 <center>11</center>
 
 More info: [Generating](https://hexo.io/docs/generating.html)

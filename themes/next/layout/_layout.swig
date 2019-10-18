@@ -143,13 +143,11 @@
   <link rel="stylesheet" href="/sharejs/css/share.min.css">
   <script src="/sharejs/js/social-share.min.js"></script>
 
-  <!-- 模仿知乎卡片样式链接、崩溃欺骗特效 -->
+  <!-- 模仿知乎卡片样式链接 -->
   <script type="text/javascript" src="/js/src/linkcard.js"></script>
 
-  <!--崩溃欺骗 放在js文件最后-->
-  <!--
+  <!--崩溃欺骗特效-->
   <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
-  -->
 
 </body>
 </html>
