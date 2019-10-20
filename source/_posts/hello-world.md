@@ -1,6 +1,5 @@
 title: Hello World
 tags:
-  - 你好世界
 categories:
 top: true
 keywords: 
