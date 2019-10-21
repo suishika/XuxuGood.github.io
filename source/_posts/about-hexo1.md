@@ -1,5 +1,5 @@
 ---
-title: Hexo搭建个人博客（基础篇）
+title: Hexo搭建本地个人博客（基础篇）
 copyright: true
 abbrlink: e1b9c6c5
 date: 2019-10-12 09:21:07
@@ -9,7 +9,10 @@ categories:
     - Hexo
 top:
 type:
-keywords: "安装Hexo"
+description:
+    - <p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+keywords:
+    - Hexo
 ---
 > **初识Hexo**
 

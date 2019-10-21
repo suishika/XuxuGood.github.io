@@ -3,6 +3,8 @@ tags:
 categories:
 top: true
 keywords:
+description:
+    - <p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.</p>
 copyright: false #新增,开启版权说明
 abbrlink: 27514
 date: 2019-10-11 12:08:00
