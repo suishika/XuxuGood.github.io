@@ -10,10 +10,10 @@
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
 
-  {% if theme.badApplePlayer.enable %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- {% if theme.badApplePlayer.enable %}
     <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  {% endif %}
+  {% endif %} -->
 
   {% if theme.tagcloud.type == 'bubble' %}
       <!-- 球型气泡标签云 -->
