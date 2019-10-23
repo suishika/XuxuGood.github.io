@@ -21,7 +21,7 @@ keywords:
 ## *安装Hexo*
 
 &emsp;&emsp;建立 Hexo 只需要几分钟，安装 Hexo 非常简单。但是，您首先需要安装其他一些东西。
-- [Node.js](http://nodejs.org/) (Node.js 版本需不低于 8.6，建议使用 Node.js 10.0 及以上版本)
+- [Node.js](http://nodejs.org/) &nbsp;&nbsp;(Node.js 版本需不低于 8.6，建议使用 Node.js 10.0 及以上版本)
 - [Git](http://git-scm.com/)
 
 &emsp;&emsp;如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要使用 npm 即可完成 Hexo 的安装。
