@@ -4,10 +4,10 @@
 <!--
   {% block title %}{{ config.title }}{% if theme.index_with_subtitle and config.subtitle %} - {{config.subtitle }}{% endif %}{% endblock %}
   {% block title %} {{ config.title }} - {{ theme.description }} {% endblock %}
+  {% block title %}{{ config.title }}{% if theme.index_with_subtitle and config.subtitle %} - {{config.subtitle }}{% endif %}{% endblock %}
+-->
   <!-- 做seo优化，把关键词也显示在title标题里 -->
   {% block title %} {{ theme.keywords }} - {{ config.title }}{{ theme.description }} {% endblock %}
--->
-  {% block title %}{{ config.title }}{% if theme.index_with_subtitle and config.subtitle %} - {{config.subtitle }}{% endif %}{% endblock %}
 
 {% block page_class %}
   {% if is_home() %}page-home{% endif -%}

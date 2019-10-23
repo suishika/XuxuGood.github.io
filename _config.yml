@@ -132,7 +132,6 @@ nofollow:
     enable: true
     exclude:
     - https://hasaik.com
-    - 友链地址
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
