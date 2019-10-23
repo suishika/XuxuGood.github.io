@@ -20,7 +20,7 @@ keywords:
 
 ## *安装Hexo*
 
-&emsp;&emsp;建立Hexo只需要几分钟，安装Hexo非常简单。但是，您首先需要安装其他一些东西。
+&emsp;&emsp;建立 Hexo 只需要几分钟，安装 Hexo 非常简单。但是，您首先需要安装其他一些东西。
 - [Node.js](http://nodejs.org/) (Node.js 版本需不低于 8.6，建议使用 Node.js 10.0 及以上版本)
 - [Git](http://git-scm.com/)
 
@@ -28,7 +28,7 @@ keywords:
 ```CMD
 $ npm install -g hexo-cli
 ```
-&emsp;&emsp;如果没有，那就一起来看下面吧(`这里只说一下windows的安装，因为本人现在比较穷，买不起mac啊 テ_デ，其他相关教程大家就去搜搜很多的。`)
+&emsp;&emsp;如果没有，那就一起来看下面吧 (`这里只说一下 windows 的安装，因为本人现在比较穷，买不起mac啊 テ_デ，其他相关教程大家就去搜搜很多的。`)
 
 ### &emsp;&emsp;*安装git*
 
@@ -47,7 +47,7 @@ git --version
 
 <a href="https://nodejs.org/en/" class="LinkCard">安装地址</a>
 
-&emsp;&emsp;我们这里简单点，直接下载并运行安装程序就完了，还是走默认就行，安装完成之后检查node是否安装成功（执行一下cmd命令），显示版本号即为成功！
+&emsp;&emsp;我们这里简单点，直接下载并运行安装程序就完了，还是走默认就行，安装完成之后检查 node 是否安装成功（执行一下cmd命令），显示版本号即为成功！
 ```CMD
 node -v
 ```
@@ -64,11 +64,11 @@ $ hexo init <文件夹>
 $ cd <文件夹>
 $ npm install
 ```
-&emsp;&emsp;选择你想要的盘符来建立我们的博客站点文件,我这里选择D:\blog，这里的blog是你的文件夹名字（根据自己的喜好建一个文件夹）
+&emsp;&emsp;选择你想要的盘符来建立我们的博客站点文件,我这里选择 D:\blog ，这里的 blog 是你的文件夹名字（根据自己的喜好建一个文件夹）
 
 ![init hexo](https://s2.ax1x.com/2019/10/21/KlPjo9.png)
 
-&emsp;&emsp;cd到你的站点目录下，然后 初始化站点$ npm install，执行成功后到你的blog文件夹下看看是否这样的（一致就成功啦~~）
+&emsp;&emsp;cd 到你的站点目录下，然后 初始化站点 $ npm install，执行成功后到你的 blog 文件夹下看看是否这样的（一致就成功啦~~）
 
 ![blog](https://s2.ax1x.com/2019/10/21/Klkwa4.png)
 
@@ -80,7 +80,7 @@ hexo clean: 顾名思义就是清除缓存的意思了啦，这招一般在你�
 ```
 &emsp;&emsp;接下来看看 你博客的初步成果吧。
 
-&emsp;&emsp;进入blog文件根目录:
+&emsp;&emsp;进入 blog 文件根目录:
 
 &emsp;&emsp;&emsp;&emsp;执行命令: hexo g 和 hexo s
 

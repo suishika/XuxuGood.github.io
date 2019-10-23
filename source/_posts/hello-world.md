@@ -1,7 +1,7 @@
 title: Hello World
 tags:
 categories:
-top: true
+top:
 keywords:
 description:
     - <p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.</p>

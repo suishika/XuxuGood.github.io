@@ -10,7 +10,7 @@ tags:
     - Coding 
 categories:
     - Hexo
-top:
+top: true
 type:
 keywords:
      - Hexo
