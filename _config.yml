@@ -108,11 +108,11 @@ server:
   header: true
 
 # hexo-admin authentification
-admin:
-  username: xuxu
-  password_hash: $2a$10$anOUoIka5uKSupfpNtu6IOSPvsj2OTPOXC2qpewkP1DmrTZr39Va6
-  secret: my blog
-  deployCommand: './admin_script/hexo-g.sh'
+#admin:
+  #username: xuxu
+  #password_hash: $2a$10$anOUoIka5uKSupfpNtu6IOSPvsj2OTPOXC2qpewkP1DmrTZr39Va6
+  #secret: my blog
+  #deployCommand: './admin_script/hexo-g.sh'
 
 # offline config passed to sw-precache. Service Worker相关配置
 #service_worker:
