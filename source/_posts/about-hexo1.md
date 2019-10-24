@@ -4,15 +4,12 @@ copyright: true
 abbrlink: e1b9c6c5
 date: 2019-10-12 09:21:07
 tags:
-    - Hexo
+  - Hexo
 categories:
-    - Hexo
-top:
-type:
-description:
-    - <p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+  - Hexo
+description: Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
 keywords:
-    - Hexo
+  - Hexo
 ---
 > **初识Hexo**
 
