@@ -4,14 +4,14 @@ $(window).load(function () {
     var titleTime;
     document.addEventListener('visibilitychange', function () {
         if (document.hidden) {
-            $('[rel="icon"]').attr('href', "../../images/failure.png");
-            $('[rel="shortcut icon"]').attr('href', "../../images/failure.png");
-            document.title = '(●—●)喔哟，崩溃啦！';
+            $('[rel="icon"]').attr('href', "../../images/failure.ico");
+            $('[rel="shortcut icon"]').attr('href', "../../images/failure.ico");
+            document.title = '(つェ⊂) 我藏好了哦~ ';
             clearTimeout(titleTime);
         } else {
             $('[rel="icon"]').attr('href', "../../images/favicon.png");
             $('[rel="shortcut icon"]').attr('href', "../../images/favicon.png");
-            document.title = '(/≧▽≦/)咦！页面又好了！';
+            document.title = 'o(^▽^)o 被你发现啦~ ';
             titleTime = setTimeout(function () {
                 document.title = OriginTitile;
             }, 2000);
