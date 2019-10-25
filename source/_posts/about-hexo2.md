@@ -53,7 +53,7 @@ description: 关于TravisCI我这里简单介绍一下，TravisCI是一个在线
    ![Travis-配置页](https://s2.ax1x.com/2019/10/24/KN5IW8.png)
    3、配置好 `Travis` 后，回到终端，进入 `blog` 所在的文件夹下，新建 `.travis.yml` 文件，并添加以下内容
    
-```Terminal
+``` bash
 sudo: false
 language: node_js
 node_js:
