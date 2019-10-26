@@ -767,7 +767,7 @@ canvas_sphere: false
 # zIndex: The display level of the ribbon.
 # 条状背景线，点击动态变化
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 300
   alpha: 0.6
   zIndex: -1
