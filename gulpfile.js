@@ -32,7 +32,7 @@ gulp.task('minify-css', function() {
 });
 // 压缩js !代表排除的js
 gulp.task('minify-js', function() {
-    return gulp.src('./public/js/**/*.js')
+    return gulp.src(['./public/js/**/.js','!./public/js/**/*min.js'])
         .pipe(uglify()) //压缩混淆
         .pipe(gulp.dest('./public'));
 });
