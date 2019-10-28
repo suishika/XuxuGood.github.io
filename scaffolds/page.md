@@ -1,9 +1,6 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
-categories:
-top:
-keywords:
-copyright: true #新增,开启
+type:
+comments: false #是否开启评论
 ---

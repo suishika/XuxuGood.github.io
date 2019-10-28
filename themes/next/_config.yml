@@ -98,6 +98,7 @@ menu:
   archives: /archives/ || archive
   categories: /categories/ || th
   tags: /tags/ || tags
+  life: /life/ || apple
   about: /about/ || user
   links: /links/ || link
 

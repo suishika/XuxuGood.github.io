@@ -46,8 +46,6 @@ type: "about"
         </div>
     </div>
 </div>
-<style>#dashang{animation:heartAnimate 1.33s ease-in-out infinite}#das{position:relative;width:50px;//height:40px;// margin:100px;transition:all .3s}#das:before{content:'打'}#das:after{content:'赏'}#das:after,#das:before{position:absolute;left:25px;top:0;width:25px;height:40px;background:red;border-radius:40px 40px 0 0;transform:rotate(-45deg);transform-origin:0 100%}#das:after{left:0;top:0;transform:rotate(45deg);transform-origin:100% 100%}</style>
-<script>function dashang(){var e=document.getElementById("QR");"none"==e.style.display?e.style.display="block":e.style.display="none"}</script>
 
 谢各位大佬赏~ (_^__^_) Y……
 
@@ -58,3 +56,50 @@ type: "about"
 * * *
 
 > _有什么话要对我说吗？这里是你畅所欲言的地方，可以咨询，可以交流，可以感叹，可以发飙，但 <font color="yellow;">不！可！以！</font>订外卖_
+
+<style>
+    #dashang {
+        animation: heartAnimate 1.33s ease-in-out infinite
+    }
+
+    #das {
+        position: relative;
+        width: 50px;
+    / / height: 40 px;
+    / / margin: 100 px;
+        transition: all .3s
+    }
+
+    #das:before {
+        content: '打'
+    }
+
+    #das:after {
+        content: '赏'
+    }
+
+    #das:after, #das:before {
+        position: absolute;
+        left: 25px;
+        top: 0;
+        width: 25px;
+        height: 40px;
+        background: red;
+        border-radius: 40px 40px 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%
+    }
+
+    #das:after {
+        left: 0;
+        top: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%
+    }
+</style>
+<script>
+    function dashang() {
+        var e = document.getElementById("QR");
+        "none" == e.style.display ? e.style.display = "block" : e.style.display = "none"
+    }
+</script>
