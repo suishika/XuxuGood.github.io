@@ -34,6 +34,9 @@ gulp.task('minify-css', function() {
 gulp.task('minify-js', function() {
     return gulp.src('./public/js/**/.js')
         .pipe(uglify()) //压缩混淆
+        .on('error', function (err) {
+            gutil.log(gutil.colors.red('[Error]'), err.toString());
+        })
         .pipe(gulp.dest('./public'));
 });
 // 压缩图片
