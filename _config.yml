@@ -161,11 +161,11 @@ douban:
   user: 192906709
   builtin: false
   book:
-    title: 'This is my book title'
-    quote: 'This is my book quote'
+    title: '读书系列'
+    quote: '书山有路勤为径，学海无涯苦作舟'
   movie:
-    title: 'This is my movie title'
-    quote: 'This is my movie quote'
+    title: '观影系列'
+    quote: 'Life was like a box of chocolates, you never know what you’re going to get'
   timeout: 10000
 
 # Deployment
