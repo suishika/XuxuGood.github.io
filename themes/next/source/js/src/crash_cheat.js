@@ -4,8 +4,8 @@ $(window).load(function () {
     var titleTime;
     document.addEventListener('visibilitychange', function () {
         if (document.hidden) {
-            $('[rel="icon"]').attr('href', "../../images/failure.ico");
-            $('[rel="shortcut icon"]').attr('href', "../../images/failure.ico");
+            $('[rel="icon"]').attr('href', "../../images/failure.png");
+            $('[rel="shortcut icon"]').attr('href', "../../images/failure.png");
             document.title = '(つェ⊂) 我藏好了哦~ ';
             clearTimeout(titleTime);
         } else {
