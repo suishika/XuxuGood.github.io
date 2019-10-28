@@ -165,7 +165,7 @@ douban:
     quote: '书山有路勤为径，学海无涯苦作舟'
   movie:
     title: '观影系列'
-    quote: 'Life was like a box of chocolates, you never know what you’re going to get'
+    quote: '人间至味是清欢，春风十里不如你'
   timeout: 10000
 
 # Deployment
