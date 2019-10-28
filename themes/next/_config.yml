@@ -913,7 +913,7 @@ aplayer:
 
 # http://www.badapple.top
 badApplePlayer:
-  enable: false
+  enable: true
   XlchKey: 960211 # 播放器Key
 
 # 谷歌广告
