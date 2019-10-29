@@ -44,7 +44,7 @@ comments: false #是否开启评论
             <div class="box-content"><h3 class="lay-title">小小胡同</h3><span class="lay-post">小胡同里大世界</span>
                 <div>
                     <ul class="icon">
-                        <li><a href="/xiaohutong/" target="" title="点我前往"><i class="fa fa-link"></i></a></li>
+                        <li><a href="/photos/" target="" title="点我前往"><i class="fa fa-link"></i></a></li>
                     </ul>
                 </div>
             </div>
