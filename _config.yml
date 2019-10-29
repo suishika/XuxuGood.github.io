@@ -155,7 +155,7 @@ neat_js:
     - '**/*.min.js'
     - '**/jquery.fancybox.pack.js'
     - '**/index.js'
-
+    - '**/ins.js'
 #豆瓣
 douban:
   user: 192906709
