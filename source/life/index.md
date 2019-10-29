@@ -41,7 +41,7 @@ comments: false #是否开启评论
             </div>
         </div>
         <div class="box"><img class="nofancybox" src="https://s2.ax1x.com/2019/10/28/K6WFfJ.jpg">
-            <div class="box-content"><h3 class="lay-title">小小胡同</h3><span class="lay-post">小胡同里大世界</span>
+            <div class="box-content"><h3 class="lay-title">相册系列</h3><span class="lay-post">都是我的珍藏</span>
                 <div>
                     <ul class="icon">
                         <li><a href="/photos/" target="" title="点我前往"><i class="fa fa-link"></i></a></li>
