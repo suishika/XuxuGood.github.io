@@ -156,6 +156,7 @@ neat_js:
     - '**/jquery.fancybox.pack.js'
     - '**/index.js'
     - '**/ins.js'
+
 #豆瓣
 douban:
   user: 192906709
@@ -166,6 +167,9 @@ douban:
   movie:
     title: '观影系列'
     quote: '人间至味是清欢，春风十里不如你'
+  game:
+    title: '游戏系列'
+    quote: '你有一双摄人心魄的眼睛，我非常喜欢'
   timeout: 10000
 
 # Deployment

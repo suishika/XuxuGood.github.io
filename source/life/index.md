@@ -12,11 +12,11 @@ comments: false #是否开启评论
 <div class="life">
     <div class="row">
         <div class="box">
-            <img class="nofancybox" src="https://s2.ax1x.com/2019/10/27/Ksh4SA.gif">
-            <div class="box-content"><h3 class="lay-title">订阅本站</h3><span class="lay-post">欢迎订阅和关注</span>
+            <img class="nofancybox" src="https://s2.ax1x.com/2019/10/30/K4ViZT.jpg">
+            <div class="box-content"><h3 class="lay-title">游戏系列</h3><span class="lay-post">玩过的一些游戏</span>
                 <div>
                     <ul class="icon">
-                        <li><a href="#" title="点我前往" target="_blank"
+                        <li><a href="#" title="点我前往" target=""
                                rel="noopener"><i class="fa fa-link"></i></a></li>
                     </ul>
                 </div>
