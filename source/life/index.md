@@ -16,12 +16,11 @@ comments: false #是否开启评论
             <div class="box-content"><h3 class="lay-title">游戏系列</h3><span class="lay-post">玩过的一些游戏</span>
                 <div>
                     <ul class="icon">
-                        <li><a href="/games/" title="点我前往" target=""
-                               rel="noopener"><i class="fa fa-link"></i></a></li>
+                        <li><a href="/games/" target="" title="点我前往"><i class="fa fa-link"></i></a></li>
                     </ul>
                 </div>
             </div>
-        </div> 
+        </div>
         <div class="box"><img class="nofancybox" src="https://s2.ax1x.com/2019/10/28/K6WAp9.md.jpg">
             <div class="box-content"><h3 class="lay-title">读书系列</h3><span class="lay-post">读过的一些书籍</span>
                 <div>
