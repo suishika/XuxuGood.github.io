@@ -111,21 +111,29 @@
                 addMask($videoImg[i]);
             }
         };
-        var render = function render(res) {
+        var render = function render(tagType,res) {
             var ulTmpl = "";
             for (var j = 0, len2 = res.list.length; j < len2; j++) {
                 var data = res.list[j].arr;
                 var liTmpl = "";
                 for (var i = 0, len = data.link.length; i < len; i++) {
-                    var minSrc = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/photos/" + data.link[i];
-                    var src = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/photos/" + data.link[i];
+                    if (tagType==="1") {
+                        var minSrc = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/SceneryPhotos/" + data.link[i];
+                        var src = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/SceneryPhotos/" + data.link[i];
+                    }else if (tagType==="2") {
+                        var minSrc = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/OwnPhotos/" + data.link[i];
+                        var src = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/OwnPhotos/" + data.link[i];
+                    }else {
+                        var minSrc = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/BabyPhotos/" + data.link[i];
+                        var src = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/BabyPhotos/" + data.link[i];
+                    }
                     var type = data.type[i];
                     var target = src + (type === 'video' ? '.mp4' : '.jpg');
                     src += '';
 
                     liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
                   <a href="' + src + '" itemprop="contentUrl" data-size="1080x1080" data-type="' + type + '" data-target="' + src + '">\
-                    <img class="reward-img" data-type="' + type + '" data-src="' + src + '" src="'+src+'" itemprop="thumbnail" onload="lzld(this)">\
+                    <img class="reward-img" data-type="' + type + '" data-src="' + src + '" src="' + src + '" itemprop="thumbnail" onload="lzld(this)">\
                   </a>\
                   <figcaption style="display:none" itemprop="caption description">' + data.text[i] + '</figcaption>\
               </figure>';
@@ -134,7 +142,13 @@
           <ul class="img-box-ul">' + liTmpl + '</ul>\
           </section>';
             }
-            document.querySelector('.instagram').innerHTML = '<div class="photos" itemscope="" itemtype="http://schema.org/ImageGallery">' + ulTmpl + '</div>';
+            if (tagType==="1"){
+                document.querySelector('.instagram1').innerHTML = '<div class="photos" itemscope="" itemtype="http://schema.org/ImageGallery">' + ulTmpl + '</div>';
+            }else if (tagType==="2") {
+                document.querySelector('.instagram2').innerHTML = '<div class="photos" itemscope="" itemtype="http://schema.org/ImageGallery">' + ulTmpl + '</div>';
+            }else {
+                document.querySelector('.instagram3').innerHTML = '<div class="photos" itemscope="" itemtype="http://schema.org/ImageGallery">' + ulTmpl + '</div>';
+            }
             createVideoIncon();
             _view2.default.init();
         };
@@ -167,10 +181,17 @@
             render(imgObj);
         };
 
-        function loadData(success) {
+        function loadData(tagType,success) {
             if (!searchData) {
                 var xhr = new XMLHttpRequest();
-                xhr.open('GET', './data.json?t=' + +new Date(), true);
+                if (tagType==="1"){
+                    xhr.open('GET', './SceneryData.json?t=' + new Date(), true);
+                } else if (tagType==="2") {
+                    xhr.open('GET', './OwnData.json?t=' + new Date(), true);
+                }else {
+                    xhr.open('GET', './BabyData.json?t=' + new Date(), true);
+                }
+
 
                 xhr.onload = function () {
                     if (this.status >= 200 && this.status < 300) {
@@ -194,8 +215,9 @@
 
         var Ins = {
             init: function init() {
-                loadData(function (data) {
-                    render(data);
+                var tagType = $("#tagType").val();
+                loadData(tagType,function (data) {
+                    render(tagType,data);
                 });
             }
         };
