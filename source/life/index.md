@@ -16,7 +16,7 @@ comments: false #是否开启评论
             <div class="box-content"><h3 class="lay-title">游戏系列</h3><span class="lay-post">玩过的一些游戏</span>
                 <div>
                     <ul class="icon">
-                        <li><a href="#" title="点我前往" target=""
+                        <li><a href="/games/" title="点我前往" target=""
                                rel="noopener"><i class="fa fa-link"></i></a></li>
                     </ul>
                 </div>
