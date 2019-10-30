@@ -111,19 +111,19 @@
                 addMask($videoImg[i]);
             }
         };
-        var render = function render(tagType,res) {
+        var render = function render(tagType, res) {
             var ulTmpl = "";
             for (var j = 0, len2 = res.list.length; j < len2; j++) {
                 var data = res.list[j].arr;
                 var liTmpl = "";
                 for (var i = 0, len = data.link.length; i < len; i++) {
-                    if (tagType==="1") {
+                    if (tagType === "1") {
                         var minSrc = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/SceneryPhotos/" + data.link[i];
                         var src = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/SceneryPhotos/" + data.link[i];
-                    }else if (tagType==="2") {
+                    } else if (tagType === "2") {
                         var minSrc = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/OwnPhotos/" + data.link[i];
                         var src = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/OwnPhotos/" + data.link[i];
-                    }else {
+                    } else {
                         var minSrc = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/BabyPhotos/" + data.link[i];
                         var src = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/BabyPhotos/" + data.link[i];
                     }
@@ -142,12 +142,36 @@
           <ul class="img-box-ul">' + liTmpl + '</ul>\
           </section>';
             }
-            if (tagType==="1"){
-                document.querySelector('.instagram1').innerHTML = '<div class="photos" itemscope="" itemtype="http://schema.org/ImageGallery">' + ulTmpl + '</div>';
-            }else if (tagType==="2") {
-                document.querySelector('.instagram2').innerHTML = '<div class="photos" itemscope="" itemtype="http://schema.org/ImageGallery">' + ulTmpl + '</div>';
-            }else {
-                document.querySelector('.instagram3').innerHTML = '<div class="photos" itemscope="" itemtype="http://schema.org/ImageGallery">' + ulTmpl + '</div>';
+            if (tagType === "1") {
+                var box2 = document.getElementById("tagType2");
+                if (box2 != null) {
+                    box2.remove();
+                }
+                var box3 = document.getElementById("tagType3");
+                if (box3 != null) {
+                    box3.remove();
+                }
+                document.querySelector('.instagram1').innerHTML = '<div class="photos" id="tagType1" itemscope="" itemtype="http://schema.org/ImageGallery">' + ulTmpl + '</div>';
+            } else if (tagType === "2") {
+                var box1 = document.getElementById("tagType1");
+                if (box1 != null) {
+                    box1.remove();
+                }
+                var box3 = document.getElementById("tagType3");
+                if (box3 != null) {
+                    box3.remove();
+                }
+                document.querySelector('.instagram2').innerHTML = '<div class="photos" id="tagType2" itemscope="" itemtype="http://schema.org/ImageGallery">' + ulTmpl + '</div>';
+            } else {
+                var box1 = document.getElementById("tagType1");
+                if (box1 != null) {
+                    box1.remove();
+                }
+                var box2 = document.getElementById("tagType2");
+                if (box2 != null) {
+                    box2.remove();
+                }
+                document.querySelector('.instagram3').innerHTML = '<div class="photos" id="tagType3" itemscope="" itemtype="http://schema.org/ImageGallery">' + ulTmpl + '</div>';
             }
             createVideoIncon();
             _view2.default.init();
@@ -181,14 +205,14 @@
             render(imgObj);
         };
 
-        function loadData(tagType,success) {
+        function loadData(tagType, success) {
             if (!searchData) {
                 var xhr = new XMLHttpRequest();
-                if (tagType==="1"){
+                if (tagType === "1") {
                     xhr.open('GET', './SceneryData.json?t=' + new Date(), true);
-                } else if (tagType==="2") {
+                } else if (tagType === "2") {
                     xhr.open('GET', './OwnData.json?t=' + new Date(), true);
-                }else {
+                } else {
                     xhr.open('GET', './BabyData.json?t=' + new Date(), true);
                 }
 
@@ -216,8 +240,8 @@
         var Ins = {
             init: function init() {
                 var tagType = $("#tagType").val();
-                loadData(tagType,function (data) {
-                    render(tagType,data);
+                loadData(tagType, function (data) {
+                    render(tagType, data);
                 });
             }
         };
