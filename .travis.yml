@@ -35,7 +35,7 @@ script:
   - hexo clean
   - hexo generate
   #豆瓣
-  - hexo douban -bm
+  - hexo douban -bgm
   #gulp压缩文件
   #- gulp
 
