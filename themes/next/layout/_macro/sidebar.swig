@@ -157,7 +157,7 @@
                   {% set posts = site.posts.sort('-date') %}
                   {% for post in posts.slice('0', '5') %}
                     <li class='my-links-of-blogroll-li'>
-                      <a href="{{ url_for(post.path) }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a>
+                      <a href="{{ url_for(post.path) }}" title="{{ post.title }}" target="">{{ post.title }}</a>
                     </li>
                   {% endfor %}
                 </ul>
