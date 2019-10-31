@@ -70,14 +70,16 @@
   <meta name="yandex-verification" content="{{ theme.yandex_site_verification }}" />
 {% endif %}
 
-
 {% if theme.baidu_site_verification %}
   <meta name="baidu-site-verification" content="{{ theme.baidu_site_verification }}" />
 {% endif %}
 
+{% if theme.google_site_verification %}
+  <meta name="google-site-verification" content="{{ theme.google_site_verification }}" />
+{% endif %}
 
-{% if theme.qihu_site_verification %}
-  <meta name="360-site-verification" content="{{ theme.qihu_site_verification }}" />
+{% if theme.360_site_verification %}
+  <meta name="360-site-verification" content="{{ theme.360_site_verification }}" />
 {% endif %}
 
 {% if theme.sogou_site_verification %}
