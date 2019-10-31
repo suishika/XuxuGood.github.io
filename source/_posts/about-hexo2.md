@@ -1,6 +1,6 @@
 title: 基于 TravisCI 实现 Hexo 在 Github 和 Coding 的同步部署
 copyright: true
-abbrlink: 3e5a3bb5
+abbrlink: 3e5a3bb6
 date: 2019-10-12 14:43:34
 tags:
   - Hexo
