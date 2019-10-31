@@ -30,7 +30,7 @@ gulp.task('minify-css', function() {
         }))
         .pipe(gulp.dest('./public'));
 });
-// 压缩js !代表排除的js  [!./public/js/**/*min.js']
+// 压缩js !代表排除的js,例如['!./public/js/**/*min.js']
 gulp.task('minify-js', function() {
     return gulp.src(['./public/js/**/.js'])
         .pipe(uglify()) //压缩混淆
