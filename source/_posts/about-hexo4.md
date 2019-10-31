@@ -138,7 +138,7 @@ hexo.extend.filter.register('after_post_render', function (data) {
 # *配置引用*
 &emsp;&emsp;在 `/themes/next/source/css/_common/components/highlight/highlight.styl` 中引入刚才新建的 `macPanel.styl`：
 
-```CSS
+```stylus
 @require "macPanel"
 ```
 &emsp;&emsp;配置在文件的顶部位置即可。
