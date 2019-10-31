@@ -8,8 +8,8 @@ tags:
   - 代码块
   - Next
 categories:
-  - Next
   - Hexo
+  - Next
 top:
 keywords:
   - 代码块
