@@ -19,14 +19,19 @@ description: 对于个人博客来说，优化页面的访问速度是很有必�
 &emsp;&emsp;针对于博文静态资源压缩，介绍一下两种压缩方式，第一种方式是使用Gulp来进行压缩，`Gulp` 是 `Node.js` 下的自动构建工具，通过一列的task执行步骤进行自动流程化处理。第二种方式就是使用由rozbo大佬开发的 `Hexo-Neat` 压缩插件，配置简单，无需额外命令。
 
 &emsp;&emsp;附上大佬的 `Github` 链接：
+
 <a href="https://github.com/rozbo/hexo-neat" class="LinkCard">Hexo-Neat</a>
 
 # *Hexo-Neat使用*
-   1、在站点根目录下安装 `Hexo-Neat`
+
+1、在站点根目录下安装 `Hexo-Neat`
+
 ```CMD
 $ npm install hexo-neat --save
 ```
-   2、在站点配置文件中末尾添加以下相关配置即可，也可以按照自己的需求去自定义配置。
+
+2、在站点配置文件中末尾添加以下相关配置即可，也可以按照自己的需求去自定义配置。
+
 ```BASH
 # hexo-neat
 # 博文压缩
@@ -53,12 +58,16 @@ neat_js:
 ```
 
 # *Gulp使用*
-   1、在站点的根目录下执行以下命令
+
+1、在站点的根目录下执行以下命令
+
 ```CMD
 $ npm install gulp -g
 $ npm install gulp-minify-css gulp-uglify gulp-htmlmin gulp-htmlclean gulp --save
 ```
-   2、在博客根目录下新建 `gulpfile.js` ，并填入以下内容
+
+2、在博客根目录下新建 `gulpfile.js` ，并填入以下内容
+
 ```BASH
 var gulp = require('gulp');
 var minifycss = require('gulp-minify-css');
@@ -112,7 +121,8 @@ gulp.task('minify-images', function() {
 // 默认任务
 gulp.task('default',gulp.series(gulp.parallel('minify-html','minify-css','minify-js','minify-images')));
 ```
-   3、生成博文时执行 `hexo g && gulp` 就会根据 `gulpfile.js` 中的配置，对 `public` 目录中的静态资源文件进行压缩。
+
+3、生成博文时执行 `hexo g && gulp` 就会根据 `gulpfile.js` 中的配置，对 `public` 目录中的静态资源文件进行压缩。
 
 <div class="note success">
   以上就是关于博文静态资源压缩的两种方式，欢迎自由选择引用，如有不明白的地方欢迎下方留言 o(^▽^)o ，谢谢阅读。

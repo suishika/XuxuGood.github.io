@@ -17,10 +17,13 @@ description: Next主题是不带相册功能的，但是我们还想拥有一个
 ---
 
 &emsp;&emsp;首先说一下实现想法，在 [腾讯云开发者平台](https://dev.tencent.com/) 上面创建一个相册库（PS：腾讯云开发者平台是腾讯云与 CODING 共同为开发者打造的云端工具平台，旨在为更多的开发者带去便捷、高效的开发体验，提供包括需求管理、代码编写、代码管理、代码运行的整套系统），当有更新时，提交到腾讯云开发者平台上面，同时在博客 resource 下面生成一个 data.json 来生成所有相册文件的 json 文件，博客读取 data.json 来展示相册
+
 &emsp;&emsp;实现效果链接：
+
 <a href="https://hasaik.com/photos/" class="LinkCard">Photos</a>
 
 # *创建相册*
+
 &emsp;&emsp;在腾讯云开发者平台上面创建一个仓库,命名为 `Blog_Back_Up` (仓库名字随便). 用 `git clone` 把仓库 `clone` 到本地来.
 
 > ***cd Blog_Back_Up***
@@ -33,7 +36,9 @@ description: Next主题是不带相册功能的，但是我们还想拥有一个
 </div>
 
 # *处理图片*
+
 &emsp;&emsp;图片的处理我用 `python` 脚本来处理，这样每次只要执行脚本就可以了。如果您的电脑没有 `Python` ，自行上网搜索安装教程，一搜一大把。
+
 ```Python
 #coding: utf-8
 from PIL import Image
@@ -247,12 +252,17 @@ if __name__ == "__main__":
     git_operation()    # 提交到github仓库
     handle_photo()     # 将文件处理成json格式，存到博客仓库中
 ```
+
 &emsp;&emsp;其中 `../xuxugood.github.io/source/photos/data.json` 是我博客地址，这里换成你的博客地址。
+
 &emsp;&emsp;***使用方法***：执行命令 `python3 tool.py` ，因为我用的是 `python3` 这里可以根据你的 `python` 版本来使用。
+
 &emsp;&emsp;***QA***： 如果出现 `from PIL import Image` 这种报错，说明没有 PIL 这个库，执行 `python3 -m pip install Pillow`
 
 # *增加相册style*
+
 &emsp;&emsp;在 Next 主题下面增加 `photo.swig` 页面，路径如下 `next/layout`
+
 ```BASH
 {% extends '_layout.swig' %}
 {% import '_macro/post-collapse.swig' as post_template %}
@@ -284,7 +294,9 @@ if __name__ == "__main__":
   {{ sidebar_template.render(false) }}
 {% endblock %}
 ```
+
 # *生成相册页面*
+
 &emsp;&emsp;生成相册页面 `hexo new page photos`，修改 `photos` 下的 `index.md` 文件如下
 
 ```BASH
@@ -316,20 +328,28 @@ comments: false
   })()
 </script>
 ```
+
 &emsp;&emsp;其中 `<a href="https://xuxugood.github.io" target="_blank" class="open-ins">图片正在加载中…</a>` 中的 url 替换成你的博客网址。
+
 &emsp;&emsp;需要三个 css 文件和一个 js 文件放在 photos 文件夹下，其文件都在我的 [腾讯云开发者平台](https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/tree/master/source/photos) 上面，需要修改 `ins.js` 的 120 和 121 行的 url 为你腾讯云开发者平台图片的网址。
 
 # *查看相册插件 photoswipe*
+
 &emsp;&emsp;上面 `index.md` 中加入了两个 css 文件，这是我们用 photoswipe 查看相册用到的，具体可以参考网址 [photoswipe](https://photoswipe.com/) 。这里我们已经把 css 文件加上了，之后我们要加上 js 文件 `photoswipe.min.js` 和 `photoswipe-ui-default.min.js`，js 资源下载地址 [photoswipe](https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/tree/master/source/photoswipe) ，js 存放路径为 `next/source/js/src`
 
 # *引用 js 文件*
+
 &emsp;&emsp;在 `layout/_scripts/pages/post-details.swig` 中插入
+
 ```BASH
 <script src="{{ url_for(theme.js) }}/src/photoswipe.min.js?v={{ theme.version }}"></script>
 <script src="{{ url_for(theme.js) }}/src/photoswipe-ui-default.min.js?v={{ theme.version }}"></script>
 ```
+
 # *在根目录加入标签*
+
 &emsp;&emsp;在 `_layout.swig` 中的body标签里最前面插入以下内容
+
 ```BASH
 {% if page.type === "photos" %}
 <!-- Root element of PhotoSwipe. Must have class pswp. -->
@@ -373,9 +393,11 @@ comments: false
 </div>
 {% endif %}
 ```
+
 &emsp;&emsp;至此相册查看插件 photoswipe 已经配置完毕。
 
 # *整个流程使用*
+
    * 在 Blog_Back_Up 里面加入图片,图片路径在 photos 里面 图片命名方式 yyyy-MM-dd_des.jpg/jpeg/gif/png
    * 执行 python3 tool.py
    * 切换到博客 resource 目录下
