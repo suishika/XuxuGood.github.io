@@ -5,6 +5,7 @@ copyright: true
 abbrlink: 495d0b23
 date: 2019-10-13 12:52:32
 tags:
+  - Hexo
   - Gulp
   - Hexo-Neat
 categories:
