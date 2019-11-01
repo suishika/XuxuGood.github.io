@@ -186,13 +186,13 @@
 {% include 'head/custom-head.swig' %}
 
 <!-- 设置文章需要密码访问 -->
-<script>
-    (function(){
-        if('{{ page.password }}'){
-            if (prompt('请输入文章密码') !== '{{ page.password }}'){
-                alert('密码错误！');
-                history.back();
-            }
-        }
-    })();
-</script>
+<!--<script>-->
+    <!--(function(){-->
+        <!--if('{{ page.password }}'){-->
+            <!--if (prompt('请输入文章密码') !== '{{ page.password }}'){-->
+                <!--alert('密码错误！');-->
+                <!--history.back();-->
+            <!--}-->
+        <!--}-->
+    <!--})();-->
+<!--</script>-->

@@ -103,6 +103,11 @@
           {% block sidebar %}{% endblock %}
         {% endif %}
       </div>
+
+      <!-- 这个是我自己写的swig，因为需要得到post的password参数，名字自己随便起。-->
+      <!-- 如果博客中加入了pjax需要放在pjax的container中，每次刷新会重新加载container中的内容，也就默认重新加载我们这个简单的js了，如果没有加入pjax的话，位置就不重要了 -->
+     {% include 'password.swig' %}
+
     </main>
 
     <footer id="footer" class="footer">
