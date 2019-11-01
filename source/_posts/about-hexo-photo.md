@@ -13,6 +13,9 @@ categories:
   - Photos
 top:
 keywords:
+  - Hexo
+  - Next
+  - Photos
 description: Next主题是不带相册功能的，但是我们还想拥有一个自己的小相册，怎么办呢，经过一番资料的查找与爬坑，相册功能终于搭建成功，接下来为大家分享一下如何实现。
 ---
 
