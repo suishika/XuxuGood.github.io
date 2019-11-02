@@ -80,5 +80,120 @@
             });
         }
     }
+
+    //相册密码操作
+    //暂时储存相册中的内容
+    var div2 = $('.instagram2');
+    var div3 = $('.instagram3');
+   function checkPassword(val) {
+
+           if (val == 2) {
+               if ('{{ page.ownPhotoPassword }}') {
+                     //如果页面已经输入密码且正确无需再次输入
+                     if ($('#ownPhotoPassword').val() == '{{ page.ownPhotoPassword }}') {
+                         var loadScript = function (path) {
+                             var $script = document.createElement('script')
+                             document.getElementsByTagName('body')[0].appendChild($script)
+                             $script.setAttribute('src', path)
+                         }
+                         setTimeout(function () {
+                             loadScript('./ins.js')
+                         }, 0)
+                         return
+                     }
+                   //将相册内容删除
+                   div2.remove();
+                   //将相册删除后，向原来相册的地方添加，应该出现的提示用户输入密码的样式
+                   $('#-2').append(
+                       '<span class="description" value="请输入密码，然后按 Enter 键欣赏" style="font-style: oblique;font-weight: bold;border: none;display: block;' +
+                       'width: 60%;margin: 0 auto;text-align: center;outline: none;margin-bottom: 40px;resize:none ">' +
+                       '<i class="fa fa-heartbeat" id="myheartbeat"></i>' +
+                       '请输入密码，然后按 Enter 键欣赏' +
+                       '<i class="fa fa-heartbeat" id="myheartbeat"></i>' +
+                       '</span>' +
+                       '<div class="qiang" style="height: 100px;width: 60%;margin:0 auto">' +
+                       '<input class="ownPhotoPassword" onkeydown="keyup_submit(event);"  type="password" autocomplete="new-password" autofocus="autofocus" value="" style="border-radius: 5px;height: 30px;border: none;display: block;border-bottom: 1px solid #ccc;' +
+                       'margin: 0 auto;outline: none;width:95%"/>' +
+                       '</div>')
+               }
+           } else {
+               if ('{{ page.babyPhotoPassword }}') {
+                    //如果页面已经输入密码且正确无需再次输入
+                    if ($('#babyPhotoPassword').val() == '{{ page.babyPhotoPassword }}') {
+                        var loadScript = function (path) {
+                            var $script = document.createElement('script')
+                            document.getElementsByTagName('body')[0].appendChild($script)
+                            $script.setAttribute('src', path)
+                        }
+                        setTimeout(function () {
+                            loadScript('./ins.js')
+                        }, 0)
+                        return
+                    }
+                   //将相册内容删除
+                   div3.remove();
+                   //将相册删除后，向原来相册的地方添加，应该出现的提示用户输入密码的样式
+                   $('#-3').append(
+                       '<span class="description" value="请输入密码，然后按 Enter 键欣赏" style="font-style: oblique;font-weight: bold;border: none;display: block;' +
+                       'width: 60%;margin: 0 auto;text-align: center;outline: none;margin-bottom: 40px;resize:none ">' +
+                       '<i class="fa fa-heartbeat" id="myheartbeat"></i>' +
+                       '请输入密码，然后按 Enter 键欣赏' +
+                       '<i class="fa fa-heartbeat" id="myheartbeat"></i>' +
+                       '</span>' +
+                       '<div class="qiang" style="height: 100px;width: 60%;margin:0 auto">' +
+                       '<input class="babyPhotoPassword" onkeydown="keyup_submit(event);" type="password" autocomplete="new-password" autofocus="autofocus" value="" style="border-radius: 5px;height: 30px;border: none;display: block;border-bottom: 1px solid #ccc;' +
+                       'margin: 0 auto;outline: none;width:95%"/>' +
+                       '</div>')
+               }
+           }
+       }
     password();
+
+    //绑定enter键按下后离开的事件
+    function keyup_submit(e) {
+        var evt = window.event || e;
+        if (evt.keyCode == 13 && $('.ownPhotoPassword').length > 0) {
+            //回车事件
+            if ($('.ownPhotoPassword').val() == '{{ page.ownPhotoPassword }}') {
+                $("#ownPhotoPassword").val($(".ownPhotoPassword").val())
+                //恢复相册内容
+                $('#-2').append(div2)
+                //删除本页面的输入密码组件
+                $(".description").remove();
+                $(".qiang").remove();
+                //$(".ownPhotoPassword").remove();
+                var loadScript = function (path) {
+                    var $script = document.createElement('script')
+                    document.getElementsByTagName('body')[0].appendChild($script)
+                    $script.setAttribute('src', path)
+                }
+                setTimeout(function () {
+                    loadScript('./ins.js')
+                }, 0)
+            } else {
+                alert("对不起，密码输入错误。")
+            }
+        }
+        if (evt.keyCode == 13 && $('.babyPhotoPassword').length > 0) {
+            if ($('.babyPhotoPassword').val() == '{{ page.babyPhotoPassword }}') {
+                $("#babyPhotoPassword").val($(".babyPhotoPassword").val())
+                //恢复相册内容
+                $('#-3').append(div3)
+                //删除本页面的输入密码组件
+                $(".description").remove();
+                $(".qiang").remove();
+                //$(".babyPhotoPassword").remove();
+                var loadScript = function (path) {
+                    var $script = document.createElement('script')
+                    document.getElementsByTagName('body')[0].appendChild($script)
+                    $script.setAttribute('src', path)
+                }
+                setTimeout(function () {
+                    loadScript('./ins.js')
+                }, 0)
+            } else {
+                alert("对不起，密码输入错误。")
+            }
+        }
+    }
 </script>
