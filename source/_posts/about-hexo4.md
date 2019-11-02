@@ -10,7 +10,6 @@ tags:
   - Next
 categories:
   - Hexo
-  - Next
 top:
 keywords:
   - 代码块

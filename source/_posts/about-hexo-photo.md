@@ -10,7 +10,6 @@ tags:
   - Photos
 categories:
   - Hexo
-  - Photos
 top:
 keywords:
   - Hexo

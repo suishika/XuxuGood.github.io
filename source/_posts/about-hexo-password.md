@@ -11,8 +11,6 @@ tags:
   - Security
 categories:
   - Hexo
-  - Password
-  - Security
 top:
 keywords:
   - Hexo
