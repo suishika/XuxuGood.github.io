@@ -976,22 +976,10 @@ carousel:
   item: [
     {
       'link': '#',
-      'img': 'https://s2.ax1x.com/2019/09/25/uEx9TU.gif'
+      'img': 'https://s2.ax1x.com/2019/10/30/K4ViZT.jpg'
     },
     {
-      'link': 'https://leafjame.github.io/photos/',
-      'img': 'https://s2.ax1x.com/2019/09/22/u9cKXQ.png'
+      'link': '#',
+      'img': 'https://s2.ax1x.com/2019/10/30/K4ERaD.jpg'
     },
-    {
-      'link': 'https://leafjame.github.io/tags/Hexo-NexT/',
-      'img': 'https://s2.ax1x.com/2019/09/22/u9HFxA.gif'
-    },
-    {
-      'link': 'https://leafjame.github.io/posts/2114475547.html',
-      'img': 'https://s2.ax1x.com/2019/09/22/u9LYZt.png'
-    },
-    {
-      'link': 'http://leafjame.github.io/books/',
-      'img': 'https://s2.ax1x.com/2019/09/09/nJO6mR.png'
-    }
   ]

@@ -308,13 +308,13 @@
        {% set act = 0 %}
        {% for item in theme.carousel.item %}
           {% if act===0 %}
-          <a class="item active" href="{{ url_for(item.link) }}" target="_blank" style="height: 100%;">
+          <a class="item active" href="{{ url_for(item.link) }}" target="" style="height: 100%;">
             {# 添加 class="nofancybox" 解决fancybox和图片链接冲突 #}
             <img src="{{item.img}}" class="nofancybox"  style="width: 100%; height: 100%" >
           </a>
           {% set act = 1 %}
           {% elseif act===1 %}
-            <a class="item" href="{{ url_for(item.link) }}" target="_blank" style="height: 100%;">
+            <a class="item" href="{{ url_for(item.link) }}" target="" style="height: 100%;">
               <img src="{{item.img}}" class="nofancybox"  style="width: 100%; height: 100%;" >
             </a>
         {% endif %}
@@ -336,28 +336,28 @@
         <iframe allowtransparency="true" frameborder="0" width="300" height="55" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&amp;z=3&amp;t=1&amp;v=2&amp;d=1&amp;bd=0&amp;k=000000&amp;f=&amp;ltf=009944&amp;htf=cc0000&amp;q=1&amp;e=1&amp;a=1&amp;c=54511&amp;w=300&amp;h=55&amp;align=left"></iframe>
   	   <!-- r热门排行 -->
   	   <div class="my-carousel">
-         <a href="/top/" target="_blank">
+         <a href="/top/" target="">
             <img class="right-siders nofancybox" src="/images/hot.png" width="100%"/>
          </a>
   	   </div>
 
   	   <!-- 时光留影 -->
   	   <div class="my-carousel">
-         <a href="/photos/" target="_blank">
+         <a href="/photos/" target="">
            <img class="right-siders nofancybox" src="/images/time.png"/>
          </a>
   	   </div>
 
       <!-- 推荐阅读 -->
       <div class="my-carousel">
-        <a href="/books/" target="_blank">
+        <a href="/books/" target="">
           <img class="right-siders nofancybox" src="/images/read.png"/>
         </a>
       </div>
 
   	  <!-- 友情链接 -->
   	  <div class="my-carousel">
-        <a href="/links/" target="_blank">
+        <a href="/links/" target="">
           <img class="right-siders nofancybox" src="/images/subscribe.png"/>
         </a>
   	  </div>
