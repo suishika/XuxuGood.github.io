@@ -5,40 +5,30 @@ date: 2019-11-03 14:37:48
 type:
 ---
 
-<div id="top" style="margin-top:80px;">
+<div id="top" style="margin-top:30px;"></div>
 
-</div>
-
-<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-app.js"></script>
-
-<!-- Add Firebase products that you want to use -->
-<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-database.js"></script>
-
-<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>
-
-<script>
-  
-  firebase.initializeApp({
-      apiKey: 'AIzaSyDHD_PQ305bIqPrqf-orffWOZEeFRpGiPA', //你的apiKey
-      projectId: 'xu-blog'  //你的projectId
-   })
-  
-   var title= '';
-   var count = 0;
-   var url = '';
-   const db = firebase.firestore();
-   var collection =  'articles'; //主题配置文件配置的collection //{{ theme.firestore.collection }}';
-   db.collection(collection).orderBy('count', 'desc').limit(10).get().then((querySnapshot) => {
-       querySnapshot.forEach((doc) => {
-       //  console.log(doc.id, " => ", doc.data());
-           title = doc.id;
-           count = doc.data().count;
-           url = doc.data().url;
-           var content="<h5><p>"+"<font color='#1C1C1C'>"+"【文章热度: "+count+" ℃】"+"</font>" + '&emsp;&emsp;' + "<span'><a href='"+url+"'>"+title+"</a></span>"+"</p></h5>";
-           document.getElementById("top").innerHTML+=content
-       });
-   });
-
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script>AV.initialize("hzAfkBUFNE9seXKAOhPaRdUP-MdYXbMMI", "xa0e2UnCCntMcaFveF7BzoCz");</script>
+<script type="text/javascript">
+  var time=0
+  var title=""
+  var url=""
+  var query = new AV.Query('Counter');
+  query.notEqualTo('id',0);
+  query.descending('time');
+  query.limit(1000);
+  query.find().then(function (todo) {
+    for (var i=0;i<1000;i++){
+      var result=todo[i].attributes;
+      time=result.time;
+      title=result.title;
+      url=result.url;
+      var content="<p class='my-article-top'>"+"<font color='#a7a7e5'>"+"➤【热度: " + "</font>" + "<font color='#f1a8ce'>" +time+" ℃】"+"</font>" + "<a href='"+url+"'>"+title+"</a>"+"</p>";
+      document.getElementById("top").innerHTML+=content
+    }
+  }, function (error) {
+    console.log("error");
+  });
 </script>
+
+<style>.post-description { display: none; }</style>

@@ -596,10 +596,10 @@ leancloud_visitors:
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
 # visit https://firebase.google.com/docs/firestore/ to get more information about firestore
 firestore:
-  enable: true
+  enable: false
   collection: articles #required, a string collection name to access firestore database
-  apiKey: AIzaSyDHD_PQ305bIqPrqf-orffWOZEeFRpGiPA #required
-  projectId: xu-blog #required
+  apiKey:  #required
+  projectId:  #required
   bluebird: false #enable this if you want to include bluebird 3.5.1(core version) Promise polyfill
 
 # Show PV/UV of the website/page with busuanzi.
