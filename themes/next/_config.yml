@@ -972,7 +972,7 @@ related_posts:
 # 主页轮播图
 #Home carousel map, from means link, img means picture
 carousel:
-  enable: false
+  enable: true
   item: [
     {
       'link': 'http://news.163.com/special/zgdj_70/',
