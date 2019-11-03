@@ -584,8 +584,8 @@ rating:
 # 安全问题：https://leaferx.online/2018/02/11/lc-security/
 leancloud_visitors:
   enable: true
-  app_id: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz #<app_id> #国际版
-  app_key: 7xvFncnnyG2QI60iDY3E4PuO #<app_key>
+  app_id: hzAfkBUFNE9seXKAOhPaRdUP-MdYXbMMI #<app_id> #国际版
+  app_key: xa0e2UnCCntMcaFveF7BzoCz #<app_key>
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
@@ -975,7 +975,7 @@ carousel:
   enable: true
   item: [
     {
-      'link': 'http://news.163.com/special/zgdj_70/',
+      'link': '#',
       'img': 'https://s2.ax1x.com/2019/09/25/uEx9TU.gif'
     },
     {
