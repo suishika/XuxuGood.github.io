@@ -355,7 +355,7 @@
         </a>
       </div>
 
-  	  <!-- 生活日常 -->
+  	  <!-- 友情链接 -->
   	  <div class="my-carousel">
         <a href="/links/" target="_blank">
           <img class="right-siders nofancybox" src="/images/subscribe.png"/>
