@@ -1,5 +1,5 @@
 ---
-title: top
+title: 文章热度排行
 comments: false
 date: 2019-11-03 14:37:48
 type:
@@ -21,8 +21,8 @@ type:
 <script>
   
   firebase.initializeApp({
-      apiKey: 'AIzaSyDKul4ZXXXXX6l6UiHzXXXXvcDsiE', //你的apiKey
-      projectId: 'aXXX5eXXX6b'  //你的projectId
+      apiKey: 'AIzaSyDHD_PQ305bIqPrqf-orffWOZEeFRpGiPA', //你的apiKey
+      projectId: 'xu-blog'  //你的projectId
    })
   
    var title= '';
