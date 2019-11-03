@@ -12,9 +12,9 @@
 }
 
 .right-siders{
-   border-radius: 10px;
+   border-radius: 5px;
    /*margin-top: 5px;*/
-   margin-bottom: 5px;
+   margin-bottom: 10px;
 }
 
 .my-carousel:hover{
@@ -331,10 +331,9 @@
 
 	  </div>
 
-		<div  class="rights" style="width: 30%; height: 280px; margin-right: 0px;margin-left: 20px;float: left;">
+		<div  class="rights" style="width: 28%; height: 280px; margin-right: 0px;margin-left: 20px;float: left;">
   	   <!-- 天气插件 -->
-       <iframe width="300px" scrolling="no" height="50px" frameborder="0" allowtransparency="true" src="//i.tianqi.com/index.php?c=code&id=12&color=%23&bdc=%23&icon=1&py=beijing&num=2&site=12"></iframe>
-
+        <iframe allowtransparency="true" frameborder="0" width="300" height="55" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&amp;z=3&amp;t=1&amp;v=2&amp;d=1&amp;bd=0&amp;k=000000&amp;f=&amp;ltf=009944&amp;htf=cc0000&amp;q=1&amp;e=1&amp;a=1&amp;c=54511&amp;w=300&amp;h=55&amp;align=left"></iframe>
   	   <!-- r热门排行 -->
   	   <div class="my-carousel">
          <a href="/top/" target="_blank">
@@ -349,19 +348,19 @@
          </a>
   	   </div>
 
-  	  <!-- 小小胡同 -->
-  	  <div class="my-carousel">
-        <a href="/xiaohutong/" target="_blank">
-          <img class="right-siders nofancybox" src="/images/xiaohutong.png"/>
-        </a>
-  	  </div>
-
       <!-- 推荐阅读 -->
       <div class="my-carousel">
         <a href="/books/" target="_blank">
           <img class="right-siders nofancybox" src="/images/read.png"/>
         </a>
-     </div>
+      </div>
+
+  	  <!-- 生活日常 -->
+  	  <div class="my-carousel">
+        <a href="/links/" target="_blank">
+          <img class="right-siders nofancybox" src="/images/subscribe.png"/>
+        </a>
+  	  </div>
 
    </div>
 
