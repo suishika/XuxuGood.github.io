@@ -976,10 +976,14 @@ carousel:
   item: [
     {
       'link': 'https://hasaik.com/books/',
-      'img': 'https://s2.ax1x.com/2019/11/03/KXYfl8.png'
+      'img': 'https://s2.ax1x.com/2019/11/04/KvQJv4.png'
     },
     {
-      'link': 'https://hasaik.com/movies/',
-      'img': 'https://s2.ax1x.com/2019/11/03/KXhayF.jpg'
+      'link': 'https://hasaik.com/photos/',
+      'img': 'https://s2.ax1x.com/2019/11/04/Kvt6Hg.png'
+    },
+    {
+      'link': 'https://hasaik.com/categories/Hexo/',
+      'img': 'https://s2.ax1x.com/2019/11/04/KvNNrT.png'
     }
   ]

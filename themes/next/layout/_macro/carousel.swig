@@ -14,7 +14,7 @@
 .right-siders{
    border-radius: 5px;
    /*margin-top: 5px;*/
-   margin-bottom: 10px;
+   margin-bottom: 23px;
 }
 
 .my-carousel:hover{
@@ -292,78 +292,81 @@
 
 <div width="100%" height="320px" style="border: 0px; overflow: hidden; border-radius: 10px; margin-bottom: 25px;" scrolling="no">
 
-	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3500" style="float:left">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3500" style="float:left">
 
-      <!-- 轮播（Carousel）指标 -->
-      <ol class="carousel-indicators">
-      {% set index = 0 %}
-      {% for item in theme.carousel.item %}
-        <li data-target="#myCarousel" data-slide-to="{{index}}"></li>
-        {% set index = index+1 %}
-      {% endfor %}
-      </ol>
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+            {% set index = 0 %}
+            {% for item in theme.carousel.item %}
+            <li data-target="#myCarousel" data-slide-to="{{index}}"></li>
+            {% set index = index+1 %}
+            {% endfor %}
+        </ol>
 
-      <!-- 轮播（Carousel）项目 -->
-      <div class="carousel-inner" style="height: 280px; border-radius: 10px; width: 100%;">
-       {% set act = 0 %}
-       {% for item in theme.carousel.item %}
-          {% if act===0 %}
-          <a class="item active" href="{{ url_for(item.link) }}" target="" style="height: 100%;">
-            {# 添加 class="nofancybox" 解决fancybox和图片链接冲突 #}
-            <img src="{{item.img}}" class="nofancybox"  style="width: 100%; height: 100%" >
-          </a>
-          {% set act = 1 %}
-          {% elseif act===1 %}
-            <a class="item" href="{{ url_for(item.link) }}" target="" style="height: 100%;">
-              <img src="{{item.img}}" class="nofancybox"  style="width: 100%; height: 100%;" >
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner" style="height:100%;border-radius: 10px; width: 100%;">
+            {% set act = 0 %}
+            {% for item in theme.carousel.item %}
+            {% if act===0 %}
+            <a class="item active" href="{{ url_for(item.link) }}" target="_blank" style="height: 100%;">
+                {# 添加 class="nofancybox" 解决fancybox和图片链接冲突 #}
+                <img src="{{item.img}}" class="nofancybox" style="width: 100%;height: 100%; ">
             </a>
-        {% endif %}
-      {% endfor %}
-      </div>
+            {% set act = 1 %}
+            {% elseif act===1 %}
+            <a class="item" href="{{ url_for(item.link) }}" target="_blank" style="height: 100%;">
+                <img src="{{item.img}}" class="nofancybox" style="width: 100%; height: 100%;">
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
 
-      <!-- 轮播（Carousel）导航 -->
-      <a class="left carousel-control" data-target="#myCarousel" href="javascript:void(0);" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      </a>
-      <a class="right carousel-control" data-target="#myCarousel" href="javascript:void(0);" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      </a>
-
-	  </div>
-
-		<div  class="rights" style="width: 28%; height: 280px; margin-right: 0px;margin-left: 20px;float: left;">
-  	   <!-- 天气插件 -->
-        <iframe allowtransparency="true" frameborder="0" width="300" height="55" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&amp;z=3&amp;t=1&amp;v=2&amp;d=1&amp;bd=0&amp;k=000000&amp;f=&amp;ltf=009944&amp;htf=cc0000&amp;q=1&amp;e=1&amp;a=1&amp;c=54511&amp;w=300&amp;h=55&amp;align=left"></iframe>
-  	   <!-- r热门排行 -->
-  	   <div class="my-carousel">
-         <a href="/top/" target="">
-            <img class="right-siders nofancybox" src="/images/hot.png" width="100%"/>
-         </a>
-  	   </div>
-
-  	   <!-- 时光留影 -->
-  	   <div class="my-carousel">
-         <a href="/photos/" target="">
-           <img class="right-siders nofancybox" src="/images/time.png"/>
-         </a>
-  	   </div>
-
-      <!-- 推荐阅读 -->
-      <div class="my-carousel">
-        <a href="/books/" target="">
-          <img class="right-siders nofancybox" src="/images/read.png"/>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="left carousel-control" data-target="#myCarousel" href="javascript:void(0);" role="button"
+           data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         </a>
-      </div>
-
-  	  <!-- 友情链接 -->
-  	  <div class="my-carousel">
-        <a href="/links/" target="">
-          <img class="right-siders nofancybox" src="/images/subscribe.png"/>
+        <a class="right carousel-control" data-target="#myCarousel" href="javascript:void(0);" role="button"
+           data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         </a>
-  	  </div>
 
-   </div>
+    </div>
+
+    <div class="rights" style="width: 28%;height:100%; margin-right: 0px;margin-left: 20px;margin-top: -10px;float: left;">
+        <!-- 天气插件 -->
+        <iframe allowtransparency="true" frameborder="0" width="300" height="55" scrolling="no"
+                src="//tianqi.2345.com/plugin/widget/index.htm?s=2&amp;z=3&amp;t=1&amp;v=2&amp;d=1&amp;bd=0&amp;k=000000&amp;f=&amp;ltf=009944&amp;htf=cc0000&amp;q=1&amp;e=1&amp;a=1&amp;c=54511&amp;w=300&amp;h=55&amp;align=left"></iframe>
+
+        <!-- 热门排行 -->
+        <div class="my-carousel">
+            <a href="/top/" target="_blank">
+                <img class="right-siders nofancybox" src="/images/hot.png" width="100%"/>
+            </a>
+        </div>
+
+        <!-- 时光留影 -->
+        <div class="my-carousel">
+            <a href="/photos/" target="_blank">
+                <img class="right-siders nofancybox" src="/images/time.png" width="100%"/>
+            </a>
+        </div>
+
+        <!-- 推荐阅读 -->
+        <div class="my-carousel">
+            <a href="/books/" target="_blank">
+                <img class="right-siders nofancybox" src="/images/read.png" width="100%"/>
+            </a>
+        </div>
+
+        <!-- 友情链接 -->
+        <div class="my-carousel">
+            <a href="/links/" target="_blank">
+                <img class="right-siders nofancybox" src="/images/subscribe.png" width="100%"/>
+            </a>
+        </div>
+
+    </div>
 
 </div>
-
 {% endif %}
