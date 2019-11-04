@@ -6,7 +6,7 @@
   <script type="text/javascript">
     new Valine({
         lang: 'zh-cn',
-        admin_email: '793458585@qq.com', //博主邮箱
+        admin_email: '22476705@qq.com', //博主邮箱
         el: '#comments' ,
         appId: '{{ theme.valine.appid }}',
         appKey: '{{ theme.valine.appkey }}',

@@ -402,9 +402,9 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
-  appid: your_appid  #<app_id> #国际版
-  appkey: your_appkey  #<app_key>
+  enable: true
+  appid: hzAfkBUFNE9seXKAOhPaRdUP-MdYXbMMI  #<app_id> #国际版
+  appkey: xa0e2UnCCntMcaFveF7BzoCz  #<app_key>
   notify: false # mail notifier: https://valine.js.org/notify.html # 20190903使用Valine-Admin：参考 https://deserts.io/valine-admin-document/
   verify: false # Verification code //使用Valine-Admin
   placeholder: '&#x270d;写评论'  # comment box placeholder
@@ -422,7 +422,7 @@ valine:
 #livere_uid: your uid
 
 # 来必力评论 https://www.livere.com/insight/communite
-livere_uid: MTAyMC80NzAyNy8yMzUyNw==
+#livere_uid: MTAyMC80NzAyNy8yMzUyNw==
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
