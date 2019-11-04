@@ -403,7 +403,7 @@ changyan:
 # more info please open https://valine.js.org
 valine:
   enable: true
-  appid: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz  #<app_id> #国际版
+  appid: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz  #<app_id>
   appkey: 7xvFncnnyG2QI60iDY3E4PuO  #<app_key>
   notify: false # mail notifier: https://valine.js.org/notify.html # 20190903使用Valine-Admin：参考 https://deserts.io/valine-admin-document/
   verify: false # Verification code //使用Valine-Admin
