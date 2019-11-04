@@ -403,8 +403,8 @@ changyan:
 # more info please open https://valine.js.org
 valine:
   enable: true
-  appid: hzAfkBUFNE9seXKAOhPaRdUP-MdYXbMMI  #<app_id> #国际版
-  appkey: xa0e2UnCCntMcaFveF7BzoCz  #<app_key>
+  appid: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz  #<app_id> #国际版
+  appkey: 7xvFncnnyG2QI60iDY3E4PuO  #<app_key>
   notify: false # mail notifier: https://valine.js.org/notify.html # 20190903使用Valine-Admin：参考 https://deserts.io/valine-admin-document/
   verify: false # Verification code //使用Valine-Admin
   placeholder: '&#x270d;写评论'  # comment box placeholder
@@ -583,7 +583,7 @@ rating:
 # 安全问题：https://leaferx.online/2018/02/11/lc-security/
 leancloud_visitors:
   enable: true
-  app_id: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz #<app_id> #国际版
+  app_id: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz #<app_id>
   app_key: 7xvFncnnyG2QI60iDY3E4PuO #<app_key>
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
