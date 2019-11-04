@@ -8,7 +8,7 @@ type:
 <div id="top" style="margin-top:30px;"></div>
 
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-<script>AV.initialize("hzAfkBUFNE9seXKAOhPaRdUP-MdYXbMMI", "xa0e2UnCCntMcaFveF7BzoCz");</script>
+<script>AV.initialize("gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz", "7xvFncnnyG2QI60iDY3E4PuO");</script>
 <script type="text/javascript">
   var time=0
   var title=""
