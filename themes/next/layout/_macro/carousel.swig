@@ -340,7 +340,7 @@
 
         <!-- 热门排行 -->
         <div class="my-carousel">
-            <a href="/top/" target="_blank">
+            <a href="/top/" target="">
                 <img class="right-siders nofancybox" src="/images/hot.png" width="100%"/>
             </a>
         </div>

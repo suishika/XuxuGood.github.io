@@ -411,8 +411,8 @@ valine:
   avatar: monsterid # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
-  visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
-  comment_count: true # if false, comment count will only be displayed in post page, not in home page
+#  visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
+#  comment_count: true # if false, comment count will only be displayed in post page, not in home page
 
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc
@@ -588,9 +588,11 @@ leancloud_visitors:
   app_id: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz #<app_id>
   app_key: 7xvFncnnyG2QI60iDY3E4PuO #<app_key>
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
-  # If you don't care about security in leancloud counter and just want to use it directly
-  # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
   security: false
+  # 由于Leancloud免费版的云引擎存在请求线程数和运行时间限制以及休眠机制，
+  # 很多时候访客数量加载会很慢。
+  # 如果设置betterPerformance为true，
+  # 则网页则会在提交请求之前直接显示访客人数为查询到的人数+1，以增加用户体验。
   betterPerformance: true
 
 # Another tool to show number of visitors to each article.
