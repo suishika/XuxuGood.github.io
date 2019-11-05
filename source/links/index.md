@@ -20,3 +20,9 @@ date: 2019-10-18 16:46:39
 </div>
 
 <font color="red">(_PS：可根据您站点的样式作修改_)</font>
+
+<style>
+.posts-expand .post-body h2::before {
+  display: none
+}
+</style>
