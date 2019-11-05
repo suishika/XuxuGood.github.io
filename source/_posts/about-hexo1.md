@@ -15,7 +15,7 @@ description: Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用
 
 &emsp;&emsp;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](http://daringfireball.net/projects/markdown/)（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
 
-## *安装Hexo*
+# *安装Hexo*
 
 &emsp;&emsp;建立 Hexo 只需要几分钟，安装 Hexo 非常简单。但是，您首先需要安装其他一些东西。
    * [Node.js](http://nodejs.org/) &nbsp;&nbsp;(Node.js 版本需不低于 8.6，建议使用 Node.js 10.0 及以上版本)
@@ -29,7 +29,7 @@ $ npm install -g hexo-cli
 
 &emsp;&emsp;如果没有，那就一起来看下面吧 (`这里只说一下 windows 的安装，因为本人现在比较穷，买不起mac啊 テ_デ，其他相关教程大家就去搜搜很多的。`)
 
-### &emsp;&emsp;*安装git*
+## *安装git*
 
 ![安装git](https://s2.ax1x.com/2019/10/21/KlpZvD.md.png)
 <div class="image-caption">安装git.png</div>
@@ -41,7 +41,7 @@ $ npm install -g hexo-cli
 ```CMD
 git --version
 ```
-### &emsp;&emsp;*安装Node.js*
+## *安装Node.js*
 
 ![安装Node.js](https://s2.ax1x.com/2019/10/21/KlpmKe.md.png)
 <div class="image-caption">安装Node.js.png</div>
@@ -54,7 +54,7 @@ git --version
 node -v
 ```
 
-### &emsp;&emsp;*安装Hexo*
+## *安装Hexo*
 
 &emsp;&emsp;所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。
 
@@ -62,7 +62,7 @@ node -v
 $ npm install -g hexo-cli
 ```
 
-## *利用Hexo初始化我们的站点跟目录(文件)*
+# *利用Hexo初始化我们的站点跟目录(文件)*
 
 ```CMD
 $ hexo init <文件夹>
