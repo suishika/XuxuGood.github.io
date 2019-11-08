@@ -52,6 +52,9 @@ comments: false #是否开启评论
 </div>
 
 <style>
+    .posts-expand .post-body h3:before {
+        content: "";
+    }
     .box {
         overflow: hidden;
         position: relative;
