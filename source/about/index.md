@@ -71,8 +71,6 @@ type: "about"
     #das {
         position: relative;
         width: 50px;
-    / / height: 40 px;
-    / / margin: 100 px;
         transition: all .3s
     }
 
