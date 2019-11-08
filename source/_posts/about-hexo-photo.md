@@ -400,8 +400,8 @@ comments: false
 
 # *整个流程使用*
 
-   * 在 Blog_Back_Up 里面加入图片,图片路径在 photos 里面 图片命名方式 yyyy-MM-dd_des.jpg/jpeg/gif/png
-   * 执行 python3 tool.py
-   * 切换到博客 resource 目录下
-   * 在 photos 里面生成了 data.json 文件，提交到腾讯云开发者平台仓库上面
-   * 输入网址查看照片
+   1. 在 Blog_Back_Up 里面加入图片,图片路径在 photos 里面 图片命名方式 yyyy-MM-dd_des.jpg/jpeg/gif/png
+   2. 执行 python3 tool.py
+   3. 切换到博客 resource 目录下
+   4. 在 photos 里面生成了 data.json 文件，提交到腾讯云开发者平台仓库上面
+   5. 输入网址查看照片
