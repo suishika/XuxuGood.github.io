@@ -8,6 +8,12 @@ type: "about"
 **_优秀的人，不是不合群，而是他们合群的人里没有你_**
 </blockquote>
 
+<video poster="https://s2.ax1x.com/2019/11/08/MZi1jf.md.jpg" 
+    src="https://hasaik.com/video/dreamitpossible.mp4" 
+    style="max-height:70%;max-width:70%;display:block;margin-left:auto;margin-right:auto" controls="" loop="" preload="meta">
+    Your browser does not support the video tag.
+</video>
+
 **About me**
    *   90后小码农
    *   Java 编程菜鸟
