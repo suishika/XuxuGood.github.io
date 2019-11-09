@@ -1,5 +1,5 @@
 ---
-title:
+title: 关于博主
 date: 2019-10-10 16:43:04
 type: "about"
 ---
@@ -99,6 +99,9 @@ type: "about"
         top: 0;
         transform: rotate(45deg);
         transform-origin: 100% 100%
+    }
+    .post-title{
+        display: none
     }
 </style>
 <script>

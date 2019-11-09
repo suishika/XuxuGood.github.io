@@ -164,12 +164,14 @@ mylinks:
   avatar: https://leafjame.github.io/images/beichen.png  #友链头像
   site: https://leafjame.github.io  #友链地址
   info: 因心造境，风云由我！  #友链说明
+- nickname: Sanarous
+  avatar: https://site-1258928558.cos.ap-guangzhou.myqcloud.com/touxiang.jpg
+  site: https://bestzuo.cn
+  info: 码农人生
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
-
 avatar: /images/avatar.jpg
 
 # Table Of Contents in the Sidebar

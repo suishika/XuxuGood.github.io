@@ -25,4 +25,7 @@ date: 2019-10-18 16:46:39
 .posts-expand .post-body h2::before {
   display: none
 }
+.post-body a:hover{
+border-bottom: 0px solid #fc6423;
+}
 </style>
