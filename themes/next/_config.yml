@@ -618,7 +618,7 @@ busuanzi_count:
   site_uv_footer: 人次
   # custom pv span for the whole site
   site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>总访问量
+  site_pv_header: <i class="fa fa-paw"></i>总访问量
   site_pv_footer: 次
   # custom pv span for one page only
   page_pv: false #使用firestore统计pv及排行

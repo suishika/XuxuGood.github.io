@@ -57,7 +57,7 @@
             ).append(
               $('<span>').addClass('post-meta-item-icon').append(
                // $('<i>').addClass('fa fa-users')
-                $('<i>').addClass('fa fa-eye')
+                $('<i>').addClass('fa fa-paw')
               )
               ).append($('<span>').text('{{ __("post.visitors")}} ' + count + ' 次'))
           )
