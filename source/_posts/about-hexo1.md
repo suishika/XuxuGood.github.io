@@ -88,9 +88,7 @@ hexo clean: 顾名思义就是清除缓存的意思了啦，这招一般在你�
 接下来看看 你博客的初步成果吧。
 
 进入 `blog` 文件根目录:
-
 1. 执行命令: `hexo g` 和 `hexo s`
-
 2. 然后在你的浏览器输入`http://localhost:4000`，查看你的博客。
 
 ![blog首页](https://s2.ax1x.com/2019/10/21/KlAJFH.png)
