@@ -16,9 +16,9 @@ keywords:
   - Hexo-Neat
 description: 对于个人博客来说，优化页面的访问速度是很有必要的，如果打开你的个人站点，加载个首页就要十几秒，页面长时间处于空白状态，想必没什么人能够忍受得了吧。个人觉得，如果能把页面的加载时间控制在三四秒内，就很不错了。
 ---
-&emsp;&emsp;针对于博文静态资源压缩，介绍一下两种压缩方式，第一种方式是使用Gulp来进行压缩，`Gulp` 是 `Node.js` 下的自动构建工具，通过一列的task执行步骤进行自动流程化处理。第二种方式就是使用由rozbo大佬开发的 `Hexo-Neat` 压缩插件，配置简单，无需额外命令。
+针对于博文静态资源压缩，介绍一下两种压缩方式，第一种方式是使用Gulp来进行压缩，`Gulp` 是 `Node.js` 下的自动构建工具，通过一列的task执行步骤进行自动流程化处理。第二种方式就是使用由rozbo大佬开发的 `Hexo-Neat` 压缩插件，配置简单，无需额外命令。
 
-&emsp;&emsp;附上大佬的 `Github` 链接：
+附上大佬的 `Github` 链接：
 
 <a href="https://github.com/rozbo/hexo-neat" class="LinkCard">Hexo-Neat</a>
 

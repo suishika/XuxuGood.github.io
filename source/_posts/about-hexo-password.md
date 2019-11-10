@@ -20,9 +20,9 @@ keywords:
 password:
 description: 介绍一种自定义博文加密方式，不需要插件，极简模式，相对安全。
 ---
-&emsp;&emsp;介绍一种自定义博文加密方式，不需要插件，极简模式，相对安全。
+介绍一种自定义博文加密方式，不需要插件，极简模式，相对安全。
 
-&emsp;&emsp;先看一下效果：
+先看一下效果：
 
 ![密码](https://s2.ax1x.com/2019/11/01/KHMRr8.png)
 
@@ -141,7 +141,7 @@ description: 介绍一种自定义博文加密方式，不需要插件，极简�
 ```
 
 # *使用*
-&emsp;&emsp;新建一个 test.md ，内容如下
+新建一个 test.md ，内容如下
 
 ```MD
 title: 测试
@@ -154,8 +154,8 @@ password: aaa
 除了有才，就只剩下那无可比拟的颜值。
 ```
 
-&emsp;&emsp;上面的 password 后面的值自定义。
+上面的 password 后面的值自定义。
 
 # *注意*
 
-&emsp;&emsp;如果自己的博客源码中的这篇文章上传到 github ，密码也就公诸于世了，可以在 push 到 github 的时候将这篇文章忽略。
+如果自己的博客源码中的这篇文章上传到 github ，密码也就公诸于世了，可以在 push 到 github 的时候将这篇文章忽略。

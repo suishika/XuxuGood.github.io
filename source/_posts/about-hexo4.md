@@ -17,11 +17,11 @@ keywords:
 description: 偶然间发现一款不错的文章代码块样式，类似Mac的面板效果。能设置阴影效果和实现文本编辑功能，不过文本只存在浏览器页面上，不会真正保存。配置的方式也很简单，觉得不错的朋友可以试一下。
 ---
 
-&emsp;&emsp;偶然间发现一款不错的文章代码块样式，类似Mac的面板效果。能设置阴影效果和实现文本编辑功能，不过文本只存在浏览器页面上，不会真正保存。配置的方式也很简单，觉得不错的朋友可以试一下。
+偶然间发现一款不错的文章代码块样式，类似Mac的面板效果。能设置阴影效果和实现文本编辑功能，不过文本只存在浏览器页面上，不会真正保存。配置的方式也很简单，觉得不错的朋友可以试一下。
 
 # *引入 JS*
 
-&emsp;&emsp;这里需要新建两个 js 文件 `events.js` 和 `codeblock.js` ，路径位于 `/themes/next/scripts/` 包下。
+这里需要新建两个 js 文件 `events.js` 和 `codeblock.js` ，路径位于 `/themes/next/scripts/` 包下。
 
 <div class="note success">
 
@@ -38,7 +38,7 @@ hexo.on('new', function(data){
 });
 ```
 
-&emsp;&emsp;这个js会在你敲 `hexo new xxx` 命令后，调用本地的MarkDown编辑器打开新建的md文件 `xxx`
+这个js会在你敲 `hexo new xxx` 命令后，调用本地的MarkDown编辑器打开新建的md文件 `xxx`
 
 <div class="note success">
 
@@ -72,7 +72,7 @@ hexo.extend.filter.register('after_post_render', function (data) {
 
 # *引入 CSS*
 
-&emsp;&emsp;在 `/themes/next/source/css/_common/components/highlight/` 目录下新建 `macPanel.styl` 文件，内容如下：
+在 `/themes/next/source/css/_common/components/highlight/` 目录下新建 `macPanel.styl` 文件，内容如下：
 
 ```CSS
 /*mac Panel效果代码块相关*/
@@ -135,16 +135,16 @@ hexo.extend.filter.register('after_post_render', function (data) {
 }
 ```
 
-&emsp;&emsp;此css是根据我本地的样式做过调整，注释的代码为原有的，根据需要调整样式即可。
+此css是根据我本地的样式做过调整，注释的代码为原有的，根据需要调整样式即可。
 
 # *配置引用*
 
-&emsp;&emsp;在 `/themes/next/source/css/_common/components/highlight/highlight.styl` 中引入刚才新建的 `macPanel.styl`：
+在 `/themes/next/source/css/_common/components/highlight/highlight.styl` 中引入刚才新建的 `macPanel.styl`：
 
 ```stylus
 @require "macPanel"
 ```
 
-&emsp;&emsp;配置在文件的顶部位置即可。
+配置在文件的顶部位置即可。
 
-&emsp;&emsp;到此Mac Panel配置完成，根据需要可调整主题配置文件中的 `highlight_theme` 的值，选择自己喜欢的样式。
+到此Mac Panel配置完成，根据需要可调整主题配置文件中的 `highlight_theme` 的值，选择自己喜欢的样式。
