@@ -12,7 +12,8 @@
     <div class="custom-logo-site-title">
       <a href="{{ config.root }}"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">{{ config.title }}</span>
+        <div class="site-title"><span class="title1">X</span><span class="title2">u</span><span class="title3">'</span><span class="title4">s </span><span class="title5">B</span><span class="title6">l</span><span class="title7">o</span><span class="title8">g</span></div>
+        <!--<span class="site-title">{{ config.title }}</span>-->
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
