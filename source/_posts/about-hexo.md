@@ -13,7 +13,7 @@ keywords:
   -Hexo
   -优化
 password:
-description:
+description: Hexo博客+Next主题深度优化与定制
 ---
 <div style="max-height:70%;max-width:70%;display:block;margin-left:auto;margin-right:auto">
 
