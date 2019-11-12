@@ -40,7 +40,7 @@ keywords: "Hexo个人博客,NexT美化优化,John Xu博客,Github Pages,博客�
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss: /atom.xml #注意：有一个空格
+#rss: /atom.xml #注意：有一个空格
 
 footer:
   # Specify the date when the site was setup.
