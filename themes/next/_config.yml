@@ -172,6 +172,10 @@ mylinks:
   avatar: https://cdn.jsdelivr.net/gh/longhujing/blog-cdn@1.0/images/avatar.jpg
   site: http://longhujing.github.io
   info: 技术源于积累
+- nickname: 相逢的博客
+  avatar: https://xjh199923.github.io/images/avatar.jpg
+  site: https://xjh199923.github.io
+  info: 大学生 C++ 计算机 追求美好未来！
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
