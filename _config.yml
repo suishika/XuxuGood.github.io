@@ -185,6 +185,8 @@ feed:
   limit: false
   hub:
   content: false
+  content_limit: 150
+  content_limit_delim: ' '
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

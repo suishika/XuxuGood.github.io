@@ -359,9 +359,9 @@
             </a>
         </div>
 
-        <!-- 友情链接 -->
+        <!-- 订阅本站 -->
         <div class="my-carousel">
-            <a href="/links/" target="_blank">
+            <a href="https://mailchi.mp/3ca18a2a9749/xuxuy" target="_blank">
                 <img class="right-siders nofancybox" src="/images/subscribe.png" width="100%"/>
             </a>
         </div>
