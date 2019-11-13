@@ -5,13 +5,13 @@ copyright: true
 abbrlink: ab21860c
 date: 2019-10-17 16:17:56
 tags:
-  -Hexo
+  - Hexo
 categories:
-  -Hexo
+  - Hexo
 top:
 keywords:
-  -Hexo
-  -优化
+  - Hexo
+  - 优化
 password:
 description: Hexo博客+Next主题深度优化与定制
 ---
