@@ -9,7 +9,7 @@ tags:
   - TravisCI
 categories:
   - Hexo
-top: true
+top: 1000
 keywords:
   - Hexo
   - TravisCI
