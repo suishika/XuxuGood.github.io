@@ -23,10 +23,9 @@ description: 偶然间发现一款不错的文章代码块样式，类似Mac的�
 
 这里需要新建两个 js 文件 `events.js` 和 `codeblock.js` ，路径位于 `/themes/next/scripts/` 包下。
 
-<div class="note success">
-
+{% note success %}
 ***events.js 代码：***
-</div>
+{% endnote %}
 
 ```JS
 // mac Panel效果代码块相关
@@ -40,10 +39,9 @@ hexo.on('new', function(data){
 
 这个js会在你敲 `hexo new xxx` 命令后，调用本地的MarkDown编辑器打开新建的md文件 `xxx`
 
-<div class="note success">
-
+{% note success %}
 ***codeblock.js 代码：***
-</div>
+{% endnote %}
 
 ```JS
 // mac Panel效果代码块相关

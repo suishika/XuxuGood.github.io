@@ -31,7 +31,6 @@ $ npm install -g hexo-cli
 ## *安装git*
 
 ![安装git](https://s2.ax1x.com/2019/10/21/KlpZvD.md.png)
-<div class="image-caption">安装git.png</div>
 
 <a href="https://git-scm.com/downloads" class="LinkCard">安装地址</a>
 
@@ -43,7 +42,6 @@ git --version
 ## *安装Node.js*
 
 ![安装Node.js](https://s2.ax1x.com/2019/10/21/KlpmKe.md.png)
-<div class="image-caption">安装Node.js.png</div>
 
 <a href="https://nodejs.org/en/" class="LinkCard">安装地址</a>
 

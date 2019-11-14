@@ -28,14 +28,15 @@ description: Next主题是不带相册功能的，但是我们还想拥有一个
 
 在腾讯云开发者平台上面创建一个仓库,命名为 `Blog_Back_Up` (仓库名字随便). 用 `git clone` 把仓库 `clone` 到本地来.
 
-> ***cd Blog_Back_Up***
+```BASH
+cd Blog_Back_Up
+```
 
 创建 `photos` 和 `min_photos` 两个目录,把要上传的相册图片 放到 `photos` 文件夹下面.
 
-<div class="note info">
-
+{% note info %}
 ***相册图片命名方式 : yyyy-MM-dd_des.jpg/png/jpef/gif. &emsp;eg: 2017-9-18_风景.jpg*** 
-</div>
+{% endnote %}
 
 # *处理图片*
 

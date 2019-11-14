@@ -4,10 +4,9 @@ date: 2019-10-28 11:30:03
 type: life
 comments: false #是否开启评论
 ---
-<blockquote class="blockquote-center">
-
+{% cq %}
 **_Life was like a box of chocolates, you never know what you’re going to get_**
-</blockquote>
+{% endcq %}
 
 <div class="life">
     <div class="row">

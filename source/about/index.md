@@ -3,10 +3,10 @@ title: 关于博主
 date: 2019-10-10 16:43:04
 type: "about"
 ---
-<blockquote class="blockquote-center">
 
+{% cq %}
 **_优秀的人，不是不合群，而是他们合群的人里没有你_**
-</blockquote>
+{% endcq %}
 
 <video poster="https://s2.ax1x.com/2019/11/08/MZi1jf.md.jpg" 
     src="https://hasaik.com/video/dreamitpossible.mp4" 
@@ -28,14 +28,14 @@ type: "about"
    *   GitHub： [https://github.com/XuxuGood](https://github.com/XuxuGood)
 
 **Note**
-<div class="note success">
-    欢迎转载，请在文章页面明显位置给出原文连接，感谢您的阅读
-</div>
+{% note success %}
+欢迎转载，请在文章页面明显位置给出原文连接，感谢您的阅读
+{% endnote %}
 
 **Donate**
-<div class="note success">
-    本站所有文章均免费开放，如您喜欢，可以请我喝杯咖啡
-</div>
+{% note success %}
+本站所有文章均免费开放，如您喜欢，可以请我喝杯咖啡
+{% endnote %}
 
 <div class="share_reward">
     <button id="rewardButton" disable="enable" onclick="dashang()"><span id="dashang">打赏</span></button>
@@ -61,7 +61,9 @@ type: "about"
 
 * * *
 
-> _有什么话要对我说吗？这里是你畅所欲言的地方，可以咨询，可以交流，可以感叹，可以发飙，但 <font color="yellow;">不！可！以！</font>订外卖_
+{% note default %}
+_有什么话要对我说吗？这里是你畅所欲言的地方，可以咨询，可以交流，可以感叹，可以发飙，但 <font color="yellow;">不！可！以！</font>订外卖_
+{% endnote %}
 
 <style>
     #dashang {

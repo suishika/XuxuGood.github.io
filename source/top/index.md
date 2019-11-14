@@ -34,4 +34,5 @@ type:
 
 <style>.post-description {
         display: none;
-    }</style>
+    }
+</style>
