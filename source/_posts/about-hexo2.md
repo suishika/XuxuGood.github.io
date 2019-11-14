@@ -26,7 +26,7 @@ description: 关于TravisCI我这里简单介绍一下，TravisCI是一个在线
 
 ![Travis自动构建流程图](https://s2.ax1x.com/2019/10/21/KlNiCR.png)
 
-# *Github相关操作*
+# Github相关操作
 
 1、按规定仓库名称为 `XXXXX.github.io`，其中 `XXXXX` 为你的用户名，进行创建仓库。
 
@@ -40,7 +40,7 @@ description: 关于TravisCI我这里简单介绍一下，TravisCI是一个在线
 1. 在 Github 上 Setting 中找到 [Personal access tokens](https://github.com/settings/tokens) 设置。
 2. 点 Generate new token，为 `token` 起一个名字，勾选 repo，然后点击生成一个新的 `token` ，并复制下来记录好，待会下面 Travis 配置会用到。（这个只会出现一次！！）
 
-# *Coding相关操作*
+# Coding相关操作
 
 1、因为腾讯云已经收购了 [Coding](https://coding.net) ，所以我们直接在 [腾讯云开发者平台](https://dev.tencent.com/production) 注册账号来管理我们的仓库。
 
@@ -50,7 +50,7 @@ description: 关于TravisCI我这里简单介绍一下，TravisCI是一个在线
 
 ![blog-source](https://s2.ax1x.com/2019/10/22/K34SXV.png)
 
-# *Travis相关操作*
+# Travis相关操作
 
 1、使用 `github ` 帐号登录 [TravisCI](https://travis-ci.org) ，左上方按钮点击同步项目，下方打开需要集成的项目，最后点击齿轮进入项目配置页面
 
