@@ -34,9 +34,9 @@ cd Blog_Back_Up
 
 创建 `photos` 和 `min_photos` 两个目录,把要上传的相册图片 放到 `photos` 文件夹下面.
 
-{% note info %}
+<div class="note info">
 ***相册图片命名方式 : yyyy-MM-dd_des.jpg/png/jpef/gif. &emsp;eg: 2017-9-18_风景.jpg*** 
-{% endnote %}
+</div>
 
 # 处理图片
 

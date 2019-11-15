@@ -28,14 +28,14 @@ type: "about"
    *   GitHub： [https://github.com/XuxuGood](https://github.com/XuxuGood)
 
 **Note**
-{% note success %}
+<div class="note success">
 欢迎转载，请在文章页面明显位置给出原文连接，感谢您的阅读
-{% endnote %}
+</div>
 
 **Donate**
-{% note success %}
+<div class="note success">
 本站所有文章均免费开放，如您喜欢，可以请我喝杯咖啡
-{% endnote %}
+</div>
 
 <div class="share_reward">
     <button id="rewardButton" disable="enable" onclick="dashang()"><span id="dashang">打赏</span></button>
@@ -61,9 +61,9 @@ type: "about"
 
 * * *
 
-{% note default %}
-_有什么话要对我说吗？这里是你畅所欲言的地方，可以咨询，可以交流，可以感叹，可以发飙，但 <font color="yellow;">不！可！以！</font>订外卖_
-{% endnote %}
+<div class="note default">
+有什么话要对我说吗？这里是你畅所欲言的地方，可以咨询，可以交流，可以感叹，可以发飙，但 <font color="yellow;">不！可！以！</font>订外卖
+</div>
 
 <style>
     #dashang {

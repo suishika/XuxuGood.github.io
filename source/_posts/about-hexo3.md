@@ -124,6 +124,6 @@ gulp.task('default',gulp.series(gulp.parallel('minify-html','minify-css','minify
 
 3、生成博文时执行 `hexo g && gulp` 就会根据 `gulpfile.js` 中的配置，对 `public` 目录中的静态资源文件进行压缩。
 
-{% note success %}
+<div class="note success">
 以上就是关于博文静态资源压缩的两种方式，欢迎自由选择引用，如有不明白的地方欢迎下方留言 o(^▽^)o ，谢谢阅读。
-{% endnote %}
+</div>

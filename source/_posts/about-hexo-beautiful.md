@@ -15,9 +15,9 @@ password:
 description: 本样式美化方式只适用于 Next 主题，并且最好懂一些 CSS 前端知识，以便有些不兼容样式部分可以自行在浏览器中 F12 调试。
 ---
 
-{% note warning %}
+<div class="note warning">
 注意：本样式美化方式只适用于 Next 主题，并且最好懂一些 CSS 前端知识，以便有些不兼容样式部分可以自行在浏览器中 F12 调试。
-{% endnote %}
+</div>
 
 <a href="https://github.com/iissnan/hexo-theme-next" class="LinkCard">Next5主题的Github地址</a>
 

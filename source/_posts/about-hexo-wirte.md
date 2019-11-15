@@ -16,9 +16,9 @@ keywords:
 password:
 description: 以下博客写作都是基于Next主题，其它主题不一定集成了以下写作方式。
 ---
-{% note warning %}
+<div class="note warning">
 以下博客写作都是基于Next主题，其它主题不一定集成了以下写作方式。
-{% endnote %}
+</div>
 
 # note标签的官方文档使用
 
@@ -202,46 +202,46 @@ danger形式的类别
 
 在主题配置文件 `_config.yml` 里有一个关于这个的配置，但官方文档没有提供 HTML 的使用方式，个人认为这种方式更简单，也不会产生一些奇怪的显示 bugs……
 
-<div class="note default"><p>default</p></div>
+<div class="note default">default</div>
 
 ```BASH
-<div class="note default"><p>default</p></div>
+<div class="note default">default</div>
 ```
 
-<div class="note primary"><p>primary</p></div>
+<div class="note primary">primary</div>
 
 ```BASH
-<div class="note primary"><p>primary</p></div>
+<div class="note primary">primary</div>
 ```
 
-<div class="note success"><p>success</p></div>
+<div class="note success">success</div>
 
 ```BASH
-<div class="note success"><p>success</p></div>
+<div class="note success">success</div>
 ```
 
-<div class="note info"><p>info</p></div>
+<div class="note info">info</div>
 
 ```BASH
-<div class="note info"><p>info</p></div>
+<div class="note info">info</div>
 ```
 
-<div class="note warning"><p>warning</p></div>
+<div class="note warning">warning</div>
 
 ```BASH
-<div class="note warning"><p>warning</p></div>
+<div class="note warning">warning</div>
 ```
 
-<div class="note danger"><p>danger</p></div>
+<div class="note danger">danger</div>
 
 ```BASH
-<div class="note danger"><p>danger</p></div>
+<div class="note danger">danger</div>
 ```
 
-<div class="note danger no-icon"><p>danger no-icon</p></div>
+<div class="note danger no-icon">danger no-icon</div>
 
 ```BASH
-<div class="note danger no-icon"><p>danger no-icon</p></div>
+<div class="note danger no-icon">danger no-icon</p></div>
 ```
 
 # 主题自带FontAwesome图标

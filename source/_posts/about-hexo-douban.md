@@ -61,9 +61,9 @@ douban:
 
 我们只需要在 `GitBash` 中输入以下命令：`hexo clean && hexo douban -bgm && hexo g && hexo s` 即可，注意其中开启hexo-douban的命令中，`-bgm` 代表的是book、game、movie三个参数，如果只需要其中的一部分就只带你想要的那些参数。
 
-{% note danger %}
+<div class="note danger">
 另外注意的是，由于<code>hexo douban</code>的简写也是<code>hexo d</code>，与<code>hexo deploy</code>的简写指令<code>hexo d</code>冲突，因此在进行二者部署的时候，只能都打全名而不能打简写形式。
-{% endnote %}
+</div>
 
 # 测试
 
