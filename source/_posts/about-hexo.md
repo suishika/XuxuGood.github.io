@@ -1383,6 +1383,36 @@ top: 10
 essential: true
 ```
 
+## 添加近期文章版块
+
+在 `next/layout/_macro/sidebar.swig` 中的 `if theme.links` 对应的 `endif` 后面添加以下代码：
+```BASH
+<!--近期文章版块 began-->
+  {% if theme.recent_posts %}
+      <div class="links-of-blogroll motion-element {{ "links-of-blogroll-" + theme.recent_posts_layout  }}">
+        <div class="links-of-blogroll-title">
+          <i class="fa fa-history fa-{{ theme.recent_posts_icon | lower }}" aria-hidden="true"></i>
+          {{ theme.recent_posts_title }}
+        </div>
+        <ul class="links-of-blogroll-list">
+          {% set posts = site.posts.sort('-date') %}
+          {% for post in posts.slice('0', '5') %}
+            <li class='my-links-of-blogroll-li'>
+              <a href="{{ url_for(post.path) }}" title="{{ post.title }}" target="">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+  {% endif %}
+<!--近期文章版块 end-->
+```
+为了配置方便，在主题的 `_config.yml` 中添加了几个变量，如下：
+```BASH
+recent_posts_title: 近期文章
+recent_posts_layout: block
+recent_posts: true
+```
+
 ## 博客背景图片
 
 1) 在 `themes/next/source/css/_custom/custom.styl` 中添加CSS样式
