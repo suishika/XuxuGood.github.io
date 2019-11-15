@@ -103,11 +103,13 @@
                     <a rel="external nofollow" href="{{ link.split('||')[0] | trim }}" target="_blank" title="{{ name }}">
                       {% if theme.social_icons.enable %}
                         <i class="fa fa-fw fa-{{ link.split('||')[1] | trim | default('globe') }}"></i>{#
-                    #}{% endif %}{#
-                      #}{% if not theme.social_icons.icons_only %}{#
-                        #}{{ name }}{#
-                      #}{% endif %}{#
-                  #}</a>
+                    #}{% endif %}
+                  <!--   {#
+                          #}{% if not theme.social_icons.icons_only %}{#
+                                #}{{ name }}{#
+                              #}{% endif %}{#
+                          #} -->
+                    </a>
                   </span>
                 {% endfor %}
             </div>
