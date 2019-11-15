@@ -9,6 +9,7 @@ tags:
 categories:
   - Hexo
 top: 900
+essential: true
 keywords:
   - Hexo
   - 优化
@@ -28,7 +29,7 @@ description: 本教程只适用于 Next5 或者 Next6 主题，Next7 开始做�
 
 本文下面主要先介绍 Hexo 博客和 Next 主题的搭建，如果你已经搭建好了博客框架，但是想进一步地修改博客样式，可以直接跳转到最下面[优化定制部分](#Next主题进阶优化配置)😄，本文参考的博客链接也会直接在文中插入或者在文末标明，如果有遗漏，欢迎指出。
 
-在本文更新于 2019/7/27 时，Next 主题最新版本已经更新到 v7.2.0，以下很多内容都已经在新主题中做出了适配或者直接无法使用，愿意更新到最新版本的小伙伴请关注[官方文档更新](https://theme-next.org/)。不愿意更新的小伙伴或者目前使用的是旧版本（比如我还是 Next5 版本）可以继续进行一定的参考。（ps：开发团队实在厉害，根本跟不上开发速度😐 ）。
+Next 主题最新版本已经更新到 v7.5.0，以下很多内容都已经在新主题中做出了适配或者直接无法使用，愿意更新到最新版本的小伙伴请关注[官方文档更新](https://theme-next.org/)。不愿意更新的小伙伴或者目前使用的是旧版本（比如我还是 Next5 版本）可以继续进行一定的参考。（ps：开发团队实在厉害，根本跟不上开发速度😐 ）。
 
 # 环境准备
 在安装 hexo 框架之前，我们需要先安装该框架的依赖环境：
@@ -1343,60 +1344,44 @@ top: 1
 title: b
 top: 10
 ```
-那么文章 b 便会显示在文章 a 的前面。可是，没有任何标记啊，读者怎么知道文章置顶了😂～还好 NexT 原有的置顶功能有考虑到这个，且置顶的样式没有被移除，所以可以直接利用，编辑文件：
+那么文章 b 便会显示在文章 a 的前面。可是，没有任何标记啊，读者怎么知道文章置顶了😂～还好 NexT 原有的置顶功能有考虑到这个，且置顶的样式没有被移除，所以可以直接利用，编辑文件加入以下代码：
 
-文件位置：hexo/node_modules/hexo-generator-index-pin-top/lib/generator.js
+文件位置：/themes/next/layout/_macro/post.swig
+```DIFF
+<div class="post-meta">
+  <span class="post-time">
+
++     {% if post.top %}
++          <i class="fa fa-thumb-tack"></i>
++          <font color=7D26CD>置顶</font>
++          <span class="post-meta-divider">|</span>
++      {% endif %}
+```
+
+## 精品文章
+
+在 `/themes/next/layout/_macro/` 路径，找到 `post.swig` ，在前 `文置` 顶功能后边，加上如下代码：
 ```BASH
-'use strict';
-var pagination = require('hexo-pagination');
-module.exports = function(locals){
-  var config = this.config;
-  var posts = locals.posts;
-    posts.data = posts.data.sort(function(a, b) {
-        if(a.sticky && b.sticky) { // 两篇文章sticky都有定义
-            if(a.sticky == b.sticky) return b.date - a.date; // 若sticky值一样则按照文章日期降序排
-            else return b.sticky - a.sticky; // 否则按照sticky值降序排
-        }
-        else if(a.sticky && !b.sticky) { // 以下是只有一篇文章sticky有定义，那么将有sticky的排在前面（这里用异或操作居然不行233）
-            return -1;
-        }
-        else if(!a.sticky && b.sticky) {
-            return 1;
-        }
-        else return b.date - a.date; // 都没定义按照文章日期降序排
-    });
-  var paginationDir = config.pagination_dir || 'page';
-  return pagination('', posts, {
-    perPage: config.index_generator.per_page,
-    layout: ['index', 'archive'],
-    format: paginationDir + '/%d/',
-    data: {
-      __index: true
-    }
-  });
-};
+{% if post.essential%}
+     <span class="post-meta-item-icon">
+         <i class="fa fa-newspaper-o jingping">精品</i>
+     </span>
+     <span class="post-meta-divider">|</span>
+ {% endif %}
 ```
-也就是将插件的top全部替换为 NexT 原有的 `sticky` ，然后将 `Front-matter` 中的 `top` 替换为 `sticky` ，就能调用 NexT 主题原有的置顶样式了。
 
-最后可以自定义一下样式：
-
-文件位置：hexo/themes/next/source/css/_custom/custom.styl
+在 `themes/next/source/css/_custom/custom.styl` 中，增加如下样式：
 ```CSS
-/*自定义的文章置顶样式*/
-.post-sticky-flag {
-    font-size: inherit;
-    float: left;
-    color: rgb(0, 0, 0);
-    cursor: help;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
-}
-.post-sticky-flag:hover {
-    color: #07b39b;
+.jingping{
+  background : #00a8c3;
+  padding:2px 4px 2px 4px;
+  color: #fff;
 }
 ```
-已发现的 bug：新安装的插件无法实现站点配置文件中 `order_by: date` ，即文章按时间从旧到新排列的配置，也就意味着文章只能按默认的时间从新到旧排列。
+在需要设置精品的文章md文件中，加入如下代码：
+```BASH
+essential: true
+```
 
 ## 博客背景图片
 
