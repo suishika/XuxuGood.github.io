@@ -35,7 +35,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo个人博客,NexT美化优化,John Xu博客,Github Pages,博客相册"
+keywords: "Hexo个人博客,NexT美化优化,JohnXu博客,Github Pages,博客相册"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -179,6 +179,10 @@ mylinks:
   avatar: https://xjh199923.github.io/images/avatar.jpg
   site: https://xjh199923.github.io
   info: 大学生 C++ 计算机 追求美好未来！
+- nickname: 水寒的博客
+  avatar: https://dp2px.com/images/download_head.png
+  site: https://dp2px.com
+  info: 物联网应用开发、Android应用开发、Web前端开发技术
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
