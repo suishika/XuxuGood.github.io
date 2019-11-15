@@ -37,6 +37,7 @@ description: 本教程只适用于 Next5 或者 Next6 主题，Next7 开始做�
 2. Git
 
 因为 Hexo 博客框架就是基于 Node.js 渲染的，所以必须要先安装 Node.js 环境，我们可以去[Node.js中文官网](http://nodejs.cn/download/)下载，如图
+
 <a href="http://nodejs.cn/download/" class="LinkCard">安装地址</a>
 
 ![node.js](https://s2.ax1x.com/2019/11/13/MG5ZcV.png)
