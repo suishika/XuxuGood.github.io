@@ -5,7 +5,6 @@ copyright: true
 abbrlink: 89ea6c8b
 date: 2019-11-14 15:36:50
 tags:
-  - Hexo
   - Valine
 categories:
   - Hexo
