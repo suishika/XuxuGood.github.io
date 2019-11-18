@@ -9,10 +9,7 @@ tags:
 categories:
   - Hexo
 top:
-keywords:
-  - Hexo
-  - 写作技巧
-  - Markdown
+keywords: [Hexo,写作技巧,Markdown]
 password:
 description: 以下博客写作都是基于Next主题，其它主题不一定集成了以下写作方式。
 ---

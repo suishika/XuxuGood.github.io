@@ -10,9 +10,7 @@ categories:
   - Hexo
 top: 900
 essential: true
-keywords:
-  - Hexo
-  - 优化
+keywords: [HEXO,HEXO 优化]
 password:
 description: 本教程只适用于 Next5 或者 Next6 主题，Next7 开始做了大量修改，并删除了 custom.styl 文件，同时增加了很多在 Next7 之前需要手动配置的功能，请随个人喜好进行版本选择。
 ---

@@ -9,8 +9,7 @@ tags:
 categories:
   - Valine
 top:
-keywords:
-  - Valine
+keywords: [Valine]
 password:
 description: 云淡风轻在很早之前就开发了一款极简的valine评论系统，由于现在Disqus被墙，使用起来步骤太复杂，所以现在大多数个人博客还是以valine为主。但是原生的valine功能过于单调，后来有不少大佬在基于原作者的基础上增强了valine的功能，我想推荐的一款就是 Deserts 增强的valine，作者介绍文档并没有针对hexo博客做出适配，所以我记录一下我在hexo博客中做出的修改。
 ---

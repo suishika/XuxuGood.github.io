@@ -12,11 +12,7 @@ tags:
 categories:
   - Hexo
 top:
-keywords:
-  - Hexo
-  - Next
-  - Password
-  - Security
+keywords: [Hexo,Next,Password,博文加密]
 password:
 description: 介绍一种自定义博文加密方式，不需要插件，极简模式，相对安全。
 ---

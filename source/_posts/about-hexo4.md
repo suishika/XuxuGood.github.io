@@ -11,9 +11,7 @@ tags:
 categories:
   - Hexo
 top:
-keywords:
-  - 代码块
-  - Next
+keywords: [代码块,Next]
 description: 偶然间发现一款不错的文章代码块样式，类似Mac的面板效果。能设置阴影效果和实现文本编辑功能，不过文本只存在浏览器页面上，不会真正保存。配置的方式也很简单，觉得不错的朋友可以试一下。
 ---
 

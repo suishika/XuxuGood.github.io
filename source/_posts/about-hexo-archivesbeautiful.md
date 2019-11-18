@@ -9,9 +9,7 @@ tags:
 categories:
   - Hexo
 top:
-keywords:
-  - Hexo
-  - 归档页美化
+keywords: [Hexo,归档页美化]
 password:
 description: 感觉归档页美化效果也还不错哈，不妨在本站归档页看看效果~
 ---

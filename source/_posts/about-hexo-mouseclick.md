@@ -10,10 +10,7 @@ categories:
   - Hexo
   - 点击特效
 top:
-keywords:
-  - Hexo
-  - 点击特效
-  - Next
+keywords: [Hexo,鼠标点击特效]
 password:
 description: 感觉鼠标点击出现效果也还不错哈，不妨在本站空白处点击一下看看效果~
 ---

@@ -9,8 +9,7 @@ tags:
 categories:
   - Hexo
 top:
-keywords:
-  - Hexo美化
+keywords: [Hexo美化]
 password:
 description: 本样式美化方式只适用于 Next 主题，并且最好懂一些 CSS 前端知识，以便有些不兼容样式部分可以自行在浏览器中 F12 调试。
 ---

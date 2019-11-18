@@ -10,11 +10,7 @@ tags:
 categories:
   - Hexo
 top: 1000
-keywords:
-  - Hexo
-  - TravisCI
-  - Github
-  - Coding
+keywords: [HEXO,TravisCI,Github,Coding]
 description: 关于TravisCI我这里简单介绍一下，TravisCI是一个在线的、分布式的持续集成服务，可以用来构建和测试托管在Github上的代码，并且其本身就是开源的。TravisCI提供了主流编程语言如C#、Java、JavaScript、Ruby、PHP、Node.js等的支持，相比Jenkins而言，它是一个轻量级的持续集成平台，它会在每次提交代码后，根据配置文件来创建一个虚拟机，并执行用户定义的Build任务，这个虚拟机提供版本控制(Git)、项目构建(Node.js)等，在此前提下，我们下面着手Hexo的自动化部署。
 ---
 

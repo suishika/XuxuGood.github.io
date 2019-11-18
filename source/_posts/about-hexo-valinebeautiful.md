@@ -10,10 +10,7 @@ categories:
   - Hexo
   - Valine
 top:
-keywords:
-  - Hexo
-  - Valine
-  - Valine评论样式美化
+keywords: [Hexo,Hexo,Valine评论样式美化]
 password:
 description: Valine 是一款比较轻量级的纯前端的评论系统，目前很多个人博客都在使用 Valine 评论系统，并且支持匿名留言。
 ---
