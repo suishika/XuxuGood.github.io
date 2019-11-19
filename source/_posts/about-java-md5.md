@@ -12,6 +12,7 @@ tags:
   - Java
 categories:
   - Java
+  - MD5
 keywords: [MD5,SHA-1,Java加密]
 password:
 description: 介绍两种加密方式，防止网站轻松破解我们的密码。
