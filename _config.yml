@@ -188,6 +188,12 @@ feed:
   content_limit: 150
   content_limit_delim: ' '
 
+#lazyload 图片懒加载
+lazyload:
+  enable: true
+  onlypost: true
+  loadingImg: /images/loading2.gif
+
 #主动推送
 baidu_url_submit:
   # 提交最新的一个链接
