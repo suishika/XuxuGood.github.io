@@ -192,7 +192,7 @@ feed:
 lazyload:
   enable: true
   onlypost: true
-  loadingImg: /images/loading2.gif
+  loadingImg: /images/loading3.gif
 
 #主动推送
 baidu_url_submit:
