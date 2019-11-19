@@ -40,8 +40,8 @@ lazyload:
 
 ## 注意
 
-1. onlypost：是否仅文章中的图片做懒加载, 如果为 false, 则主题中的其他图片, 也会做懒加载, 如头像, logo 等任何图片。
-2. loadingImg：图片未加载时的代替图，不填写使用默认加载图片, 如果需要自定义，添填入 loading 图片地址，如果是本地图片，不要忘记把图片添加到你的主题目录下。 Next 主题需将图片放到 `\themes\next\source\images` 目录下, 然后引用时: `loadingImg: /images/图片文件名`
+1. onlypost：是否仅文章中的图片做懒加载，如果为 false，则主题中的其他图片，也会做懒加载，如头像，logo 等任何图片。
+2. loadingImg：图片未加载时的代替图，不填写使用默认加载图片，如果需要自定义，添填入 loading 图片地址，如果是本地图片，不要忘记把图片添加到你的主题目录下。 Next 主题需将图片放到 `\themes\next\source\images` 目录下，然后引用时：`loadingImg: /images/图片文件名`
 
 ## 福利
 
