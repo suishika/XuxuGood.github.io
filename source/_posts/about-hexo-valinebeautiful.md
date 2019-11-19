@@ -7,7 +7,6 @@ date: 2019-11-14 15:36:50
 tags:
   - Valine
 categories:
-  - Hexo
   - Valine
 top:
 keywords: [Hexo,Hexo,Valine评论样式美化]
