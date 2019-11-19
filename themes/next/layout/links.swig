@@ -129,7 +129,7 @@
 
 
                         ><span class="focus-links">关注</span></a></div>
-                        <div class="info">{{ link.info }}</div>
+                        <div class="info" title="{{ link.info }}">{{ link.info }}</div>
                         </div>
                     </div>
 
