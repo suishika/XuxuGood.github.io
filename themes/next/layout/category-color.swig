@@ -38,7 +38,6 @@
     -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
     border-radius: 4px;
     padding: 5px 8px 5px 8px;
-    margin-right: 5px;
 }
 
 .category-all-page .category-list-count {
@@ -66,5 +65,11 @@
   border-radius: 50%;
   text-align: center;
   content: "";
+}
+
+@media (max-width: 767px) {
+    .category-list-link:hover {
+        margin-left: 0px;
+    }
 }
 </style>
