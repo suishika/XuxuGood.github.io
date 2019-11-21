@@ -70,6 +70,7 @@
 @media (max-width: 767px) {
     .category-list-link:hover {
         margin-left: 0px;
+        font-size: 13px;
     }
 }
 </style>
