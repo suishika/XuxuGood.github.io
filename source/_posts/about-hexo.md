@@ -1717,38 +1717,22 @@ recent_posts: true
 
 ```
 
-## 博客背景图片
+## 博客动态背景图片
 
-1) 在 `themes/next/source/css/_custom/custom.styl` 中添加CSS样式
+在 `themes/next/source/css/_custom/custom.styl` 中添加CSS样式
 
-文件位置：hexo/themes/next/source/css/_custom/custom.styl
 ```CSS
-/*背景图片*/
-body::before {
-    background-image: url(https://背景图.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    content: " ";
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -2;
+/*hexo next主题下，自动更换背景图片 began*/
+ /*图片来源https://source.unsplash.com/*/
+body {
+  background: url(https://source.unsplash.com/random/1920x1080);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
 }
-```
-2) jquery-backstretch插件
 
-文件位置：hexo/themes/next/layout/_layout.swig
-```DIFF
-+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-+  <script>
-+  $("body").backstretch("https://背景图.jpg");
-+  </script>
-</body>
+/*hexo next主题下，自动更换背景图片 end*/
 ```
-加入到文件最后面 `</body>` 前面即可。
 
 ## 博客写作进阶
 
