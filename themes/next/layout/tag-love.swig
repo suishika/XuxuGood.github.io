@@ -81,12 +81,12 @@
 
 <script type="text/javascript">
 
-     var alltags = document.getElementsByClassName('tag-cloud-tags');
+     var allTags = document.getElementsByClassName('tag-cloud-tags');
 
      //隐藏tag-cloud-tags这个div
-     alltags[0].setAttribute("hidden", "hidden");
+     allTags[0].setAttribute("hidden", "hidden");
 
-     var tags = alltags[0].getElementsByTagName('a');
+     var tags = allTags[0].getElementsByTagName('a');
 
      var words = ['❤️'];
      for(var i = 0 ; i < tags.length ; i ++){
@@ -102,26 +102,26 @@
 
      words.forEach((word, i) => {
 
-         let atag = document.createElement('a');
-         atag.style.setProperty('--n', i + 1);
+         let aTag = document.createElement('a');
+         aTag.style.setProperty('--n', i + 1);
 
-         atag.style.setProperty('text-decoration', 'none');
-         atag.style.setProperty('border-bottom', 'none');
+         aTag.style.setProperty('text-decoration', 'none');
+         aTag.style.setProperty('border-bottom', 'none');
 
          var r=Math.floor(Math.random()*75+130);
          var g=Math.floor(Math.random()*75+100);
          var b=Math.floor(Math.random()*75+80);
-         atag.style.setProperty("color", "rgb("+r+","+g+","+b+")");
+         aTag.style.setProperty("color", "rgb("+r+","+g+","+b+")");
 
-         atag.setAttribute("href", word.href);
-         atag.innerText = word.innerText;
+         aTag.setAttribute("href", word.href);
+         aTag.innerText = word.innerText;
 
          if(word.href == undefined){
-            atag.setAttribute("href", "#");
-            atag.innerText = word;
+            aTag.setAttribute("href", "#");
+            aTag.innerText = word;
          }
 
-         dom.love.appendChild(atag);
+         dom.love.appendChild(aTag);
      })
 
 </script>

@@ -919,6 +919,11 @@ typing_effect:
   colorful: true  # 礼花特效
   shake: false  # 震动特效
 
+# 分类页样式 /category/
+# type: | love | color |
+categorycloud:
+  type: love # 为空则使用默认分类页
+
 # 标签页样式 /tags/
 # type: | tagcanvas | color | love | bubble |
 # PS：tagcanvas依赖hexo-tag-cloud插件

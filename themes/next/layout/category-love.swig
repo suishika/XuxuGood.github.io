@@ -81,17 +81,17 @@
 
 <script type="text/javascript">
 
-     var categorys = document.getElementsByClassName('category-all');
+     var allCategory = document.getElementsByClassName('category-all');
 
      //隐藏tag-cloud-tags这个div
-     categorys[0].setAttribute("hidden", "hidden");
+     allCategory[0].setAttribute("hidden", "hidden");
 
-     var tags = categorys[0].getElementsByTagName('a');
+     var categories = allCategory[0].getElementsByTagName('a');
 
      var words = ['❤️'];
-     for(var i = 0 ; i < tags.length ; i ++){
-       // words.push(tags[i].innerHTML)
-         words.push(tags[i])
+     for(var i = 0 ; i < categories.length ; i ++){
+       // words.push(categories[i].innerHTML)
+         words.push(categories[i])
      }
 
      var dom = {
@@ -102,26 +102,26 @@
 
      words.forEach((word, i) => {
 
-         let atag = document.createElement('a');
-         atag.style.setProperty('--n', i + 1);
+         let aCategory = document.createElement('a');
+         aCategory.style.setProperty('--n', i + 1);
 
-         atag.style.setProperty('text-decoration', 'none');
-         atag.style.setProperty('border-bottom', 'none');
+         aCategory.style.setProperty('text-decoration', 'none');
+         aCategory.style.setProperty('border-bottom', 'none');
 
          var r=Math.floor(Math.random()*75+130);
          var g=Math.floor(Math.random()*75+100);
          var b=Math.floor(Math.random()*75+80);
-         atag.style.setProperty("color", "rgb("+r+","+g+","+b+")");
+         aCategory.style.setProperty("color", "rgb("+r+","+g+","+b+")");
 
-         atag.setAttribute("href", word.href);
-         atag.innerText = word.innerText;
+         aCategory.setAttribute("href", word.href);
+         aCategory.innerText = word.innerText;
 
          if(word.href == undefined){
-            atag.setAttribute("href", "#");
-            atag.innerText = word;
+            aCategory.setAttribute("href", "#");
+            aCategory.innerText = word;
          }
 
-         dom.love.appendChild(atag);
+         dom.love.appendChild(aCategory);
      })
 
 </script>

@@ -68,9 +68,13 @@
               {{ list_categories() }}
             </div>
           </div>
-		{# 自定义爱心分类云 #}
-		{% include 'category-love.swig' %}
-
+        {% if theme.categorycloud.type == 'love' %}
+            {# 自定义爱心分类云 #}
+            {% include 'category-love.swig' %}
+        {% elif theme.categorycloud.type == 'color' %}
+           {# 彩色分类页 #}
+           {% include 'category-color.swig' %}
+        {% endif %}
 
         <!-- 友情链接-->
         {% elif page.type === 'links' %}
