@@ -30,6 +30,7 @@
     content: "🔖";
 }
 .post-body a:hover {
+    font-size: 15px;
     border-bottom: none;
     background: rgba(100,154,182,.902);
     color: #fff!important;
