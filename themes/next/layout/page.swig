@@ -68,10 +68,10 @@
               {{ list_categories() }}
             </div>
           </div>
-        {% if theme.categorycloud.type == 'love' %}
+        {% if theme.categoryCloud.type == 'love' %}
             {# 自定义爱心分类云 #}
             {% include 'category-love.swig' %}
-        {% elif theme.categorycloud.type == 'color' %}
+        {% elif theme.categoryCloud.type == 'color' %}
            {# 彩色分类页 #}
            {% include 'category-color.swig' %}
         {% endif %}

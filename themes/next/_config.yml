@@ -921,8 +921,8 @@ typing_effect:
 
 # 分类页样式 /category/
 # type: | love | color |
-categorycloud:
-  type: love # 为空则使用默认分类页
+categoryCloud:
+  type: color # 为空则使用默认分类页
 
 # 标签页样式 /tags/
 # type: | tagcanvas | color | love | bubble |
