@@ -1722,8 +1722,9 @@ recent_posts: true
 在 `themes/next/source/css/_custom/custom.styl` 中添加CSS样式
 
 ```CSS
-/*hexo next主题下，自动更换背景图片 began*/
- /*图片来源https://source.unsplash.com/*/
+/* hexo next主题下，自动更换背景图片 began */
+/* 图片来源https://source.unsplash.com/ */
+
 body {
   background: url(https://source.unsplash.com/random/1920x1080);
   background-repeat: no-repeat;
@@ -1731,7 +1732,7 @@ body {
   background-position: 50% 50%;
 }
 
-/*hexo next主题下，自动更换背景图片 end*/
+/* hexo next主题下，自动更换背景图片 end */
 ```
 
 ## 博客写作进阶
