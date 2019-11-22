@@ -1112,7 +1112,7 @@ admin:
 ```
 就可以在线部署到 Github 了！
 
-## Hexo生成永久链接
+## Hexo-abbrlink生成唯一文章链接
 
 一个 [Hexo插件](https://hexo.io/plugins/) ，用于根据帖子标题生成静态帖子链接。
 
