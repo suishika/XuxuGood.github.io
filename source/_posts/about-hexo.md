@@ -1112,6 +1112,31 @@ admin:
 ```
 就可以在线部署到 Github 了！
 
+## Hexo生成永久链接
+
+一个 [Hexo插件](https://hexo.io/plugins/) ，用于根据帖子标题生成静态帖子链接。
+
+首先需要安装插件，博客站点下执行下面命令：
+```BASH
+npm install hexo-abbrlink --save
+```
+
+修改站点配置文件 `config.yml` 文件中的永久链接：
+```DIFF
+- permalink: year/:month/:day/:title/
++ permalink: posts/:abbrlink.html
+```
+
+在 permalink 下面写入下面的内容：
+```BASH
+# abbrlink config
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: hex    # 进制：dec(default) and hex
+```
+
+示例：https://hasaik.com/posts/ab21860c.html ，其中 `ab21860c.html` 就是生成的永链。
+
 ## 修改侧栏滚动条样式
 
 默认的侧栏滚动条其实挺丑的，添加如下代码重新渲染页面就可以修改侧栏滚动条了。
