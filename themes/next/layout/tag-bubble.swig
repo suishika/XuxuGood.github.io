@@ -137,12 +137,12 @@
 </div>
 <script type="text/javascript">
 
-     var alltags = document.getElementsByClassName('tag-cloud-tags');
+     var allTags = document.getElementsByClassName('tag-cloud-tags');
 
      //隐藏tag-cloud-tags这个div
-     alltags[0].setAttribute("hidden", "hidden");
+     allTags[0].setAttribute("hidden", "hidden");
 
-     var tags = alltags[0].getElementsByTagName('a');
+     var tags = allTags[0].getElementsByTagName('a');
 
      var bo = new Array();
      var co = new Array();
