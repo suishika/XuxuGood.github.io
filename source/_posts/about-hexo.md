@@ -1120,6 +1120,10 @@ admin:
 ```BASH
 npm install hexo-abbrlink --save
 ```
+<div class="note danger">
+
+执行此命令可能会不成功，提示你缺少相应的依赖，比如babel-eslint、mini-css-extract-plugin、webpack-cli…<br>使用npm命令安装即可，比如 `npm install eslint@4.x babel-eslint@8 --save-dev`
+</div>
 
 修改站点配置文件 `config.yml` 文件中的永久链接：
 ```DIFF
