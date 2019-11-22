@@ -102,10 +102,7 @@ menu:
   life: /life/ || apple
   about: /about/ || user
   links: /links/ || link
-
-  # movies: /movies/ || film
-#  xiaohutong: /xiaohutong || map
-#  sitemap: /sitemap.xml || sitemap
+  top: /top/ || signal
 
   #schedule: /schedule/ || calendar
   #commonweal: /404/ || heartbeat
@@ -138,6 +135,7 @@ scheme: Pisces
 social:
   GitHub: https://github.com/XuxuGood  || github
   E-Mail: mailto:22476705@qq.com  || envelope
+  订阅本站: https://mailchi.mp/3ca18a2a9749/xuxuy  || heartbeat
   简书: https://www.jianshu.com/u/0ce70d122cd4 || instagram coffee
   CSDN: https://blog.csdn.net/qq_42889280 || coffee
 #  Google: https://plus.google.com/yourname || google
@@ -1001,7 +999,7 @@ related_posts:
 # 主页轮播图
 #Home carousel map, from means link, img means picture
 carousel:
-  enable: true
+  enable: false
   item: [
     {
       'link': 'https://hasaik.com/books/',
