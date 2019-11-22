@@ -946,6 +946,10 @@ badApplePlayer:
   enable: false
   XlchKey: 960211 # 播放器Key
 
+#背景下雪特效
+snow:
+  enable: true
+
 # 谷歌广告
 google_ads:
   enable: false

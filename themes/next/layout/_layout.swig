@@ -176,16 +176,16 @@
 
   <!-- badApplePlayer -->
   {% if theme.badApplePlayer.enable %}
-	  <!-- Your XlchPlayerKey -->
-	  <script>XlchKey="{{theme.badApplePlayer.XlchKey}}";</script>
-	  <!-- font-awesome 4.2.0 -->
-	  <link href="https://lib.baomitu.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	  <!-- JQuery-mousewheel 3.1.9 -->
-	  <script src="https://lib.baomitu.com/jquery-mousewheel/3.1.9/jquery.mousewheel.min.js"></script>
-	  <!-- Scrollbar -->
-	  <script src="https://static.https.badapple.top/BadApplePlayer/js/scrollbar.js"></script>
-	  <!-- BadApplePlayer -->
-	  <script src="https://static.https.badapple.top/BadApplePlayer/Player.js"></script>
+      <!-- Your XlchPlayerKey -->
+      <script>XlchKey="{{theme.badApplePlayer.XlchKey}}";</script>
+      <!-- font-awesome 4.2.0 -->
+      <link href="https://lib.baomitu.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <!-- JQuery-mousewheel 3.1.9 -->
+      <script src="https://lib.baomitu.com/jquery-mousewheel/3.1.9/jquery.mousewheel.min.js"></script>
+      <!-- Scrollbar -->
+      <script src="https://static.https.badapple.top/BadApplePlayer/js/scrollbar.js"></script>
+      <!-- BadApplePlayer -->
+      <script src="https://static.https.badapple.top/BadApplePlayer/Player.js"></script>
   {% endif %}
 
   <!-- 代码块复制功能 -->
@@ -201,6 +201,17 @@
 
   <!--崩溃欺骗特效-->
   <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+
+  <!-- 雪花特效 -->
+  {% if theme.snow.enable %}
+      <script type="text/javascript">
+        var windowWidth = $(window).width();
+        //为了防止不影响移动端的阅读体验，特意增加了屏幕宽度的判断，请根据需要决定是否添加，或者注释掉。
+        if (windowWidth > 480) {
+          document.write('<script type="text/javascript" src="/js/src/snow.js"><\/script>');
+        }
+      </script>
+  {% endif %}
 
 </body>
 </html>
