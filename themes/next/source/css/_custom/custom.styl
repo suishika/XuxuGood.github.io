@@ -126,7 +126,7 @@ a.my-post-title-link {
 }
 
 .my-post-title a span {
-  cursor: pointer;
+  cursor: url(/images/pointer.cur), auto;
 }
 
 .my-post-header {
@@ -564,8 +564,12 @@ code {
   margin-bottom: 20px !important;
 }
 
-// 文章内链接文本样式
+//标题下的元数据样式
+.post-category a span {
+  cursor: url(/images/pointer.cur), auto;
+}
 
+// 文章内链接文本样式
 .post-body a {
   color: #0593d3;
   border-bottom: none;
@@ -733,6 +737,7 @@ ul.popular-posts .popular-posts-item .popular-posts-title a {
 }
 
 span.focus-links {
+  cursor: url(/images/pointer.cur), auto;
   font-style: normal;
   margin-left: 10px;
   position: unset;
@@ -902,6 +907,10 @@ span.focus-links:hover {
   width: auto;
 }
 
+.links-of-author-item .fa {
+  cursor: url(/images/pointer.cur), auto;
+}
+
 .sidebar-inner {
   color: #649ab6;
 }
@@ -916,6 +925,14 @@ span.focus-links:hover {
   color: #649ab6;
   border-bottom-color: #649ab6;
   border-bottom: none;
+}
+
+.site-state-item-count {
+  cursor: url(/images/pointer.cur), auto;
+}
+
+.site-state-item-name {
+  cursor: url(/images/pointer.cur), auto;
 }
 
 .sidebar a:hover {
