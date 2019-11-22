@@ -68,7 +68,7 @@
 }
 
 @media (max-width: 767px) {
-    .category-list-link:hover {
+    .post-body a:hover {
         margin-left: 0px;
         font-size: 13px;
     }
