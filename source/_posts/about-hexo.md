@@ -1797,42 +1797,56 @@ recent_posts: true
   font-size: 0.93rem;
   line-height: 1.6em;
   word-break: break-all;
-  background: rgba(255,255,255,0.4);
+  background: rgba(255, 255, 255, 0.4);
 }
-.my_post_copyright p{margin:0;}
+
+.my_post_copyright p {
+  margin: 0;
+}
+
 .my_post_copyright span {
   display: inline-block;
   width: 5.2em;
   color: #b5b5b5;
   font-weight: bold;
 }
+
 .my_post_copyright .raw {
   margin-left: 1em;
   width: 5em;
 }
+
 .my_post_copyright a {
   color: #808080;
-  border-bottom:0;
+  border-bottom: 0;
 }
+
 .my_post_copyright a:hover {
-  color: #a3d2a3;
+  color: #0593d3;
   text-decoration: underline;
 }
+
 .my_post_copyright:hover .fa-clipboard {
   color: #000;
 }
+
 .my_post_copyright .post-url:hover {
   font-weight: normal;
 }
+
 .my_post_copyright .copy-path {
   margin-left: 1em;
   width: 1em;
-  +mobile(){display:none;}
+  +mobile() {
+    display: none;
+  }
 }
+
 .my_post_copyright .copy-path:hover {
   color: #808080;
   cursor: pointer;
 }
+
 ```
 
 修改 `themes/next/layout/_macro/post.swig` ，如下：
