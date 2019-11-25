@@ -928,7 +928,7 @@ categoryCloud:
 tagcloud:
   type: bubble # 为空则使用默认标签页
 
-# 侧栏自定义时间
+# 侧栏自定义时间(canvas粒子时钟)
 diy_time:
   runtime: true #运行时间
   clock: true # 粒子时钟
