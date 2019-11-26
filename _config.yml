@@ -41,7 +41,8 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+#Hexo不编译此文件
+skip_render: ["about/renxi/*.js"]
 
 # Writing 网站文章设置，同样一般不做改动
 new_post_name: :title.md # File name of new posts
@@ -152,7 +153,7 @@ nofollow:
 neat_enable: true
 # 压缩html
 neat_html:
-  enable: true
+  enable: false
   exclude:
 # 压缩css
 neat_css:
