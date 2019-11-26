@@ -7,7 +7,7 @@ var imagemin = require('gulp-imagemin');
 
 // 压缩html
 gulp.task('minify-html', function() {
-    return gulp.src('./public/**/*.html')
+    return gulp.src(['./public/**/*.html','!./public/about/index.html'])
         .pipe(htmlclean())
         .pipe(htmlmin({
             collapseWhitespace: true, //从字面意思应该可以看出来，清除空格，压缩html，这一条比较重要，作用比较大，引起的改变压缩量也特别大
@@ -48,4 +48,4 @@ gulp.task('minify-images', function() {
         .pipe(gulp.dest('./public/images'));
 });
 // 默认任务
-gulp.task('default',gulp.series(gulp.parallel('minify-html','minify-css','minify-js','minify-images')));
+gulp.task('default',gulp.series(gulp.parallel('minify-html'/*,'minify-css','minify-js','minify-images'*/)));
