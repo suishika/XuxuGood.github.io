@@ -38,10 +38,115 @@ type: "about"
         <canvas id="canvas1"></canvas>
     </div>
 </div>
-<script>
-</script>
+
+<div id="mobile">
+    <blockquote class="blockquote-center">
+        <p>
+            <strong>
+                <em>优秀的人，不是不合群，而是他们合群的人里没有你</em>
+            </strong>
+        </p>
+    </blockquote>
+
+    <video poster="https://s2.ax1x.com/2019/11/08/MZi1jf.md.jpg"
+           src="https://hasaik.com/video/dreamitpossible.mp4"
+           style="max-height:70%;max-width:70%;display:block;margin-left:auto;margin-right:auto" controls="" loop=""
+           preload="meta">
+        Your browser does not support the video tag.
+    </video>
+
+    <p><strong>About me</strong></p>
+    <ul>
+        <li>90后小码农</li>
+        <li>Java 编程菜鸟</li>
+        <li>平常喜欢旅行、健身、接触新事物、打游戏</li>
+        <li>希望能赚很多钱，去干够风骚有意义的事</li>
+    </ul>
+
+    <p><strong>Contact</strong></p>
+
+    <ul>
+        <li>Qmail： <a href="mailto:22476705@qq.com" rel="external nofollow noopener noreferrer" target="_blank">22476705@qq.com</a>
+        </li>
+        <li>Gmail： <a href="mailto:johnxuxuy@gmail.com" rel="external nofollow noopener noreferrer" target="_blank">johnxuxuy@gmail.com</a>
+        </li>
+        <li>GitHub： <a href="https://github.com/XuxuGood" rel="external nofollow noopener noreferrer" target="_blank">https://github.com/XuxuGood</a>
+        </li>
+    </ul>
+
+    <p><strong>Note</strong></p>
+    <div class="note success">
+        欢迎转载，请在文章页面明显位置给出原文连接，感谢您的阅读
+    </div>
+
+    <p><strong>Donate</strong></p>
+    <div class="note success">
+        本站所有文章均免费开放，如您喜欢，可以请我喝杯咖啡
+    </div>
+
+</div>
+
+<div class="share_reward">
+    <button id="rewardButton" disable="enable" onclick="dashang()"><span id="dashang">打赏</span></button>
+    <div id="QR" style="display:none">
+        <div id="wechat" style="display:inline-block">
+            <a href="/images/wechatpay.jpg" class="fancybox fancybox.image" rel="group">
+                <img id="wechat_qr" src="/images/wechatpay.jpg">
+            </a>
+        </div>
+        <div id="alipay" style="display:inline-block">
+            <a href="/images/alipay.jpg" class="fancybox fancybox.image" rel="group">
+                <img id="alipay_qr" src="/images/alipay.jpg">
+            </a>
+        </div>
+    </div>
+</div>
+
+<p>谢各位大佬赏~ (<em>^__^</em>) Y……</p>
+
+<table>
+    <thead>
+    <tr>
+        <th align="center">赞助人</th>
+        <th align="center">金额</th>
+        <th align="center">时间</th>
+        <th align="center">渠道</th>
+        <th align="center">留言</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td align="center">小包小白</td>
+        <td align="center">￥ 0.96</td>
+        <td align="center">2019-10-12</td>
+        <td align="center">微信</td>
+        <td align="center"></td>
+    </tr>
+    <tr>
+        <td align="center">Ricardo Li</td>
+        <td align="center">￥ 6.66</td>
+        <td align="center">2019-11-27</td>
+        <td align="center">支付宝</td>
+        <td align="center"></td>
+    </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<div class="note default">
+    有什么话要对我说吗？这里是你畅所欲言的地方，可以咨询，可以交流，可以感叹，可以发飙，但 <font color="yellow;">不！可！以！</font>订外卖
+</div>
 <script>
     (function () {
+        var windowWidth = $(window).width();
+        //为了防止不影响移动端的阅读体验，特意增加了屏幕宽度的判断，请根据需要决定是否添加，或者注释掉。
+        if (windowWidth < 767) {
+            $(".post-title").hide()
+            $("#wrap").hide()
+        } else {
+            $("#mobile").hide()
+        }
         var canvas = $('#canvas1');
         if (!canvas[0].getContext) {
             $("#error").show();
@@ -158,10 +263,10 @@ type: "about"
         }));
         var textAnimate = eval(Jscex.compile("async", function () {
             //一行一行输出字
-            $("#code").show().each(function() {
+            $("#code").show().each(function () {
                 var $ele = $(this), str = $ele.html(), progress = 0;
                 $ele.html('');
-                var timer = setInterval(function() {
+                var timer = setInterval(function () {
                     var current = str.substr(progress, 1);
                     if (current == '<') {
                         progress = str.indexOf('>', progress) + 1;
@@ -192,5 +297,10 @@ type: "about"
         }));
         runAsync().start();
     })();
+
+    function dashang() {
+        var e = document.getElementById("QR");
+        "none" == e.style.display ? e.style.display = "block" : e.style.display = "none"
+    }
 </script>
 
