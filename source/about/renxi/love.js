@@ -399,7 +399,8 @@
         	ctx.restore();
 
             rec.point = new Point(i, j);
-            rec.speed = speed * 0.95;
+            // rec.speed = speed * 0.95;
+            rec.speed = speed * 0.85;
 
             if (rec.speed < 2) {
                 rec.speed = 2;
