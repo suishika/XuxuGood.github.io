@@ -791,6 +791,7 @@ canvas_sphere: false
 # size: The width of the ribbon.
 # alpha: The transparency of the ribbon.
 # zIndex: The display level of the ribbon.
+# 彩带
 # 条状背景线，点击动态变化
 canvas_ribbon:
   enable: false
@@ -946,7 +947,7 @@ badApplePlayer:
   enable: false
   XlchKey: 960211 # 播放器Key
 
-#背景下雪特效
+#背景下雪特效（IE和Edge不让其显示，因为特效不太好）
 snow:
   enable: true
 

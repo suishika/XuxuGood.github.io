@@ -161,6 +161,9 @@
   <!-- Tidio 在线联系功能、鼠标点击特效、页面反馈...-->
   {% include '_custom/custom.swig' %}
 
+  <!-- 获取浏览器类型JS -->
+  <script src="/js/src/browserType.js"></script>
+
   <!-- 看板娘 -->
   {% if theme.live2d.enable %}
       <script async src="/live2d-widget/autoload.js"></script>
@@ -206,9 +209,16 @@
   {% if theme.snow.enable %}
       <script type="text/javascript">
         var windowWidth = $(window).width();
-        //为了防止不影响移动端的阅读体验，特意增加了屏幕宽度的判断，请根据需要决定是否添加，或者注释掉。
-        if (windowWidth > 480) {
-          document.write('<script type="text/javascript" src="/js/src/snow.js"><\/script>');
+        var browserType = getBrowserType();
+        //为了防止不影响移动端的阅读体验，特意增加了屏幕宽度的判断，请根据需要决定是否添加，或者注释掉。(问题：浏览器只能一个一个判断)
+        if (browserType == "IE") {
+
+        }else if(browserType == "Edge"){
+
+        }else{
+            if (windowWidth > 480) {
+              document.write('<script type="text/javascript" src="/js/src/snow.js"><\/script>');
+            }
         }
       </script>
   {% endif %}
