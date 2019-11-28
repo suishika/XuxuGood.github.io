@@ -3,8 +3,8 @@
     //暂时储存文章中的内容
     var div = $('.post-body');
     //暂时储存目录的内容
-    //var toc=$('.post-toc-wrap')
-    var toc=$('.nav')
+    var toc=$('.post-toc')
+    //var toc=$('.nav')
     function password() {
         if('{{ page.password }}'){
             //将文章内容删除
