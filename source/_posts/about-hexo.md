@@ -1018,6 +1018,45 @@ rating:
 {% endif %}
 ```
 
+## 为站点添加标题崩溃特效
+
+该特效为：当用户离开站点相关的页面时，网页的标题会变成已崩溃，网站图标也会改变；当用户重新回到站点页面时才会恢复正常。
+
+实现方式：
+
+在 `/themes/next/source/js/src/` 目录下新建 `crash_cheat.js` ，代码如下：
+```BASH
+$(window).load(function () {
+//整合页面欺骗特效 window.onload有冲突
+    var OriginTitile = document.title;
+    var titleTime;
+    document.addEventListener('visibilitychange', function () {
+        if (document.hidden) {
+            $('[rel="icon"]').attr('href', "../../images/failure.png");
+            $('[rel="shortcut icon"]').attr('href', "../../images/failure.png");
+            document.title = '(つェ⊂) 我藏好了哦~ ';
+            clearTimeout(titleTime);
+        } else {
+            $('[rel="icon"]').attr('href', "../../images/favicon.png");
+            $('[rel="shortcut icon"]').attr('href', "../../images/favicon.png");
+            document.title = 'o(^▽^)o 被你发现啦~ ';
+            titleTime = setTimeout(function () {
+                document.title = OriginTitile;
+            }, 2000);
+        }
+    });
+});
+```
+
+在 `/themes/next/layout/_layout.swig` 文件末尾（ps：我相信各位引入js的位置应该都知道），添加引用：
+```BASH
+<!--崩溃欺骗-->
+<script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+```
+
+上面的图片放在 `/themes/next/source/images/` 目录下，自行选择喜欢的图片即可。
+
+
 ## 每篇文章末尾添加致谢
 
 ![致谢](https://s2.ax1x.com/2019/11/14/MtQLeH.png)
