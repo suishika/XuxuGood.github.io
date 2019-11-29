@@ -224,7 +224,7 @@ baidu_url_submit:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: baidu_url_submitter
-  - type: git
+#  - type: git
 #    repo:
 #      github: git@github.com:XuxuGood/XuxuGood.github.io.git,master
 #      coding: git@git.dev.tencent.com:XuxuGood/XuxuGood.coding.me.git,master # 腾讯
