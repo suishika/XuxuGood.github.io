@@ -16,6 +16,8 @@ password:
 description: 本篇介绍一下自己的博客如何添加 RSS 订阅功能。
 ---
 
+## 配置
+
 首先添加功能插件，在 hexo 项目根目录下执行该命令
 ```BASH
 npm install hexo-generator-feed --save
@@ -55,3 +57,17 @@ $ hexo clean && hexo g
 ```BASH
 https://hasaik.com/atom.xml
 ```
+
+## 订阅
+
+下面以我博客为例子
+
+订阅地址为：[https://hasaik.com/atom.xml](https://hasaik.com/atom.xml)（PS：订阅地址改为自己的博客）
+
+![新建订阅](https://s2.ax1x.com/2019/11/29/QAuHOO.png)
+
+![订阅成功](https://s2.ax1x.com/2019/11/29/QAKg3t.png)
+
+![查看邮箱中的博文](https://s2.ax1x.com/2019/11/29/QAKqg0.png)
+
+以上就是关于博客 RSS 订阅的全部介绍，如果您喜欢我发布的文章，亦可订阅[小站](https://mailchi.mp/3ca18a2a9749/xuxuy)，小站将第一时间为您奉上新发布的文章。
