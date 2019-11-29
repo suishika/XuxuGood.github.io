@@ -41,7 +41,7 @@ keywords: "Hexo个人博客,NexT美化优化,JohnXu博客,Github Pages,博客相
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
 #注意：有一个空格
-rss:
+rss: /atom.xml
 
 footer:
   # Specify the date when the site was setup.
