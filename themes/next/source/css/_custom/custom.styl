@@ -616,10 +616,12 @@ code {
 /*相关文章推荐 pc样式设置*/
 
 summary {
+  width: 7%;
   outline: 0;
   cursor: pointer;
   margin-top: 15px;
   +mobile() { /*手机端*/
+    width: 25%;
     font-size: 14px;
     margin-top: 10px;
   }
@@ -630,8 +632,10 @@ details {
 }
 
 details .popular-posts {
+  margin-top: 5px;
+  margin-left: -22px;
   +mobile() {
-    margin: 5px -12px;
+    margin: 5px -26px;
   }
 }
 
@@ -646,6 +650,14 @@ details .popular-posts {
   }
 }
 
+.popular-posts-item {
+  list-style: none
+}
+
+ul.popular-posts .popular-posts-item .popular-posts-title a:before {
+  content: "🏷️ ";
+}
+
 ul.popular-posts .popular-posts-item .popular-posts-title a {
   border-bottom: 1px solid #999;
 
@@ -653,6 +665,8 @@ ul.popular-posts .popular-posts-item .popular-posts-title a {
     border-bottom: none;
   }
 }
+
+/*相关文章样式 end*/
 
 //小胡同背景图
 

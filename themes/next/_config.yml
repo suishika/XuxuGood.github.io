@@ -990,8 +990,8 @@ share_js: true
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
   enable: true      # 是否开启
-  title: 相关文章   # 标题
-  icon: graduation-cap
+  title: 📚&nbsp;&nbsp;相关文章   # 标题
+#  icon: graduation-cap
   display_in_home: false  # 是否在首页显示，建议为false
   params:
     maxCount: 10   # 相关文章的最大数量
