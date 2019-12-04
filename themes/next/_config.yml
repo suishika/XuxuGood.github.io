@@ -594,7 +594,6 @@ vkontakte_api:
 # To get your ID visit https://widgetpack.com
 rating:
   enable: true
-#  id:     #<app_id>
   id: 21530
   color:  ff9800
 # ---------------------------------------------------------------
