@@ -42,7 +42,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 #Hexo不编译此文件
-skip_render: ["about/renxi/*.js"]
+skip_render: [about/renxi/*.js,love/*]
 
 # Writing 网站文章设置，同样一般不做改动
 new_post_name: :title.md # File name of new posts

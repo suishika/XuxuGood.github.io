@@ -100,6 +100,7 @@ menu:
   categories: /categories/ || th
   tags: /tags/ || tags
   life: /life/ || apple
+  love: /love/ || heart
   about: /about/ || user
   links: /links/ || link
   top: /top/ || signal
