@@ -186,6 +186,10 @@ mylinks:
   avatar: https://kezunlin.me/images/avatar.png
   site: https://kezunlin.me
   info: C++ && Python. Computer Vision && Deep Learning.
+- nickname: Hunter's Blog
+  avatar: https://hntr.xyz/images/xiaohei.jpg
+  site: https://hntr.xyz/
+  info: OIER 算法学习 题解
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
