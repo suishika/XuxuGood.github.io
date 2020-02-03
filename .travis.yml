@@ -14,6 +14,7 @@ env:
    # Github Pages
    - GH_REF: github.com/XuxuGood/XuxuGood.github.io
    # Coding Pages
+#   - CO_REF: git.dev.tencent.com/XuxuGood/XuxuGood.coding.me.git
    - CO_REF: e.coding.net/johnxuxuy/XuxuGood.coding.me.git
 
 # 指定博客分支
@@ -52,12 +53,12 @@ after_script:
   # Github Pages
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
   # Coding Pages
-  - git push --force --quiet "https://XuxuGood:${CO_TOKEN}@${CO_REF}" master:master
+  - git push --force --quiet "https://johnxuxuy:${CO_TOKEN}@${CO_REF}" master:master
   - git tag v0.0.$TRAVIS_BUILD_NUMBER -a -m "Auto Taged By TravisCI With Build $TRAVIS_BUILD_NUMBER"
   # Github Pages
   - git push --quiet "https://${GH_TOKEN}@${GH_REF}" master:master --tags
   # Coding Pages
-  - git push --quiet "https://XuxuGood:${CO_TOKEN}@${CO_REF}" master:master --tags
+  - git push --quiet "https://johnxuxuy:${CO_TOKEN}@${CO_REF}" master:master --tags
 
   # Build Salver Repository(Github Pages)
   #- git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
