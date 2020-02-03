@@ -190,6 +190,10 @@ mylinks:
   avatar: https://hntr.xyz/images/xiaohei.jpg
   site: https://hntr.xyz/
   info: OIER 算法学习 题解
+- nickname: Ray's Blog
+  avatar: https://raycoder.me/images/fav.png
+  site: https://raycoder.me/
+  info: 夜晚再黑，也压不过雪的白
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
