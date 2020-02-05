@@ -10,10 +10,7 @@ tags:
 categories:
   - Vue
   - el-date-picker
-keywords:
-  - Vue
-  - el-date-picker
-  - 禁用当日之前时间
+keywords: [Vue,el-date-picker,禁用当日之前时间]
 abbrlink: 69ab28bb
 date: 2020-01-06 14:00:20
 password:
