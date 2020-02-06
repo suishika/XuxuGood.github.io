@@ -228,4 +228,4 @@ deploy:
 #    repo:
 #      github: git@github.com:XuxuGood/XuxuGood.github.io.git,master
 #      coding: git@git.dev.tencent.com:XuxuGood/XuxuGood.coding.me.git,master # 腾讯
-##      coding: git@git.coding.net:XuxuGood/XuxuGood.coding.me.git,master # Coding
+#      coding: git@git.coding.net:XuxuGood/XuxuGood.coding.me.git,master # Coding
