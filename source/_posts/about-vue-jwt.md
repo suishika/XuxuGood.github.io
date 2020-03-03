@@ -6,17 +6,15 @@ notshow: false
 copyright: true
 tags:
   - Vue
-  - JWT
+  - Jwt
 categories:
   - Vue
-  - JWT
-keywords:
-  - vue
-  - axios刷新Jwt
-description: 讲讲Vue axios 是如何刷新Jwt的。
+  - Jwt
+keywords: [vue,axios刷新Jwt]
 abbrlink: fc31ea3
 date: 2020-03-03 11:52:04
 password:
+description: 讲讲Vue axios 是如何刷新Jwt的。
 ---
 最近做项目，一个需求就是Jwt token的失效的时候，如果用户还在操作，那么希望无感刷新token，让用户的操作不受影响。
 
