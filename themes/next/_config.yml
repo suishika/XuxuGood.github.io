@@ -969,7 +969,7 @@ badApplePlayer:
 
 #背景下雪特效（IE和Edge不让其显示，因为特效不太好）
 snow:
-  enable: true
+  enable: false
 
 # 谷歌广告
 google_ads:
