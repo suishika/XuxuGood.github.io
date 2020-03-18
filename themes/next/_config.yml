@@ -964,7 +964,7 @@ aplayer:
 
 # http://www.badapple.top
 badApplePlayer:
-  enable: true
+  enable: false
   XlchKey: 960211 # 播放器Key
 
 #背景下雪特效（IE和Edge不让其显示，因为特效不太好）
