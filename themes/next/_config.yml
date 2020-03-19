@@ -206,6 +206,10 @@ mylinks:
   avatar: http://eltrac.cn-bj.ufileos.com/other/logo.png
   site: https://www.eltrac.cn/
   info: Waiting for someone, or waiting for a story.
+- nickname: dna049
+  avatar: https://dna049.com/avatar.png
+  site: https://dna049.com
+  info: 记录数学和程序的点滴
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
