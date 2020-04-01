@@ -10,6 +10,7 @@ tags:
   - Hexo
   - 邮件订阅
 categories:
+  - Hexo
   - Hexo订阅
 keywords: [Hexo,邮件订阅]
 password:
