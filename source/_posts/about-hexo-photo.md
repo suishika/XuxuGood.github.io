@@ -333,11 +333,11 @@ comments: false
 
 其中 `<a href="https://xuxugood.github.io" target="_blank" class="open-ins">图片正在加载中…</a>` 中的 url 替换成你的博客网址。
 
-需要三个 css 文件和一个 js 文件放在 photos 文件夹下，其文件都在我的 [腾讯云开发者平台](https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/tree/master/source/photos) 上面，需要修改 `ins.js` 的 120 和 121 行的 url 为你腾讯云开发者平台图片的网址。
+需要三个 css 文件和一个 js 文件放在 photos 文件夹下，其文件都在我的 [腾讯云开发者平台](https://johnxuxuy.coding.net/p/Blog_Back_Up/d/Blog_Back_Up/git/tree/master/source/photos) 上面，需要修改 `ins.js` 的 120 和 121 行的 url 为你腾讯云开发者平台图片的网址。
 
 # 查看相册插件 photoswipe
 
-上面 `index.md` 中加入了两个 css 文件，这是我们用 photoswipe 查看相册用到的，具体可以参考网址 [photoswipe](https://photoswipe.com/) 。这里我们已经把 css 文件加上了，之后我们要加上 js 文件 `photoswipe.min.js` 和 `photoswipe-ui-default.min.js`，js 资源下载地址 [photoswipe](https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/tree/master/source/photoswipe) ，js 存放路径为 `next/source/js/src`
+上面 `index.md` 中加入了两个 css 文件，这是我们用 photoswipe 查看相册用到的，具体可以参考网址 [photoswipe](https://photoswipe.com/) 。这里我们已经把 css 文件加上了，之后我们要加上 js 文件 `photoswipe.min.js` 和 `photoswipe-ui-default.min.js`，js 资源下载地址 [photoswipe](https://johnxuxuy.coding.net/p/Blog_Back_Up/d/Blog_Back_Up/git/tree/master/source/photos/photoswipe.css) ，js 存放路径为 `next/source/js/src`
 
 # 引用 js 文件
 

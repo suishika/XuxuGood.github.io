@@ -118,14 +118,14 @@
                 var liTmpl = "";
                 for (var i = 0, len = data.link.length; i < len; i++) {
                     if (tagType === "1") {
-                        var minSrc = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/SceneryPhotos/" + data.link[i];
-                        var src = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/SceneryPhotos/" + data.link[i];
+                        var minSrc = "https://johnxuxuy.coding.net/p/Blog_Back_Up/d/Blog_Back_Up/git/raw/master/SceneryPhotos/" + data.link[i];
+                        var src = "https://johnxuxuy.coding.net/p/Blog_Back_Up/d/Blog_Back_Up/git/raw/master/SceneryPhotos/" + data.link[i];
                     } else if (tagType === "2") {
-                        var minSrc = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/OwnPhotos/" + data.link[i];
-                        var src = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/OwnPhotos/" + data.link[i];
+                        var minSrc = "https://johnxuxuy.coding.net/p/Blog_Back_Up/d/Blog_Back_Up/git/raw/master/OwnPhotos/" + data.link[i];
+                        var src = "https://johnxuxuy.coding.net/p/Blog_Back_Up/d/Blog_Back_Up/git/raw/master/OwnPhotos/" + data.link[i];
                     } else {
-                        var minSrc = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/BabyPhotos/" + data.link[i];
-                        var src = "https://dev.tencent.com/u/XuxuGood/p/Blog_Back_Up/git/raw/master/BabyPhotos/" + data.link[i];
+                        var minSrc = "https://johnxuxuy.coding.net/p/Blog_Back_Up/d/Blog_Back_Up/git/raw/master/BabyPhotos/" + data.link[i];
+                        var src = "https://johnxuxuy.coding.net/p/Blog_Back_Up/d/Blog_Back_Up/git/raw/master/BabyPhotos/" + data.link[i];
                     }
                     var type = data.type[i];
                     var target = src + (type === 'video' ? '.mp4' : '.jpg');
