@@ -32,6 +32,10 @@ description: 最近项目组接了一个视频流项目，项目的主要核心�
 
 下载完以后将所有的文件上传到 `/usr/local` 文件夹下面
 
+附：
+<a href="https://pan.baidu.com/s/1gn_D5I-rJTG39YFElow4lw" class="LinkCard">以上百度资源链接</a>
+提取码：ueic
+
 ## 搭建环境
 
 ### 安装nginx
