@@ -4,7 +4,7 @@ var attributes = [
   'autocorrect="off"',
   'autocapitalize="off"',
   'spellcheck="false"',
-  'contenteditable="true"'
+  'contenteditable="false"'
 ]
 
 var attributesStr = attributes.join(' ')

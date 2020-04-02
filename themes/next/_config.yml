@@ -960,7 +960,7 @@ diy_time:
 
 # 看板娘
 live2d:
-  enabled: true
+  enable: false
 
 # aplayer音乐播放器
 aplayer:

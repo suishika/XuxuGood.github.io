@@ -92,22 +92,6 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
-# 主页看板娘
-live2d:
-  enable: true
-  scriptFrom: local
-  pluginRootPath: live2dw/
-  pluginJsPath: lib/
-  pluginModelPath: assets/
-  model:
-    use: live2d-widget-model-wanko
-  display:
-    position: right
-    width: 120
-    height: 220
-  mobile:
-    show: true
-
 # Search 站点搜索
 search:
   path: search.xml
@@ -171,6 +155,19 @@ neat_js:
     - '**/jquery.fancybox.pack.js'
     - '**/index.js'
     - '**/ins.js'
+
+#返回顶部设置
+moon_menu:
+  back2top:
+    enable: true
+    icon: fa fa-chevron-up
+    func: back2top
+    order: -1
+  back2bottom:
+    enable: true
+    icon: fa fa-chevron-down
+    func: back2bottom
+    order: -2
 
 #豆瓣
 douban:
