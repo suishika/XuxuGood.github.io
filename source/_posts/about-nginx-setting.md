@@ -59,14 +59,14 @@ http {
         server_name  hrinfo.wuxibiologics.com.cn;
 		
 		#配置ssl证书
-			ssl_certificate      C:\static\ssl\2823310_hrinfo.wuxibiologics.com.cn.pem;
-			ssl_certificate_key  C:\static\ssl\2823310_hrinfo.wuxibiologics.com.cn.key;
+        ssl_certificate      C:\static\ssl\2823310_hrinfo.wuxibiologics.com.cn.pem;
+        ssl_certificate_key  C:\static\ssl\2823310_hrinfo.wuxibiologics.com.cn.key;
 
-			ssl_session_cache    shared:SSL:1m;
-			ssl_session_timeout  5m;
+        ssl_session_cache    shared:SSL:1m;
+        ssl_session_timeout  5m;
 
-			ssl_ciphers  HIGH:!aNULL:!MD5;
-			ssl_prefer_server_ciphers  on;
+        ssl_ciphers  HIGH:!aNULL:!MD5;
+        ssl_prefer_server_ciphers  on;
 			
 		#vue项目本地映射
 		location /biologicsQuestionMob {
