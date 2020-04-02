@@ -7,7 +7,6 @@ copyright: true
 abbrlink: 358f95d9
 date: 2020-04-01 09:22:38
 tags:
-  - 视频流
   - nginx-http-flv-module
 categories:
   - 视频流
