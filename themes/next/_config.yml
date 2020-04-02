@@ -194,10 +194,6 @@ mylinks:
   avatar: https://raycoder.me/images/fav.png
   site: https://raycoder.me/
   info: 夜晚再黑，也压不过雪的白
-- nickname: Qcmoke
-  avatar: https://www.qcmoke.site/images/logo.jpg
-  site: https://www.qcmoke.site
-  info: Peace & Love ! Learning to think independently !
 - nickname: hongCYu’s Blog
   avatar: https://cdn.jsdelivr.net/gh/hongcyu/image/touxiang/touxiang.jpg
   site: https://hongcyu.cn
@@ -210,6 +206,10 @@ mylinks:
   avatar: https://dna049.com/avatar.png
   site: https://dna049.com
   info: 记录数学和程序的点滴
+- nickname: 小丁的个人博客
+  avatar: https://tding.top/images/avatar.webp
+  site: https://tding.top
+  info: 世间所有的相遇，都是久别重逢
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
