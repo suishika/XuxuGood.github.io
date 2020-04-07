@@ -6,8 +6,10 @@ abbrlink: c7631ec1
 date: 2019-11-14 14:53:24
 tags:
   - Hexo
+  - 写作技巧
 categories:
   - Hexo
+  - 写作技巧
 top:
 keywords: [Hexo,写作技巧,Markdown]
 password:
