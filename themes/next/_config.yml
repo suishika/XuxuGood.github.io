@@ -880,6 +880,10 @@ version: 5.1.4
 passage_end_tag:
   enabled: true
 
+# 页面小火箭返回顶部
+backToTop:
+  enable: false
+
 # 鼠标点击特效
 cursor_effect:
   enabled: true

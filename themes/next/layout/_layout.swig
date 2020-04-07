@@ -158,6 +158,11 @@
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
 
+  <!-- 页面小火箭返回顶部-->
+  {% if theme.backToTop.enable %}
+      {% include 'backToTop.swig' %}
+  {% endif %}
+
   <!-- Tidio 在线联系功能、鼠标点击特效、页面反馈...-->
   {% include '_custom/custom.swig' %}
 
