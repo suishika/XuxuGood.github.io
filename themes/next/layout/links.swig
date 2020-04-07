@@ -142,26 +142,41 @@
     </div>
 
     <div class="links-content">
-        <div class="link-navigation">
+        <div class="link-navigation" id="link-navigation">
 
-            {% for link in theme.mylinks %}
-            <div class="card">
-                <a href="{{ link.site }}" target="_blank">
-                    <div class="thumb" style="background: url( '{{ link.avatar }} ');"></div>
-                </a>
-                <div class="card-header">
-                    <div>
-                        <a href="{{ link.site }}" target="_blank">{{ link.nickname }}</a>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
+            <!--{% for link in theme.mylinks %}-->
+            <!--<div class="card">-->
+            <!--<a href="{{ link.site }}" target="_blank">-->
+            <!--<div class="thumb" style="background: url( '{{ link.avatar }} ');"></div>-->
+            <!--</a>-->
+            <!--<div class="card-header">-->
+            <!--<div>-->
+            <!--<a href="{{ link.site }}" target="_blank">{{ link.nickname }}</a>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--{% endfor %}-->
 
         </div>
         {{ page.content }}
     </div>
 </div>
+<script>
+    window.onload = function () {
+        let nickname, avatar, site, li = "";
+        $.getJSON("/links/linklist.json",
+            function (data) {
+                for (let i = 0; i < data.length; i++) {
+                    nickname = data[i].nickname;
+                    avatar = data[i].avatar;
+                    site = data[i].site;
+                    li += '<div class="card">' + '<a href="' + site + '" target="_blank">' + '<div class="thumb" style="background: url( ' + avatar + ');">' + '</div>' + '</a>' + '<div class="card-header">' + '<div><a href="' + site + '" target="_blank">' + nickname + '</a></div>' + '</div>' + '</div>';
 
+                }
+                $("#link-navigation").append(li);
+            });
+    }
+</script>
 {##########################}
 {### END LINKS BLOCK ###}
 {##########################}
