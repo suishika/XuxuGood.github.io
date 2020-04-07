@@ -1,11 +1,4 @@
-﻿*{
-  margin:0;
-  padding:0;
-}
-body{
-  font-family: "微软雅黑"
-}
-.alert-modal{
+﻿.alert-modal{
   left:0;
   top:0;
   width:100%;
@@ -119,7 +112,7 @@ body{
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
 }
 .alert-container-black .alert-content{
-    color: #fff;  
+    color: #fff;
 }
 
 .linearTop{
