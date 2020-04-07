@@ -7,6 +7,16 @@ date: 2019-10-18 16:46:39
 
 ***
 
+<div style="text-align:center;font-size: 1.125em;">
+    <span class="with-love" id="myheartbeat">
+    <i class="fa fa-heartbeat"></i></span>
+    留言添加友链
+    <span class="with-love" id="myheartbeat">
+    <i class="fa fa-heartbeat"></i></span>
+</div>
+  
+***
+  
 <div class="note success">
 
    <strong>友链格式</strong>
@@ -36,7 +46,10 @@ date: 2019-10-18 16:46:39
 .posts-expand .post-body h2::before {
     display: none
 }
-.post-body a:hover{
-    border-bottom: 0px solid #fc6423;
-}
+.with-love {
+     color: #808080 !important;
+     display: inline-block;
+     margin: 0 5px;
+     animation: iconAnimate 1.33s ease-in-out infinite;
+ }
 </style>
