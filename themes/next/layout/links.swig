@@ -161,8 +161,10 @@
         {{ page.content }}
     </div>
 </div>
-<script>
-    window.onload = function () {
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        alert(1)
         let nickname, avatar, site, li = "";
         $.getJSON("/links/linklist.json",
             function (data) {
@@ -175,7 +177,7 @@
                 }
                 $("#link-navigation").append(li);
             });
-    }
+    });
 </script>
 {##########################}
 {### END LINKS BLOCK ###}
