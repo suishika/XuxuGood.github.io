@@ -6,14 +6,14 @@ type: games
 ---
 <style>
 .post-body a {
-  color: #222;
-  border-bottom: none;
-  border-bottom: 0px;
+  color: #222 !important;
+  border-bottom: none !important;
+  border-bottom: 0px !important;
 
   &:hover {
-    color: #fc6423;
-    text-decoration: none;
-    border-bottom: 0px;
+    color: #fc6423 !important;
+    text-decoration: none !important;
+    border-bottom: 0px !important;
   }
 }
 <style>
