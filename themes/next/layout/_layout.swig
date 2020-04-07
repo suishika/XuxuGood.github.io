@@ -191,6 +191,10 @@
       <script src="https://static.https.badapple.top/BadApplePlayer/Player.js"></script>
   {% endif %}
 
+  <!--Jquery alert复制提示功能 -->
+  <link rel="stylesheet" href="/jquery_alert/css/alert.css">
+  <script type="text/javascript" src="/jquery_alert/js/alert.min.js"></script>
+
   <!-- 代码块复制功能 -->
   <script type="text/javascript" src="/js/src/clipboard.min.js"></script>
   <script type="text/javascript" src="/js/src/clipboard-use.js"></script>

@@ -16,3 +16,18 @@
   }
   initCopyCode();
 }(window, document);
+
+// 代码块复制成功提示
+var M = {
+
+}
+$(document).delegate(".btn-copy",'click',function(){
+  if(M.dialog){
+    return M.dialog.show();
+  }
+  M.dialog = jqueryAlert({
+    'icon'    : '../jquery_alert/img/right.png',
+    'content' : '复制成功',
+    'closeTime' : 1000,
+  });
+})
