@@ -187,6 +187,37 @@ feed:
   content_limit: 150
   content_limit_delim: ' '
 
+#支持emoji表情
+githubEmojis:
+  enable: false
+  className: github-emoji
+  inject: true
+  styles:
+    font-size: 1em
+  localEmojis:
+
+#markdown版emoji
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-footnote
+    - markdown-it-sup
+    - markdown-it-sub
+    - markdown-it-abbr
+    - markdown-it-emoji
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: false
+    permalinkClass: header-anchor
+    permalinkSymbol: ¶
+
 #lazyload 图片懒加载
 lazyload:
   enable: true
