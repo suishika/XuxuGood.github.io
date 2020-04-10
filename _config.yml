@@ -151,10 +151,10 @@ douban:
 
 # hexo-neat
 # 博文压缩
-neat_enable: false
+neat_enable: true
 # 压缩html
 neat_html:
-  enable: false
+  enable: true
   exclude:
 # 压缩css
 neat_css:
