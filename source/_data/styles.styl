@@ -145,6 +145,16 @@ code {
   display none
 }
 
+.posts-expand .post-title {
+  word-break: break-all;
+}
+
+.post-body {
+  word-break: break-all;
+  +mobile() {
+    word-break: break-all;
+  }
+}
 //本文阅读结束
 .read-over {
   text-align: center;
@@ -548,7 +558,7 @@ img {
     margin: 0.8em 2em 0 2em;
   }
 
-  .footer{
+  .footer {
     color: #1b1b1b;
   }
 }
