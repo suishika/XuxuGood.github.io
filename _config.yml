@@ -98,6 +98,10 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: next-7.8.0
 
+# 本地启动端口设置
+server:
+  port: 4002
+
 # Search 站点搜索
 search:
   path: search.xml
@@ -151,7 +155,7 @@ douban:
 
 # hexo-neat
 # 博文压缩
-neat_enable: false
+neat_enable: true
 # 压缩html
 neat_html:
   enable: true
@@ -163,7 +167,7 @@ neat_css:
     - '**/*.min.css'
 # 压缩js
 neat_js:
-  enable: true
+  enable: false
   mangle: true
   output:
   compress:
@@ -171,7 +175,6 @@ neat_js:
     - '**/*.min.js'
     - '**/jquery.fancybox.pack.js'
     - '**/index.js'
-    - '**/ins.js'
 
 #markdown版emoji
 markdown:
