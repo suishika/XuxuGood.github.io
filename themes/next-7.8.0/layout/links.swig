@@ -6,7 +6,7 @@
 <div id="links">
     <style>
         .links-content {
-            margin-top: 2rem
+            margin-top: -2rem
         }
 
         .link-navigation::after {
