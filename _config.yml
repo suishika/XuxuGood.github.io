@@ -158,7 +158,7 @@ douban:
 neat_enable: true
 # 压缩html
 neat_html:
-  enable: true
+  enable: false
   exclude:
 # 压缩css
 neat_css:
