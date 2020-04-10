@@ -80,13 +80,56 @@ a {
 
 /*valine 评论系统样式 began ------------------> */
 
-.valine .vlist .vcard {
-  border-radius: 8px;
-  border: 1px solid rgba(128, 128, 128, .49);
+//.valine .vlist .vcard {
+//  border-radius: 8px;
+//  border: 1px solid rgba(128, 128, 128, .49);
+//}
+//
+//.valine .vlist .vcard .vcomment-children .vlist .vcard {
+//  border: none !important;
+//}
+.v .vwrap {
+  border: 2px solid #000 !important;
 }
 
-.valine .vlist .vcard .vcomment-children .vlist .vcard {
-  border: none !important;
+.v .vbtn {
+  background-color: #971212 !important;
+  color: #fff !important;
+}
+
+.v .vlist .vcard .vh .vmeta .vat {
+  background-color: #177714 !important;
+  color: #fff !important;
+  border-radius: 3px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.v .vlist .vcard .vimg {
+  margin: 0 12px 0 0;
+  counter-increment: avater;
+}
+
+.v .vlist .vcard .vimg:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -transform: rotate(360deg);
+}
+
+.v .vlist .vcard {
+  border: 1px solid #ccc !important;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+  margin-bottom: 20px !important;
+  border-radius: 10px !important;
+}
+
+.v .vlist .vquote .vcard {
+  border: 0px !important;
+  margin-bottom: 0px !important;
+  border-radius: 0px !important;
+  padding: 0px !important;
 }
 
 /*valine 评论系统样式 end  ------------------> */
