@@ -12,7 +12,7 @@ comments: false #是否开启评论
     <div class="row">
         <div class="box">
             <img class="nofancybox" src="https://s2.ax1x.com/2019/10/30/K4ViZT.jpg">
-            <div class="box-content"><h3 class="lay-title">游戏系列</h3><span class="lay-post">玩过的一些游戏</span>
+            <div class="box-content"><span class="lay-title">游戏系列</span><span class="lay-post">玩过的一些游戏</span>
                 <div>
                     <ul class="icon">
                         <li><a href="/games/" target="" title="点我前往" rel="noopener"><i class="fa fa-link"></i></a></li>
@@ -21,7 +21,7 @@ comments: false #是否开启评论
             </div>
         </div>
         <div class="box"><img class="nofancybox" src="https://s2.ax1x.com/2019/10/28/K6WAp9.md.jpg">
-            <div class="box-content"><h3 class="lay-title">读书系列</h3><span class="lay-post">读过的一些书籍</span>
+            <div class="box-content"><span class="lay-title">读书系列</span><span class="lay-post">读过的一些书籍</span>
                 <div>
                     <ul class="icon">
                         <li><a href="/books/" target="" title="点我前往"><i class="fa fa-link"></i></a></li>
@@ -30,7 +30,7 @@ comments: false #是否开启评论
             </div>
         </div>
         <div class="box"><img class="nofancybox" src="https://s2.ax1x.com/2019/10/28/K6WSmV.jpg">
-            <div class="box-content"><h3 class="lay-title">观影系列</h3><span class="lay-post">看过的一些电影</span>
+            <div class="box-content"><span class="lay-title">观影系列</span><span class="lay-post">看过的一些电影</span>
                 <div>
                     <ul class="icon">
                         <li><a href="/movies/" target="" title="点我前往"><i class="fa fa-link"></i></a></li>
@@ -39,7 +39,7 @@ comments: false #是否开启评论
             </div>
         </div>
         <div class="box"><img class="nofancybox" src="https://s2.ax1x.com/2019/10/28/K6WFfJ.jpg">
-            <div class="box-content"><h3 class="lay-title">相册系列</h3><span class="lay-post">生活的五彩斑斓</span>
+            <div class="box-content"><span class="lay-title">相册系列</span><span class="lay-post">生活的五彩斑斓</span>
                 <div>
                     <ul class="icon">
                         <li><a href="/gallery/" target="" title="点我前往"><i class="fa fa-link"></i></a></li>
