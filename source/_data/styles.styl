@@ -248,7 +248,6 @@ ol {
   padding-left: 0;
   font-size: 15px;
   margin-top: .4rem;
-  //padding: 0 0 0 .8rem;
   list-style: none;
   counter-reset: ol-li;
 }
@@ -510,7 +509,19 @@ img {
   font-weight: bold;
   font-size: 16px;
 }
+/* 页码数字显示当前页码样式设置 */
 
+.pagination .page-number.current {
+  background: #49b1f5;
+  border-radius: 50%;
+}
+
+/* 页码样式设置 */
+
+.pagination .page-number {
+  border: 3px solid #49b1f5;
+  border-radius: 50%;
+}
 
 //手机适配
 @media (max-width: 767px) {

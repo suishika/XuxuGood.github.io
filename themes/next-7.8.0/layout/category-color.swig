@@ -60,7 +60,7 @@
     width: 12px;
     height: 12px;
     line-height: 28px;
-    margin: .9rem 12px 0 0;
+    margin: .85rem 12px 0 0;
     color: #fff;
     font-size: 15px;
     font-weight: 700;
@@ -75,6 +75,9 @@
     .post-body a:hover {
         margin-left: 0px;
         font-size: 0.9em;
+    }
+    .posts-expand .post-body ul li:before {
+        margin: .75rem 12px 0 0 !important;
     }
 }
 </style>
