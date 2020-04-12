@@ -1046,3 +1046,7 @@ player:
 
 # 分享
 share_js: true
+
+#自定义文章加密
+password:
+  enable: true

@@ -33,7 +33,9 @@
         {%- endif %}
       </div>
       <!-- 此处为新加的代码 -->
-      {% include 'password.swig' %}
+      {%- if theme.password.enable %}
+          {% include 'password.swig' %}
+      {%- endif %}
     </main>
 
     <footer class="footer">
