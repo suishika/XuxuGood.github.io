@@ -4,7 +4,6 @@
     var div = $('.post-body');
     //暂时储存目录的内容
     var toc=$('.post-toc')
-    //var toc=$('.nav')
     function password() {
         if('{{ page.password }}'){
             //将文章内容删除
@@ -22,7 +21,7 @@
             '&nbsp;&nbsp;<i class="fa fa-heartbeat" id="myheartbeat"></i>'+
             '</span>' +
             '<div class="qiang" style="height: 100px;width: 60%;margin:0 auto">' +
-            '<input class="password"  type="password" autocomplete="new-password" autofocus="autofocus" value="" style="border-radius: 5px;height: 30px;border: none;display: block;border-bottom: 1px solid #ccc;' +
+            '<input class="password"  type="password" autocomplete="new-password" autofocus="autofocus" value="" style="border-radius: 5px;height: 30px;display: block;border: 1px solid #908585;' +
             'margin: 0 auto;outline: none;width:95%"/>' +
             '</div>')
             //绑定点击事件，如果是点击的.password 这个div就改变样式，如果是document中除了div之外的其他任何元素，就变回原来的样式。
@@ -49,13 +48,17 @@
                     //console.log($('.password').val())
                     //console.log('{{ page.password }}')
                     if ($('.password').val() == '{{ page.password }}') {
-                        //恢复文章内容
+                        // 恢复文章内容
                         $(".post-header").after(div)
-                        //恢复目录
+                        // 恢复目录
                         toc.appendTo($(".post-toc-wrap"))
-                        $(".sidebar-nav").show()
+                        // 解决类Mac Panel特效丢失
+                        $(".highlight").wrapAll("<div class='highlight-container'></div>");
+                        $(".highlight table").wrapAll("<div class='table-container'></div>")
+                        // 显示侧边栏
+                        $(".sidebar-nav").show();
                         document.querySelector('.sidebar-nav-toc').click();
-                        //删除本页面的输入密码组件
+                        // 删除本页面的输入密码组件
                         $(".description").remove();
                         $(".qiang").remove();
                         $(".password").remove();
@@ -66,126 +69,6 @@
                 }
                 //将document的keyup移除，防止在pjax的情况下会重复绑定事件
             });
-        }
-    }
-
-    //相册密码操作
-    //暂时储存相册中的内容
-    var div2 = $('.instagram2');
-    var div3 = $('.instagram3');
-   function checkPassword(val) {
-           if (val == 2) {
-               if ('{{ page.ownPhotoPassword }}') {
-                     //如果页面已经输入密码且正确无需再次输入
-                     if ($('#ownPhotoPassword').val() == '{{ page.ownPhotoPassword }}') {
-                         var loadScript = function (path) {
-                             var $script = document.createElement('script')
-                             document.getElementsByTagName('body')[0].appendChild($script)
-                             $script.setAttribute('src', path)
-                         }
-                         setTimeout(function () {
-                             loadScript('./ins.js')
-                         }, 0)
-                         return
-                     }
-                   //将相册内容删除
-                   div2.remove();
-                   //将相册删除后，向原来相册的地方添加，应该出现的提示用户输入密码的样式
-                   $('#-2').append(
-                       '<span class="description" value="请输入密码，然后按 Enter 键欣赏" style="font-style: oblique;font-weight: bold;border: none;display: block;' +
-                       'width: 60%;margin: 0 auto;text-align: center;outline: none;margin-bottom: 40px;resize:none ">' +
-                       '<i class="fa fa-heartbeat" id="myheartbeat"></i>&nbsp;' +
-                       '请输入密码，然后按 Enter 键欣赏' +
-                       '&nbsp;&nbsp;<i class="fa fa-heartbeat" id="myheartbeat"></i>' +
-                       '</span>' +
-                       '<div class="qiang" style="height: 100px;width: 60%;margin:0 auto">' +
-                       '<input class="ownPhotoPassword" onkeydown="keyup_submit(event);"  type="password" autocomplete="new-password" autofocus="autofocus" value="" style="border-radius: 5px;height: 30px;border: none;display: block;border-bottom: 1px solid #ccc;' +
-                       'margin: 0 auto;outline: none;width:95%"/>' +
-                       '</div>')
-               }
-           } else {
-               if ('{{ page.babyPhotoPassword }}') {
-                    //如果页面已经输入密码且正确无需再次输入
-                    if ($('#babyPhotoPassword').val() == '{{ page.babyPhotoPassword }}') {
-                        var loadScript = function (path) {
-                            var $script = document.createElement('script')
-                            document.getElementsByTagName('body')[0].appendChild($script)
-                            $script.setAttribute('src', path)
-                        }
-                        setTimeout(function () {
-                            loadScript('./ins.js')
-                        }, 0)
-                        return
-                    }
-                   //将相册内容删除
-                   div3.remove();
-                   //将相册删除后，向原来相册的地方添加，应该出现的提示用户输入密码的样式
-                   $('#-3').append(
-                       '<span class="description" value="请输入密码，然后按 Enter 键欣赏" style="font-style: oblique;font-weight: bold;border: none;display: block;' +
-                       'width: 60%;margin: 0 auto;text-align: center;outline: none;margin-bottom: 40px;resize:none ">' +
-                       '<i class="fa fa-heartbeat" id="myheartbeat"></i>&nbsp;' +
-                       '请输入密码，然后按 Enter 键欣赏' +
-                       '&nbsp;&nbsp;<i class="fa fa-heartbeat" id="myheartbeat"></i>' +
-                       '</span>' +
-                       '<div class="qiang" style="height: 100px;width: 60%;margin:0 auto">' +
-                       '<input class="babyPhotoPassword" id="111" onkeydown="keyup_submit(event);" type="password" autocomplete="new-password" autofocus="autofocus" value="" style="border-radius: 5px;height: 30px;border: none;display: block;border-bottom: 1px solid #ccc;' +
-                       'margin: 0 auto;outline: none;width:95%"/>' +
-                       '</div>')
-               }
-           }
-           //解决focus 不生效
-           setTimeout("$('.ownPhotoPassword').focus()",100);
-           setTimeout("$('.babyPhotoPassword').focus()",100);
-       }
-    password();
-
-    //绑定enter键按下后离开的事件
-    function keyup_submit(e) {
-        var evt = window.event || e;
-        if (evt.keyCode == 13 && $('.ownPhotoPassword').length > 0) {
-            //回车事件
-            if ($('.ownPhotoPassword').val() == '{{ page.ownPhotoPassword }}') {
-                //密码框赋值
-                $("#ownPhotoPassword").val($(".ownPhotoPassword").val())
-                //恢复相册内容
-                $('#-2').append(div2)
-                //删除本页面的输入密码组件
-                $(".description").remove();
-                $(".qiang").remove();
-                $(".ownPhotoPassword").remove();
-                var loadScript = function (path) {
-                    var $script = document.createElement('script')
-                    document.getElementsByTagName('body')[0].appendChild($script)
-                    $script.setAttribute('src', path)
-                }
-                setTimeout(function () {
-                    loadScript('./ins.js')
-                }, 0)
-            } else {
-                alert("对不起，密码输入错误。")
-            }
-        }
-        if (evt.keyCode == 13 && $('.babyPhotoPassword').length > 0) {
-            if ($('.babyPhotoPassword').val() == '{{ page.babyPhotoPassword }}') {
-                //密码框赋值
-                $("#babyPhotoPassword").val($(".babyPhotoPassword").val())
-                //恢复相册内容
-                $('#-3').append(div3)
-                //删除本页面的输入密码组件
-                $(".description").remove();
-                $(".qiang").remove();
-                $(".babyPhotoPassword").remove();
-                var loadScript = function (path) {
-                    var $script = document.createElement('script')
-                    document.getElementsByTagName('body')[0].appendChild($script)
-                    $script.setAttribute('src', path)
-                }
-                setTimeout(function () {
-                    loadScript('./ins.js')
-                }, 0)
-            } else {
-                alert("对不起，密码输入错误。")
-            }
         }
     }
 </script>
