@@ -5,6 +5,7 @@ essential: false
 notshow: false
 copyright: true
 tags:
+  - Vue
   - Jwt
 categories:
   - Vue

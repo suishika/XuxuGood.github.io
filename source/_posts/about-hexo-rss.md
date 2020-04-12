@@ -11,6 +11,7 @@ tags:
   - Rss
 categories:
   - Hexo
+  - Rss
 keywords: [Hexo,Rss订阅]
 password:
 description: 本篇介绍一下自己的博客如何添加 RSS 订阅功能。

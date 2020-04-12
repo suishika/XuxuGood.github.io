@@ -7,9 +7,9 @@ copyright: true
 abbrlink: a7df3b40
 date: 2019-11-18 12:53:11
 tags:
+  - Java
   - MD5
   - SHA-1
-  - Java
 categories:
   - Java
   - MD5

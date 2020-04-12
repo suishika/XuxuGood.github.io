@@ -6,10 +6,10 @@ abbrlink: 39d47c89
 date: 2019-10-15 09:26:09
 tags:
   - Hexo
-  - Next
   - Photos
 categories:
   - Hexo
+  - Photos
 top:
 keywords: [Hexo,Next,Photos,博客相册]
 description: Next主题是不带相册功能的，但是我们还想拥有一个自己的小相册，怎么办呢，经过一番资料的查找与爬坑，相册功能终于搭建成功，接下来为大家分享一下如何实现。

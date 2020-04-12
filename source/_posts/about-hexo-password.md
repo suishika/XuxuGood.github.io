@@ -6,7 +6,6 @@ abbrlink: c1cdcf68
 date: 2019-10-16 16:31:27
 tags:
   - Hexo
-  - Next
   - Password
   - Security
 categories:
