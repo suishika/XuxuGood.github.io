@@ -31,7 +31,7 @@
 
 <!-- 明月浩空播放器 -->
 {% if theme.player.enable %}
- <script src="https://player.lmih.cn/player/js/player.js" id="myhk" key="158649506326" m="1"></script>
+   <script src="https://player.lmih.cn/player/js/player.js" id="myhk" key="158649506326" m="1"></script>
 {% endif %}
 
 <!--share.js分享-->
