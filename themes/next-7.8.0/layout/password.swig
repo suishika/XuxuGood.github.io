@@ -71,5 +71,7 @@
             });
         }
     }
+
+    password();
 </script>
 
