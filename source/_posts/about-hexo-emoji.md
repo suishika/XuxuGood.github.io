@@ -20,7 +20,7 @@ Hexo 开启欢乐的 emoji 之旅 💛
 
 Hexo 默认的 markdown 渲染引擎不支持将 Github emoji 渲染到静态的 html 页面中，我们换一个支持 emoji 的引擎，再增加一个 emoji 插件即可.
 
-## 安装
+## :sun_with_face: 安装
 
 命令行如下：
 ```BASH
@@ -31,7 +31,7 @@ npm install markdown-it-emoji --save
 
 Tips：据说 [hexo-renderer-markdown-it](https://github.com/hexojs/hexo-renderer-markdown-it) 的速度要比 Hexo 原装插件要快，而且功能更多
 
-## 配置
+## :sun_with_face: 配置
 
 完成插件安装后还需要修改 Hexo 站点配置文件 `_config.yml`（不是主题配置哦）
 ```BASH
@@ -67,11 +67,11 @@ html: false # 转义 HTML，< > 尖括号会被转义成 &lt; &gt;等
 
 `plugins:` 中的最后一项 `- markdown-it-emoji` 是手动添加的，官方 Github Wiki 中给出的配置不包含这一项，其他配置参照的 Github Wiki 中的默认配置，hexo-renderer-markdown-it 提供的其他新特性还没有一一尝试，暂时只想用它的 emoji 功能。:v:
 
-## 使用方法
+## :sun_with_face: 使用方法
 输入对应的emoji编码就行了
 例如：输入笑脸对应的 emoji 编码 `:smile:` 就可以得到 :smile:
 
-## emoji编码合集
+## :sun_with_face: emoji编码合集
 
 People
 

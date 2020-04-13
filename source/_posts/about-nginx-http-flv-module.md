@@ -20,7 +20,7 @@ description: 最近项目组接了一个视频流项目，项目的主要核心�
 
 接下来为大家讲讲 linux 系统下搭建 nginx-http-flv-module 的全部过程。
 
-## 前期准备
+## :sun_with_face: 前期准备
 1. 下载VLC（用于测试视频流是否可以播放）：https://www.videolan.org/
 1. 下载nginx包：https://nginx.org/download/nginx-1.16.1.tar.gz
 2. 下载nginx-http-flv-module 模块包：https://github.com/winshining/nginx-http-flv-module
@@ -35,9 +35,9 @@ description: 最近项目组接了一个视频流项目，项目的主要核心�
 <a href="https://pan.baidu.com/s/1gn_D5I-rJTG39YFElow4lw" class="LinkCard">以上百度资源链接</a>
 提取码：ueic
 
-## 搭建环境
+## :sun_with_face: 搭建环境
 
-### 安装nginx
+### :tada: 安装nginx
 
 1. 在 /user/local 下创建 nginx 文件夹
 ```BASH
@@ -166,7 +166,7 @@ ps -ef | grep nginx //查看nginx进程
 浏览器输入地址是否可以访问成功
 ```
 
-### 安装FFmpeg
+### :tada: 安装FFmpeg
 
 1. 安装前期准备下载的nasm
 ```BASH
@@ -214,7 +214,7 @@ vi /etc/ld.so.conf
 重载配置:ldconfig
 ```
 
-## 推流
+## :sun_with_face: 推流
 
 1. 推流命令：
 ```BASH
@@ -228,7 +228,7 @@ ffmpeg -re -rtsp_transport tcp -i "rtsp://admin:Biao456813@192.168.153.194:554/h
 
 <a href="https://blog.csdn.net/ww506772362/article/details/41445481" class="LinkCard">x264 命令详解</a>
 
-## 拉流播放（flv.js）
+## :sun_with_face: 拉流播放（flv.js）
 
 <a href="https://pan.baidu.com/s/1DA9lhVDy9rJZkU52BuHffw" class="LinkCard">flv.js百度资源链接</a>
 
