@@ -15,7 +15,7 @@ password:
 description: 本教程只适用于 Next5 或者 Next6 主题，Next7 开始做了大量修改，并删除了 custom.styl 文件，同时增加了很多在 Next7 之前需要手动配置的功能，请随个人喜好进行版本选择。
 ---
 
-# 写在前面
+## 写在前面
 <div class="note warning">
 本教程只适用于 Next5 或者 Next6 主题，Next7 开始做了大量修改，并删除了 custom.styl 文件，同时增加了很多在 Next7 之前需要手动配置的功能，请随个人喜好进行版本选择。
 </div>
@@ -29,7 +29,7 @@ description: 本教程只适用于 Next5 或者 Next6 主题，Next7 开始做�
 
 Next 主题最新版本已经更新到 v7.5.0，以下很多内容都已经在新主题中做出了适配或者直接无法使用，愿意更新到最新版本的小伙伴请关注[官方文档更新](https://theme-next.org/)。不愿意更新的小伙伴或者目前使用的是旧版本（比如我还是 Next5 版本）可以继续进行一定的参考。
 
-# 环境准备
+## 环境准备
 在安装 hexo 框架之前，我们需要先安装该框架的依赖环境：
 
 1. Node.js
@@ -51,28 +51,28 @@ Next 主题最新版本已经更新到 v7.5.0，以下很多内容都已经在�
 
 <a href="https://www.git-scm.com/download/" class="LinkCard">MacOS的Git下载地址</a>
 
-# 安装 Hexo 和 Next
+## 安装 Hexo 和 Next
 
-## 安装 hexo
+### 安装 hexo
 本文安装环境为 windows10，所以以下都以 windows 操作系统下安装为例。
 
 <div class="note danger">
 安装之前需要说明几个注意事项：<br>- 很多命令既可以使用 windows 的 cmd 命令行来完成，也可以使用刚才安装好的 Git 命令行工具 Git Bash 来完成，但是在 cmd 中部分命令会出现一些问题，建议只使用 Git Bash 来执行命令。<br>- Hexo 不同版本之间有差别，要注意自己安装的版本是哪个版本（跟着本文走就没问题啦），如果修改样式的话注意网上教程的 Hexo 版本差异。<br>- Hexo 安装好后有 2 种<code>_config.xml</code>文件，一个是 hexo 站点根目录下的全局<code>_config.xml</code>文件，还有一种是每个主题 theme 下的各自的<code>_config.xml</code>文件，注意区分二者，后面会详细说到。<br>
 </div>
 
-### 安装 hexo
+#### 安装 hexo
 依然是在 GitBash 中操作，输入以下命令，等待安装完成。
 ```BASH
 $ npm install -g hexo-cli
 ```
 
-### 创建 hexo 文件夹
+#### 创建 hexo 文件夹
 在电脑某个位置创建一个名为 hexo 的文件夹（当然名字可以随便取），比如我个人的就是 `E:\blog\hexo` ，由于这个文件夹是你以后存放博客代码和文章的地方，所以最好不要乱放，然后我们在 GitBash 中使用 cd 命令移动到创建好的文件夹中。
 ```BASH
 $ cd /e/blog/hexo
 ```
 
-### 初始化 hexo
+#### 初始化 hexo
 在上面 cd 到创建的文件夹后，输入以下命令进行初始化
 ```BASH
 $ hexo init
@@ -205,7 +205,7 @@ $ hexo g && hexo s
 
 看到这个 public 文件夹嘛，这个里面就是生成的所有静态文件，包括 html，css，js 文件以及图片等，稍微懂一些前端的人就知道这个文件夹就是你的博客被 node.js 渲染后生成的最终文件夹，这个文件夹中点开 index.html 就能看到你的博客页面了😄！简单点来说如果在本地修改了什么文件内容，可以使用 `hexo g` 命令重新生成一下public文件夹，那么这个文件夹只要修改了，再使用 `hexo s` 启动服务就可以看到页面变化了，当然 `hexo s` 本身就具有在线调试的功能，如果 `hexo s` 无法刷新页面修改内容，那么使用 `hexo g && hexo s` 就可以看到更改内容啦~
 
-### 第一篇博客文章
+#### 第一篇博客文章
 博客基本框架完成后，我们做的第一件事就是创建第一篇个人博客啦！可以在 Gitbash 中 cd 到 hexo 根目录，使用如下命令：
 ```BASH
 hexo new "我的第一篇博客"
@@ -216,7 +216,7 @@ hexo n "我的第一篇博客"
 ```
 就可以在 `hexo/source/_posts` 文件下面新建一个 `.md` 文件，这个 `.md` 文件就是 Markdown 文件，所以我们写博客只要在本地编辑这个 Markdown 文件就可以了。Markdown 语法可以 Google 一下使用教程，比较简单并且实用。
 
-## 将 Hexo 博客部署到 Github 上
+### 将 Hexo 博客部署到 Github 上
 1. 为什么要部署到 Github上呢，当然是有以下原因：
 2. 因为 Hexo 博客都是静态文件，GithubPages 自身就支持静态文件。
 3. 免费方便，不用花一分钱就可以自己搭建一个自由的个人博客，并且没有服务器没有后台。
@@ -229,14 +229,14 @@ hexo n "我的第一篇博客"
 
 <a href="https://github.com" class="LinkCard">Github官网</a>
 
-### 创建 Github 仓库
+#### 创建 Github 仓库
 首先我们需要在 Github 上创建一个 repository，就是创建一个仓库的意思，在登录账号后首页就有一个显眼的 create new repository，点进去就可以看到了，注意名字必须为你的 `Github用户名.github.io` ，如下图：
 
 ![github](https://s2.ax1x.com/2019/10/21/Kl0wjI.png)
 
 不能设置为其它名字，只能用这个仓库名。这样设置以后，我们在不绑定域名的前提下，可以直接使用 `http://Sanarous.github.io` 来访问自己的个人博客，这样就相当于有一个个人域名，并且是永久免费的！
 
-### 配置 SSH Key
+#### 配置 SSH Key
 如果是第一次在自己的本机上使用 Git 上传到 Github 上，那么必须配置 `SSH key` ，表示 Github 允许这台机器有权限使用 Git 上传代码到远端仓库。
 
 我们可以在 GitBash 中使用 `$ cd ~/.ssh` 命令来查看本机已经存在的 ssh 密钥，如果是第一次使用会显示 `No such file or directory` ，如果不是的话，就需要用已经存在的密钥或者重新生成一份了。
@@ -255,7 +255,7 @@ $ ssh-keygen -t rsa -C "邮件地址"
 
 上面的 Title 可以任意填写，下面的 key 注意要打开 .ssh 文件，将密钥复制进去
 
-### 测试是否成功
+#### 测试是否成功
 
 使用如下命令：
 ```BASH
@@ -267,7 +267,7 @@ $ ssh -T git@github.com # 注意邮箱地址不用改
 
 看到这个信息就说明 SSH 已经配置成功！
 
-### 配置 Git 提交的用户信息
+#### 配置 Git 提交的用户信息
 上面配置成功后，我们就可以设置 Git 的全局用户信息了，这个信息设置当前 Git 命令上传代码的用户信息。
 
 使用以下命令：
@@ -277,7 +277,7 @@ $ git config --global user.email  "xxx@qq.com" // 填写你的github注册邮箱
 ```
 配置完成后以后提交代码都是使用的这个用户信息进行提交的。
 
-### 将 Hexo 博客部署到 Github 上
+#### 将 Hexo 博客部署到 Github 上
 首先打开 hexo 站点的配置文件，找到 deloy 并填写如下配置：
 
 文件位置：`hexo/_config.xml`
@@ -303,7 +303,7 @@ npm install hexo-deployer-git --save
 ```
 然后我们可以使用 `hexo clean && hexo g && hexo deploy` 命令来完成一键部署到 Github 上。
 
-## 安装 Next 主题
+### 安装 Next 主题
 由于默认的主题 landscape 界面比较丑（当然魔改也是可以的），我们可以使用 Hexo 官方推荐的主题：[https://hexo.io/themes](https://hexo.io/themes) ，如果喜欢这里面的某些主题，可以直接去上面主题对应的界面中的 Github 中下载（下载方式与稍后介绍的下载 Next 主题一样）。
 
 目前在 Github 上 star 数量比较多的有 Next 主题、yillia 主题等，Next 主题基本占据了 Hexo 博客的半壁江山，并且 Next 主题集成功能较多，因此我下面只介绍 Next 主题的使用方式。
@@ -320,7 +320,7 @@ npm install hexo-deployer-git --save
 
 下面我们来安装 Next 主题。
 
-### 下载 Next 主题
+#### 下载 Next 主题
 以下均以 Next6 版本为例，Next5 版本操作基本一样。
 
 进入[https://github.com/theme-next/hexo-theme-next](https://github.com/theme-next/hexo-theme-next)
@@ -331,7 +331,7 @@ npm install hexo-deployer-git --save
 
 如果第一种方式比较慢的话，可以直接选择第二种方式直接下载，然后将下载好的压缩包解压后放在 `E:\blog\hexo\themes\` 下面，`git clone` 的话也是在这个下面，下载好后的名字可以任取。
 
-### 设置 hexo 博客为 Next 主题
+#### 设置 hexo 博客为 Next 主题
 在站点根目录下_config.xml配置文件中，找到如下代码并进行配置：
 
 文件位置：hexo/_config.xml
@@ -343,14 +343,14 @@ npm install hexo-deployer-git --save
 + theme: hexo-theme-next   # 此处填入你在themes目录下的next主题文件名
 ```
 
-### 测试 Next 主题
+#### 测试 Next 主题
 在 `GitBash` 中输入
 ```BASH
 $ hexo clean && hexo g && hexo s
 ```
 等待启动完成在浏览器中输入http://localhost:4000即可查看安装好的 Next 主题！
 
-# Next 主题基本功能配置
+## Next 主题基本功能配置
 Next 主题安装好后的初始界面也是很简洁的，我们可以先设置一些常用功能😊。
 
 首先为了防止懵逼，再次友情提醒：在这里修改的一律是主题配置文件 `_config.xml` ，目录是 `hexo/themes/next/_config.xml` ，千万不要走错地方了！
@@ -365,7 +365,7 @@ Next 主题安装好后的初始界面也是很简洁的，我们可以先设置
 
 以下均在 `hexo s` 在线调试环境中进行修改~
 
-## 网站favicon图标设置
+### 网站favicon图标设置
 
 ![favicon](https://s2.ax1x.com/2019/11/13/MJSy28.png)
 
@@ -385,7 +385,7 @@ favicon:
 
 如果是有第三方图床放图片链接的，也可以直接改成图片链接。
 
-## 网站页脚小心心定义
+### 网站页脚小心心定义
 
 ![heart](https://s2.ax1x.com/2019/11/13/MJ9RNn.png)
 
@@ -408,7 +408,7 @@ footer:
     color: "#ff0000"
 ```
 
-## 关闭底部由 hexo 强力驱动的广告
+### 关闭底部由 hexo 强力驱动的广告
 
 ![HEXO-驱动](https://s2.ax1x.com/2019/11/13/MJiCtA.png)
 
@@ -427,7 +427,7 @@ footer:
 -    version: false
 ```
 
-## 菜单栏设置
+### 菜单栏设置
 
 在配置文件中搜索 menu，找到如下：
 ```BASH
@@ -459,7 +459,7 @@ hexo n page "photos"
 
 这样就会自动在 `hexo/source` 目录下生成一个文件夹，而且里面是一个 `index.md` 文件，Node.js 最终会把这个 md 文件渲染成 html 文件，所以菜单栏中内容就在这个 md 文件中写就可以，并且文章内支持 html 写法，所以具有很强的扩展性🤣，创建之后，就需要在配置文件这个地方添加上新增菜单的名称以及链接格式和 FontAwesome 图标，然后打开 `hexo/themes/next/languages/zh-CN.yml` 文件，在 menu 下面按照格式汉化你的菜单栏名称~
 
-## Next主题四种风格设置
+### Next主题四种风格设置
 Next 主题支持四种内置风格，每个人喜欢的风格都不同，可以在基础风格上继续进行魔改。搜索 schema，找到如下代码：
 ```BASH
 # Schemes
@@ -470,7 +470,7 @@ scheme: Muse
 ```
 四种风格样式可以自己进行切换，可以在本地 `hexo g && hexo s` 后在线调试这个地方的代码，喜欢哪个就选哪个吧~
 
-## 社交链接设置
+### 社交链接设置
 社交链接主要是在侧边栏中展示的，一般都是自己的各种网站主页。搜索 social，找到如下代码：
 ```BASH
 #social:
@@ -487,7 +487,7 @@ scheme: Muse
 ```
 后面的 yourname 改成你自己在对应网站的 ID，然后将前面的 # 注释去掉。其中 `||` 后面还是表示该链接前面的图标在 FontAwesome 中的名称，可以进行自定义修改。
 
-## 友情链接设置
+### 友情链接设置
 
 友情链接也是处于侧边栏中的，这里可以完全自定义内容，一般可以用来放社交圈子链接（不过一般博客都会单独做一个页面放其它人的博客友链）。搜索 links，找到如下配置
 ```BASH
@@ -511,7 +511,7 @@ links:
   Github: https://github.com/
 ```
 
-## 侧边栏设置
+### 侧边栏设置
 
 搜索 sidebar，找到如下配置
 ```BASH
@@ -540,7 +540,7 @@ sidebar:
   onmobile: false
 ```
 
-## 文章开启阅读更多按钮
+### 文章开启阅读更多按钮
 如果不开启阅读更多按钮的话，默认是展示文章中所有内容的，这显然体验不好。
 
 一般都会在文章中插入 `<!--more-->` 这种注释形式表示首页展示到注释处为止。或者会使用如下官方配置文件中自带的方式。一般都推荐使用注释的方式，因为下面这种 `auto_excerpt` 方式不会保留前面的行文样式，但是注释方式会保留样式。
@@ -553,7 +553,7 @@ auto_excerpt:
 ```
 默认是关闭的，也就是首页上默认显示整篇文章，而为了显示阅读更多按钮，我们可以开启这个服务。
 
-## 文章元数据设置
+### 文章元数据设置
 
 ![元数据](https://s2.ax1x.com/2019/11/14/MY7yJe.png)
 
@@ -570,7 +570,7 @@ post_meta:
 ```
 上面应该已经说明的很详细了吧~
 
-## 文章字数统计设置
+### 文章字数统计设置
 
 由于上面元数据中没有带统计文章字数功能，所以需要利用插件来生成，搜索 post_wordcount，找到如下配置：
 ```BASH
@@ -587,7 +587,7 @@ symbols_count_time:
 
 `npm install hexo-symbols-count-time --save` 命令安装模块后开启上述功能使用。
 
-## 侧边栏头像设置
+### 侧边栏头像设置
 
 侧边栏中没有博主头像是没有灵魂的。Next6 主题中自带鼠标放在头像上能旋转 360度的功能，如果是 Next5 的话需要自己手动配置。
 
@@ -603,7 +603,7 @@ avatar:
   rotated: true   # 设置鼠标放到头像上是否旋转
 ```
 
-## 代码块设置
+### 代码块设置
 
 Next6 中自带了复制代码按钮，Next5 需要自己手动配置。
 
@@ -616,7 +616,7 @@ codeblock:
 		show_result: true  # 是否显示复制成功信息
 ```
 
-## 开启文章打赏按钮
+### 开启文章打赏按钮
 一篇辛辛苦苦敲出来的文章，不妨开启一下文章打赏功能，万一真有人给你棒棒糖呢😆 ~
 
 搜索 reward，找到如下配置并修改：
@@ -628,7 +628,7 @@ alipay:  # 支付宝收款图片地址
 #bitcoin: /images/bitcoin.png  # 比特币
 ```
 
-## 开启相关文章推荐功能
+### 开启相关文章推荐功能
 
 ![相关文章](https://s2.ax1x.com/2019/11/14/MYbnH0.png)
 
@@ -649,7 +649,7 @@ related_posts:
 ```
 开启相关文章推荐需要安装 `hexo-related-popular-posts` 模块，即在 hexo 站点根目录下使用 `npm install hexo-related-popular-posts --save` 安装模块，然后开启上面的相关文章功能就可以啦~
 
-## 开启文章版本信息
+### 开启文章版本信息
 搜索 post_copyright，找到配置
 ```BASH
 post_copyright:
@@ -659,7 +659,7 @@ post_copyright:
 ```
 设置为 true 可以打开，这样在每篇文章最后都会有版权提示。
 
-## 代码块风格设置
+### 代码块风格设置
 搜索 highlight_theme，有以下多种风格：
 ```BASH
 # Code Highlight theme
@@ -669,7 +669,7 @@ highlight_theme: night eighties
 ```
 可以自己修改上面 normal 、night 、 night eighties 、 night blue 、night bright 在线调试选择自己喜欢的风格。
 
-## 添加valine评论系统
+### 添加valine评论系统
 没有评论系统的博客是没有灵魂的，不仅如此，当前免费开源的评论系统中，valine 因为简洁并且支持匿名留言得到很多博主的喜爱，而像其它的来必力（韩国的）、Gitalk（Github的）等都有这样那样的缺点，不太建议使用。
 
 需要注意的是valine后台评论保存是依赖于 leancloud的，leancloud 是一个面向个人用户免费的存储系统（当然不止是提供存储功能，还有其它服务），我们需要在 leancloud 官网注册，具体步骤可以看[valine的官方文档](https://valine.js.org/)介绍。
@@ -689,7 +689,7 @@ valine:
 ```
 注意由于 valine 依赖于 leancloud 存储服务，因此要先去 [https://leancloud.cn](https://leancloud.cn) 网站注册，获取到 appid 和 appkey 后放到这里就 ok 了。其中 avatar 是设置默认头像，可以去 [https://valine.js.org/avatar](https://valine.js.org/avatar) 选择默认头像，然后在这里设置名字即可。具体使用可以参考[valine的官方文档](https://valine.js.org/)。
 
-## 开启分享按钮
+### 开启分享按钮
 
 百度分享对国内网站来说更友好一些，搜索 baidushare，找到如下代码：
 ```BASH
@@ -719,7 +719,7 @@ needmoreshare2:
 ```
 注意 needmoreshare2 是依赖 theme-next-needmoreshare2 模块的，可以去 [https://github.com/theme-next/theme-next-needmoreshare2](https://github.com/theme-next/theme-next-needmoreshare2) 找到使用方法。
 
-## 设置文章阅读量
+### 设置文章阅读量
 
 搜索 leancloud_visitors，并进行如下配置：
 ```BASH
@@ -737,7 +737,7 @@ leancloud_visitors:
 
 注意这个 appid 和 appkey 跟上面开启 valine 评论使用的 leanCloud 是一样的，但是需要在 leancloud 中创建 classes 对象存储，具体方式可以 Google 一下。
 
-## 开启不蒜子统计功能
+### 开启不蒜子统计功能
 
 目前不蒜子统计网站统计做的还可以，网站访问量主要是分为 pv 和 uv 两种，pv 是指页面访问量，每访问一次或者刷新一次页面后该页面的 pv+1，而 uv 是指独立 ip 访问量，就是说一天内同一 ip 访问一个页面 N 次，uv 都只是 + 最开始的那一次。一般用 pv 作为页面的访问量，uv 作为页面的访客量。
 
@@ -760,7 +760,7 @@ busuanzi_count:
 ```
 注意其中的 post_views 与上面的 leanCloud_visitors 冲突，两者都是显示文章阅读量，只开启一个就可以了。
 
-## 开启本地博客搜索功能
+### 开启本地博客搜索功能
 
 提升读者用户体验，博客内肯定是需要一个全局搜索按钮的。当然hexo已经集成了几款开源的搜索插件，一般都使用的是 local_search。
 
@@ -787,7 +787,7 @@ search:
   limit: 10000
 ```
 
-## 修改加载特效
+### 修改加载特效
 
 由于网页不可能一直都秒进，总会等待一段时间的，所以可以修改一下加载的特效。Next 已经集成了很多加载特效，可以在下面选项中在线调试测试一下。
 
@@ -815,7 +815,7 @@ pace_theme: pace-theme-center-radar #默认设置，可以修改为上述任何�
 ```
 可以自己修改后使用 `hexo s` 本地调试挑选自己喜欢的加载样式。
 
-## 开启3D背景
+### 开启3D背景
 
 给博客添加 3D 背景特效，说实话我只在最开始折腾博客的时候开过，后来为了提升响应速度，这些不必要的东西都给关闭了。
 
@@ -835,19 +835,19 @@ canvas_sphere: false
 ```
 默认为 false，可以自己逐一设置为 true 然后在本地调试查看3D效果。
 
-# Next主题进阶优化配置
+## Next主题进阶优化配置
 
 在介绍完 Next 主题的基本配置后，下面才是本文的重头戏，在 Next 进阶配置时，一定需要你懂一些 CSS 和基本的前端知识，不然报错了可能你根本无从寻找问题原因，或者在进行大面积修改前先将主题备份一份，这样出错后找不到原因还能及时止损😂 。
 
-## 学会使用浏览器F12定位样式
+### 学会使用浏览器F12定位样式
 
 发现页面有大量留白？颜色不合自己口味？那就 F12 开始吧，大换装开始！空白区？颜色？背景？圆角矩形？阴影？透明度？超链接样式？侧栏头像圆形并旋转？文章标题前面的竖线和颜色？只需按下 F12，改到自己想要的样式，然后 Copy 到 `custom.styl` 文件即可。感觉这是 NexT 主题非常棒的设计，因为这让我们能够很方便自定义博客的样式。怎么知道要修改这个文件呢？ 强烈推荐阅读[这篇文章](http://www.cduyzh.com/hexo-settings-3/)。
 
-### 怎么修改？
+#### 怎么修改？
 
 浏览器按 F12 即可，建议用 [Google Chrome 浏览器](http://down.tech.sina.com.cn/content/40975.html)（有梯子的直接去 Google 下载😂），或者[火狐浏览器](http://www.firefox.com.cn/download/)。因为这两个浏览器属于标准浏览器，如果你按下 F12 后简直特么一脸懵逼，那么别急，硬着头皮慢慢折腾吧哈哈哈嗝～
 
-### 快速懵逼到熟悉
+#### 快速懵逼到熟悉
 
 首先按下 F12 后的操作流程图，就是[这篇文章](https://yangbingdong.com/2017/build-blog-hexo-advanced/#%E5%AE%9A%E4%BD%8D%E5%85%83%E7%B4%A0)中的三步骤，点小箭头定位元素，调试 CSS 代码，最后 Copy 到 `custom.styl` 。然后懵逼的地方，应该有下面两点：
 
@@ -858,10 +858,10 @@ canvas_sphere: false
 
 社交要先有自己原则，一段代码要先声明变量，一个数学问题有前提，一篇论文要先定义名词，到这里我们也必须要先了解一些 HTML 和 CSS 的基本语法知识了，才能继续折腾下去。建议先浏览下 MDN 的 [HTML](https://developer.mozilla.org/zh-CN/docs/Web/HTML) 和 [CSS](https://developer.mozilla.org/zh-CN/docs/Web/CSS) 的页面，但没必要记住里面的每一个语法知识，因为这样的记忆是不够深刻也并不高效的，只要浏览下留个印象（为了能找准元素）就行，而记忆是要在实践中记忆的。
 
-### 附上我的cutom.styl
+#### 附上我的cutom.styl
 由于原代码比较长，我在[另外一篇博客](https://hasaik.com/posts/dff7e11c.html)中已经有专门分享，注意千万不要照搬到你的 `custom.styl` ！一定要先找对应元素再修改，为了方便大家查看我已经做了一定的注释，仅供大家参考！
 
-## 修改博客字体
+### 修改博客字体
 
 博客影响美观的除了样式，就是直接映入读者眼睛的字体了，因此选择一款优雅的字体对博客美感的提升是非常大的，当然，博客字体大小是可以直接修改的：
 
@@ -950,15 +950,15 @@ font:
 ```
 其它字体设置可以参考[这篇文章](https://io-oi.me/tech/noto-serif-sc-added-on-google-fonts.html)。
 
-## 博客推广及优化
+### 博客推广及优化
 
 想要自己写的博客能被别人看到？希望能得到别人的评论肯定？渴望分享技术？那么博客推广肯定是必不可少了😙。
 
-### 手动推广
+#### 手动推广
 
 大概就是在其它博客或者视频等信息流下面留下自己的博客地址，比如第一件事咱们可以去 next 主题[专门的博客分享的issue区](https://github.com/iissnan/hexo-theme-next/issues/119)留下自己的爪印，或者在搜索引擎中搜索使用 hexo+next 搭建博客的热门教程中，在评论区留下地址，这样就可以手动引流啦。
 
-### 搜索引擎SEO收录
+#### 搜索引擎SEO收录
 
 当然手动引流不是长久之计，搜索引擎是互联网上寻找资源的重要手段，而要让别人能够在搜索结果中看到自己的博客文章链接，就必须让搜索引擎收录，怎么操作呢？
 
@@ -966,7 +966,7 @@ font:
 
 其它优化可以看我的[另外一篇博客](https://hasaik.com/posts/495d0b23.html)。
 
-### 间接影响
+#### 间接影响
 
 除了直接被搜索引擎收录之外，如果有其它被搜索引擎收录的文章中，引用你的某篇文章的链接地址，那么同样可以引流到你的博客，这种称为间接影响，不要小看间接影响，如果你的博客写的很好，经常被引用的话，那么间接影响带来的流量是非常巨大的，但是其中会有一个问题，通过“引流”到达的流量，你需要尽可能地将用户留在自己的博客上，那么如何吸引用户呢？当然是有两个方面：
 
@@ -977,17 +977,17 @@ font:
 
 如果做到上面三点，那么就算好不容易「骗」到一个浏览量，但是这个读者马上被博客和文章惊呆了，看完文章后，这读者心里美滋滋，认为这么好的文章（博客）必须分享啊🌚，于是可能马上来了一大批满怀期待的读者，然后这批读者又……这时文章的读者数（博客的访问量）就不是简单的加法了～
 
-### 知识平台
+#### 知识平台
 
 直接或间接因为 Google 这样的搜索引擎而来的读者，绝大部分都是技术人员，而他们只希望尽快解决自己的技术问题，这也是他们的目的，这就意味着博客上的一首诗还是很难被欣赏。而要想照亮他人，他人必须要能懂自己的文章，这样也才可能有更强的交互——评论。所以为了不浪费自己的光能，能把自己的光能完完整整地贡献给文明，那就必须也让一首诗也有评论，怎么做呢？让读者的类型多样化，不限于技术人员。还好现在大部分读者也不用搜索引擎了，谁在吞食搜索引擎的用户？移动端。智能手机的迅速普及导致搜索引擎已经不是人们获取知识的主要途径，大部分人已经将手机 APP 上的知识平台作为自己获取知识的主要途径，比如：知乎、简书、微信订阅号……所以，你还可以将自己的文章发布在这些知识平台上的相应分类上，然后留个博客链接，吸引更多类型的读者😄～
 
-### 谷歌分析
+#### 谷歌分析
 
 你怎么知道自己推广的效果？你怎么知道有没有人看了自己的博客？哪篇文章最受欢迎？此时有没有人正浏览着自己的博客？自己的文章有没有被引用？这时最常用的就是强大免费的 [Google Analytics](https://analytics.google.com/)，推荐博客建好后，就立即使用。
 
 如何使用？请务必自备梯子查看 [Google 官方的教程](https://analytics.google.com/analytics/academy/course/6)，开始使用后一定要按照里面的设置，先添加多份 view（数据视图）。
 
-## 文章底部加上评分小星星
+### 文章底部加上评分小星星
 
 淘宝买东西，作为消费者的我们，看评价很重要。现在作为博主，写了一篇文章，很期待读者的反馈。而与淘宝一样，确认收货后，相比评论，更愿意五星好评。那么博客文章怎么加上呢？首先打开主题配置文件：
 
@@ -1018,7 +1018,7 @@ rating:
 {% endif %}
 ```
 
-## 为站点添加标题崩溃特效
+### 为站点添加标题崩溃特效
 
 该特效为：当用户离开站点相关的页面时，网页的标题会变成已崩溃，网站图标也会改变；当用户重新回到站点页面时才会恢复正常。
 
@@ -1057,7 +1057,7 @@ $(window).load(function () {
 上面的图片放在 `/themes/next/source/images/` 目录下，自行选择喜欢的图片即可。
 
 
-## 每篇文章末尾添加致谢
+### 每篇文章末尾添加致谢
 
 ![致谢](https://s2.ax1x.com/2019/11/14/MtQLeH.png)
 
@@ -1090,7 +1090,7 @@ passage_end_tag:
   enabled: true
 ```
 
-## 新增文章时自动打开Markdown编辑器
+### 新增文章时自动打开Markdown编辑器
 由于每次在 GitBash 中使用 `hexo n "文章名称"` 时还要自己去本地目录中打开编辑器，这对于懒癌患者来说实在是太麻烦了😂，那么不如实现一个监听的 js 代码监听新建文章的命令，只要监听到了就自动打开相应的 Markdown编辑器，这样不就方便多了嘛！
 
 首先在 `hexo/scripts` 下新建一个 `newpost.js` 文件，如果没有 `scripts` 文件可以手动创建一个。
@@ -1111,7 +1111,7 @@ hexo.on('new', function(data){
 ```
 注意里面要修改的是 Markdown 编辑器的绝对路径，我使用的是 Typora ，所以我的绝对路径是 `E:\\Typora\\bin\\Typora.exe` ，大家可以对应进行修改。
 
-## 使用hexo-admin在线发布文章
+### 使用hexo-admin在线发布文章
 
 最近有不少小伙伴问我这个博客如何在线发布文章，毕竟大多数人都是程序小白，不想使用 GitBash 命令行敲各种命令。所以也有大神做一个 hexo-admin 管理工具，虽然这个东西没有适配完全，但是对于文章管理的基本功能够用。
 
@@ -1151,7 +1151,7 @@ admin:
 ```
 就可以在线部署到 Github 了！
 
-## Hexo-abbrlink生成唯一文章链接
+### Hexo-abbrlink生成唯一文章链接
 
 一个 [Hexo插件](https://hexo.io/plugins/) ，用于根据帖子标题生成静态帖子链接。
 
@@ -1180,7 +1180,7 @@ abbrlink:
 
 示例：https://hasaik.com/posts/ab21860c.html ，其中 `ab21860c.html` 就是生成的永链。
 
-## 修改侧栏滚动条样式
+### 修改侧栏滚动条样式
 
 默认的侧栏滚动条其实挺丑的，添加如下代码重新渲染页面就可以修改侧栏滚动条了。
 
@@ -1223,7 +1223,7 @@ abbrlink:
 }
 ```
 
-## 侧栏加入已运行的时间
+### 侧栏加入已运行的时间
 
 我们都有自己的生日，都知道自己的岁数，那为什么不给博客加上，让读者知道博客的年纪呢？操作很简单，而且不是精确到年而是精确到秒，233333～
 
@@ -1299,7 +1299,7 @@ show_date_time();
 ```
 里面的值 F12 调成自己喜欢的，然后更改即可。要是不想放在侧栏，想放在页脚，自己应该能折腾了吧😄～
 
-## 添加博客热门文章页面
+### 添加博客热门文章页面
 
 博客已有的分类，如 categories 和 tags，都是基于博主的，那么有没有一种分类是基于读者的呢？有，一种是搜索，另一种就是这里的文章阅读量排行榜。前提是在主题配置文件中配置了 leancloud_visitors，配置方法在基础配置中已经介绍过了。首先新建页面：
 
@@ -1380,7 +1380,7 @@ type:
 
 注意：如果你的博客使用了 Valine 评论系统，那么可能会有代码冲突问题，解决方法可 Google ~
 
-## 文章置顶功能
+### 文章置顶功能
 
 由于博客的首页可能是被浏览最多的页面，所以首页的前几篇文章被阅读的可能性比较大。可以利用这个特点，通过将自己认为重要的文章放在首页，从而让重要的文章被阅读的可能性增大😄。但是，默认的排序只有一个维度——时间，两种选择——正序和倒序，这就造成自己的得意之作被埋没了，怎么办呢，如何实现文章的置顶？
 
@@ -1424,7 +1424,7 @@ top: 10
 +      {% endif %}
 ```
 
-## 精品文章
+### 精品文章
 
 在 `/themes/next/layout/_macro/` 路径，找到 `post.swig` ，在前 `文置` 顶功能后边，加上如下代码：
 ```BASH
@@ -1449,7 +1449,7 @@ top: 10
 essential: true
 ```
 
-## 添加近期文章版块
+### 添加近期文章版块
 
 在 `next/layout/_macro/sidebar.swig` 中的 `if theme.links` 对应的 `endif` 后面添加以下代码：
 ```BASH
@@ -1479,7 +1479,7 @@ recent_posts_layout: block
 recent_posts: true
 ```
 
-## 代码块复制功能
+### 代码块复制功能
 
 依赖 [clipboard.js](https://clipboardjs.com/) 实现，个性化配置可参考官方文档。在 `/themes/next/layout/_layout.swig` 引入下载的 JS
 ```JS
@@ -1563,7 +1563,7 @@ highlight-wrap {
 }
 ```
 
-## 博客加入canvas粒子时钟
+### 博客加入canvas粒子时钟
 
 这是一款很有意思的 HTML5 Canvas 时间动画，总体来说，它是一个可以和客户端同步的时钟，其特点是当时间走动时，数字将会散落成一个个粒子动画。
 
@@ -1869,7 +1869,7 @@ highlight-wrap {
 
 ```
 
-## 自定义文章底部版权声明
+### 自定义文章底部版权声明
 
 效果图：
 
@@ -2007,7 +2007,7 @@ copyright: true #新增,开启
 ---
 ```
 
-## 博客动态背景图片
+### 博客动态背景图片
 
 在 `themes/next/source/css/_custom/custom.styl` 中添加CSS样式
 
@@ -2025,15 +2025,15 @@ body {
 /* hexo next主题下，自动更换背景图片 end */
 ```
 
-## 博客写作进阶
+### 博客写作进阶
 
 Next主题集成了很多好看的写作样式，具体可以看我的[另外一篇博客](https://hasaik.com/posts/c7631ec1.html)。
 
-## 插入音乐和视频
+### 插入音乐和视频
 
 音乐的话，网易云音乐的外链很好用，不仅有可以单曲，还能有歌单，有兴趣的自己去[网易云音乐](https://music.163.com/)找首歌尝试。但是目前有很多音乐因为版权原因放不了，还有就是不完全支持 https，导致浏览器地址栏的小绿锁不见了。要解决这些缺点，就需要安装插件👽。
 
-### 音乐
+#### 音乐
 
 1) 直接用 HTML 的标签，写法如下：
 ```BASH
@@ -2077,7 +2077,7 @@ npm install hexo-tag-aplayer --save
 
 什么，你想把网易云的几百首歌手动同步到博客😨？慢慢慢，有一种[非常简单的方法](https://github.com/MoePlayer/hexo-tag-aplayer#meingjs-support-new-in-30)，此这种方法也支持单曲，将参数里的 `playlist` 更改为 `song` 即可，非常建议食用！更多功能请仔细阅读 README。
 
-### 视频
+#### 视频
 
 1) 直接用 HTML 的标签，写法如下：
 ```BASH
@@ -2095,11 +2095,11 @@ npm install hexo-tag-dplayer --save
 
 当然，这个插件的功能还有很多，可以去 [README](https://github.com/MoePlayer/hexo-tag-dplayer) 和这插件的「母亲」Dplayer 的[官方文档](https://dplayer.js.org/)看看。
 
-## 主题代码块高亮
+### 主题代码块高亮
 
 发现一款类似 MacPanel 的代码块高亮样式，具体可以看我的[另外一篇博客](https://hasaik.com/posts/d7399e80.html)。
 
-## 主题头像旋转功能
+### 主题头像旋转功能
 
 将头像显示成圆形，鼠标放上去有旋转效果。
 
@@ -2365,7 +2365,7 @@ document.querySelectorAll("img").forEach(v=>{
 <script type="text/javascript" src="/js/src/image.js"></script>
 ```
 
-## 给博客添加豆瓣读书/电影/游戏页面
+### 给博客添加豆瓣读书/电影/游戏页面
 作为一个有内涵的博客…咳咳…展示自己丰富的阅读量是很有必要的，豆瓣读书就是这么一个很好的平台，当然已经有作者利用爬虫将豆瓣读书/电影/游戏内容爬取下来，并制作成了 hexo 博客插件，具体可以看官方文档[README](https://github.com/mythsman/hexo-douban)，当然也可以看我的[另外一篇博客](https://hasaik.com/posts/7fbe9500.html)。
 
 当然作者所做的界面是没有样式的，我们可以在作者的基础上继续魔改增加自己喜欢的样式，在安装好所需插件后，我们打开目录为 `hexo/node_modules/hexo-douban/lib/templates/index.css` 文件，里面是整个阅读界面的 css 样式代码文件，我们可以在其中添加背景图片等样式，比如可以添加如下：
@@ -2383,7 +2383,7 @@ document.querySelectorAll("img").forEach(v=>{
 ```
 修改上面的 url 中地址图片链接就可以新增背景图片了~
 
-## 增加二次元看板娘live2d模型
+### 增加二次元看板娘live2d模型
 如果你喜欢二次元，或者想给博客增加一个动态装饰，那么看板娘肯定是你的不二之选了，看板娘原生[使用文档在这里](https://github.com/EYHN/hexo-helper-live2d) ，但是原生的其实不是很好用，这里我推荐一个只需要引入一个js文件就能实现看板娘的方法，[README](https://github.com/stevenjoezhang/live2d-widget)在这里，这个作者对Live2d模型进行了深度优化，可以根据鼠标放置和点击内容的不同进行一定的提示信息，并且代码中设置了一年中特殊节日的祝福语，可以说是很有心了，唯一的缺点就是网页刷新时人物模型的加载速度较慢🌚~
 
 具体设置的话，我们去这个[张书樵live2d-widget](https://github.com/stevenjoezhang/live2d-widget)下载这个 zip 项目并解压到 `themes/next/source` 下。
@@ -2407,7 +2407,7 @@ live2d:
 ```
 最后，想修改看板娘大小、位置、格式、文本内容等，可查看并修改 `waifu-tips.js` 、 `waifu-tips.json` 和 `waifu.css` 三个文件。
 
-## 彩色标签云
+### 彩色标签云
 
 就是标签上增加随机颜色，每次刷新页面标签上展示颜色都不一样。打开 `hexo/themes/next/layout/page.swig` 文件，找到：
 
@@ -2492,7 +2492,7 @@ live2d:
 </div>
 ```
 
-## 鼠标样式
+### 鼠标样式
 
 添加CSS样式代码：
 
@@ -2512,23 +2512,23 @@ live2d:
 
 {% btn https://hasaik.com/images/pointer.cur, pointer.cur, download fa-lg fa-fw %}
 
-## 鼠标点击特效
+### 鼠标点击特效
 
 鼠标点击常用4种特效可以参考的我的[另外一篇博客](https://hasaik.com/posts/9c9b482b.html)。
 
-## Valine评论框样式美化
+### Valine评论框样式美化
 
 [valine](https://valine.js.org/)自带的样式比较素，并且颜色有点单调，不如花点时间将 valine 重新打造一下，注意我修改的 valine 样式只支持 1.3.4 版本的，其它版本的也可以修改，但是需要重新适配 CSS 样式。具体内容参考我的[另外一篇博客](https://hasaik.com/posts/89ea6c8b.html)。
 
-## 归档页面美化
+### 归档页面美化
 
 归档页面其实有很多大佬已经给出美化样式了，有的有翻页特效，比如[像这样](https://hearxn.github.io/archives/)，或者直接简单点，可以参考我的[另外一篇博客](https://hasaik.com/posts/f68f129b.html)。
 
-## 添加相册功能
+### 添加相册功能
 
 这个实现的方式比较多，但是个人觉得比较实用好看的推荐参考[这篇文章](https://me.idealli.com/post/73ad4183.html)，相册展示图片样式可以在原作者基础上继续进行二次开发。我的[个人相册](https://hasaik.com/photos/)是另一种方式哦，附上[教程](https://hasaik.com/posts/39d47c89.html)。
 
-## 引入share.js分享功能
+### 引入share.js分享功能
 
 ![share](https://s2.ax1x.com/2019/11/14/MtjAbj.png)
 
@@ -2571,7 +2571,7 @@ share_js: true
 ```
 然后就可以使用了！里面具体一些属性设置可以查看原作者的[README](https://github.com/overtrue/share.js/blob/master/README.md)文档，介绍的很详细。
 
-# 参考文章
+## 参考文章
 1. [造个性超赞博客 Hexo + NexT + GitHub Pages 的超深度优化](https://io-oi.me/tech/hexo-next-optimization.html)
 2. [Hexo+Next主题优化](https://www.jianshu.com/p/efbeddc5eb19?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation)
 3. [Hexo搭建个人博客–next主题优化](https://www.jianshu.com/p/1f8107a8778c)

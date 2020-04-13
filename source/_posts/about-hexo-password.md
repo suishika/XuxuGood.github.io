@@ -22,7 +22,7 @@ description: 介绍一种自定义博文加密方式，不需要插件，极简�
 
 ![密码](https://s2.ax1x.com/2019/11/01/KHMRr8.png)
 
-# 代码
+## 代码
 
 1、在目录 `/themes/next/layout/` 下的 `_layout.swig` 中，找到main标签添加自定义的 swig
 
@@ -135,7 +135,7 @@ description: 介绍一种自定义博文加密方式，不需要插件，极简�
 </script>
 ```
 
-# 使用
+## 使用
 新建一个 test.md ，内容如下
 
 ```MD
@@ -151,6 +151,6 @@ password: aaa
 
 上面的 password 后面的值自定义。
 
-# 注意
+## 注意
 
 如果自己的博客源码中的这篇文章上传到 github ，密码也就公诸于世了，可以在 push 到 github 的时候将这篇文章忽略。

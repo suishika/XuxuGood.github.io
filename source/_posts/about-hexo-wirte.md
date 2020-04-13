@@ -19,7 +19,7 @@ description: 以下博客写作都是基于Next主题，其它主题不一定集
 以下博客写作都是基于Next主题，其它主题不一定集成了以下写作方式。
 </div>
 
-# note标签的官方文档使用
+## note标签的官方文档使用
 
 首先我们需要在 `Next` 主题 `_config.xml` 中设置一下功能开关，有些默认是开的，有些默认是关的：
 ```BASH
@@ -48,7 +48,7 @@ note写作方式正如我最上面的样式，我们可以这样使用：
 [no-icon] : Disable icon in note.
 ```
 
-## 爬坑
+### 爬坑
 {% note danger %}
 标签开头和结尾在一行的写法是错误的
 {% endnote %}
@@ -73,7 +73,7 @@ note text, note text, note text
 {% endnote %}
 ```
 
-## 示例
+### 示例
 
 1、没有定义样式类别
 ```BASH
@@ -197,7 +197,7 @@ danger形式的类别
 | 7 | 8 |
 {% endnote %}
 
-# note标签的html使用
+## note标签的html使用
 
 在主题配置文件 `_config.yml` 里有一个关于这个的配置，但官方文档没有提供 HTML 的使用方式，个人认为这种方式更简单，也不会产生一些奇怪的显示 bugs……
 
@@ -243,7 +243,7 @@ danger形式的类别
 <div class="note danger no-icon">danger no-icon</p></div>
 ```
 
-# 主题自带FontAwesome图标
+## 主题自带FontAwesome图标
 
 效果：
 
@@ -289,7 +289,7 @@ Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade，Coff
 - <i class="fa fa-download fa-lg"></i> 下载变大 33%
 - <i class="fa fa-download fa-2x"></i> 下载两倍大
 
-# 代码块内部样式高亮
+## 代码块内部样式高亮
 
 Next主题其实是自带代码块高亮显示的，但是有另外一种好玩的代码块高亮写法，叫 `diff` 语言
 ```BASH
@@ -326,7 +326,7 @@ pre .deletion {
 }
 ```
 
-# 文本居中引用
+## 文本居中引用
 
 效果：
 
@@ -347,7 +347,7 @@ pre .deletion {
 {% endcq %}
 ```
 
-# 主题自带label标签
+## 主题自带label标签
 
 首先需要在Next主题 `_config.xml` 中配置：
 ```BASH
@@ -396,7 +396,7 @@ label: true
 注意这个有一个BUG，千万不要把这个放到段首。。。
 {% endnote %}
 
-# 主题自带tabs标签
+## 主题自带tabs标签
 
 {% tabs 选项卡, 1 %}
 <!-- tab -->
@@ -437,7 +437,7 @@ tabs:
 ```
 然后上面源码中 `, 1` 表示一开始在第一个选项卡，非必须，若数值为 `-1` 则隐藏选项卡内容。更多用法请查看[这个页面](https://almostover.ru/2016-01/hexo-theme-next-test/#Tab-tag-test)。
 
-# 主题自带样式按钮
+## 主题自带样式按钮
 
 效果：
 

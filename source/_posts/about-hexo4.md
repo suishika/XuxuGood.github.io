@@ -16,7 +16,7 @@ description: 偶然间发现一款不错的文章代码块样式，类似Mac的�
 
 偶然间发现一款不错的文章代码块样式，类似Mac的面板效果。能设置阴影效果和实现文本编辑功能，不过文本只存在浏览器页面上，不会真正保存。配置的方式也很简单，觉得不错的朋友可以试一下。
 
-# 引入 JS
+## 引入 JS
 
 这里需要新建两个 js 文件 `events.js` 和 `codeblock.js` ，路径位于 `/themes/next/scripts/` 包下。
 
@@ -67,7 +67,7 @@ hexo.extend.filter.register('after_post_render', function (data) {
 })
 ```
 
-# 引入 CSS
+## 引入 CSS
 
 在 `/themes/next/source/css/_common/components/highlight/` 目录下新建 `macPanel.styl` 文件，内容如下：
 
@@ -134,7 +134,7 @@ hexo.extend.filter.register('after_post_render', function (data) {
 
 此css是根据我本地的样式做过调整，注释的代码为原有的，根据需要调整样式即可。
 
-# 配置引用
+## 配置引用
 
 在 `/themes/next/source/css/_common/components/highlight/highlight.styl` 中引入刚才新建的 `macPanel.styl`：
 

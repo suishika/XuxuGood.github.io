@@ -20,7 +20,7 @@ description: 对于个人博客来说，优化页面的访问速度是很有必�
 
 <a href="https://github.com/rozbo/hexo-neat" class="LinkCard">Hexo-Neat</a>
 
-# Hexo-Neat使用
+## Hexo-Neat使用
 
 1、在站点根目录下安装 `Hexo-Neat`
 
@@ -55,7 +55,7 @@ neat_js:
    - '**/index.js'
 ```
 
-# Gulp使用
+## Gulp使用
 
 1、在站点的根目录下执行以下命令
 

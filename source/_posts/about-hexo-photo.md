@@ -21,7 +21,7 @@ description: Next主题是不带相册功能的，但是我们还想拥有一个
 
 <a href="https://hasaik.com/photos/" class="LinkCard">Photos</a>
 
-# 创建相册
+## 创建相册
 
 在腾讯云开发者平台上面创建一个仓库,命名为 `Blog_Back_Up` (仓库名字随便). 用 `git clone` 把仓库 `clone` 到本地来.
 
@@ -35,7 +35,7 @@ cd Blog_Back_Up
 ***相册图片命名方式 : yyyy-MM-dd_des.jpg/png/jpef/gif. &emsp;eg: 2017-9-18_风景.jpg*** 
 </div>
 
-# 处理图片
+## 处理图片
 
 图片的处理我用 `python` 脚本来处理，这样每次只要执行脚本就可以了。如果您的电脑没有 `Python` ，自行上网搜索安装教程，一搜一大把。
 
@@ -255,13 +255,13 @@ if __name__ == "__main__":
 
 其中 `../xuxugood.github.io/source/photos/data.json` 是我博客地址，这里换成你的博客地址。
 
-## *使用方法*
+### *使用方法*
 执行命令 `python3 tool.py` ，因为我用的是 `python3` 这里可以根据你的 `python` 版本来使用。
 
-## 问题
+### 问题
 如果出现 `from PIL import Image` 这种报错，说明没有 PIL 这个库，执行 `python3 -m pip install Pillow`
 
-# 增加相册style
+## 增加相册style
 
 在 Next 主题下面增加 `photo.swig` 页面，路径如下 `next/layout`
 
@@ -297,7 +297,7 @@ if __name__ == "__main__":
 {% endblock %}
 ```
 
-# 生成相册页面
+## 生成相册页面
 
 生成相册页面 `hexo new page photos`，修改 `photos` 下的 `index.md` 文件如下
 
@@ -335,11 +335,11 @@ comments: false
 
 需要三个 css 文件和一个 js 文件放在 photos 文件夹下，其文件都在我的 [腾讯云开发者平台](https://johnxuxuy.coding.net/p/Blog_Back_Up/d/Blog_Back_Up/git/tree/master/source/photos) 上面，需要修改 `ins.js` 的 120 和 121 行的 url 为你腾讯云开发者平台图片的网址。
 
-# 查看相册插件 photoswipe
+## 查看相册插件 photoswipe
 
 上面 `index.md` 中加入了两个 css 文件，这是我们用 photoswipe 查看相册用到的，具体可以参考网址 [photoswipe](https://photoswipe.com/) 。这里我们已经把 css 文件加上了，之后我们要加上 js 文件 `photoswipe.min.js` 和 `photoswipe-ui-default.min.js`，js 资源下载地址 [photoswipe](https://johnxuxuy.coding.net/p/Blog_Back_Up/d/Blog_Back_Up/git/tree/master/source/photos/photoswipe.css) ，js 存放路径为 `next/source/js/src`
 
-# 引用 js 文件
+## 引用 js 文件
 
 在 `layout/_scripts/pages/post-details.swig` 中插入
 
@@ -348,7 +348,7 @@ comments: false
 <script src="{{ url_for(theme.js) }}/src/photoswipe-ui-default.min.js?v={{ theme.version }}"></script>
 ```
 
-# 在根目录加入标签
+## 在根目录加入标签
 
 在 `_layout.swig` 中的body标签里最前面插入以下内容
 
@@ -398,7 +398,7 @@ comments: false
 
 至此相册查看插件 photoswipe 已经配置完毕。
 
-# 整个流程使用
+## 整个流程使用
 
    1. 在 Blog_Back_Up 里面加入图片,图片路径在 photos 里面 图片命名方式 yyyy-MM-dd_des.jpg/jpeg/gif/png
    2. 执行 python3 tool.py
