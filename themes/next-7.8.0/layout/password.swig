@@ -53,8 +53,8 @@
                         // 恢复目录
                         toc.appendTo($(".post-toc-wrap"))
                         // 解决类Mac Panel特效丢失
-                        $(".highlight").wrapAll("<div class='highlight-container'></div>");
-                        $(".highlight table").wrapAll("<div class='table-container'></div>")
+                        NexT.utils.registerCopyCode();
+                        NexT.utils.wrapTableWithBox();
                         // 显示侧边栏
                         $(".sidebar-nav").show();
                         document.querySelector('.sidebar-nav-toc').click();
