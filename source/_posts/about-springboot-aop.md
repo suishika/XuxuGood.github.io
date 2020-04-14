@@ -25,7 +25,7 @@ description: 使用SpringBoot AOP 记录操作日志、异常日志。
 
 我们以前学过Spring 三大特性，IOC（控制反转），DI（依赖注入），AOP（面向切面），那其中AOP的主要功能就是将日志记录，性能统计，安全控制，事务处理，异常处理等代码从业务逻辑代码中划分出来。今天我们就来用SpringBoot Aop 来做日志记录，好了，废话说了一大堆还是上货吧。
 
-## 创建日志记录表、异常日志表，表结构如下：
+## :boom: 创建日志记录表、异常日志表，表结构如下：
 异常日志表
 
 ![异常日志表](https://s2.ax1x.com/2020/02/25/3YajRx.png)
@@ -34,7 +34,7 @@ description: 使用SpringBoot AOP 记录操作日志、异常日志。
 
 ![操作日志表](https://s2.ax1x.com/2020/02/25/3YdQoj.png)
 
-## 添加Maven依赖
+## :boom: 添加Maven依赖
 ```BASH
 <!-- Spring Boot 面向切面AOP -->
 <dependency>
@@ -48,7 +48,7 @@ description: 使用SpringBoot AOP 记录操作日志、异常日志。
 </dependency>
 ```
 
-## 创建操作日志注解类Log.java
+## :boom: 创建操作日志注解类Log.java
 ```JAVA
 package com.scaffolding.demo.annotation;
 
@@ -72,7 +72,7 @@ public @interface Log {
 }
 ```
 
-## 创建切面类记录操作日志和异常日志
+## :boom: 创建切面类记录操作日志和异常日志
 
 ```JAVA
 package com.scaffolding.demo.config;
@@ -361,11 +361,11 @@ public class IPUtil {
 }
 ```
 
-## 在Controller层方法添加@Log注解
+## :boom: 在Controller层方法添加@Log注解
 
 ![@Log注解](https://s2.ax1x.com/2020/02/25/3Y0Vr8.png)
 
-## 操作日志、异常日志查询功能
+## :boom: 操作日志、异常日志查询功能
 
 ![操作日志](https://s2.ax1x.com/2020/02/25/3YBEWR.png)
 
