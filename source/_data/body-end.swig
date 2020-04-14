@@ -13,7 +13,7 @@
 
 {# 打字特效 #}
 {% if theme.typing_effect %}
-  <script src="/js/activate-power-mode.min.js"></script>
+  <script src="/js/activate-power-mode.js"></script>
   <script>
     POWERMODE.colorful = {{ theme.typing_effect.colorful }};
     POWERMODE.shake = {{ theme.typing_effect.shake }};
@@ -35,5 +35,5 @@
 {% endif %}
 
 <!--share.js分享-->
-<link rel="stylesheet" href="/sharejs/css/share.min.css">
-<script src="/sharejs/js/social-share.min.js"></script>
+<link rel="stylesheet" href="/js/sharejs/css/share.min.css">
+<script src="/js/sharejs/js/social-share.min.js"></script>
