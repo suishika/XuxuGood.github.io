@@ -16,14 +16,15 @@ description: 本教程只适用于 Next5 或者 Next6 主题，Next7 开始做�
 ---
 
 ## 写在前面
-<div class="note warning">
+{% note warning %}
 本教程只适用于 Next5 或者 Next6 主题，Next7 开始做了大量修改，并删除了 custom.styl 文件，同时增加了很多在 Next7 之前需要手动配置的功能，请随个人喜好进行版本选择。
-</div>
+{% endnote %}
 
 ***
-<div class="note info">
+
+{% note info %}
 我的个人博客就是使用 Hexo 博客框架 + Next 主题搭建而来的，之前也使用过CSDN、博客园等，最后都放弃了，一方面是因为广告多，另外一方面样式我也不是很喜欢，而如果自己从零开始写博客源代码的话，比较复杂而且麻烦。后来偶然看到了 hexo 博客框架，并经过推荐使用了 Next 主题，这才正式入了 hexo 博客的坑！不得不说 Next 主题能够魔改并且自身集成了很多优秀的第三方插件是这款主题具有如此强大活力的根本原因😘。
-</div>
+{% endnote %}
 
 本文下面主要先介绍 Hexo 博客和 Next 主题的搭建，如果你已经搭建好了博客框架，但是想进一步地修改博客样式，可以直接跳转到最下面[优化定制部分](#Next主题进阶优化配置)😄，本文参考的博客链接也会直接在文中插入或者在文末标明，如果有遗漏，欢迎指出。
 
@@ -56,9 +57,9 @@ Next 主题最新版本已经更新到 v7.5.0，以下很多内容都已经在�
 ### 安装 hexo
 本文安装环境为 windows10，所以以下都以 windows 操作系统下安装为例。
 
-<div class="note danger">
+{% note danger %}
 安装之前需要说明几个注意事项：<br>- 很多命令既可以使用 windows 的 cmd 命令行来完成，也可以使用刚才安装好的 Git 命令行工具 Git Bash 来完成，但是在 cmd 中部分命令会出现一些问题，建议只使用 Git Bash 来执行命令。<br>- Hexo 不同版本之间有差别，要注意自己安装的版本是哪个版本（跟着本文走就没问题啦），如果修改样式的话注意网上教程的 Hexo 版本差异。<br>- Hexo 安装好后有 2 种<code>_config.xml</code>文件，一个是 hexo 站点根目录下的全局<code>_config.xml</code>文件，还有一种是每个主题 theme 下的各自的<code>_config.xml</code>文件，注意区分二者，后面会详细说到。<br>
-</div>
+{% endnote %}
 
 #### 安装 hexo
 依然是在 GitBash 中操作，输入以下命令，等待安装完成。
@@ -312,9 +313,9 @@ npm install hexo-deployer-git --save
 
 ![hexo-next](https://s2.ax1x.com/2019/11/13/MGjatK.png)
 
-<div class="note info">
+{% note info %}
 其中第一个是 Next5 版本的，而第二个是 Next6 版本的。2019/7/27 更新：第二个 Github 仓库目前一直是 Next 主题更新最新版本的的仓库，目前已经更新到 v7.2.0，以下内容仅供参考。
-</div>
+{% endnote %}
 
 注意上面说的版本关系，在 Next6 版本上其实增加了很多 Next5 需要手动配置的东西，并且 Next5 已经停止维护了，如果不太喜欢自己手动去配置的话，建议使用 Next6 版本。当然本博客使用的仍然是 Next5 版本，如果需要我的个性化设置的话也可以留言。
 
@@ -357,9 +358,9 @@ Next 主题安装好后的初始界面也是很简洁的，我们可以先设置
 
 我们打开 `_config.xml` 主题配置文件对应一一修改。
 
-<div class="note danger">
+{% note danger %}
 由于配置文件是 yml，如果对 yml 语法不太熟的小伙伴，注意每个配置之间都必须有空格，不然报错。如 <code>override: false</code> ，注意英文冒号 <code>:</code> 后面有一个空格，所有 yml 语法都是这样。
-</div>
+{% endnote %}
 
 以下默认使用的文本编辑器为 notepad++、WebStorm 或者 sublime，主题使用的是 Next6 版本（注意 Next 官方会不断进行更新，所以下面的不一定都有效，因为官方正在不断集成更多功能，具体地可以自行在配置文件中探索~）
 
@@ -1126,9 +1127,9 @@ npm install --save hexo-admin
 
 安装完成后，要启动的话，使用 `hexo s -d` 命令，然后打开网址 `localhost:4000/admin/` 进行登录就可以管理后台了。
 
-<div class="note warning">
+{% note warning %}
 注意，安装 hexo-admin 插件后，启动后台页面时 GitBash 可能还是会报错，这是由于 hexo-admin 自身还依赖很多个插件，报错信息上只要提示缺少 module “xxx”时，你只要继续使用上面的命令安装缺少的那个插件xxx就可以了，我当时好像连续装了十几个插件才最终启动成功🌚…
-</div>
+{% endnote %}
 
 安装好后，还需要设置登录的账号密码，不然谁都可以使用你的后台管理。第一次登录后，进入 `setting` 菜单，点击 `Setup authentification here` 进入用户名密码设置项，按照提示设置后，把生成的代码添加到 `hexo/_config.xml` 中，如：
 
@@ -1159,10 +1160,9 @@ admin:
 ```BASH
 npm install hexo-abbrlink --save
 ```
-<div class="note danger">
-
+{% note danger %}
 执行此命令可能会不成功，提示你缺少相应的依赖，比如babel-eslint、mini-css-extract-plugin、webpack-cli…<br>使用npm命令安装即可，比如 `npm install eslint@4.x babel-eslint@8 --save-dev`
-</div>
+{% endnote %}
 
 修改站点配置文件 `config.yml` 文件中的永久链接：
 ```DIFF
@@ -1990,9 +1990,9 @@ highlight-wrap {
   </div>
 {% endif %}
 ```
-<div class="note danger">
+{% note danger %}
 以上 + 号后面的为新增代码
-</div>
+{% endnote %}
 
 打开 `themes/next/source/css/_common/components/post/post.styl` 文件，在最后一行增加代码：
 ```BASH
