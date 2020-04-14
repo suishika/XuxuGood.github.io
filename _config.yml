@@ -221,7 +221,7 @@ feed:
   content_limit: 150
   content_limit_delim: ' '
 
-#lazyload 图片懒加载
+#lazyload 图片懒加载（与fancybox一起使用有莫名其妙的的bug，暂时废弃）
 lazyload:
   enable: false
   onlypost: true
