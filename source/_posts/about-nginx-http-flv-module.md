@@ -22,8 +22,8 @@ description: 最近项目组接了一个视频流项目，项目的主要核心�
 
 ## :sun_with_face: 前期准备
 1. 下载VLC（用于测试视频流是否可以播放）：https://www.videolan.org/
-1. 下载nginx包：https://nginx.org/download/nginx-1.16.1.tar.gz
-2. 下载nginx-http-flv-module 模块包：https://github.com/winshining/nginx-http-flv-module
+2. 下载nginx包：https://nginx.org/download/nginx-1.16.1.tar.gz
+3. 下载nginx-http-flv-module 模块包：https://github.com/winshining/nginx-http-flv-module
 4. 下载FFmpeg：http://www.ffmpeg.org/releases/ffmpeg-4.2.2.tar.bz2
 5. 下载yasm（安装FFmpeg可能会报错，所以需要安装yasm）：http://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
 6. 下载x264（视频转码需要用到）：https://git.videolan.org/git/x264.git
