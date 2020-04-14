@@ -20,7 +20,7 @@ date: 2019-10-18 16:46:39
 <div class="note success">
 
    <strong>友链格式</strong>
-   名称：John Xu的博客
+   名称：Xu's Blog
    地址：[https://hasaik.com](https://hasaik.com)
    描述：博观而约取，厚积而薄发！
    头像：[https://hasaik.com/images/avatar.jpg](https://hasaik.com/images/avatar.jpg)
