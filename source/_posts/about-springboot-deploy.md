@@ -7,10 +7,10 @@ copyright: true
 abbrlink: b4831a5e
 date: 2019-11-29 10:00:38
 tags:
-  - SpringBoot打包
-categories:
-  - Java
   - SpringBoot
+categories:
+  - SpringBoot
+  - SpringBoot打包
 keywords: [SpringBoot部署,Maven插件打包,IDEA自带打包]
 password:
 description: SpringBoot自带Tomcat，所以我们的项目可以单独部署，不需要依赖Window、Linux系统中的服务器，所以打包出来的 Jar 包是可以直接运行的。

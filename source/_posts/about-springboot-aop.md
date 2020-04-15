@@ -5,12 +5,11 @@ essential: false
 notshow: false
 copyright: true
 tags:
-  - Java
   - SpringBoot
   - AOP
 categories:
-  - Java
   - SpringBoot
+  - AOP
 keywords:
   - SpringBoot Aop
   - 记录操作日志
