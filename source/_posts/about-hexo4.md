@@ -9,6 +9,7 @@ tags:
   - 代码块
 categories:
   - Hexo
+  - 代码块
 top:
 keywords: [代码块,Next]
 description: 偶然间发现一款不错的文章代码块样式，类似Mac的面板效果。能设置阴影效果和实现文本编辑功能，不过文本只存在浏览器页面上，不会真正保存。配置的方式也很简单，觉得不错的朋友可以试一下。
@@ -25,7 +26,7 @@ description: 偶然间发现一款不错的文章代码块样式，类似Mac的�
 ***events.js 代码：***
 </div>
 
-```JS
+```
 // mac Panel效果代码块相关
 var exec = require('child_process').exec;
 
@@ -42,7 +43,7 @@ hexo.on('new', function(data){
 ***codeblock.js 代码：***
 </div>
 
-```JS
+```
 // mac Panel效果代码块相关
 var attributes = [
   'autocomplete="off"',
@@ -71,7 +72,7 @@ hexo.extend.filter.register('after_post_render', function (data) {
 
 在 `/themes/next/source/css/_common/components/highlight/` 目录下新建 `macPanel.styl` 文件，内容如下：
 
-```CSS
+```
 /*mac Panel效果代码块相关*/
 .highlight-wrap[data-rel] {
   position: relative;
@@ -138,7 +139,7 @@ hexo.extend.filter.register('after_post_render', function (data) {
 
 在 `/themes/next/source/css/_common/components/highlight/highlight.styl` 中引入刚才新建的 `macPanel.styl`：
 
-```stylus
+```
 @require "macPanel"
 ```
 
