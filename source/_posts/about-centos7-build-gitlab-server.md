@@ -10,8 +10,11 @@ keywords: [CentOS,Gitlab,服务器]
 abbrlink: a460b91e
 date: 2020-04-16 14:05:16
 password:
-description: 记录一次搭建gitlab服务器的经历。
+description: 记录一次CentOS搭建gitlab服务器的经历。
 ---
+
+记录一次CentOS搭建gitlab服务器的经历。
+
 ## :sun_with_face: 前期准备
 1. 服务器：CentOS7
 2. 安装文件：[gitlab-ce-12.6.3-ce.0.el7.x86_64.rpm](https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/7/gitlab-ce-12.6.3-ce.0.el7.x86_64.rpm)
