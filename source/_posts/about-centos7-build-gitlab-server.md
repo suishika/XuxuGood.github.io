@@ -88,7 +88,7 @@ rpm -ivh example.rpm
 
 这种方式需要我们手动进入配置文件中修改访问地址
 ```
-sudo vi /etc/gitlab/gitlab.rb
+sudo vim /etc/gitlab/gitlab.rb
 
 //修改文件中external_url 'http://你linux的ip'
 ```
@@ -99,7 +99,7 @@ sudo vi /etc/gitlab/gitlab.rb
 
 修改文件配置
 ```
-sudo vi /opt/gitlab/embedded/service/gitlab-rails/config/gitlab.yml
+sudo vim /opt/gitlab/embedded/service/gitlab-rails/config/gitlab.yml
 ```
 
 将图片上标红处的Host替换成你的域名或ip
