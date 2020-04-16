@@ -14,7 +14,7 @@ categories:
   - LocalDateTime
 keywords: [SpringBoot,LocalDateTime,含有T]
 password:
-description: 通用解决LocalDateTime转为字符串后中间含“T”的问题
+description: 通用解决LocalDateTime转为字符串后中间含“T”的问题。
 ---
 通用解决LocalDateTime转为字符串后中间含“T”的问题 :v:
 
