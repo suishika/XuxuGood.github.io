@@ -2,20 +2,30 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-# Site
+# Site 站点主配置
+# 站点名称
 title: Xu's Blog
+# 站点子标题
 subtitle: 博观而约取，厚积而薄发
+# 作者描述
 description: <i class="fa fa-heartbeat" id="myheartbeat"></i>&nbsp;人生若只如初见&nbsp;<i class="fa fa-heartbeat" id="myheartbeat"></i>
+# 站点关键词，用于搜索优化（可以不填写保持默认）
 keywords: Hexo个人博客,NexT美化优化,JohnXu博客,Github Pages,博客相册
+# 博主名
 author: John Xu
+# 站点语言
 language: zh-CN
+# 站点时区
 timezone: UTC
 
-# URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+# URL地址链接设置
+# 网站url设置
 url: https://hasaik.com
+# 网站根目录链接
 root: /
+# 文章链接，默认是按照 /年/月/日/文章标题 设置的链接
 permalink: posts/:abbrlink.html
+# 默认链接形式
 permalink_defaults:
 
 # abbrlink config
@@ -23,7 +33,7 @@ abbrlink:
   alg: crc32  # 算法：crc16(default) and crc32
   rep: hex    # 进制：dec(default) and hex
 
-# Directory
+# Directory 网站主要目录，这里一般不做改动
 source_dir: source
 public_dir: public
 tag_dir: tags
@@ -34,7 +44,7 @@ i18n_dir: :lang
 #Hexo不编译此文件
 skip_render: [about/renxi/*.js,love/*]
 
-# Writing
+# Writing 网站文章设置，同样一般不做改动
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
@@ -55,16 +65,17 @@ highlight:
   wrap: true
   hljs: false
 
-# Home page setting
+# Home page setting 主页设置，一般不做改动
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
+# 首页文章排序，默认是按照文章日期递减
 index_generator:
   path: ''
   per_page: 10
   order_by: -date
 
-# Category & Tag
+# Category & Tag 分类设置，一般不做改动
 default_category: uncategorized
 category_map:
 tag_map:
@@ -73,7 +84,7 @@ tag_map:
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true
 
-# Date / Time format
+# Date / Time format 日期设置，一般不做改动
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
@@ -82,8 +93,8 @@ time_format: HH:mm:ss
 ## Use post's date for updated date unless set in front-matter
 use_date_for_updated: false
 
-# Pagination
-## Set per_page to 0 to disable pagination
+# Pagination 导航页设置，一般不做改动
+# 设置每页展示多少文章
 per_page: 10
 pagination_dir: page
 
@@ -93,7 +104,7 @@ include:
 exclude:
 ignore:
 
-# Extensions
+# Extensions 使用的主题名称，可以在这里切换
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next-7.8.0
