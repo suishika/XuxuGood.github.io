@@ -121,4 +121,13 @@ gitlab-ctl restart
 
 ![](https://s1.ax1x.com/2020/04/16/Jk1j7F.png)
 
+## :sun_with_face: 安装过程中遇到的问题
+1. 在浏览器中访问GitLab出现502错误：
+原因：内存不足。
+解决办法：检查系统的虚拟内存是否随机启动了，如果系统无虚拟内存，则增加虚拟内存，再重新启动系统。
+
+2. 8080端口冲突：
+原因：由于unicorn默认使用的是 `8080` 端口。
+解决办法：打开 `/etc/gitlab/gitlab.rb` ，打开 `# unicorn['port'] = 8080` 的注释，将 `8080` 修改为 `9999` ，保存后运行 `sudo gitlab-ctl reconfigure` 即可。
+
 以上为CentOS搭建Gitlab的全部教程，如有不对欢迎指出。
