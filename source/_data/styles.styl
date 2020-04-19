@@ -3,12 +3,23 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  cursor: url(/images/normal.cur), auto;
 }
 
 // 解决sidebar圆角bug
 .sidebar {
   box-shadow: none;
   background: none;
+}
+
+// p标签鼠标样式
+p {
+  cursor: url(/images/texto.cur), auto;
+}
+
+// a标签鼠标样式
+a {
+  cursor: url(/images/ayuda.cur), auto;
 }
 
 // 隐藏右下角底部的滑至顶部
@@ -31,7 +42,7 @@ body {
   left: 0.7rem !important;
 }
 
-  //底部评分样式
+//底部评分样式
 .wp_rating {
   padding-top: 0;
 }
@@ -129,11 +140,11 @@ a {
 }
 
 #veditor {
-  background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp);
+  background-image: url(/images/comment.webp);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
-  background-color: rgba(255,255,255,0);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 /*valine 评论系统样式 end  ------------------> */
