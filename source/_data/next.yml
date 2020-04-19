@@ -1047,6 +1047,11 @@ crash_cheat:
 categoryCloud:
   type: color # 为空则使用默认分类页
 
+# 友情链接页样式 links
+# type: | color | waterfall
+linkStyle:
+  type: color
+
 # 明月浩空播放器
 # https://player.lmih.cn/
 player:

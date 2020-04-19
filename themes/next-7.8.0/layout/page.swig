@@ -65,7 +65,14 @@
 
          <!-- 友情链接-->
         {% elif page.type === 'links' %}
-            {% include 'links.swig' %}
+            {% if theme.linkStyle.type == 'color' %}
+               {# 彩色友情链接页 #}
+               {% include 'links-color.swig' %}
+            {% endif %}
+            {% if theme.linkStyle.type == 'waterfall' %}
+               {# 瀑布流友情链接页 #}
+               {% include 'links-waterfall.swig' %}
+            {% endif %}
 
         {% elif page.type === 'schedule' %}
           <div class="event-list">
