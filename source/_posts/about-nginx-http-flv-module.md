@@ -39,12 +39,12 @@ description: 最近项目组接了一个视频流项目，项目的主要核心�
 
 ### :tada: 安装nginx
 
-1. 在 /user/local 下创建 nginx 文件夹
+在 /user/local 下创建 nginx 文件夹
 ```BASH
 mkdir /usr/local/nginx
 ```
 
-2. 安装依赖项
+安装依赖项
 ```BASH
 yum -y install unzip
 yum -y install gcc-c++ 
@@ -53,14 +53,14 @@ yum -y install zlib zlib-devel
 yum -y install openssl openssl-devel
 ```
 
-3. 将 /user/local 下面的 nginx-http-flv-module-master.zip 解压到 /usr/local/nginx 下面
+将 /user/local 下面的 nginx-http-flv-module-master.zip 解压到 /usr/local/nginx 下面
 ```BASH
 cd /usr/local
 unzip nginx-http-flv-module-master.zip  //解压文件
 cp -r /usr/local/nginx-http-flv-module-master /usr/local/nginx/nginx-http-flv-module  //解压文件复制到/usr/local/nginx 目录下
 ```
 
-4. 将 nginx-http-flv-module 模板添加到 nginx 中，生成 make 文件并安装 nginx
+将 nginx-http-flv-module 模板添加到 nginx 中，生成 make 文件并安装 nginx
 ```BASH
 cd /usr/local
 tar -zxvf nginx-1.16.1.tar.gz
@@ -71,7 +71,7 @@ ln -s /usr/local/nginx/sbin/nginx /usr/local/bin/  //配置nginx为全局变量
 nginx -v  //查看nginx是否安装成功
 ```
 
-5. 修改配置文件
+修改配置文件
 ```BASH
 cd /usr/local/nginx/conf
 vi nginx.conf
@@ -158,7 +158,7 @@ rtmp {
 
 ```
 
-6. 测试nginx是否好用
+测试nginx是否好用
 ```BASH
 nginx -t //检查nginx
 nginx //启动
@@ -168,7 +168,7 @@ ps -ef | grep nginx //查看nginx进程
 
 ### :tada: 安装FFmpeg
 
-1. 安装前期准备下载的nasm
+安装前期准备下载的nasm
 ```BASH
 cd /usr/local
 tar -jxvf nasm-2.14.02.tar.bz2  //如果解压不了的话安装一下bzip2（ yum install -y bzip2 ）
@@ -177,7 +177,7 @@ cd nasm-2.14.02/
 make && make install
 ```
 
-2. 安装前期准备下载的yasm
+安装前期准备下载的yasm
 ```BASH
 cd /usr/local
 tar -zxvf yasm-1.3.0.tar.gz
@@ -186,14 +186,14 @@ cd yasm-1.3.0/
 make && make install
 ```
 
-2. 安装x264（RTSP视频流转码时需要x264）
+安装x264（RTSP视频流转码时需要x264）
 ```BASH
 cd /usr/local/x264
 ./configure --enable-static --enable-shared
 make && make install
 ```
 
-3. 安装FFmpeg
+安装FFmpeg
 ```BASH
 cd /usr/local
 tar -jxvf ffmpeg-4.2.2.tar.bz2
@@ -204,7 +204,7 @@ ln -s /usr/local/ffmpeg/bin/ffmpeg /usr/local/bin  //配置ffmpeg全局环境变
 ffmpeg -version  //查看ffmpeg是否安装成功
 ```
 
-4. 直接运行FFmpeg可能报如下错误（重点）
+直接运行FFmpeg可能报如下错误（重点）
 ```BASH
 ffmpeg: error while loading shared libraries: libx264.so.157: cannot open shared object file: No such file or directory
 解决：
@@ -216,15 +216,15 @@ vi /etc/ld.so.conf
 
 ## :sun_with_face: 推流
 
-1. 推流命令：
+推流命令：
 ```BASH
 ffmpeg -re -rtsp_transport tcp -i "rtsp://admin:Biao456813@192.168.153.194:554/h264/ch1/main/av_stream" -f flv -vcodec libx264 -vprofile baseline -acodec aac -tune zerolatency -preset ultrafast -ar 44100 -strict -2 -ac 1 -f flv -s 1280x720 -q 10 "rtmp://192.168.153.204:1935/myapp/home"
 ```
 
-2. FFmpeg 命令详解：
+FFmpeg 命令详解：
 <a href="https://www.cnblogs.com/AllenChou/p/7048528.html" class="LinkCard">FFmpeg命令详解</a>
 
-3. x264 命令详解：
+x264 命令详解：
 
 <a href="https://blog.csdn.net/ww506772362/article/details/41445481" class="LinkCard">x264 命令详解</a>
 
