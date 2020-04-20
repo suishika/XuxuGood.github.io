@@ -19,7 +19,7 @@ description: Next主题是不带相册功能的，但是我们还想拥有一个
 
 实现效果链接：
 
-<a href="https://hasaik.com/photos/" class="LinkCard">Photos</a>
+{% linkCard https://hasaik.com/photos/,Photos %}
 
 ## 创建相册
 

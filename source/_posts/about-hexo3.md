@@ -18,7 +18,7 @@ description: 对于个人博客来说，优化页面的访问速度是很有必�
 
 附上大佬的 `Github` 链接：
 
-<a href="https://github.com/rozbo/hexo-neat" class="LinkCard">Hexo-Neat</a>
+{% linkCard https://github.com/rozbo/hexo-neat,Hexo-Neat %}
 
 ## Hexo-Neat使用
 

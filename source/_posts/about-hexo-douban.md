@@ -16,7 +16,7 @@ description: 在Hexo博客个性化定制中，加入豆瓣读书界面是一个
 ---
 在Hexo博客个性化定制中，加入豆瓣读书界面是一个很不错的功能，[可以进入我的个人阅读界面查看效果](https://hasaik.com/books/)，那么我是怎么做到的呢？其实很简单，我们只需要加入一个 `hexo-douban` 模块即可。
 
-<a href="https://github.com/mythsman/hexo-douban" class="LinkCard">hexo-douban的Github地址</a>
+{% linkCard https://github.com/mythsman/hexo-douban,hexo-douban的Github地址 %}
 
 # 安装模块依赖
 

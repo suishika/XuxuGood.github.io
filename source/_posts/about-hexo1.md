@@ -31,7 +31,7 @@ $ npm install -g hexo-cli
 
 ![安装git](https://s2.ax1x.com/2019/10/21/KlpZvD.md.png)
 
-<a href="https://git-scm.com/downloads" class="LinkCard">安装地址</a>
+{% linkCard https://git-scm.com/downloads,安装地址 %}
 
 一切按照默认走就行了，没什么特殊的地方，安装完成之后检查git是否安装成功（执行一下cmd命令），显示版本号即为成功！
 
@@ -42,7 +42,7 @@ git --version
 
 ![安装Node.js](https://s2.ax1x.com/2019/10/21/KlpmKe.md.png)
 
-<a href="https://nodejs.org/en/" class="LinkCard">安装地址</a>
+{% linkCard https://nodejs.org/en/,安装地址 %}
 
 我们这里简单点，直接下载并运行安装程序就完了，还是走默认就行，安装完成之后检查 node 是否安装成功（执行一下cmd命令），显示版本号即为成功！
 

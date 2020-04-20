@@ -19,11 +19,11 @@ description: 介绍两种加密方式，防止网站轻松破解我们的密码�
 ---
 现在一般的MD5加密在网上随随便便就能够解密，解密的网站有以下几个：
 
-<a href="http://pmd5.com/" class="LinkCard">PMD5</a>
+{% linkCard http://pmd5.com/,PMD5 %}
 
-<a href="http://www.cmd5.com/" class="LinkCard">CMD5</a>
+{% linkCard http://www.cmd5.com/,CMD5 %}
 
-<a href="http://tool.chinaz.com/tools/md5.aspx" class="LinkCard">站长工具</a>
+{% linkCard http://tool.chinaz.com/tools/md5.aspx,站长工具 %}
 
 好了介绍了这么多密码解密的网站，现在我们来介绍如何提高密码的安全性，来防止上面的网站轻松破解我们的密码。
 

@@ -40,8 +40,8 @@ description: 小站新开通订阅功能，欢迎大家体验。
 ```
 订阅地址：
 
-<a href="https://mailchi.mp/3ca18a2a9749/xuxuy" class="LinkCard">订阅地址</a>
+{% linkCard https://mailchi.mp/3ca18a2a9749/xuxuy,订阅地址 %}
 
 佛祖保佑永无BUG 神兽护体 代码注释(各种版本)：
 
-<a href="https://blog.csdn.net/vbirdbest/article/details/78995793" class="LinkCard">佛祖保佑、永无BUG</a>
+{% linkCard https://blog.csdn.net/vbirdbest/article/details/78995793,佛祖保佑、永无BUG %}

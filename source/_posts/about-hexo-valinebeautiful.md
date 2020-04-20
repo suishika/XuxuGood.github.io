@@ -18,7 +18,7 @@ description: Valine 是一款比较轻量级的纯前端的评论系统，目前
 
 Valine 是一款比较轻量级的纯前端的评论系统，目前很多个人博客都在使用 Valine 评论系统，并且支持匿名留言。
 
-<a href="https://github.com/xCss/Valine" class="LinkCard">Valine的Github地址</a>
+{% linkCard https://github.com/xCss/Valine,Valine的Github地址 %}
 
 我个人也是很喜欢这一款评论系统的，之前用过来必力、Gitalk 等评论系统，都觉得很难用，尤其是来必力，这款韩国人做的评论系统在国内使用很容易出现加载非常慢的情况，往往博客内容都加载完成评论系统还需要好久才加载完，在国内体验比较差吧。
 

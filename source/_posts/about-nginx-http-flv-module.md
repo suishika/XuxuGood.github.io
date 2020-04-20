@@ -32,7 +32,7 @@ description: 最近项目组接了一个视频流项目，项目的主要核心�
 下载完以后将所有的文件上传到 `/usr/local` 文件夹下面
 
 附：
-<a href="https://pan.baidu.com/s/1gn_D5I-rJTG39YFElow4lw" class="LinkCard">以上百度资源链接</a>
+{% linkCard https://pan.baidu.com/s/1gn_D5I-rJTG39YFElow4lw,以上百度资源链接 %}
 提取码：ueic
 
 ## :sun_with_face: 搭建环境
@@ -222,15 +222,15 @@ ffmpeg -re -rtsp_transport tcp -i "rtsp://admin:Biao456813@192.168.153.194:554/h
 ```
 
 FFmpeg 命令详解：
-<a href="https://www.cnblogs.com/AllenChou/p/7048528.html" class="LinkCard">FFmpeg命令详解</a>
+{% linkCard https://www.cnblogs.com/AllenChou/p/7048528.html,FFmpeg命令详解 %}
 
 x264 命令详解：
 
-<a href="https://blog.csdn.net/ww506772362/article/details/41445481" class="LinkCard">x264 命令详解</a>
+{% linkCard https://blog.csdn.net/ww506772362/article/details/41445481,x264 命令详解 %}
 
 ## :sun_with_face: 拉流播放（flv.js）
 
-<a href="https://pan.baidu.com/s/1DA9lhVDy9rJZkU52BuHffw" class="LinkCard">flv.js百度资源链接</a>
+{% linkCard https://pan.baidu.com/s/1DA9lhVDy9rJZkU52BuHffw,flv.js百度资源链接 %}
 
 提取码：47w1
 

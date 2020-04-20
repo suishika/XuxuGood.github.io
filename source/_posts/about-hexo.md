@@ -38,7 +38,7 @@ Next 主题最新版本已经更新到 v7.5.0，以下很多内容都已经在�
 
 因为 Hexo 博客框架就是基于 Node.js 渲染的，所以必须要先安装 Node.js 环境，我们可以去[Node.js中文官网](http://nodejs.cn/download/)下载，如图
 
-<a href="http://nodejs.cn/download/" class="LinkCard">安装地址</a>
+{% linkCard http://nodejs.cn/download/,安装地址 %}
 
 ![node.js](https://s2.ax1x.com/2019/11/13/MG5ZcV.png)
 
@@ -48,9 +48,9 @@ Next 主题最新版本已经更新到 v7.5.0，以下很多内容都已经在�
 
 安装 Git 的话，如果是 windows 系统，可以直接去[Windows的Git下载地址](https://gitforwindows.org/)去下载，如果是 macOS 的话，也可以在[这里下载](https://www.git-scm.com/download/)。当这些环境都部署好之后，就可以开始我们的 hexo 博客安装啦！
 
-<a href="https://gitforwindows.org/" class="LinkCard">Windows的Git下载地址</a>
+{% linkCard https://gitforwindows.org/,Windows的Git下载地址 %}
 
-<a href="https://www.git-scm.com/download/" class="LinkCard">MacOS的Git下载地址</a>
+{% linkCard https://www.git-scm.com/download/,MacOS的Git下载地址 %}
 
 ## 安装 Hexo 和 Next
 
@@ -228,7 +228,7 @@ hexo n "我的第一篇博客"
 
 在部署到 Github 之前，我们需要准备好自己的 Github 账号，Github 账号可以在 Github 官网注册。
 
-<a href="https://github.com" class="LinkCard">Github官网</a>
+{% linkCard https://github.com,Github官网 %}
 
 #### 创建 Github 仓库
 首先我们需要在 Github 上创建一个 repository，就是创建一个仓库的意思，在登录账号后首页就有一个显眼的 create new repository，点进去就可以看到了，注意名字必须为你的 `Github用户名.github.io` ，如下图：
@@ -1116,7 +1116,7 @@ hexo.on('new', function(data){
 
 最近有不少小伙伴问我这个博客如何在线发布文章，毕竟大多数人都是程序小白，不想使用 GitBash 命令行敲各种命令。所以也有大神做一个 hexo-admin 管理工具，虽然这个东西没有适配完全，但是对于文章管理的基本功能够用。
 
-<a href="https://github.com/jaredly/hexo-admin" class="LinkCard">hexo-admin官方地址</a>
+{% linkCard https://github.com/jaredly/hexo-admin,hexo-admin官方地址 %}
 
 官方在线演示地址：[https://jaredforsyth.com/hexo-admin/admin/#/](https://jaredforsyth.com/hexo-admin/admin/#/)
 

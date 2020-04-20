@@ -18,7 +18,7 @@ description: 本样式美化方式只适用于 Next 主题，并且最好懂一�
 注意：本样式美化方式只适用于 Next 主题，并且最好懂一些 CSS 前端知识，以便有些不兼容样式部分可以自行在浏览器中 F12 调试。
 </div>
 
-<a href="https://github.com/iissnan/hexo-theme-next" class="LinkCard">Next5主题的Github地址</a>
+{% linkCard https://github.com/iissnan/hexo-theme-next,Next5主题的Github地址 %}
 
 我的个人博客样式都是基于 Next5 主题的，如果你用的是 Next6 主题，那么会有一部分样式不是很兼容， 需要自己在浏览器中定位该样式并做一些调整。
 

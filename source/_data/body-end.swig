@@ -29,9 +29,6 @@
 {# 代码折叠 #}
 <script type="text/javascript" src="/js/fold_action.js"></script>
 
-{# 类知乎卡片链接 #}
-<script type="text/javascript" src="/js/linkcard.js"></script>
-
 {# 明月浩空播放器 #}
 {% if theme.player.enable %}
    <script src="https://player.lmih.cn/player/js/player.js" id="myhk" key="158649506326" m="1"></script>

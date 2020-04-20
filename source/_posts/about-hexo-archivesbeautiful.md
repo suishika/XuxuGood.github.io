@@ -15,7 +15,7 @@ description: 感觉归档页美化效果也还不错哈，不妨在本站归档�
 ---
 大家在使用hexo博客的Next主题的时候应该都觉得原来默认的归档页面很丑吧，最近也有小伙伴问我这个归档页面美化怎么弄的，今天就小小的总结一下。
 
-<a href="https://hasaik.com/archives/" class="LinkCard">我的归档页面</a>
+{% linkCard https://hasaik.com/archives/,我的归档页面 %}
 
 首先我们打开Next主题目录（注意这个美化样式只支持Next主题），然后找到 `next/layout/_macro/post-collapse.swig` 文件。
 
