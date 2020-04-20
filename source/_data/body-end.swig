@@ -27,7 +27,7 @@
 {% endif %}
 
 {# 代码折叠 #}
-<script async src="/js/fold_action.js"></script>
+<script type="text/javascript" src="/js/fold_action.js"></script>
 
 {# 类知乎卡片链接 #}
 <script type="text/javascript" src="/js/linkcard.js"></script>
