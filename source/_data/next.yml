@@ -294,10 +294,10 @@ reward:
 # Subscribe through Telegram Channel, Twitter, etc.
 # Usage: `Key: permalink || icon` (Font Awesome)
 follow_me:
-  #Twitter: https://twitter.com/username || twitter
-  #Telegram: https://t.me/channel_name || telegram
-  #WeChat: /images/wechat_channel.jpg || wechat
-  #RSS: /atom.xml || rss
+#Twitter: https://twitter.com/username || twitter
+#Telegram: https://t.me/channel_name || telegram
+#WeChat: /images/wechat_channel.jpg || wechat
+#RSS: /atom.xml || rss
 
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
@@ -332,8 +332,11 @@ post_navigation: left
 # ---------------------------------------------------------------
 
 # TagCloud settings for tags page.
+# 标签页样式
+# type: | color |
 tagcloud:
   # All values below are same as default, change them by yourself.
+  type: color # 为空则使用默认标签页
   min: 12 # Minimun font size in px
   max: 30 # Maxium font size in px
   start: "#ccc" # Start color (hex, rgba, hsla or color keywords)

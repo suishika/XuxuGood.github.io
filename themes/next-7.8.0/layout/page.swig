@@ -48,6 +48,12 @@
               }}
             </div>
           </div>
+
+          {% if theme.tagcloud.type == 'color' %}
+               {# 彩色标签页 #}
+               {% include 'tag-color.swig' %}
+          {% endif %}
+
         {% elif page.type === 'categories' %}
           <div class="category-all-page">
             <div class="category-all-title">
