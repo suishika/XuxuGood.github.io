@@ -38,26 +38,26 @@
       transition: all .5s;
     }
 
-    .card img {
+    .thumb {
       float: right;
       box-shadow: inset 0 0 10px #000;
       opacity: 1;
       transform: rotate(0deg);
-      -webkit-transform: rotate(0deg);
-      -webkit-transition: all ease 1s;
+      transition: all ease 1s;
       margin-top: 10px;
       margin-bottom: 0;
       width: 65px;
       height: 65px;
       padding: 2px;
       border-radius: 100%;
+      background-size: 100% 100% !important;
     }
 
     .card:hover .linkdes {
       border-top: 1px dashed #fff;
     }
 
-    .card:hover img {
+    .card:hover .thumb {
       -webkit-transform: rotate(360deg);
     }
 
@@ -119,8 +119,8 @@
           site = data[i].site;
           info = data[i].info;
           li += '<li class="card">' + '<a href="' + site + '" title="' + info + '" target="_blank">' +
-            '<img src="' + avatar + '"> ' + '<span class="sitename">' + nickname + '</span>' +
-            '<div class="linkdes">' + info + '</div> ' + '</a>' + '</li>'
+            '<div class="thumb" style="background-image: url(' + avatar + ');"> ' + '</div>' + '<span class="sitename">' + nickname + '</span>' +
+            '<div class="linkdes">' + info + '</div> ' + '</a>' + '</li>';
         }
         $("#link-navigation").append(li);
       });
