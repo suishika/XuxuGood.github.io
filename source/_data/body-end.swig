@@ -29,11 +29,23 @@
 {# 类知乎卡片链接 #}
 <script type="text/javascript" src="/js/linkcard.js"></script>
 
-<!-- 明月浩空播放器 -->
+{# 明月浩空播放器 #}
 {% if theme.player.enable %}
    <script src="https://player.lmih.cn/player/js/player.js" id="myhk" key="158649506326" m="1"></script>
 {% endif %}
 
-<!--share.js分享-->
+{# share.js分享 #}
 <link rel="stylesheet" href="/js/sharejs/css/share.min.css">
 <script src="/js/sharejs/js/social-share.min.js"></script>
+
+{# 打字机效果 #}
+<script src="/js/typed.js"></script>
+<script>
+var typed = new Typed('.site-description', {
+  strings: ['人生若只如初见','何事秋风悲画扇','等闲变却故人心','却道故人心易变','骊山语罢清宵半','泪雨霖铃终不怨','何如薄幸锦衣郎','比翼连枝当日愿'],
+  loop: true, //开启循环
+  typeSpeed: 200, //打印的速度。数值越大，速度越慢
+  backSpeed: 100, //延迟时间后才后退，值越大，延迟的时间就越长
+  cursorChar: '&nbsp;<i class="fa fa-heartbeat" id="myheartbeat"></i>' // 用于在在输出字符结尾闪烁的符号
+});
+</script>
