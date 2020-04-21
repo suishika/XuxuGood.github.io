@@ -226,12 +226,6 @@ feed:
   content_limit: 150
   content_limit_delim: ' '
 
-#lazyload 图片懒加载（与fancybox一起使用有莫名其妙的的bug，暂时废弃）
-lazyload:
-  enable: true
-  onlypost: true
-  loadingImg: /images/loading4.gif
-
 # 减少出站链接能够有效防止权重分散，hexo有很方便的自动为出站链接添加nofollow的插件。
 nofollow:
   enable: true
