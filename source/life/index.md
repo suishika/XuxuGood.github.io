@@ -70,7 +70,7 @@ comments: false #是否开启评论
         width: 40%;
         float: left;
         margin: 3% 5%;
-        height: 200px
+        height: 180px
     }
 
     .box:hover {
