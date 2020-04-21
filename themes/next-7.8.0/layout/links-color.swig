@@ -42,7 +42,6 @@
       float: right;
       box-shadow: inset 0 0 10px #000;
       opacity: 1;
-      transform: rotate(0deg);
       transition: all ease 1s;
       margin-top: 10px;
       margin-bottom: 0;
@@ -58,7 +57,7 @@
     }
 
     .card:hover .thumb {
-      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
     }
 
     .card:hover {
@@ -74,7 +73,6 @@
       color: #FE9600;
       padding-bottom: 10px;
       display: block;
-      -webkit-transition: all .3s;
       transition: all .3s;
       overflow: hidden;
       text-overflow: ellipsis;
