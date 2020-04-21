@@ -228,7 +228,7 @@ feed:
 
 #lazyload 图片懒加载（与fancybox一起使用有莫名其妙的的bug，暂时废弃）
 lazyload:
-  enable: false
+  enable: true
   onlypost: true
   loadingImg: /images/loading4.gif
 
