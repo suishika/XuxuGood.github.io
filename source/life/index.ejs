@@ -11,7 +11,7 @@ comments: false #是否开启评论
 <div class="life">
     <div class="row">
         <div class="box">
-            <img class="nofancybox" src="https://s2.ax1x.com/2019/10/30/K4ViZT.jpg">
+            <div class="thumb" style="background-image: url('https://s2.ax1x.com/2019/10/30/K4ViZT.jpg')"></div>
             <div class="box-content"><span class="lay-title">游戏系列</span><span class="lay-post">玩过的一些游戏</span>
                 <div>
                     <ul class="icon">
@@ -20,7 +20,8 @@ comments: false #是否开启评论
                 </div>
             </div>
         </div>
-        <div class="box"><img class="nofancybox" src="https://s2.ax1x.com/2019/10/28/K6WAp9.md.jpg">
+        <div class="box">
+            <div class="thumb" style="background-image: url('https://s2.ax1x.com/2019/10/28/K6WAp9.md.jpg')"></div>
             <div class="box-content"><span class="lay-title">读书系列</span><span class="lay-post">读过的一些书籍</span>
                 <div>
                     <ul class="icon">
@@ -29,7 +30,8 @@ comments: false #是否开启评论
                 </div>
             </div>
         </div>
-        <div class="box"><img class="nofancybox" src="https://s2.ax1x.com/2019/10/28/K6WSmV.jpg">
+        <div class="box">
+            <div class="thumb" style="background-image: url('https://s2.ax1x.com/2019/10/28/K6WSmV.jpg')"></div>
             <div class="box-content"><span class="lay-title">观影系列</span><span class="lay-post">看过的一些电影</span>
                 <div>
                     <ul class="icon">
@@ -38,7 +40,8 @@ comments: false #是否开启评论
                 </div>
             </div>
         </div>
-        <div class="box"><img class="nofancybox" src="https://s2.ax1x.com/2019/10/28/K6WFfJ.jpg">
+        <div class="box">
+            <div class="thumb" style="background-image: url('https://s2.ax1x.com/2019/10/28/K6WFfJ.jpg')"></div>
             <div class="box-content"><span class="lay-title">相册系列</span><span class="lay-post">生活的五彩斑斓</span>
                 <div>
                     <ul class="icon">
@@ -54,11 +57,12 @@ comments: false #是否开启评论
     .posts-expand .post-body h3:before {
         content: "";
     }
-    .row{
-        display: inline-block;
+
+    .row {
+        display: flow-root;
     }
+
     .box {
-        display: inline-block;
         overflow: hidden;
         position: relative;
         z-index: 1;
@@ -66,7 +70,7 @@ comments: false #是否开启评论
         width: 40%;
         float: left;
         margin: 3% 5%;
-        height: 180px
+        height: 200px
     }
 
     .box:hover {
@@ -106,13 +110,13 @@ comments: false #是否开启评论
         top: -42%
     }
 
-    .box img {
-        width: 100%;
-        height: auto;
+    .thumb {
+        background-size: 100% 100%;
+        height: 100%;
         transition: all .5s ease
     }
 
-    .box:hover img {
+    .box:hover .thumb {
         transform: scale(1.2)
     }
 
@@ -185,7 +189,7 @@ comments: false #是否开启评论
     }
 
     @media only screen and (max-width: 479px) {
-        .box .title {
+        .box {
             font-size: 20px
         }
     }
@@ -202,7 +206,6 @@ comments: false #是否开启评论
         }
 
         .box:after, .box:hover:after {
-        / / opacity: 0;
             display: none
         }
     }

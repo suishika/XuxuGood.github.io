@@ -17,8 +17,8 @@
       width: 23%;
       float: left;
       border: 1px solid #ececec;
-      padding: 10px 30px;
-      margin: 4px 4px;
+      padding: 1% 3%;
+      margin: 0.2% 2%;
       position: relative;
       overflow: hidden;
       transition: all .3s;
@@ -97,7 +97,7 @@
 
     @media (max-width: 630px) {
       .card {
-        width: 80% !important;
+        width: 90% !important;
       }
     }
   </style>
