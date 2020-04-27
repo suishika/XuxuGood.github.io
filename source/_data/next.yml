@@ -10,14 +10,16 @@
 override: true
 
 # Console reminder if new version released.
-reminder: false
+# 提醒版本更新
+reminder: true
 
 # Allow to cache content generation. Introduced in NexT v6.0.0.
 cache:
   enable: true
 
 # Remove unnecessary files after hexo generate.
-minify: false
+# 压缩
+minify: true
 
 # Define custom file paths.
 # Create your custom files in site directory `source/_data` and uncomment needed files below.
