@@ -9,7 +9,7 @@
 # Useful if you want to comment some options from NexT `_config.yml` by `next.yml` without editing default config.
 override: true
 
-# Console reminder if new version released.
+# 控制台提醒（如果发布了新版本）。
 # 提醒版本更新
 reminder: true
 
