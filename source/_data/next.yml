@@ -1026,6 +1026,9 @@ css: css
 js: js
 images: images
 
+# Theme version
+version: 7.8.0
+
 # 近期文章
 recent_posts_title: 近期文章
 recent_posts_layout: block
