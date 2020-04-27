@@ -240,7 +240,7 @@ chat:
 # ---------------------------------------------------------------
 
 # Automatically excerpt description in homepage as preamble text.
-scroll_to_more: true      # 点击阅读全文后是否跳到<!--more-->标记处,设为false时点击阅读全文可以从头阅读
+scroll_to_more: false      # 点击阅读全文后是否跳到<!--more-->标记处,设为false时点击阅读全文可以从头阅读
 
 save_scroll: false        # 自动保存每篇文章或页面上一次滚动的地方
 
