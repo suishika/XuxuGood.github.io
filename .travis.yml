@@ -36,8 +36,8 @@ script:
   - hexo generate
   #豆瓣
   - hexo douban -bgm
-  #gulp压缩文件
-  - gulp
+  #gulp压缩文件(next7废弃)
+#  - gulp
   - hexo d
 
 # 设置git提交名，邮箱；替换真实token到_config.yml文件，最后depoy部署

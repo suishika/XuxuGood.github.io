@@ -6,20 +6,6 @@ body {
   cursor: url(/images/normal.cur), auto;
 }
 
-// 代码折叠功能添加
-.hider_title {
-  cursor: pointer;
-  color: #ef4a05;
-}
-
-.close:before {
-  content: "▼";
-}
-
-.open:before {
-  content: "▲";
-}
-
 // 解决sidebar圆角bug
 .sidebar {
   box-shadow: none;
@@ -298,13 +284,26 @@ article .post-body {
   }
 }
 
-.post-body a:not(.btn):not(.hexo-douban-button):not(.hexo-douban-tab) {
+// a标签链接样式
+.post-body a:not(.btn):not(.tabs ul.nav-tabs li.tab a):not(.hexo-douban-button):not(.hexo-douban-tab) {
   color: #5073b8;
   border-bottom: none;
   text-decoration: none;
 }
 
-.post-body a:not(.btn):not(.hexo-douban-button):not(.hexo-douban-tab):hover, .footer-inner a:hover {
+.post-body a:not(.btn):not(.tabs ul.nav-tabs li.tab a):not(.hexo-douban-button):not(.hexo-douban-tab):hover, .footer-inner a:hover {
+  color: #5073b8;
+  border-bottom: 1px solid #5073b8;
+}
+
+// tabs内容a标签链接样式
+.tab-content .tab-pane p a {
+  color: #5073b8;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.tab-content .tab-pane p a:hover {
   color: #5073b8;
   border-bottom: 1px solid #5073b8;
 }
@@ -336,30 +335,37 @@ ol {
   counter-increment: ol-li;
 }
 
-/*相关文章推荐 pc样式设置*/
+/*相关文章推荐 样式设置*/
 
-summary {
-  width: 15%;
+#popular-custom summary {
+  border-bottom: none;
+  font-size: 1rem;
+  padding: 0;
   outline: 0;
-  cursor: pointer;
+  color: var(--text-color);
+  margin: .5rem 0;
+  background: none;
+  content: '';
   margin-top: 15px;
   +mobile() { /*手机端*/
-    width: 25%;
     font-size: 14px;
     margin-top: 10px;
   }
 }
 
-details {
+#popular-custom summary:hover:after {
+  content: ''
+}
+
+#popular-custom details {
+  border: none
+  padding: 0;
   margin-left: 20px;
 }
 
-details .popular-posts {
+#popular-custom details .popular-posts {
   margin-top: 5px;
   margin-left: -22px;
-  +mobile() {
-    margin: 5px -26px;
-  }
 }
 
 .popular-posts-header {
@@ -373,19 +379,23 @@ details .popular-posts {
   }
 }
 
-.popular-posts-item {
+#popular-custom .popular-posts-item {
   list-style: none
 }
 
-ul.popular-posts .popular-posts-item .popular-posts-title a:before {
+#popular-custom ul.popular-posts .popular-posts-item .popular-posts-title a:before {
   content: "🏷️ ";
 }
 
-ul.popular-posts .popular-posts-item .popular-posts-title a {
+#popular-custom ul.popular-posts .popular-posts-item .popular-posts-title a {
+  font-size: 1.12em;
   border-bottom: 1px solid #999;
 
   &:hover {
     border-bottom: none;
+  }
+  +mobile() { /*手机端*/
+    font-size: unset;
   }
 }
 
