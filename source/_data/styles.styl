@@ -285,18 +285,26 @@ article .post-body {
 }
 
 // a标签链接样式
-.post-body a:not(.btn):not(.tabs ul.nav-tabs li.tab a):not(.hexo-douban-button):not(.hexo-douban-tab) {
+.post-body a:not(.btn):not(.hexo-douban-button):not(.hexo-douban-tab) {
   color: #5073b8;
   border-bottom: none;
   text-decoration: none;
 }
 
-.post-body a:not(.btn):not(.tabs ul.nav-tabs li.tab a):not(.hexo-douban-button):not(.hexo-douban-tab):hover, .footer-inner a:hover {
+.post-body a:not(.btn):not(.hexo-douban-button):not(.hexo-douban-tab):hover, .footer-inner a:hover {
   color: #5073b8;
   border-bottom: 1px solid #5073b8;
 }
 
 // tabs内容a标签链接样式
+.tabs ul.nav-tabs li.tab a {
+  color: #555 !important;
+}
+
+.tabs ul.nav-tabs li.tab a:hover {
+  border-bottom: none !important;
+}
+
 .tab-content .tab-pane p a {
   color: #5073b8;
   border-bottom: none;

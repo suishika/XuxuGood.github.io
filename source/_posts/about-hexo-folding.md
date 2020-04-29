@@ -19,9 +19,9 @@ description: 分享一下如何将折叠式容器封装到 Next 主题中。
 
 ## :sun_with_face: 使用方法
 
-{% tabs %}
+{% tabs folding介绍%}
 <!-- tab 语法格式-->
-```
+```BASH
 {% folding 参数（可选）, 标题 %}
 
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)
@@ -34,7 +34,7 @@ description: 分享一下如何将折叠式容器封装到 Next 主题中。
 参数位置可以填写颜色和状态，多个参数用空格隔开。
 
 <span style="font-weight: bold;color: #2196f3;">颜色</span>
-```
+```BASH
 blue, cyan, green, yellow, red
 ```
 <span style="font-weight: bold;color: #2196f3;">状态</span>
@@ -132,7 +132,7 @@ hahaha <span><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/tieba
 ### :tada: 引入js
 
 在  `\next\scripts\tags` 目录下新建文件 `folding.js`，并添加以下内容：
-```
+```BASH
 'use strict';
 
 function postFolding(args, content) {
@@ -167,7 +167,7 @@ hexo.extend.tag.register('folding', postFolding, {ends: true});
 ### :tada: 引入css
 
 在 `\next\source\css\_common\scaffolding\tags` 目录下新建文件 `folding.styl`,并添加以下内容：
-```
+```BASH
 // gap
 $gap = 16px // base gap
 $gap-h2 = 48px
