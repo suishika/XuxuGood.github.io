@@ -46,10 +46,7 @@ date: 2019-10-18 16:46:39
 .posts-expand .post-body h2::before {
     display: none
 }
-.links-content .with-love {
+.with-love {
      color: #808080 !important;
-     display: inline-block;
-     margin: 0 5px;
-     animation: iconAnimate 1.33s ease-in-out infinite;
  }
 </style>
