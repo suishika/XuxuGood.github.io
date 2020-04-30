@@ -46,7 +46,7 @@ date: 2019-10-18 16:46:39
 .posts-expand .post-body h2::before {
     display: none
 }
-.with-love {
+#links .with-love {
      color: #808080 !important;
  }
 </style>
