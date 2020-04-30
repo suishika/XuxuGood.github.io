@@ -83,7 +83,7 @@ hahaha <span><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/tieba
 ```
 <!-- endtab -->
 
-<!-- tab 参数列表-->
+<!-- tab 示例效果-->
 
 {% folding 查看图片测试 %}
 
