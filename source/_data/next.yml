@@ -63,7 +63,7 @@ footer:
     # 如果要为图标设置动画，请将其设置为true。
     animated: true
     # 更改图标的颜色，红色为'#ff0000'
-    color: "#0417fb"
+    color: "#f44336"
 
   # 如果未定义，将使用Hexo `_config.yml` 中的 `author`。
   copyright:
