@@ -875,11 +875,11 @@ motion:
 # Dependencies: https://github.com/theme-next/theme-next-pace
 # For more information: https://github.com/HubSpot/pace
 pace:
-  enable: false
+  enable: true
   # Themes list:
   # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
   # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
-  theme: pace-theme-minimal
+  theme: bounce
 
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
@@ -1006,7 +1006,7 @@ vendors:
   # pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
   # pace_css: //cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-minimal.min.css
   pace: //cdn.jsdelivr.net/npm/pace-js@1/pace.min.js
-  pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.min.css
+  pace_css: https://cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-bounce.css
 
   reading_progress: //cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1/reading_progress.min.js
   # Internal version: 1.0.0
