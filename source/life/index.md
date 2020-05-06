@@ -50,6 +50,16 @@ comments: false #是否开启评论
                 </div>
             </div>
         </div>
+        <div class="box">
+            <div class="thumb" style="background-image: url('https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/resume/resumeBg.jpg')"></div>
+            <div class="box-content"><span class="lay-title">我的简历</span><span class="lay-post">冰冻三尺非一日之寒</span>
+                <div>
+                    <ul class="icon">
+                        <li><a href="/resume/" target="" title="点我前往"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
