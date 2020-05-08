@@ -248,7 +248,7 @@ save_scroll: false        # 自动保存每篇文章或页面上一次滚动的�
 
 excerpt_description: true # 自动在首页对文章进行摘要描述作为前言文本
 
-# Read more button
+# 阅读全文
 # If true, the read more button will be displayed in excerpt section.
 read_more_btn: true
 
