@@ -9,24 +9,24 @@ type: Harry-Potter
 <div class="gallery-page">
     <div class="img-list">
         <div class="img-column">
-            <a href="img/CARE-OF-MAGICAL-CREATURES.jpg" target="_Blank"><img src="img/CARE-OF-MAGICAL-CREATURES.jpg"></a>
+            <a href="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/CARE-OF-MAGICAL-CREATURES.jpg" target="_Blank"><img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/CARE-OF-MAGICAL-CREATURES.jpg"></a>
         </div>
         <div class="img-column">
-            <a href="img/CHARMS.jpg" target="_Blank"><img src="img/CHARMS.jpg"></a>
+            <a href="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/CHARMS.jpg" target="_Blank"><img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/CHARMS.jpg"></a>
         </div>
         <div class="img-column">
-            <a href="img/DEFENCE-AGAINST-THE-DARK-ARTS.jpg" target="_Blank"><img src="img/DEFENCE-AGAINST-THE-DARK-ARTS.jpg"></a>
+            <a href="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/DEFENCE-AGAINST-THE-DARK-ARTS.jpg" target="_Blank"><img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/DEFENCE-AGAINST-THE-DARK-ARTS.jpg"></a>
         </div>
     </div>
     <div class="img-list">
         <div class="img-column">
-            <a href="img/HERBOLOGY.jpg" target="_Blank"><img src="img/HERBOLOGY.jpg"></a>
+            <a href="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/HERBOLOGY.jpg" target="_Blank"><img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/HERBOLOGY.jpg"></a>
         </div>
         <div class="img-column">
-            <a href="img/POTIONS.jpg" target="_Blank"><img src="img/POTIONS.jpg"></a>
+            <a href="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/POTIONS.jpg" target="_Blank"><img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/POTIONS.jpg"></a>
         </div>
         <div class="img-column">
-            <a href="img/TRANSFIGURATION.jpg" target="_Blank"><img src="img/TRANSFIGURATION.jpg"></a>
+            <a href="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/TRANSFIGURATION.jpg" target="_Blank"><img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/TRANSFIGURATION.jpg"></a>
         </div>
     </div>
 </div>
