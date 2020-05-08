@@ -14,13 +14,6 @@ type: gallery
                 </a>
                 <p>- 权力的游戏 -</p>
             </div>
-            <!--
-            <div class="gallery-item">
-                <a href="Plant"><img src="img/蒲公英.jpg">
-                </a>
-                <p>- 植物 -</p>
-            </div>
-            -->
         </div>
         <div class="gallery-column">
             <div class="gallery-item">
