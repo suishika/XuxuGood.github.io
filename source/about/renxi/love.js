@@ -219,17 +219,19 @@
 
     Tree = function(canvas, width, height, opt) {
         this.canvas = canvas;
-        this.ctx = canvas.getContext('2d');
-        this.width = width;
-        this.height = height;
-        this.opt = opt || {};
+        if (canvas !== undefined){
+            this.ctx = canvas.getContext('2d');
+            this.width = width;
+            this.height = height;
+            this.opt = opt || {};
 
-        this.record = {};
+            this.record = {};
 
-        this.initSeed();
-        this.initFooter();
-        this.initBranch();
-        this.initBloom();
+            this.initSeed();
+            this.initFooter();
+            this.initBranch();
+            this.initBloom();
+        }
     }
     Tree.prototype = {
         initSeed: function() {

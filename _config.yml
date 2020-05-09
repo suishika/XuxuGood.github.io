@@ -112,7 +112,7 @@ theme: next-7.8.0
 
 # 本地启动端口设置
 server:
-  port: 4004
+  port: 4005
 
 # Search 站点搜索
 search:
