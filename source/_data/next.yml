@@ -682,7 +682,7 @@ gitalk:
 # 文章底部评分功能
 # To get your ID visit https://widgetpack.com
 rating:
-  enable: true
+  enable: false
   id: 21530
   color:  ff9800
 
