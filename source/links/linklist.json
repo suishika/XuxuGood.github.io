@@ -36,6 +36,12 @@
     "info": "采得百花成蜜后，为谁辛苦为谁甜。"
   },
   {
+    "nickname": "Sanarous",
+    "avatar": "https://site-1258928558.cos.ap-guangzhou.myqcloud.com/touxiang.jpg",
+    "site": "https://bestzuo.cn",
+    "info": "码农人生"
+  },
+  {
     "nickname": "LHJ's Blog",
     "avatar": "https://cdn.jsdelivr.net/gh/longhujing/blog-cdn@1.0/images/avatar.jpg",
     "site": "https://longhujing.github.io",
@@ -52,11 +58,5 @@
     "avatar": "https://dp2px.com/images/download_head.png",
     "site": "https://dp2px.com",
     "info": "物联网应用开发、Android应用开发、Web前端开发技术"
-  },
-  {
-    "nickname": "KeZunLin’s Blog",
-    "avatar": "https://kezunlin.me/images/avatar.png",
-    "site": "https://kezunlin.me",
-    "info": "C++ && Python. Computer Vision && Deep Learning."
   }
 ]
