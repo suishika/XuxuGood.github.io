@@ -31,3 +31,4 @@ setInterval("createtime()",250);
     var translateButtonId = "translateLink"; //默认互换id
     translateInitilization();
 </script>
+
