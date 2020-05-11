@@ -17,30 +17,27 @@ date: 2019-10-18 16:46:39
   
 ***
   
-<div class="note success">
-
+{% note success %}
    <strong>友链格式</strong>
    名称：Xu's Blog
    地址：[https://hasaik.com](https://hasaik.com)
    描述：博观而约取，厚积而薄发！
    头像：[https://hasaik.com/images/avatar.jpg](https://hasaik.com/images/avatar.jpg)
-</div>
+{% endnote %}
 
-<div class="note danger">
-
+{% note danger %}
    <strong>申请要求</strong>
    谷歌、百度等搜索引擎收录
    无广告推广，头像外链不 403
    仅限 HTTPS 的个人域名非商业网站
-</div>
+{% endnote %}
 
-<div class="note warning">
-
+{% note warning %}
    <strong>友链申明</strong>
    站点失效、停止维护、内容不当都可能被取消友链
    禁链不尊重他人劳动成果，转载、引用不加出处，恶意行为的站点
    本站会定期检查并清理无效的、单方面的友链，如更换信息请留言，谢谢合作
-</div>
+{% endnote %}
 
 <style>
 .posts-expand .post-body h2::before {
