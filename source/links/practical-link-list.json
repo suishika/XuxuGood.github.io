@@ -22,5 +22,17 @@
     "avatar": "https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/links/fontawesome.png",
     "site": "https://fontawesome.dashgame.com/",
     "info": "图标字体库和CSS框架"
+  },
+  {
+    "nickname": "稿定抠图",
+    "avatar": "https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/links/gaoding.png",
+    "site": "https://www.gaoding.com/koutu",
+    "info": "免费在线抠图"
+  },
+  {
+    "nickname": "在线工具",
+    "avatar": "https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/links/oschina.png",
+    "site": "http://tool.oschina.net/",
+    "info": "免费各种在线工具"
   }
 ]
