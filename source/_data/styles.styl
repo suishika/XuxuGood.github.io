@@ -25,33 +25,28 @@ a, .posts-expand .post-meta time {
 
 /* 各类鼠标样式 end*/
 
-// 滚动条样式
-html::-webkit-scrollbar {
-  width: 8px;
-  height: 6px;
+// 全局滚动条样式
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background-color: #eee;
 }
 
-html::-webkit-scrollbar {
-  width: 8px;
-  height: 6px;
-}
-
-html::-webkit-scrollbar-thumb {
-  border-radius: 4px;
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.07);
+  background-clip: padding-box;
   background-color: #555;
-}
-
-html::-webkit-scrollbar-thumb {
+  min-height: 40px;
+  padding-top: 100px;
   border-radius: 4px;
-  background-color: #555;
 }
 
-html::-webkit-scrollbar-track-piece {
-  background: #eee;
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffa500;
 }
 
-html::-webkit-scrollbar-track-piece {
-  background: #eee;
+::-webkit-scrollbar-track {
+  background-color: #eee;
 }
 
 // 解决sidebar圆角bug
@@ -263,43 +258,6 @@ article .post-body {
   margin-top: 20px;
   color: #ea103d91;
   font-size: 18px;
-}
-
-/*优化sidebar滚动条样式*/
-.post-toc-wrap::-webkit-scrollbar { /*滚动条整体样式*/
-  width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
-  height: 4px;
-  overflow-x: hidden; /*x轴禁止滚动*/
-}
-
-.post-toc-wrap::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
-  border-radius: 5px;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.post-toc-wrap::-webkit-scrollbar-track { /*滚动条里面轨道*/
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  border-radius: 0;
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.site-overview-wrap::-webkit-scrollbar { /*滚动条整体样式*/
-  width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
-  height: 4px;
-  overflow-x: hidden; /*x轴禁止滚动*/
-}
-
-.site-overview-wrap::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
-  border-radius: 5px;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.site-overview-wrap::-webkit-scrollbar-track { /*滚动条里面轨道*/
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  border-radius: 0;
-  background: rgba(0, 0, 0, 0.1);
 }
 
 /*文章底部标签样式*/
