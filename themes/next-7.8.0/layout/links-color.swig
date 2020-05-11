@@ -5,8 +5,23 @@
 
 <div id="links">
   <style>
+    .skill-header{
+      margin-left: 2%;
+      margin-top: -3.5rem;
+      border-bottom: none !important;
+      color: #ffa500;
+    }
+    .sweet-header{
+      margin-left: 2%;
+      border-bottom: none !important;
+      color: #ffa500;
+    }
+    .practical-header{
+      margin-left: 2%;
+      border-bottom: none !important;
+      color: #ffa500;
+    }
     .link-navigation {
-      margin-top: -2rem;
       list-style: none;
       padding: 0;
       width: 100%;
@@ -100,9 +115,18 @@
     }
   </style>
 
-  <div class="link-navigation" id="link-navigation">
+  <!-- 技术大佬们友链 -->
+  <h4 class="skill-header"><i class="fa fa-fw fa-user"></i>&nbsp;技术大佬</h4>
+  <div class="link-navigation" id="link-navigation-skill"></div>
 
-  </div>
+  <!-- 实用链接 -->
+  <h4 class="practical-header"><i class="fa fa-fw fa-rocket"></i>&nbsp;实用链接</h4>
+  <div class="link-navigation" id="link-navigation-practical"></div>
+
+  <!-- 虐狗博主 -->
+  <h4 class="sweet-header"><i class="fa fa-fw fa-heartbeat"></i>&nbsp;虐狗博主</h4>
+  <div class="link-navigation" id="link-navigation-sweet"></div>
+
   {{ page.content }}
 </div>
 
