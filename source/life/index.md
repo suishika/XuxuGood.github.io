@@ -194,7 +194,7 @@ comments: false #是否开启评论
 
     @media only screen and (max-width: 990px) {
         .box {
-            margin: 0 0 30px
+            //margin: 0 0 30px
         }
     }
 
