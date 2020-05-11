@@ -33,7 +33,7 @@
       float: left;
       border: 1px solid #ececec;
       padding: 1% 3%;
-      margin: 0.2% 2%;
+      margin: 0.5% 2%;
       position: relative;
       overflow: hidden;
       transition: all .3s;
