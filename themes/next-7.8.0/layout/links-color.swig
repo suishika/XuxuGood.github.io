@@ -84,7 +84,7 @@
       width: 180%;
     }
 
-    span.sitename {
+    span.site-name {
       color: #FE9600;
       padding-bottom: 10px;
       display: block;
@@ -95,7 +95,7 @@
       white-space: nowrap;
     }
 
-    .linkdes {
+    .link-info {
       color: #949494;
       font-size: 13px;
       padding: 10px 0;

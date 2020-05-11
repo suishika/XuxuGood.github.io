@@ -9,8 +9,8 @@ $(document).ready(function () {
                 site = data[i].site;
                 info = data[i].info;
                 li += '<li class="card">' + '<a href="' + site + '" title="' + info + '" target="_blank">' +
-                    '<div class="thumb" style="background-image: url(' + avatar + ');"> ' + '</div>' + '<span class="sitename">' + nickname + '</span>' +
-                    '<div class="linkdes">' + info + '</div> ' + '</a>' + '</li>';
+                    '<div class="thumb" style="background-image: url(' + avatar + ');"> ' + '</div>' + '<span class="site-name">' + nickname + '</span>' +
+                    '<div class="link-info">' + info + '</div> ' + '</a>' + '</li>';
             }
             $("#link-navigation-skill").append(li);
         });
@@ -24,8 +24,8 @@ $(document).ready(function () {
                 site = data[i].site;
                 info = data[i].info;
                 li += '<li class="card">' + '<a href="' + site + '" title="' + info + '" target="_blank">' +
-                    '<div class="thumb" style="background-image: url(' + avatar + ');"> ' + '</div>' + '<span class="sitename">' + nickname + '</span>' +
-                    '<div class="linkdes">' + info + '</div> ' + '</a>' + '</li>';
+                    '<div class="thumb" style="background-image: url(' + avatar + ');"> ' + '</div>' + '<span class="site-name">' + nickname + '</span>' +
+                    '<div class="link-info">' + info + '</div> ' + '</a>' + '</li>';
             }
             $("#link-navigation-practical").append(li);
         });
@@ -39,8 +39,8 @@ $(document).ready(function () {
                 site = data[i].site;
                 info = data[i].info;
                 li += '<li class="card">' + '<a href="' + site + '" title="' + info + '" target="_blank">' +
-                    '<div class="thumb" style="background-image: url(' + avatar + ');"> ' + '</div>' + '<span class="sitename">' + nickname + '</span>' +
-                    '<div class="linkdes">' + info + '</div> ' + '</a>' + '</li>';
+                    '<div class="thumb" style="background-image: url(' + avatar + ');"> ' + '</div>' + '<span class="site-name">' + nickname + '</span>' +
+                    '<div class="link-info">' + info + '</div> ' + '</a>' + '</li>';
             }
             $("#link-navigation-sweet").append(li);
         });
