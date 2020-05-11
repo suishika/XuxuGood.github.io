@@ -1,7 +1,7 @@
 {% if post.top %}
     <span class="post-meta-divider">|</span>
-    <i class="fa fa-thumb-tack"></i>
-    <font color=7D26CD>置顶</font>
+    <i class="fa fa-arrow-up" style="color: #7D26CD;vertical-align: 0.05em;"></i>
+    <font color="#7D26CD">置顶</font>
     <span class="post-meta-divider">|</span>
 {% endif %}
 {% if post.essential%}
