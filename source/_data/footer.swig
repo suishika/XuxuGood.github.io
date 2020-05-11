@@ -32,3 +32,17 @@ setInterval("createtime()",250);
     translateInitilization();
 </script>
 
+{# 打字特效 #}
+{% if theme.typing_effect %}
+  <script src="/js/activate-power-mode.js"></script>
+  <script>
+    POWERMODE.colorful = {{ theme.typing_effect.colorful }};
+    POWERMODE.shake = {{ theme.typing_effect.shake }};
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+{% endif %}
+
+{# 网站标题崩溃特效 #}
+{% if theme.crash_cheat.enable %}
+   <script async src="/js/crash_cheat.js"></script>
+{% endif %}

@@ -1,21 +1,8 @@
-{# 打字特效 #}
-{% if theme.typing_effect %}
-  <script src="/js/activate-power-mode.js"></script>
-  <script>
-    POWERMODE.colorful = {{ theme.typing_effect.colorful }};
-    POWERMODE.shake = {{ theme.typing_effect.shake }};
-    document.body.addEventListener('input', POWERMODE);
-  </script>
-{% endif %}
-
-{# 网站标题崩溃特效 #}
-{% if theme.crash_cheat.enable %}
-   <script async src="/js/crash_cheat.js"></script>
-{% endif %}
-
-{# share.js分享 #}
+{# share.js分享，只有进入文章页面才加载js和css #}
+{%- if url.search("/posts/") != -1 %}
 <link rel="stylesheet" href="/js/sharejs/css/share.min.css">
 <script src="/js/sharejs/js/social-share.min.js"></script>
+{%- endif %}
 
 {# 分类页样式js，只有进入分类页面才加载js #}
 {%- if url.search("/categories/") != -1 %}
@@ -37,6 +24,14 @@
     <script type="text/javascript" src="/js/top.js"></script>
 {%- endif %}
 
+{# 文章加密js #}
+{%- if theme.password.enable %}
+    <script type="text/javascript" src="/js/password.js"></script>
+    <script type="text/javascript">
+        password('{{ page.password }}');
+    </script>
+{%- endif %}
+
 {# 关于我js，只有进入关于我页面才加载js #}
 {%- if url.search("/about/") != -1 %}
     <script type="text/javascript" src="/about/renxi/jscex.min.js"></script>
@@ -48,12 +43,4 @@
     <script type="text/javascript" src="/about/renxi/functions.js" charset="utf-8"></script>
     <script type="text/javascript" src="/about/renxi/love.js" charset="utf-8"></script>
     <script type="text/javascript" src="/about/renxi/about.js"></script>
-{%- endif %}
-
-{# 文章加密js #}
-{%- if theme.password.enable %}
-    <script type="text/javascript" src="/js/password.js"></script>
-    <script type="text/javascript">
-        password('{{ page.password }}');
-    </script>
 {%- endif %}
