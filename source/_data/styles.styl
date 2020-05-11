@@ -6,6 +6,25 @@ body {
   cursor: url(/images/normal.cur), auto;
 }
 
+/* 各类鼠标样式 begin*/
+
+// p标签鼠标样式
+p {
+  cursor: url(/images/texto.cur), auto;
+}
+
+// a标签鼠标样式
+a, .posts-expand .post-meta time {
+  cursor: url(/images/ayuda.cur), auto;
+}
+
+// 打赏按钮鼠标样式
+.reward-container button {
+  cursor: url(/images/ayuda.cur), auto !important;
+}
+
+/* 各类鼠标样式 end*/
+
 // 滚动条样式
 html::-webkit-scrollbar {
   width: 8px;
@@ -39,16 +58,6 @@ html::-webkit-scrollbar-track-piece {
 .sidebar {
   box-shadow: none;
   background: none;
-}
-
-// p标签鼠标样式
-p {
-  cursor: url(/images/texto.cur), auto;
-}
-
-// a标签鼠标样式
-a, .posts-expand .post-meta time {
-  cursor: url(/images/ayuda.cur), auto;
 }
 
 // 打字机效果
@@ -672,10 +681,5 @@ img {
 
   .footer a {
     color: #1b1b1b;
-  }
-
-  // 解决移动端title被隐藏了
-  .post-title {
-    display: block !important
   }
 }
