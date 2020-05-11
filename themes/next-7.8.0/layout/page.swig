@@ -64,18 +64,18 @@
             </div>
           </div>
 
-         {% if theme.categoryCloud.type == 'color' %}
+         {% if theme.category_cloud.type == 'color' %}
              {# 彩色分类页 #}
              {% include 'category-color.swig' %}
          {% endif %}
 
          <!-- 友情链接-->
         {% elif page.type === 'links' %}
-            {% if theme.linkStyle.type == 'color' %}
+            {% if theme.link_style.type == 'color' %}
                {# 彩色友情链接页 #}
                {% include 'links-color.swig' %}
             {% endif %}
-            {% if theme.linkStyle.type == 'waterfall' %}
+            {% if theme.link_style.type == 'waterfall' %}
                {# 瀑布流友情链接页 #}
                {% include 'links-waterfall.swig' %}
             {% endif %}

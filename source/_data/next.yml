@@ -1049,12 +1049,12 @@ crash_cheat:
 
 # 分类页样式 category
 # type: | color |
-categoryCloud:
+category_cloud:
   type: color # 为空则使用默认分类页
 
 # 友情链接页样式 links
 # type: | color | waterfall
-linkStyle:
+link_style:
   type: color
 
 # 明月浩空播放器
@@ -1068,3 +1068,8 @@ share_js: true
 #自定义文章加密
 password:
   enable: true
+
+# 打字机效果，默认不填或者default为正常打字效果
+# type: | color | default
+type_writer:
+  type: color

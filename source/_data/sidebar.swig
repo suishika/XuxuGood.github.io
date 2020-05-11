@@ -18,16 +18,24 @@
 {% endif %}
 
 {# 打字机效果 #}
-<script src="/js/typed.js"></script>
-<script>
-var typed = new Typed('.site-description', {
-  strings: ['人生若只如初见','何事秋风悲画扇','等闲变却故人心','却道故人心易变','骊山语罢清宵半','泪雨霖铃终不怨','何如薄幸锦衣郎','比翼连枝当日愿'],
-  loop: true, //开启循环
-  typeSpeed: 200, //打印的速度。数值越大，速度越慢
-  backSpeed: 100, //延迟时间后才后退，值越大，延迟的时间就越长
-  cursorChar: '&nbsp;<i class="fa fa-heartbeat" id="myheartbeat"></i>' // 用于在在输出字符结尾闪烁的符号
-});
-</script>
+{% if theme.type_writer.type == 'color' %}
+    {# 彩色效果 #}
+    <script src="/js/typewriter-color.js"></script>
+{% else %}
+    {# 默认效果 #}
+    <script src="/js/typed.js"></script>
+    <script>
+    // 这里先把原来站点描述内容清除了
+    document.getElementsByClassName('site-description')[0].innerHTML = "";
+    var typed = new Typed('.site-description', {
+      strings: ['人生若只如初见'],
+      loop: true, //开启循环
+      typeSpeed: 200, //打印的速度。数值越大，速度越慢
+      backSpeed: 100, //延迟时间后才后退，值越大，延迟的时间就越长
+      cursorChar: '&nbsp;<i class="fa fa-heartbeat" id="myheartbeat"></i>' // 用于在在输出字符结尾闪烁的符号
+    });
+    </script>
+{% endif %}
 
 {# 近期文章 #}
 {% if theme.recent_posts %}
