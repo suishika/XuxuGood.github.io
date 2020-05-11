@@ -643,7 +643,7 @@ valine:
   appkey: 7xvFncnnyG2QI60iDY3E4PuO
   notify: false # Mail notifier
   verify: false # Verification code
-  placeholder: 既然来了，那就留个痕迹吧~ # Comment box placeholder
+  placeholder: 📢📢📢留下邮箱可以收到回复提醒哦~ # Comment box placeholder
   avatar: monsterid # Gravatar style
   guest_info: nick,mail,link # Custom comment header
   pageSize: 10 # Pagination size
