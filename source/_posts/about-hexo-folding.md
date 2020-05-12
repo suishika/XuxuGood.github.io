@@ -24,7 +24,7 @@ description: 分享一下如何将折叠式容器封装到 Next 主题中。
 ```BASH
 {% folding 参数（可选）, 标题 %}
 
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)
+![](https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/resume/resumeBg.jpg)
 
 {% endfolding %}
 ```
@@ -46,7 +46,7 @@ blue, cyan, green, yellow, red
 ```
 {% folding 查看图片测试 %}
 
-![](https://s1.ax1x.com/2020/04/27/Jf1GHH.jpg)
+![](https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/resume/resumeBg.jpg)
 
 {% endfolding %}
 
@@ -73,7 +73,7 @@ blue, cyan, green, yellow, red
 
 {% folding 查看嵌套测试3 %}
 
-hahaha <span><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/tieba/%E6%BB%91%E7%A8%BD.png' style='height:24px'></span>
+hahaha
 
 {% endfolding %}
 
@@ -87,7 +87,7 @@ hahaha <span><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/tieba
 
 {% folding 查看图片测试 %}
 
-![](https://s1.ax1x.com/2020/04/27/Jf1GHH.jpg)
+![](https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/resume/resumeBg.jpg)
 
 {% endfolding %}
 
@@ -135,6 +135,21 @@ hahaha <span><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/tieba
 ```BASH
 'use strict';
 
+/**
+ * Usage:
+ * {% folding [args], title %}
+ * content
+ * {% endfolding %}
+ *
+ * args:
+ *   - color: blue, cyan, green, yellow, red
+ *   - status: open # means open by default
+ *
+ * example:
+ * {% folding cyan open, view the default folding box %}
+ * This is a folding box that opens by default
+ * {% endfolding %}
+ */
 function postFolding(args, content) {
   args = args.join(' ').split(',');
   let style = ''
@@ -169,58 +184,54 @@ hexo.extend.tag.register('folding', postFolding, {ends: true});
 在 `\next\source\css\_common\scaffolding\tags` 目录下新建文件 `folding.styl`,并添加以下内容：
 ```BASH
 // gap
-$gap = 16px // base gap
-$gap-h2 = 48px
-$gap-h3 = 32px
-$gap-h4 = 16px
-$gap-paragraph = 1rem // 区块间距
-$gap-row = .5rem // 行间距
-$gap-card = $gap
+$fd-gap = 16px // base gap
+$fd-gap-paragraph = 1rem // block spacing
+$fd-gap-row = .5rem // line spacing
+$fd-gap-card = $fd-gap
 // border radius
-$border-codeblock = 4px
+$fd-border-codeblock = 4px
 // common
-$color-card = white
-$color-text = #555
-$color-block =  #f6f6f6
+$fd-color-card = white
+$fd-color-block =  #f6f6f6
 // font size
-$fontsize-meta = .875rem   // 14px
-$fontsize-list = .9375rem // 15px
+$fd-fontsize-meta = .875rem   // 14px
+$fd-fontsize-list = .9375rem // 15px
 //color
-$color-p = #555
-$color-md-blue = #e8f4fd
-$color-md-blue1 = rgba(33,150,243,0.3)
+$fd-color-p = #555
+$fd-color-md-blue = #e8f4fd
+$fd-color-md-blue1 = rgba(33,150,243,0.3)
 
-$color-mac-cyan = #e8fafe
-$color-mac-cyan1 = rgba(27,205,252,0.3)
-$color-mac-green = #ebf9ed
-$color-mac-green1 =rgba(61,197,80,.3)
-$color-mac-yellow = #fff8e9
-$color-mac-yellow1 = rgba(255,189,43,0.3)
-$color-mac-red = #feefee
-$color-mac-red1 = rgba(254,95,88,0.3)
+$fd-color-mac-cyan = #e8fafe
+$fd-color-mac-cyan1 = rgba(27,205,252,0.3)
+$fd-color-mac-green = #ebf9ed
+$fd-color-mac-green1 =rgba(61,197,80,.3)
+$fd-color-mac-yellow = #fff8e9
+$fd-color-mac-yellow1 = rgba(255,189,43,0.3)
+$fd-color-mac-red = #feefee
+$fd-color-mac-red1 = rgba(254,95,88,0.3)
 // transition time
-$time = 0.28s
+$fd-time = 0.28s
 
 details
   display: block
-  padding: $gap
-  margin: $gap-row 0
-  border-radius: $border-codeblock
-  background: $color-card
-  font-size: $fontsize-list
-  transition: all $time ease
-  -moz-transition: all $time ease
-  -webkit-transition: all $time ease
-  -o-transition: all $time ease
+  padding: $fd-gap
+  margin: $fd-gap-row 0
+  border-radius: $fd-border-codeblock
+  background: $fd-color-card
+  font-size: $fd-fontsize-list
+  transition: all $fd-time ease
+  -moz-transition: all $fd-time ease
+  -webkit-transition: all $fd-time ease
+  -o-transition: all $fd-time ease
 
   summary
     cursor: url(/images/ayuda.cur),auto;
-    padding: $gap
+    padding: $fd-gap
     outline:none;
-    margin: 0 - $gap
-    border-radius: $border-codeblock
-    color: alpha($color-p, .7)
-    font-size: $fontsize-meta
+    margin: 0 - $fd-gap
+    border-radius: $fd-border-codeblock
+    color: alpha($fd-color-p, .7)
+    font-size: $fd-fontsize-meta
     font-weight: bold
     position: relative
     line-height: normal
@@ -232,7 +243,7 @@ details
       cursor: url(/images/ayuda.cur),auto;
 
     &:hover
-      color: $color-p
+      color: $fd-color-p
 
       &:after
         position: absolute
@@ -240,83 +251,83 @@ details
         text-align: center
         top: 50%
         transform: translateY(-50%)
-        right: $gap
+        right: $fd-gap
 
-  border: 1px solid $color-block
+  border: 1px solid $fd-color-block
 
   > summary
-    background: $color-block
+    background: $fd-color-block
 
   &[blue]
-    border-color: $color-md-blue
+    border-color: $fd-color-md-blue
 
     > summary
-      background:$color-md-blue
+      background:$fd-color-md-blue
 
   &[cyan]
-    border-color:$color-mac-cyan
+    border-color:$fd-color-mac-cyan
 
     > summary
-      background:$color-mac-cyan
+      background:$fd-color-mac-cyan
 
   &[green]
-    border-color:$color-mac-green
+    border-color:$fd-color-mac-green
 
     > summary
-      background:$color-mac-green
+      background:$fd-color-mac-green
 
   &[yellow]
-    border-color:$color-mac-yellow
+    border-color:$fd-color-mac-yellow
 
     > summary
-      background:$color-mac-yellow
+      background:$fd-color-mac-yellow
 
   &[red]
-    border-color:$color-mac-red
+    border-color:$fd-color-mac-red
 
     > summary
-      background:$color-mac-red
+      background:$fd-color-mac-red
 
 details[open]
-  border-color: alpha($color-p, .2)
+  border-color: alpha($fd-color-p, .2)
 
   > summary
-    border-bottom: 1px solid alpha($color-p, .2)
+    border-bottom: 1px solid alpha($fd-color-p, .2)
     border-bottom-left-radius: 0
     border-bottom-right-radius: 0
 
   &[blue]
-    border-color: alpha($color-md-blue1, .3)
+    border-color: alpha($fd-color-md-blue1, .3)
 
     > summary
-      border-bottom-color: alpha($color-md-blue1, .3)
+      border-bottom-color: alpha($fd-color-md-blue1, .3)
 
   &[cyan]
-    border-color: alpha($color-mac-cyan1, .3)
+    border-color: alpha($fd-color-mac-cyan1, .3)
 
     > summary
-      border-bottom-color: alpha($color-mac-cyan1, .3)
+      border-bottom-color: alpha($fd-color-mac-cyan1, .3)
 
   &[green]
-    border-color: alpha($color-mac-green1, .3)
+    border-color: alpha($fd-color-mac-green1, .3)
 
     > summary
-      border-bottom-color: alpha($color-mac-green1, .3)
+      border-bottom-color: alpha($fd-color-mac-green1, .3)
 
   &[yellow]
-    border-color: alpha($color-mac-yellow1, .3)
+    border-color: alpha($fd-color-mac-yellow1, .3)
 
     > summary
-      border-bottom-color: alpha($color-mac-yellow1, .3)
+      border-bottom-color: alpha($fd-color-mac-yellow1, .3)
 
   &[red]
-    border-color: alpha($color-mac-red1, .3)
+    border-color: alpha($fd-color-mac-red1, .3)
 
     > summary
-      border-bottom-color: alpha($color-mac-red1, .3)
+      border-bottom-color: alpha($fd-color-mac-red1, .3)
 
   > summary
-    color: $color-p
+    color: $fd-color-p
     margin-bottom: 0
 
     &:hover
@@ -324,8 +335,8 @@ details[open]
         content: '-'
 
   > div.content
-    padding: $gap
-    margin: 0 - $gap
+    padding: $fd-gap
+    margin: 0 - $fd-gap
     margin-top: 0
 
     p > a:hover
