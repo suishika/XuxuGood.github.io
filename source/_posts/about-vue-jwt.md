@@ -4,12 +4,8 @@ top: false
 essential: false
 notshow: false
 copyright: true
-tags:
-  - Vue
-  - Jwt
-categories:
-  - Vue
-  - Jwt
+tags: [Vue,Jwt]
+categories: [Vue]
 keywords: [vue,axios刷新Jwt]
 abbrlink: fc31ea3
 date: 2020-03-03 11:52:04

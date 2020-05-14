@@ -6,8 +6,8 @@ notshow: false
 copyright: true
 abbrlink: d0bc4f5d
 date: 2020-04-27 13:46:25
-tags: [Hexo,Folding]
-categories: [Hexo,Folding容器]
+tags: [Hexo,Folding容器]
+categories: [Hexo]
 keywords: [折叠式容器,Folding,Next7.8.0]
 password:
 description: 分享一下如何将折叠式容器封装到 Next 主题中。

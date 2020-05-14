@@ -6,11 +6,8 @@ notshow: false
 copyright: true
 abbrlink: 9b280ea3
 date: 2020-04-08 11:44:02
-tags:
-  - Hexo
-categories:
-  - Hexo
-  - emoji
+tags: [Hexo,Emoji]
+categories: [Hexo]
 keywords: [Hexo,emoji,表情]
 password:
 description: Hexo 开启欢乐的 emoji 之旅 💛

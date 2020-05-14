@@ -5,7 +5,7 @@ essential: false
 notshow: false
 copyright: true
 tags: [CentOS,Gitlab]
-categories: [CentOS,Gitlab]
+categories: [Gitlab]
 keywords: [CentOS,Gitlab,服务器]
 abbrlink: a460b91e
 date: 2020-04-16 14:05:16

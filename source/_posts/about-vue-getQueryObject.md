@@ -7,7 +7,7 @@ copyright: true
 abbrlink: 41567ba6
 date: 2020-05-08 08:51:58
 tags: [Vue,工具类]
-categories: [Vue,工具类]
+categories: [Vue]
 keywords: [Vue,获取url上的参数]
 password:
 description: 经常我们在项目中需要获取 url 上参数进行使用，所以今天为大家奉上该函数 💜

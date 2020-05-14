@@ -6,10 +6,8 @@ notshow: false
 copyright: true
 abbrlink: 2b56997e
 date: 2020-01-07 10:13:18
-tags:
-  - BUG
-categories:
-  - BUG
+tags: [BUG]
+categories: [BUG]
 keywords: [Illegal key size,InvalidKeyException]
 password:
 description: 异常：java.security.InvalidKeyException:Illegal key size.

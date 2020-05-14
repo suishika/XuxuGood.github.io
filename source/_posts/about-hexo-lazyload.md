@@ -6,13 +6,8 @@ notshow: false
 copyright: true
 abbrlink: '61913369'
 date: 2019-11-19 14:54:16
-tags:
-  - Hexo
-  - lazyload
-  - 图片
-categories:
-  - Hexo
-  - lazyload
+tags: [Hexo,lazyload,图片]
+categories: [Hexo]
 keywords: [Hexo,lazyload,图片懒加载]
 password:
 description: Hexo 博客虽然功能很强大，但也越来越繁重了，访问速度上有了一些问题，这里我也考虑了许多，例如加 cdn，将国外的资源引用改为国内镜像等方式。今天又想到如果一个页面的图片很多，那么如何来提高博客的访问速度呢？

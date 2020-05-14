@@ -4,12 +4,8 @@ top: false
 essential: false
 notshow: false
 copyright: true
-tags:
-  - Vue
-  - el-date-picker
-categories:
-  - Vue
-  - el-date-picker
+tags: [Vue,el-date-picker]
+categories: [Vue]
 keywords: [Vue,el-date-picker,禁用当日之前时间]
 abbrlink: 69ab28bb
 date: 2020-01-06 14:00:20

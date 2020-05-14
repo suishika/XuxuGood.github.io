@@ -4,12 +4,8 @@ notshow: false
 copyright: true
 abbrlink: bf9eba42
 date: 2019-11-15 11:48:15
-tags:
-  - Hexo
-  - Valine
-categories:
-  - Hexo
-  - Valine
+tags: [Hexo,Valine]
+categories: [Hexo]
 top:
 keywords: [Valine]
 password:

@@ -6,12 +6,8 @@ notshow: false
 copyright: true
 abbrlink: dd9d9f86
 date: 2019-11-25 11:19:18
-tags:
-  - Hexo
-  - 邮件订阅
-categories:
-  - Hexo
-  - Hexo订阅
+tags: [Hexo,邮件订阅]
+categories: [Hexo]
 keywords: [Hexo,邮件订阅]
 password:
 description: 小站新开通订阅功能，欢迎大家体验。

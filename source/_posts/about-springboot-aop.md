@@ -4,12 +4,8 @@ top: false
 essential: false
 notshow: false
 copyright: true
-tags:
-  - SpringBoot
-  - AOP
-categories:
-  - SpringBoot
-  - AOP
+tags: [SpringBoot,AOP]
+categories: [SpringBoot]
 keywords:
   - SpringBoot Aop
   - 记录操作日志

@@ -4,12 +4,8 @@ notshow: false
 copyright: true
 abbrlink: 495d0b23
 date: 2019-10-13 12:52:32
-tags:
-  - Hexo
-  - Gulp
-  - Neat
-categories:
-  - Hexo
+tags: [Hexo,Gulp,Neat]
+categories: [Hexo]
 top:
 keywords: [Gulp,Hexo-Neat,静态资源压缩]
 description: 对于个人博客来说，优化页面的访问速度是很有必要的，如果打开你的个人站点，加载个首页就要十几秒，页面长时间处于空白状态，想必没什么人能够忍受得了吧。个人觉得，如果能把页面的加载时间控制在三四秒内，就很不错了。

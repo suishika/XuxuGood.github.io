@@ -4,12 +4,8 @@ notshow: false
 copyright: true
 abbrlink: c1cdcf68
 date: 2019-10-16 16:31:27
-tags:
-  - Hexo
-  - Password
-  - Security
-categories:
-  - Hexo
+tags: [Hexo,Password,Security]
+categories: [Hexo]
 top:
 keywords: [Hexo,Next,Password,博文加密]
 password:

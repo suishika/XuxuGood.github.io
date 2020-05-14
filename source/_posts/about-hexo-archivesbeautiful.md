@@ -4,10 +4,8 @@ notshow: false
 copyright: true
 abbrlink: f68f129b
 date: 2019-11-14 15:39:14
-tags:
-  - Hexo
-categories:
-  - Hexo
+tags: [Hexo]
+categories: [Hexo]
 top:
 keywords: [Hexo,归档页美化]
 password:

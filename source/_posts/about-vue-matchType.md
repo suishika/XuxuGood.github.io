@@ -6,10 +6,8 @@ notshow: false
 copyright: true
 abbrlink: dc877e7a
 date: 2020-02-13 17:23:42
-tags:
-  - Vue
-categories:
-  - Vue
+tags: [Vue]
+categories: [Vue]
 keywords: [Vue,js根据文件名后缀判断文件类型]
 password:
 description: 介绍一个Vue项目中会使用到的工具类，就是根据文件名后缀，判断文件图片、视频、文档、pdf等类型的方法。

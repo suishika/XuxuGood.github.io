@@ -6,12 +6,8 @@ notshow: false
 copyright: true
 abbrlink: 4394a738
 date: 2019-12-04 10:05:38
-tags:
-  - Vue
-  - Axios
-categories:
-  - Vue
-  - Axios
+tags: [Vue,Axios]
+categories: [Vue]
 keywords: [Axios,Axios的封装]
 password:
 description: axios 是一个基于 promise 的 http 库，可运行在浏览器端和 node.js 中。他有很多优秀的特性，例如统一进行拦截请求和响应、取消请求、转换 json 、客户端防御 XSRF 等。所以在日常开发中可以直接推荐我们使用 axios 库。如果还对 axios 不了解的，可以移步 axios 文档。回归正题，我们所要的说的 axios 的封装和 api 接口的统一管理，其实主要目的就是在帮助我们简化代码和利于后期的更新维护。

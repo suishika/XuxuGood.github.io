@@ -4,11 +4,8 @@ notshow: false
 copyright: true
 abbrlink: 9c9b482b
 date: 2019-11-14 15:30:09
-tags:
-  - Hexo
-categories:
-  - Hexo
-  - 点击特效
+tags: [Hexo,点击特效]
+categories: [Hexo]
 top:
 keywords: [Hexo,鼠标点击特效]
 password:

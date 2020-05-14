@@ -6,12 +6,8 @@ notshow: false
 copyright: true
 abbrlink: 19c94341
 date: 2019-11-29 16:04:03
-tags:
-  - Hexo
-  - Rss
-categories:
-  - Hexo
-  - Rss
+tags: [Hexo,Rss]
+categories: [Hexo]
 keywords: [Hexo,Rss订阅]
 password:
 description: 本篇介绍一下自己的博客如何添加 RSS 订阅功能。

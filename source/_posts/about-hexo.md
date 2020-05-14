@@ -4,10 +4,8 @@ notshow: false
 copyright: true
 abbrlink: ab21860c
 date: 2019-10-17 16:17:56
-tags:
-  - Hexo
-categories:
-  - Hexo
+tags: [Hexo]
+categories: [Hexo]
 top: 900
 essential: true
 keywords: [HEXO,HEXO 优化]

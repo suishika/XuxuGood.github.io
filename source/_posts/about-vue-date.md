@@ -6,12 +6,8 @@ notshow: false
 copyright: true
 abbrlink: c9b4cff2
 date: 2020-01-15 09:39:22
-tags:
-  - Vue
-  - 工具类
-categories:
-  - Vue
-  - 工具类
+tags: [Vue,工具类]
+categories: [Vue]
 keywords: [Vue日期格式化,Vue工具类]
 password:
 description: 介绍 Vue 中经常使用的日期格式化工具类。

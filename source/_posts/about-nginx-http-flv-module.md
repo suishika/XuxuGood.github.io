@@ -6,12 +6,9 @@ notshow: false
 copyright: true
 abbrlink: 358f95d9
 date: 2020-04-01 09:22:38
-tags:
-  - nginx-http-flv-module
-categories:
-  - 视频流
-  - nginx-http-flv-module
-keywords: [FFmpeg,nginx-http-flv-module,flv.js,视频流]
+tags: [nginx-http-flv-module,视频流播放]
+categories: [流媒体服务]
+keywords: [FFmpeg,nginx-http-flv-module,flv.js,视频流,RTSP]
 password:
 description: 最近项目组接了一个视频流项目，项目的主要核心是将网络摄像头RTSP视频流在WEB端实时播放，经过两天的调查和爬坑，终于实现了视频流的播放。
 ---

@@ -6,13 +6,8 @@ notshow: false
 copyright: true
 abbrlink: a7df3b40
 date: 2019-11-18 12:53:11
-tags:
-  - Java
-  - MD5
-  - SHA-1
-categories:
-  - Java
-  - MD5
+tags: [Java,MD5,SHA-1]
+categories: [加密安全]
 keywords: [MD5,SHA-1,Java加密]
 password:
 description: 介绍两种加密方式，防止网站轻松破解我们的密码。

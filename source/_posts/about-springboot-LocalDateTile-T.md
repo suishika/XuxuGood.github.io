@@ -6,12 +6,8 @@ notshow: false
 copyright: true
 abbrlink: 45c03634
 date: 2020-04-15 10:37:29
-tags:
-  - SpringBoot
-  - LocalDateTime
-categories:
-  - SpringBoot
-  - LocalDateTime
+tags: [SpringBoot,LocalDateTime]
+categories: [SpringBoot]
 keywords: [SpringBoot,LocalDateTime,含有T]
 password:
 description: 通用解决LocalDateTime转为字符串后中间含“T”的问题。

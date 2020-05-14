@@ -4,11 +4,8 @@ notshow: false
 copyright: true
 abbrlink: 7fbe9500
 date: 2019-11-14 15:08:54
-tags:
-  - Hexo
-categories:
-  - Hexo
-  - 豆瓣
+tags: [Hexo,豆瓣]
+categories: [Hexo]
 top:
 keywords: [Hexo,豆瓣]
 password:

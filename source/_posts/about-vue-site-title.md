@@ -6,10 +6,8 @@ notshow: false
 copyright: true
 abbrlink: a63fb3ae
 date: 2020-02-05 12:07:51
-tags:
-  - Vue
-categories:
-  - Vue
+tags: [Vue]
+categories: [Vue]
 keywords: [vue,react,微信浏览器修改标题]
 password:
 description: 分享单页应用在微信浏览器中修改标题

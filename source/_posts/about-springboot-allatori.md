@@ -7,7 +7,7 @@ copyright: true
 abbrlink: 7fabafee
 date: 2020-04-29 12:55:35
 tags: [SpringBoot,Allatori]
-categories: [SpringBoot,Allatori]
+categories: [SpringBoot]
 keywords: [SpringBoot,Allatori,代码混淆]
 password:
 description: Allatori是一个Java 混淆器，它属于第二代混淆器，因此它能够全方位地保护你的知识产权。
