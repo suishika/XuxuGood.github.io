@@ -34,5 +34,11 @@
     "avatar": "https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/links/oschina.png",
     "site": "http://tool.oschina.net/",
     "info": "免费各种在线工具"
+  },
+  {
+    "nickname": "Valine表情",
+    "avatar": "https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png",
+    "site": "https://github.com/GamerNoTitle/ValineCDN",
+    "info": "收集的各种表情"
   }
 ]
