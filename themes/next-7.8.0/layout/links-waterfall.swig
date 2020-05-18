@@ -5,6 +5,27 @@
 
 <div id="links">
     <style>
+        .skill-header{
+          margin-left: -0.7%;
+          margin-top: -3.5rem;
+          border-bottom: none !important;
+          color: #ffa500;
+        }
+        .sweet-header{
+          margin-left: -0.7%;
+          border-bottom: none !important;
+          color: #ffa500;
+        }
+        .practical-header{
+          margin-left: -0.7%;
+          border-bottom: none !important;
+          color: #ffa500;
+        }
+        .card-header-span{
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
         .links-content {
             margin-top: -2rem
         }
@@ -135,49 +156,21 @@
             border-bottom: 1px solid #5073b8;
         }
     </style>
-    <div>
-        <div class="links-content">
-            <div class="link-navigation" id="links1"></div>
-        </div>
-    </div>
 
-    <div class="links-content">
-        <div class="link-navigation" id="link-navigation">
+      <!-- 技术大佬们友链 -->
+      <h4 class="skill-header"><i class="fa fa-fw fa-user"></i>&nbsp;技术大佬</h4>
+      <div class="link-navigation" id="link-navigation-skill"></div>
 
-            <!--{% for link in theme.mylinks %}-->
-            <!--<div class="card">-->
-            <!--<a href="{{ link.site }}" target="_blank">-->
-            <!--<div class="thumb" style="background: url( '{{ link.avatar }} ');"></div>-->
-            <!--</a>-->
-            <!--<div class="card-header">-->
-            <!--<div>-->
-            <!--<a href="{{ link.site }}" target="_blank">{{ link.nickname }}</a>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--{% endfor %}-->
+      <!-- 实用链接 -->
+      <h4 class="practical-header"><i class="fa fa-fw fa-rocket"></i>&nbsp;实用链接</h4>
+      <div class="link-navigation" id="link-navigation-practical"></div>
 
-        </div>
-        {{ page.content }}
-    </div>
+      <!-- 虐狗博主 -->
+      <h4 class="sweet-header"><i class="fa fa-fw fa-heartbeat"></i>&nbsp;虐狗博主</h4>
+      <div class="link-navigation" id="link-navigation-sweet"></div>
+
+      {{ page.content }}
 </div>
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        let nickname, avatar, site, li = "";
-        $.getJSON("/links/linklist.json",
-            function (data) {
-                for (let i = 0; i < data.length; i++) {
-                    nickname = data[i].nickname;
-                    avatar = data[i].avatar;
-                    site = data[i].site;
-                    li += '<div class="card">' + '<a href="' + site + '" target="_blank">' + '<div class="thumb" style="background: url(' + avatar + ');">' + '</div>' + '</a>' + '<div class="card-header">' + '<div><a href="' + site + '" target="_blank">' + nickname + '</a></div>' + '</div>' + '</div>';
-
-                }
-                $("#link-navigation").append(li);
-            });
-    });
-</script>
 {##########################}
 {### END LINKS BLOCK ###}
 {##########################}

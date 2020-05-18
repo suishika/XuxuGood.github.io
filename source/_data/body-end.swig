@@ -16,7 +16,13 @@
 
 {# 友链样式js,只有进入友链页面才加载js #}
 {%- if url.search("/links/") != -1 %}
-    <script type="text/javascript" src="/js/links-color.js"></script>
+    {%- if theme.link_style.type == 'color' %}
+        {# 彩色友情链接页 #}
+        <script type="text/javascript" src="/js/links-color.js"></script>
+    {% else %}
+        {# 瀑布流友情链接页 #}
+        <script type="text/javascript" src="/js/links-waterfall.js"></script>
+    {% endif %}
 {%- endif %}
 
 {# 文章热度js，只有进入top页面才加载js #}
