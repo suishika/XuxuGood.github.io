@@ -15,7 +15,7 @@ description: 最近项目组接了一个视频流项目，项目的主要核心�
 
 最近项目组接了一个视频流项目，项目的主要核心是将网络摄像头RTSP视频流在WEB端实时播放，经过两天的调查和爬坑，终于实现了视频流的播放。
 
-接下来为大家讲讲 linux 系统下搭建 nginx-http-flv-module 的全部过程。
+接下来为大家讲讲 linux 系统下搭建 [nginx-http-flv-module](https://github.com/winshining/nginx-http-flv-module/blob/master/README.CN.md) 的全部过程。
 
 ## :sun_with_face: 前期准备
 1. 下载VLC（用于测试视频流是否可以播放）：https://www.videolan.org/
