@@ -41,13 +41,9 @@ function password(value) {
             }
         }
         //绑定enter键按下后离开的事件
-        $(document).unbind().bind("keyup",function (event) {
-
-            debugger
-            if (event.keyCode == 13 && $('.password').length > 0) {
-                //console.log($('.password').val())
-                //console.log('{{ page.password }}')
-                if ($('.password').val() == value) {
+        $(document).unbind().bind("keyup", function (event) {
+            if (event.keyCode === 13 && $('.password').val().length > 0) {
+                if ($('.password').val() === value) {
                     // 恢复文章内容
                     $(".post-header").after(div)
                     // 解决pjax导致img无法查看
@@ -79,27 +75,33 @@ function password(value) {
                     $(".post-body").css({opacity: 1});
 
                 } else {
-                    // 提示通知
-                    iziToast.show({
-                        class: 'test',
-                        color: 'dark',
-                        icon: 'icon-contacts',
-                        title: '操作通知',
-                        message: '密码输入错误！',
-                        position: 'topRight',
-                        transitionIn: 'flipInX',
-                        transitionOut: 'flipOutX',
-                        progressBarColor: 'rgb(0, 255, 184)',
-                        image: '/images/iziToast.jpg',
-                        imageWidth: 81,
-                        layout:2,
-                        onClose: function(){
-                            console.info('onClose');
-                        },
-                        iconColor: 'rgb(0, 255, 184)'
-                    });
+                    toastMsg("操作通知", "密码输入错误！")
                 }
+            } else if (event.keyCode === 13 && $('.password').val().length === 0) {
+                toastMsg("操作通知", "请输入密码！")
             }
         })
     }
+}
+
+// 提示通知
+function toastMsg(title, message) {
+    iziToast.show({
+        class: 'test',
+        color: 'dark',
+        icon: 'icon-contacts',
+        title: title,
+        message: message,
+        position: 'topRight',
+        transitionIn: 'flipInX',
+        transitionOut: 'flipOutX',
+        progressBarColor: 'rgb(0, 255, 184)',
+        image: '/images/iziToast.jpg',
+        imageWidth: 81,
+        layout: 2,
+        onClose: function () {
+            console.info('onClose');
+        },
+        iconColor: 'rgb(0, 255, 184)'
+    });
 }
