@@ -28,8 +28,8 @@ function password(value) {
             var elem = e.srcElement || e.target;
 
             while (elem) {
-                if (elem != document) {
-                    if (elem.className == "password") {
+                if (elem !== document) {
+                    if (elem.className === "password") {
                         //$(".password").animate({paddingTop:"30px",width:"100%",borderWidth:"2px"},300)
                         return;
                     }
