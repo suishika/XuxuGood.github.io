@@ -41,7 +41,9 @@ function password(value) {
             }
         }
         //绑定enter键按下后离开的事件
-        $(document).keyup(function (event) {
+        $(document).unbind().bind("keyup",function (event) {
+
+            debugger
             if (event.keyCode == 13 && $('.password').length > 0) {
                 //console.log($('.password').val())
                 //console.log('{{ page.password }}')
@@ -77,11 +79,27 @@ function password(value) {
                     $(".post-body").css({opacity: 1});
 
                 } else {
-                    alert("对不起，密码输入错误。")
+                    // 提示通知
+                    iziToast.show({
+                        class: 'test',
+                        color: 'dark',
+                        icon: 'icon-contacts',
+                        title: '操作通知',
+                        message: '密码输入错误！',
+                        position: 'topRight',
+                        transitionIn: 'flipInX',
+                        transitionOut: 'flipOutX',
+                        progressBarColor: 'rgb(0, 255, 184)',
+                        image: '/images/iziToast.jpg',
+                        imageWidth: 81,
+                        layout:2,
+                        onClose: function(){
+                            console.info('onClose');
+                        },
+                        iconColor: 'rgb(0, 255, 184)'
+                    });
                 }
-                //将document的keyup移除，防止在pjax的情况下会重复绑定事件
-                $(document).unbind('keyup')
             }
-        });
+        })
     }
 }

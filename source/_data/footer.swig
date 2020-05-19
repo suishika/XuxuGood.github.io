@@ -46,3 +46,15 @@ setInterval("createtime()",250);
 {% if theme.crash_cheat.enable %}
    <script async src="/js/crash_cheat.js"></script>
 {% endif %}
+
+{# 自定义消息通知js #}
+<script src="/js/iziToast.js"></script>
+<script>
+    //设置 iziToast
+    iziToast.settings({
+        timeout: 3000,
+        pauseOnHover: true,
+        close: true,
+        progressBar: true,
+    });
+</script>
