@@ -828,7 +828,7 @@ livere_uid: #MTAyMC80NzAyNy8yMzUyNw==
 gitalk:
   enable: true
   github_id: XuxuGood # GitHub账号
-  repo: GitalkComment # 应用仓库名称
+  repo: XuxuGood.github.io # 应用仓库名称
   client_id: 3eff6f5e66c2b1be058a
   client_secret: feba2dbbc548679a286a9d19215dc17491b250e8
   admin_user: XuxuGood # 初始化评论账户
