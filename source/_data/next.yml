@@ -607,9 +607,12 @@ comments:
     valine:
       text: Valine
       order: 1
-    gitalk:
-      text: Gitalk
+    livere:
+      text: 来必力
       order: 2
+#    gitalk:
+#      text: Gitalk
+#      order: 2
 
 # Disqus
 disqus:
@@ -821,12 +824,12 @@ valine:
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: #MTAyMC80NzAyNy8yMzUyNw==
+livere_uid: MTAyMC80NzAyNy8yMzUyNw==
 
 # Gitalk
 # For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
 gitalk:
-  enable: true
+  enable: false
   github_id: XuxuGood # GitHub账号
   repo: XuxuGood.github.io # 应用仓库名称
   client_id: 3eff6f5e66c2b1be058a
