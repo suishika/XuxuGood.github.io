@@ -591,24 +591,25 @@ quicklink:
 # See: https://theme-next.org/docs/third-party-services/comments
 # ---------------------------------------------------------------
 
-# Multiple Comment System Support
+# 多评论系统支持
 comments:
   # Available values: tabs | buttons
-  style: tabs
-  # Choose a comment system to be displayed by default.
+  style: buttons
+  # 选择默认显示的评论系统
   # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active:
-  # Setting `true` means remembering the comment system selected by the visitor.
+  active: valine
+  # 设置为true表示记住访问者选择的评论系统
   storage: true
-  # Lazyload all comment systems.
+  # 延迟加载所有评论系统
   lazyload: false
   # Modify texts or order for any navs, here are some examples.
   nav:
-  #disqus:
-  #  text: Load Disqus
-  #  order: -1
-  #gitalk:
-  #  order: -2
+    valine:
+      text: Valine
+      order: 1
+    gitalk:
+      text: Gitalk
+      order: 2
 
 # Disqus
 disqus:
@@ -820,22 +821,22 @@ valine:
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: # <your_uid>
+livere_uid: #MTAyMC80NzAyNy8yMzUyNw==
 
 # Gitalk
 # For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
 gitalk:
-  enable: false
-  github_id: # GitHub repo owner
-  repo: # Repository name to store issues
-  client_id: # GitHub Application Client ID
-  client_secret: # GitHub Application Client Secret
-  admin_user: # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
-  distraction_free_mode: true # Facebook-like distraction free mode
+  enable: true
+  github_id: XuxuGood # GitHub账号
+  repo: GitalkComment # 应用仓库名称
+  client_id: 3eff6f5e66c2b1be058a
+  client_secret: feba2dbbc548679a286a9d19215dc17491b250e8
+  admin_user: XuxuGood # 初始化评论账户
+  distraction_free_mode: true # 是否开启分心自由模式 也就是免打扰
   # Gitalk's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
-  language:
+  language: zh-CN
 
 
 # ---------------------------------------------------------------
