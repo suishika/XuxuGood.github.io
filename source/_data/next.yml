@@ -599,7 +599,7 @@ comments:
   # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
   active: valine
   # 设置为true表示记住访问者选择的评论系统
-  storage: false
+  storage: true
   # 延迟加载所有评论系统
   lazyload: false
   # Modify texts or order for any navs, here are some examples.
