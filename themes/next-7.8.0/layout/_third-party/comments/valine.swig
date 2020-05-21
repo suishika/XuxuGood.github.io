@@ -8,11 +8,6 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
     guest = guest.split(',').filter(item => {
       return GUEST.includes(item);
     });
-    var FIELDS = ['nick', 'mail'];
-    var requiredFields = '{{ theme.valine.requiredFields }}';
-    requiredFields = requiredFields.split(',').filter(item => {
-          return FIELDS.includes(item);
-    });
     new Valine({
       el         : '#valine-comments',
       appId      : '{{ theme.valine.appid }}',
@@ -29,7 +24,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       enableQQ   : {{ theme.valine.enableQQ }},
       emojiCDN   : '{{ theme.valine.emojiCDN }}',
       emojiMaps  : {{ theme.valine.emojiMaps }},
-      requiredFields: requiredFields
+      requiredFields: ['{{ theme.valine.requiredFields }}']
     });
   }, window.Valine);
 });

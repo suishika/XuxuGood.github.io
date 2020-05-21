@@ -599,7 +599,7 @@ comments:
   # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
   active: valine
   # 设置为true表示记住访问者选择的评论系统
-  storage: true
+  storage: false
   # 延迟加载所有评论系统
   lazyload: false
   # Modify texts or order for any navs, here are some examples.
@@ -657,7 +657,7 @@ valine:
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
   recordIP: true # Whether to record the commenter IP
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
-  requiredFields: #设置必填项，默认匿名，可选值：['nick','mail']
+  requiredFields: #设置必填项，默认匿名，可选值：'nick','mail'
   enableQQ: true #是否启用昵称框自动获取QQ昵称和QQ头像, 默认关闭，需博/网站主主动启用
   emojiCDN: https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/emoji/ #设置表情包CDN地址
   #表情title和图片映射
@@ -1146,8 +1146,8 @@ vendors:
   # Gitalk
   # gitalk_js: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
   # gitalk_css: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css
-  gitalk_js:
-  gitalk_css:
+  gitalk_js: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
+  gitalk_css: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css
 
   # Algolia Search
   # algolia_search: //cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
