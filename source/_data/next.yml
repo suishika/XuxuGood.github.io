@@ -280,9 +280,11 @@ tag_icon: true
 
 # Reward (Donate)
 # Front-matter variable (unsupport animation).
+#tyep: default,custom (自定义和默认)
 reward_settings:
   # If true, reward will be displayed in every article by default.
   enable: true
+  type: custom #自己新加的属性（next默认没有）
   animation: true
   comment: 坚持原创技术分享，感谢您的支持和鼓励！
 

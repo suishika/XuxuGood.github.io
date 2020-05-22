@@ -58,3 +58,6 @@ setInterval("createtime()",250);
         progressBar: true,
     });
 </script>
+
+{# 引入bootstrap JS #}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>

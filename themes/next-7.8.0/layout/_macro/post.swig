@@ -219,7 +219,11 @@
       {{- next_inject('postBodyEnd') }}
 
       {%- if post.reward_settings.enable %}
-        {{ partial('_partials/post/post-reward.swig') }}
+        {%- if post.reward_settings.type == 'custom' %}
+          {{ partial('_partials/post/post-reward-custom.swig') }}
+        {%- else %}
+          {{ partial('_partials/post/post-reward.swig') }}
+        {%- endif %}
       {%- endif %}
 
       {%- if theme.creative_commons.license and theme.creative_commons.post %}
