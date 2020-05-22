@@ -180,7 +180,7 @@
       vertical-align: middle;
       -ms-touch-action: manipulation;
       touch-action: manipulation;
-      cursor: pointer;
+      cursor: url(/images/ayuda.cur), auto !important;
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
@@ -365,7 +365,7 @@
   button.close {
       -webkit-appearance: none;
       padding: 0;
-      cursor: pointer;
+      cursor: url(/images/ayuda.cur), auto !important;
       background: 0 0;
       border: 0;
   }
@@ -384,7 +384,7 @@
   .close:focus {
       color: #000;
       text-decoration: none;
-      cursor: pointer;
+      cursor: url(/images/ayuda.cur), auto !important;
       filter: alpha(opacity=50);
       opacity: 1;
   }
