@@ -225,7 +225,7 @@ details
   -o-transition: all $fd-time ease
 
   summary
-    cursor: url(/images/ayuda.cur),auto;
+    cursor: pointer;
     padding: $fd-gap
     outline:none;
     margin: 0 - $fd-gap
@@ -240,7 +240,7 @@ details
     >p, h1, h2, h3, h4, h5, h6
       display: inline !important
       border-bottom: none !important
-      cursor: url(/images/ayuda.cur),auto;
+      cursor: pointer;
 
     &:hover
       color: $fd-color-p
