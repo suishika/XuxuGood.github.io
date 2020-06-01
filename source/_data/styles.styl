@@ -340,6 +340,15 @@ ol {
   text-align: center;
   content: counter(ol-li);
   counter-increment: ol-li;
+  transition: all .5s;
+}
+
+.posts-expand .post-body ol li:hover::before {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
 }
 
 /*相关文章推荐 样式设置*/
