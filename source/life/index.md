@@ -191,7 +191,12 @@ comments: false #是否开启评论
         border-bottom: 1px solid gray;
         box-shadow: 0 0 5px #1e272e inset
     }
-
+    
+    /* 无序图标设置 */
+    .posts-expand .post-body ul li:before {
+      display: none;
+    }
+    
     @media only screen and (max-width: 990px) {
         .box {
             //margin: 0 0 30px
