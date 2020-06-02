@@ -42,10 +42,7 @@
 {%- if url.search("/about/") != -1 %}
     <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
     <script src="/js/botui.js"></script>
-    <script>
-       // 初始化聊天机器人
-       bot_ui_ini()
-    </script>
+    <script src="/js/botui-message.js"></script>
 {%- endif %}
 
 {# 点击邮件中的链接跳转至相应评论js #}
