@@ -15,7 +15,7 @@ comments: false #是否开启评论
             <div class="portfolio-caption">
                 <div class="vertical-table">
                     <div class="vertical-cell">
-                        <h2>游戏系列</h2>
+                        <span>游戏系列</span>
                         <p>玩过的一些游戏</p>
                         <a href="/games/" class="btn">View More</a>
                     </div>
@@ -27,7 +27,7 @@ comments: false #是否开启评论
             <div class="portfolio-caption">
                 <div class="vertical-table">
                     <div class="vertical-cell">
-                        <h2>读书系列</h2>
+                        <span>读书系列</span>
                         <p>读过的一些书籍</p>
                         <a href="/books/" class="btn">View More</a>
                     </div>
@@ -39,7 +39,7 @@ comments: false #是否开启评论
             <div class="portfolio-caption">
                 <div class="vertical-table">
                     <div class="vertical-cell">
-                        <h2>观影系列</h2>
+                        <span>观影系列</span>
                         <p>看过的一些电影</p>
                         <a href="/movies/" class="btn">View More</a>
                     </div>
@@ -51,7 +51,7 @@ comments: false #是否开启评论
             <div class="portfolio-caption">
                 <div class="vertical-table">
                     <div class="vertical-cell">
-                        <h2>相册系列</h2>
+                        <span>相册系列</span>
                         <p>生活的五彩斑斓</p>
                         <a href="/gallery/" class="btn">View More</a>
                     </div>
@@ -63,7 +63,7 @@ comments: false #是否开启评论
             <div class="portfolio-caption">
                 <div class="vertical-table">
                     <div class="vertical-cell">
-                        <h2>我的简历</h2>
+                        <span>我的简历</span>
                         <p>冰冻三尺非一日之寒</p>
                         <a href="/resume/" class="btn">View More</a>
                     </div>
@@ -142,7 +142,12 @@ comments: false #是否开启评论
         vertical-align: middle;
     }
 
-    .portfolio-caption h2 {
+    .portfolio-caption span {
+        display: block;
+        font-weight: 700;
+        line-height: 1.5;
+        padding-top: 10px;
+        border-bottom: 1px solid #eee;
         font-size: 1.318em;
         color: #fff;
         margin-top: 0;
