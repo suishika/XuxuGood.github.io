@@ -114,7 +114,11 @@ type: "about"
     button.botui-actions-buttons-button:focus {
         outline: none;
     }
-
+    
+    button.botui-actions-buttons-button{
+        cursor: url(/images/ayuda.cur), auto;
+    }
+    
     .single-reward {
         position: relative;
         width: 100%;
@@ -135,7 +139,7 @@ type: "about"
         display: inline-block;
         border-radius: 100%;
         background: #d34836;
-        cursor: pointer
+        cursor: url(/images/ayuda.cur), auto;
     }
 
     .single-reward .reward-main {
@@ -160,7 +164,6 @@ type: "about"
         background: #f5f5f5;
         display: inline-block;
         border-radius: 4px;
-        cursor: auto
     }
 
     .single-reward .reward-row:before {
