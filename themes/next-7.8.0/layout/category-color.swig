@@ -30,30 +30,6 @@
     font-weight: bold;
 }
 
-.posts-expand .post-body ul li {
-    margin-top: 7px;
-    margin-bottom: 7px;
-    list-style: none;
-    color: #000;
-}
-
-.posts-expand .post-body ul li:before {
-    display: block;
-    float: left;
-    width: 12px;
-    height: 12px;
-    line-height: 28px;
-    margin: .85rem 12px 0 0;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 700;
-    font-style: normal;
-    background-color: #49b1f5;
-    border-radius: 50%;
-    text-align: center;
-    content: "";
-}
-
 @media (max-width: 767px) {
     .post-body a:hover {
         margin-left: 0px;
