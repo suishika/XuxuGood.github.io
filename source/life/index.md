@@ -17,7 +17,7 @@ comments: false #是否开启评论
                     <div class="vertical-cell">
                         <span>游戏系列</span>
                         <p>玩过的一些游戏</p>
-                        <a href="/games/" class="btn">View More</a>
+                        <a href="/games/" target="" class="btn">View More</a>
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@ comments: false #是否开启评论
                     <div class="vertical-cell">
                         <span>读书系列</span>
                         <p>读过的一些书籍</p>
-                        <a href="/books/" class="btn">View More</a>
+                        <a href="/books/" target="" class="btn">View More</a>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@ comments: false #是否开启评论
                     <div class="vertical-cell">
                         <span>观影系列</span>
                         <p>看过的一些电影</p>
-                        <a href="/movies/" class="btn">View More</a>
+                        <a href="/movies/" target="" class="btn">View More</a>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@ comments: false #是否开启评论
                     <div class="vertical-cell">
                         <span>相册系列</span>
                         <p>生活的五彩斑斓</p>
-                        <a href="/gallery/" class="btn">View More</a>
+                        <a href="/gallery/" target="" class="btn">View More</a>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@ comments: false #是否开启评论
                     <div class="vertical-cell">
                         <span>我的简历</span>
                         <p>冰冻三尺非一日之寒</p>
-                        <a href="/resume/" class="btn">View More</a>
+                        <a href="/resume/" target="" class="btn">View More</a>
                     </div>
                 </div>
             </div>
