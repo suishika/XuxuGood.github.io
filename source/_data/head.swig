@@ -5,3 +5,7 @@
 
 {# 自定义消息通知样式 #}
 <link rel="stylesheet" href="/css/iziToast.css"/>
+
+{# Botui聊天机器人样式 #}
+<link rel="stylesheet" href="/css/botui.min.css" />
+<link rel="stylesheet" href="/css/botui-theme-default.css" />

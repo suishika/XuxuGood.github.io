@@ -40,15 +40,12 @@
 
 {# 关于我js，只有进入关于我页面才加载js #}
 {%- if url.search("/about/") != -1 %}
-    <script type="text/javascript" src="/about/renxi/jscex.min.js"></script>
-    <script type="text/javascript" src="/about/renxi/jscex-parser.js"></script>
-    <script type="text/javascript" src="/about/renxi/jscex-jit.js"></script>
-    <script type="text/javascript" src="/about/renxi/jscex-builderbase.min.js"></script>
-    <script type="text/javascript" src="/about/renxi/jscex-async.min.js"></script>
-    <script type="text/javascript" src="/about/renxi/jscex-async-powerpack.min.js"></script>
-    <script type="text/javascript" src="/about/renxi/functions.js" charset="utf-8"></script>
-    <script type="text/javascript" src="/about/renxi/love.js" charset="utf-8"></script>
-    <script type="text/javascript" src="/about/renxi/about.js"></script>
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="/js/botui.js"></script>
+    <script>
+       // 初始化聊天机器人
+       bot_ui_ini()
+    </script>
 {%- endif %}
 
 {# 点击邮件中的链接跳转至相应评论js #}
