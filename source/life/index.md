@@ -12,52 +12,61 @@ comments: false #是否开启评论
     <div class="row">
         <div class="box">
             <div class="thumb" style="background-image: url('https://s2.ax1x.com/2019/10/30/K4ViZT.jpg')"></div>
-            <div class="box-content"><span class="lay-title">游戏系列</span><span class="lay-post">玩过的一些游戏</span>
-                <div>
-                    <ul class="icon">
-                        <li><a href="/games/" target="" title="点我前往" rel="noopener"><i class="fa fa-link"></i></a></li>
-                    </ul>
+            <div class="portfolio-caption">
+                <div class="vertical-table">
+                    <div class="vertical-cell">
+                        <h2>游戏系列</h2>
+                        <p>玩过的一些游戏</p>
+                        <a href="/games/" class="btn">View More</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="box">
             <div class="thumb" style="background-image: url('https://s2.ax1x.com/2019/10/28/K6WAp9.md.jpg')"></div>
-            <div class="box-content"><span class="lay-title">读书系列</span><span class="lay-post">读过的一些书籍</span>
-                <div>
-                    <ul class="icon">
-                        <li><a href="/books/" target="" title="点我前往"><i class="fa fa-link"></i></a></li>
-                    </ul>
+            <div class="portfolio-caption">
+                <div class="vertical-table">
+                    <div class="vertical-cell">
+                        <h2>读书系列</h2>
+                        <p>读过的一些书籍</p>
+                        <a href="/books/" class="btn">View More</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="box">
             <div class="thumb" style="background-image: url('https://s2.ax1x.com/2019/10/28/K6WSmV.jpg')"></div>
-            <div class="box-content"><span class="lay-title">观影系列</span><span class="lay-post">看过的一些电影</span>
-                <div>
-                    <ul class="icon">
-                        <li><a href="/movies/" target="" title="点我前往"><i class="fa fa-link"></i></a></li>
-                    </ul>
+            <div class="portfolio-caption">
+                <div class="vertical-table">
+                    <div class="vertical-cell">
+                        <h2>观影系列</h2>
+                        <p>看过的一些电影</p>
+                        <a href="/movies/" class="btn">View More</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="box">
             <div class="thumb" style="background-image: url('https://s2.ax1x.com/2019/10/28/K6WFfJ.jpg')"></div>
-            <div class="box-content"><span class="lay-title">相册系列</span><span class="lay-post">生活的五彩斑斓</span>
-                <div>
-                    <ul class="icon">
-                        <li><a href="/gallery/" target="" title="点我前往"><i class="fa fa-link"></i></a></li>
-                    </ul>
+            <div class="portfolio-caption">
+                <div class="vertical-table">
+                    <div class="vertical-cell">
+                        <h2>相册系列</h2>
+                        <p>生活的五彩斑斓</p>
+                        <a href="/gallery/" class="btn">View More</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="box">
-            <div class="thumb"
-                 style="background-image: url('https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/resume/resumeBg.jpg')"></div>
-            <div class="box-content"><span class="lay-title">我的简历</span><span class="lay-post">冰冻三尺非一日之寒</span>
-                <div>
-                    <ul class="icon">
-                        <li><a href="/resume/" target="" title="点我前往"><i class="fa fa-link"></i></a></li>
-                    </ul>
+            <div class="thumb" style="background-image: url('https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/resume/resumeBg.jpg')"></div>
+            <div class="portfolio-caption">
+                <div class="vertical-table">
+                    <div class="vertical-cell">
+                        <h2>我的简历</h2>
+                        <p>冰冻三尺非一日之寒</p>
+                        <a href="/resume/" class="btn">View More</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,39 +98,6 @@ comments: false #是否开启评论
         box-shadow: 3px 3px 5px #999
     }
 
-    .box:after, .box:before {
-        content: "";
-        background: radial-gradient(circle at 23% 70%, rgba(255, 255, 255, .8), #fff 30%);
-        width: 150%;
-        height: 175%;
-        opacity: 0;
-        transform: rotate(45deg);
-        position: absolute;
-        top: -10.5%;
-        right: -150%;
-        z-index: 1;
-        transition: all .35s ease
-    }
-
-    .box:after {
-        background: rgba(255, 255, 255, .5);
-        width: 50%;
-        height: 69%;
-        right: auto;
-        left: -7%;
-        top: -65%
-    }
-
-    .box:hover:before {
-        opacity: 1;
-        right: -85%
-    }
-
-    .box:hover:after {
-        opacity: 1;
-        top: -42%
-    }
-
     .thumb {
         background-size: 100% 100%;
         height: 100%;
@@ -132,77 +108,78 @@ comments: false #是否开启评论
         transform: scale(1.2)
     }
 
-    .box .box-content {
-        text-align: right;
-        transform: translateY(-50%);
+    .box:hover .portfolio-caption {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .portfolio-caption {
         position: absolute;
-        top: 50%;
-        right: -100%;
         z-index: 2;
-        transition: all .5s
-    }
-
-    .box:hover .box-content {
-        right: 5%
-    }
-
-    .box .lay-title {
-        color: #1e272e;
-        font-size: 23px;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin: 0 0 3px 0;
-        border-bottom: 0
-    }
-
-    .box .lay-post {
-        font-size: 16px;
-        text-transform: capitalize;
-        margin: 0 0 10px;
-        display: block
-    }
-
-    .box .icon {
-        padding: 0;
-        margin: 0;
-        list-style: none
-    }
-
-    .box .icon li {
-        display: inline-block;
-        margin: 0 4px
-    }
-
-    .box .icon li a {
-        color: #fff;
-        background-color: #1e272e;
-        font-size: 18px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
         text-align: center;
-        line-height: 35px;
-        height: 35px;
-        width: 35px;
-        border-radius: 50%;
-        display: block;
-        transition: all .3s
+        background: rgba(42, 42, 42, 0.9);
+        transition: all 0.3s ease-in-out;
     }
 
-    .box .icon li a:hover {
-        color: #1e272e;
+    .vertical-table {
+        width: 100%;
+        height: 100%;
+        display: table;
+    }
+
+    .portfolio-caption .vertical-cell {
+        padding: 10px;
+    }
+
+    .vertical-cell {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .portfolio-caption h2 {
+        font-size: 1.318em;
+        color: #fff;
+        margin-top: 0;
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+        transition: all 0.4s ease-in-out;
+    }
+
+    .portfolio-caption p {
+        font-size: 0.8em;
+        color: #e1e1e1;
+    }
+
+    .portfolio-caption .btn {
+        color: #010101;
         background-color: #fff;
-        border-radius: 10%;
-        border-bottom: 1px solid gray;
-        box-shadow: 0 0 5px #1e272e inset
+        margin-top: -1rem;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        padding: 8px 15px;
+        border-radius: 35px;
+        border: 0;
+        -webkit-appearance: none;
+        box-shadow: transparent 0 0 0;
+        transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
     }
 
-    /* 无序图标设置 */
-    .posts-expand .post-body ul li:before {
-        display: none;
-    }
-
-    @media only screen and (max-width: 990px) {
-        .box {
-            /*margin: 0 0 30 px*/
-        }
+    .portfolio-caption .btn:hover {
+        color: #fff;
+        background-color: #70b7fd;
     }
 
     @media only screen and (max-width: 479px) {
@@ -215,15 +192,6 @@ comments: false #是否开启评论
         .box {
             width: 90%;
             margin: 3% 5%
-        }
-
-        .box:hover:before {
-            right: -105%;
-            top: -19%
-        }
-
-        .box:after, .box:hover:after {
-            display: none
         }
     }
 </style>
