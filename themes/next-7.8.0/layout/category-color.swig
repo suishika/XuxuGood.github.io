@@ -30,13 +30,20 @@
     font-weight: bold;
 }
 
+.posts-expand .post-body ul li:before{
+    margin: 12px 15px 0 0;
+}
+.posts-expand .post-body ul {
+    font-size: unset;
+}
+
 @media (max-width: 767px) {
     .post-body a:hover {
         margin-left: 0px;
         font-size: 0.9em;
     }
     .posts-expand .post-body ul li:before {
-        margin: .75rem 12px 0 0 !important;
+        margin: 10px 15px 0 0 !important;
     }
 }
 </style>
