@@ -160,8 +160,8 @@ comments: false #是否开启评论
     .portfolio-caption .btn {
         color: #010101;
         background-color: #fff;
-        margin-top: -1rem;
-        font-size: 15px;
+        margin-top: -0.1rem;
+        font-size: 14px;
         font-weight: 700;
         line-height: 1.2;
         letter-spacing: 0.05em;
