@@ -6,7 +6,10 @@
 
 {# 分类页样式js，只有进入分类页面才加载js #}
 {%- if url.search("/categories/") != -1 %}
-    <script type="text/javascript" src="/js/category-color.js"></script>
+    {%- if theme.category_cloud.type == 'color' %}
+        {# 彩色分类页 #}
+        <script type="text/javascript" src="/js/category-color.js"></script>
+    {%- endif %}
 {%- endif %}
 
 {# 标签页样式js,只有进入标签页面才加载js #}
