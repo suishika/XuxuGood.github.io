@@ -220,13 +220,16 @@ a {
     box-shadow: 0 0 4px 1px rgba(0, 0, 0, .12);
     transition: all .3s;
   }
+
   #valine-comments .vcards .vcard .vh {
     padding-bottom: 0;
     border-bottom: none;
   }
+
   #valine-comments .vcards .vcard .vh .vquote {
     border-left: none;
   }
+
   #valine-comments .vcards .vcard .vh .vcard {
     padding-right: 0;
     border: none;
@@ -403,6 +406,11 @@ article .post-body {
 
 .posts-expand .post-body ul > li:hover:before {
   border-color: #fc6423;
+}
+
+/*禁止显示无序图标的标签*/
+.posts-expand .post-body .tabs ul li:before {
+  content: none;
 }
 
 /*相关文章推荐 样式设置*/
