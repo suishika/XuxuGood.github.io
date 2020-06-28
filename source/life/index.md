@@ -59,7 +59,7 @@ comments: false #是否开启评论
             </div>
         </div>
         <div class="box">
-            <div class="thumb" style="background-image: url('https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/resume/resumeBg.jpg')"></div>
+            <div class="thumb" style="background-image: url('https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/resume/resumeBg.jpg')"></div>
             <div class="portfolio-caption">
                 <div class="vertical-table">
                     <div class="vertical-cell">

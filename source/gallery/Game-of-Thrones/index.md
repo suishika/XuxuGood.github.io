@@ -9,57 +9,57 @@ type: Game-of-Thrones
 <div class="gallery-page">
     <div class="img-list">
         <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Game-of-Thrones/艾莉亚-史塔克.jpg">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Game-of-Thrones/艾莉亚-史塔克.jpg">
         </div>
         <div class="img-column">
-           <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Game-of-Thrones/布兰-史塔克.jpg">
+           <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Game-of-Thrones/布兰-史塔克.jpg">
         </div>
         <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Game-of-Thrones/达里奥-纳哈里斯.jpg">
-        </div>
-    </div>
-    <div class="img-list">
-        <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Game-of-Thrones/巨人克星托蒙德.jpg">
-        </div>
-        <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Game-of-Thrones/玛格丽·提利尔.jpg">
-        </div>
-        <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Game-of-Thrones/梅丽珊卓.jpg">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Game-of-Thrones/达里奥-纳哈里斯.jpg">
         </div>
     </div>
     <div class="img-list">
         <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Game-of-Thrones/琼恩-雪诺.jpg">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Game-of-Thrones/巨人克星托蒙德.jpg">
         </div>
         <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Game-of-Thrones/瑟曦-兰尼斯特.jpg">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Game-of-Thrones/玛格丽·提利尔.jpg">
         </div>
         <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Game-of-Thrones/珊莎-史塔克.jpg">
-        </div>
-    </div>
-    <div class="img-list">
-        <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Game-of-Thrones/詹姆-兰尼斯特.jpg">
-        </div>
-        <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Game-of-Thrones/丹妮莉丝-坦格利安.jpg">
-        </div>
-        <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Game-of-Thrones/培提尔-贝里席.jpg">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Game-of-Thrones/梅丽珊卓.jpg">
         </div>
     </div>
     <div class="img-list">
         <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Game-of-Thrones/乔佛里-拜拉席恩.jpg">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Game-of-Thrones/琼恩-雪诺.jpg">
         </div>
         <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Game-of-Thrones/桑铎-克里冈.jpg">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Game-of-Thrones/瑟曦-兰尼斯特.jpg">
         </div>
         <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Game-of-Thrones/提利昂-兰尼斯特.jpg">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Game-of-Thrones/珊莎-史塔克.jpg">
+        </div>
+    </div>
+    <div class="img-list">
+        <div class="img-column">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Game-of-Thrones/詹姆-兰尼斯特.jpg">
+        </div>
+        <div class="img-column">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Game-of-Thrones/丹妮莉丝-坦格利安.jpg">
+        </div>
+        <div class="img-column">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Game-of-Thrones/培提尔-贝里席.jpg">
+        </div>
+    </div>
+    <div class="img-list">
+        <div class="img-column">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Game-of-Thrones/乔佛里-拜拉席恩.jpg">
+        </div>
+        <div class="img-column">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Game-of-Thrones/桑铎-克里冈.jpg">
+        </div>
+        <div class="img-column">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Game-of-Thrones/提利昂-兰尼斯特.jpg">
         </div>
     </div>
 </div>

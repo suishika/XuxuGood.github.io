@@ -24,7 +24,7 @@ description: 分享一下如何将折叠式容器封装到 Next 主题中。
 ```BASH
 {% folding 参数（可选）, 标题 %}
 
-![](https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/resume/resumeBg.jpg)
+![](https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/resume/resumeBg.jpg)
 
 {% endfolding %}
 ```
@@ -46,7 +46,7 @@ blue, cyan, green, yellow, red
 ```
 {% folding 查看图片测试 %}
 
-![](https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/resume/resumeBg.jpg)
+![](https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/resume/resumeBg.jpg)
 
 {% endfolding %}
 
@@ -87,7 +87,7 @@ hahaha
 
 {% folding 查看图片测试 %}
 
-![](https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/resume/resumeBg.jpg)
+![](https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/resume/resumeBg.jpg)
 
 {% endfolding %}
 

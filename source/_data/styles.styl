@@ -208,6 +208,32 @@ a {
   border-radius: 10px !important;
 }
 
+@media only screen and (min-width: 1000px) {
+  #valine-comments .vcards .vcard:hover {
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12);
+  }
+
+  #valine-comments .vcards .vcard {
+    padding: 15px 20px 0 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, .12);
+    transition: all .3s;
+  }
+  #valine-comments .vcards .vcard .vh {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  #valine-comments .vcards .vcard .vh .vquote {
+    border-left: none;
+  }
+  #valine-comments .vcards .vcard .vh .vcard {
+    padding-right: 0;
+    border: none;
+    box-shadow: none;
+  }
+}
+
 #veditor {
   //resize: none !important;
   background: url(/images/comment.webp) 100% 100% no-repeat;

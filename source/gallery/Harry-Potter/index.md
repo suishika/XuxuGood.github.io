@@ -9,24 +9,24 @@ type: Harry-Potter
 <div class="gallery-page">
     <div class="img-list">
         <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/CARE-OF-MAGICAL-CREATURES.jpg">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Harry-Potter/CARE-OF-MAGICAL-CREATURES.jpg">
         </div>
         <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/CHARMS.jpg">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Harry-Potter/CHARMS.jpg">
         </div>
         <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/DEFENCE-AGAINST-THE-DARK-ARTS.jpg">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Harry-Potter/DEFENCE-AGAINST-THE-DARK-ARTS.jpg">
         </div>
     </div>
     <div class="img-list">
         <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/HERBOLOGY.jpg">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Harry-Potter/HERBOLOGY.jpg">
         </div>
         <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/POTIONS.jpg">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Harry-Potter/POTIONS.jpg">
         </div>
         <div class="img-column">
-            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/blogImages/gallery/Harry-Potter/TRANSFIGURATION.jpg">
+            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/gallery/Harry-Potter/TRANSFIGURATION.jpg">
         </div>
     </div>
 </div>
