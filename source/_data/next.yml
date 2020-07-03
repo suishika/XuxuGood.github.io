@@ -827,7 +827,20 @@ valine:
   master: #md5加密后的博主邮箱
     - 6a565e6c47127afdd40d5d46089db2c5
   friends: #md5加密后的小伙伴邮箱
-    - d32d39c8e126512382ee4b831a8f8002
+    - d32d39c8e126512382ee4b831a8f8002 # 自己
+    - d06adebbcbaa24413cc1b53dc8576ed0 # Uncle_drew
+    - ab2579686cf0e99e1ba40a932e0400f5 # 萌卜兔
+    - e846889207767f93e049a14a29a12d55 # Hunter
+    - 3f96b7b64421af2309f48ce09f483e00 # 玖月
+    - 36937ffd56ac7ac077c3e2dceae74dc5 # nomar
+    - 00fdb1c48ae14c86afce12a8f9fc3d77 # ZZONN
+    - fde3448b9705037f2021664c8b8e6cb1 # dna049
+    - dd04aab66ee54f77e80e8a7781a3e8e2 # L1n
+    - 35d7010131d4f17efe9842174c3c1c2c # hongcyu
+    - ee307e1162191d9120f967483af6d490 # LHJ
+    - 15f39db75e8624d52353ae6943eb66ca # 墨白
+    - 187c2861161c500c97a69290c89b5526 # Qcmoke
+    - 876272e6ce1dd1059dabdc871f59d251 # Ray
   #post_meta_order: 0
 
 # LiveRe comments system
