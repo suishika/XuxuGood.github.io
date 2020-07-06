@@ -124,7 +124,7 @@ menu:
   #  love: /love/ || heart
   about: /about/ || user
   links: /links/ || link
-  top: /top/ || signal
+  #  top: /top/ || signal
   travel: https://travellings.now.sh || paper-plane
 #顶部菜单按钮链接用以下方式写
 #  Docs:
