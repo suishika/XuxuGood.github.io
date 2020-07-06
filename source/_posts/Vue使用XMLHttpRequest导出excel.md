@@ -10,7 +10,7 @@ tags: [Vue]
 categories: [Vue]
 keywords: [Vue,XMLHttpRequest,导出excel]
 password:
-description: 介绍 Vue 如何使用 XMLHttpRequest 导出 excel
+description: 介绍 Vue 如何使用 XMLHttpRequest 导出 excel。
 ---
 
 相关代码：

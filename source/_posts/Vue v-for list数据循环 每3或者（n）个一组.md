@@ -10,7 +10,7 @@ tags: [Vue]
 categories: [Vue]
 keywords: [Vue,v-for,list数据循环,分组,每n个一组]
 password:
-description: Vue 使用 v-for 进行数据循环 每3或者（n）个一组
+description: Vue 使用 v-for 进行数据循环 每3或者（n）个一组。
 ---
 
 template 代码：
