@@ -11,13 +11,13 @@ comments: false #是否开启评论
 <div class="life">
     <div class="row">
         <div class="box">
-            <div class="thumb" style="background-image: url('https://s2.ax1x.com/2019/10/30/K4ViZT.jpg')"></div>
+            <div class="thumb" style="background-image: url('https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/life/评论管理.png')"></div>
             <div class="portfolio-caption">
                 <div class="vertical-table">
                     <div class="vertical-cell">
-                        <span>游戏系列</span>
-                        <p>玩过的一些游戏</p>
-                        <a href="/games/" target="" class="btn">View More</a>
+                        <span>评论管理</span>
+                        <p>管理小伙伴们的评论数据</p>
+                        <a href="https://gycuzerwzfyu.leanapp.cn/" target="" class="btn">View More</a>
                     </div>
                 </div>
             </div>
