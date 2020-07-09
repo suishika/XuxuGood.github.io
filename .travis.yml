@@ -10,11 +10,11 @@ cache:
 
 # 指定博客的仓库地址
 env:
- global:
-   # Github Pages
-   - GH_REF: github.com/XuxuGood/XuxuGood.github.io
-   # Coding Pages
-   - CO_REF: e.coding.net/johnxuxuy/XuxuGood.coding.me.git
+  global:
+    # Github Pages
+    - GH_REF: github.com/XuxuGood/XuxuGood.github.io
+    # Coding Pages
+    - CO_REF: e.coding.net/johnxuxuy/XuxuGood.coding.me.git
 
 # 指定博客分支
 branches:
@@ -35,9 +35,9 @@ script:
   - hexo clean
   - hexo generate
   #豆瓣
-  - hexo douban -bgm
+  #  - hexo douban -bgm
   #gulp压缩文件(next7废弃)
-#  - gulp
+  #  - gulp
   - hexo d
 
 # 设置git提交名，邮箱；替换真实token到_config.yml文件，最后depoy部署

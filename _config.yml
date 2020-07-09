@@ -43,7 +43,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 #Hexo不编译此文件
-skip_render: [love/*,resume/*]
+skip_render: [love/*,resume/*,photos/*]
 
 # Writing 网站文章设置，同样一般不做改动
 new_post_name: :title.md # File name of new posts
@@ -112,7 +112,7 @@ theme: next-7.8.0
 
 # 本地启动端口设置
 server:
-  port: 4001
+  port: 4004
 
 # Search 站点搜索
 search:
@@ -144,19 +144,19 @@ symbols_count_time:
   exclude_codeblock: true     # 排除代码字数统计
 
 #豆瓣
-douban:
-  user: 192906709
-  builtin: false
-  book:
-    title: '读书系列'
-    quote: '书山有路勤为径，学海无涯苦作舟'
-  movie:
-    title: '观影系列'
-    quote: '人间至味是清欢，春风十里不如你'
-  game:
-    title: '游戏系列'
-    quote: '你有一双摄人心魄的眼睛，我非常喜欢'
-  timeout: 10000
+#douban:
+#  user: 192906709
+#  builtin: false
+#  book:
+#    title: '读书系列'
+#    quote: '书山有路勤为径，学海无涯苦作舟'
+#  movie:
+#    title: '观影系列'
+#    quote: '人间至味是清欢，春风十里不如你'
+#  game:
+#    title: '游戏系列'
+#    quote: '你有一双摄人心魄的眼睛，我非常喜欢'
+#  timeout: 10000
 
 # hexo-neat
 # 博文压缩
