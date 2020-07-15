@@ -2,7 +2,7 @@
 layout: page
 title: 关于
 meta:
-  header: [title]
+  header: []
   footer: []
 sidebar: []
 valine:

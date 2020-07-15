@@ -118,7 +118,7 @@ cover:
       icon: fas fa-users
       url: links/
     - name: 留言
-      icon: fas fa-handshake
+      icon: fas fa-comments
       url: comments/
 #      rel: external nofollow noopener noreferrer
 #      target: _blank
