@@ -10,7 +10,7 @@ subtitle: 博观而约取，厚积而薄发
 # 作者描述
 description: 终有溺水替沧海，再无相思寄巫山~
 # 站点关键词，用于搜索优化（可以不填写保持默认）
-keywords: Hexo个人博客,NexT美化优化,JohnXu博客,Github Pages,博客相册
+keywords: 'Java,Vue,后端,前端,CSS,JS,SpringBoot,视频,Hexo,Hexo主题,Blog,博客'
 # 博主名
 author: ·银河小徐
 # 站点语言
@@ -161,7 +161,7 @@ feed:
 lazyload:
   enable: true
   onlypost: false
-  loadingImg: /images/loading4.gif
+  loadingImg: /images/loading.gif
   isSPA: true
 
 # offline配置
