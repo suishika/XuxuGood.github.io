@@ -185,6 +185,12 @@ links:
       backgroundColor: '#FBBC05'
       textColor: '#fff'
       tags: [记录生活]
+    - name: Bore’s Notes
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Bore’s_Notes.jpg
+      url: https://bore.vip
+      backgroundColor: '#967adc'
+      textColor: '#fff'
+      tags: [记录生活]
       
   - group: 实用链接
     icon: fas fa-rocket
