@@ -477,7 +477,7 @@ comments:
   valine: # 请将 appId appKey 修改为自己的，否则评论数据是共享的。
     appId: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz # your appId
     appKey: 7xvFncnnyG2QI60iDY3E4PuO # your appKey
-    js: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogJs/Valine.min.js
+    js: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogJs/Valine.min.js
     path: # All pages use the same path (share the same comments data)
     meta: nick,mail,link # valine comment header info
     requiredFields: ['nick','mail']
