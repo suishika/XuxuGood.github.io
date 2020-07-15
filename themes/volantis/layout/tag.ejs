@@ -33,3 +33,7 @@
 </div>
 <%- partial('_partial/side') %>
 
+<!--自定义彩色标签样式-->
+<% if (theme.tagColorCloud.enable) { %>
+    <%- partial('_custom/tag-color') %>
+<% } %>

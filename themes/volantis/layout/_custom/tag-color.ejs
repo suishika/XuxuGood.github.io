@@ -1,0 +1,37 @@
+<script>
+    jQuery(document).ready(function () {
+        var allTags = document.getElementsByClassName('all-tags');
+        if (allTags.length > 0) {
+            var tags = allTags[0].getElementsByTagName('a');
+            for (var i = tags.length - 1; i >= 0; i--) {
+                var r = Math.floor(Math.random() * 75 + 130);
+                var g = Math.floor(Math.random() * 75 + 100);
+                var b = Math.floor(Math.random() * 75 + 80);
+                tags[i].style.background = "rgb(" + r + "," + g + "," + b + ")";
+            }
+        }
+    });
+</script>
+<style>
+    #archive-page .archive .all-tags > a:hover, #archive-page .archive .all-tags > a:active, #archive-page .archive .all-tags > a.active{
+        color: #fff !important;
+    }
+    .all-tags a {
+        box-shadow: none;
+        border-radius: 6px;
+        padding: 4px 8px 4px 5px;
+        color: #fff !important;
+        margin: 10px 5px 0 0;
+    }
+
+    .all-tags a:before {
+        content: "🔖";
+    }
+
+    .all-tags a:hover {
+        color: #fff !important;
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .4);
+        /*transform: scale(1.1);*/
+        /*transition-duration: 0.15s;*/
+    }
+</style>
