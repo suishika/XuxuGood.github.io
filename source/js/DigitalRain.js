@@ -15,7 +15,7 @@ window.onload = function(){
     //每个文字的字体大小
     var fontSize = 12;
     //计算列
-    var colunms = Math.floor(W /fontSize);	
+    var colunms = Math.floor(W /fontSize);
     //记录每列文字的y轴坐标
     var drops = [];
     //给每一个文字初始化一个起始点的位置
@@ -23,7 +23,7 @@ window.onload = function(){
         drops.push(0);
     }
     //运动的文字
-    var str ="WELCOME TO WWW.ITRHX.COM";
+    var str ="WELCOME TO HASAIK.COM";
     //4:fillText(str,x,y);原理就是去更改y的坐标位置
     //绘画的函数
     function draw(){
