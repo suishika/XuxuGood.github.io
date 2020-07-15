@@ -6,10 +6,30 @@
       path = path.substring(0, path.length - 10);
     }
   %>
-  <a href="<%- url_for(path) %>#comments">
+  <a href="javascript:void(0);" onclick="scrollToComments()">
     <i class="<%- theme.meta.valinecount.icon %> fa-fw"></i>
     <span class="valine-comment-count" data-xid="<%- url_for(path) %>">0</span>
     <span class="leancloud-comments-count">&nbsp;<%- theme.meta.valinecount.desc %></span>
   </a>
 </div>
 <% } %>
+
+<!--解决评论统计跳转到评论区-->
+<script>
+    // 校正页面定位（被导航栏挡住的区域）
+    var scrollCorrection = 80; // (header height = 64px) + (gap = 16px)
+    var $headerAnchor = $('.l_header', '.cover-wrapper');
+    if ($headerAnchor[0]) {
+        scrollCorrection = $headerAnchor[0].clientHeight + 16;
+    }
+   function scrollToComments(){
+       scrollToElement($('.l_body .comments'));
+    }
+   // 校正页面定位（被导航栏挡住的区域）
+   function scrollToElement(elem, correction = scrollCorrection) {
+       const $elem = elem.href ? $(elem.getAttribute('href')) : $(elem);
+       $('html, body').animate({
+           'scrollTop': $elem.offset().top - correction
+       }, 500);
+   }
+</script>
