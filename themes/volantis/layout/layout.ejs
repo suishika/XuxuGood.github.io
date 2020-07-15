@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<%- partial('_partial/head') %>
+<body>
+  <%- partial('_partial/cover') %>
+  <div class="l_body<%- page.cover ? '' : ' nocover' %>">
+    <div class='body-wrapper' id="pjax-container">
+      <% if (theme.plugins.pjax.enable) { %>
+        <%- partial('_third-party/pjaxdata') %>
+      <% } %>
+      <%- body %>
+    </div>
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  <div>
+    <%- partial('_partial/scripts') %>
+    <% if (theme.plugins.pjax.enable) { %>
+      <%- partial('_third-party/pjax') %>
+    <% } %>
+  </div>
+
+  <!-- 代码雨 -->
+  <% if (theme.codeRain.enable) { %>
+      <%- partial('_custom/codeRain') %>
+  <% } %>
+
+  <!-- 网页标题恶搞特效 -->
+  <% if (theme.crashCheat.enable) { %>
+      <script src="/js/crash_cheat.js"></script>
+  <% } %>
+
+  <!-- 鼠标点击特效 -->
+  <% if (theme.cursorEffect == "fireworks") { %>
+      <script async src="/js/cursor/fireworks.js"></script>
+  <% } else if (theme.cursorEffect == "explosion") { %>
+      <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+      <script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+      <script async src="/js/cursor/explosion.min.js"></script>
+  <%} else if (theme.cursorEffect == "love") {%>
+      <script async src="/js/cursor/love.min.js"></script>
+  <%} else if (theme.cursorEffect == "text") {%>
+      <script async src="/js/cursor/text.js"></script>
+  <% } %>
+</body>
+</html>

@@ -1,0 +1,8 @@
+repos:
+  class: text
+  display: [desktop, mobile] # [desktop, mobile]
+  header:
+    icon: fas fa-bullhorn
+    title: 公告
+  content:
+    - '本站已由 Next 主题更换为 Volantis 主题，最近几天可真是费死很多脑细胞呀。'
