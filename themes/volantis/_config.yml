@@ -637,7 +637,10 @@ crashCheat:
   enable: true
 # 鼠标点击特效
 # 共有四个可以选择: fireworks | explosion | love | text
-cursorEffect: love
+# default为
+cursorEffect:
+  enable: true
+  effect: text
 #是否开启彩色标签云，关闭则为主题默认样式
 tagColorCloud:
   enable: true
