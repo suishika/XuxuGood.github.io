@@ -1,5 +1,13 @@
 <!--粒子时钟-->
-<div style="text-align: center">
-    <canvas id="particleClockCanvas" style="width: 140px;"></canvas>
+<div style="display: flex;">
+    <canvas id="particleClockCanvas" style="width: 100px;margin-top: 4px;margin-left: 20px;"></canvas>
 </div>
 <script src="/js/canvas-clock.js"></script>
+
+<style>
+    @media screen and (max-width: 768px) {
+        #particleClockCanvas {
+            display: none;
+        }
+    }
+</style>
