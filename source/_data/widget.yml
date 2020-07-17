@@ -1,9 +1,9 @@
-repos:
+announcement:
   class: text
   display: [desktop, mobile] # [desktop, mobile]
   header:
     icon: fas fa-bullhorn
     title: 公告
   content:
-    - '1.页面细节持续优化中'
-    - '2.本站于 2020/07/14/ 由 Next 主题更换为 Volantis 主题'
+    - ':bell: 页面细节持续优化中'
+    - ':bell: 本站于 2020/07/14/ 由 Next 主题更换为 Volantis 主题'
