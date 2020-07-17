@@ -1,27 +1,11 @@
 <%
-var enableDisqus = false;
-var enableLivere = false;
-var enableGitalk = false;
-var enableVssue = false;
 var enableValine = false;
 var enableMiniValine = false;
-if (theme.comments) {
-    if (theme.comments.disqus && theme.comments.disqus.shortname) {
-        enableDisqus = true;
-    }
-    if (theme.comments.livere && theme.comments.livere.uid) {
-        enableLivere = true;
-    }
-    if (theme.comments.gitalk && theme.comments.gitalk.clientID) {
-        enableGitalk = true;
-    }
-    if (theme.comments.vssue && theme.comments.vssue.clientId) {
-        enableVssue = true;
-    }
-    if (theme.comments.valine && theme.comments.valine.appId) {
+if (theme.comments.service && theme.comments.service.length > 0) {
+    if (theme.comments.service == 'valine') {
         enableValine = true;
     }
-    if (theme.comments.minivaline && theme.comments.minivaline.appId) {
+    if (theme.comments.service == 'minivaline') {
         enableMiniValine = true;
     }
 }
@@ -30,7 +14,7 @@ var banUrl = theme.plugins.pjax.banUrl || [];
 %>
 
 <%- js('https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js') %>
-<%- partial('pjaxanimate') %>
+<%- partial('animate') %>
 <script>
     var pjax;
     document.addEventListener('DOMContentLoaded', function () {
@@ -38,7 +22,8 @@ var banUrl = theme.plugins.pjax.banUrl || [];
             elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"]):not([pjax-fancybox])',
             selectors: [
                 "title",
-                "#pjax-container"
+                "#pjax-container",
+                "#pjax-header-nav-list"
             ],
             cacheBust: <%= theme.plugins.pjax.cacheBust %>,   // url 地址追加时间戳，用以避免浏览器缓存
             timeout: <%= theme.plugins.pjax.timeout %>
@@ -75,8 +60,8 @@ var banUrl = theme.plugins.pjax.banUrl || [];
         $('.menu a').unbind('click');  // 解绑
         $(window).unbind('resize');    // 解绑
         $(window).unbind('scroll');    // 解绑
-        $(document).unbind('click');     // 解绑
         $(document).unbind('scroll');  // 解绑
+        $(document).unbind('click');   // 解绑
         $('body').unbind('click');     // 解绑
         window.ShowLoading();
     });
@@ -121,6 +106,11 @@ var banUrl = theme.plugins.pjax.banUrl || [];
             } else {
                 $.backstretch("resize");
             }
+            <% } %>
+            <% if (config.highlight.enable != true && theme.plugins.highlightjs && theme.plugins.highlightjs.js) { %>
+            document.querySelectorAll('pre code').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
             <% } %>
             <% if (theme.plugins.scrollreveal && theme.plugins.scrollreveal.js) { %>
             pjax_scrollrebeal();

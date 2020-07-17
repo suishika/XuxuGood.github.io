@@ -7,8 +7,8 @@ meta:
 sidebar: [blogger, category, tagcloud]
 music:
   server: netease   # netease, tencent, kugou, xiami, baidu
-  type: playlist        # song, playlist, album, search, artist
-  id: 134573504      # song id / playlist id / album id / search keyword
+  type: playlist    # song, playlist, album, search, artist
+  id: 134573504     # song id / playlist id / album id / search keyword
 links:
   - group: 主题作者 + 主题文档
     icon: fas fa-user-tie
