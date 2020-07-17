@@ -16,20 +16,20 @@
 
 <!--解决评论统计跳转到评论区-->
 <script>
-    // 校正页面定位（被导航栏挡住的区域）
-    var scrollCorrection = 80; // (header height = 64px) + (gap = 16px)
-    var $headerAnchor = $('.l_header', '.cover-wrapper');
-    if ($headerAnchor[0]) {
-        scrollCorrection = $headerAnchor[0].clientHeight + 16;
-    }
    function scrollToComments(){
-       scrollToElement($('.l_body .comments'));
+       // 校正页面定位（被导航栏挡住的区域）
+       var scrollCorrection = 80; // (header height = 64px) + (gap = 16px)
+       var $headerAnchor = $('.l_header', '.cover-wrapper');
+       if ($headerAnchor[0]) {
+           scrollCorrection = $headerAnchor[0].clientHeight + 16;
+       }
+       scrollToElement($('.l_body .comments'),scrollCorrection);
     }
    // 校正页面定位（被导航栏挡住的区域）
-   function scrollToElement(elem, correction = scrollCorrection) {
+   function scrollToElement(elem, scrollCorrection) {
        const $elem = elem.href ? $(elem.getAttribute('href')) : $(elem);
        $('html, body').animate({
-           'scrollTop': $elem.offset().top - correction
+           'scrollTop': $elem.offset().top - scrollCorrection
        }, 500);
    }
 </script>
