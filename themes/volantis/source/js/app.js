@@ -119,7 +119,7 @@ var customSearch;
 		const $wrapper = $('header .wrapper');        // 整个导航栏
 		const $comment = $('.s-comment', $wrapper);   // 评论按钮  桌面端 移动端
 		const $toc = $('.s-toc', $wrapper);           // 目录按钮  仅移动端
-		
+
 		$wrapper.find('.nav-sub .title').text(window.subData.title);   // 二级导航文章标题
 
 		// 决定一二级导航栏的切换
@@ -142,7 +142,7 @@ var customSearch;
 			$comment.click(e => {                     // 评论按钮点击后 跳转到评论区域
 				e.preventDefault();
 				e.stopPropagation();
-				scrolltoElement($('.l_body .comments'));
+                scrolltoElement($('.l_body .comments'));
 				e.stopImmediatePropagation();
 			});
 		} else $comment.remove(); // 关闭了评论，则隐藏
@@ -426,7 +426,24 @@ if(window.location.hash){
 	var checkExist = setInterval(function() {
 	   if (typeof jQuery == 'undefined'){return;}
 	   if ($("#"+decodeURI(window.location.hash.split("#")[1]).replace(/\ /g,"-")).length) {
-		  $('html, body').animate({scrollTop: $("#"+decodeURI(window.location.hash.split("#")[1]).replace(/\ /g,"-")).offset().top-10}, 500);
+	      console.log(decodeURI((window.location.hash.split("#")[1]).replace(/\ /g,"-")));
+          var targetUrl = decodeURI((window.location.hash.split("#")[1]).replace(/\ /g,"-"));
+		  // 评论区锚点定位特殊处理
+          if (targetUrl === 'valine_container') {
+              var scrollCorrection = 80; // (header height = 64px) + (gap = 16px)
+              var $headerAnchor = $('.l_header', '.cover-wrapper');
+              if ($headerAnchor[0]) {
+                  scrollCorrection = $headerAnchor[0].clientHeight + 16;
+              }
+              // 校正页面定位（被导航栏挡住的区域）
+              var elem = $('.l_body .comments')
+              var $elem = elem.href ? $(elem.getAttribute('href')) : $(elem);
+              $('html, body').animate({
+                  'scrollTop': $elem.offset().top - scrollCorrection
+              }, 500);
+          } else {
+              $('html, body').animate({scrollTop: $("#"+ targetUrl).offset().top}, 500);
+          }
 		  clearInterval(checkExist);
 	   }
 	}, 100);
