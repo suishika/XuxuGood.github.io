@@ -17,7 +17,8 @@
   icon: fas fa-paper-plane
   url: https://travellings.now.sh
 - name: 更多
-  icon: fas fa-ellipsis-v
+#  icon: fas fa-ellipsis-v
+  icon: fas fa-fan fa-spin
   rows:
     - name: 我的相册
       icon: fas fa-camera-retro
