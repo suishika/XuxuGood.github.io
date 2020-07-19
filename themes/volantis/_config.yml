@@ -648,6 +648,6 @@ cursorEffect:
 #是否开启彩色标签云，关闭则为主题默认样式
 tagColorCloud:
   enable: true
-#是否开启自定义文章序号样式
+#是否开启自定义文章序号样式，否则为主题自带样式
 tocNumberStyle:
   enable: true
