@@ -30,6 +30,11 @@
       <script src="/js/crash_cheat.js"></script>
   <% } %>
 
+  <!-- 全局自定义通知类element通知 -->
+  <% if (theme.messageNotify.enable) { %>
+      <script src="/js/message.js"></script>
+  <% } %>
+
   <!-- 鼠标点击特效 -->
   <% if (theme.cursorEffect.enable) { %>
       <% if (theme.cursorEffect.effect == "fireworks") { %>

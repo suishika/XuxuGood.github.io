@@ -13,19 +13,41 @@
     } </script>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-    <!-- Custom Theme files -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-    <link href="css/font-awesome.css" rel="stylesheet">        <!-- font-awesome icons -->
-    <link rel="stylesheet" href="css/swipebox.css">    <!-- swipebox -->
-    <!-- //Custom Theme files -->
-    <!-- js -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/message.css" type="text/css"/>
+    <link rel="stylesheet" href="css/swipebox.css">
+    <link rel="stylesheet" href="css/handsome.css" type="text/css"/>
+    <link rel="stylesheet" href="css/font.min.css" type="text/css"/>
     <script src="js/jquery-2.2.3.min.js"></script>
-    <!-- //js -->
 </head>
 <body>
+<!-- 密码验证区域 -->
+<div class="app app-header-fixed " id="passwordDiv">
+    <div class="modal-over bg-black">
+        <div class="modal-center animated fadeInUp text-center" style="width:200px;margin:-200px 0 0 -100px;">
+            <div class="thumb-lg">
+                <img src="/resume/images/test.jpg" class="img-circle normal-shadow">
+            </div>
+            <h4 class="m-t m-b">日记心事</h4>
+            <small class="text-muted letterspacing indexWords m-b-sm">
+                请输入分类「日记心事」访问密码：
+            </small>
+            <div class="input-group m-t-md">
+                <input type="password" style="color: black"
+                       class="form-control text-sm btn-rounded no-border open_new_world_password"
+                       placeholder="输入密码打开新世界">
+                <span class="input-group-btn">
+<a class="btn btn-success btn-rounded no-border wrapper-sm padder-md open_new_world"><i class="glyphicon
+        glyphicon-arrow-right"></i></a>
+</span>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- main -->
-<div class="buttons-wrapper">
+<div class="buttons-wrapper" id="mainDiv">
     <input id="slide1" class="w3slider-input" type="radio" name="slider" checked>
     <input id="slide2" class="w3slider-input" type="radio" name="slider">
     <input id="slide3" class="w3slider-input" type="radio" name="slider">
@@ -38,7 +60,8 @@
                     <h2>个人简历</h2>
                     <div class="container">
                         <div class="col-md-4 header-w3left">
-                            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/resume/resumeAvatar.jpg" alt=""/>
+                            <img src="https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/resume/resumeAvatar.jpg"
+                                 alt=""/>
                             <div class="header-imgtext-w3ls">
                                 <h1>徐旭</h1>
                                 <div class="social-wthree-icons">
@@ -477,10 +500,42 @@
 
     });
 </script>
-<!-- //End Skill Bar js -->
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
 <script src="js/bootstrap.js"></script>
+<script src="js/message.js"></script>
+<script src="js/md5.js"></script>
+<script>
+    //暂时简历的内容
+    div = $('#mainDiv');
+    //将简历的内容删除
+    div.remove();
+    var password = "94bad94faea80337f31ff0b2a887b82f";
+    $('.open_new_world').click(function () {
+        // var ele = $(this);
+        if (hex_md5($('.open_new_world_password').val()) === password) {//密码正确
+            $.message({
+                title: "操作通知",
+                message: "密码正确，马上进入新世界",
+                type: 'success'
+            });
+            setTimeout(function () {
+                $("#passwordDiv").hide()
+                $("#passwordDiv").after(div);
+            }, 2000);
+
+        } else if ($('.open_new_world_password').val() === "") {//密码为空
+            $.message({
+                title: "操作通知",
+                message: "请输入密码，密码不能为空",
+                type: 'info'
+            });
+        } else {//密码错误
+            $.message({
+                title: "操作通知",
+                message: "密码错误",
+                type: 'error'
+            });
+        }
+    });
+</script>
 </body>
 </html>

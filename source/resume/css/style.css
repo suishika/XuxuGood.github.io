@@ -1269,21 +1269,21 @@ a.pa_italic:focus {
     color: #f78800;
 }
 
-::-webkit-input-placeholder {
-    color: #fff !important;
-}
+/*::-webkit-input-placeholder {*/
+    /*color: #fff !important;*/
+/*}*/
 
-:-moz-placeholder { /* Firefox 18- */
-    color: #fff !important;
-}
+/*:-moz-placeholder { !* Firefox 18- *!*/
+    /*color: #fff !important;*/
+/*}*/
 
-::-moz-placeholder { /* Firefox 19+ */
-    color: #fff !important;
-}
+/*::-moz-placeholder { !* Firefox 19+ *!*/
+    /*color: #fff !important;*/
+/*}*/
 
-:-ms-input-placeholder {
-    color: #fff !important;
-}
+/*:-ms-input-placeholder {*/
+    /*color: #fff !important;*/
+/*}*/
 
 /*-- //contact --*/
 /*-- footer --*/
