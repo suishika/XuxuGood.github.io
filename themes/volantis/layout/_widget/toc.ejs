@@ -8,3 +8,8 @@
     </div>
   </section>
 <% } %>
+
+<!--自定义处理文章目录序号样式-->
+<% if (theme.tocNumberStyle.enable) { %>
+    <%- partial('_custom/tocNumberStyle') %>
+<% } %>
