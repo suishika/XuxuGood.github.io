@@ -2,7 +2,7 @@
 layout: links     # 必须
 title: 小伙伴们   # 可选，这是友链页的标题
 meta: 
-  header: [title, author, wordcount]
+  header: [title, author, valinecount, wordcount]
   footer: []
 sidebar: [blogger, category, tagcloud]
 music:
@@ -192,58 +192,6 @@ links:
       textColor: '#fff'
       tags: [记录生活]
       
-  - group: 实用链接
-    icon: fas fa-rocket
-    items:
-    - name: Iconfont
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/iconfont.png
-      url: https://www.iconfont.cn/
-      backgroundColor: '#008B8B'
-      textColor: '#fff'
-      tags: [阿里巴巴矢量图标库]
-    - name: Convertio
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/convertio.png
-      url: https://convertio.co/
-      backgroundColor: '#967ADC'
-      textColor: '#fff'
-      tags: [在线文件转换器]
-    - name: TinyPNG
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/tinypng.png
-      url: https://tinypng.com/
-      backgroundColor: '#708090'
-      textColor: '#fff'
-      tags: [在线图片压缩]
-    - name: Font Awesome
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/fontawesome.png
-      url: https://fontawesome.com/
-      backgroundColor: '#34A853'
-      textColor: '#fff'
-      tags: [图标字体库和CSS框架]
-    - name: 稿定抠图
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/gaoding.png
-      url: https://www.gaoding.com/koutu
-      backgroundColor: '#FBBC05'
-      textColor: '#fff'
-      tags: [免费在线抠图]
-    - name: 在线工具
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/oschina.png
-      url: http://tool.oschina.net/
-      backgroundColor: '#E94335'
-      textColor: '#fff'
-      tags: [免费各种在线工具]
-    - name: Valine表情
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Valine表情.png
-      url: https://github.com/GamerNoTitle/ValineCDN
-      backgroundColor: '#7C5246'
-      textColor: '#fff'
-      tags: [收集的各种表情]
-    - name: 彼岸图网
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/彼岸图网.png
-      url: http://pic.netbian.com/e/search/result/index.php?page=19&searchid=25
-      backgroundColor: '#3E74C9'
-      textColor: '#fff'
-      tags: [超清壁纸]
-           
   - group: 虐狗博主
     icon: fas fa-heartbeat
     items:

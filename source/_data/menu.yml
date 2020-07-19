@@ -23,16 +23,18 @@
     - name: 我的相册
       icon: fas fa-camera-retro
       url: photos/
-      target: _blank
     - name: 我的简历
       icon: fas fa-drafting-compass
       url: resume/
-      target: _blank
     - name: 评论管理
       icon: fas fa-comments
       url: https://gycuzerwzfyu.leanapp.cn/
       rel: external nofollow noopener noreferrer
       target: _blank
+    - name: hr
+    - name: 实用工具
+      icon: fas fa-cog
+      url: tools/
 #- name: 近期
 #  icon: fas fa-clock
 #  rows:
