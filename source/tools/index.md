@@ -5,10 +5,7 @@ meta:
   header: [title, author, valinecount, wordcount]
   footer: []
 sidebar: [blogger, category, tagcloud]
-music:
-  server: netease   # netease, tencent, kugou, xiami, baidu
-  type: playlist    # song, playlist, album, search, artist
-  id: 134573504     # song id / playlist id / album id / search keyword
+thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/article-thumbnail/links-or-tools.png
 links:
   - group: 图片工具
     icon: fas fa-images
