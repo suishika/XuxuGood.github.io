@@ -223,7 +223,7 @@ links:
 :bell: 站点失效、停止维护、内容不当都可能被取消友链
 :bell: 禁链不尊重他人劳动成果，转载、引用不加出处，恶意行为的站点
 :bell: 本站会定期检查并清理无效的、单方面的友链，如更换信息请留言，谢谢合作
-:bell: 加入友链后会在本站任意留言区获得<span class="links-tips-friends">小伙伴</span>徽章（以邮箱判定）一枚哦
+:bell: 加入友链后会在本站任意留言区获得<span class="links-tips-friends">小伙伴</span>徽章（以邮箱判定）一枚哦，如果没有请联系我
 
 <style>
     .links-tips-friends {
