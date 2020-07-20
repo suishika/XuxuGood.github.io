@@ -41,6 +41,6 @@ lazyload:
 
 送上两个gif加载中动图
 
-{% btn regular, 点击下载动图1, https://hasaik.com/images/loading3.gif, fas fa-download %}
+{% btn regular, 点击下载动图1, https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/loading3.gif, fas fa-download %}
 
-{% btn regular, 点击下载动图2, https://hasaik.com/images/loading4.gif, fas fa-download %}
+{% btn regular, 点击下载动图2, https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/loading4.gif, fas fa-download %}
