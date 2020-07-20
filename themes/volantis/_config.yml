@@ -230,7 +230,7 @@ widget:
   blogger:
     class: blogger
     display: [desktop, mobile] # [desktop, mobile]
-    avatar: https://hasaik.com/images/avatar.jpg
+    avatar: /images/avatar.jpg
     shape: rectangle # circle, rectangle
     url: /about/
     title: ·银河小徐
