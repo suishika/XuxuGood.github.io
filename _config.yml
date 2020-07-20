@@ -115,7 +115,7 @@ import:
     - "<meta name='theme-color' content='#FFFFFF'>"
     - "<meta name='msapplication-TileColor' content='#1BC3FB'>"
   link:
-    - "<link rel='shortcut icon' type='image/x-icon' href='/images/favicon.png'>"
+    - "<link rel='shortcut icon' type='image/x-icon' href='https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/favicon.png'>"
   #script:
 
 # 减少出站链接能够有效防止权重分散，hexo有很方便的自动为出站链接添加nofollow的插件。
