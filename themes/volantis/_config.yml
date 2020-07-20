@@ -100,7 +100,7 @@ cover:
     home: true
     archive: false
     others: false # can be written in front-matter 'cover: true'
-  logo: /images/logo.png
+  logo: /images/logo.webp
   title: #Xu's Blog
   subtitle: #'终有溺水替沧海，再无相思寄巫山~'
   search: 世界之大，探索一下
