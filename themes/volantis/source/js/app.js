@@ -426,22 +426,29 @@ if(window.location.hash){
 	var checkExist = setInterval(function() {
 	   if (typeof jQuery == 'undefined'){return;}
 	   if ($("#"+decodeURI(window.location.hash.split("#")[1]).replace(/\ /g,"-")).length) {
-	      console.log(decodeURI((window.location.hash.split("#")[1]).replace(/\ /g,"-")));
-          var targetUrl = decodeURI((window.location.hash.split("#")[1]).replace(/\ /g,"-"));
-		  // 评论区锚点定位特殊处理
+          // 目标锚点值
+	      var targetUrl = decodeURI((window.location.hash.split("#")[1]).replace(/\ /g,"-"));
+          // 用来检验是否从外部点击定位到当前评论信息
+          var targetUrlCheck =  /^[0-9a-zA-Z]*$/;
+          // 计算导航条高度
+          var scrollCorrection = 80; // (header height = 64px) + (gap = 16px)
+          var $headerAnchor = $('.l_header', '.cover-wrapper');
+          if ($headerAnchor[0]) {
+              scrollCorrection = $headerAnchor[0].clientHeight + 16;
+          }
+          // 评论区锚点定位特殊处理
           if (targetUrl === 'valine_container') {
-              var scrollCorrection = 80; // (header height = 64px) + (gap = 16px)
-              var $headerAnchor = $('.l_header', '.cover-wrapper');
-              if ($headerAnchor[0]) {
-                  scrollCorrection = $headerAnchor[0].clientHeight + 16;
-              }
               // 校正页面定位（被导航栏挡住的区域）
               var elem = $('.l_body .comments')
               var $elem = elem.href ? $(elem.getAttribute('href')) : $(elem);
               $('html, body').animate({
                   'scrollTop': $elem.offset().top - scrollCorrection
               }, 500);
+          } else if (targetUrlCheck.test(targetUrl) && targetUrl.length === 24) {
+              // 外部评论详情点击过来
+              $('html, body').animate({scrollTop: $("#"+ targetUrl).offset().top - scrollCorrection}, 500);
           } else {
+              // 其他锚点定位
               $('html, body').animate({scrollTop: $("#"+ targetUrl).offset().top}, 500);
           }
 		  clearInterval(checkExist);
