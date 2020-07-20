@@ -7,7 +7,7 @@ meta:
 sidebar: [blogger, category, tagcloud]
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/article-thumbnail/links-or-tools.png
 links:
-  - group: 主题作者 + 主题文档
+  - group: 主题作者 + 文档
     icon: fas fa-user-tie
     items:
     - name: XAOXUU
