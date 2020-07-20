@@ -536,6 +536,35 @@
             });
         }
     });
+    // 禁用右键查看源代码和F12
+    window.onload = function () {
+        document.onkeydown = function () {
+            var e = window.event || arguments[0];
+            if (e.keyCode == 123) {
+                $.message({
+                    title: "本页提醒",
+                    message: "已禁用右键菜单和代码调试功能",
+                    type: 'info'
+                });
+                return false;
+            } else if ((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+                $.message({
+                    title: "本页提醒",
+                    message: "已禁用右键菜单和代码调试功能",
+                    type: 'info'
+                });
+                return false;
+            }
+        };
+        document.oncontextmenu = function () {
+            $.message({
+                title: "本页提醒",
+                message: "已禁用右键菜单和代码调试功能",
+                type: 'info'
+            });
+            return false;
+        }
+    }
 </script>
 </body>
 </html>
