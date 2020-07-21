@@ -18,6 +18,7 @@ style:
     highlight:
       language: true # show language of codeblock
       copy_btn: true
+      grayscale: false # 启用灰度效果
     text_align: # left, right, justify, center
       h1: left
       h2: left
@@ -87,7 +88,7 @@ style:
     #   inner: '#333' # Text color inside the button
     #   block: '#555' # Block color
     #   inlinecode: '#555' # Inline code color
-    #   codeblock: '#555' # Codeblock color
+    codeblock: '#d2eafd' # Codeblock color
     p: '#333333' # Paragraph color
 
 
