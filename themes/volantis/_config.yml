@@ -657,3 +657,6 @@ tocNumberStyle:
 #全局自定义通知类element通知，关闭则无法使用该通知
 messageNotify:
   enable: true
+#文章列表页开启自定义标签样式
+onListTags:
+  enable: true
