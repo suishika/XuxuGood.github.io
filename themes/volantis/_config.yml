@@ -16,7 +16,7 @@ style:
   body:
     effect: [shadow] # [shadow, floatable, blur]
     highlight:
-      language: true # show language of codeblock
+      language: true # 显示代码块的语言
       copy_btn: true
       grayscale: false # 启用灰度效果
     text_align: # left, right, justify, center
