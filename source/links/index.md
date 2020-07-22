@@ -26,6 +26,12 @@ links:
   - group: 技术大佬
     icon: fas fa-desktop
     items:
+    - name: Colsrch
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Colsrch.jpg
+      url: https://colsrch.top
+      backgroundColor: '#7C5246'
+      textColor: '#fff'
+      tags: [C/C++, MFC]
     - name: 小康博客
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/小康博客.jpg
       url: https://www.antmoe.com/
