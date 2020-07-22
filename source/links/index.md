@@ -26,6 +26,12 @@ links:
   - group: 技术大佬
     icon: fas fa-desktop
     items:
+    - name: qinxs
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/qinxs.png
+      url: https://7bxing.com
+      backgroundColor: '#E94335'
+      textColor: '#fff'
+      tags: [技术总结, 各种折腾]
     - name: Colsrch
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Colsrch.jpg
       url: https://colsrch.top
