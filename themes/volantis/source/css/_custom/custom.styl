@@ -165,13 +165,26 @@ article .readmore > a {
 }
 
 /* 首页cover menu样式 */
-.cover-wrapper .cover .cover-body .menu ul > li > a:hover, .cover-wrapper .cover .cover-body .menu ul > li > a.active, .cover-wrapper .cover .cover-body .menu ul > li > a:active {
+/* search版块 */
+.cover-wrapper .cover .cover-body .menu.search ul > li > a:hover, .cover-wrapper .cover .cover-body .menu.search ul > li > a.active, .cover-wrapper .cover .cover-body .menu.search ul > li > a:active {
   color: #1BC3FB;
   border-bottom: 1px solid #1BC3FB;
 }
 
-.cover-wrapper .cover .cover-body .menu ul > li > a {
+.cover-wrapper .cover .cover-body .menu.search ul > li > a {
   color: rgba(51, 51, 51, 0.85);
+}
+
+/* featured版块 */
+.cover-wrapper .cover .cover-body .menu.featured ul > li > a:hover, .cover-wrapper .cover .cover-body .menu.featured ul > li > a.active, .cover-wrapper .cover .cover-body .menu.featured ul > li > a:active {
+  color: rgb(255, 255, 255);
+  background: rgba(68, 68, 68, 0.75);
+}
+
+@media screen and (min-width: 500px) {
+  .cover-wrapper .cover .cover-body .menu.featured ul:hover {
+    background: rgba(68, 68, 68, 0.25);
+  }
 }
 
 /* 首页cover input样式 */
