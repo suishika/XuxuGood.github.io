@@ -6,7 +6,7 @@ tags: [Hexo]
 categories: [Hexo]
 keywords: [Hexo,搭建博客]
 description: Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
-abbrlink: 78d7e607
+abbrlink: e1b9c6c5
 date: 2019-10-12 09:21:07
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/hexo.png
 ---
