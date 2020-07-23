@@ -6,7 +6,7 @@ Copyright <i class="far fa-copyright"></i> 2019-2020
 <script>
     var now = new Date();
 
-    function createTime() {
+    function createtime() {
         var grt = new Date("10/09/2019 00:00:00");//此处修改你的建站时间或者网站上线时间
         now.setTime(now.getTime() + 250);
         days = (now - grt) / 1000 / 60 / 60 / 24;
@@ -30,7 +30,7 @@ Copyright <i class="far fa-copyright"></i> 2019-2020
         document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
     }
 
-    setInterval(createTime(), 250);
+    setInterval("createtime()", 250);
 </script>
 <br/>
 <br/>
