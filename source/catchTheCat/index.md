@@ -1,0 +1,20 @@
+---
+layout: page
+title: 围住小猫
+meta:
+  header: []
+  footer: []
+sidebar: []
+---
+<div align="center">
+    <div id="catch-the-cat"></div>
+</div>
+
+<script src="js/phaser.min.js"></script>
+<script src="js/catch-the-cat.js"></script>
+<script src="js/game.js"></script>
+
+> <strong>游戏规则：</strong>
+:bell: 点击小圆点，围住小猫。
+:bell: 你点击一次，小猫走一次。
+:bell: 直到你把小猫围住（赢），或者小猫走到边界并逃跑（输）。

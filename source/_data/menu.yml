@@ -35,6 +35,9 @@
     - name: 实用工具
       icon: fas fa-cog
       url: tools/
+    - name: 围住小猫
+      icon: fas fa-cat
+      url: catchTheCat/
 #- name: 近期
 #  icon: fas fa-clock
 #  rows:
