@@ -7,8 +7,8 @@ $(function () {
             OriginTitle = document.title
         }
         if (document.hidden) {
-            $('[rel="icon"]').attr('href', "https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/failure.png");
-            $('[rel="shortcut icon"]').attr('href', "https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/failure.png");
+            $('[rel="icon"]').attr('href', "https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/funny.png");
+            $('[rel="shortcut icon"]').attr('href', "https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/funny.png");
             document.title = '(つェ⊂) 我藏好了哦~ ';
             clearTimeout(titleTime);
         } else {
