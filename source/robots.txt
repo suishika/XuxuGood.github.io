@@ -3,13 +3,14 @@ Allow: /
 Allow: /archives/
 Disallow: /categories/
 Disallow: /tags/
-Disallow: /gallery/
 Disallow: /links/
 Disallow: /photos/
 Disallow: /resume/
 Disallow: /comments/
 Disallow: /links/
 Disallow: /about/
+Disallow: /tools/
+Disallow: /catchTheCat/
 
 Sitemap: https://hasaik.com/sitemap.xml
 Sitemap: https://hasaik.com/baidusitemap.xml
