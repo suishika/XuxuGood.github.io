@@ -1,6 +1,6 @@
 <!--自定义标签位置-->
-<div class="full-width auto-padding tags">
-    <% if (post.tags && post.tags.length) { %>
+<% if (post.tags && post.tags.length) { %>
+    <div class="full-width auto-padding tags">
         <%
             var items = [];
             post.tags.each(function (item) {
@@ -8,9 +8,8 @@
             });
         %>
         <%- items.join(' ') %>
-    <% } %>
-</div>
-
+    </div>
+<% } %>
 <style>
     /* 文章自定义标签样式 */
     .l_main .post-wrapper .post .auto-padding {
