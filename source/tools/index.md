@@ -28,6 +28,12 @@ links:
       backgroundColor: '#3E74C9'
       textColor: '#fff'
       tags: [超清壁纸]
+    - name: 改图宝
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/tools/改图宝.png
+      url: https://www.gaitubao.com/
+      backgroundColor: '#967ADC'
+      textColor: '#fff'
+      tags: [在线修改动图]
       
   - group: Web 前端
     icon: fas fa-rocket

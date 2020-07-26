@@ -161,7 +161,7 @@ feed:
 lazyload:
   enable: true
   onlypost: false
-  loadingImg: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/loading.gif
+  loadingImg: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/img-loading.gif
   isSPA: true
 
 # offline配置
