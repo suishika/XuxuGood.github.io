@@ -82,7 +82,7 @@ style:
     #   site_footer: '#666' # 网站背景内的页脚文字颜色
     #   card: '#444' # 卡片背景色
     #   text: '#fff' # The color of the text on the card.
-    theme: '#1BC3FB' # 主色
+    theme: '#1BC3FB' # 主色系
     link: '#1BC3FB' # 链接颜色
     hover: '#1BC3FB' # 链接突出显示颜色
     #   inner: '#333' # 按钮内的文字颜色
