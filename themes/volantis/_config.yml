@@ -77,17 +77,17 @@ style:
       weight: normal
       style: normal
   color:
-    #   site: '#21232F' # 网站背景色
-    #   site_inner: '#fff' # 网站背景内的文字颜色
-    #   site_footer: '#666' # 网站背景内的页脚文字颜色
-    #   card: '#444' # 卡片背景色
-    #   text: '#fff' # The color of the text on the card.
+    site: '#f4f4f4' # 网站背景色
+    site_inner: '#555' # 网站背景内的文字颜色
+    site_footer: '#666' # 网站背景内的页脚文字颜色
+    card: 'white' # 卡片背景色
+    text: '#555' # 卡片上文字的颜色。
     theme: '#1BC3FB' # 主色系
     link: '#1BC3FB' # 链接颜色
     hover: '#1BC3FB' # 链接突出显示颜色
-    #   inner: '#333' # 按钮内的文字颜色
-    #   block: '#555' # 色块
-    #   inlinecode: '#555' # 内联代码颜色
+    inner: 'white' # 按钮内的文字颜色
+    block: '#f6f6f6' # 色块
+    inlinecode: '#f6f6f6' # 内联代码颜色
     codeblock: '#d2eafd' # 代码块颜色
     p: '#333333' # 段落颜色
 
