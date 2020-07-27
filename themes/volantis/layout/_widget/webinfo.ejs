@@ -1,46 +1,46 @@
 <%- partial('_pre') %>
-<section class="widget <%- item.class %> <%- page.widget_style %> <%- page.widget_platform %>">
+<section class="widget <%- page.widget_style %> <%- page.widget_platform %>">
     <%- partial('header', {item: item}) %>
     <div class='content'>
-        <div class="website">
+        <div class="webinfo">
             <% if (item.type.article.enable) { %>
-                <div class="website-item">
+                <div class="webinfo-item">
                     <div><%= item.type.article.text %></div>
                     <div><%= site.posts.length %> <%= item.type.article.unit %></div>
                 </div>
             <% } %>
 
             <% if (item.type.runtime.enable) { %>
-                <div class="website-item">
+                <div class="webinfo-item">
                     <div><%= item.type.runtime.text %></div>
-                    <div id="website-runtime-count" publish_date="03/24/2020 21:34:09"></div>
+                    <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
                 </div>
                 <script>
                     var BirthDay = new Date(new Date('<%= item.type.runtime.data %>'));
                     var today = new Date();
                     var timeold = (today.getTime() - BirthDay.getTime());
                     var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
-                    document.getElementById('website-runtime-count').innerHTML = daysold + ' <%= item.type.runtime.unit %>';
+                    document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' <%= item.type.runtime.unit %>';
                 </script>
             <% } %>
 
 
-            <% if (item.type.wordcount.enable) { %>
-                <div class="website-item">
+            <% if (item.type.wordcount.enable && theme.plugins.wordcount) { %>
+                <div class="webinfo-item">
                     <div><%= item.type.wordcount.text %></div>
                     <div><%= totalcount(site) %> <%= item.type.wordcount.unit %></div>
                 </div>
             <% } %>
 
-            <% if (item.type.siteuv.enable) { %>
-                <div class="website-item">
+            <% if (item.type.siteuv.enable && theme.plugins.busuanzi) { %>
+                <div class="webinfo-item">
                     <div><%= item.type.siteuv.text %></div>
                     <div><span id="busuanzi_value_site_uv"><i class="fas fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> <%= item.type.siteuv.unit %></div>
                 </div>
             <% } %>
 
-            <% if (item.type.sitepv.enable) { %>
-                <div class="website-item">
+            <% if (item.type.sitepv.enable && theme.plugins.busuanzi) { %>
+                <div class="webinfo-item">
                     <div><%= item.type.sitepv.text %></div>
                     <div><span id="busuanzi_value_site_pv"><i class="fas fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> <%= item.type.sitepv.unit %></div>
                 </div>
@@ -51,7 +51,7 @@
                     <%- js('https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js') %>
                     <%- js('https://cdn.jsdelivr.net/npm/moment@2.27.0/locale/zh-cn.min.js') %>
                 <% } %>
-                <div class="website-item">
+                <div class="webinfo-item">
                     <div><%= item.type.lastupd.text %></div>
                     <% if (item.type.lastupd.friendlyShow) { %>
                         <div id="last-update" style="display: none;"><%= new Date() %></div>
