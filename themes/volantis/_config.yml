@@ -84,7 +84,7 @@ style:
     text: '#555' # 卡片上文字的颜色。
     theme: '#1BC3FB' # 主色系
     link: '#1BC3FB' # 链接颜色
-    hover: '#1BC3FB' # 链接突出显示颜色
+    hover: '#ff5722' # 链接突出显示颜色
     inner: 'white' # 按钮内的文字颜色
     block: '#f6f6f6' # 色块
     inlinecode: '#f6f6f6' # 内联代码颜色
