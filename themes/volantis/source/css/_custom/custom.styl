@@ -31,7 +31,7 @@ div.tabs ul.nav-tabs li.tab.active a, .article .widget, .l_main .post section.me
 }
 
 // a标签鼠标样式
-div.tabs ul.nav-tabs li.tab a, .article.article-entry.l_friends .friends-group .friend-content .friend-card .friend-right p, .l_main .article .prev-next .prev p, .l_main .article .prev-next .next p, .cover-wrapper .cover .scroll-down, a, .waves-effect, .waves-button, .waves-button-input, .waves-button:hover, .waves-button:visited, .btn-copy {
+.cover-wrapper .cover .cover-body .menu.focus .list-h a p, .cover-wrapper .cover .cover-body .menu.featured .list-h a p, .cover-wrapper .cover .cover-body .menu.dock .list-h a p, .cover-wrapper .cover .cover-body .menu.search .list-h a p, div.tabs ul.nav-tabs li.tab a, .article.article-entry.l_friends .friends-group .friend-content .friend-card .friend-right p, .l_main .article .prev-next .prev p, .l_main .article .prev-next .next p, .cover-wrapper .cover .scroll-down, a, .waves-effect, .waves-button, .waves-button-input, .waves-button:hover, .waves-button:visited, .btn-copy {
   cursor: url(https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/ayuda.cur), auto;
 }
 
@@ -129,6 +129,15 @@ article .readmore > a {
   color: #fff;
 }
 
+/* 文章翻页样式 */
+.l_main .article .prev-next > a:hover {
+  background: #e8f9fe;
+}
+
+.l_main .article .prev-next > a:hover p.title {
+  color: #1bc3fb;
+}
+
 /* 打字机效果 */
 .typed-cursor {
   animation: typedjsBlink 0.7s infinite;
@@ -155,24 +164,9 @@ article .readmore > a {
 
 /* 首页cover menu样式 */
 /* search版块 */
-.cover-wrapper .cover .cover-body .menu.search ul > li > a:hover, .cover-wrapper .cover .cover-body .menu.search ul > li > a.active, .cover-wrapper .cover .cover-body .menu.search ul > li > a:active {
+.cover-wrapper .cover .cover-body .menu.search .list-h a:hover, .cover-wrapper .cover .cover-body .menu.search .list-h a.active, .cover-wrapper .cover .cover-body .menu.search .list-h a:active {
   color: #1BC3FB;
-  border-bottom: 1px solid #1BC3FB;
-}
-
-/* featured版块 */
-.cover-wrapper .cover .cover-body .menu.featured ul > li > a:hover {
-  color: #1BC3FB;
-}
-
-/* dock版块 */
-.cover-wrapper .cover .cover-body .menu.dock ul > li > a:hover {
-  color: #1BC3FB;
-}
-
-/* focus版块 */
-.cover-wrapper .cover .cover-body .menu.focus ul > li > a:hover {
-  color: #1BC3FB;
+  border-bottom: 2px solid #1BC3FB;
 }
 
 /* 首页cover input样式 */
@@ -514,7 +508,8 @@ div.hoverbox:hover > div.target {
 }
 
 .l_main #comments #valine_container .vcards .vmeta .vat:hover {
-  text-decoration: none;
+  color: #1bc3fb;
+  text-decoration: underline;
 }
 
 .l_main #comments #valine_container .vcards .vhead span.vnick {
@@ -524,6 +519,11 @@ div.hoverbox:hover > div.target {
 .l_main #comments #valine_container .vcards .vcontent a:hover {
   color: #ff5722;
   text-decoration: none;
+}
+
+.l_main #comments #valine_container button:hover {
+  color: #1bc3fb;
+  background: #e8f9fe;
 }
 
 .v .vcards .vcard .vh .vmeta .vat {
