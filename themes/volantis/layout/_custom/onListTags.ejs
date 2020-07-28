@@ -60,4 +60,23 @@
         background: transparent;
         text-decoration: none;
     }
+
+    /*手机适配*/
+    @media screen and (max-width: 500px) {
+        /* 主页自定义标签样式 */
+        .l_main .post-wrapper .post .auto-padding {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .l_main .post-wrapper .post .auto-padding {
+            padding-left: 20px;
+            padding-right: 20px;
+            overflow: auto;
+        }
+
+        .l_main .post-wrapper .post .full-width {
+            margin-right: -16px;
+        }
+    }
 </style>
