@@ -151,7 +151,7 @@ meta:
   author:
     avatar: https://hasaik.com/images/avatar.jpg
     name: ·银河小徐
-    url: https://hasaik.com
+    url: /
   # 文章创建日期
   date:
     icon: fas fa-calendar-alt
@@ -375,7 +375,7 @@ footer:
       url: https://blog.csdn.net/qq_42889280
     - icon: fas fa-rss
       url: atom.xml
-  copyright: "Copyright © 2019-2020 [Xu's Blog](https://hasaik.com)"
+  copyright: "Copyright © 2019-2020 [Xu's Blog](/)"
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
 
