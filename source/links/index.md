@@ -26,12 +26,6 @@ links:
   - group: 技术大佬
     icon: fas fa-desktop
     items:
-    - name: qinxs
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/qinxs.png
-      url: https://7bxing.com
-      backgroundColor: '#E94335'
-      textColor: '#fff'
-      tags: [技术总结, 各种折腾]
     - name: Colsrch
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Colsrch.jpg
       url: https://colsrch.top
@@ -200,7 +194,18 @@ links:
       backgroundColor: '#967adc'
       textColor: '#fff'
       tags: [记录生活]
-      
+    - name: qinxs
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/qinxs.png
+      url: https://7bxing.com
+      backgroundColor: '#E94335'
+      textColor: '#fff'
+      tags: [技术总结, 各种折腾]
+    - name: BooLo
+      avatar: https://cdn.jsdelivr.net/gh/BooLo/cdn-assets/avatar/avatar.jpg
+      url: https://www.boolo.top
+      backgroundColor: '#7C5246'
+      textColor: '#fff'
+      tags: [莫得标签]
   - group: 虐狗博主
     icon: fas fa-heartbeat
     items:
