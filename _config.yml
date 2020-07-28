@@ -226,7 +226,12 @@ sitemap:
 baidusitemap:
   path: baidusitemap.xml
 
-# Deployment
+# 部署
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  - type: baidu_url_submitter
+#  - type: git
+#    repo:
+#      github: git@github.com:XuxuGood/XuxuGood.github.io.git,master
+#      coding: git@git.dev.tencent.com:XuxuGood/XuxuGood.coding.me.git,master # 腾讯
+#      coding: git@git.coding.net:XuxuGood/XuxuGood.coding.me.git,master # Coding
