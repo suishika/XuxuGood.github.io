@@ -706,7 +706,7 @@ crashCheat:
 # default为
 cursorEffect:
   enable: true
-  effect: text
+  effect: fireworks
 #是否开启彩色标签云，关闭则为主题默认样式
 tagColorCloud:
   enable: true
