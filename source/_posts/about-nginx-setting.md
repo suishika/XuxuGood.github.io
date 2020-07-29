@@ -2,7 +2,7 @@
 title: Nginx配置
 pin: false
 toc: true
-thumbnail:
+thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/nginx.png
 abbrlink: 5e773fb
 date: 2020-01-21 15:08:07
 tags: [Nginx]
