@@ -10,6 +10,9 @@
 - name: 关于
   icon: fas fa-info-circle
   url: about/
+#- name: 说说
+#  icon: fas fa-laugh-wink
+#  url: shuoshuo/
 - name: 留言
   icon: fas fa-comments
   url: comments/
