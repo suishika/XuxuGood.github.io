@@ -352,6 +352,10 @@ ul.list-v > li > a:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
+.l_header .m_search {
+  width: 200px;
+}
+
 .l_header .m_search .input {
   border: 1px dashed transparent;
   color: #FFFFFF;
@@ -611,6 +615,12 @@ div.hoverbox:hover > div.target {
 }
 
 //手机适配
+@media screen and (max-width: 1024px) {
+  .l_header .m_search {
+    width: 44px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   /* 搜索框样式 */
   .l_header.z_search-open .m_search {
