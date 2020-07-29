@@ -89,7 +89,7 @@ style:
     block: '#f6f6f6' # 色块
     inlinecode: '#f6f6f6' # 内联代码颜色
     codeblock: '#d2eafd' # 代码块颜色
-    p: '#333333' # 段落颜色
+    p: '#333' # 段落颜色
 
 
 
