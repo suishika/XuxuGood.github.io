@@ -16,7 +16,7 @@ Vue 的文件上传组件 upload，拥有支持多种格式文件上传，单文
 ## :sun_with_face: Vue 界面示例
 我这里是富文本中的图片上传，以下教程也同样适用于其他方面，可根据自己需求修改。
 
-![](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-461108bb/vue示例.jpg)
+![](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-461108bb/vue示例.png)
 
 ## :sun_with_face: Vue 代码
 以下代码可根据自己业务需求进行合理的修改使用。
