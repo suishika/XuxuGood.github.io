@@ -150,7 +150,7 @@ meta:
   # 默认文章作者（可在front-matter中覆盖）
   author:
     avatar: https://hasaik.com/images/avatar.jpg
-    name: ·银河小徐
+    name: 'Mr. X'
     url: /
   # 文章创建日期
   date:
