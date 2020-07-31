@@ -17,7 +17,7 @@ links:
       textColor: '#fff'
       tags: [ios, 前端]
     - name: Volantis
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/xaoxuu.png
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/volantis.png
       url: https://volantis.js.org/
       backgroundColor: '#008B8B'
       textColor: '#fff'
