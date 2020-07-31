@@ -50,6 +50,12 @@ links:
       backgroundColor: '#708090'
       textColor: '#fff'
       tags: [码农]
+    - name: 杜老师说
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/杜老师说.png
+      url: https://dusays.com
+      backgroundColor: '#34A853'
+      textColor: '#fff'
+      tags: [运维工程师]
     - name: 玖月技术
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/玖月技术.png
       url: https://www.9yue.pro
