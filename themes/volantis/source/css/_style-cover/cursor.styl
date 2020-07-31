@@ -20,7 +20,7 @@ a
   cursor $pointer,pointer
   p
     cursor $pointer,pointer
-  &:not([href]) 
+  &:not([href])
     cursor $default,default
     p
       cursor $default,default
@@ -103,6 +103,12 @@ div.tabs
         cursor: $pointer,pointer
       &.active a
         cursor: $default,default
+
+//rightmenu.styl
+ul.list-v.rightmenu
+  li
+    a
+      cursor: $pointer,pointer
 
 //clipboard.styl
 if hexo-config('style.body.highlight.copy_btn') == true

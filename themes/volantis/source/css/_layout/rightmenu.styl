@@ -1,0 +1,45 @@
+div#rightmenu-wrapper
+  display: none
+  position: fixed
+  z-index: 2000
+  disable-user-select()
+
+ul.list-v.rightmenu
+  display: block
+
+  li.navigation
+    display: flex
+
+    .nav
+      margin: 0
+      padding: 0 $gap * 0.5
+
+      i
+        margin: 0
+
+      &:first-child
+        margin-left: 4px + $gap * 0.5
+
+      &:last-child
+        margin-right: 4px + $gap * 0.5
+
+
+/* 右键自定义菜单样式 */
+ul.list-v.rightmenu {
+  background: $color-card
+  box-shadow: $boxshadow-dropmenu
+}
+
+ul.list-v.rightmenu li a {
+  border-left: none;
+  color: mix($color-text, $color-card, 80)
+  line-height: 36px
+  padding: 0 $gap + $border-line + 2px 0 $gap
+  margin: 0 4px
+  border-radius: 4px
+}
+
+ul.list-v.rightmenu li a:hover {
+  color: mix($color-theme, $color-text, 70);
+  background: bgcolor($color-theme)
+}

@@ -661,6 +661,38 @@ comments:
     src: https://example.com/(path/)comments.php
 
 
+############################### 自定义右键菜单 ###############################
+rightmenu:
+  enable: true
+  # hr: 分割线, navigation: 导航按钮
+  layout: [copy, navigation, hr, comments, photos, links, hr, tools, catchTheCat ]
+  # 复制
+  copy:
+    name: 复制
+    icon: fa fa-copy
+    id: menu-copy
+    onclick: menuCopy()
+  # 自定义菜单的格式如下
+  comments:
+    name: 留言
+    icon: fas fa-comments
+    url: comments/
+  photos:
+    name: 相册
+    icon: fas fa-camera-retro
+    url: photos/
+  links:
+    name: 小伙伴们
+    icon: fas fa-users
+    url: links/
+  tools:
+    name: 实用工具
+    icon: fas fa-cog
+    url: tools/
+  catchTheCat:
+    name: 围住小猫
+    icon: fas fa-cat
+    url: catchTheCat/
 
 ############################### Search ###############################
 # To use hexo search, you need to install the following plugins:
