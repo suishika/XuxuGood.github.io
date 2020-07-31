@@ -8,6 +8,11 @@
   transform: none !important;
 }
 
+/* 链接hover不含下划线在这里处理 */
+.article .article-entry blockquote a:hover, .LinkCard, .LinkCard:hover {
+  text-decoration: none !important
+}
+
 /* 主题hover样式 */
 .l_main .post:hover {
   box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1), 0 4px 8px 0px rgba(0, 0, 0, 0.1), 0 8px 16px 0px rgba(0, 0, 0, 0.1), 0 16px 32px 0px rgba(0, 0, 0, 0.1);
@@ -17,11 +22,6 @@
 #archive-page .archive .archive-post a:hover {
   padding-top: 8px;
   padding-bottom: 8px;
-}
-
-/* 标签页样式优化 */
-#archive-page .archive .all-tags > a:hover, #archive-page .archive .all-tags > a:active, #archive-page .archive .all-tags > a.active {
-  color: #ff5722 !important;
 }
 
 /* 解决文章标题多次点击事件 */
@@ -50,25 +50,14 @@
   color: #333333;
 }
 
+/* 文章h标签距离顶部样式 */
 .article .article-entry > h1:before, .article .article-entry > h2:before {
   margin-top: -60px;
 }
 
-.article .article-entry > h3:before {
-  margin-top: -70px;
-}
-
+.article .article-entry > h3:before,
 .article .article-entry > h4:before {
   margin-top: -70px;
-}
-
-/* 文章meta hover样式 */
-.l_main .post section.meta .new-meta-box .new-meta-item a:hover {
-  color: #ff5722;
-}
-
-.l_main .post section.meta .new-meta-box .new-meta-item a:hover p {
-  color: #ff5722;
 }
 
 /* 阅读全文按钮样式 */
@@ -100,10 +89,6 @@ article .readmore i {
 /* 文章样式 */
 .article a {
   word-break: break-all;
-}
-
-.article .article-entry > a:hover {
-  text-decoration: none
 }
 
 /* 文章翻页样式 */
