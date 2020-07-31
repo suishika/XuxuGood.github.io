@@ -89,6 +89,9 @@ pre
     border-color: darken($color-codeblock, 10)
     if hexo-config('style.body.highlight.grayscale') == true
       filter: grayscale(0%)
+    figcaption
+      trans()
+      background: darken($color-codeblock, 5%)
   figcaption
     font-size: 12px
     position: sticky
