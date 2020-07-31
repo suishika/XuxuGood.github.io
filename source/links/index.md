@@ -32,6 +32,12 @@ links:
       backgroundColor: '#7C5246'
       textColor: '#fff'
       tags: [C/C++, MFC]
+    - name: Sanarous
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Sanarous.jpg
+      url: https://bestzuo.cn
+      backgroundColor: '#34A853'
+      textColor: '#fff'
+      tags: [码农人生]
     - name: 小康博客
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/小康博客.jpg
       url: https://www.antmoe.com/
@@ -44,22 +50,22 @@ links:
       backgroundColor: '#967ADC'
       textColor: '#fff'
       tags: [前端]
-    - name: ZZONN
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/ZZONN.gif
-      url: https://blog.zzonn.com/
-      backgroundColor: '#708090'
-      textColor: '#fff'
-      tags: [码农]
     - name: 杜老师说
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/杜老师说.png
       url: https://dusays.com
       backgroundColor: '#34A853'
       textColor: '#fff'
       tags: [运维工程师]
+    - name: 枋柚梓
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/枋柚梓.jpg
+      url: https://inkss.cn
+      backgroundColor: '#FBBC05'
+      textColor: '#fff'
+      tags: [繁星永存，记忆亘古不变]
     - name: 玖月技术
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/玖月技术.png
       url: https://www.9yue.pro
-      backgroundColor: '#FBBC05'
+      backgroundColor: '#708090'
       textColor: '#fff'
       tags: [运维工程师]
     - name: cungudafa
@@ -86,12 +92,6 @@ links:
       backgroundColor: '#967ADC'
       textColor: '#fff'
       tags: [前端]
-    - name: 枋柚梓
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/枋柚梓.jpg
-      url: https://inkss.cn
-      backgroundColor: '#FBBC05'
-      textColor: '#fff'
-      tags: [繁星永存，记忆亘古不变]
     - name: LarsCheng
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/LarsCheng.png
       url: https://www.larscheng.com/
@@ -128,12 +128,12 @@ links:
       backgroundColor: '#7C5246'
       textColor: '#fff'
       tags: [记录生活, 分享资源]
-    - name: Sanarous
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Sanarous.jpg
-      url: https://bestzuo.cn
-      backgroundColor: '#34A853'
+    - name: ZZONN
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/ZZONN.gif
+      url: https://blog.zzonn.com/
+      backgroundColor: '#E94335'
       textColor: '#fff'
-      tags: [码农人生]
+      tags: [码农]
     - name: 相逢的博客
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/相逢的博客.jpg
       url: https://www.xiangjunhong.com/
