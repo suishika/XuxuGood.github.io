@@ -666,7 +666,7 @@ comments:
 rightmenu:
   enable: true
   # hr: 分割线, navigation: 导航按钮
-  layout: [copy, navigation, hr, comments, photos, links, hr, tools, catchTheCat, hr, music ]
+  layout: [copy, navigation, hr, comments, photos, links, hr, tools, catchTheCat, hr, music-ctrl, music-volume ]
   # 复制
   copy:
     name: 复制

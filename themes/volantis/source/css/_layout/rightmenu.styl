@@ -6,23 +6,31 @@ div#rightmenu-wrapper
 
 ul.list-v.rightmenu
   display: block
-
-  li.navigation
+  li.navigation, li.music
     display: flex
-
-    .nav
+    justify-content: space-between
+    a.nav
       margin: 0
       padding: 0 $gap * 0.5
-
       i
         margin: 0
-
       &:first-child
         margin-left: 4px + $gap * 0.5
-
       &:last-child
         margin-right: 4px + $gap * 0.5
-
+  li.music
+    a.nav.volume
+      &:hover
+        background: transparent
+      .aplayer-volume-bar
+        margin: $gap * 0.5 0
+        position: relative
+        height: 8px
+        width: 120px
+        background: $color-block
+        border-radius: 4px
+        .aplayer-volume
+          background: $color-theme
 
 /* 右键自定义菜单样式 */
 ul.list-v.rightmenu {
