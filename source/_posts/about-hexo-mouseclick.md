@@ -47,7 +47,7 @@ cursor_effect:
 {% endif %}
 ```
 
-如果是第一次使用这个 `custom.swig` ，则需要在 /themes/next/layout/_layout.swig 中引入
+如果是第一次使用这个 `custom.swig` ，则需要在 /themes/next/layout/_layout.swig 中的 `</body>` 结束之前引入
 ```BASH
 {% include '_custom/custom.swig' %}
 ```
