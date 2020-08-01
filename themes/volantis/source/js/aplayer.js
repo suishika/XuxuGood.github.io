@@ -1,58 +1,165 @@
+// 检查 Aplayer 对象状态
+function checkAPlayer() {
+    if (APlayerController.aplayer == undefined) {
+        setAPlayerObject();
+    } else {
+        if (APlayerController.observer == undefined) {
+            setAPlayerObserver();
+        }
+    }
+}
+
+// 设置全局播放器所对应的 aplyer 对象
+function setAPlayerObject() {
+    if (APlayerController.id == undefined) return;
+    document.querySelectorAll('meting-js').forEach((item, index)=>{
+        if (item.meta.id == APlayerController.id) {
+            if (document.querySelectorAll('meting-js')[index].aplayer != undefined) {
+                APlayerController.aplayer = document.querySelectorAll('meting-js')[index].aplayer;
+                setAPlayerObserver();
+            }
+        }
+    })
+}
+
+// 事件监听
+function setAPlayerObserver() {
+    try {
+        APlayerController.aplayer.on('play', function (e) {
+            updateAPlayerControllerStatus();
+        });
+        APlayerController.aplayer.on('pause', function (e) {
+            updateAPlayerControllerStatus();
+        });
+        APlayerController.aplayer.on('volumechange', function (e) {
+            onUpdateAPlayerVolume();
+        });
+
+        // 监听音量手势
+        APlayerController.volumeBarWrap = document.getElementsByClassName('nav volume')[0].children[0];
+        APlayerController.volumeBar = APlayerController.volumeBarWrap.children[0]
+        function updateAPlayerVolume(e) {
+            let percentage = ((e.clientX || e.changedTouches[0].clientX) - APlayerController.volumeBar.getBoundingClientRect().left) / APlayerController.volumeBar.clientWidth;
+            percentage = Math.max(percentage, 0);
+            percentage = Math.min(percentage, 1);
+            APlayerController.aplayer.volume(percentage);
+        }
+        const thumbMove = (e) => {
+            updateAPlayerVolume(e);
+        };
+        const thumbUp = (e) => {
+            APlayerController.volumeBarWrap.classList.remove('aplayer-volume-bar-wrap-active');
+            document.removeEventListener('mouseup', thumbUp);
+            document.removeEventListener('mousemove', thumbMove);
+            updateAPlayerVolume(e);
+        };
+
+        APlayerController.volumeBarWrap.addEventListener('mousedown', () => {
+            APlayerController.volumeBarWrap.classList.add('aplayer-volume-bar-wrap-active');
+            document.addEventListener('mousemove', thumbMove);
+            document.addEventListener('mouseup', thumbUp);
+        });
+
+
+        // 设置完监听就立即更新一次
+        updateAPlayerControllerStatus();
+        onUpdateAPlayerVolume();
+        APlayerController.observer = true;
+        console.log('APlayerController ready!');
+
+    } catch (error) {
+        delete APlayerController.observer;
+    }
+}
+
+// 更新控制器状态
+function updateAPlayerControllerStatus() {
+    try {
+        if (APlayerController.aplayer.audio.paused) {
+            document.getElementsByClassName('nav toggle')[0].children[0].classList.add("fa-play");
+            document.getElementsByClassName('nav toggle')[0].children[0].classList.remove("fa-pause");
+        } else {
+            document.getElementsByClassName('nav toggle')[0].children[0].classList.remove("fa-play");
+            document.getElementsByClassName('nav toggle')[0].children[0].classList.add("fa-pause");
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+function onUpdateAPlayerVolume() {
+    try {
+        APlayerController.volumeBar.children[0].style.width = APlayerController.aplayer.audio.volume * 100 + '%'
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 // 播放/暂停
 function aplayerToggle() {
-    let ap = document.querySelector('meting-js').aplayer;
-    if (ap != undefined) {
-        ap.toggle();
+    checkAPlayer();
+    try {
+        APlayerController.aplayer.toggle();
+    } catch (error) {
+        console.log(error);
     }
-    // 切换播放/暂停按钮
-    togglePlayPauseStyle()
 }
 
 // 上一曲
 function aplayerBackward() {
-    let ap = document.querySelector('meting-js').aplayer;
-    if (ap != undefined) {
-        ap.skipBack();
-        ap.play();
+    checkAPlayer();
+    try {
+        APlayerController.aplayer.skipBack();
+        APlayerController.aplayer.play();
+    } catch (error) {
+        console.log(error);
     }
-    // 切换为暂停按钮
-    selectPauseStyle()
 }
 
 // 下一曲
 function aplayerForward() {
-    let ap = document.querySelector('meting-js').aplayer;
-    if (ap != undefined) {
-        ap.skipForward();
-        ap.play();
+    checkAPlayer();
+    try {
+        APlayerController.aplayer.skipForward();
+        APlayerController.aplayer.play();
+    } catch (error) {
+        console.log(error);
     }
-    // 切换为暂停按钮
-    selectPauseStyle()
 }
 
 // 调节音量
 function aplayerVolume(percent) {
-    let ap = document.querySelector('meting-js').aplayer;
-    if (ap != undefined) {
-        ap.volume(percent);
+    checkAPlayer();
+    try {
+        APlayerController.aplayer.volume(percent);
+    } catch (error) {
+        console.log(error);
     }
+}
+// 调节音量 测试
+function aplayerVolumeToggle() {
+    // checkAPlayer();
+    // try {
+    // 	if (APlayerController.aplayer.audio.volume == 0) {
+    // 		aplayerVolume(0.7);
+    // 	} else {
+    // 		aplayerVolume(0);
+    // 	}
+    // } catch (error) {
+    // 	console.log(error);
+    // }
 }
 
-// 播放/暂停 按钮状态样式需要切换
-function togglePlayPauseStyle() {
-    if (document.getElementById('aplay').style.display != 'none') {
-        document.getElementById("aplay").style.display = 'none';
-        document.getElementById("apause").style.display = '';
-    } else {
-        document.getElementById("aplay").style.display = '';
-        document.getElementById("apause").style.display = 'none';
-    }
-}
+(function ($) {
+    // 网速快
+    checkAPlayer();
+    // 网速一般
+    setTimeout(function(){
+        checkAPlayer();
+    }, 3000);
+    // 网速较慢
+    setTimeout(function(){
+        checkAPlayer();
+    }, 10000);
 
-// 上一曲/下一曲 按钮皆为暂停状态样式
-function selectPauseStyle() {
-    if (document.getElementById('aplay').style.display != 'none') {
-        document.getElementById("aplay").style.display = 'none';
-        document.getElementById("apause").style.display = '';
-    }
-}
+
+})(jQuery);
