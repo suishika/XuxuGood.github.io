@@ -284,4 +284,14 @@ links:
     div.note p{
         font-size: 0.9375rem;
     }
+    
+    .links-tips-friends {
+        font-size: 12px;
+        padding: 4px 4px;
+        background: #6cf;
+        color: #fff;
+        border-radius: 2px;
+        margin: 0 3px;
+        vertical-align: 1px;
+    }
 </style>
