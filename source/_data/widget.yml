@@ -5,5 +5,6 @@ announcement:
     icon: fas fa-bullhorn
     title: 公告
   content:
+    - ':bell: 推荐网页小游戏 [围住小猫](/catchTheCat/)'
     - ':bell: 页面细节持续优化中'
     - ':bell: 本站于 2020/07/14/ 由 Next 主题更换为 Volantis 主题'
