@@ -21,9 +21,9 @@ style:
     width: auto # auto, max
     effect: [shadow, blur] # [shadow, floatable, blur]
   sidebar:
-    effect: [shadow] # [shadow, floatable, blur]
+    effect: [shadow, floatable] # [shadow, floatable, blur]
   body:
-    effect: [shadow] # [shadow, floatable, blur]
+    effect: [shadow, floatable] # [shadow, floatable, blur]
     highlight:
       language: true # 显示代码块的语言
       copy_btn: true
