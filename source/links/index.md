@@ -229,34 +229,59 @@ links:
       textColor: '#fff'
       tags: [记录爱情❤️记录生活]
 ---
+{% timeline 友链添加流程 %}
 
-> <strong>友链格式：</strong>
-名称：Xu's Blog
-地址：[https://hasaik.com](https://hasaik.com)
-头像：[https://hasaik.com/images/avatar.jpg](https://hasaik.com/images/avatar.jpg)
-标签：Java、前端
-描述：博观而约取，厚积而薄发！
+{% timenode 请先添加本站链接 %}
 
-> <strong>申请要求：</strong>
-:bell: 必须要有名称、头像链接、网址和至少一个标签哦~ :smirk:
-:bell: 谷歌、百度等搜索引擎收录
-:bell: 无广告推广，头像外链不 403
-:bell: 仅限 HTTPS 的个人域名非商业网站
+{% radio checked cyan, 名称：Xu's Blog %}
+{% radio checked cyan, 链接：[https://hasaik.com](https://hasaik.com) %}
+{% radio checked cyan, 头像：[https://hasaik.com/images/avatar.jpg](https://hasaik.com/images/avatar.jpg) %}
+{% radio checked cyan, 描述：博观而约取，厚积而薄发！ %}
+{% checkbox minus cyan checked , 标签：Java，前端 %}
+{% checkbox minus cyan checked , 背景颜色（若有）：#967ADC %}
+{% checkbox minus cyan checked , 文字颜色（若有）：#fff %}
 
-> <strong>友链申明：</strong>
+{% endtimenode %}
+
+{% timenode 下方评论区按此格式申请友链 %}
+
+```
+- name: Xu’s Blog # 博客名
+  avatar: https://hasaik.com/images/avatar.jpg # 头像链接
+  url: https://hasaik.com # 博客链接
+  tags: [Java, 前端] # 标签
+```
+
+{% endtimenode %}
+
+{% timenode 等待本站添加贵站 %}
+
+{% folding cyan open, 友链申明 %}
 :bell: 站点失效、停止维护、内容不当都可能被取消友链
 :bell: 禁链不尊重他人劳动成果，转载、引用不加出处，恶意行为的站点
 :bell: 本站会定期检查并清理无效的、单方面的友链，如更换信息请留言，谢谢合作
 :bell: 加入友链后会在本站任意留言区获得<span class="links-tips-friends">小伙伴</span>徽章（以邮箱判定）一枚哦，如果没有请联系我
+{% endfolding %}
 
+{% endtimenode %}
+
+{% timenode 互链成功 %}
+
+{% noteblock poo cyan %}
+已经添加的友链不会轻易删除。如果您已经移除本站，本站也将移除友链
+{% endnoteblock %}
+
+{% endtimenode %}
+
+{% endtimeline %}
+
+{# 修改时间线中的样式 #}
 <style>
-    .links-tips-friends {
-        font-size: 12px;
-        padding: 4px 4px;
-        background: #6cf;
-        color: #fff;
-        border-radius: 2px;
-        margin: 0 3px;
-        vertical-align: 1px;
+    details summary:hover:after{
+        right: 4px;
+    }
+    
+    div.note p{
+        font-size: 0.9375rem;
     }
 </style>
