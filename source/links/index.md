@@ -285,6 +285,12 @@ links:
         font-size: 0.9375rem;
     }
     
+    @media screen and (max-width: 500px) {
+        .article figure{
+            display: grid;
+        }
+    }
+    
     .links-tips-friends {
         font-size: 12px;
         padding: 4px 4px;
