@@ -35,7 +35,7 @@ links:
     - name: Sanarous
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Sanarous.jpg
       url: https://bestzuo.cn
-      backgroundColor: '#FF8EB3'
+      backgroundColor: '#A03EC9'
       textColor: '#fff'
       tags: [码农人生]
     - name: 小康博客
