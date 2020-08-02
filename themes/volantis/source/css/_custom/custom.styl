@@ -3,6 +3,11 @@
   width: 600px;
 }
 
+/* 主页打字机字体颜色 */
+#subtitle-style {
+  color: $color-theme
+}
+
 /* 解决定位valine评论位置问题 */
 .l_main .post {
   transform: none !important;
@@ -37,17 +42,10 @@ div.timenode .body {
 .l_main .post-wrapper .post div.meta .title a {
   font-size: 1.5rem;
   line-height: 1.7;
-  color: #333333;
-}
-
-.l_main .post-wrapper .post div.meta .title a:hover {
-  color: #ff5722;
 }
 
 .l_main .post section.meta .title a {
-  //font-size: 1.5rem;
   line-height: 1.7;
-  color: #333333;
 }
 
 /* 文章h标签距离顶部样式 */
@@ -67,9 +65,9 @@ article .readmore {
   vertical-align: middle;
   line-height: 2rem;
   font-weight: bold;
-  background-color: #1BC3FB;
+  background-color: $color-theme;
   padding: 0.2em 1.2em;
-  color: #ffffff;
+  color: $color-card;
   border-radius: 6px;
   transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
@@ -82,8 +80,8 @@ article .readmore i {
 }
 
 .article .readmore:hover {
-  background: #04a8df;
-  color: #fff;
+  background: alpha($color-theme, .7);
+  color: $color-card;
 }
 
 /* 文章样式 */
@@ -93,11 +91,11 @@ article .readmore i {
 
 /* 文章翻页样式 */
 .l_main .article .prev-next > a:hover {
-  background: #e8f9fe;
+  background: bgcolor($color-theme)
 }
 
 .l_main .article .prev-next > a:hover p.title {
-  color: #1bc3fb;
+  color: $color-theme;
 }
 
 /* 打字机效果 */
@@ -127,8 +125,8 @@ article .readmore i {
 /* 首页cover menu样式 */
 /* search版块 */
 .cover-wrapper .cover .cover-body .menu.search .list-h a:hover, .cover-wrapper .cover .cover-body .menu.search .list-h a.active, .cover-wrapper .cover .cover-body .menu.search .list-h a:active {
-  color: #1BC3FB;
-  border-bottom: 2px solid #1BC3FB;
+  color: $color-theme;
+  border-bottom: 2px solid $color-theme;
 }
 
 /* 首页cover input样式 */
@@ -138,39 +136,31 @@ article .readmore i {
   line-height: 16px;
   height: 44px;
   width: 100%;
-  color: #1BC3FB;
+  color: $color-theme;
   box-shadow: none;
   box-sizing: border-box;
   -webkit-appearance: none;
   padding-left: 36px;
   border-radius: 56px;
-  background: rgba(33, 150, 243, 0.1);
-  border: 1px solid #1BC3FB;
+  background: alpha($color-theme, .1);
+  border: 1px solid $color-theme;
 }
 
 .cover-wrapper .cover .cover-body .m_search .input:focus {
-  border: 3px solid #1BC3FB;
-  background: rgba(33, 150, 243, 0.1);
+  border: 3px solid $color-theme;
+  background: alpha($color-theme, .1);
 }
 
 .cover-wrapper .cover .cover-body .m_search .input:hover {
-  background: rgba(33, 150, 243, 0.1);
+  background: alpha($color-theme, .1);
 }
 
 .cover-wrapper .cover .cover-body .m_search .input:hover ~ .icon {
-  color: #1BC3FB;
+  color: $color-theme;
 }
 
 .cover-wrapper .cover .cover-body .m_search .icon {
-  position: absolute;
-  display: block;
-  line-height: 44px;
-  height: 44px;
-  width: 32px;
-  top: 0;
-  left: 5px;
-  font-size: 16px;
-  color: rgba(51, 51, 51, 0.6);
+  line-height: 2.75rem;
 }
 
 /* 背景代码雨样式 */
@@ -187,7 +177,7 @@ article .readmore i {
 
 /* 首页向下滚动图标颜色 */
 .cover-wrapper .cover .scroll-down .scroll-down-effects {
-  color: #1BC3FB;
+  color: $color-theme;
 }
 
 /* blogger 小组件title样式 */
@@ -197,20 +187,20 @@ article .readmore i {
 
 /* footer 样式*/
 footer a.social:hover {
-  background: rgba(27, 195, 251, 0.1);
-  color: #1BC3FB;
+  background: alpha($color-theme, .1);
+  color: $color-theme;
 }
 
 footer {
-  color: #333333;
+  color: $color-text;
 }
 
 footer a.social {
-  color: #333333;
+  color: $color-text;
 }
 
 footer a:hover {
-  color: #ff5722
+  color: $color-hover
 }
 
 .github-badge {
@@ -269,54 +259,53 @@ footer a:hover {
 
 /* 标签页样式 */
 #archive-page .archive .all-tags ul li:hover {
-  background: #f6f6f6;
+  background: $color-block;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .4);
 }
 
 #archive-page .archive .all-tags ul li:hover a {
-  color: #555 !important;
+  color: $color-text !important;
 }
 
 #archive-page .archive .all-tags ul li:hover span {
-  background: #e9e9e9;
-  color: rgba(85, 85, 85, 0.5) !important;
+  background: darken($color-block, 5)
 }
 
 /* 导航栏样式 */
 .l_header {
-  background: #1BC3FB !important;
+  background: $color-theme !important;
 }
 
 .l_header .wrapper .nav-main .title {
-  color: #FFFFFF;
+  color: $color-card;
   font-weight: bold;
   font-size: 1.5625rem !important;
 }
 
 .l_header .wrapper .nav-sub .title {
-  color: #FFFFFF;
+  color: $color-card;
   font-weight: bold;
 }
 
 .l_header ul > li > a {
-  color: #FFFFFF !important;
+  color: $color-card !important;
 }
 
 .l_header ul > li > a.active {
-  color: #FFFFFF;
-  border-left-color: #FFFFFF;
-  border-bottom-color: #FFFFFF;
+  color: $color-card;
+  border-left-color: $color-card;
+  border-bottom-color: $color-card;
 }
 
 .l_header ul > li > a:hover {
-  color: #FFFFFF;
-  border-left-color: #FFFFFF;
-  border-bottom-color: #FFFFFF;
-  background: rgba(255, 255, 255, 0.2);
+  color: $color-card;
+  border-left-color: $color-card;
+  border-bottom-color: $color-card;
+  background: alpha($color-card, .2);
 }
 
 ul.list-v {
-  background: #1bc3fb;
+  background: $color-theme;
 }
 
 .l_header .m_search {
@@ -325,32 +314,32 @@ ul.list-v {
 
 .l_header .m_search .input {
   border: 1px dashed transparent;
-  color: #FFFFFF;
-  background: rgba(255, 255, 255, 0.2);
+  color: $color-card;
+  background: alpha($color-card, .2);
 }
 
 .l_header .m_search .input:focus {
-  border: 2px solid #FFFFFF;
+  border: 2px solid $color-card;
 }
 
 .l_header .m_search .icon {
-  color: rgba(255, 255, 255, 0.8);
+  color: alpha($color-card, .8);
 }
 
 .l_header .m_search .input::-webkit-input-placeholder {
-  color: #fff;
+  color: $color-card;
 }
 
 .l_header .m_search .input:-moz-placeholder {
-  color: #fff;
+  color: $color-card;
 }
 
 .l_header .m_search .input::-moz-placeholder {
-  color: #fff;
+  color: $color-card;
 }
 
 .l_header .m_search .input:-ms-input-placeholder {
-  color: #fff;
+  color: $color-card;
 }
 
 /* 下拉按钮样式调整 */
@@ -359,19 +348,19 @@ ul.list-v {
 }
 
 .dropmenu ul.list-v > li > a {
-  color: #fff;
+  color: $color-card;
 }
 
 .dropmenu ul.list-v > li > a:hover {
-  border-left-color: #fff;
-  border-bottom-color: #fff;
-  background: rgba(255, 255, 255, 0.2);
+  border-left-color: $color-card;
+  border-bottom-color: $color-card;
+  background: alpha($color-card, .2);
 }
 
 /* 小组件header样式 */
 .widget header.pure {
-  background-color: #1BC3FB;
-  color: #FFFFFF;
+  background-color: $color-theme;
+  color: $color-card;
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -385,11 +374,11 @@ ul.list-v {
 }
 
 .widget header.pure .rightBtn {
-  color: #FFFFFF;
+  color: $color-card;
 }
 
 .widget header.pure .rightBtn:hover {
-  color: #a22700;
+  color: $color-hover;
 }
 
 /* 相关文章 */
@@ -415,11 +404,11 @@ ul.list-v {
   height: 17px;
   line-height: 16px;
   margin: 0.42rem 0.42rem 0 0;
-  color: #fff;
+  color: $color-card;
   font-size: 15px;
   font-weight: 500;
   font-style: normal;
-  background-color: #1bc3fb;
+  background-color: $color-theme;
   border-radius: 50%;
   text-align: center;
   content: '' counter(sectioncounter) '';
@@ -446,9 +435,9 @@ ul.list-v {
   margin: 0.3rem 0.42rem 0 0;
   width: 8px;
   height: 8px;
-  border: .2rem solid #1bc3fb;
+  border: .2rem solid $color-theme;
   border-radius: 50%;
-  background: #fff;
+  background: $color-card;
   content: "";
   line-height: 19px;
   -webkit-transition: all .3s ease-out;
@@ -459,7 +448,7 @@ ul.list-v {
 }
 
 .article .article-entry ul > li:hover:before {
-  border-color: #fc6423;
+  border-color: $color-hover;
 }
 
 
@@ -483,7 +472,7 @@ div.hoverbox:hover > div.target {
 }
 
 .l_main #comments #valine_container .vcards .vmeta .vat:hover {
-  color: #1bc3fb;
+  color: $color-theme;
   text-decoration: none;
 }
 
@@ -501,18 +490,18 @@ div.hoverbox:hover > div.target {
 }
 
 .l_main #comments #valine_container button:hover {
-  color: #1bc3fb;
-  background: #e8f9fe;
+  color: $color-theme;
+  background: bgcolor($color-theme)
 }
 
 .v .vcards .vcard .vh .vmeta .vat {
   padding: 0 .8rem !important;
-  border: 1px solid #1bc3fb !important;
+  border: 1px solid $color-theme !important;
   border-radius: 5px !important;
 }
 
 .v .vcards .vcard .vh .vmeta .vat:hover {
-  background-color: #cdf4ff !important;
+  background: bgcolor($color-theme)
 }
 
 .l_main #comments #valine_container .vcards .vh {
@@ -538,14 +527,14 @@ div.hoverbox:hover > div.target {
 
 @media only screen and (min-width: 1000px) {
   #valine_container .vcards .vcard:hover {
-    border: 1px dashed #2196f3;
+    border: 1px dashed $color-theme;
   }
 
   #valine_container .vcards .vcard {
     padding: 15px 20px 0 20px;
     border-radius: 10px;
     margin-bottom: 15px;
-    border: 1px dashed rgba(85, 85, 85, 0.3);
+    border: 1px dashed alpha($color-text, .3)
     transition: all .3s;
   }
 
@@ -588,7 +577,7 @@ div.hoverbox:hover > div.target {
 
 /* 导航切换switcher样式 */
 .l_header .switcher > li > a.active, .l_header .switcher > li > a:active {
-  background: rgba(255, 255, 255, 0.2);
+  background: alpha($color-card, .2);
 }
 
 /* 搜索弹窗样式 */

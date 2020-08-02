@@ -90,7 +90,7 @@ style:
     site_inner: '#555' # 网站背景内的文字颜色
     site_footer: '#666' # 网站背景内的页脚文字颜色
     card: 'white' # 卡片背景色
-    text: '#555' # 卡片上文字的颜色。
+    text: '#444' # 卡片上文字的颜色。
     theme: '#1BC3FB' # 主色系
     link: '#1BC3FB' # 链接颜色
     hover: '#ff5722' # 链接突出显示颜色
