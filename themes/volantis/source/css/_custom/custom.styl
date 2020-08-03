@@ -48,6 +48,33 @@ div.timenode .body {
   line-height: 1.7;
 }
 
+/* 自定义文章footer hr样式 */
+#footer-meta hr {
+  position: relative;
+  border: 2px dashed alpha($color-theme, .5);
+  overflow: visible;
+}
+
+#footer-meta hr:hover:before {
+  left: 95%;
+}
+
+#footer-meta hr:before {
+  position: absolute;
+  top: -10px;
+  left: 5%;
+  color: $color-theme;
+  content: "\f0c4";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.125rem;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
 /* 文章h标签距离顶部样式 */
 .article .article-entry > h1:before, .article .article-entry > h2:before {
   margin-top: -60px;
