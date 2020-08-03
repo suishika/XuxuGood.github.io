@@ -122,12 +122,6 @@ links:
       backgroundColor: '#FBBC05'
       textColor: '#fff'
       tags: [技术大佬]
-    - name: 朱纯树博客
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/朱纯树博客.jpeg
-      url: https://sirblog.cn
-      backgroundColor: '#7C5246'
-      textColor: '#fff'
-      tags: [记录生活, 分享资源]
     - name: ZZONN
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/ZZONN.gif
       url: https://blog.zzonn.com/
@@ -228,6 +222,18 @@ links:
       backgroundColor: '#FF69B4'
       textColor: '#fff'
       tags: [记录爱情❤️记录生活]
+      
+  - group: 危险区
+    icon: fas fa-exclamation-triangle
+    desc: 在该区域的小伙伴注意啦，因原因（请看友链申明），将保留一周后删除友链
+    items:
+    - name: 朱纯树博客
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/朱纯树博客.jpeg
+      url: https://sirblog.cn
+      backgroundColor: '#7C5246'
+      textColor: '#fff'
+      tags: [记录生活, 分享资源]
+      
 ---
 {% timeline 友链添加流程 %}
 
@@ -299,5 +305,9 @@ links:
         border-radius: 2px;
         margin: 0 3px;
         vertical-align: 1px;
+    }
+    
+    .friends-group p {
+        margin-bottom: 0/* ;
     }
 </style>
