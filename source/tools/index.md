@@ -34,6 +34,12 @@ links:
       backgroundColor: '#967ADC'
       textColor: '#fff'
       tags: [在线修改动图]
+    - name: WallpaperAccess
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/tools/wallpaperaccess.png
+      url: https://wallpaperaccess.com/
+      backgroundColor: '#7C5246'
+      textColor: '#fff'
+      tags: [高清图片]
       
   - group: Web 前端
     icon: fas fa-rocket
