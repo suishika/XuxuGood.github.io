@@ -104,12 +104,6 @@ links:
       backgroundColor: '#708090'
       textColor: '#fff'
       tags: [框架大佬]
-    - name: Emil’s blog
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Emil’s_blog.png
-      url: https://blog.hvnobug.com/
-      backgroundColor: '#008B8B'
-      textColor: '#fff'
-      tags: [IT技术]
     - name: 过客~励む
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/过客~励む.jpg
       url: https://yafine-blog.cn
@@ -223,10 +217,16 @@ links:
       textColor: '#fff'
       tags: [记录爱情❤️记录生活]
       
-  - group: 危险区
+  - group: 危险区（该区站点保留7天至3个月不定）
     icon: fas fa-exclamation-triangle
-    desc: 在该区域的小伙伴注意啦，因原因（请看友链申明），将保留一周后删除友链
+    desc: 如贵站在该区请检查贵站是否能正常访问或是否违背了本站友链原则（例：未开启https）
     items:
+    - name: Emil’s blog
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Emil’s_blog.png
+      url: https://blog.hvnobug.com/
+      backgroundColor: '#008B8B'
+      textColor: '#fff'
+      tags: [IT技术]
     - name: 朱纯树博客
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/朱纯树博客.jpeg
       url: https://sirblog.cn
