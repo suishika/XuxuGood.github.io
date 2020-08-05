@@ -668,7 +668,7 @@ comments:
 rightmenu:
   enable: true
   # hr: 分割线, music: 音乐控制器
-  layout: [comments, photos, links, hr, print, hr, music ]
+  layout: [comments, photos, links, hr, tools, catchTheCat, hr, music ]
   # 可选功能项
   print:
     name: 打印页面
@@ -687,7 +687,14 @@ rightmenu:
     name: 小伙伴们
     icon: fas fa-users
     url: links/
-
+  tools:
+    name: 实用工具
+    icon: fas fa-cog
+    url: tools/
+  catchTheCat:
+    name: 围住小猫
+    icon: fas fa-cat
+    url: catchTheCat/
 ############################### Search ###############################
 # To use hexo search, you need to install the following plugins:
 # npm i -S hexo-generator-search hexo-generator-json-content
