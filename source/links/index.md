@@ -195,11 +195,17 @@ links:
       textColor: '#fff'
       tags: [技术总结, 各种折腾]
     - name: BooLo
-      avatar: https://cdn.jsdelivr.net/gh/BooLo/cdn-assets/avatar/avatar.jpg
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/BooLo.jpg
       url: https://www.boolo.top
       backgroundColor: '#7C5246'
       textColor: '#fff'
       tags: [莫得标签]
+    - name: XTAO’s Tech Blog
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/XTAO’s_Tech_Blog.jpg
+      url: https://guoxiaotao.xyz/
+      backgroundColor: '#A03EC9'
+      textColor: '#fff'
+      tags: [C++, Robotics]
       
   - group: 虐狗博主
     icon: fas fa-heartbeat
