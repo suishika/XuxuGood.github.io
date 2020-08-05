@@ -667,7 +667,7 @@ comments:
 ############################### 自定义右键菜单 ###############################
 rightmenu:
   enable: true
-  # hr: 分割线, navigation: 导航按钮, music-ctrl: 音乐控制器
+  # hr: 分割线, music: 音乐控制器
   layout: [comments, photos, links, hr, print, hr, music ]
   # 可选功能项
   print:
