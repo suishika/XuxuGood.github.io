@@ -271,6 +271,32 @@ var customSearch;
 		});
 	}
 
+    // 设置全局事件
+    function setGlobalHeaderMenuEvent() {
+        // PC端 hover时展开子菜单，点击时隐藏子菜单
+        $('.m-pc li').click(function (e) {
+            e.stopPropagation();
+            $('.m-pc .list-v').hide();
+        });
+        // 手机端 点击展开子菜单
+        $('.m-phone li').click(function (e) {
+            e.stopPropagation();
+            $($(e.currentTarget).children('ul')).show();
+        });
+        setPageHeaderMenuEvent();
+    }
+
+    function setPageHeaderMenuEvent() {
+        // 手机端 点击空白处隐藏子菜单
+        $(document).click(function (e) {
+            $('.m-phone .list-v').hide();
+        });
+        // 手机端 滚动时隐藏子菜单
+        $(window).scroll(() => {
+            $('.m-phone .list-v').hide();
+        });
+    }
+
 	// 设置导航栏搜索框
 	function setTocToggle() {
 		const $toc = $('.toc-wrapper');   // 侧边栏 TOC 移动端
@@ -399,6 +425,7 @@ var customSearch;
 	$(function () {
 		setHeader();
 		setHeaderMenuSelection();
+        setGlobalHeaderMenuEvent();
 		setHeaderSearch();
 		setTocToggle();
 		setScrollAnchor();
@@ -432,6 +459,7 @@ var customSearch;
 					restData();
 					setHeader();
 					setHeaderMenuSelection();
+                    setGlobalHeaderMenuEvent();
 					setTocToggle();
 					setScrollAnchor();
 					setTabs();
