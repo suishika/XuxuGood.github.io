@@ -427,6 +427,69 @@ if hexo-config('widgetHeader.enable') {
   }
 }
 
+/* 首页文章自定义标签样式 */
+if hexo-config('onListTags.enable') {
+  .l_main .post-wrapper .post .auto-padding.full-width {
+    padding-left: 25px;
+    padding-right: 25px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: auto;
+    margin-left: -24px;
+    margin-right: -24px;
+    margin-bottom: -24px;
+  }
+
+  .l_main .post-wrapper .post .auto-padding.full-width.tags {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    margin-top: 20px;
+    background: alpha($color-text, .1);
+    word-spacing: 10px;
+  }
+
+  .l_main .post-wrapper .post .auto-padding.full-width.tags a {
+    color: alpha($color-text, .65);
+    align-items: center;
+    position: relative;
+    word-spacing: 0;
+    transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+  }
+
+  .l_main .post-wrapper .post .auto-padding.full-width.tags a:hover {
+    color: $color-hover;
+    background: transparent;
+    text-decoration: none;
+  }
+
+  .l_main .post-wrapper .post .auto-padding.full-width.tags a p {
+    cursor: unset;
+    margin: 0;
+    font-weight: normal;
+  }
+
+  .l_main .post-wrapper .post .auto-padding.full-width.tags a i.fa-hashtag {
+    margin-right: 2px;
+  }
+  /*手机适配*/
+  @media screen and (max-width: 500px) {
+    /* 主页自定义标签样式 */
+    .l_main .post-wrapper .post .full-width.auto-padding {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+      overflow: auto;
+      margin-right: -16px;
+    }
+  }
+}
+
 /* 相关文章 */
 .widget.related_posts .content h3 a {
   word-break: break-all;
