@@ -3,11 +3,6 @@
   width: 600px;
 }
 
-/* 主页打字机字体颜色 */
-#subtitle-style {
-  color: $color-theme
-}
-
 /* 解决定位valine评论位置问题 */
 .l_main .post {
   transform: none !important;
@@ -399,6 +394,13 @@ ul.list-v {
   border-left-color: $color-card;
   border-bottom-color: $color-card;
   background: alpha($color-card, .2);
+}
+
+/* 主页cover打字机字体颜色 */
+if hexo-config('coverTypeWriter.enable') {
+  #subtitle-style {
+    color: $color-theme
+  }
 }
 
 /* 小组件header样式 */
