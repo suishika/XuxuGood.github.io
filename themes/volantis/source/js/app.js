@@ -35,26 +35,6 @@ var customSearch;
 		const $titleBtn = $('h1.title', '#header-meta'); // 文章内标题
 		const $bodyAnchor = $('.l_body');                // 页面主体
 
-        // if(window.pjax == undefined) {
-        //     if ($postsBtn.length && $bodyAnchor) {
-        //         $postsBtn.click(e => {
-        //             e.preventDefault();
-        //             e.stopPropagation();
-        //             scrolltoElement($bodyAnchor);
-        //             e.stopImmediatePropagation();
-        //             $postsBtn.unbind('click');
-        //         });
-        //     }
-        //     if ($titleBtn.length && $bodyAnchor) {
-        //         $titleBtn.click(e => {
-        //             e.preventDefault();
-        //             e.stopPropagation();
-        //             scrolltoElement($bodyAnchor);
-        //             e.stopImmediatePropagation();
-        //             $titleBtn.unbind('click');
-        //         });
-        //     }
-        // }
 		if ($postsBtn.length && $bodyAnchor) {
 			$postsBtn.click(e => {
 				e.preventDefault();
