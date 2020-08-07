@@ -585,8 +585,8 @@ comments:
   # MiniValine
   # https://github.com/MiniValine/MiniValine
   minivaline:
-    appId: # your appId
-    appKey: # your appKey
+    appId: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz # your appId
+    appKey: 7xvFncnnyG2QI60iDY3E4PuO # your appKey
     js: https://cdn.jsdelivr.net/npm/minivaline@3/dist/MiniValine.min.js
     mode: xCss # DesertsP or xCss
     math: false # Support MathJax.
