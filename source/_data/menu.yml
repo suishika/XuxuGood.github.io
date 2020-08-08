@@ -1,45 +1,45 @@
 - name: 主页
-  icon: fas fa-home
+  icon: fas fa-home faa-tada
   url: /
 - name: 归档
-  icon: fas fa-archive
+  icon: fas fa-archive faa-tada
   url: archives/
 - name: 朋友
-  icon: fas fa-users
+  icon: fas fa-users faa-tada
   url: links/
 - name: 关于
-  icon: fas fa-info-circle
+  icon: fas fa-info-circle faa-tada
   url: about/
 #- name: 说说
 #  icon: fas fa-laugh-wink
 #  url: shuoshuo/
 - name: 留言
-  icon: fas fa-comments
+  icon: fas fa-comments faa-tada
   url: comments/
 - name: 开往
-  icon: fas fa-paper-plane
+  icon: fas fa-paper-plane faa-tada
   url: https://travellings.now.sh
 - name: 更多
 #  icon: fas fa-ellipsis-v
   icon: fas fa-fan fa-spin
   rows:
     - name: 我的相册
-      icon: fas fa-camera-retro
+      icon: fas fa-camera-retro faa-tada
       url: photos/
     - name: 我的简历
-      icon: fas fa-drafting-compass
+      icon: fas fa-drafting-compass faa-tada
       url: resume/
     - name: 评论管理
-      icon: fas fa-comments
+      icon: fas fa-comments faa-tada
       url: https://gycuzerwzfyu.leanapp.cn/
       rel: external nofollow noopener noreferrer
       target: _blank
     - name: hr
     - name: 实用工具
-      icon: fas fa-cog
+      icon: fas fa-cog faa-tada
       url: tools/
     - name: 围住小猫
-      icon: fas fa-cat
+      icon: fas fa-cat faa-tada
       url: catchTheCat/
 #- name: 近期
 #  icon: fas fa-clock
