@@ -85,6 +85,8 @@ style:
       url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/Monaco/Monaco.ttf
       weight: normal
       style: normal
+    note-tag:
+      fontfamily: 'Font Awesome 5 Free'
   color:
     site: '#f4f4f4' # 网站背景色
     site_inner: '#555' # 网站背景内的文字颜色
@@ -406,6 +408,13 @@ seo:
 
 ############################### Plugins ###############################
 plugins:
+  # required plugins
+  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13/css/all.min.css
+  fontawesomeanimation: https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css
+  fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css
+  jquery: https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js
+
+  # optional plugins
   ######## Plugins to improve loading speed:
   # Preload (The menu's url must end with ‘/’)
   instant_page: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2/js/instant_page.js
@@ -721,7 +730,7 @@ search:
 ############################### 主题信息 ###############################
 info:
   name: Volantis # This is theme's name.
-  version: '3.0-beta1' # This is theme's version.
+  version: '3.0-beta6' # This is theme's version.
   docs: https://volantis.js.org/ # This is theme's URL.
   repo: https://github.com/volantis-x/hexo-theme-volantis
   cdn:
