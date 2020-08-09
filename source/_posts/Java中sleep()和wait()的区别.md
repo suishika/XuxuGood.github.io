@@ -3,7 +3,7 @@ title: Java 中 sleep() 和 wait() 的区别
 pin: false
 toc: true
 tags: [Java,线程]
-categories: [Java]
+categories: [Java,线程]
 keywords: [Java,线程,sleep,wait,对象锁]
 abbrlink: 47cc5feb
 date: 2020-08-02 18:54:14
