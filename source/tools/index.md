@@ -94,7 +94,17 @@ links:
       backgroundColor: '#967ADC'
       textColor: '#fff'
       tags: [在线文件转换器]
-      
+  
+  - group: 成长必备
+    icon: fas fa-user-graduate
+    items:
+    - name: 力扣
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/tools/力扣.png
+      url: https://leetcode-cn.com/
+      backgroundColor: '#008B8B'
+      textColor: '#fff'
+      tags: [程序猿学习必备]
+
   - group: 其他工具
     icon: fas fa-bookmark
     items:
