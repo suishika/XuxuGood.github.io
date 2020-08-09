@@ -36,8 +36,10 @@
             </small>
             <div class="input-group m-t-md">
                 <input type="password" style="color: black"
+                       autofocus="autofocus"
                        class="form-control text-sm btn-rounded no-border open_new_world_password"
-                       placeholder="输入密码打开新世界">
+                       placeholder="输入密码打开新世界"
+                       onkeydown="keyDown(event)";>
                 <span class="input-group-btn">
 <a class="btn btn-success btn-rounded no-border wrapper-sm padder-md open_new_world"><i class="glyphicon
         glyphicon-arrow-right"></i></a>
@@ -511,7 +513,15 @@
     div.remove();
     var password = "94bad94faea80337f31ff0b2a887b82f";
     $('.open_new_world').click(function () {
-        // var ele = $(this);
+        checkPassword()
+    });
+    function keyDown(e) {
+        var evt = window.event || e;
+        if (evt.keyCode == 13) {
+            checkPassword()
+        }
+    }
+    function checkPassword() {
         if (hex_md5($('.open_new_world_password').val()) === password) {//密码正确
             $.message({
                 title: "操作通知",
@@ -536,7 +546,7 @@
                 type: 'error'
             });
         }
-    });
+    }
     // 禁用右键查看源代码和F12
     window.onload = function () {
         document.onkeydown = function () {
