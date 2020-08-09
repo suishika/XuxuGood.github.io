@@ -19,6 +19,25 @@
   cursor: unset;
 }
 
+/*自定义右键菜单按钮与下拉菜单按钮样式*/
+ul.list-v.rightmenu, .dropmenu-wrapper .dropmenu ul.list-v {
+  background: $color-card;
+  box-shadow: $boxshadow-dropmenu;
+}
+
+ul.list-v.rightmenu li a, .dropmenu-wrapper .dropmenu ul.list-v > li > a {
+  border-left: none;
+  color: mix($color-text, $color-card, 80);
+  padding: 0 $gap + $border-line + 2px 0 $gap;
+  margin: 0 4px;
+  border-radius: 4px;
+}
+
+ul.list-v.rightmenu li a:hover, .dropmenu-wrapper .dropmenu ul.list-v > li > a:hover {
+  color: mix($color-theme, $color-text, 70);
+  background: bgcolor($color-theme);
+}
+
 /* 归档页样式优化 */
 #archive-page .archive .archive-post a:hover {
   padding-top: 8px;
