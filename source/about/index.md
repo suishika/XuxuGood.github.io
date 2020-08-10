@@ -5,7 +5,7 @@ meta:
   header: []
   footer: []
 sidebar: []
-valine:
+comment:
   placeholder: 有什么想对我说的呢？
 ---
 

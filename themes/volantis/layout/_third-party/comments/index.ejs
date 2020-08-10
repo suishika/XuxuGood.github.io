@@ -1,6 +1,6 @@
 <%
 var checkComment = true;
-if (page.comments == false) {
+if (page.comment && page.comment.enable == false) {
     checkComment = false;
 }
 %>

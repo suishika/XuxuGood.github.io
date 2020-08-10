@@ -5,7 +5,8 @@ meta:
   header: []
   footer: []
 sidebar: []
-comments: false
+comment:
+  enable: false
 ---
 <style>
     .article .article-entry #shuoshuo_content ul li:before{
