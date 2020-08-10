@@ -151,7 +151,7 @@ links:
       url: https://raycoder.me/
       backgroundColor: '#7C5246'
       textColor: '#fff'
-      tags: [Python, 前端]
+      tags: [Python, Vue, 前端]
     - name: hongCYu’s Blog
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/hongCYu’s_Blog.jpg
       url: https://hongcyu.cn
