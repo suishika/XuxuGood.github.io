@@ -26,12 +26,6 @@ links:
   - group: 技术大佬
     icon: fas fa-desktop
     items:
-    - name: Colsrch
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Colsrch.jpg
-      url: https://colsrch.top
-      backgroundColor: '#7C5246'
-      textColor: '#fff'
-      tags: [C/C++, MFC]
     - name: Sanarous
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Sanarous.jpg
       url: https://bestzuo.cn
@@ -62,6 +56,12 @@ links:
       backgroundColor: '#FBBC05'
       textColor: '#fff'
       tags: [繁星永存，记忆亘古不变]
+    - name: Colsrch
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Colsrch.jpg
+      url: https://colsrch.top
+      backgroundColor: '#7C5246'
+      textColor: '#fff'
+      tags: [C/C++, MFC]
     - name: 玖月技术
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/玖月技术.png
       url: https://www.9yue.pro
@@ -83,7 +83,7 @@ links:
     - name: nomar
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/nomar.jpg
       url: https://www.nomar.cn
-      backgroundColor: '#7C5246'
+      backgroundColor: '#A03EC9'
       textColor: '#fff'
       tags: [技术记录分享]
     - name: liuyib
