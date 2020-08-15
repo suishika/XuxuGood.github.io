@@ -117,7 +117,7 @@ links:
       textColor: '#fff'
       tags: [Web, Java, 随笔]
     - name: Uncle_drew
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Uncle_drew.webp
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Uncle_drew.png
       url: https://cndrew.cn
       backgroundColor: '#FBBC05'
       textColor: '#fff'
@@ -177,7 +177,7 @@ links:
       textColor: '#fff'
       tags: [技术源于积累]
     - name: 小丁的个人博客
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/小丁的个人博客.webp
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/小丁的个人博客.png
       url: https://tding.top
       backgroundColor: '#708090'
       textColor: '#fff'
