@@ -93,22 +93,22 @@ style:
     site_footer: '#666' # 网站背景内的页脚文字颜色
     card: 'white' # 卡片背景色
     text: '#444' # 卡片上文字的颜色。
-    theme: '#1BC3FB' # 主色系
-    link: '#1BC3FB' # 链接颜色
+    theme: '#7C5246' # 主色系（浅蓝色系：#1BC3FB，灰色系：#7C5246，深蓝色系：#3E74C9）
+    link: '#1BC3FB' # 链接颜色（浅蓝色系：#1BC3FB，灰色系：#7C5246，深蓝色系：#3E74C9）
     hover: '#ff5722' # 链接突出显示颜色
     inner: 'white' # 按钮内的文字颜色
     block: '#f6f6f6' # 色块
     inlinecode: '#f6f6f6' # 内联代码颜色
     codeblock: '#d2eafd' # 代码块颜色
     p: '#555' # 段落颜色
-
+    scroll_down: '#44d7b6' # 首页向下滚动图标颜色
 
 
 
 ############################### Layout ###############################
 cover:
   scheme: docs # docs, blog
-  layout: search # search (搜索), dock (坞), featured (精选), focus (焦点)
+  layout: featured # search (搜索), dock (坞), featured (精选), focus (焦点)
   display:
     home: true
     archive: false
@@ -119,20 +119,25 @@ cover:
   search: 世界之大，探索一下
   features:
     - name: 主页
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/menu/home.png
       icon: fas fa-home
       url: /
-    - name: 分类
-      icon: fas fa-folder-open
-      url: categories/
-    - name: 标签
-      icon: fas fa-tags
-      url: tags/
+    - name: 归档
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/menu/archive.png
+      icon: fas fa-archive
+      url: archives/
     - name: 朋友
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/menu/link.png
       icon: fas fa-users
       url: links/
     - name: 留言
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/menu/comments.png
       icon: fas fa-comments
       url: comments/
+    - name: 关于
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/menu/about.png
+      icon: fas fa-info-circle
+      url: about/
 #      img: https://i.loli.net/2020/07/24/GaeXvVAdtJkCYT3.png
 #      rel: external nofollow noopener noreferrer
 #      target: _blank
@@ -269,7 +274,7 @@ widget:
     display: [desktop, mobile] # [desktop, mobile]
     header:
       icon: fas fa-folder-open
-      linkIcon: fas fa-expand-arrows-alt # 小组件链接图标
+      linkIcon: fas fa-expand-arrows-alt fa-spin # 小组件链接图标
       title: 文章分类
       url: /categories/
   # ---------------------------------------
@@ -279,7 +284,7 @@ widget:
     display: [desktop, mobile] # [desktop, mobile]
     header:
       icon: fas fa-tags
-      linkIcon: fas fa-expand-arrows-alt # 小组件链接图标
+      linkIcon: fas fa-expand-arrows-alt fa-spin # 小组件链接图标
       title: 热门标签
       url: /tags/
     min_font: 14
@@ -470,7 +475,8 @@ plugins:
     duration: 20000       # Duration (ms)
     fade: 1500            # fade duration (ms) (Not more than 1500)
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
-      - https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/wallpaper/wallpaper1.jpeg
+      # - https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/wallpaper/wallpaper1.jpeg
+      - https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/wallpaper/wallpaper5.png
       # - https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/wallpaper/wallpaper2.png
       # - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg
       # - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg

@@ -11,7 +11,7 @@ comment:
 
 {# Botui聊天机器人样式 #}
 <link rel="stylesheet" href="/css/botui.min.css" />
-<link rel="stylesheet" href="/css/botui-theme-default.css" />
+{# <link rel="stylesheet" href="/css/botui-theme-default.css" /> #}
 
 <div class="entry-content">
     <div id="hello-xuxuy" class="pop-container">

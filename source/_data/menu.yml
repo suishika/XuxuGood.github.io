@@ -1,9 +1,18 @@
 - name: 主页
   icon: fas fa-home faa-tada
   url: /
-- name: 归档
-  icon: fas fa-archive faa-tada
-  url: archives/
+- name: 找文章
+  icon: fas fa-tasks faa-tada
+  rows:
+    - name: 归档
+      icon: fas fa-archive faa-tada
+      url: archives/
+    - name: 分类
+      icon: fas fa-folder-open faa-tada
+      url: categories/
+    - name: 标签
+      icon: fas fa-tags faa-tada
+      url: tags/
 - name: 朋友
   icon: fas fa-users faa-tada
   url: links/
@@ -20,7 +29,7 @@
   icon: fas fa-paper-plane faa-tada
   url: https://travellings.now.sh
 - name: 更多
-#  icon: fas fa-ellipsis-v
+#  icon: fas fa-ellipsis-v fa-spin
   icon: fas fa-fan fa-spin
   rows:
     - name: 我的相册

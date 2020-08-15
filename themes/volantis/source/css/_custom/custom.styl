@@ -235,7 +235,7 @@ article .readmore i {
 
 /* 首页向下滚动图标颜色 */
 .cover-wrapper .cover .scroll-down .scroll-down-effects {
-  color: $color-theme;
+  color: $color-scroll-down;
 }
 
 /* blogger 小组件title样式 */
@@ -244,16 +244,19 @@ article .readmore i {
 }
 
 /* footer 样式*/
-footer a.social:hover {
-  background: alpha($color-theme, .1);
-  color: $color-theme;
-}
-
 footer {
-  color: $color-text;
+  color: $color-card;
 }
 
-footer a.social {
+footer .social-wrapper a {
+  color: $color-card !important;
+}
+
+footer a.social:hover {
+  background: $color-theme;
+}
+
+footer a {
   color: $color-text;
 }
 

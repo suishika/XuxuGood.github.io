@@ -40,6 +40,12 @@ links:
       backgroundColor: '#7C5246'
       textColor: '#fff'
       tags: [高清图片]
+    - name: EasyIcon
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/tools/easyicon.png
+      url: https://www.easyicon.net/
+      backgroundColor: '#FF69B4'
+      textColor: '#fff'
+      tags: [各种图标下载库]    
       
   - group: Web 前端
     icon: fas fa-rocket
