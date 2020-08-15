@@ -74,6 +74,12 @@ links:
       backgroundColor: '#E94335'
       textColor: '#fff'
       tags: [前端]
+    - name: 阳光派Plus
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/阳光派.jpg
+      url: https://www.zyoushuo.cn/
+      backgroundColor: '#3E74C9'
+      textColor: '#fff'
+      tags: [Java, C++, Python]
     - name: 一去二三遥
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/一去二三遥.jpg
       url: https://www.moonster.life
