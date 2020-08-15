@@ -2,7 +2,7 @@
   icon: fas fa-home faa-tada
   url: /
 - name: 找文章
-  icon: fas fa-tasks faa-tada
+  icon: fas fa-tasks
   rows:
     - name: 归档
       icon: fas fa-archive faa-tada
