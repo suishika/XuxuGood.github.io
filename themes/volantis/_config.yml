@@ -128,7 +128,7 @@ cover:
       url: archives/
     - name: 朋友
       img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/menu/link.png
-      icon: fas fa-users
+      icon: fas fa-link
       url: links/
     - name: 留言
       img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/menu/comments.png
