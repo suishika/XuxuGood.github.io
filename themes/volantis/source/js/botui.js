@@ -3232,6 +3232,6 @@
       }, button: function (e) {
         return d(e), e.type = "button", y.action.button.buttons = e.action, l(e)
       }
-    }, g.fontawesome && r("https://use.fontawesome.com/ea731dcb6f.js"), g.debug && (h._botApp = f), h
+    }, g.fontawesome && r(""), g.debug && (h._botApp = f), h
   }
 });
