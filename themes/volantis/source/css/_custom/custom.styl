@@ -21,6 +21,10 @@
 }
 
 /*自定义右键菜单按钮与下拉菜单按钮样式*/
+.rightmenu hr {
+  border-bottom: 1px solid alpha($color-text, .1) !important
+}
+
 ul.list-v.rightmenu, .dropmenu-wrapper .dropmenu ul.list-v {
   background: $color-card;
   box-shadow: $boxshadow-dropmenu;
@@ -370,6 +374,10 @@ ul.list-v {
   background: $color-theme;
 }
 
+ul.list-v hr {
+  border-bottom: 0.5px solid #fff;
+}
+
 .l_header .m_search {
   width: 200px;
 }
@@ -411,6 +419,10 @@ ul.list-v {
 
 .dropmenu ul.list-v > li > a {
   color: $color-card;
+}
+
+.dropmenu ul.list-v hr {
+  border-bottom: 1px solid alpha($color-text, .1)
 }
 
 .dropmenu ul.list-v > li > a:hover {
@@ -665,46 +677,37 @@ div.hoverbox:hover > div.target {
   display: contents;
 }
 
-.vtag {
-  font-size: .75em;
+#valine_container .vcards .vcard {
+  padding: 15px 20px 0 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px dashed alpha($color-text, .3)
+  transition: all .3s;
 }
 
-@media only screen and (min-width: 1000px) {
-  #valine_container .vcards .vcard:hover {
-    border: 1px dashed $color-theme;
-  }
+#valine_container .vcards .vcard:hover {
+  border: 1px dashed $color-theme;
+}
 
-  #valine_container .vcards .vcard {
-    padding: 15px 20px 0 20px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    border: 1px dashed alpha($color-text, .3)
-    transition: all .3s;
-  }
+#valine_container .vcards .vcard .vh {
+  padding-bottom: 0;
+  border-bottom: none;
+}
 
-  #valine_container .vcards .vcard h1,
-  #valine_container .vcards .vcard h2,
-  #valine_container .vcards .vcard h3,
-  #valine_container .vcards .vcard h4,
-  #valine_container .vcards .vcard h5,
-  #valine_container .vcards .vcard h6 {
-    border-bottom: none;
-  }
+#valine_container .vcards .vcard .vh .vcard {
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+  box-shadow: none;
+}
 
-  #valine_container .vcards .vcard .vh {
-    padding-bottom: 0;
-    border-bottom: none;
-  }
-
-  #valine_container .vcards .vcard .vh .vquote {
-    border-left: none;
-  }
-
-  #valine_container .vcards .vcard .vh .vcard {
-    padding-right: 0;
-    border: none;
-    box-shadow: none;
-  }
+#valine_container .vcards .vcard h1,
+#valine_container .vcards .vcard h2,
+#valine_container .vcards .vcard h3,
+#valine_container .vcards .vcard h4,
+#valine_container .vcards .vcard h5,
+#valine_container .vcards .vcard h6 {
+  border-bottom: none;
 }
 
 #veditor {
