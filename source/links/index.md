@@ -212,7 +212,13 @@ links:
       backgroundColor: '#A03EC9'
       textColor: '#fff'
       tags: [C++, Robotics]
-      
+    - name: Hunter’s Blog
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Hunter’s_Blog.jpg
+      url: https://hntr.xyz/
+      backgroundColor: '#141414'
+      textColor: '#fff'
+      tags: [算法, 题解]
+           
   - group: 虐狗博主
     icon: fas fa-heartbeat
     items:
