@@ -185,7 +185,7 @@ neat_css:
     - '**/*.min.css'
 # 压缩js
 neat_js:
-  enable: false
+  enable: true
   mangle: true
   output:
   compress:
