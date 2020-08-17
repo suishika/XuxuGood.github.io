@@ -397,6 +397,8 @@ if hexo-config('plugins.scrollreveal.js')
 img
   max-width 100%
   &.lazyload:not(.placeholder)
-    transition filter 1s ease-out 0s
+    transition filter .25s ease-out 0s
     &:not(.loaded)
       filter blur(8px)
+    &.loaded
+      filter none
