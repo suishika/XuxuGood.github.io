@@ -113,6 +113,7 @@ cover:
     home: true
     archive: false
     others: false # can be written in front-matter 'cover: true'
+  background:
   logo: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/logo.png
   title: #Xu's Blog
   subtitle: #'终有溺水替沧海，再无相思寄巫山~'
@@ -472,7 +473,7 @@ plugins:
     js: https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js
     position: fixed       # cover: sticky on the cover.   fixed: Fixed as background for the site.
     shuffle: true         # shuffle playlist
-    duration: 20000       # Duration (ms)
+    duration: 10000       # Duration (ms)
     fade: 1500            # fade duration (ms) (Not more than 1500)
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
       # - https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/wallpaper/wallpaper1.jpeg
@@ -744,7 +745,7 @@ search:
 ############################### 主题信息 ###############################
 info:
   name: Volantis # This is theme's name.
-  version: '3.0.0-rc.2' # This is theme's version.
+  version: '3.0.0' # This is theme's version.
   docs: https://volantis.js.org/ # This is theme's URL.
   repo: https://github.com/volantis-x/hexo-theme-volantis
   cdn:
