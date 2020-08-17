@@ -80,6 +80,12 @@ links:
       backgroundColor: '#3E74C9'
       textColor: '#fff'
       tags: [Java, C++, Python]
+    - name: Heson
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/heson.png
+      url: https://www.heson10.com
+      backgroundColor: '#967ADC'
+      textColor: '#fff'
+      tags: [Hexo, 折腾, 生活]
     - name: 一去二三遥
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/一去二三遥.jpg
       url: https://www.moonster.life
