@@ -2,20 +2,20 @@
 <div class='l_main<%- page.sidebar == false ? ' no_sidebar' : '' %>'>
   <article id="<%= page.layout %>" class="post white-box reveal <%- theme.style.body.effect.join(' ') %> article-type-<%= page.layout %>" itemscope itemprop="blogPost">
     <%- partial('_partial/meta',{post:page, position:'header'}) %>
-      <section class="article article-entry l_friends" style="margin-top: -30px">
+      <section class="article article-entry l_friends">
         <%- page.excerpt %>
         <% if (page.links){ %>
           <% (page.links||[]).forEach(function(group){ %>
-            <% if(group.items) { %>
+            <% if (group.items) { %>
               <div class='friends-group'>
-                <% if(group.group) { %>
+                <% if (group.group) { %>
                   <br>
-                  <h3 class='friend-header'>
+                  <h2 class='friend-header'>
                     <% if (group.icon) { %>
                       <i class="<%= group.icon %> fa-fw" aria-hidden="true"></i>
                     <%} %>
-                    <%= group.group %>
-                  </h3>
+                    <%- group.group %>
+                  </h2>
                   <% if(group.desc) { %>
                     <%- markdown(group.desc) %>
                   <%} %>
@@ -25,8 +25,16 @@
                     <a class='friend-card' style='background:<%- item.backgroundColor %>; color:<%- item.textColor %>'
                       target="_blank" rel="external nofollow noopener noreferrer" href='<%- url_for(item.url || '') %>'>
                       <div class='friend-left'>
-                        <% if(item.avatar || (config.lazyload && config.lazyload.loadingImg)){ %>
-                          <img no-lazy class='avatar' src='<%- item.avatar || (config.lazyload && config.lazyload.loadingImg) %>'/>
+                        <% if (item.avatar) { %>
+                          <% if (config.lazyload && config.lazyload.enable) { %>
+                            <% if (config.lazyload.loadingImg) { %>
+                              <img class='avatar lazyload placeholder' src='<%- item.avatar || (config.lazyload && config.lazyload.loadingImg) %>'/>
+                            <% } else { %>
+                              <img class='avatar lazyload' src='<%- item.avatar || (config.lazyload && config.lazyload.loadingImg) %>'/>
+                            <% } %>
+                          <% } else { %>
+                            <img class='avatar' src='<%- item.avatar || (config.lazyload && config.lazyload.loadingImg) %>'/>
+                          <% } %>
                         <% } %>
                       </div>
                       <div class='friend-right'>

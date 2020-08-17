@@ -85,7 +85,7 @@ style:
       url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/Monaco/Monaco.ttf
       weight: normal
       style: normal
-    note-tag:
+    iconfont:
       fontfamily: 'Font Awesome 5 Free'
   color:
     site: '#f4f4f4' # 网站背景色
