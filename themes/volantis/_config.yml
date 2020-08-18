@@ -747,7 +747,7 @@ analytics:
   leancloud:
     app_id: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz
     app_key: 7xvFncnnyG2QI60iDY3E4PuO
-    server_url: hasaik.com
+    server_url:
 
 ############################### 主题信息 ###############################
 info:
