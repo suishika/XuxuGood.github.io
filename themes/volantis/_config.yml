@@ -394,6 +394,10 @@ footer:
       url: atom.xml
   # site source
   source: https://github.com/volantis-x/volantis-docs/
+  # sv
+  analytics: >
+    <span id="lc-sv">本站总访问量为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
+    <span id="lc-uv">访客数为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
   # site copyright
   copyright: "Copyright © 2019-2020 [Xu's Blog](/)"
   # You can add your own property here. (Support markdown, for example: br: '<br>')
@@ -743,7 +747,7 @@ analytics:
   leancloud:
     app_id: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz
     app_key: 7xvFncnnyG2QI60iDY3E4PuO
-    server_url:
+    server_url: hasaik.com
 
 ############################### 主题信息 ###############################
 info:
