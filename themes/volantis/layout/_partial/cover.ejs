@@ -12,10 +12,7 @@
       <%- partial('../_cover/' + theme.cover.layout) %>
       <div class="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
     </div>
-    <%- partial('header', null, {cache: false, path: path}) %>
   </div>
-  <% } else { %>
-    <%- partial('header', null, {cache: false, path: path}) %>
   <% } %>
 <% } else { %>
   <% if (page.cover == true) { %>
@@ -32,9 +29,6 @@
           <%- partial('../_cover/' + theme.cover.layout) %>
         </div>
       <% } %>
-      <%- partial('header', null, {cache: false, path: path}) %>
     </div>
-  <% } else { %>
-    <%- partial('header', null, {cache: false, path: path}) %>
   <% } %>
 <% } %>
