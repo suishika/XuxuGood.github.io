@@ -2,7 +2,7 @@
 <div class='l_main<%- page.sidebar == false ? ' no_sidebar' : '' %>'>
   <article id="<%= page.layout %>" class="post white-box reveal <%- theme.style.body.effect.join(' ') %> article-type-<%= page.layout %>" itemscope itemprop="blogPost">
     <%- partial('_partial/meta',{post:page, position:'header'}) %>
-      <section class="article article-entry l_friends">
+      <section class="article article-entry l_friends" style="margin-top: -30px">
         <%- page.excerpt %>
         <% if (page.links){ %>
           <% (page.links||[]).forEach(function(group){ %>
@@ -10,12 +10,12 @@
               <div class='friends-group'>
                 <% if (group.group) { %>
                   <br>
-                  <h2 class='friend-header'>
+                  <h3 class='friend-header'>
                     <% if (group.icon) { %>
                       <i class="<%= group.icon %> fa-fw" aria-hidden="true"></i>
                     <%} %>
                     <%- group.group %>
-                  </h2>
+                  </h3>
                   <% if(group.desc) { %>
                     <%- markdown(group.desc) %>
                   <%} %>
