@@ -452,8 +452,6 @@ plugins:
   clipboard: https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js
 
   ######## Plugins for SEO:
-  # Traffic statistics (very slow loading)
-  busuanzi: https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
 
   # npm i --save hexo-wordcount
   wordcount: true
@@ -718,6 +716,7 @@ rightmenu:
     name: 围住小猫
     icon: fas fa-cat
     url: catchTheCat/
+
 ############################### Search ###############################
 # To use hexo search, you need to install the following plugins:
 # npm i -S hexo-generator-search hexo-generator-json-content
@@ -739,7 +738,12 @@ search:
   baidu:
     apiId:
 
-
+analytics:
+  busuanzi: https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
+  leancloud:
+    app_id: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz
+    app_key: 7xvFncnnyG2QI60iDY3E4PuO
+    server_url:
 
 ############################### 主题信息 ###############################
 info:
