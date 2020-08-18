@@ -1,3 +1,7 @@
+.cover-wrapper
+  min-height: $navbar-height
+  @media screen and (max-width: $device-mobile-l)
+    min-height: $navbar-height - $gap
 .cover-wrapper .cover
   top: 0
   left: 0
@@ -42,6 +46,9 @@
     div.b
       margin-top: 8vh
       margin-bottom: 8vh
+  &.full
+    height: "calc(%s + 100px)" % 100vh
+    margin-bottom: -100px
   &.half
     margin-bottom: -100px
     max-height: 640px
@@ -60,7 +67,7 @@
     width: 100%
     height: 64px
     position: absolute
-    bottom: 0
+    bottom: 100px
     text-align: center
     cursor: pointer
     .scroll-down-effects
@@ -231,8 +238,8 @@
 
 .cover-wrapper .cover .cover-body .menu.dock
   background: alpha($color-card, .5)
-  //position: absolute
-  //bottom: 100px - $gap
+  position: absolute
+  bottom: 100px - $gap
   .list-h
     flex-wrap: nowrap
     margin: 4px
@@ -246,6 +253,7 @@
      backdrop-filter: saturate(200%) blur(20px)
 
 .cover-wrapper .cover .cover-body .menu.featured
+  margin-bottom: $gap * 2
   .list-h
     margin: -2px
   .list-h a
@@ -256,6 +264,7 @@
       backdrop-filter: saturate(200%) blur(20px)
 
 .cover-wrapper .cover .cover-body .menu.focus
+  margin-bottom: $gap * 2
   .list-h
     margin: 2px
   trans()
