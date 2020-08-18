@@ -14,8 +14,6 @@ style:
   scrollbar:
     size: 4px
     border: 2px
-    color: '#2196f3'
-    hover: '#ff5722'
   navbar:
     height: 56px
     width: auto # auto, max
@@ -104,11 +102,23 @@ style:
     scroll_down: '#44d7b6' # 首页向下滚动图标颜色
 
 
+# Navigation Bar
+navbar:
+  visiable: auto # always, auto
+  logo: # choose [img] or [icon + title]
+    img:
+    icon: fas fa-dragon
+    title: Xu's Blog
+  menu:
+  # The following can be written in `blog/source/_data/menu.yml`
+  # 配置移步到`blog/source/_data/menu.yml`文件中
+  search: 搜索...(◕ܫ◕)   # Search bar placeholder
+
 
 ############################### Layout ###############################
 cover:
   scheme: docs # docs, blog
-  layout: featured # search (搜索), dock (坞), featured (精选), focus (焦点)
+  layout: featured # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
   display:
     home: true
     archive: false
@@ -143,16 +153,6 @@ cover:
 #      rel: external nofollow noopener noreferrer
 #      target: _blank
 
-# Navigation Bar
-navbar:
-  logo: # choose [img] or [icon + title]
-    img:
-    icon: fas fa-dragon
-    title: Xu's Blog
-  menu:
-  # The following can be written in `blog/source/_data/menu.yml`
-  # 配置移步到`blog/source/_data/menu.yml`文件中
-  search: 搜索...(◕ܫ◕)   # Search bar placeholder
 
 # 布局设置
 layout:
