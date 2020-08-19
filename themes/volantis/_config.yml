@@ -762,7 +762,7 @@ analytics:
   leancloud:
     app_id: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz
     app_key: 7xvFncnnyG2QI60iDY3E4PuO
-    server_url:
+    custom_api_server: # 一般不需要写，除非自定义了 API Server
 
 ############################### 主题信息 ###############################
 info:
