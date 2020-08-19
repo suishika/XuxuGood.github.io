@@ -65,37 +65,29 @@ div.timenode .body {
   border-radius: 6px;
 }
 
-/* 解决文章标题多次点击事件 */
-.l_main .post section.meta .title a {
+/* 自定义文章标题样式/解决文章标题多次点击事件 */
+.l_main .post .article-header .title a {
   pointer-events: none;
 }
 
-.l_main .post-wrapper .post div.meta .title a {
-  pointer-events: auto;
-}
-
-/* 自定义文章标题样式 */
-.l_main .post-wrapper .post div.meta .title a {
-  font-size: 1.5rem;
-  line-height: 1.7;
-}
-
-.l_main .post section.meta .title a {
-  line-height: 1.7;
+.l_main .post .article-meta#top {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* 自定义文章footer hr样式 */
-#footer-meta hr {
+.l_main .post .article-meta#bottom hr {
+  margin-bottom: 10px;
   position: relative;
   border: 2px dashed alpha($color-theme, .5);
   overflow: visible;
 }
 
-#footer-meta hr:hover:before {
+.l_main .post .article-meta#bottom hr:hover:before {
   left: 95%;
 }
 
-#footer-meta hr:before {
+.l_main .post .article-meta#bottom hr:before {
   position: absolute;
   top: -10px;
   left: 5%;
@@ -122,29 +114,12 @@ div.timenode .body {
 }
 
 /* 阅读全文按钮样式 */
-article .readmore {
-  text-decoration: none;
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 2rem;
-  font-weight: bold;
-  background-color: $color-theme;
-  padding: 0.2em 1.2em;
-  color: $color-card;
-  border-radius: 6px;
-  transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -webkit-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
+.meta-v3 .readmore {
+  color: $color-theme;
 }
 
-article .readmore i {
-  vertical-align: -0.05em;
-}
-
-.article .readmore:hover {
-  background: alpha($color-theme, .7);
-  color: $color-card;
+.meta-v3 .readmore:hover {
+  color: alpha($color-theme, .7);
 }
 
 /* 文章样式 */
@@ -466,69 +441,6 @@ if hexo-config('widgetHeader.enable') {
 
   .widget header.pure .rightBtn:hover {
     color: $color-hover;
-  }
-}
-
-/* 首页文章自定义标签样式 */
-if hexo-config('onListTags.enable') {
-  .l_main .post-wrapper .post .auto-padding.full-width {
-    padding-left: 25px;
-    padding-right: 25px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    overflow: auto;
-    margin-left: -24px;
-    margin-right: -24px;
-    margin-bottom: -24px;
-  }
-
-  .l_main .post-wrapper .post .auto-padding.full-width.tags {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 0.875rem;
-    line-height: 1.7;
-    margin-top: 20px;
-    background: alpha($color-text, .1);
-    word-spacing: 10px;
-  }
-
-  .l_main .post-wrapper .post .auto-padding.full-width.tags a {
-    color: alpha($color-text, .65);
-    align-items: center;
-    position: relative;
-    word-spacing: 0;
-    transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-  }
-
-  .l_main .post-wrapper .post .auto-padding.full-width.tags a:hover {
-    color: $color-hover;
-    background: transparent;
-    text-decoration: none;
-  }
-
-  .l_main .post-wrapper .post .auto-padding.full-width.tags a p {
-    cursor: unset;
-    margin: 0;
-    font-weight: normal;
-  }
-
-  .l_main .post-wrapper .post .auto-padding.full-width.tags a i.fa-hashtag {
-    margin-right: 2px;
-  }
-  /*手机适配*/
-  @media screen and (max-width: 500px) {
-    /* 主页自定义标签样式 */
-    .l_main .post-wrapper .post .full-width.auto-padding {
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-      padding-left: 20px;
-      padding-right: 20px;
-      overflow: auto;
-      margin-right: -16px;
-    }
   }
 }
 

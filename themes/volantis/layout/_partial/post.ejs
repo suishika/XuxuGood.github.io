@@ -1,26 +1,64 @@
-<article class="post white-box <%- theme.style.body.effect.join(' ') %> reveal <%= (post.title) ? "" : "no-title" %>">
-    <%- partial('meta', {post: post, position: 'header'}) %>
-    <section class="article typo">
-        <div class="article-entry" itemprop="articleBody">
-            <% if (post.excerpt) { %>
-                <%- post.excerpt %>
-            <% } else if (post.description) { %>
-                <p><%- post.description %></p>
-            <% } else { %>
-                <%- post.content %>
-            <% } %>
+<div class="post post-v3 white-box reveal <%- theme.style.body.effect.join(' ') %>">
+  <% if (post.pin && (post.title || theme.article.preview.auto_title) && theme.article.preview.pin_icon) { %>
+    <div class='pin'>
+      <img src='<%- theme.article.preview.pin_icon %>'/>
+    </div>
+  <% } %>
+  <% if (post.headimg) { %>
+    <div class='headimg-div'>
+      <a class='headimg-a' href="<%- url_for(post.link || post.path) %>">
+        <% if (config.lazyload && config.lazyload.enable) { %>
+          <% if (config.lazyload.loadingImg) { %>
+            <div class='headimg lazyload placeholder' data-bg='<%- post.headimg %>'></div>
+          <% } else { %>
+            <div class='headimg lazyload' data-bg='<%- post.headimg %>'></div>
+          <% } %>
+        <% } else { %>
+          <div class='headimg' data-bg='<%- post.headimg %>'></div>
+        <% } %>
+      </a>
+    </div>
+  <% } %>
+  <% if (theme.article.preview.auto_title || (post.title && (post.link || post.path))) { %>
+    <h2 class="article-title">
+      <a href="<%- url_for(post.link || post.path) %>">
+        <%- (post.title || post.seo_title) ? (post.title || post.seo_title) : date(post.date, theme.meta.date.format) %>
+      </a>
+    </h2>
+  <% } %>
+  <div class='md'>
+    <% if (post.excerpt) { %>
+      <%- post.excerpt %>
+    <% } else if (post.description) { %>
+      <p><%- post.description %></p>
+    <% } else if (post.content) { %>
+      <% if (theme.article.preview.auto_excerpt) { %>
+        <%- truncate(strip_html(post.content), {length: 200}) %>
+      <% } else { %>
+        <%- post.content %>
+      <% } %>
+    <% } %>
+  </div>
+  <% if (theme.article.preview.readmore == 'always' || theme.article.preview.auto_excerpt || (post.categories && post.categories.length > 0) || (post.readmore != false) && (post.excerpt || post.description || post.link)) { %>
+    <div class='meta-v3' line_style='<%- theme.article.preview.line_style %>'>
+      <div>
+        <time><%= date(post.date, config.date_format) %></time>
+        <% if (post.categories && post.categories.length > 0) { %>
+          <span class="dot"></span>
+          <%- list_categories(post.categories, {
+              show_count: false,
+              separator: '<span class="sep"></span>',
+              style: 'none'
+              }) %>
+        <% } %>
+      </div>
+      <% if (theme.article.preview.readmore == 'always' || theme.article.preview.auto_excerpt || ((post.readmore != false) && (post.excerpt || post.description || post.link))) { %>
+        <div>
+            <a class='readmore' href='<%- url_for(post.link || post.path) %>'>
+            <%- __('post.readmore') %>
+          </a>
         </div>
-        <% if (theme.layout.on_list.readmore) { %>
-            <% if ((post.readmore != false) && (post.excerpt || post.description || post.link)) { %>
-                <a class= "readmore" href="<%- url_for(post.link || post.path) %>">
-                    <%- theme.layout.on_list.readmore %>
-                </a>
-            <% } %>
-        <% } %>
-
-        <!--自定义标签位置-->
-        <% if (theme.onListTags.enable) { %>
-            <%- partial('_custom/onListTags') %>
-        <% } %>
-    </section>
-</article>
+      <% } %>
+    </div>
+  <% } %>
+</div>
