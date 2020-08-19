@@ -251,12 +251,6 @@ links:
       backgroundColor: '#008B8B'
       textColor: '#fff'
       tags: [IT技术]
-    - name: 朱纯树博客
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/朱纯树博客.jpeg
-      url: https://sirblog.cn
-      backgroundColor: '#7C5246'
-      textColor: '#fff'
-      tags: [记录生活, 分享资源]
       
 ---
 {% timeline 友链添加流程 %}
