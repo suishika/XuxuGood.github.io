@@ -476,7 +476,7 @@ if(window.location.hash){
           var targetUrlCheck =  /^[0-9a-zA-Z]*$/;
           // 计算导航条高度
           var scrollCorrection = 80; // (header height = 64px) + (gap = 16px)
-          var $headerAnchor = $('.l_header', '.cover-wrapper');
+          var $headerAnchor = $('.l_header');
           if ($headerAnchor[0]) {
               scrollCorrection = $headerAnchor[0].clientHeight + 16;
           }
