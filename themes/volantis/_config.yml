@@ -579,8 +579,8 @@ plugins:
 comments:
   path:  # 全局评论地址 仅支持 valine , miniValine , disqus , gitalk
   placeholder: 粘贴图片到此处可以自动上传，填写邮箱可以收到邮件回复哦(●'◡'●)  # 评论占位提示 仅支持 valine & miniValine
-  title: <i class='fas fa-comments'></i> 评论
-  subtitle:
+  title: <i class='fas fa-comments'></i> 用户交流区
+  subtitle: '温馨提示: 遵纪守法, 友善评论!'
   service: valine # valine, minivaline, disqus, gitalk, vssue, livere, isso
   # Valine
   # https://valine.js.org/
