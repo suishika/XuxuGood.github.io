@@ -4,7 +4,7 @@ navbar:
   tag: Tag
 post:
   pin: Top
-  read_more: Read More
+  readmore: Read More
   sticky: Sticky
   wordcount: '%s words'
   duration: '%s min'

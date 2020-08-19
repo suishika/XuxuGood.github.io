@@ -4,7 +4,7 @@ navbar:
   tag: 标签
 post:
   pin: 置顶
-  read_more: 阅读全文
+  readmore: 阅读全文
   sticky: 置顶
   wordcount: '字数统计：%s字'
   duration: '阅读时长≈ %s分钟'

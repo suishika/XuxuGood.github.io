@@ -153,8 +153,16 @@ cover:
 #      rel: external nofollow noopener noreferrer
 #      target: _blank
 
+# 文章布局
+article:
+  # 文章列表页面的文章卡片布局方案
+  preview:
+    scheme: landscape # landscape
+    auto_excerpt: false # 0, 200, 500
+  # 文章详情页面的文章卡片本体布局方案
 
-# 布局设置
+
+# 不久后将被其它设置替代
 layout:
 # The following can be written in `blog/source/_data/layout.yml`
 # 配置移步到`blog/source/_data/layout.yml`文件中
@@ -745,8 +753,8 @@ search:
 analytics:
   busuanzi: https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
   leancloud:
-    app_id: #gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz
-    app_key: #7xvFncnnyG2QI60iDY3E4PuO
+    app_id: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz
+    app_key: 7xvFncnnyG2QI60iDY3E4PuO
     server_url:
 
 ############################### 主题信息 ###############################
