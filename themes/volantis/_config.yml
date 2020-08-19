@@ -117,13 +117,13 @@ navbar:
 
 ############################### Layout ###############################
 cover:
-  scheme: docs # docs, blog
-  layout: featured # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
+  use_for: docs # docs, blog
+  scheme: featured # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
   display:
     home: true
     archive: false
     others: false # can be written in front-matter 'cover: true'
-  background:
+  background: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/wallpaper/wallpaper5.png
   logo: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/logo.png
   title: #Xu's Blog
   subtitle: #'终有溺水替沧海，再无相思寄巫山~'
