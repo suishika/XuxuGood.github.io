@@ -100,7 +100,7 @@ style:
     codeblock: '#d2eafd' # 代码块颜色
     p: '#555' # 段落颜色
     scroll_down: '#44d7b6' # 首页向下滚动图标颜色
-
+    scroll_up: '#fff' # 向上滚动图标颜色
 
 # Navigation Bar
 navbar:
@@ -206,7 +206,7 @@ meta:
   # 文章评论数量：只支持 valine
   valinecount:
     icon: fas fa-comment-dots
-    desc: '' # 条评论
+    desc: 条评论
   # 文章字数和阅读时长
   wordcount:
     icon_wordcount: fas fa-keyboard
