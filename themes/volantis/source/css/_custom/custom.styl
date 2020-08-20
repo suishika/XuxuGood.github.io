@@ -9,11 +9,6 @@
   transform: none !important;
 }
 
-/* 链接hover不含下划线在这里处理 */
-.widget.text .content a:hover, .article .article-entry blockquote a:hover, .LinkCard, .LinkCard:hover {
-  text-decoration: none !important
-}
-
 /* 不设置鼠标样式的在这里处理 */
 .article.article-entry.l_friends .friends-group .friend-content .friend-card .friend-right p.friend-name,
 .article.article-entry.l_friends .friends-group .friend-content .friend-card .friend-right p.tags {
@@ -21,6 +16,10 @@
 }
 
 /*自定义右键菜单按钮与下拉菜单按钮样式*/
+.article .article-entry .dropmenu ul li:before {
+  content: none !important;
+}
+
 .rightmenu hr {
   border-bottom: 1px solid alpha($color-text, .1) !important
 }
@@ -350,11 +349,11 @@ footer a:hover {
   background: alpha($color-card, .2);
 }
 
-ul.list-v {
+.l_header ul.list-v {
   background: $color-theme;
 }
 
-ul.list-v hr {
+.l_header ul.list-v hr {
   border-bottom: 0.5px solid #fff;
 }
 
@@ -390,25 +389,6 @@ ul.list-v hr {
 
 .l_header .m_search .input:-ms-input-placeholder {
   color: $color-card;
-}
-
-/* 下拉按钮样式调整 */
-.article .article-entry .dropmenu ul li:before {
-  content: none !important;
-}
-
-.dropmenu ul.list-v > li > a {
-  color: $color-card;
-}
-
-.dropmenu ul.list-v hr {
-  border-bottom: 1px solid alpha($color-text, .1)
-}
-
-.dropmenu ul.list-v > li > a:hover {
-  border-left-color: $color-card;
-  border-bottom-color: $color-card;
-  background: alpha($color-card, .2);
 }
 
 /* 主页cover打字机字体颜色 */

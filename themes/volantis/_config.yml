@@ -91,7 +91,7 @@ style:
     card: 'white' # 卡片背景色
     text: '#444' # 卡片上文字的颜色。
     theme: '#7C5246' # 主色系（浅蓝色系：#1BC3FB，灰色系：#7C5246，深蓝色系：#3E74C9）
-    link: '#1BC3FB' # 链接颜色（浅蓝色系：#1BC3FB，灰色系：#7C5246，深蓝色系：#3E74C9）
+    link: '#4688F1' # 链接颜色（蓝色系：#4688F1，灰色系：#7C5246，深蓝色系：#3E74C9）
     hover: '#ff5722' # 链接突出显示颜色
     inner: 'white' # 按钮内的文字颜色
     block: '#f6f6f6' # 色块
@@ -103,6 +103,7 @@ style:
 
 
 # 图片懒加载，请复制到站点配置文件中使用。
+# https://www.npmjs.com/package/vanilla-lazyload
 lazyload:
   enable: true
   onlypost: false
