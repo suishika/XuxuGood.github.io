@@ -1,7 +1,6 @@
 <!-- required -->
 <%- js(theme.plugins.jquery) %>
 
-<%- partial('counter') %>
 <!-- optional -->
 <%- partial('cover') %>
 <% if (theme.search && theme.search.enable) { %>
@@ -79,6 +78,10 @@
     <%- js(theme.plugins.highlightjs.js) %>
     <script>hljs.initHighlightingOnLoad();</script>
   <% } %>
+<% } %>
+
+<% if (theme.analytics && theme.analytics.leancloud && theme.analytics.leancloud.app_id) { %>
+    <%- partial('counter') %>
 <% } %>
 
 <!-- more -->
