@@ -272,6 +272,8 @@
     &.list, &.related_posts
       .content
         padding: 0 .6em !important
+        a:hover
+          color: $color-hover
     .content
       padding: 0 .6em
       margin: 0
@@ -287,20 +289,11 @@
           color: $color-link
           font-weight: normal
           text-decoration: none
-          &:hover
-            color: $color-hover
           &:hover,&.active,&:active
             border-left: none !important
             background: none !important
-
-      .list
-        a
-          .name
-            display: inline
-            color: $color-link
           &:hover
-            .name
-              color: $color-hover
+            color: $color-hover
 
 
     &.qrcode > .content
