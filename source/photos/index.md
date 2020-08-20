@@ -6,7 +6,7 @@ meta:
   footer: []
 sidebar: []
 ---
-{% tabs photos %}
+{% tabs photos,1 %}
 
 <!-- tab 美食 -->
 
