@@ -429,8 +429,6 @@ if hexo-config('widgetHeader.enable') {
 
   .widget header {
     display: flex;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
     justify-content: space-between;
     line-height: 1.5em;
   }
@@ -442,6 +440,15 @@ if hexo-config('widgetHeader.enable') {
   .widget header.pure .rightBtn:hover {
     color: $color-hover;
   }
+}
+
+/* 小组件样式 */
+.article .widget {
+  padding-top: 0 !important;
+}
+
+.article .article-entry .widget ul li:before {
+  margin: 0.35rem 0.42rem 0 0;
 }
 
 /* 相关文章 */
