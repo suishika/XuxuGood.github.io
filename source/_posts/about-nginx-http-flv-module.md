@@ -8,13 +8,6 @@ date: 2020-04-01 09:22:38
 tags: [nginx-http-flv-module,视频流播放]
 categories: [流媒体服务]
 keywords: [FFmpeg,nginx-http-flv-module,flv.js,视频流,RTSP]
-references:
-  - name: 下载Apple Developer Documentation
-    url: https://developer.apple.com/documentation/
-  - name: Apple Developer Documentation
-    url: https://developer.apple.com/documentation/
-  - name: Apple Developer Documentation
-    url: https://developer.apple.com/documentation/
 description: 最近项目组接了一个视频流项目，项目的主要核心是将网络摄像头RTSP视频流在WEB端实时播放，经过两天的调查和爬坑，终于实现了视频流的播放。
 ---
 
