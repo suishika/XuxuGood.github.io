@@ -246,7 +246,7 @@ links:
     desc: 如贵站在该区请检查贵站是否能正常访问或是否违背了本站友链原则（例：未开启https）
     items:
     - name: 暂无危险人员
-      avatar: https://hasaik.com/images/avatar2.jpg
+      avatar: /images/avatar1.jpg
       url: https://hasaik.com/
       backgroundColor: '#008B8B'
       textColor: '#fff'
