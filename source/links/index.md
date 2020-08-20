@@ -245,15 +245,20 @@ links:
     icon: fas fa-exclamation-triangle
     desc: 如贵站在该区请检查贵站是否能正常访问或是否违背了本站友链原则（例：未开启https）
     items:
-    - name: Emil’s blog
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Emil’s_blog.png
-      url: https://blog.hvnobug.com/
+    - name: 暂无危险人员
+      avatar: https://hasaik.com/images/avatar2.jpg
+      url: https://hasaik.com/
       backgroundColor: '#008B8B'
       textColor: '#fff'
-      tags: [IT技术]
+      tags: [博观而约取，厚积而薄发。]
       
 ---
-{% timeline 友链添加流程 %}
+### 申请友链：
+{% tabs links,1 %}
+
+<!-- tab 添加流程 -->
+
+{% timeline %}
 
 {% timenode 请先添加本站链接 %}
 
@@ -298,6 +303,29 @@ links:
 {% endtimenode %}
 
 {% endtimeline %}
+
+<!-- endtab -->
+
+<!-- tab 清理记录 -->
+
+如果出现误清理请重新申请即可！
+
+{% timeline %}
+
+{% timenode 2020-08-20 %}
+
+*  朱纯树博客 - https://si***og.cn
+    站点无法访问
+*  Emil’s blog - https://blog.hv***g.com/
+    站点未开启Https
+
+{% endtimenode %}
+
+{% endtimeline %}
+
+<!-- endtab -->
+
+{% endtabs %}
 
 {# 修改时间线中的样式 #}
 <style>
