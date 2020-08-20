@@ -8,6 +8,9 @@ date: 2019-11-18 12:53:11
 tags: [Java,MD5,SHA-1]
 categories: [加密安全]
 keywords: [MD5,SHA-1,Java加密]
+references:
+  - name: Java实现 MD5加盐加密 和 MD5和SHA-1混合加盐加密
+    url: https://blog.csdn.net/qq_39135287/article/details/82012441
 description: 介绍两种加密方式，防止网站轻松破解我们的密码。
 ---
 现在一般的MD5加密在网上随随便便就能够解密，解密的网站有以下几个：
