@@ -96,6 +96,10 @@
     <%- partial('counter') %>
 <% } %>
 
+<% if (theme.cover.use_for == 'docs') { %>
+    <%- partial('docsCoverScrollDown') %>
+<% } %>
+
 <!-- more -->
 <% if (config.import && config.import.script) { %>
   <%- partial('import') %>
