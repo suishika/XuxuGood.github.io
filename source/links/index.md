@@ -230,7 +230,13 @@ links:
       backgroundColor: '#3E74C9'
       textColor: '#fff'
       tags: [Java, 前端开发]
-          
+    - name: FoxScallion
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/FoxScallion.jpg
+      url: https://www.foxscallion.top/
+      backgroundColor: '#967ADC'
+      textColor: '#fff'
+      tags: [Java, 后端]
+
   - group: 虐狗博主
     icon: fas fa-heartbeat
     items:
