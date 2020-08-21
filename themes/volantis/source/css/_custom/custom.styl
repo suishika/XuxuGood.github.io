@@ -42,17 +42,30 @@ ul.list-v.rightmenu li a:hover, .dropmenu-wrapper .dropmenu ul.list-v > li > a:h
   background: bgcolor($color-theme);
 }
 
+/* 时间线样式 */
+div.timenode .body {
+  font-size: $fontsize-list
+}
+
 /* 归档页样式优化 */
 #archive-page .archive .archive-post a:hover {
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-/* 时间线样式 */
-div.timenode .body {
-  font-size: $fontsize-list
+#archive-page div.timenode:before {
+  top: 2px;
 }
 
+#archive-page div.timenode:after {
+  top: 28px;
+}
+
+#archive-page div.timenode .meta:before, div.timenode .meta:after {
+  top: 10px;
+}
+
+/* 公告中使用的 kbd 样式 */
 .widget.text .content kbd {
   cursor: default;
   display: inline-block;
