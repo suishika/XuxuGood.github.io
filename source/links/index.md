@@ -224,7 +224,13 @@ links:
       backgroundColor: '#141414'
       textColor: '#fff'
       tags: [算法, 题解]
-           
+    - name: Deecyn’s Blog
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/Deecyn’s_Blog.png
+      url: https://deecyn.com/
+      backgroundColor: '#3E74C9'
+      textColor: '#fff'
+      tags: [Java, 前端开发]
+          
   - group: 虐狗博主
     icon: fas fa-heartbeat
     items:
