@@ -1,11 +1,7 @@
 # 文章列表（主页、自定义的列表）布局
 on_list:
-  # 列表中每一篇文章的meta信息
-  meta: [title, author, date, category, wordcount, pin]
   # 列表类页面的侧边栏
   sidebar: [blogger, announcement, webinfo, category, tagcloud]
-  # read more button
-  readmore: <i class="fas fa-book-open"></i> 阅读全文
 # 页面布局
 on_page:
   # 文章页面主体元素，你也可以在页面的Front-matter中设置
@@ -18,8 +14,8 @@ on_page:
     footer: [updated, tags, btns, share]
   # 文章页面的侧边栏
   sidebar: [blogger, toc, related_posts]
-# 文章布局，参数继承自 on_page
-on_post:
-  # 文章页脚，自动在每一篇文章末尾添加
-  article_footer: [references, related_repos, copyright, donate]
-# 其他的页面布局暂时等于 on_list
+## 文章布局，参数继承自 on_page
+#on_post:
+#  # 文章页脚，自动在每一篇文章末尾添加
+#  article_footer: [references, related_repos, copyright, donate]
+## 其他的页面布局暂时等于 on_list
