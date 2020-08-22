@@ -84,22 +84,6 @@ style:
       style: normal
     iconfont:
       fontfamily: 'Font Awesome 5 Free'
-#  color:
-#    site: '#f4f4f4' # 网站背景色
-#    site_inner: '#555' # 网站背景内的文字颜色
-#    site_footer: '#666' # 网站背景内的页脚文字颜色
-#    card: 'white' # 卡片背景色
-#    text: '#444' # 卡片上文字的颜色。
-#    theme: '#7C5246' # 主色系（浅蓝色系：#1BC3FB，灰色系：#7C5246，深蓝色系：#3E74C9）
-#    link: '#2196f3' # 链接颜色（蓝色系：#2196f3，灰色系：#7C5246，深蓝色系：#3E74C9）
-#    hover: '#ff5722' # 链接突出显示颜色
-#    inner: 'white' # 按钮内的文字颜色
-#    block: '#f6f6f6' # 色块
-#    inlinecode: '#f6f6f6' # 内联代码颜色
-#    codeblock: '#d2eafd' # 代码块颜色
-#    p: '#555' # 段落颜色
-#    scroll_down: '#44d7b6' # 首页向下滚动图标颜色
-#    scroll_up: '#fff' # 向上滚动图标颜色
 
 # 配色方案
 color:
@@ -127,7 +111,7 @@ color:
     # 区块和代码块背景色
     block: '#f6f6f6'
     # 代码块高亮时的背景色
-    codeblock: '#d2eafd'
+    codeblock: '#FFF7EA'
     # 行内代码颜色
     inlinecode: '#f6f6f6'
     # 首页向下滚动图标颜色
@@ -658,7 +642,7 @@ plugins:
   # https://darkmodejs.learn.uno
   # 暗黑模式样式：https://github.com/volantis-x/hexo-theme-volantis/blob/master/source/css/_third-party/darkmode.styl
   darkmodejs:
-    enable: false
+    enable: true
     js: https://cdn.jsdelivr.net/npm/darkmode-js@1.5/lib/darkmode-js.min.js
     bottom: 32px
     right: unset
