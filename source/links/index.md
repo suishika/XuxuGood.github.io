@@ -236,6 +236,12 @@ links:
       backgroundColor: '#967ADC'
       textColor: '#fff'
       tags: [Java, 后端]
+    - name: PaddyLin’s blog
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/PaddyLin.jpg
+      url: https://www.paddylin.top
+      backgroundColor: '#708090'
+      textColor: '#fff'
+      tags: [又菜又爱学]
 
   - group: 虐狗博主
     icon: fas fa-heartbeat
