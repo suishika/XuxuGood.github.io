@@ -157,13 +157,6 @@ feed:
   content_limit: 150
   content_limit_delim: ' '
 
-#图片懒加载
-lazyload:
-  enable: true
-  onlypost: false
-  loadingImg: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/img-loading.gif
-  isSPA: true
-
 #文章加密
 encrypt:
   enable: true
