@@ -10,6 +10,11 @@ abbrlink: cf9c1454
 date: 2020-08-21 10:57:48
 headimg:
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/thread.png
+references:
+    - title: CountDownLatch（倒计时计数器）使用说明
+      url: https://www.cnblogs.com/tstd/p/4987935.html
+    - title: CountDownLatch的简单理解
+      url: https://blog.csdn.net/joenqc/article/details/76794356
 description: 
 ---
 最近在看多线程之间的通信，笔者我觉得自己的脑袋实在不够用了，很多东西看过就忘，所以今天抽出点时间码一遍 CountDownLatch 的理解和使用。
@@ -185,7 +190,3 @@ public class CountdownLatchTest2 {
 所有选手都到达终点
 裁判main汇总成绩排名
 ```
-
-## :fire: 参考资料
-* [CountDownLatch（倒计时计数器）使用说明](https://www.cnblogs.com/tstd/p/4987935.html)
-* [CountDownLatch的简单理解](https://blog.csdn.net/joenqc/article/details/76794356)
