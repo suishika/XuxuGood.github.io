@@ -41,7 +41,7 @@ douban:
 ```
 上面参数说明：
 
-* user: 你的豆瓣ID.打开豆瓣，登入账户，然后在右上角点击 “个人主页” ，这时候地址栏的URL大概是这样：”https://www.douban.com/people/xxxxxx/“ ，其中的”xxxxxx”就是你的个人ID了。
+* user: 你的豆瓣ID.打开豆瓣，登入账户，然后在右上角点击 “个人主页” ，这时候地址栏的URL大概是这样：`https://www.douban.com/people/xxxxxx/` ，其中的 `xxxxxx` 就是你的个人ID了。
 * builtin: 是否将生成页面的功能嵌入hexo s和hexo g中，默认是false,另一可选项为true(1.x.x版本新增配置项)。
 * title: 该页面的标题.
 * quote: 写在页面开头的一段话,支持html语法.
