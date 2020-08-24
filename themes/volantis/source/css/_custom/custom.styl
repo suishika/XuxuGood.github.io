@@ -48,30 +48,49 @@ div.timenode .body {
 }
 
 /* 归档页样式优化 */
-#archive-page {
+article#arc {
+  padding-top: 24px;
   padding-bottom: 32px;
 }
 
-#archive-page .archive .archive-year h2 {
+article#arc h2 {
   margin-top: 0;
 }
 
-#archive-page .archive .archive-post a:hover {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-#archive-page div.timenode:before {
+article#arc div.timenode:before {
   top: 2px;
 }
 
-#archive-page div.timenode:after {
+article#arc div.timenode:after {
   top: 28px;
 }
 
-#archive-page div.timenode .meta:before, #archive-page div.timenode .meta:after {
+article#arc div.timenode .meta:before, article#arc div.timenode .meta:after {
   top: 10px;
 }
+
+/* 分类页样式优化 */
+article#cat h2 {
+  margin-top: 0;
+}
+
+/* 标签页样式 */
+article#tag h2 {
+  margin-top: 0;
+}
+
+//article#tag .archive .all-tags ul li:hover {
+//  background: $color-block;
+//  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .4);
+//}
+//
+//article#tag .archive .all-tags ul li:hover a {
+//  color: $color-text !important;
+//}
+//
+//article#tag .archive .all-tags ul li:hover span {
+//  background: darken($color-block, 5)
+//}
 
 /* 公告中使用的 kbd 样式 */
 .widget.text .content kbd {
@@ -324,20 +343,6 @@ footer.footer a:hover {
 
 .github-badge .bg-gradient {
   background: linear-gradient(to right, #3ca5f6, #a86af9);
-}
-
-/* 标签页样式 */
-#archive-page .archive .all-tags ul li:hover {
-  background: $color-block;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .4);
-}
-
-#archive-page .archive .all-tags ul li:hover a {
-  color: $color-text !important;
-}
-
-#archive-page .archive .all-tags ul li:hover span {
-  background: darken($color-block, 5)
 }
 
 /* 导航栏样式 */

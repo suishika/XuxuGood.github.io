@@ -138,7 +138,11 @@ color:
     h6: '#444'
     p: '#555'
 
+    # 列表文字
     list: '#666'
+    # 列表 hover 时的文字
+    list_hl: 'mix($color-theme, #000, 80)'
+    # 辅助性文字
     meta: '#888'
   # ----
   # 暗色主题
@@ -170,7 +174,11 @@ color:
     h6: '#ddd'
     p: '#bbb'
 
+    # 列表文字
     list: '#aaa'
+    # 列表 hover 时的文字
+    list_hl: 'mix($color-theme, #fff, 80)'
+    # 辅助性文字
     meta: '#888'
     # 夜间图片亮度
     brightness: 70%
