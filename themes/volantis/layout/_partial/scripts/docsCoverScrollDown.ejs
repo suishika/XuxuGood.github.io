@@ -1,4 +1,3 @@
-/* eslint-disable */
 <script>
 (function ($) {
 
@@ -7,7 +6,7 @@
 		if(document.location.pathname!="/") return;
 		var direct = 0;
 		e = e || window.event;
-		if (e.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件             
+		if (e.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件
 			if (e.wheelDelta > 0) { //当滑轮向上滚动时
 				//console.log("滑轮向上滚动");
 				if($(document).scrollTop()<$('.cover-wrapper').height()){
@@ -44,7 +43,7 @@
 		window.document.addEventListener('DOMMouseScroll', scrollFunc, {passive: true});
 	}
 	//滚动滑轮触发scrollFunc方法
-	window.onmousewheel = document.onmousewheel = scrollFunc;  
+	window.onmousewheel = document.onmousewheel = scrollFunc;
 	//////////////////////////////////////////////////////////////////////
 	var startx, starty;
 	//获得角度

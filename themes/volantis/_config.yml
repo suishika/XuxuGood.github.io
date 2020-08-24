@@ -87,17 +87,9 @@ style:
 
 # 配色方案
 color:
-  light:
-    # 网站背景色
-    site_bg: '#f4f4f4'
-    # 网站背景上的文字
-    site_inner: '#555'
-    # 网站页脚文字
-    site_footer: '#666'
-    # 卡片背景色
-    card: '#fff'
-    # 卡片上的普通文字
-    text: '#444'
+  # ----
+  # 通用颜色
+  common:
     # 主题色
     theme: '#7C5246' # 主色系（浅蓝色系：#1BC3FB，灰色系：#7C5246，深蓝色系：#3E74C9）
     # 链接色
@@ -108,16 +100,35 @@ color:
     hover: '#ff5722'
     # 主题色块内部的文字颜色
     inner: '#fff'
+    # 选中区域文字的背景颜色
+    selection: 'alpha(#2196f3, 0.2)'
+  # ----
+  # 亮色主题（默认）
+  light:
+    # 网站背景色
+    site_bg: '#f4f4f4'
+    # 网站背景上的文字
+    site_inner: '#555'
+    # 网站页脚文字
+    site_footer: '#666'
+
+    # 卡片背景色
+    card: '#fff'
+    # 卡片上的普通文字
+    text: '#444'
+
     # 区块和代码块背景色
     block: '#f6f6f6'
     # 代码块高亮时的背景色
     codeblock: '#FFF7EA'
     # 行内代码颜色
     inlinecode: '#f6f6f6'
+
     # 首页向下滚动图标颜色
     scroll_down: '#44d7b6'
     # 向上滚动图标颜色
     scroll_up: '#fff'
+
     # 文章部分
     h1: '#444'
     h2: '#444'
@@ -126,8 +137,11 @@ color:
     h5: '#444'
     h6: '#444'
     p: '#555'
+
     list: '#666'
     meta: '#888'
+  # ----
+  # 暗色主题
   dark:
     # 网站背景色
     site_bg: '#222'
@@ -139,22 +153,14 @@ color:
     card: '#444'
     # 卡片上的普通文字
     text: '#eee'
-    # 主题色
-    theme: '#44D7B6'
-    # 链接色
-    link: '#2196f3'
-    # 按钮色
-    button: '#44D7B6'
-    # 鼠标放到交互元素上时的色
-    hover: '#ff5722'
-    # 主题色块内部的文字颜色
-    inner: '#fff'
+
     # 区块和代码块背景色
     block: '#3a3a3a'
     # 代码块高亮时的背景色
     codeblock: '#343a3c'
     # 行内代码颜色
     inlinecode: '#D56D28'
+
     # 文章部分
     h1: '#eee'
     h2: '#eee'
@@ -163,9 +169,10 @@ color:
     h5: '#ddd'
     h6: '#ddd'
     p: '#bbb'
+
     list: '#aaa'
     meta: '#888'
-    # 图片亮度
+    # 夜间图片亮度
     brightness: 70%
 
 # Navigation Bar
