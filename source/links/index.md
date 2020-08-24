@@ -242,6 +242,12 @@ links:
       backgroundColor: '#708090'
       textColor: '#fff'
       tags: [又菜又爱学]
+    - name: 极客猴
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/极客猴.png
+      url: https://geekmonkey.top/
+      backgroundColor: '#38B7EA'
+      textColor: '#fff'
+      tags: [Python, 数据分析, 认知]
 
   - group: 虐狗博主
     icon: fas fa-heartbeat
