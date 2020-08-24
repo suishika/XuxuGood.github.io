@@ -104,12 +104,6 @@ links:
       backgroundColor: '#967ADC'
       textColor: '#fff'
       tags: [前端]
-    - name: LarsCheng
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/LarsCheng.png
-      url: https://www.larscheng.com/
-      backgroundColor: '#34A853'
-      textColor: '#fff'
-      tags: [Java]
     - name: 框架师
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/框架师.jpg
       url: https://www.mobaijun.com
@@ -269,13 +263,13 @@ links:
     icon: fas fa-exclamation-triangle
     desc: 如贵站在该区请检查贵站是否能正常访问或是否违背了本站友链原则（例：未开启https）
     items:
-    - name: 暂无危险人员
-      avatar: /images/avatar1.jpg
-      url: https://hasaik.com/
-      backgroundColor: '#008B8B'
+    - name: LarsCheng
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/links/LarsCheng.png
+      url: https://www.larscheng.com/
+      backgroundColor: '#34A853'
       textColor: '#fff'
-      tags: [博观而约取，厚积而薄发。]
-      
+      tags: [Java] 
+
 ---
 ### 申请友链：
 {% tabs links,1 %}
