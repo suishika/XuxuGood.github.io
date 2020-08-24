@@ -6,7 +6,7 @@ thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-th
 abbrlink: 2b56997e
 date: 2020-01-07 10:13:18
 tags: [BUG]
-categories: [BUG]
+categories: [Java,BUG]
 keywords: [Illegal key size,InvalidKeyException]
 description: 异常：java.security.InvalidKeyException:Illegal key size.
 ---

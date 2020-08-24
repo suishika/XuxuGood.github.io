@@ -6,7 +6,7 @@ thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-th
 abbrlink: c4782247
 date: 2019-11-19 13:35:23
 tags: [Java,Base64]
-categories: [加密安全]
+categories: [Java,加密安全]
 keywords: [Java,Base64,Base64加密解密]
 description: Base 64主要用途不是加密，而是把一些二进制数转成普通字符，方便在网络上传输。 由于一些二进制字符在传输协议中属于控制字符，不能直接传送，所以需要转换一下才可以。由于某些系统中只能使用ASCII字符，Base64就是用来将非ASCII字符的数据转换成ASCII字符的一种方法，Base64特别适合在http，mime协议下快速传输数据。比如网络中图片的传输。
 ---
