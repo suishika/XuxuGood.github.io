@@ -126,7 +126,7 @@ comment:
 }
 
 .reward-row li::after {
-    margin-top: -10px;
+    margin-top: 10px;
     display: block;
     font-size: 13px;
     color: #121212;
