@@ -20,7 +20,7 @@
 	--color-h6: convert(hexo-config('color.dark.h6'))
 	--color-p: convert(hexo-config('color.dark.p'))
 	--color-list: convert(hexo-config('color.dark.list'))
-    --color-list-hl: convert(hexo-config('color.dark.list_hl'))
+	--color-list-hl: convert(hexo-config('color.dark.list_hl'))
 	--color-meta: convert(hexo-config('color.dark.meta'))
 
 
@@ -142,6 +142,8 @@
 	if hexo-config('plugins.aplayer.enable')
 		.aplayer
 			background: var(--color-site-bg)
+		.aplayer .aplayer-list ol li:hover
+			background: rgba($color-theme,.2)
 		.aplayer .aplayer-list ol li.aplayer-list-light
 			background: var(--color-block)
 		.aplayer-info
