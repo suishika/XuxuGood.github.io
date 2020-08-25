@@ -252,9 +252,9 @@ article:
   # 文章详情页面的文章卡片本体布局方案
   body:
     # 文章顶部信息
-    top_meta:
+    top_meta: [title, author, date, category, valinecount, wordcount]
     # ----------------
-    # 页脚组件
+    # 文章页脚组件
     footer_widget:
       # ----------------
       # 参考资料、相关资料等 (for layout: post/docs)
@@ -293,7 +293,7 @@ article:
           - https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/reward/AliPayQR.png
           - https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/reward/WeChatQR.png
     # 文章底部信息
-    bottom_meta:
+    bottom_meta: [updated, tags, btns, share]
 
 # 不久后将被其它设置替代
 layout:
@@ -311,7 +311,7 @@ tag_plugins:
 meta:
   # 文章标题
   title: # 暂无配置
-  # 默认文章作者（可在front-matter中覆盖）
+  # 默认文章作者（可在 front-matter 中覆盖）
   author:
     avatar: https://hasaik.com/images/avatar.jpg
     name: 'Mr. X'
@@ -868,7 +868,7 @@ search:
 
 analytics:
   busuanzi: https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
-  leancloud:
+  leancloud: # 请使用自己的 id & key 以防止数据丢失
     app_id: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz
     app_key: 7xvFncnnyG2QI60iDY3E4PuO
     custom_api_server: # 一般不需要写，除非自定义了 API Server
@@ -876,7 +876,7 @@ analytics:
 ############################### 主题信息 ###############################
 info:
   name: Volantis # This is theme's name.
-  version: '3.0.0' # This is theme's version.
+  version: '4.0.0-beta.2' # This is theme's version.
   docs: https://volantis.js.org/ # This is theme's URL.
   repo: https://github.com/volantis-x/hexo-theme-volantis
   cdn:

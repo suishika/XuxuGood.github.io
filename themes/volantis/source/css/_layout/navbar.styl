@@ -34,6 +34,7 @@
     .nav-sub
       trans()
       opacity: 0
+      height: $navbar-height
       width: "calc(100% - 2 * %s)" % $gap
       position: absolute
       @media screen and (min-width: $device-2k)
@@ -194,11 +195,16 @@
         width: 100%
         .input
           width: "calc(100% - %s)" % (3 * $gap + 2 * $iconW)
-
+ul.m-pc
+  >li>a
+    color: inherit
+    &:active,&.active
+      border-bottom: 2px solid $color-theme
 ul.m-pc,ul.list-v
   li:hover
     >ul.list-v
       display: block
+
 
 ul.nav-list-h
   display: flex
@@ -207,6 +213,9 @@ ul.nav-list-h
   &>li
     position: relative
     justify-content: center
+    height: 100%
+    line-height: 2.4
+    border-radius: $border-button
     >a
       height: 100%
       -webkit-font-smoothing: antialiased
@@ -259,12 +268,7 @@ ul.list-v
     text-overflow: ellipsis
     >i
       margin-right: 8px
-    &.current
-      border-left-color: alpha($color-theme, 80%)
-      border-bottom-color: alpha($color-theme, 80%)
     &:active,&.active
-      border-left-color: $color-theme
-      border-bottom-color: $color-theme
       list_active()
     &:hover
       list_hover()

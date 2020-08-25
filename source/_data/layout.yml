@@ -6,14 +6,8 @@ on_list:
 on_page:
   # 文章页面主体元素，你也可以在页面的Front-matter中设置
   body: [article, comments]
-  # 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示
-  # 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示
-  # 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）
-  meta:
-    header: [title, author, date, category, valinecount, wordcount]
-    footer: [updated, tags, btns, share]
   # 文章页面的侧边栏
-  sidebar: [blogger, toc, related_posts]
+  sidebar: [blogger, toc]
 ## 文章布局，参数继承自 on_page
 #on_post:
 #  # 文章页脚，自动在每一篇文章末尾添加
