@@ -1,189 +1,19 @@
-############################### Style ###############################
-style:
-  cursor:
-    enable: true
-    text: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/texto.cur
-    pointer: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/ayuda.cur
-    default: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/normal.cur
-    not-allowed:  https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/circle.png
-    zoom-out:  https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/zoom-out.png
-    zoom-in:  https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/zoom-in.png
-    grab:  https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/openhand.png
-  font_smoothing: true # font-smoothing for webkit
-  max_width: 1180px # Sum of body width and sidebar width (This limit will be exceeded when the device width is greater than 2000px, reaching 75% of the total width)
-  scrollbar:
-    size: 4px
-    border: 2px
-  navbar:
-    height: 56px
-    width: auto # auto, max
-    effect: [shadow, blur] # [shadow, floatable, blur]
-  sidebar:
-    effect: [shadow, floatable] # [shadow, floatable, blur]
-  body:
-    effect: [shadow, floatable] # [shadow, floatable, blur]
-    highlight:
-      language: true # 显示代码块的语言
-      copy_btn: true
-      grayscale: false # 启用灰度效果
-    text_align: # left, right, justify, center
-      h1: left
-      h2: left
-      h3: left
-      h4: left
-      p: justify
-    note: # style for default note: {% note text %}
-      icon: '\f054'
-      color: ''
-    checkbox:
-      enable: true # enable for user
-      color: '' # color for default checkbox
-  gap:
-    h2: 48px # Spacing above H2 (only px unit)
-    h3: 24px # Spacing above H3 (only px unit)
-    h4: 16px # Spacing above H4 (only px unit)
-    paragraph: 1rem # Paragraph spacing between paragraphs
-    row: .5rem # Paragraph spacing between other elements
-    line_height: 1.65 # normal, 1.5, 1.75, 2 ...
-  border_radius:
-    card: 8px
-    codeblock: 4px
-    searchbar: 8px
-    button: 4px
-  fontsize:
-    root: 16px
-    h1: 1.625rem
-    h2: 1.5rem
-    h3: 1.25rem
-    h4: 1.125rem
-    h5: 1rem
-    h6: 1rem
-    body: 1rem
-    list: .9375rem
-    meta: .875rem
-    code: .8125rem
-    footnote: .75rem
-  fontfamily:
-    logofont:
-      fontfamily: '"Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
-      name: 'Varela Round'
-      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
-      weight: normal
-      style: normal
-    bodyfont:
-      fontfamily: 'UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
-      name: 'UbuntuMono'
-      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
-      weight: normal
-      style: normal
-    codefont:
-      fontfamily: 'Menlo, UbuntuMono, Monaco'
-      name: 'Monaco'
-      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/Monaco/Monaco.ttf
-      weight: normal
-      style: normal
-    iconfont:
-      fontfamily: 'Font Awesome 5 Free'
+############################### Volantis ###############################
+info:
+  theme: Volantis # This is theme's name.
+  version: '4.0.0-beta.2' # This is theme's version.
+  docs: https://volantis.js.org/ # This is theme's URL.
+  repo: https://github.com/volantis-x/hexo-theme-volantis
+  cdn:
+    js:
+    css:
+#
+# 从 v4 开始不再支持数据文件，全部的自定义设置请写在 _config.volantis.yml 中
+#
+########################################################################
 
-# 配色方案
-color:
-  # ----
-  # 通用颜色
-  common:
-    # 主题色
-    theme: '#7C5246' # 主色系（浅蓝色系：#1BC3FB，灰色系：#7C5246，深蓝色系：#3E74C9）
-    # 链接色
-    link: '#2196f3' # 链接颜色（蓝色系：#2196f3，灰色系：#7C5246，深蓝色系：#3E74C9）
-    # 按钮色
-    button: '#44D7B6'
-    # 鼠标放到交互元素上时的色
-    hover: '#ff5722'
-    # 主题色块内部的文字颜色
-    inner: '#fff'
-    # 选中区域文字的背景颜色
-    selection: 'alpha(#2196f3, 0.2)'
-  # ----
-  # 亮色主题（默认）
-  light:
-    # 网站背景色
-    site_bg: '#f4f4f4'
-    # 网站背景上的文字
-    site_inner: '#555'
-    # 网站页脚文字
-    site_footer: '#666'
 
-    # 卡片背景色
-    card: '#fff'
-    # 卡片上的普通文字
-    text: '#444'
-
-    # 区块和代码块背景色
-    block: '#f6f6f6'
-    # 代码块高亮时的背景色
-    codeblock: '#FFF7EA'
-    # 行内代码颜色
-    inlinecode: '#f6f6f6'
-
-    # 首页向下滚动图标颜色
-    scroll_down: '#44d7b6'
-    # 向上滚动图标颜色
-    scroll_up: '#fff'
-
-    # 文章部分
-    h1: '#444'
-    h2: '#444'
-    h3: '#444'
-    h4: '#444'
-    h5: '#444'
-    h6: '#444'
-    p: '#555'
-
-    # 列表文字
-    list: '#666'
-    # 列表 hover 时的文字
-    list_hl: 'mix($color-theme, #000, 80)'
-    # 辅助性文字
-    meta: '#888'
-  # ----
-  # 暗色主题
-  dark:
-    # 网站背景色
-    site_bg: '#222'
-    # 网站背景上的文字
-    site_inner: '#eee'
-    # 网站页脚文字
-    site_footer: '#eee'
-    # 卡片背景色
-    card: '#444'
-    # 卡片上的普通文字
-    text: '#eee'
-
-    # 区块和代码块背景色
-    block: '#3a3a3a'
-    # 代码块高亮时的背景色
-    codeblock: '#343a3c'
-    # 行内代码颜色
-    inlinecode: '#D56D28'
-
-    # 文章部分
-    h1: '#eee'
-    h2: '#eee'
-    h3: '#ddd'
-    h4: '#ddd'
-    h5: '#ddd'
-    h6: '#ddd'
-    p: '#bbb'
-
-    # 列表文字
-    list: '#aaa'
-    # 列表 hover 时的文字
-    list_hl: 'mix($color-theme, #fff, 80)'
-    # 辅助性文字
-    meta: '#888'
-    # 夜间图片亮度
-    brightness: 70%
-
-# Navigation Bar
+############################### Navigation Bar ############################### > start
 navbar:
   visiable: auto # always, auto
   logo: # choose [img] or [icon + title]
@@ -191,12 +21,74 @@ navbar:
     icon: fas fa-dragon
     title: Xu's Blog
   menu:
-  # The following can be written in `blog/source/_data/menu.yml`
-  # 配置移步到`blog/source/_data/menu.yml`文件中
+    - name: 主页
+      icon: fas fa-home faa-tada
+      url: /
+    - name: 找文章
+      icon: fas fa-tasks
+      rows:
+        - name: 归档
+          icon: fas fa-archive faa-tada
+          url: archives/
+        - name: 分类
+          icon: fas fa-folder-open faa-tada
+          url: categories/
+        - name: 标签
+          icon: fas fa-tags faa-tada
+          url: tags/
+    - name: 朋友
+      icon: fas fa-link faa-tada
+      url: links/
+    - name: 关于
+      icon: fas fa-info-circle faa-tada
+      url: about/
+    #- name: 说说
+    #  icon: fas fa-laugh-wink faa-tada
+    #  url: shuoshuo/
+    - name: 留言
+      icon: fas fa-comments faa-tada
+      url: comments/
+    - name: 开往
+      icon: fas fa-paper-plane faa-tada
+      url: https://travellings.now.sh
+    - name: 更多
+      #  icon: fas fa-ellipsis-v fa-spin
+      icon: fas fa-fan fa-spin
+      rows:
+        - name: 我的相册
+          icon: fas fa-camera-retro faa-tada
+          url: photos/
+        - name: 我的简历
+          icon: fas fa-drafting-compass faa-tada
+          url: resume/
+        - name: 评论管理
+          icon: fas fa-comments faa-tada
+          url: https://gycuzerwzfyu.leanapp.cn/
+          rel: external nofollow noopener noreferrer
+          target: _blank
+        - name: hr
+        - name: 实用工具
+          icon: fas fa-cog faa-tada
+          url: tools/
+        - name: 围住小猫
+          icon: fas fa-cat faa-tada
+          url: catchTheCat/
+      #- name: 近期
+      #  icon: fas fa-clock
+      #  rows:
+      #    - name: 热门文章
+      #      icon: fas fa-fire
+      #    - name: ProHUD 开源库的设计思路
+      #      url: blog/2019-08-27-prohud/
+      #    - name: ValueX：实用的安全对象类型转换库
+      #      url: blog/2019-08-29-valuex/
+      #    - name: 心率管家 App 的设计与开发
+      #      url: blog/2019-07-23-heartmate/
   search: 搜索...(◕ܫ◕)   # Search bar placeholder
+############################### Navigation Bar ############################### > end
 
 
-############################### Layout ###############################
+############################### Cover ############################### > start
 cover:
   use_for: docs # docs, blog
   scheme: featured # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
@@ -233,7 +125,10 @@ cover:
 #      img: https://i.loli.net/2020/07/24/GaeXvVAdtJkCYT3.png
 #      rel: external nofollow noopener noreferrer
 #      target: _blank
+############################### Cover ############################### > end
 
+
+############################### Article Layout ############################### > start
 # 文章布局
 article:
   # 文章列表页面的文章卡片布局方案
@@ -252,6 +147,7 @@ article:
   # 文章详情页面的文章卡片本体布局方案
   body:
     # 文章顶部信息
+    # 从 meta_library 中取
     top_meta: [title, author, date, category, valinecount, wordcount]
     # ----------------
     # 文章页脚组件
@@ -293,203 +189,326 @@ article:
           - https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/reward/AliPayQR.png
           - https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/reward/WeChatQR.png
     # 文章底部信息
+    # 从 meta_library 中取
     bottom_meta: [updated, tags, btns, share]
+    # meta library
+    meta_library:
+      # 文章标题
+      title: # 暂无配置
+      # 默认文章作者（可在 front-matter 中覆盖）
+      author:
+        avatar: https://hasaik.com/images/avatar.jpg
+        name: 'Mr. X'
+        url: /
+      # 文章创建日期
+      date:
+        icon: fas fa-calendar-alt
+        title: '发布于：'
+        format: 'YYYY-MM-DD' # 日期格式 http://momentjs.com/docs/
+      # 文章更新日期
+      updated:
+        icon: fas fa-edit
+        title: '更新于：'
+        format: 'YYYY-MM-DD' # 日期格式 http://momentjs.com/docs/
+      # 文章分类
+      category:
+        icon: fas fa-folder-open
+      # 文章浏览计数
+      counter:
+        icon: fas fa-eye
+        unit: '次浏览'
+      # 文章评论数量：只支持 valine
+      valinecount:
+        icon: fas fa-comment-dots
+        desc: '条评论'
+      # 文章字数和阅读时长
+      wordcount:
+        icon_wordcount: fas fa-keyboard
+        icon_duration: fas fa-hourglass-half
+      # 文章标签
+      tags:
+        icon: fas fa-hashtag
+      # 分享
+      share:
+        - id: qq
+          img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png
+        - id: qzone
+          img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png
+        - id: weibo
+          img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png
+        - id: qrcode # 当id为qrcode时需要安装插件  npm i hexo-helper-qrcode
+          img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png
+        - id: telegram
+          img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png
+############################### Article Layout ############################### > end
 
-# 不久后将被其它设置替代
-layout:
-# The following can be written in `blog/source/_data/layout.yml`
-# 配置移步到`blog/source/_data/layout.yml`文件中
 
+############################### Comments ############################### > start
+comments:
+  path:  # 全局评论地址 仅支持 valine , miniValine , disqus , gitalk
+  placeholder: 粘贴图片到此处可以自动上传，填写邮箱可以收到邮件回复哦(●'◡'●)  # 评论占位提示 仅支持 valine & miniValine
+  title: <i class='fas fa-comments'></i> 用户交流区
+  subtitle: '温馨提示: 遵纪守法, 友善评论!'
+  service: valine # valine, minivaline, disqus, gitalk, vssue, livere, isso
+  # Valine
+  # https://valine.js.org/
+  valine:
+    appId: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz # your appId
+    appKey: 7xvFncnnyG2QI60iDY3E4PuO # your appKey
+    js: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogJs/Valine.min.js
+    meta: nick,mail,link # valine comment header info
+    requiredFields: ['nick','mail']
+    enableQQ: true # Unstable avatar link
+    avatar: monsterid # gravatar style https://valine.js.org/avatar
+    pageSize: 10 # comment list page size
+    lang: zh-cn
+    highlight: true
+    visitor: true
+    mathJax: false
+    tagMeta: '博主,小伙伴,访客' # 标签要显示的文字,默认'博主,小伙伴,访客'
+    master: #md5加密后的博主邮箱
+      - 6a565e6c47127afdd40d5d46089db2c5
+    friends: #md5加密后的小伙伴邮箱
+      - d32d39c8e126512382ee4b831a8f8002 # 自己
+      - d06adebbcbaa24413cc1b53dc8576ed0 # Uncle_drew
+      - ab2579686cf0e99e1ba40a932e0400f5 # 萌卜兔
+      - e846889207767f93e049a14a29a12d55 # Hunter
+      - 3f96b7b64421af2309f48ce09f483e00 # 玖月
+      - 36937ffd56ac7ac077c3e2dceae74dc5 # nomar
+      - 00fdb1c48ae14c86afce12a8f9fc3d77 # ZZONN
+      - fde3448b9705037f2021664c8b8e6cb1 # dna049
+      - dd04aab66ee54f77e80e8a7781a3e8e2 # L1n
+      - 35d7010131d4f17efe9842174c3c1c2c # hongcyu
+      - ee307e1162191d9120f967483af6d490 # LHJ
+      - 15f39db75e8624d52353ae6943eb66ca # 墨白
+      - 187c2861161c500c97a69290c89b5526 # Qcmoke
+      - 876272e6ce1dd1059dabdc871f59d251 # Ray
+      - 9be62391e297826516364374435f758c # Bore’s Notes
+      - e086f9ab51f37cb606fc6378c36cd9aa # Sanarous
+      - e8b473e9af0f2718265c88b809a0a7b2 # BooLo
+      - 3ce1e6c77b4910f1871106cb30dc62b0 # 枋柚梓
+      - 28b57baa4e8f13fe4292ccb2de267e30 # 杜老师说
+      - 3c915d7f53fe9ae72235eb188968ad86 # XTAO’s Tech Blog
+      - 3e440f8724c5acd24d0a4fab6eb6a6d1 # PaddyLin’s blog
+
+  # MiniValine
+  # https://github.com/MiniValine/MiniValine
+  minivaline:
+    appId: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz # your appId
+    appKey: 7xvFncnnyG2QI60iDY3E4PuO # your appKey
+    js: https://cdn.jsdelivr.net/npm/minivaline@3/dist/MiniValine.min.js
+    mode: xCss # DesertsP or xCss
+    math: false # Support MathJax.
+    md: true # Support Markdown.
+    enableQQ: false # Enable QQ avatar API.
+    NoRecordIP: true # Do not record commenter IP.
+    closeFlag: false
+    closeUA: false
+    region: false
+    visitor: false # Article reading statistics.
+    maxNest: 6 # Sub-comment maximum nesting depth.
+    pageSize: 6 # Pagination size.
+    barrager: 0
+    role: admin
+    cloudflag: false
+    adminEmailMd5: de8a7aa53d07e6b6bceb45c64027763d # The MD5 of Admin Email to show Admin Flag.[ Just Only DesertsP Style mode]
+    tagMeta: # The String Array of Words to show Flag.[ Just Only xCss Style mode]
+      - 管理员
+      - 小伙伴
+      - 访客
+    master: # The MD5 String Array of master Email to show master Flag.[ Just Only xCss Style mode]
+      - de8a7aa53d07e6b6bceb45c64027763d
+    friends: # The MD5 String Array of friends Email to show friends Flag. [ Just Only xCss Style mode]
+      - b5bd5d836c7a0091aa8473e79ed4c25e
+      - adb7d1cd192658a55c0ad22a3309cecf
+      - 3ce1e6c77b4910f1871106cb30dc62b0
+      - cfce8dc43725cc14ffcd9fb4892d5bfc
+    # MiniValine's display language depends on user's browser or system environment
+    # If you want everyone visiting your site to see a uniform language, you can set a force language value
+    # Available values: en  | zh-CN | (and many more)
+    # More i18n info: https://github.com/MiniValine/minivaline-i18n
+    lang:
+    # Expression Url.
+    # https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-customize-emoticons
+    emoticonUrl:
+      - https://cdn.jsdelivr.net/npm/alus@latest
+      - https://cdn.jsdelivr.net/gh/MiniValine/qq@latest
+      - https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest
+      - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
+      - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
+      - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
+  # Disqus
+  # https://disqus.com
+  disqus:
+    shortname:
+    # optional
+    autoload: false
+  # Gitalk
+  # https://gitalk.github.io/
+  gitalk:
+    clientID:
+    clientSecret:
+    repo:
+    owner:
+    admin: # []
+  # Vssue
+  # https://vssue.js.org/zh/
+  vssue:
+    owner:
+    repo:
+    clientId:
+    clientSecret:
+  # LiveRe
+  # https://www.livere.com
+  livere:
+    uid:
+  # Isso
+  # https://posativ.org/isso/
+  isso:
+    url: https://example.com/(path/)
+    src: https://example.com/(path/)js/embed.min.js
+  # HashOver
+  # https://www.barkdull.org/software/hashover
+  hashover:
+    src: https://example.com/(path/)comments.php
+############################### Comments ############################### > end
+
+
+############################### Sidebar ############################### > start
+sidebar:
+  # 主页、分类、归档等独立页面
+  for_page: [blogger, announcement, webinfo, category, tagcloud]
+  # layout: docs/post 这类文章页面
+  for_post: [blogger, toc]
+  # 侧边栏组件库
+  widget_library:
+    # ---------------------------------------
+    # blogger info widget
+    blogger:
+      class: blogger
+      display: [desktop, mobile] # [desktop, mobile]
+      avatar: /images/avatar.jpg
+      shape: rectangle # circle, rectangle
+      url: /about/
+      title: ·银河小徐
+      subtitle:
+      jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
+      social: true
+    # ---------------------------------------
+    # toc widget (valid only in articles)
+    toc:
+      class: toc
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-list
+        title: 本文目录
+      list_number: true
+      min_depth: 2
+      max_depth: 6
+    # ---------------------------------------
+    # category widget
+    category:
+      class: category
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-folder-open
+        linkIcon: fas fa-expand-arrows-alt fa-spin # 小组件链接图标
+        title: 文章分类
+        url: /categories/
+    # ---------------------------------------
+    # tagcloud widget
+    tagcloud:
+      class: tagcloud
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-tags
+        linkIcon: fas fa-expand-arrows-alt fa-spin # 小组件链接图标
+        title: 热门标签
+        url: /tags/
+      min_font: 14
+      max_font: 24
+      color: true
+      start_color: '#999'
+      end_color: '#555'
+    # ---------------------------------------
+    # qrcode widget
+    donate:
+      class: qrcode
+      display: [desktop, mobile] # [desktop, mobile]
+      height: 64px  # Automatic height if not set
+      fancybox: true
+      images:
+        - https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/reward/AliPayQR.png
+        - https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/reward/WeChatQR.png
+    # ---------------------------------------
+    # webinfo widget
+    webinfo:
+      class: webinfo
+      display: [desktop, mobile]
+      header:
+        icon: fas fa-award
+        title: 站点信息
+      type:
+        article:
+          enable: true
+          text: '文章数目：'
+          unit: '篇'
+        runtime:
+          enable: true
+          data: '2019/10/09'    # 填写建站日期
+          text: '已运行时间：'
+          unit: '天'
+        wordcount:
+          enable: true
+          text: '本站总字数：'   # 需要启用 wordcount
+          unit: '字'
+        siteuv:
+          enable: true
+          text: '本站访客数：'   # 需要启用 busuanzi
+          unit: '人'
+        sitepv:
+          enable: true
+          text: '本站总访问量：' # 需要启用 busuanzi
+          unit: '次'
+        lastupd:
+          enable: true
+          friendlyShow: true    # 更友好的时间显示
+          text: '最后活动时间：'
+          unit: '日'
+    announcement:
+      class: text
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-bullhorn
+        title: 公告
+      content:
+        - ':bell: 页面细节持续优化中'
+        - ':bell: 希望各位朋友们也能给出点美化建议'
+        - ':bell: 本站默认替换了右键菜单，唤醒原系统菜单：<kbd>Ctrl</kbd> + <kbd>右键</kbd> ~'
+        - ':bell: 本站于 2020/07/14/ 由 [Next](https://hexo-theme-next.netlify.app/) 主题更换为 [Volantis](https://volantis.js.org/) 主题，故关于 Next 主题的文章效果展示可能有些变化，请见谅'
+############################### Sidebar ############################### > end
+
+
+############################### Tag Plugins ############################### > start
 # 内置标签插件的配置
 tag_plugins:
-  # 外链卡片
+  # {% note text %}
+  note: # style for default note:
+    icon: '\f054'
+    color: ''
+    iconfont: 'Font Awesome 5 Free'
+  # {% checkbox %}
+  checkbox:
+    interactive: true # enable interactive for user
+    color: '' # color for default checkbox
+  # {% link title, url, img %}
   link:
     placeholder: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png
+############################### Tag Plugins ############################### > end
 
 
-# meta library
-meta:
-  # 文章标题
-  title: # 暂无配置
-  # 默认文章作者（可在 front-matter 中覆盖）
-  author:
-    avatar: https://hasaik.com/images/avatar.jpg
-    name: 'Mr. X'
-    url: /
-  # 文章创建日期
-  date:
-    icon: fas fa-calendar-alt
-    title: '发布于：'
-    format: 'YYYY-MM-DD' # 日期格式 http://momentjs.com/docs/
-  # 文章更新日期
-  updated:
-    icon: fas fa-edit
-    title: '更新于：'
-    format: 'YYYY-MM-DD' # 日期格式 http://momentjs.com/docs/
-  # 文章分类
-  category:
-    icon: fas fa-folder-open
-  # 文章浏览计数
-  counter:
-    icon: fas fa-eye
-    unit: '次浏览'
-  # 文章评论数量：只支持 valine
-  valinecount:
-    icon: fas fa-comment-dots
-    desc: '条评论'
-  # 文章字数和阅读时长
-  wordcount:
-    icon_wordcount: fas fa-keyboard
-    icon_duration: fas fa-hourglass-half
-  # 文章标签
-  tags:
-    icon: fas fa-hashtag
-  # 分享
-  share:
-    - id: qq
-      img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png
-    - id: qzone
-      img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png
-    - id: weibo
-      img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png
-    - id: qrcode # 当id为qrcode时需要安装插件  npm i hexo-helper-qrcode
-      img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png
-    - id: telegram
-      img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png
-  # 链接
-  btns:
-    edit:
-      icon: fas fa-edit
-      title: 在GitHub上编辑此页
-      color: '#888'
-    repo: # 源码链接
-      icon: fas fa-file-code
-      title: 源码
-      color: '#508EF2'
-    bug: # BUG反馈链接
-      icon: fas fa-bug
-      title: BUG
-      color: '#FE5F58'
-    doubt: # 疑问链接
-      icon: fas fa-question-circle
-      title: 疑问
-      color: '#FFBD2B'
-    idea: # 建议链接
-      icon: fas fa-lightbulb
-      title: 建议
-      color: '#3DC550'
-    faq: # FAQ链接
-      icon: fas fa-comments
-      title: FAQ
-      color: '#29B1C9'
-    feedback: # 反馈链接
-      icon: fas fa-comment-dots
-      title: 反馈
-      color: '#1BCDFC'
-
-# widget library
-widget:
-  # The following can be written in `blog/source/_data/widget.yml`
-  # ---------------------------------------
-  # blogger info widget
-  blogger:
-    class: blogger
-    display: [desktop, mobile] # [desktop, mobile]
-    avatar: /images/avatar.jpg
-    shape: rectangle # circle, rectangle
-    url: /about/
-    title: ·银河小徐
-    subtitle:
-    jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
-    social: true
-  # ---------------------------------------
-  # toc widget (valid only in articles)
-  toc:
-    class: toc
-    display: [desktop, mobile] # [desktop, mobile]
-    header:
-      icon: fas fa-list
-      title: 本文目录
-    list_number: true
-    min_depth: 2
-    max_depth: 6
-  # ---------------------------------------
-  # category widget
-  category:
-    class: category
-    display: [desktop, mobile] # [desktop, mobile]
-    header:
-      icon: fas fa-folder-open
-      linkIcon: fas fa-expand-arrows-alt fa-spin # 小组件链接图标
-      title: 文章分类
-      url: /categories/
-  # ---------------------------------------
-  # tagcloud widget
-  tagcloud:
-    class: tagcloud
-    display: [desktop, mobile] # [desktop, mobile]
-    header:
-      icon: fas fa-tags
-      linkIcon: fas fa-expand-arrows-alt fa-spin # 小组件链接图标
-      title: 热门标签
-      url: /tags/
-    min_font: 14
-    max_font: 24
-    color: true
-    start_color: '#999'
-    end_color: '#555'
-  # ---------------------------------------
-  # qrcode widget
-  donate:
-    class: qrcode
-    display: [desktop, mobile] # [desktop, mobile]
-    height: 64px  # Automatic height if not set
-    fancybox: true
-    images:
-      - https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/reward/AliPayQR.png
-      - https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/reward/WeChatQR.png
-  # ---------------------------------------
-  # webinfo widget
-  webinfo:
-    class: webinfo
-    display: [desktop, mobile]
-    header:
-      icon: fas fa-award
-      title: 站点信息
-    type:
-      article:
-        enable: true
-        text: '文章数目：'
-        unit: '篇'
-      runtime:
-        enable: true
-        data: '2019/10/09'    # 填写建站日期
-        text: '已运行时间：'
-        unit: '天'
-      wordcount:
-        enable: true
-        text: '本站总字数：'   # 需要启用 wordcount
-        unit: '字'
-      siteuv:
-        enable: true
-        text: '本站访客数：'   # 需要启用 busuanzi
-        unit: '人'
-      sitepv:
-        enable: true
-        text: '本站总访问量：' # 需要启用 busuanzi
-        unit: '次'
-      lastupd:
-        enable: true
-        friendlyShow: true    # 更友好的时间显示
-        text: '最后活动时间：'
-        unit: '日'
-
-  # You can add your own widget here or 'blog/source/_data/widget.yml'
-  # class: text, list, grid, qrcode, page, ... see more at https://volantis.js.org/
-
-
-
-footer:
+############################### Site Footer ############################### > start
+site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
   layout: [aplayer, social]
   social:
@@ -521,24 +540,9 @@ footer:
   copyright: "Copyright © 2019-2020 [Xu's Blog](/)"
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
+############################### Site Footer ############################### > end
 
-
-############################### SEO ###############################
-seo:
-  # When there are no keywords in the article's front-matter, use tags as keywords.
-  use_tags_as_keywords: true
-  # When there is no description in the article's front-matter, use excerpt as the description.
-  use_excerpt_as_description: true
-  robots:
-    home_first_page: index,follow
-    home_other_pages: noindex,follow
-    archive: noindex,follow
-    category: noindex,follow
-    tag: noindex,follow
-    # robots can be written in front-matter
-
-
-############################### Plugins ###############################
+############################### Plugins ############################### > start
 plugins:
   ################ required plugins ################
   # jquery
@@ -681,139 +685,10 @@ plugins:
       buttonDark: '#bbb'
       buttonLight: '#444'
     compatible: true # 卡片兼容性处理，如果未发现卡片出现兼容问题设置为false
+############################### Plugins ############################### > end
 
-
-############################### Comments ###############################
-comments:
-  path:  # 全局评论地址 仅支持 valine , miniValine , disqus , gitalk
-  placeholder: 粘贴图片到此处可以自动上传，填写邮箱可以收到邮件回复哦(●'◡'●)  # 评论占位提示 仅支持 valine & miniValine
-  title: <i class='fas fa-comments'></i> 用户交流区
-  subtitle: '温馨提示: 遵纪守法, 友善评论!'
-  service: valine # valine, minivaline, disqus, gitalk, vssue, livere, isso
-  # Valine
-  # https://valine.js.org/
-  valine: # 请将 appId appKey 修改为自己的，否则评论数据是共享的。
-    appId: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz # your appId
-    appKey: 7xvFncnnyG2QI60iDY3E4PuO # your appKey
-    js: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogJs/Valine.min.js
-    meta: nick,mail,link # valine comment header info
-    requiredFields: ['nick','mail']
-    enableQQ: true # Unstable avatar link
-    avatar: monsterid # gravatar style https://valine.js.org/avatar
-    pageSize: 10 # comment list page size
-    lang: zh-cn
-    highlight: true
-    visitor: true
-    mathJax: false
-    tagMeta: '博主,小伙伴,访客' # 标签要显示的文字,默认'博主,小伙伴,访客'
-    master: #md5加密后的博主邮箱
-      - 6a565e6c47127afdd40d5d46089db2c5
-    friends: #md5加密后的小伙伴邮箱
-      - d32d39c8e126512382ee4b831a8f8002 # 自己
-      - d06adebbcbaa24413cc1b53dc8576ed0 # Uncle_drew
-      - ab2579686cf0e99e1ba40a932e0400f5 # 萌卜兔
-      - e846889207767f93e049a14a29a12d55 # Hunter
-      - 3f96b7b64421af2309f48ce09f483e00 # 玖月
-      - 36937ffd56ac7ac077c3e2dceae74dc5 # nomar
-      - 00fdb1c48ae14c86afce12a8f9fc3d77 # ZZONN
-      - fde3448b9705037f2021664c8b8e6cb1 # dna049
-      - dd04aab66ee54f77e80e8a7781a3e8e2 # L1n
-      - 35d7010131d4f17efe9842174c3c1c2c # hongcyu
-      - ee307e1162191d9120f967483af6d490 # LHJ
-      - 15f39db75e8624d52353ae6943eb66ca # 墨白
-      - 187c2861161c500c97a69290c89b5526 # Qcmoke
-      - 876272e6ce1dd1059dabdc871f59d251 # Ray
-      - 9be62391e297826516364374435f758c # Bore’s Notes
-      - e086f9ab51f37cb606fc6378c36cd9aa # Sanarous
-      - e8b473e9af0f2718265c88b809a0a7b2 # BooLo
-      - 3ce1e6c77b4910f1871106cb30dc62b0 # 枋柚梓
-      - 28b57baa4e8f13fe4292ccb2de267e30 # 杜老师说
-      - 3c915d7f53fe9ae72235eb188968ad86 # XTAO’s Tech Blog
-      - 3e440f8724c5acd24d0a4fab6eb6a6d1 # PaddyLin’s blog
-
-  # MiniValine
-  # https://github.com/MiniValine/MiniValine
-  minivaline:
-    appId: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz # your appId
-    appKey: 7xvFncnnyG2QI60iDY3E4PuO # your appKey
-    js: https://cdn.jsdelivr.net/npm/minivaline@3/dist/MiniValine.min.js
-    mode: xCss # DesertsP or xCss
-    math: false # Support MathJax.
-    md: true # Support Markdown.
-    enableQQ: false # Enable QQ avatar API.
-    NoRecordIP: true # Do not record commenter IP.
-    closeFlag: false
-    closeUA: false
-    region: false
-    visitor: false # Article reading statistics.
-    maxNest: 6 # Sub-comment maximum nesting depth.
-    pageSize: 6 # Pagination size.
-    barrager: 0
-    role: admin
-    cloudflag: false
-    adminEmailMd5: de8a7aa53d07e6b6bceb45c64027763d # The MD5 of Admin Email to show Admin Flag.[ Just Only DesertsP Style mode]
-    tagMeta: # The String Array of Words to show Flag.[ Just Only xCss Style mode]
-      - 管理员
-      - 小伙伴
-      - 访客
-    master: # The MD5 String Array of master Email to show master Flag.[ Just Only xCss Style mode]
-      - de8a7aa53d07e6b6bceb45c64027763d
-    friends: # The MD5 String Array of friends Email to show friends Flag. [ Just Only xCss Style mode]
-      - b5bd5d836c7a0091aa8473e79ed4c25e
-      - adb7d1cd192658a55c0ad22a3309cecf
-      - 3ce1e6c77b4910f1871106cb30dc62b0
-      - cfce8dc43725cc14ffcd9fb4892d5bfc
-    # MiniValine's display language depends on user's browser or system environment
-    # If you want everyone visiting your site to see a uniform language, you can set a force language value
-    # Available values: en  | zh-CN | (and many more)
-    # More i18n info: https://github.com/MiniValine/minivaline-i18n
-    lang:
-    # Expression Url.
-    # https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-customize-emoticons
-    emoticonUrl:
-      - https://cdn.jsdelivr.net/npm/alus@latest
-      - https://cdn.jsdelivr.net/gh/MiniValine/qq@latest
-      - https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest
-      - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
-      - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
-      - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
-  # Disqus
-  # https://disqus.com
-  disqus:
-    shortname:
-    # optional
-    autoload: false
-  # Gitalk
-  # https://gitalk.github.io/
-  gitalk:
-    clientID:
-    clientSecret:
-    repo:
-    owner:
-    admin: # []
-  # Vssue
-  # https://vssue.js.org/zh/
-  vssue:
-    owner:
-    repo:
-    clientId:
-    clientSecret:
-  # LiveRe
-  # https://www.livere.com
-  livere:
-    uid:
-  # Isso
-  # https://posativ.org/isso/
-  isso:
-    url: https://example.com/(path/)
-    src: https://example.com/(path/)js/embed.min.js
-  # HashOver
-  # https://www.barkdull.org/software/hashover
-  hashover:
-    src: https://example.com/(path/)comments.php
-
-
-############################### 自定义右键菜单 ###############################
+############################### Rightmenu ############################### > start
+# 自定义右键菜单
 rightmenu:
   enable: true
   # hr: 分割线, music: 音乐控制器
@@ -844,8 +719,10 @@ rightmenu:
     name: 围住小猫
     icon: fas fa-cat
     url: catchTheCat/
+############################### Rightmenu ############################### > end
 
-############################### Search ###############################
+
+############################### Search ############################### > start
 # To use hexo search, you need to install the following plugins:
 # npm i hexo-generator-search hexo-generator-json-content
 search:
@@ -865,25 +742,216 @@ search:
     queryKey:
   baidu:
     apiId:
+############################### Search ############################### > end
 
+
+############################### Color Scheme ############################### > start
+color_scheme:
+  # ------------
+  # 通用颜色
+  common:
+    # 主题色
+    theme: '#7C5246' # 主色系（浅蓝色系：#1BC3FB，灰色系：#7C5246，深蓝色系：#3E74C9）
+    # 链接色
+    link: '#2196f3' # 链接颜色（蓝色系：#2196f3，灰色系：#7C5246，深蓝色系：#3E74C9）
+    # 按钮色
+    button: '#44D7B6'
+    # 鼠标放到交互元素上时的色
+    hover: '#ff5722'
+    # 主题色块内部的文字颜色
+    inner: '#fff'
+    # 选中区域文字的背景颜色
+    selection: 'alpha(#2196f3, 0.2)'
+  # ------------
+  # 亮色主题（默认）
+  light:
+    # 网站背景色
+    site_bg: '#f4f4f4'
+    # 网站背景上的文字
+    site_inner: '#555'
+    # 网站页脚文字
+    site_footer: '#666'
+
+    # 卡片背景色
+    card: '#fff'
+    # 卡片上的普通文字
+    text: '#444'
+
+    # 区块和代码块背景色
+    block: '#f6f6f6'
+    # 代码块高亮时的背景色
+    codeblock: '#FFF7EA'
+    # 行内代码颜色
+    inlinecode: '#f6f6f6'
+
+    # 首页向下滚动图标颜色
+    scroll_down: '#44d7b6'
+    # 向上滚动图标颜色
+    scroll_up: '#fff'
+
+    # 文章部分
+    h1: '#444'
+    h2: '#444'
+    h3: '#444'
+    h4: '#444'
+    h5: '#444'
+    h6: '#444'
+    p: '#555'
+
+    # 列表文字
+    list: '#666'
+    # 列表 hover 时的文字
+    list_hl: 'mix($color-theme, #000, 80)'
+    # 辅助性文字
+    meta: '#888'
+  # ------------
+  # 暗色主题
+  dark:
+    # 网站背景色
+    site_bg: '#222'
+    # 网站背景上的文字
+    site_inner: '#eee'
+    # 网站页脚文字
+    site_footer: '#eee'
+    # 卡片背景色
+    card: '#444'
+    # 卡片上的普通文字
+    text: '#eee'
+
+    # 区块和代码块背景色
+    block: '#3a3a3a'
+    # 代码块高亮时的背景色
+    codeblock: '#343a3c'
+    # 行内代码颜色
+    inlinecode: '#D56D28'
+
+    # 文章部分
+    h1: '#eee'
+    h2: '#eee'
+    h3: '#ddd'
+    h4: '#ddd'
+    h5: '#ddd'
+    h6: '#ddd'
+    p: '#bbb'
+
+    # 列表文字
+    list: '#aaa'
+    # 列表 hover 时的文字
+    list_hl: 'mix($color-theme, #fff, 80)'
+    # 辅助性文字
+    meta: '#888'
+    # 夜间图片亮度
+    brightness: 70%
+############################### Custom css ############################### > end
+
+############################### Custom css ############################### > start
+custom_css:
+  cursor:
+    enable: true
+    text: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/texto.cur
+    pointer: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/ayuda.cur
+    default: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/normal.cur
+    not-allowed:  https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/circle.png
+    zoom-out:  https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/zoom-out.png
+    zoom-in:  https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/zoom-in.png
+    grab:  https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/openhand.png
+  font_smoothing: true # font-smoothing for webkit
+  max_width: 1180px # Sum of body width and sidebar width (This limit will be exceeded when the device width is greater than 2000px, reaching 75% of the total width)
+  scrollbar:
+    size: 4px
+    border: 2px
+  navbar:
+    height: 56px
+    width: auto # auto, max
+    effect: [shadow, blur] # [shadow, floatable, blur]
+  sidebar:
+    effect: [shadow, floatable] # [shadow, floatable, blur]
+  body:
+    effect: [shadow, floatable] # [shadow, floatable, blur]
+    highlight:
+      language: true # 显示代码块的语言
+      copy_btn: true
+      grayscale: false # 启用灰度效果
+    text_align: # left, right, justify, center
+      h1: left
+      h2: left
+      h3: left
+      h4: left
+      p: justify
+  gap:
+    h2: 48px # Spacing above H2 (only px unit)
+    h3: 24px # Spacing above H3 (only px unit)
+    h4: 16px # Spacing above H4 (only px unit)
+    paragraph: 1rem # Paragraph spacing between paragraphs
+    row: .5rem # Paragraph spacing between other elements
+    line_height: 1.65 # normal, 1.5, 1.75, 2 ...
+  border_radius:
+    card: 8px
+    codeblock: 4px
+    searchbar: 8px
+    button: 4px
+  fontsize:
+    root: 16px
+    h1: 1.625rem
+    h2: 1.5rem
+    h3: 1.25rem
+    h4: 1.125rem
+    h5: 1rem
+    h6: 1rem
+    body: 1rem
+    list: .9375rem
+    meta: .875rem
+    code: .8125rem
+    footnote: .75rem
+  fontfamily:
+    logofont:
+      fontfamily: '"Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: 'Varela Round'
+      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
+      weight: normal
+      style: normal
+    bodyfont:
+      fontfamily: 'UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: 'UbuntuMono'
+      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
+      weight: normal
+      style: normal
+    codefont:
+      fontfamily: 'Menlo, UbuntuMono, Monaco'
+      name: 'Monaco'
+      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/Monaco/Monaco.ttf
+      weight: normal
+      style: normal
+############################### Custom css ############################### > end
+
+
+############################### Analytics ############################### > start
 analytics:
   busuanzi: https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
   leancloud: # 请使用自己的 id & key 以防止数据丢失
     app_id: gYcUzERw1BSKyARbzWH2OQzu-gzGzoHsz
     app_key: 7xvFncnnyG2QI60iDY3E4PuO
     custom_api_server: # 一般不需要写，除非自定义了 API Server
+############################### Analytics ############################### > end
 
-############################### 主题信息 ###############################
-info:
-  name: Volantis # This is theme's name.
-  version: '4.0.0-beta.2' # This is theme's version.
-  docs: https://volantis.js.org/ # This is theme's URL.
-  repo: https://github.com/volantis-x/hexo-theme-volantis
-  cdn:
-    js:
-    css:
 
-############################### 自定义主题 ###############################
+############################### SEO ############################### > start
+seo:
+  # When there are no keywords in the article's front-matter, use tags as keywords.
+  use_tags_as_keywords: true
+  # When there is no description in the article's front-matter, use excerpt as the description.
+  use_excerpt_as_description: true
+  robots:
+    home_first_page: index,follow
+    home_other_pages: noindex,follow
+    archive: noindex,follow
+    category: noindex,follow
+    tag: noindex,follow
+    # robots can be written in front-matter
+############################### SEO ############################### > end
+
+
+############################### 自定义主题 ############################### > start
 # 打赏功能模块
 customDonate:
   enable: true
@@ -920,3 +988,4 @@ tocNumberStyle:
 #全局自定义通知类element通知，关闭则无法使用该通知
 messageNotify:
   enable: true
+############################### 自定义主题 ############################### > end
