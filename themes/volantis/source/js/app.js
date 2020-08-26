@@ -470,7 +470,7 @@ if(window.location.hash){
           // 评论区锚点定位特殊处理
           if (targetUrl === 'valine_container') {
               // 校正页面定位（被导航栏挡住的区域）
-              var elem = $('.l_body .comments')
+              var elem = $('.l_body article#comments')
               var $elem = elem.href ? $(elem.getAttribute('href')) : $(elem);
               $('html, body').animate({
                   'scrollTop': $elem.offset().top - scrollCorrection
