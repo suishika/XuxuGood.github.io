@@ -23,7 +23,7 @@
        if ($headerAnchor[0]) {
            scrollCorrection = $headerAnchor[0].clientHeight + 16;
        }
-       scrollToElement($('.l_body .comments'),scrollCorrection);
+       scrollToElement($('.l_body article#comments'),scrollCorrection);
     }
    // 校正页面定位（被导航栏挡住的区域）
    function scrollToElement(elem, scrollCorrection) {
