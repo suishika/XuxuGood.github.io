@@ -1,7 +1,6 @@
 ---
 layout: page
-title: #围住小猫
-top_meta: false
+seo_title: 围住小猫
 bottom_meta: false
 sidebar: []
 ---

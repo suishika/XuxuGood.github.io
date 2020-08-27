@@ -1,7 +1,6 @@
 ---
 layout: page
-title: #关于我
-top_meta: false
+seo_title: 关于我
 bottom_meta: false
 sidebar: []
 valine:

@@ -1,7 +1,6 @@
 ---
 layout: page
-title: #留言板
-top_meta: false
+seo_title: 留言板
 bottom_meta: false
 sidebar: []
 ---
