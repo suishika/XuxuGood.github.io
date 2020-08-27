@@ -1,9 +1,8 @@
 ---
 layout: page
 title: 我的相册
-meta:
-  header: [title]
-  footer: []
+top_meta: false
+bottom_meta: false
 sidebar: []
 ---
 {% tabs photos,1 %}

@@ -1,9 +1,8 @@
 ---
-layout: links
+layout: friends
 title: 实用工具
-meta: 
-  header: [title, author, valinecount, wordcount]
-  footer: []
+top_meta: true
+bottom_meta: false
 sidebar: [blogger, category, tagcloud]
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/article-thumbnail/links-or-tools.png
 links:

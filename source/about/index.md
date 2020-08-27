@@ -1,11 +1,10 @@
 ---
 layout: page
-title: 关于
-meta:
-  header: []
-  footer: []
+title: #关于我
+top_meta: false
+bottom_meta: false
 sidebar: []
-comment:
+valine:
   placeholder: 有什么想对我说的呢？
 ---
 <br/>

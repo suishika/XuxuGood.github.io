@@ -1,9 +1,8 @@
 ---
-layout: links     # 必须
+layout: friends     # 必须
 title: 小伙伴们   # 可选，这是友链页的标题
-meta: 
-  header: [title, author, valinecount, wordcount]
-  footer: []
+top_meta: true
+bottom_meta: false
 sidebar: [blogger, category, tagcloud]
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/article-thumbnail/links-or-tools.png
 links:

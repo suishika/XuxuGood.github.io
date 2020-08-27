@@ -1,11 +1,10 @@
 ---
 layout: artitalk
-title: 说说
-meta:
-  header: []
-  footer: []
+title: #说说
+top_meta: false
+bottom_meta: false
 sidebar: []
-comment:
+comments:
   enable: false
 ---
 <style>

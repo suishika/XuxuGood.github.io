@@ -1,9 +1,8 @@
 ---
 layout: page
-title: 留言
-meta:
-  header: []
-  footer: []
+title: #留言板
+top_meta: false
+bottom_meta: false
 sidebar: []
 ---
 

@@ -1,9 +1,8 @@
 ---
 layout: page
-title: 围住小猫
-meta:
-  header: []
-  footer: []
+title: #围住小猫
+top_meta: false
+bottom_meta: false
 sidebar: []
 ---
 <br/>

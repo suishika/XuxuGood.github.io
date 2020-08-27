@@ -2,21 +2,27 @@
 <!--思路大概是将值藏到重加载的区域内-->
 
 <%
-var commentPath = 'none';                     // 自定义的评论路径
-var commentPlaceholder = 'none';              // 自定义的评论描述
+var commentPath = '';                     // 自定义的评论路径
+var commentPlaceholder = '';              // 自定义的评论描述
 var ispage = false;                           // 一二级导航栏切换控制
 var postTitle = '';                           // 当前文章标题，用于二级导航栏赋值
 var enableCover = false;                      // 封面是否开启
 var frontMatterCover = 'none';                // 封面控制
 
-if (page && page.comments == true && page.comment) {
-  if (page.comment.path) {
-    commentPath = page.comment.path;
-  }
-  if (page.comment.placeholder) {
-    commentPlaceholder = page.comment.placeholder;
+if (theme.comments.service && theme.comments.service.length > 0) {
+  let service = theme.comments.service;
+  if (page.comments == undefined || page.comments != false) {
+    if (service in page) {
+      if (page[service].path) {
+        commentPath = page[service].path;
+      }
+      if (page[service].placeholder) {
+        commentPlaceholder = page[service].placeholder;
+      }
+    }
   }
 }
+
 
 var enableValine = false;
 if (theme.comments.service == 'valine') {
@@ -27,16 +33,16 @@ if (theme.comments.service == 'minivaline') {
   enableMiniValine = true;
 }
 
-if(theme.cover && theme.cover.use_for) {
+if(theme.cover && theme.cover.height_scheme) {
   enableCover = true;
 }
 
 if (enableCover && page && page.cover) {
   frontMatterCover = page.cover;
-  if (is_home() && page.prev == 0 && theme.cover.use_for == 'docs') {
-    frontMatterCover = 'docs';
+  if (is_home() && page.prev == 0 && theme.cover.height_scheme == 'full') {
+    frontMatterCover = 'full';
   } else {
-    frontMatterCover = 'blog';
+    frontMatterCover = 'half';
   }
 }
 
@@ -62,10 +68,10 @@ if (page && page.layout == 'post' && page.title) {
     document.getElementsByClassName('cover-wrapper')[0].style.display = "none";
     document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show");
   } else {
-    if ("<%=frontMatterCover%>" == "blog") { // 半屏
+    if ("<%=frontMatterCover%>" == "half") { // 半屏
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'half');
       document.getElementsByClassName('scroll-down')[0].style.display = "none";
-    } else if ("<%=frontMatterCover%>" == "docs") { // 全屏
+    } else if ("<%=frontMatterCover%>" == "full") { // 全屏
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'full');
       document.getElementsByClassName('scroll-down')[0].style.display = "";
     }
