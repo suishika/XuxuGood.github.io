@@ -398,20 +398,20 @@ sidebar:
       subtitle:
       jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
-        - icon: fab fa-github
-          img: #/images/github.png
+        - icon: #fab fa-github
+          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/github.png
           url: https://github.com/XuxuGood
-        - icon: fas fa-envelope
-          img: #/images/email.png
+        - icon: #fas fa-envelope
+          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/email.png
           url: mailto:22476705@qq.com
-        - icon: fas fa-heartbeat
-          img: #/images/heart.png
+        - icon: #fas fa-heartbeat
+          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/heartbeat.png
           url: https://mailchi.mp/3ca18a2a9749/xuxuy
-        - icon: fab fa-cuttlefish
-          img: #/images/heart.png
+        - icon: #fab fa-cuttlefish
+          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/csdn.png
           url: https://blog.csdn.net/qq_42889280
-        - icon: fas fa-rss
-          img: #/images/rss.png
+        - icon: #fas fa-rss
+          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/rss.png
           url: atom.xml
     # ---------------------------------------
     # toc widget (valid only in articles)
@@ -531,20 +531,20 @@ site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
   layout: [aplayer, social]
   social:
-    - icon: fab fa-github
-      img: #/images/github.png
+    - icon: #fab fa-github
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/github.png
       url: https://github.com/XuxuGood
-    - icon: fas fa-envelope
-      img: #/images/email.png
+    - icon: #fas fa-envelope
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/email.png
       url: mailto:22476705@qq.com
-    - icon: fas fa-heartbeat
-      img: #/images/heart.png
+    - icon: #fas fa-heartbeat
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/heartbeat.png
       url: https://mailchi.mp/3ca18a2a9749/xuxuy
-    - icon: fab fa-cuttlefish
-      img: #/images/heart.png
+    - icon: #fab fa-cuttlefish
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/csdn.png
       url: https://blog.csdn.net/qq_42889280
-    - icon: fas fa-rss
-      img: #/images/rss.png
+    - icon: #fas fa-rss
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/rss.png
       url: atom.xml
   # site source
   source: https://github.com/volantis-x/volantis-docs/
