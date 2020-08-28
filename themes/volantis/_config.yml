@@ -397,7 +397,22 @@ sidebar:
       title: ·银河小徐
       subtitle:
       jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
-      social: true
+      social:
+        - icon: fab fa-github
+          img: #/images/github.png
+          url: https://github.com/XuxuGood
+        - icon: fas fa-envelope
+          img: #/images/email.png
+          url: mailto:22476705@qq.com
+        - icon: fas fa-heartbeat
+          img: #/images/heart.png
+          url: https://mailchi.mp/3ca18a2a9749/xuxuy
+        - icon: fab fa-cuttlefish
+          img: #/images/heart.png
+          url: https://blog.csdn.net/qq_42889280
+        - icon: fas fa-rss
+          img: #/images/rss.png
+          url: atom.xml
     # ---------------------------------------
     # toc widget (valid only in articles)
     toc:
@@ -531,14 +546,6 @@ site_footer:
     - icon: fas fa-rss
       img: #/images/rss.png
       url: atom.xml
-    # - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/64/qq.png
-    #   url: /
-    # - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/64/qzone.png
-    #   url: /
-    # - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/64/weibo.png
-    #   url: /
-    # - avatar: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/64/wechat.png
-    #   url: /
   # site source
   source: https://github.com/volantis-x/volantis-docs/
   # analytics using leancloud
