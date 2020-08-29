@@ -593,7 +593,7 @@ body .buttons-wrapper .slider > li {
 }
 
 body .buttons-wrapper .slider > li:nth-child(1) {
-    /*background: url(https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/resume/dott.png) no-repeat 0 0;*/
+    /*background: url(https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/resume/dott.png) no-repeat 0 0;*/
     /*-webkit-background-size: cover;*/
     /*-moz-background-size: cover;*/
     /*-ms-background-size: cover;*/
@@ -621,7 +621,7 @@ body .buttons-wrapper .slider > li:nth-child(1) {
 /*}*/
 
 body .buttons-wrapper .slider > li:nth-child(2) {
-    background: url(https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/resume/slide2.jpg) no-repeat bottom center;
+    background: url(https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/resume/slide2.jpg) no-repeat bottom center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
@@ -689,7 +689,7 @@ body .buttons-wrapper .slider > li:nth-child(3) {
 }
 
 .banner-w3lsinfo {
-    /*background: url(https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/resume/dott.png)repeat 0px 0px;*/
+    /*background: url(https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/resume/dott.png)repeat 0px 0px;*/
     padding: 3em 0;
 }
 

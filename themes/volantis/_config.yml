@@ -96,7 +96,7 @@ cover:
     home: true
     archive: false
     others: false # can be written in front-matter 'cover: true'
-  background: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/wallpaper/wallpaper5.png
+  background: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/wallpaper/wallpaper5.png
   logo: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/logo.png
   title: #Xu's Blog
   subtitle: #'终有溺水替沧海，再无相思寄巫山~'
@@ -171,7 +171,7 @@ article:
         icon: fas fa-bookmark
         max_count: 5
         # 设为空则不使用文章头图
-        placeholder_img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/photos/nameless/15.jpg
+        placeholder_img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/photos/nameless/15.jpg
       # ----------------
       # 版权声明组件 (for layout: post)
       copyright:
@@ -399,19 +399,19 @@ sidebar:
       jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
         - icon: #fab fa-github
-          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/029-github.png
+          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/icons/social/029-github.png
           url: https://github.com/XuxuGood
         - icon: #fas fa-envelope
-          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/053-email.png
+          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/icons/social/053-email.png
           url: mailto:22476705@qq.com
         - icon: #fas fa-heartbeat
-          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/052-heartbeat.png
+          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/icons/social/052-heartbeat.png
           url: https://mailchi.mp/3ca18a2a9749/xuxuy
         - icon: #fab fa-cuttlefish
-          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/051-csdn.png
+          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/icons/social/051-csdn.png
           url: https://blog.csdn.net/qq_42889280
         - icon: #fas fa-rss
-          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/020-rss.png
+          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/icons/social/020-rss.png
           url: atom.xml
     # ---------------------------------------
     # toc widget (valid only in articles)
@@ -532,19 +532,19 @@ site_footer:
   layout: [aplayer, social]
   social:
     - icon: #fab fa-github
-      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/029-github.png
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/icons/social/029-github.png
       url: https://github.com/XuxuGood
     - icon: #fas fa-envelope
-      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/053-email.png
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/icons/social/053-email.png
       url: mailto:22476705@qq.com
     - icon: #fas fa-heartbeat
-      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/052-heartbeat.png
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/icons/social/052-heartbeat.png
       url: https://mailchi.mp/3ca18a2a9749/xuxuy
     - icon: #fab fa-cuttlefish
-      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/051-csdn.png
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/icons/social/051-csdn.png
       url: https://blog.csdn.net/qq_42889280
     - icon: #fas fa-rss
-      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/020-rss.png
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/icons/social/020-rss.png
       url: atom.xml
   # site source
   source: https://github.com/volantis-x/volantis-docs/
@@ -643,9 +643,9 @@ plugins:
     duration: 10000       # Duration (ms)
     fade: 1500            # fade duration (ms) (Not more than 1500)
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
-      # - https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/wallpaper/wallpaper1.jpeg
-      - https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/wallpaper/wallpaper5.png
-      # - https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/wallpaper/wallpaper2.png
+      # - https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/wallpaper/wallpaper1.jpeg
+      - https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/wallpaper/wallpaper5.png
+      # - https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/wallpaper/wallpaper2.png
       # - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg
       # - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg
       # - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/35F12181-F0E9-45BD-B134-37E4B4A660CF.jpeg
