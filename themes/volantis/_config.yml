@@ -933,11 +933,10 @@ custom_css:
     h4: 1.125rem
     h5: 1rem
     h6: 1rem
-    body: 1rem
     list: .9375rem
     meta: .875rem
     code: .8125rem
-    footnote: .75rem
+    footnote: .78125rem
   fontfamily:
     logofont:
       fontfamily: '"Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
