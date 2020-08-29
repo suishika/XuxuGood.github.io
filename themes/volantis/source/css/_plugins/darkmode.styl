@@ -198,9 +198,203 @@
       color: #847a7d !important
   .list-h i
     color: #b04213 !important
-  #comments p
+  article#comments p
     color: var(--color-p)
   .gutter
     background-color: var(--color-site-bg) !important
   .timeline-item:before, hr
     background-color: var(--color-block)
+
+  // 自行添加custom样式
+  $custom-hover-color = #44d7b6
+  $custom-default-color = #fff
+
+  .l_header ul.list-v {
+    background: var(--color-card)
+  }
+
+  /* 首页向下滚动图标颜色 */
+  .cover-wrapper .scroll-down .scroll-down-effects {
+    color: $custom-default-color;
+  }
+
+  /* 阅读全文按钮样式 */
+  .meta-v3 .readmore {
+    color: var(--color-list);
+  }
+
+  .meta-v3 .readmore:hover {
+    color: $color-hover;
+  }
+
+  /* 小组件样式 */
+  if hexo-config('widgetHeader.enable') {
+    .widget header.pure {
+      background: var(--color-site-bg);
+    }
+  }
+
+  /* 评论样式 */
+  #veditor {
+    background: unset;
+  }
+
+  article#comments #valine_container .vwrap .vheader .vinput{
+    border-bottom: 1px dashed $custom-default-color;
+  }
+
+  article#comments #valine_container .vwrap .vheader .vinput:hover{
+    border-bottom: 1px dashed $custom-hover-color;
+  }
+
+  article#comments #valine_container .vwrap{
+    border: 1px dashed $custom-default-color;
+  }
+
+  article#comments #valine_container .vwrap:hover{
+    border: 1px dashed $custom-default-color;
+  }
+
+  #valine_container .vcards .vcard {
+    border: 1px dashed $custom-default-color;
+  }
+
+  #valine_container .vcards .vcard:hover {
+    border: 1px dashed $custom-default-color;
+  }
+
+  article#comments #valine_container button:hover {
+    color: $custom-hover-color;
+    background: alpha($custom-hover-color, .1) !important;
+  }
+
+  .v .vcards .vcard .vh .vmeta .vat{
+    border: 1px solid $custom-default-color !important;
+  }
+  article#comments #valine_container .vcards .vmeta .vat {
+    color: $custom-default-color;
+  }
+
+  article#comments #valine_container .vcards .vmeta .vat:hover {
+    color: $custom-hover-color;
+    border: 1px solid $custom-hover-color !important;
+    background: alpha($custom-hover-color, .1) !important;
+    text-decoration: none;
+  }
+
+  .v[data-class=v] .vicon {
+    fill: $custom-default-color;
+  }
+
+  article#comments #valine_container .vwrap .vemojis i:hover, article#comments #valine_container .vwrap .vpreview i:hover {
+    box-shadow: unset;
+  }
+
+  article#comments #valine_container .vwrap .vedit span.actived {
+    fill: $custom-hover-color;
+  }
+
+  article#comments #valine_container .vwrap .vemojis::-webkit-scrollbar-thumb, article#comments #valine_container .vwrap .vpreview::-webkit-scrollbar-thumb {
+    background: $custom-hover-color;
+  }
+
+  /* 自定义文章footer hr样式 */
+  .l_main .post .article-meta#bottom hr {
+    border: 2px dashed alpha($custom-default-color, .5);
+  }
+
+  .l_main .post .article-meta#bottom hr:before {
+    color: $custom-default-color;
+  }
+
+  /* botui对话框样式 */
+  .pop-container {
+    background-color: #566569
+  }
+
+  .botui-container {
+    background-color: #ffffff47;
+  }
+
+  /* tabs样式 */
+  div.tabs{
+    border: 1px solid alpha($color-p, .5)
+  }
+
+  /* 小组件文章分类样式调整 */
+  .widget >.content ul.entry a:hover {
+    border-left: 2px solid $custom-hover-color;
+    color: $custom-hover-color;
+  }
+
+  .widget >.content ul.entry a.active {
+    border-left: 2px solid $custom-hover-color;
+    color: $custom-hover-color;
+  }
+
+  .widget >.content ul.entry a .badge {
+    color: unset;
+  }
+
+  .widget >.content ul.entry a.active .badge{
+    color: $custom-hover-color;
+  }
+
+  /* 小组件本文目录样式调整 */
+  .l_side .toc-wrapper .content a:hover {
+    color: $custom-hover-color;
+    border-left: 2px solid $custom-hover-color;
+  }
+
+  .l_side .toc-wrapper .content a.active {
+    color: $custom-hover-color;
+    border-left: 2px solid $custom-hover-color;
+  }
+
+  /* 文章分类页面样式调整 */
+  article#cat .all-cats a:hover {
+    color: $custom-hover-color;
+  }
+
+  /* 进度条样式 */
+  #nprogress .bar {
+    background: $custom-hover-color
+  }
+
+  /* 文章code样式 */
+  .article code:not([class]) {
+    border: 1px solid var(--color-inlinecode);
+  }
+
+  .l_main .article .prev-next > a:hover p.title {
+    color: $custom-hover-color;
+  }
+
+  /* 有序列表 */
+  .article .article-entry ol > li:before{
+    color: var(--color-site-bg);
+    background-color: $custom-default-color;
+  }
+  /* 无序列表 */
+  .article .article-entry ul li:before{
+    border: 0.2rem solid $custom-hover-color;
+    background: $custom-default-color;
+  }
+
+  .article .article-entry ul > li:hover:before {
+    border-color: $custom-hover-color;
+  }
+
+  /* 代码块滚动条样式 */
+  .highlight >table::-webkit-scrollbar-thumb {
+    background: $custom-hover-color;
+  }
+
+  /* 回到顶部图标样式 */
+  .l_body .s-top.show.hl {
+    background: $custom-hover-color;
+  }
+
+  .l_body .s-top:hover {
+    background: $custom-hover-color;
+  }
