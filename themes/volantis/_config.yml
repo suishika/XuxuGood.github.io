@@ -103,23 +103,23 @@ cover:
   search: 世界之大，探索一下
   features:
     - name: 主页
-      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/menu/home.png
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/icons/menu/home.png
       icon: fas fa-home
       url: /
     - name: 归档
-      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/menu/archive.png
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/icons/menu/archive.png
       icon: fas fa-archive
       url: archives/
     - name: 朋友
-      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/menu/link.png
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/icons/menu/link.png
       icon: fas fa-link
       url: links/
     - name: 留言
-      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/menu/comments.png
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/icons/menu/comments.png
       icon: fas fa-comments
       url: comments/
     - name: 关于
-      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/menu/about.png
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/icons/menu/about.png
       icon: fas fa-info-circle
       url: about/
 #      img: https://i.loli.net/2020/07/24/GaeXvVAdtJkCYT3.png
@@ -399,19 +399,19 @@ sidebar:
       jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
         - icon: #fab fa-github
-          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/github.png
+          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/029-github.png
           url: https://github.com/XuxuGood
         - icon: #fas fa-envelope
-          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/email.png
+          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/053-email.png
           url: mailto:22476705@qq.com
         - icon: #fas fa-heartbeat
-          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/heartbeat.png
+          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/052-heartbeat.png
           url: https://mailchi.mp/3ca18a2a9749/xuxuy
         - icon: #fab fa-cuttlefish
-          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/csdn.png
+          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/051-csdn.png
           url: https://blog.csdn.net/qq_42889280
         - icon: #fas fa-rss
-          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/rss.png
+          img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/020-rss.png
           url: atom.xml
     # ---------------------------------------
     # toc widget (valid only in articles)
@@ -532,19 +532,19 @@ site_footer:
   layout: [aplayer, social]
   social:
     - icon: #fab fa-github
-      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/github.png
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/029-github.png
       url: https://github.com/XuxuGood
     - icon: #fas fa-envelope
-      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/email.png
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/053-email.png
       url: mailto:22476705@qq.com
     - icon: #fas fa-heartbeat
-      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/heartbeat.png
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/052-heartbeat.png
       url: https://mailchi.mp/3ca18a2a9749/xuxuy
     - icon: #fab fa-cuttlefish
-      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/csdn.png
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/051-csdn.png
       url: https://blog.csdn.net/qq_42889280
     - icon: #fas fa-rss
-      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/social/rss.png
+      img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn/blogImages/icons/social/020-rss.png
       url: atom.xml
   # site source
   source: https://github.com/volantis-x/volantis-docs/
