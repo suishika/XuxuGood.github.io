@@ -213,6 +213,42 @@
     background: var(--color-card)
   }
 
+  .l_header .wrapper .nav-main .title, .l_header .wrapper .nav-sub .title {
+    color: var(--color-list);
+  }
+
+  .l_header ul.list-v hr {
+    border-bottom: 0.5px solid var(--color-list);
+  }
+
+  .l_header ul > li > a {
+    color: var(--color-list) !important;
+  }
+
+  .l_header .m_search .input:focus {
+    border: 2px solid var(--color-list);
+  }
+
+  .l_header .m_search .icon {
+    color: var(--color-list);
+  }
+
+  .l_header .m_search .input::-webkit-input-placeholder {
+    color: var(--color-list);
+  }
+
+  .l_header .m_search .input:-moz-placeholder {
+    color: var(--color-list);
+  }
+
+  .l_header .m_search .input::-moz-placeholder {
+    color: var(--color-list);
+  }
+
+  .l_header .m_search .input:-ms-input-placeholder {
+    color: var(--color-list);
+  }
+
   /* 首页向下滚动图标颜色 */
   .cover-wrapper .scroll-down .scroll-down-effects {
     color: $custom-default-color;
@@ -240,15 +276,15 @@
   }
 
   article#comments #valine_container .vwrap .vheader .vinput{
-    border-bottom: 1px dashed $custom-default-color;
+    border-bottom: 1px dashed var(--color-list);
   }
 
   article#comments #valine_container .vwrap .vheader .vinput:hover{
-    border-bottom: 1px dashed $custom-hover-color;
+    border-bottom: 1px dashed $custom-default-color;
   }
 
   article#comments #valine_container .vwrap{
-    border: 1px dashed $custom-default-color;
+    border: 1px dashed var(--color-list);
   }
 
   article#comments #valine_container .vwrap:hover{
@@ -256,51 +292,53 @@
   }
 
   #valine_container .vcards .vcard {
-    border: 1px dashed $custom-default-color;
+    border: 1px dashed var(--color-list);
   }
 
   #valine_container .vcards .vcard:hover {
     border: 1px dashed $custom-default-color;
   }
 
+  /* 评论按钮样式 */
   article#comments #valine_container button:hover {
-    color: $custom-hover-color;
-    background: alpha($custom-hover-color, .1) !important;
+    color: $custom-default-color;
+    background: alpha($custom-default-color, .1) !important;
   }
 
+  /* 评论回复按钮样式 */
   .v .vcards .vcard .vh .vmeta .vat{
-    border: 1px solid $custom-default-color !important;
+    border: 1px solid var(--color-list) !important;
   }
+
   article#comments #valine_container .vcards .vmeta .vat {
-    color: $custom-default-color;
+    color: var(--color-list);
   }
 
   article#comments #valine_container .vcards .vmeta .vat:hover {
-    color: $custom-hover-color;
-    border: 1px solid $custom-hover-color !important;
-    background: alpha($custom-hover-color, .1) !important;
+    color: $custom-default-color;
+    border: 1px solid $custom-default-color !important;
+    background: alpha($custom-default-color, .1) !important;
     text-decoration: none;
   }
 
   .v[data-class=v] .vicon {
-    fill: $custom-default-color;
+    fill: var(--color-list);
   }
 
+  /* 表情hover样式 */
   article#comments #valine_container .vwrap .vemojis i:hover, article#comments #valine_container .vwrap .vpreview i:hover {
+    background: var(--color-list);
     box-shadow: unset;
   }
 
+  /* 表情、预览选中样式 */
   article#comments #valine_container .vwrap .vedit span.actived {
-    fill: $custom-hover-color;
-  }
-
-  article#comments #valine_container .vwrap .vemojis::-webkit-scrollbar-thumb, article#comments #valine_container .vwrap .vpreview::-webkit-scrollbar-thumb {
-    background: $custom-hover-color;
+    fill: $custom-default-color;
   }
 
   /* 自定义文章footer hr样式 */
   .l_main .post .article-meta#bottom hr {
-    border: 2px dashed alpha($custom-default-color, .5);
+    border: 2px dashed var(--color-list);
   }
 
   .l_main .post .article-meta#bottom hr:before {
@@ -323,13 +361,13 @@
 
   /* 小组件文章分类样式调整 */
   .widget >.content ul.entry a:hover {
-    border-left: 2px solid $custom-hover-color;
-    color: $custom-hover-color;
+    border-left: 2px solid $custom-default-color;
+    color: $custom-default-color;
   }
 
   .widget >.content ul.entry a.active {
-    border-left: 2px solid $custom-hover-color;
-    color: $custom-hover-color;
+    border-left: 2px solid $custom-default-color;
+    color: $custom-default-color;
   }
 
   .widget >.content ul.entry a .badge {
@@ -337,23 +375,23 @@
   }
 
   .widget >.content ul.entry a.active .badge{
-    color: $custom-hover-color;
+    color: $custom-default-color;
   }
 
   /* 小组件本文目录样式调整 */
   .l_side .toc-wrapper .content a:hover {
-    color: $custom-hover-color;
-    border-left: 2px solid $custom-hover-color;
+    color: $custom-default-color;
+    border-left: 2px solid $custom-default-color;
   }
 
   .l_side .toc-wrapper .content a.active {
-    color: $custom-hover-color;
-    border-left: 2px solid $custom-hover-color;
+    color: $custom-default-color;
+    border-left: 2px solid $custom-default-color;
   }
 
   /* 文章分类页面样式调整 */
   article#cat .all-cats a:hover {
-    color: $custom-hover-color;
+    color: $custom-default-color;
   }
 
   /* 进度条样式 */
@@ -373,16 +411,16 @@
   /* 有序列表 */
   .article .article-entry ol > li:before{
     color: var(--color-site-bg);
-    background-color: $custom-default-color;
+    background-color: var(--color-list);
   }
   /* 无序列表 */
   .article .article-entry ul li:before{
-    border: 0.2rem solid $custom-hover-color;
+    border: 0.2rem solid var(--color-list);
     background: $custom-default-color;
   }
 
   .article .article-entry ul > li:hover:before {
-    border-color: $custom-hover-color;
+    border-color: var(--color-list);
   }
 
   /* 代码块滚动条样式 */
@@ -390,16 +428,42 @@
     background: $custom-hover-color;
   }
 
-  /* 回到顶部图标样式 */
-  .l_body .s-top.show.hl {
-    background: $custom-hover-color;
-  }
-
-  .l_body .s-top:hover {
-    background: $custom-hover-color;
-  }
-
   /* 文章底部打赏样式 */
   #github {
     opacity: 0.5;
+  }
+
+  /* 页脚底部a标签样式 */
+  footer.footer a {
+    color: var(--color-list)
+  }
+
+  /*右键菜单按钮与下拉菜单按钮样式*/
+  .rightmenu hr {
+    border-bottom: 1px solid var(--color-list) !important
+  }
+
+  ul.list-v.rightmenu, .dropmenu-wrapper .dropmenu ul.list-v {
+    background: var(--color-card);
+  }
+
+  ul.list-v.rightmenu li a, .dropmenu-wrapper .dropmenu ul.list-v > li > a {
+    color: var(--color-list) !important;
+  }
+
+  ul.list-v.rightmenu li a:hover, .dropmenu-wrapper .dropmenu ul.list-v > li > a:hover {
+    color: $custom-default-color !important;
+    background: var(--color-site-bg);
+  }
+
+  ul.list-v.rightmenu li.music.name p.nav.music-title {
+    color: var(--color-list);
+  }
+
+  ul.list-v.rightmenu li.music a.nav.volume .aplayer-volume-bar {
+    background: var(--color-list);
+  }
+
+  ul.list-v.rightmenu li.music a.nav.volume .aplayer-volume-bar .aplayer-volume {
+    background: $custom-hover-color;
   }
