@@ -389,6 +389,27 @@
     border-left: 2px solid $custom-default-color;
   }
 
+  /* 文章归档页面样式调整 */
+  div.timenode:before, div.timenode:after {
+    background: $custom-hover-color;
+  }
+
+  div.timenode .meta:before{
+    background: alpha($custom-hover-color, .5)
+  }
+
+  div.timenode .meta:after {
+    background: $custom-hover-color;
+  }
+
+  div.timenode:hover .meta:before{
+    background: alpha($custom-hover-color, .5)
+  }
+
+  div.timenode:hover .meta:after{
+    background: $custom-hover-color;
+  }
+
   /* 文章分类页面样式调整 */
   article#cat .all-cats a:hover {
     color: $custom-default-color;
@@ -466,4 +487,9 @@
 
   ul.list-v.rightmenu li.music a.nav.volume .aplayer-volume-bar .aplayer-volume {
     background: $custom-hover-color;
+  }
+
+  /* 关于页面打赏样式 */
+  .single-reward .reward-main .lazyload {
+    filter: unset !important;
   }
