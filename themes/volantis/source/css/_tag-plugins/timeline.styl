@@ -56,20 +56,14 @@ div.timenode
     display: inline-block
     &:empty
       display: none
-    p
+    >*
       &:first-child
-        margin-top: 0
+        margin-top: $gap-p * 0.25
       &:last-child
-        margin-bottom: 0
+        margin-bottom: $gap-p * 0.25
     .highlight
-      background-color: darken($color-codeblock, -3)
-      if hexo-config('style.body.highlight.grayscale') == true
-        filter: grayscale(0%)
-      figcaption
-        trans()
-        background: darken($color-codeblock, 5%)
-      .gutter
-        background: darken($color-codeblock, 1)
+      border: 1px solid mix($color-block, $color-text, 90)
+
 
 div.timenode:hover
   .meta

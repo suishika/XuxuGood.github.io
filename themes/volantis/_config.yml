@@ -849,7 +849,7 @@ color_scheme:
     # 网站页脚文字
     site_footer: '#aaa'
     # 卡片背景色
-    card: '#444'
+    card: '#333'
     # 卡片上的普通文字
     text: '#eee'
 

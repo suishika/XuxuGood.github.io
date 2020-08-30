@@ -115,6 +115,8 @@
     border-color: var(--color-site-bg)
   *:not(.highlight) >table tr:hover
     background: var(--color-codeblock)
+  .timenode .highlight
+    border-color: var(--color-site-bg) !important
   blockquote p
     color: var(--color-p)
   // tags
@@ -430,17 +432,17 @@
   }
 
   /* 有序列表 */
-  .article .article-entry ol > li:before{
+  .md ol > li:before{
     color: var(--color-site-bg);
     background-color: var(--color-list);
   }
   /* 无序列表 */
-  .article .article-entry ul li:before{
+  .md ul li:before{
     border: 0.2rem solid var(--color-list);
     background: $custom-default-color;
   }
 
-  .article .article-entry ul > li:hover:before {
+  .md ul > li:hover:before {
     border-color: var(--color-list);
   }
 

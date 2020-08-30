@@ -350,10 +350,6 @@ links:
         right: 4px;
     }
     
-    div.note p{
-        font-size: 0.9375rem;
-    }
-    
     .links-tips-friends {
         font-size: 12px;
         padding: 4px 4px;

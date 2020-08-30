@@ -62,7 +62,8 @@
     #reward {
         text-align: center;
         width: 100%;
-        margin-top: 50px;
+        margin-top: 40px;
+        margin-bottom: -32px;
     }
 
     #reward .reward {
@@ -156,14 +157,14 @@
         overflow: hidden;
         line-height: 600px;
         height: 28px;
-          -webkit-filter: grayscale(1);
+        -webkit-filter: grayscale(1);
         filter: grayscale(1);
         opacity: 0.5;
     }
 
     #RewardBox li:hover {
         background-color: rgba(204, 217, 220, 0.3);
-          -webkit-filter: grayscale(0);
+        -webkit-filter: grayscale(0);
         filter: grayscale(0);
         opacity: 1;
     }
@@ -206,7 +207,7 @@
     }
 
     .reward .blurC {
-          -webkit-filter: blur(3px);
+        -webkit-filter: blur(3px);
         filter: blur(3px);
     }
 
@@ -217,7 +218,7 @@
         animation-timing-function: ease-in-out;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-          -webkit-animation: showQR 3s ease-in-out 0s 1 normal forwards;
+        -webkit-animation: showQR 3s ease-in-out 0s 1 normal forwards;
     }
 
     @keyframes showQR {
@@ -268,7 +269,7 @@
         animation-timing-function: ease-in-out;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-          -webkit-animation: hideQR 0.5s ease-in-out 0s 1 normal forwards;
+        -webkit-animation: hideQR 0.5s ease-in-out 0s 1 normal forwards;
     }
 
     @keyframes hideQR {
@@ -284,7 +285,7 @@
         }
     }
 
-    .article .article-entry #reward .reward ul li:before{
+    .md #reward .reward ul li:before {
         content: none;
     }
 </style>
