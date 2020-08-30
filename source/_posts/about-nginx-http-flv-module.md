@@ -36,12 +36,12 @@ description: 最近项目组接了一个视频流项目，项目的主要核心�
 ### :tada: 安装nginx
 
 在 /user/local 下创建 nginx 文件夹
-```BASH
+```shell
 mkdir /usr/local/nginx
 ```
 
 安装依赖项
-```BASH
+```shell
 yum -y install unzip
 yum -y install gcc-c++ 
 yum -y install pcre pcre-devel  
@@ -50,14 +50,14 @@ yum -y install openssl openssl-devel
 ```
 
 将 /user/local 下面的 nginx-http-flv-module-master.zip 解压到 /usr/local/nginx 下面
-```BASH
+```shell
 cd /usr/local
 unzip nginx-http-flv-module-master.zip  //解压文件
 cp -r /usr/local/nginx-http-flv-module-master /usr/local/nginx/nginx-http-flv-module  //解压文件复制到/usr/local/nginx 目录下
 ```
 
 将 nginx-http-flv-module 模板添加到 nginx 中，生成 make 文件并安装 nginx
-```BASH
+```shell
 cd /usr/local
 tar -zxvf nginx-1.16.1.tar.gz
 cd nginx-1.16.1/
@@ -68,7 +68,7 @@ nginx -v  //查看nginx是否安装成功
 ```
 
 修改配置文件
-```BASH
+```shell
 cd /usr/local/nginx/conf
 vi nginx.conf
 
@@ -155,7 +155,7 @@ rtmp {
 ```
 
 测试nginx是否好用
-```BASH
+```shell
 nginx -t //检查nginx
 nginx //启动
 ps -ef | grep nginx //查看nginx进程
@@ -165,7 +165,7 @@ ps -ef | grep nginx //查看nginx进程
 ### :tada: 安装FFmpeg
 
 安装前期准备下载的nasm
-```BASH
+```shell
 cd /usr/local
 tar -jxvf nasm-2.14.02.tar.bz2  //如果解压不了的话安装一下bzip2（ yum install -y bzip2 ）
 cd nasm-2.14.02/
@@ -174,7 +174,7 @@ make && make install
 ```
 
 安装前期准备下载的yasm
-```BASH
+```shell
 cd /usr/local
 tar -zxvf yasm-1.3.0.tar.gz
 cd yasm-1.3.0/
@@ -183,14 +183,14 @@ make && make install
 ```
 
 安装x264（RTSP视频流转码时需要x264）
-```BASH
+```shell
 cd /usr/local/x264
 ./configure --enable-static --enable-shared
 make && make install
 ```
 
 安装FFmpeg
-```BASH
+```shell
 cd /usr/local
 tar -jxvf ffmpeg-4.2.2.tar.bz2
 cd ffmpeg-4.2.2/
@@ -201,7 +201,7 @@ ffmpeg -version  //查看ffmpeg是否安装成功
 ```
 
 直接运行FFmpeg可能报如下错误（重点）
-```BASH
+```shell
 ffmpeg: error while loading shared libraries: libx264.so.157: cannot open shared object file: No such file or directory
 解决：
 vi /etc/ld.so.conf
@@ -213,7 +213,7 @@ vi /etc/ld.so.conf
 ## :sun_with_face: 推流
 
 推流命令：
-```BASH
+```shell
 ffmpeg -re -rtsp_transport tcp -i "rtsp://admin:Biao456813@192.168.153.194:554/h264/ch1/main/av_stream" -f flv -vcodec libx264 -vprofile baseline -acodec aac -tune zerolatency -preset ultrafast -ar 44100 -strict -2 -ac 1 -f flv -s 1280x720 -q 10 "rtmp://192.168.153.204:1935/myapp/home"
 ```
 
@@ -231,7 +231,7 @@ x264 命令详解：
 提取码：47w1
 
 Html代码：
-```BASH
+```html
 <!DOCTYPE html>
 <html>
 
