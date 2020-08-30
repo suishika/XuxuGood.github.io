@@ -825,12 +825,12 @@ color_scheme:
     scroll_up: '#fff'
 
     # 文章部分
-    h1: '#444'
-    h2: '#444'
-    h3: '#444'
+    h1: '#3a3a3a'
+    h2: '#3a3a3a'
+    h3: '#333'
     h4: '#444'
-    h5: '#444'
-    h6: '#444'
+    h5: '#555'
+    h6: '#666'
     p: '#555'
 
     # 列表文字
@@ -917,9 +917,8 @@ custom_css:
     h2: 48px # Spacing above H2 (only px unit)
     h3: 24px # Spacing above H3 (only px unit)
     h4: 16px # Spacing above H4 (only px unit)
-    paragraph: 1rem # Paragraph spacing between paragraphs
-    row: .5rem # Paragraph spacing between other elements
-    line_height: 1.65 # normal, 1.5, 1.75, 2 ...
+    p: 1em # Paragraph spacing between paragraphs
+    line_height: 1.6 # normal, 1.5, 1.75, 2 ...
   border_radius:
     card: 8px
     codeblock: 4px
