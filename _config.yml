@@ -109,6 +109,10 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: volantis
 
+# 本地启动端口设置
+server:
+  port: 4000
+
 # 全局导入
 import:
   meta:
