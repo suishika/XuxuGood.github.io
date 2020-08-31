@@ -137,7 +137,7 @@ valine:
 .wechat-code:after {
     content: "微信"
 }
-.article .article-entry .single-reward ul li:before{
+.md .single-reward ul li:before{
     content: none
 }
 

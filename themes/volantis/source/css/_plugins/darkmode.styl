@@ -427,10 +427,6 @@
     border: 1px solid var(--color-inlinecode);
   }
 
-  .l_main .article .prev-next > a:hover p.title {
-    color: $custom-hover-color;
-  }
-
   /* 有序列表 */
   .md ol > li:before{
     color: var(--color-site-bg);
@@ -448,12 +444,16 @@
 
   /* 代码块滚动条样式 */
   .highlight >table::-webkit-scrollbar-thumb {
-    background: $custom-hover-color;
+    background: $color-theme;
   }
 
   /* 文章底部打赏样式 */
   #github {
     opacity: 0.5;
+  }
+
+  #RewardText, #RewardBox {
+    filter: brightness(convert(hexo-config('color_scheme.dark.brightness'))) !important
   }
 
   /* 页脚底部a标签样式 */
@@ -505,3 +505,4 @@
   .meta-v3[line_style='dashed'] {
     border-top: 2px dashed $custom-underline-color;
   }
+
