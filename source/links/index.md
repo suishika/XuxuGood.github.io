@@ -279,13 +279,13 @@ links:
 
 {% timenode 请先添加本站链接 %}
 
-{% radio checked cyan, 名称：Xu's Blog %}
-{% radio checked cyan, 链接：[https://hasaik.com](https://hasaik.com) %}
-{% radio checked cyan, 头像：[https://hasaik.com/images/avatar.jpg](https://hasaik.com/images/avatar.jpg) %}
-{% radio checked cyan, 描述：博观而约取，厚积而薄发！ %}
-{% radio  cyan, 标签：Java，前端 %}
-{% radio  cyan, 背景颜色（若有）：#967ADC %}
-{% radio  cyan, 文字颜色（若有）：#fff %}
+名称：Xu's Blog
+链接：[https://hasaik.com](https://hasaik.com)
+头像：[https://hasaik.com/images/avatar.jpg](https://hasaik.com/images/avatar.jpg)
+描述：博观而约取，厚积而薄发！
+标签：Java，前端
+背景颜色（若有）：#967ADC
+文字颜色（若有）：#fff
 
 {% endtimenode %}
 
