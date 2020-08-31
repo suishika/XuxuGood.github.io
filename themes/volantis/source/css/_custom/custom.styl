@@ -9,6 +9,11 @@
   transform: none !important;
 }
 
+/* span,p 行内文本标签 */
+span.p.h2, p.p.h2 {
+  padding-top: 0;
+}
+
 /*自定义右键菜单按钮与下拉菜单按钮样式*/
 .md .dropmenu ul li:before {
   content: none !important;
@@ -69,19 +74,6 @@ article#tag {
   padding-top: 24px;
   padding-bottom: 32px;
 }
-
-//article#tag .archive .all-tags ul li:hover {
-//  background: $color-block;
-//  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .4);
-//}
-//
-//article#tag .archive .all-tags ul li:hover a {
-//  color: $color-text !important;
-//}
-//
-//article#tag .archive .all-tags ul li:hover span {
-//  background: darken($color-block, 5)
-//}
 
 /* 公告中使用的 kbd 样式 */
 .widget.text .content kbd {
