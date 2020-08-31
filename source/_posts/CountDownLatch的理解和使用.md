@@ -57,7 +57,7 @@ CountDownLatch 能够使一个线程在等待另外一些线程完成各自的�
 
 ## :fire: CountDownLatch 的用法
 
-### :tada: CountDownLatch 典型用法1
+### :tada: 典型用法1
 
 某一线程在开始运行前等待n个线程执行完毕。将 CountDownLatch 的计数器初始化为n `new CountDownLatch(n)`，每当一个任务线程执行完毕，就将计数器减1 `countdownlatch.countDown()`，当计数器的值变为0时，在 CountDownLatch 上 `await()` 的线程就会被唤醒。一个典型应用场景就是启动一个服务时，主线程需要等待多个组件加载完毕，之后再继续执行。
 
@@ -116,7 +116,7 @@ public class CountdownLatchTest1 {
 主线程main开始执行...
 ```
 
-### :tada: CountDownLatch 典型用法2
+### :tada: 典型用法2
 
 实现多个线程开始执行任务的最大{% emp 并行性 %}。注意是并行性，不是并发，强调的是多个线程在某一时刻同时开始执行。类似于赛跑，将多个线程放到起点，等待发令枪响，然后同时开跑。做法是初始化一个共享的 CountDownLatch(1)，将其计数器初始化为1，多个线程在开始执行任务前首先 `coundownlatch.await()`，当主线程调用 `countDown()` 时，计数器变为0，多个线程同时被唤醒。
 
