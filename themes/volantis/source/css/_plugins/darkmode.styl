@@ -274,7 +274,7 @@
 
   /* 评论样式 */
   #veditor {
-    background: unset;
+    filter: brightness(convert(hexo-config('color_scheme.dark.brightness'))) !important
   }
 
   article#comments #valine_container .vwrap .vheader .vinput{
@@ -348,13 +348,16 @@
   }
 
   /* botui对话框样式 */
-  .pop-container {
-    background-color: #566569
+  #hello-xuxuy {
+    filter: brightness(convert(hexo-config('color_scheme.dark.brightness'))) !important
   }
-
-  .botui-container {
-    background-color: #ffffff47;
-  }
+  //.pop-container {
+  //  background-color: #566569
+  //}
+  //
+  //.botui-container {
+  //  background-color: #ffffff47;
+  //}
 
   /* tabs样式 */
   div.tabs{
@@ -511,3 +514,7 @@
     border-top: 2px dashed $custom-underline-color;
   }
 
+  /* 围住小猫样式 */
+  #catch-the-cat {
+    filter: brightness(convert(hexo-config('color_scheme.dark.brightness'))) !important
+  }
