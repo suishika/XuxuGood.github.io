@@ -17,7 +17,7 @@ info:
 navbar:
   visiable: auto # always, auto
   logo: # choose [img] or [icon + title]
-    img: #https://gitee.com/xaoxuu/cdn-assets/raw/master/logo/xaoxuu/xaoxuu.navbar@3x.png
+    img: #https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/logo.png
     icon: fas fa-dragon
     title: Xu's Blog
   menu:
