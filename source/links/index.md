@@ -273,7 +273,7 @@ links:
 ### 申请友链：
 {% tabs links,1 %}
 
-<!-- tab 添加流程 -->
+<!-- tab &nbsp;添加流程 @plus-circle -->
 
 {% timeline %}
 
@@ -323,7 +323,7 @@ links:
 
 <!-- endtab -->
 
-<!-- tab 清理记录 -->
+<!-- tab &nbsp;清理记录 @minus-circle -->
 
 如果出现误清理请重新申请即可！
 
