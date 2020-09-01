@@ -73,7 +73,13 @@ links:
       backgroundColor: '#7C5246'
       textColor: '#fff'
       tags: [经典模块化前端UI框架]
-      
+    - name: Itmeo
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/itmeo.png
+      url: https://webgradients.com/
+      backgroundColor: '#967ADC'
+      textColor: '#fff'
+      tags: [渐变色网站]
+ 
   - group: Linux 工具
     icon: fab fa-linux
     items:
