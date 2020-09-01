@@ -17,7 +17,7 @@ info:
 navbar:
   visiable: auto # always, auto
   logo: # choose [img] or [icon + title]
-    img:
+    img: #https://gitee.com/xaoxuu/cdn-assets/raw/master/logo/xaoxuu/xaoxuu.navbar@3x.png
     icon: fas fa-dragon
     title: Xu's Blog
   menu:
@@ -898,7 +898,7 @@ custom_css:
     size: 4px
     border: 2px
   navbar:
-    height: 56px
+    height: 58px
     width: auto # auto, max
     effect: [shadow, blur] # [shadow, floatable, blur]
   sidebar:
