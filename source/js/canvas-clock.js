@@ -148,7 +148,7 @@
         var nums = [];
 
         // 时间字体颜色
-        context.fillStyle = "#fff"
+        context.fillStyle = "#005eac"
         var date = new Date();
         var offsetX = 70, offsetY = 30;
         var hours = date.getHours();

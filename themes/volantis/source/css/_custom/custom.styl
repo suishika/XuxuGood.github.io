@@ -19,33 +19,6 @@ span.p.h2, p.p.h2 {
   scrollbar-codeblock()
 }
 
-/*自定义右键菜单按钮与下拉菜单按钮样式*/
-.md .dropmenu ul li:before {
-  content: none !important;
-}
-
-.rightmenu hr {
-  border-bottom: 1px solid alpha($color-text, .1) !important
-}
-
-ul.list-v.rightmenu, .dropmenu-wrapper .dropmenu ul.list-v {
-  background: $color-card;
-  box-shadow: $boxshadow-dropmenu;
-}
-
-ul.list-v.rightmenu li a, .dropmenu-wrapper .dropmenu ul.list-v > li > a {
-  border-left: none;
-  color: mix($color-text, $color-card, 80);
-  padding: 0 $gap + $border-line + 2px 0 $gap;
-  margin: 0 4px;
-  border-radius: 4px;
-}
-
-ul.list-v.rightmenu li a:hover, .dropmenu-wrapper .dropmenu ul.list-v > li > a:hover {
-  color: mix($color-theme, $color-text, 70);
-  background: bgcolor($color-theme);
-}
-
 /* 归档页样式优化 */
 article#arc {
   padding-top: 24px;
@@ -140,17 +113,8 @@ article#tag {
   margin-top: -80px;
 }
 
-/* 阅读全文按钮样式 */
-.meta-v3 .readmore {
-  color: $color-theme;
-}
-
-.meta-v3 .readmore:hover {
-  color: alpha($color-theme, .7);
-}
-
 /* 文章样式 */
-.article a {
+.md a {
   word-break: break-all;
 }
 
@@ -275,7 +239,7 @@ footer.footer .social-wrapper a {
 }
 
 footer.footer a.social:hover {
-  background: $color-theme;
+  background: $color-card;
 }
 
 footer.footer a {
@@ -342,78 +306,19 @@ footer.footer a:hover {
 }
 
 /* 导航栏样式 */
-.l_header {
-  background: alpha($color-theme, .9) !important;
-}
-
 .l_header .wrapper .nav-main .title {
-  color: $color-card;
   font-weight: bold;
   font-size: 1.5rem;
 }
 
 .l_header .wrapper .nav-sub .title {
-  color: $color-card;
   font-weight: bold;
 }
 
-.l_header ul > li > a {
-  color: $color-card !important;
-}
-
-.l_header ul > li > a.active {
-  color: $color-card;
-  border-left-color: $color-card;
-  border-bottom-color: $color-card;
-}
-
-.l_header ul > li > a:hover {
-  color: $color-card;
-  border-left-color: $color-card;
-  border-bottom-color: $color-card;
-  background: alpha($color-card, .15);
-}
-
-.l_header ul.list-v {
-  background: $color-theme;
-}
-
-.l_header ul.list-v hr {
-  border-bottom: 0.5px solid #fff;
-}
-
-.l_header .m_search {
-  width: 200px;
-}
-
-.l_header .m_search .input {
-  border: 1px dashed transparent;
-  color: $color-card;
-  background: alpha($color-card, .2);
-}
-
-.l_header .m_search .input:focus {
-  border: 2px solid $color-card;
-}
-
-.l_header .m_search .icon {
-  color: alpha($color-card, .8);
-}
-
-.l_header .m_search .input::-webkit-input-placeholder {
-  color: $color-card;
-}
-
-.l_header .m_search .input:-moz-placeholder {
-  color: $color-card;
-}
-
-.l_header .m_search .input::-moz-placeholder {
-  color: $color-card;
-}
-
-.l_header .m_search .input:-ms-input-placeholder {
-  color: $color-card;
+@media screen and (min-width: 1280px) {
+  .l_header .m_search {
+    width: 200px;
+  }
 }
 
 /* 主页cover打字机字体颜色 */
@@ -426,7 +331,7 @@ if hexo-config('coverTypeWriter.enable') {
 /* 小组件header样式 */
 if hexo-config('widgetHeader.enable') {
   .widget header.pure {
-    background-color: $color-theme;
+    background: linear-gradient(to right, $color-linear-gradient) !important;
     color: $color-card;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -631,60 +536,12 @@ article#comments #valine_container .vcards .vcontent a {
 
 /*valine 评论系统样式 end */
 
-/* 导航切换switcher样式 */
-.l_header .switcher > li > a.active, .l_header .switcher > li > a:active {
-  background: alpha($color-card, .2);
-}
-
 /* 搜索弹窗样式 */
 #u-search .modal-header #u-search-modal-form #u-search-modal-input {
   margin: 12px 50px;
 }
 
-//手机适配
-@media screen and (max-width: 1024px) {
-  .l_header .m_search {
-    width: 44px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  /* 搜索框样式 */
-  .l_header.z_search-open .m_search {
-    width: calc(100vw - 2 * 20px - 2 * 32px);
-  }
-
-  .l_header .m_search {
-    width: 0;
-    overflow: hidden;
-    position: absolute;
-    background: none;
-    transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    margin: 0 10px;
-  }
-
-  .l_header .m_search .icon {
-    display: block;
-  }
-
-  .l_header .m_search .input {
-    margin-left: 0;
-    font-size: 16px;
-    width: calc(100% - 30px) !important;
-    -webkit-appearance: none;
-    padding-left: 36px;
-    border-radius: 8px;
-    border: 1px dashed transparent;
-  }
-
-  .l_header.z_search-open .title {
-    opacity: 0;
-  }
-}
-
+// 手机适配
 @media screen and (max-width: 768px) {
   .l_side .toc-wrapper {
     border: none;

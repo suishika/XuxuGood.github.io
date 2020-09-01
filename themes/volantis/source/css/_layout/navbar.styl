@@ -194,6 +194,7 @@
         width: 100%
         .input
           width: "calc(100% - %s)" % (3 * $gap + 2 * $iconW)
+
 ul.m-pc
   >li>a
     color: inherit
@@ -209,7 +210,6 @@ ul.m-pc,ul.list-v
 ul.nav-list-h
   display: flex
   align-items: stretch
-  height: $navbar-height
   &>li
     position: relative
     justify-content: center
@@ -217,12 +217,9 @@ ul.nav-list-h
     line-height: 2.4
     border-radius: $border-button
     >a
-      height: 100%
       -webkit-font-smoothing: antialiased
       -moz-osx-font-smoothing: grayscale
       font-weight: 600
-      line-height: $navbar-height
-      border-bottom: $border-line solid transparent
 
 ul.list-v
   z-index: 1
@@ -262,10 +259,13 @@ ul.list-v
     color: var(--color-list)
     font-size: $fontsize-meta
     font-weight: bold
-    line-height: 33px
+    line-height: 36px
+    @media screen and (max-width: $device-laptop)
+      line-height: 40px
     padding: 0 $gap + $border-line + 2px 0 $gap
-    border-left: $border-line solid transparent
     text-overflow: ellipsis
+    margin: 0 4px
+    border-radius: 4px
     >i
       margin-right: 8px
     &:active,&.active
@@ -281,20 +281,15 @@ ul.list-v
       >i
         margin-right: 4px
 
-.l_header ul>li>a
-  color: mix($color-text, $color-card, 90)
-  &.current
-    border-left-color: alpha($color-theme, 80%)
-    border-bottom-color: alpha($color-theme, 80%)
-  &:active,&.active
-    color: $color-theme
-    border-left-color: $color-theme
-    border-bottom-color: $color-theme
-  &:hover
-    color: mix($color-theme, $color-text, 70)
-    border-left-color: $color-theme
-    border-bottom-color: $color-theme
-    background: var(--color-site-bg)
+.l_header ul.nav-list-h>li
+  color: var(--color-list)
+  line-height: $navbar-height - 2px
+  >a
+    color: inherit
+    &:active,&.active
+      color: $color-theme
+  &:hover>a
+    color: var(--color-list-hl)
   i.music
     animation: rotate-effect 1.5s linear infinite
     @keyframes rotate-effect
@@ -359,22 +354,17 @@ ul.list-v
 
 .l_header
   if hexo-config('custom_css.navbar.width') == 'auto'
-    @media screen and (min-width: $device-2k)
-      max-width: 65vw
+    max-width: 65vw
+    left: "calc((100% - %s) * 0.5)" % @max-width
+    border-bottom-left-radius: $border-card
+    border-bottom-right-radius: $border-card
+    @media screen and (max-width: $device-2k)
+      max-width: $layout-width + 2 * $gap
       left: "calc((100% - %s) * 0.5)" % @max-width
-      border-bottom-left-radius: $border-card
-      border-bottom-right-radius: $border-card
-    //max-width: 65vw
-    //left: "calc((100% - %s) * 0.5)" % @max-width
-    //border-bottom-left-radius: $border-card
-    //border-bottom-right-radius: $border-card
-    //@media screen and (max-width: $device-2k)
-    //  max-width: $layout-width + 2 * $gap
-    //  left: "calc((100% - %s) * 0.5)" % @max-width
-    //@media screen and (max-width: $layout-width + 2 * $gap)
-    //  left: 0
-    //  border-radius: 0
-    //  max-width: 100%
+    @media screen and (max-width: $layout-width + 2 * $gap)
+      left: 0
+      border-radius: 0
+      max-width: 100%
   @media screen and (max-width: $device-mobile)
     .container
       margin-left: 0

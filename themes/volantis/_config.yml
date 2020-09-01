@@ -644,7 +644,7 @@ plugins:
     fade: 1500            # fade duration (ms) (Not more than 1500)
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
       # - https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/wallpaper/wallpaper1.jpeg
-      - https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/wallpaper/wallpaper5.png
+      - https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/wallpaper/wallpaper6.jpg
       # - https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/wallpaper/wallpaper2.png
       # - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg
       # - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg
@@ -786,7 +786,7 @@ color_scheme:
   # 通用颜色
   common:
     # 主题色
-    theme: '#7C5246' # 主色系（浅蓝色系：#1BC3FB，灰色系：#7C5246，深蓝色系：#3E74C9）
+    theme: '#44d7b6' # 主色系（浅蓝色系：#1BC3FB，灰色系：#7C5246，深蓝色系：#3E74C9）
     # 链接色
     link: '#2196f3' # 链接颜色（蓝色系：#2196f3，灰色系：#7C5246，深蓝色系：#3E74C9）
     # 按钮色
@@ -797,6 +797,8 @@ color_scheme:
     inner: '#fff'
     # 选中区域文字的背景颜色
     selection: 'alpha(#2196f3, 0.2)'
+    # 渐变色
+    linear_gradient: '#AEBAF8, #727272'
   # ------------
   # 亮色主题（默认）
   light:
