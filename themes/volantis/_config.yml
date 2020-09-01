@@ -798,7 +798,7 @@ color_scheme:
     # 选中区域文字的背景颜色
     selection: 'alpha(#2196f3, 0.2)'
     # 渐变色
-    linear_gradient: '#AEBAF8, #727272'
+    linear_gradient: '#a1c4fd, #c2e9fb'
   # ------------
   # 亮色主题（默认）
   light:
