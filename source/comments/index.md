@@ -50,6 +50,10 @@ sidebar: []
     border-bottom: none;
 }
  
+.md .poem-wrap h1:before{
+    height: 0;
+}
+
 .poem-wrap p {
     width: 70%;
     margin: auto;
@@ -82,7 +86,7 @@ sidebar: []
 .poem-left {
     left: 0;
 }
- 
+
 @media (max-width: 685px) {
     .poem-border {
         width: 18%;
