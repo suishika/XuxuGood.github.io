@@ -1,7 +1,7 @@
 'use strict';
 
-// {% tip style, content %}
-// style可选: [default,success,error,warning,wtgo,ban,home,important,ref,ffa,key,socd]
+// {% tip icon gradient, content %}
+// gradient可选: [gradient1,gradient2,gradient3]
 function postTip(args) {
   args = args.join(' ').split(', ')
   if (args.length > 1) {
