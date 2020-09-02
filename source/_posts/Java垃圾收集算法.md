@@ -10,6 +10,9 @@ abbrlink: 2375015f
 date: 2020-08-24 19:52:59
 headimg:
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/jvm.png
+references:
+    - title: 垃圾收集算法
+      url: https://deecyn.com/jvm-gc-algorithms.html
 description: JVM 中的垃圾回收算法有标记-清除算法、复制算法、标记-整理算法、分代收集算法四种算法。
 ---
 
