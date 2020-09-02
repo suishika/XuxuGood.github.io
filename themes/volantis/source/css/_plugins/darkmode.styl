@@ -381,3 +381,21 @@
   #catch-the-cat {
     filter: brightness(convert(hexo-config('color_scheme.dark.brightness'))) !important
   }
+
+  /* 彩色标签开启时显示样式 */
+  if hexo-config('tagsColor.enable') {
+    article#tag .all-tags ul li a {
+      color: var(--color-list) !important;
+      background: var(--color-block) !important;
+    }
+
+    article#tag .all-tags ul li a:hover {
+      background: $color-hover !important;
+      color: $color-inner !important;
+    }
+
+    article#tag .all-tags ul li:hover {
+      box-shadow: unset;
+    }
+  }
+

@@ -53,6 +53,17 @@ article#tag {
   padding-bottom: 32px;
 }
 
+/* 彩色标签开启时显示样式 */
+if hexo-config('tagsColor.enable') {
+  article#tag .all-tags ul li a {
+    color: $color-card
+  }
+
+  article#tag .all-tags ul li:hover {
+    box-shadow: 0 3px 5px rgba(32, 160, 255, 0.5);
+  }
+}
+
 /* 公告中使用的 kbd 样式 */
 .widget.text .content kbd {
   cursor: default;

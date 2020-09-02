@@ -1023,4 +1023,6 @@ tocNumberStyle:
 #全局自定义通知类element通知，关闭则无法使用该通知
 messageNotify:
   enable: true
+tagsColor:
+  enable: true
 ############################### 自定义主题 ############################### > end
