@@ -222,7 +222,7 @@ links:
       url: https://deecyn.com/
       backgroundColor: '#3E74C9'
       textColor: '#fff'
-      tags: [Java, 前端开发]
+      tags: [Java, 后端开发]
     - name: FoxScallion
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/links/FoxScallion.jpg
       url: https://www.foxscallion.top/
