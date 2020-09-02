@@ -661,7 +661,7 @@ plugins:
   # APlayer is only available in mainland China.
   # APlayer config: https://github.com/metowolf/MetingJS
   aplayer:
-    enable: true
+    enable: false
     js:
       - https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js
       - https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js
@@ -726,8 +726,8 @@ plugins:
 # 自定义右键菜单
 rightmenu:
   enable: true
-  # hr: 分割线, music: 音乐控制器
-  layout: [comments, photos, links, hr, tools, catchTheCat, hr, music ]
+  # hr: 分割线, music: 音乐控制器  // , hr, music
+  layout: [comments, photos, links, hr, tools, catchTheCat]
   # 可选功能项
   print:
     name: 打印页面
