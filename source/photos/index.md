@@ -4,6 +4,7 @@ title: 我的相册
 top_meta: false
 bottom_meta: false
 sidebar: []
+sitemap: false
 ---
 {% tabs photos,1 %}
 

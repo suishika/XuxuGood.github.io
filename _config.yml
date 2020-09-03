@@ -200,9 +200,12 @@ baidu_url_submit:
   # 文本文档的地址， 新链接会保存在此文本文档里
   path: baidu_urls.txt
 
-# 自动生成sitemap 站点地图
+# 自动生成 sitemap 站点地图
 sitemap:
   path: sitemap.xml
+  rel: false
+  tags: false
+  categories: false
 baidusitemap:
   path: baidusitemap.xml
 

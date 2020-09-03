@@ -4,6 +4,7 @@ title: 小伙伴们   # 可选，这是友链页的标题
 top_meta: true
 bottom_meta: false
 sidebar: [blogger, category, tagcloud]
+sitemap: false
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/links-or-tools.png
 links:
   - group: 主题作者 + 文档

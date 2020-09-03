@@ -3,6 +3,7 @@ layout: page
 seo_title: 围住小猫
 bottom_meta: false
 sidebar: []
+sitemap: false
 ---
 <br/>
 <div align="center">

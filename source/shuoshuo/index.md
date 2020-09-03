@@ -3,6 +3,7 @@ layout: artitalk
 seo_title: 说说
 bottom_meta: false
 sidebar: []
+sitemap: false
 comments:
   enable: false
 ---

@@ -3,6 +3,7 @@ layout: page
 seo_title: 留言板
 bottom_meta: false
 sidebar: []
+sitemap: false
 ---
 
 <div class="poem-wrap">

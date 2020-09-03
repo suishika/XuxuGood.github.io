@@ -4,6 +4,7 @@ title: 实用工具
 top_meta: true
 bottom_meta: false
 sidebar: [blogger, category, tagcloud]
+sitemap: false
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/links-or-tools.png
 links:
   - group: 图片工具

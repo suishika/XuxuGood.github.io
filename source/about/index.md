@@ -3,6 +3,7 @@ layout: page
 seo_title: 关于我
 bottom_meta: false
 sidebar: []
+sitemap: false
 valine:
   placeholder: 有什么想对我说的呢？
 ---
