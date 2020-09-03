@@ -5,6 +5,7 @@ navbar:
 post:
   pin: 置顶
   readmore: 阅读全文
+  readoriginal: 去源站阅读
   sticky: 置顶
   wordcount: '字数统计：%s字'
   duration: '阅读时长≈ %s分钟'

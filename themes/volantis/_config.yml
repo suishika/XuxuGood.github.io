@@ -134,15 +134,17 @@ article:
   # 文章列表页面的文章卡片布局方案
   preview:
     scheme: landscape # landscape
-    # pin icon for post
+    # 文章置顶图标
     pin_icon: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4cc.svg
-    # auto generate title if not exist
+    # 自动生成标题（如果不存在）
     auto_title: true # false, true
-    # auto generate excerpt if not exist
+    # 自动生成摘要（如果不存在）
     auto_excerpt: true # false, true
-    # show split line or not
+    # 分割线样式
     line_style: dashed # hidden, solid, dashed, dotted
-    # show readmore button
+    # 显示作者头像
+    author: true # true, false
+    # 显示阅读全文按钮
     readmore: auto # auto, always
   # 文章详情页面的文章卡片本体布局方案
   body:
@@ -240,6 +242,16 @@ article:
           img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png
         - id: telegram
           img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png
+  author:
+    default:
+      name: 'Mr. X'
+      avatar: https://hasaik.com/images/avatar.jpg
+      url: /
+    volantis:
+      name: Volantis Team
+      avatar: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.png
+      url: https://github.com/volantis-x/
+    # Add author here:
 ############################### Article Layout ############################### > end
 
 
