@@ -1671,10 +1671,10 @@ hexo-generator-archive@^1.0.0:
   dependencies:
     hexo-pagination "1.0.0"
 
-hexo-generator-baidu-sitemap@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.npm.taobao.org/hexo-generator-baidu-sitemap/download/hexo-generator-baidu-sitemap-0.1.6.tgz#0ac2f89a62a28d9b5b9710fdd29d2e9425d54f04"
-  integrity sha1-CsL4mmKijZtblxD90p0ulCXVTwQ=
+hexo-generator-baidu-sitemap@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.npm.taobao.org/hexo-generator-baidu-sitemap/download/hexo-generator-baidu-sitemap-0.1.9.tgz#a9e731f95118df42f17faa3a934c6bbda821c9db"
+  integrity sha1-qecx+VEY30Lxf6o6k0xrvaghyds=
   dependencies:
     ejs "^2.5.5"
     hexo "^3.0.0"
@@ -1727,12 +1727,12 @@ hexo-generator-search@^2.4.0:
     nunjucks "^3.0.1"
     utils-merge "^1.0.0"
 
-hexo-generator-sitemap@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npm.taobao.org/hexo-generator-sitemap/download/hexo-generator-sitemap-2.0.0.tgz#0d4cc5c44785c1ae15c5898e0c5bff5a9e163957"
-  integrity sha1-DUzFxEeFwa4VxYmODFv/Wp4WOVc=
+hexo-generator-sitemap@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npm.taobao.org/hexo-generator-sitemap/download/hexo-generator-sitemap-2.1.0.tgz#efd938049ddbf9a961a077fcc5947918ba5b213a"
+  integrity sha1-79k4BJ3b+alhoHf8xZR5GLpbITo=
   dependencies:
-    hexo-util "^1.4.0"
+    hexo-util "^2.1.0"
     micromatch "^4.0.2"
     nunjucks "^3.1.6"
 
@@ -1763,13 +1763,6 @@ hexo-i18n@^1.0.0:
   integrity sha1-eYP7OjE+kGFbhN2PqUanHEie9b0=
   dependencies:
     sprintf-js "^1.0.3"
-
-hexo-lazyload-image@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.npm.taobao.org/hexo-lazyload-image/download/hexo-lazyload-image-1.0.9.tgz#6dbff4957a965b8b0eed3ca7a4afd9ad1cced013"
-  integrity sha1-bb/0lXqWW4sO7TynpK/ZrRzO0BM=
-  dependencies:
-    uglify-js "^3.0.27"
 
 hexo-log@^0.2.0:
   version "0.2.0"
@@ -1885,7 +1878,7 @@ hexo-util@^0.6.3:
     html-entities "^1.2.0"
     striptags "^2.1.1"
 
-hexo-util@^1.3.0, hexo-util@^1.4.0, hexo-util@^1.7.0:
+hexo-util@^1.3.0, hexo-util@^1.7.0:
   version "1.9.1"
   resolved "https://registry.npm.taobao.org/hexo-util/download/hexo-util-1.9.1.tgz?cache=0&sync_timestamp=1596011775402&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fhexo-util%2Fdownload%2Fhexo-util-1.9.1.tgz#15dc10d0dca474c978cdba9c20e8d0417ac993de"
   integrity sha1-FdwQ0NykdMl4zbqcIOjQQXrJk94=
@@ -1916,10 +1909,10 @@ hexo-util@^2.0.0, hexo-util@latest:
     strip-indent "^3.0.0"
     striptags "^3.1.1"
 
-hexo-util@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.npm.taobao.org/hexo-util/download/hexo-util-2.2.0.tgz?cache=0&sync_timestamp=1596011775402&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fhexo-util%2Fdownload%2Fhexo-util-2.2.0.tgz#5372864457d716c3f4553babf22e6da51690806a"
-  integrity sha1-U3KGRFfXFsP0VTur8i5tpRaQgGo=
+hexo-util@^2.1.0, hexo-util@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.npm.taobao.org/hexo-util/download/hexo-util-2.4.0.tgz#f5c0099a0a1718b3ad27061e5e4d1fb9eb7f2b41"
+  integrity sha1-9cAJmgoXGLOtJwYeXk0fuet/K0E=
   dependencies:
     bluebird "^3.5.2"
     camel-case "^4.0.0"
@@ -1969,10 +1962,10 @@ hexo@^3.0.0:
     titlecase "^1.1.2"
     warehouse "^2.2.0"
 
-hexo@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.npm.taobao.org/hexo/download/hexo-5.0.2.tgz?cache=0&sync_timestamp=1597045870666&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fhexo%2Fdownload%2Fhexo-5.0.2.tgz#b7c593b26044ce2b7e0265a706218a7aba0b0070"
-  integrity sha1-t8WTsmBEzit+AmWnBiGKeroLAHA=
+hexo@^5.1.0:
+  version "5.1.1"
+  resolved "https://registry.npm.taobao.org/hexo/download/hexo-5.1.1.tgz#5cbd979acce5d3915919688d8d6a8c3de3e93fda"
+  integrity sha1-XL2Xmszl05FZGWiNjWqMPePpP9o=
   dependencies:
     abbrev "^1.1.1"
     archy "^1.0.0"
@@ -1983,7 +1976,7 @@ hexo@^5.0.2:
     hexo-fs "^3.1.0"
     hexo-i18n "^1.0.0"
     hexo-log "^2.0.0"
-    hexo-util "^2.2.0"
+    hexo-util "^2.4.0"
     js-yaml "^3.12.0"
     micromatch "^4.0.2"
     moment "^2.22.2"
@@ -3878,11 +3871,6 @@ uglify-js@2.6.0:
     source-map "~0.5.1"
     uglify-to-browserify "~1.0.0"
     yargs "~3.10.0"
-
-uglify-js@^3.0.27:
-  version "3.10.0"
-  resolved "https://registry.npm.taobao.org/uglify-js/download/uglify-js-3.10.0.tgz?cache=0&sync_timestamp=1592744803278&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuglify-js%2Fdownload%2Fuglify-js-3.10.0.tgz#397a7e6e31ce820bfd1cb55b804ee140c587a9e7"
-  integrity sha1-OXp+bjHOggv9HLVbgE7hQMWHqec=
 
 uglify-js@^3.5.1, uglify-js@~3.10.0:
   version "3.10.1"
