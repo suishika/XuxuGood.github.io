@@ -1043,6 +1043,10 @@ tocNumberStyle:
 #全局自定义通知类element通知，关闭则无法使用该通知
 messageNotify:
   enable: true
+# 彩色标签云
 tagsColor:
   enable: true
+# 樱花飘落特效
+sakura:
+  enable: false
 ############################### 自定义主题 ############################### > end
