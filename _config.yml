@@ -204,8 +204,8 @@ baidu_url_submit:
 sitemap:
   path: sitemap.xml
   rel: false
-  tags: false
-  categories: false
+  tags: true
+  categories: true
 baidusitemap:
   path: baidusitemap.xml
 
