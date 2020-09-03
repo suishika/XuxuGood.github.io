@@ -2,6 +2,7 @@
 title: Hexo+NexT 自定义样式博文加密
 pin: false
 toc: true
+headimg: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-headimg/privacy-space.png
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/hexo.png
 abbrlink: c1cdcf68
 date: 2019-10-16 16:31:27
