@@ -8,7 +8,7 @@ categories: [Java,JVM]
 keywords: [Java,JVM,垃圾收集,算法,内存空间]
 abbrlink: 2375015f
 date: 2020-08-24 19:52:59
-headimg:
+headimg: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-headimg/JVM-GC.png
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/jvm.png
 references:
     - title: 垃圾收集算法
