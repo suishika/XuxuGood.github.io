@@ -28,12 +28,13 @@ var banUrl = theme.plugins.pjax.banUrl || [];
             var banUrl = <%- '["' + banUrl.join('", "') + '"]' %>;
             if (banUrl[0] != "") {
                 banUrl.forEach(item => {
-                    if(currentUrl.indexOf(item) != -1 || targetUrl.indexOf(item) != -1) {
+                    if (currentUrl.indexOf(item) != -1 || targetUrl.indexOf(item) != -1) {
                         window.location.href = targetUrl;
                     }
                 });
             }
-        } catch (error) {}
+        } catch (error) {
+        }
 
         window.subData = null; // 移除标题（用于一二级导航栏切换处）
         $.fancybox.close();    // 关闭弹窗
@@ -80,7 +81,11 @@ var banUrl = theme.plugins.pjax.banUrl || [];
         });
 
         try {
-            pjax_fancybox();
+            if (typeof $.fancybox == "undefined") {
+                SCload_fancybox();
+            } else {
+                pjax_fancybox();
+            }
             <% if (theme.plugins.backstretch.enable && theme.plugins.backstretch.images) { %>
             <% var posi = null;
                 if (theme.plugins.backstretch.position == 'cover') {
@@ -89,16 +94,16 @@ var banUrl = theme.plugins.pjax.banUrl || [];
             %>
             if ('<%- posi %>') {
                 $('<%- posi %>').backstretch("resize");
-                if($('.cover-wrapper').is(':hidden')){
+                if ($('.cover-wrapper').is(':hidden')) {
                     $('.cover-backstretch').backstretch("pause");
-                }else{
+                } else {
                     $('.cover-backstretch').backstretch("next");
                 }
             } else {
                 $.backstretch("resize");
-                if($('.cover-wrapper').is(':hidden')){
+                if ($('.cover-wrapper').is(':hidden')) {
                     $.backstretch("pause");
-                }else{
+                } else {
                     $.backstretch("next");
                 }
             }
@@ -118,7 +123,11 @@ var banUrl = theme.plugins.pjax.banUrl || [];
             pjax_valine();
             <% } %>
             <% if (theme.comments.service == 'minivaline'){ %>
-            pjax_minivaline();
+                if (typeof MiniValine == "undefined") {
+                    load_minivaline();
+                } else {
+                    pjax_minivaline();
+                }
             <% } %>
             <% if (theme.comments.service == 'gitalk'){ %>
             pjax_gitalk();
