@@ -8,7 +8,7 @@ categories: [Java, 线程]
 keywords: [Java, 线程, CountDownLatch, 计数器, 通信]
 abbrlink: cf9c1454
 date: 2020-08-21 10:57:48
-headimg:
+headimg: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-headimg/CountDownLatch.png
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/thread.png
 references:
     - title: CountDownLatch（倒计时计数器）使用说明
