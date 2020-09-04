@@ -505,7 +505,6 @@ sidebar:
         title: 公告
       content:
         - ':bell: 页面细节持续优化中'
-        - ':bell: 希望各位朋友们也能给出点美化建议'
         - ':bell: 本站默认替换了右键菜单，唤醒原系统菜单：<kbd>Ctrl</kbd> + <kbd>右键</kbd> ~'
         - ':bell: 本站于 2020/07/14/ 由 [Next](https://hexo-theme-next.netlify.app/) 主题更换为 [Volantis](https://volantis.js.org/) 主题，故关于 Next 主题的文章效果展示可能有些变化，请见谅'
 ############################### Sidebar ############################### > end
