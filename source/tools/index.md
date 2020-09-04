@@ -1,155 +1,72 @@
 ---
-layout: friends
+layout: page
 title: 实用工具
 top_meta: true
 bottom_meta: false
 sidebar: [blogger, category, tagcloud]
 sitemap: false
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/links-or-tools.png
-links:
-  - group: 图片工具
-    icon: fas fa-images
-    items:
-    - name: TinyPNG
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/tinypng.png
-      url: https://tinypng.com/
-      backgroundColor: '#708090'
-      textColor: '#fff'
-      tags: [在线图片压缩]
-    - name: 稿定抠图
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/gaoding.png
-      url: https://www.gaoding.com/koutu
-      backgroundColor: '#FBBC05'
-      textColor: '#fff'
-      tags: [免费在线抠图]
-    - name: 彼岸图网
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/彼岸图网.png
-      url: http://pic.netbian.com/e/search/result/index.php?page=19&searchid=25
-      backgroundColor: '#3E74C9'
-      textColor: '#fff'
-      tags: [超清壁纸]
-    - name: 改图宝
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/改图宝.png
-      url: https://www.gaitubao.com/
-      backgroundColor: '#967ADC'
-      textColor: '#fff'
-      tags: [在线修改动图]
-    - name: WallpaperAccess
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/wallpaperaccess.png
-      url: https://wallpaperaccess.com/
-      backgroundColor: '#7C5246'
-      textColor: '#fff'
-      tags: [高清图片]
-    - name: EasyIcon
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/easyicon.png
-      url: https://www.easyicon.net/
-      backgroundColor: '#FF69B4'
-      textColor: '#fff'
-      tags: [各种图标下载库]    
-      
-  - group: Web 前端
-    icon: fas fa-rocket
-    items:
-    - name: Iconfont
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/iconfont.png
-      url: https://www.iconfont.cn/
-      backgroundColor: '#008B8B'
-      textColor: '#fff'
-      tags: [阿里巴巴矢量图标库]
-    - name: Flaticon
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/flaticon.png
-      url: https://www.flaticon.com
-      backgroundColor: '#3E74C9'
-      textColor: '#fff'
-      tags: [超好看的图标库]
-    - name: Font Awesome
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/fontawesome.png
-      url: https://fontawesome.com/
-      backgroundColor: '#34A853'
-      textColor: '#fff'
-      tags: [图标字体库和CSS框架]
-    - name: Layui
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/layuilogo.png
-      url: https://www.layui.com/
-      backgroundColor: '#7C5246'
-      textColor: '#fff'
-      tags: [经典模块化前端UI框架]
-    - name: Itmeo
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/itmeo.png
-      url: https://webgradients.com/
-      backgroundColor: '#967ADC'
-      textColor: '#fff'
-      tags: [渐变色网站]
- 
-  - group: Linux 工具
-    icon: fab fa-linux
-    items:
-    - name: Man-Linux
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/linux.png
-      url: https://man.cx/
-      backgroundColor: '#E94335'
-      textColor: '#fff'
-      tags: [Linux命令行帮助查询，英文版]
-    - name: Linux 命令搜索
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/linux.png
-      url: http://www.atoolbox.net/Tool.php?Id=826
-      backgroundColor: '#3E74C9'
-      textColor: '#fff'
-      tags: [Linux命令行帮助查询，中文版]
-          
-  - group: 办公常用
-    icon: fas fa-coffee
-    items:
-    - name: SmallPDF
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/smallpdf.png
-      url: https://smallpdf.com/cn
-      backgroundColor: '#7C5246'
-      textColor: '#fff'
-      tags: [万能PDF工具集合]
-    - name: Convertio
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/convertio.png
-      url: https://convertio.co/
-      backgroundColor: '#967ADC'
-      textColor: '#fff'
-      tags: [在线文件转换器]
-  
-  - group: 成长必备
-    icon: fas fa-user-graduate
-    items:
-    - name: 力扣
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/力扣.png
-      url: https://leetcode-cn.com/
-      backgroundColor: '#008B8B'
-      textColor: '#fff'
-      tags: [程序猿学习必备]
-
-  - group: 其他工具
-    icon: fas fa-bookmark
-    items:
-    - name: Google PageSpeed Insights
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/google-speed.png
-      url: https://developers.google.com/speed/pagespeed/insights/
-      backgroundColor: '#E94335'
-      textColor: '#fff'
-      tags: [免费各种在线工具]
-    - name: 在线工具
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/oschina.png
-      url: http://tool.oschina.net/
-      backgroundColor: '#34A853'
-      textColor: '#fff'
-      tags: [免费各种在线工具]
-    - name: Emojipedia
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/emojipedia.png
-      url: https://emojipedia.org/
-      backgroundColor: '#3E74C9'
-      textColor: '#fff'
-      tags: [各种emoji表情库]
-    - name: Valine表情
-      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/Valine表情.png
-      url: https://github.com/GamerNoTitle/ValineCDN
-      backgroundColor: '#7C5246'
-      textColor: '#fff'
-      tags: [收集的各种表情]
 ---
+### <i class="fas fa-images"></i> 图片工具
+
+{% sitegroup %}
+{% site TinyPNG, url=https://tinypng.com/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/tinypng-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/tinypng.png, description=在线图片压缩 %}
+{% site 稿定抠图, url=https://www.gaoding.com/koutu, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/gaoding-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/gaoding.png, description=免费在线抠图 %}
+{% site 彼岸图网, url=http://pic.netbian.com/e/search/result/index.php?page=19&searchid=25, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/彼岸图网-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/彼岸图网.png, description=超清壁纸 %}
+{% site 改图宝, url=https://www.gaitubao.com/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/改图宝-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/改图宝.png, description=在线修改动图 %}
+{% site EasyIcon, url=https://www.easyicon.net/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/easyicon-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/easyicon.png, description=各种图标下载库 %}
+{% site JPG To PNG, url=https://jpg2png.com/zh/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/JPG-TO-PNG-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/JPG-TO-PNG.png, description=JPG格式图片转PNG格式图片 %}
+{% endsitegroup %}
+
+### <i class="fas fa-rocket"></i> Web 前端
+
+{% sitegroup %}
+{% site Iconfont, url=https://www.iconfont.cn/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/iconfont-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/iconfont.png, description=阿里巴巴矢量图标库 %}
+{% site Flaticon, url=https://www.flaticon.com, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/flaticon-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/flaticon.png, description=Access 3,260,000 vector icons. %}
+{% site Font Awesome, url=https://fontawesome.com/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/fontawesome-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/fontawesome.png, description=图标字体库和CSS框架 %}
+{% site Layui, url=https://www.layui.com/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/layuilogo-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/layuilogo.png, description=经典模块化前端UI框架 %}
+{% site Itmeo, url=https://webgradients.com/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/itmeo-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/itmeo.png, description=渐变色网站 %}
+{% endsitegroup %}
+
+### <i class="fab fa-linux"></i> Linux 工具
+
+{% sitegroup %}
+{% site Man-Linux, url=https://man.cx/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/linux-english-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/linux.png, description=Linux命令行帮助查询，英文版 %}
+{% site Linux 命令搜索, url=http://www.atoolbox.net/Tool.php?Id=826, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/linux-chinese-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/linux.png, description=Linux命令行帮助查询，中文版 %}
+{% endsitegroup %}
+
+### <i class="fas fa-coffee"></i> 办公常用
+
+{% sitegroup %}
+{% site SmallPDF, url=https://smallpdf.com/cn, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/smallpdf-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/smallpdf.png, description=万能PDF工具集合 %}
+{% site Convertio, url=https://convertio.co/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/convertio-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/convertio.png, description=在线文件转换器 %}
+{% endsitegroup %}
+
+### <i class="fas fa-user-graduate"></i> 成长必备
+
+{% sitegroup %}
+{% site 力扣, url=https://leetcode-cn.com/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/力扣-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/力扣.png, description=程序猿学习必备 %}
+{% endsitegroup %}
+
+### <i class="fas fa-bookmark"></i> 其他工具
+
+{% sitegroup %}
+{% site Google PageSpeed Insights, url=https://developers.google.com/speed/pagespeed/insights/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/google-speed-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/google-speed.png, description=网站访问速度测试 %}
+{% site 在线工具, url=http://tool.oschina.net/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/oschina-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/oschina.png, description=免费各种在线工具 %}
+{% site Emojipedia, url=https://emojipedia.org/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/emojipedia-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/emojipedia.png, description=各种emoji表情库 %}
+{% site Valine表情, url=https://github.com/GamerNoTitle/ValineCDN, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/Valine表情-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/Valine表情.png, description=收集的各种表情 %}
+{% endsitegroup %}
+
+
+
+
+<br/>
 
 >欢迎推荐你正在使用的「利器」!
+
+<style>
+    .md h3 {
+        margin-top: 14px;
+        color: #1bcdfc;
+    }
+</style>

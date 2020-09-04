@@ -2,51 +2,51 @@
 <div class='l_main<%- page.sidebar == false ? ' no_sidebar' : '' %>'>
   <article id="<%= page.layout %>" class="post article article-entry l_friends white-box reveal <%- theme.custom_css.body.effect.join(' ') %> article-type-<%= page.layout %>" itemscope itemprop="blogPost">
     <%- partial('_partial/meta',{post: page, position: 'top'}) %>
-    <section style="margin-top: -30px">
-        <%- page.excerpt %>
-        <% if (site.data.friends){ %>
-          <% site.data.friends.forEach((group, i) => { %>
-            <div class='friends-group'>
-              <br>
-              <h3 class='friend-header'>
-                <%- group.group %>
-              </h3>
-              <% if (group.description) { %>
-                <%- markdown(group.description) %>
-              <%} %>
-              <div class='friend-content'>
-                <% (group.items||[]).forEach(function(item){ %>
-                  <a class='friend-card' style='background:<%- item.backgroundColor %>; color:<%- item.textColor %>'
-                    target="_blank" rel="external nofollow noopener noreferrer" href='<%- url_for(item.url || '') %>'>
-                    <div class='friend-left'>
-                      <% if (item.avatar) { %>
-                        <img class='avatar' src='<%- item.avatar || (theme.plugins.lazyload && theme.plugins.lazyload.loadingImg) %>'/>
-                      <% } %>
+    <%- page.excerpt %>
+    <% if (site.data.friends){ %>
+      <% site.data.friends.forEach((group, i) => { %>
+        <div class='friends-group'>
+          <h3 class='friend-header'>
+            <% if (group.icon) { %>
+                <i class="<%= group.icon %> fa-fw" aria-hidden="true"></i>
+            <%} %>
+            <%- group.group %>
+          </h3>
+          <% if (group.description) { %>
+            <%- markdown(group.description) %>
+          <%} %>
+          <div class='friend-content'>
+            <% (group.items||[]).forEach(function(item){ %>
+              <a class='friend-card' style='background:<%- item.backgroundColor %>; color:<%- item.textColor %>'
+                target="_blank" rel="external nofollow noopener noreferrer" href='<%- url_for(item.url || '') %>'>
+                <div class='friend-left'>
+                  <% if (item.avatar) { %>
+                    <img class='avatar' src='<%- item.avatar || (theme.plugins.lazyload && theme.plugins.lazyload.loadingImg) %>'/>
+                  <% } %>
+                </div>
+                <div class='friend-right'>
+                  <p class="friend-name"><%- item.name %></p>
+                  <% if(item.keywords){ %>
+                    <div class='friend-tags-wrapper'>
+                    <% (item.keywords||[]).forEach(function(keyword){ %>
+                      <p class="tags"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><%= keyword %></p>
+                    <% }) %>
                     </div>
-                    <div class='friend-right'>
-                      <p class="friend-name"><%- item.name %></p>
-                      <% if(item.keywords){ %>
-                        <div class='friend-tags-wrapper'>
-                        <% (item.keywords||[]).forEach(function(keyword){ %>
-                          <p class="tags"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><%= keyword %></p>
-                        <% }) %>
-                        </div>
-                      <% } %>
-                      <% if(item.description){ %>
-                        <div class='friend-tags-wrapper'>
-                          <p class="tags"><%= item.description %></p>
-                        </div>
-                      <% } %>
+                  <% } %>
+                  <% if(item.description){ %>
+                    <div class='friend-tags-wrapper'>
+                      <p class="tags"><%= item.description %></p>
                     </div>
-                  </a>
-                <% }) %>
-              </div>
-            </div>
-          <% }) %>
-        <% } %>
-        <br><br>
-        <%- page.more %>
-    </section>
+                  <% } %>
+                </div>
+              </a>
+            <% }) %>
+          </div>
+        </div>
+      <% }) %>
+    <% } %>
+    <br><br>
+    <%- page.more %>
     <%- partial('_partial/meta',{post: page, position: 'bottom'}) %>
   </article>
 
