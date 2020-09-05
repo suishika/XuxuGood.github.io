@@ -19,7 +19,7 @@ thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-th
 名称：Xu's Blog
 链接：[https://hasaik.com](https://hasaik.com)
 头像：[https://hasaik.com/images/avatar.jpg](https://hasaik.com/images/avatar.jpg)
-描述：博观而约取，厚积而薄发！
+描述：简单不先于复杂，而是在复杂之后！
 标签：Java，前端
 背景颜色（若有）：#967ADC
 文字颜色（若有）：#fff
