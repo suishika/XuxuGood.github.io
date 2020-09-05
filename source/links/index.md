@@ -96,8 +96,4 @@ thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-th
         margin: 0 3px;
         vertical-align: 1px;
     }
-    
-    .friends-group p {
-        margin-bottom: 0;
-    }
 </style>

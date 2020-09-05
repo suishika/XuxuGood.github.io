@@ -252,7 +252,7 @@
 
 - group: 危险区（该区站点保留7天至3个月不定）
   icon: fas fa-exclamation-triangle
-  desc: 如贵站在该区请检查贵站是否能正常访问或是否违背了本站友链原则（例：未开启https）
+  description: 如贵站在该区请检查贵站是否能正常访问或是否违背了本站友链原则（例：未开启https）
   items:
     - name: LarsCheng
       avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/links/LarsCheng.png
