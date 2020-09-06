@@ -235,6 +235,12 @@
       backgroundColor: '#38B7EA'
       textColor: '#fff'
       keywords: [Python, 数据分析, 认知]
+    - title: 若只如初见
+      avatar: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/links/若只如初见.jpg
+      url: https://joyli.net.cn/
+      backgroundColor: '#FBBC05'
+      textColor: '#fff'
+      keywords: [JavaScript, 前端, node]
 
 - group: ✨ 虐狗博主 —— 你的春日好运正在派件，请保持心情舒畅
   noteStyle: info
