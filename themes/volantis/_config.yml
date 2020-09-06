@@ -682,7 +682,7 @@ plugins:
     cacheBust: false     # When set to true, Pjax appends a timestamp  to skip the browser cache.
     animation: nprogress # nprogress, circle
     banUrl:              # 被屏蔽的 url 地址将不启用 pjax 跳转，可以在控制台下使用 window.location.pathname 获取
-    # - /shuoshuo/       # artitalk 不支持 pjax
+      - /shuoshuo/       # artitalk 不支持 pjax
 
 
   # Artitalk https://artitalk.js.org
@@ -690,18 +690,20 @@ plugins:
   # 除appID和appKEY外均为选填项
   artitalk:
     # Set `layout: artitalk` to enable in page
-    appID: 7XJ5WS3tFNeRmmfpvNC3WCwG-MdYXbMMI # your appID
-    appKEY: wNDj3jzJ4f6CEahsFbjiVyn5 # your appKEY
+    appId: 7XJ5WS3tFNeRmmfpvNC3WCwG-MdYXbMMI # your appID
+    appKey: wNDj3jzJ4f6CEahsFbjiVyn5 # your appKEY
+    # Un_NewVersion:  # 取消使用新版Artitalk，默认为false
     # severurl:  #leancloud绑定的安全域名，使用国际版的话不需要填写
-    slanguage: zh # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
-    per: 5 #每页说说的显示数量
-    placeholder1: 分享一些有趣的事情吧(◕ܫ◕) #在编辑说说的输入框中的占位符
-    placeholder2: https://hasaik.com/images/avatar.jpg #自定义头像url的输入框的占位符
-    lazy: 1 #加载动画的开关，1为开，0为关，默认为开
-    bgimg: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/valine/comment.webp #说说输入框背景图片url
+    lang: zh # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
+    pageSize: 5 #每页说说的显示数量
+    shuoPla: 分享一些有趣的事情吧(◕ܫ◕)  #在编辑说说的输入框中的占位符
+    avatarPla: https://hasaik.com/images/avatar.jpg #自定义头像url的输入框的占位符
+    motion: 1 #加载动画的开关，1为开，0为关，默认为开
+    bgImg: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/valine/comment.webp #说说输入框背景图片url
     color1: '#1BC3FB' #说说背景颜色1&按钮颜色1
     # color2: #说说背景颜色2&按钮颜色2
     color3: '#fff' #说说字体颜色
+    # cssUrl: #自定义css接口（仅新版Artitalk有效）
 
   # 从 issues 加载动态数据
   # {% issues sites/timeline/friends | api=xxx | group=key:a,b,c %}
