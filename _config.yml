@@ -161,6 +161,10 @@ feed:
   content_limit: 150
   content_limit_delim: ' '
 
+#相关文章头图
+popularPosts:
+  eyeCatchImageAttributeName: headimg
+
 #文章加密
 encrypt:
   enable: true
