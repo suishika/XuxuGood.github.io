@@ -1,58 +1,59 @@
 ---
-layout: friends     # 必须
-title: 小伙伴们   # 可选，这是友链页的标题
+layout: page
+title: 小伙伴们
 top_meta: true
 bottom_meta: false
 sidebar: [blogger, category, tagcloud]
 sitemap: false
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/links-or-tools.png
 ---
-### 申请友链：
+
+{% issues sites | api=https://gitee.com/api/v5/repos/xuxu_fighting/blog_friends/issues?sort=created&direction=asc&state=open&page=1&per_page=100 | group=group:主题作者 + 文档,技术大佬,朋友们,虐狗博主 %}
+
+<br>
+
+{% note warning, <strong>友链更新通知</strong> <br>由于近期对友链系统进行了重做，原链接失效的小伙伴请按照下方交换友链的步骤进行填写。在新的友链系统中，您随时可以对自己的信息进行修改而无需等待博主更新。 %}
+
+<br>
+
 {% tabs links,1 %}
 
-<!-- tab &nbsp;添加流程 @plus-circle -->
+<!-- tab &nbsp;添加友链流程 @plus-circle -->
 
 {% timeline %}
 
-{% timenode 请先添加本站链接 %}
+{% timenode 第一步：新建 [Gitee Issue](https://gitee.com/xuxu_fighting/blog_friends/issues) 按照格式填写并提交 %}
 
-名称：Xu's Blog
-链接：[https://hasaik.com](https://hasaik.com)
-头像：[https://hasaik.com/images/avatar.jpg](https://hasaik.com/images/avatar.jpg)
-描述：简单不先于复杂，而是在复杂之后！
-标签：Java，前端
-背景颜色（若有）：#967ADC
-文字颜色（若有）：#fff
-
-{% endtimenode %}
-
-{% timenode 下方评论区按此格式申请友链 %}
-
+```json
+{
+    "title": "",
+    "avatar": "",
+    "screenshot": "",
+    "url": "",
+    "description": "",
+    "group": ""
+}
 ```
-- name: Xu’s Blog # 博客名
-  avatar: https://hasaik.com/images/avatar.jpg # 头像链接
-  url: https://hasaik.com # 博客链接
-  tags: [Java, 前端] # 标签
+为了提高图片加载速度，建议优化头像和截图：
+
+1.打开 [压缩图](https://www.yasuotu.com/) 上传自己的头像，将图片尺寸调整到 `96px` 后下载。
+2.将压缩后的图片上传到 [去不图床](https://7bu.top/) 或者 [sm.ms 图床](https://sm.ms/) 并使用此图片链接作为头像。
+3.重复上述步骤，把压缩网站截图并把尺寸调整到 `540x360` 以下。
+
+{% endtimenode %}
+
+{% timenode 第二步：添加友链并等待管理员审核 %}
+
+请添加本站到您的友链中，如果您也使用 issue 作为友链源，只需要告知您的友链源仓库即可。
 ```
-
-{% endtimenode %}
-
-{% timenode 等待本站添加贵站 %}
-
-{% folding cyan open, 友链申明 %}
-:bell: 站点失效、停止维护、内容不当都可能被取消友链
-:bell: 禁链不尊重他人劳动成果，转载、引用不加出处，恶意行为的站点
-:bell: 本站会定期检查并清理无效的、单方面的友链，如更换信息请留言，谢谢合作
-:bell: 加入友链后会在本站任意留言区获得<span class="links-tips-friends">小伙伴</span>徽章（以邮箱判定）一枚哦，如果没有请联系我
-{% endfolding %}
-
-{% endtimenode %}
-
-{% timenode 互链成功 %}
-
-{% noteblock poo cyan %}
-已经添加的友链不会轻易删除。如果您已经移除本站，本站也将移除友链
-{% endnoteblock %}
+title: Xu’s Blog # 博客名
+avatar: https://hasaik.com/images/avatar.jpg # 头像链接
+url:  https://hasaik.com # 博客链接
+screenshot: https://i.loli.net/2020/09/05/IabBq7hjepoLOuR.png # 网站截图
+description: 简单不先于复杂，而是在复杂之后。 # 网站描述
+tags: [Java, 前端] # 标签
+```
+待管理员审核通过，回来刷新即可生效。
 
 {% endtimenode %}
 
@@ -60,18 +61,59 @@ thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-th
 
 <!-- endtab -->
 
-<!-- tab &nbsp;清理记录 @minus-circle -->
+<!-- tab &nbsp;友链申明 @bell -->
 
-如果出现误清理请重新申请即可！
+:bell: 站点失效、停止维护、内容不当都可能被取消友链
+:bell: 禁链不尊重他人劳动成果，转载、引用不加出处，恶意行为的站点
+:bell: 本站会定期检查并清理无效的、单方面的友链，如更换信息请留言，谢谢合作
+:bell: 加入友链后会在本站任意留言区获得<span class="links-tips-friends">小伙伴</span>徽章（以邮箱判定）一枚哦，如果没有请联系我
 
+<!-- endtab -->
+
+<!-- tab &nbsp;更新自己的博客链接 @retweet -->
+
+如果是自己创建的 issue ，可以自己修改。
+如果是管理员创建的，请自己重新创建一份，然后让管理员删掉旧的。
+
+<!-- endtab -->
+
+<!-- tab &nbsp;其他方式添加友链 @anchor -->
+
+如果你不会使用 [Gitee Issue](https://gitee.com/xuxu_fighting/blog_friends/issues) 提交友链，那么请按照以下步骤申请友链。
 {% timeline %}
 
-{% timenode 2020-08-20 %}
+{% timenode 第一步：按照下面格式留言 %}
 
-*  朱纯树博客 - https://si***og.cn
-    站点无法访问
-*  Emil’s blog - https://blog.hv***g.com/
-    站点未开启Https
+```yml
+{
+    "title": "",        # 站点名字
+    "avatar": "",       # 头像
+    "screenshot": "",   # 站点截图
+    "url": "",          # 站点地址
+    "description": "",  # 描述
+    "group": ""         # 分组,可选值有[技术大佬、朋友们、虐狗博主]
+}
+```
+为了提高图片加载速度，建议优化头像和截图：
+
+1.打开 [压缩图](https://www.yasuotu.com/) 上传自己的头像，将图片尺寸调整到 `96px` 后下载。
+2.将压缩后的图片上传到 [去不图床](https://7bu.top/) 或者 [sm.ms 图床](https://sm.ms/) 并使用此图片链接作为头像。
+3.重复上述步骤，把压缩网站截图并把尺寸调整到 `540x360` 以下。
+
+{% endtimenode %}
+
+{% timenode 第二步：添加本站友链并等待管理员审核 %}
+
+请添加本站到您的友链中（信息按需取）
+```
+title: Xu’s Blog # 博客名
+avatar: https://hasaik.com/images/avatar.jpg # 头像链接
+url:  https://hasaik.com # 博客链接
+screenshot: https://i.loli.net/2020/09/05/IabBq7hjepoLOuR.png # 网站截图
+description: 简单不先于复杂，而是在复杂之后。 # 网站描述
+tags: [Java, 前端] # 标签
+```
+待管理员核实以后，会帮您到 [Gitee Issue](https://gitee.com/xuxu_fighting/blog_friends/issues) 添加友链。
 
 {% endtimenode %}
 
@@ -80,20 +122,3 @@ thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-th
 <!-- endtab -->
 
 {% endtabs %}
-
-{# 修改时间线中的样式 #}
-<style>
-    details summary:hover:after{
-        right: 4px;
-    }
-    
-    .links-tips-friends {
-        font-size: 12px;
-        padding: 4px 4px;
-        background: #6cf;
-        color: #fff;
-        border-radius: 2px;
-        margin: 0 3px;
-        vertical-align: 1px;
-    }
-</style>
