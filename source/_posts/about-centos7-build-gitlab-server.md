@@ -24,7 +24,7 @@ description: 记录一次CentOS搭建gitlab服务器的经历。
 ### :tada: yum安装
 这里直接参考[官网](https://about.gitlab.com/install/#centos-7)安装教程
 
-![gitlab安装教程](https://s1.ax1x.com/2020/04/16/JkuM6O.png)
+![gitlab安装教程](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-a460b91e/gitlab安装教程.png)
 
 打开linux系统终端，首先安装gitlab必须的ssh，以及在系统防火墙中打开HTTP、HTTPS和SSH访问。
 ```
@@ -58,7 +58,7 @@ sudo EXTERNAL_URL="https://gitlab.example.com" yum install -y gitlab-ce
 
 首先去[官网安装包仓库](https://packages.gitlab.com/gitlab/gitlab-ce/)下载我们所需的安装包版本
 
-![官网安装包仓库](https://s1.ax1x.com/2020/04/16/JkK08x.png)
+![官网安装包仓库](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-a460b91e/官网安装包仓库.png)
 
 下载完成之后将文件拷贝至你的linux服务器，同样需要配置ssh、防火墙、postfix，
 ```
@@ -83,7 +83,7 @@ rpm -ivh example.rpm
 
 出现下图即为安装成功
 
-![安装成功图](https://s1.ax1x.com/2020/04/16/JkJiXq.jpg)
+![安装成功图](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-a460b91e/安装成功图.png)
 
 这种方式需要我们手动进入配置文件中修改访问地址
 ```
@@ -94,7 +94,7 @@ sudo vim /etc/gitlab/gitlab.rb
 
 并且我们还需要修改默认的gitlab clone地址，要不每次都得自己修改
 
-![](https://s1.ax1x.com/2020/04/16/JklUaQ.png)
+![gitlab仓库](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-a460b91e/gitlab仓库.png)
 
 修改文件配置
 ```
@@ -103,7 +103,7 @@ sudo vim /opt/gitlab/embedded/service/gitlab-rails/config/gitlab.yml
 
 将图片上标红处的Host替换成你的域名或ip
 
-![](https://s1.ax1x.com/2020/04/16/JklLIH.png)
+![替换IP](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-a460b91e/替换IP.png)
 
 ## :sun_with_face: 访问
 重置并启动GitLab，执行以下命令
@@ -114,11 +114,11 @@ gitlab-ctl restart
 ```
 提示  "ok: run:"表示启动成功
 
-![](https://s1.ax1x.com/2020/04/16/JkY5zd.jpg)
+![run](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-a460b91e/run.png)
 
 然后浏览器上输入你的访问地址（第一次访问会让你输入新密码，用户名默认为root）
 
-![](https://s1.ax1x.com/2020/04/16/Jk1j7F.png)
+![gitlab登录页](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-a460b91e/gitlab登录页.png)
 
 ## :sun_with_face: 安装过程中遇到的问题
 1. 在浏览器中访问GitLab出现502错误：
