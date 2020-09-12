@@ -17,9 +17,9 @@ info:
 navbar:
   visiable: auto # always, auto
   logo: # choose [img] or [icon + title]
-    img: #https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/logo.png
-    icon: fas fa-dragon
-    title: Xu's Blog
+    img: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/site-img/navbar-logo.png
+    icon: #fas fa-dragon
+    title: #Xu's Blog
   menu:
     - name: 主页
       icon: fas fa-home faa-tada
