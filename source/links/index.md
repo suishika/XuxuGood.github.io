@@ -22,7 +22,7 @@ thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-th
 
 {% timeline %}
 
-{% timenode 第一步：新建 [Gitee Issue](https://gitee.com/xuxu_fighting/blog_friends/issues) 按照格式填写并提交 %}
+{% timenode 第一步：新建 [Gitee Issue](https://gitee.com/XiaoXuxuy/blog_friends/issues) 按照格式填写并提交 %}
 
 ```json
 {
@@ -79,7 +79,7 @@ tags: [Java, 前端] # 标签
 
 <!-- tab &nbsp;其他方式添加友链 @anchor -->
 
-如果你不会使用 [Gitee Issue](https://gitee.com/xuxu_fighting/blog_friends/issues) 提交友链，那么请按照以下步骤申请友链。
+如果你不会使用 [Gitee Issue](https://gitee.com/XiaoXuxuy/blog_friends/issues) 提交友链，那么请按照以下步骤申请友链。
 {% timeline %}
 
 {% timenode 第一步：按照下面格式留言 %}
@@ -113,7 +113,7 @@ screenshot: https://i.loli.net/2020/09/05/IabBq7hjepoLOuR.png # 网站截图
 description: 简单不先于复杂，而是在复杂之后。 # 网站描述
 tags: [Java, 前端] # 标签
 ```
-待管理员核实以后，会帮您到 [Gitee Issue](https://gitee.com/xuxu_fighting/blog_friends/issues) 添加友链。
+待管理员核实以后，会帮您到 [Gitee Issue](https://gitee.com/XiaoXuxuy/blog_friends/issues) 添加友链。
 
 {% endtimenode %}
 
