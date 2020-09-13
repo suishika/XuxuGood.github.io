@@ -8,7 +8,7 @@ sitemap: false
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/links-or-tools.png
 ---
 
-{% issues sites | api=https://gitee.com/api/v5/repos/xuxu_fighting/blog_friends/issues?sort=created&direction=asc&labels=主题作者-主题文档,技术大佬,朋友们,虐狗博主&state=open&page=1&per_page=100 | group=group:主题作者 + 文档,技术大佬,朋友们,虐狗博主 %}
+{% issues sites | api=https://gitee.com/api/v5/repos/XiaoXuxuy/blog_friends/issues?sort=created&direction=asc&labels=主题作者-主题文档,技术大佬,朋友们,虐狗博主&state=open&page=1&per_page=100 | group=group:主题作者 + 文档,技术大佬,朋友们,虐狗博主 %}
 
 <br>
 
