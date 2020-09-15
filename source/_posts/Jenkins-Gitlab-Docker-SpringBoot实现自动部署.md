@@ -642,9 +642,7 @@ OK，到这里基本的任务已经新建成功，至于后续的两个步骤，
 
 ![构建信息](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/构建信息.png)
 
-在服务器上执行命令：`docker ps`
-
-可以看到我们启动起来的 SpringBoot 容器：
+待Jenkins构建成功之后，在服务器上执行命令：`docker ps`，可以看到我们启动起来的 SpringBoot 容器：
 
 ![docker启动的容器](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/docker启动的容器.png)
 
