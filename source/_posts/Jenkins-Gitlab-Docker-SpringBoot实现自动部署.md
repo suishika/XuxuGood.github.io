@@ -13,7 +13,7 @@ thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-th
 description:
 ---
 
-本文主要介绍持续集成的搭建方式，采用 Docker 的方式去搭建 Jenkins 环境，另外会涉及到 Spring Boot 和 Git 等技术。（不多废话直接介绍安装步骤）
+本文主要介绍持续集成的搭建方式，采用 Docker 的方式去搭建 Jenkins 环境。（无废话版）
 
 <!-- more -->
 
@@ -40,7 +40,11 @@ sudo yum install docker-ce
 docker -v
 ```
 
-### :tada: 设置Docker镜像源（加速访问）
+### :tada: 设置ustc的镜像(此处也可用阿里云免费镜像加速)
+
+ustc是老牌的linux镜像服务提供者了，还在遥远的ubuntu 5.04版本的时候就在用。ustc的docker镜像加速器速度很快。ustc docker mirror的优势之一就是不需要注册，是真正的公共服务。
+
+{% link ustc镜像帮助, https://lug.ustc.edu.cn/wiki/mirrors/help/docker %}
 
 编辑该文件（没有该文件则新建）：
 ```shell
@@ -48,6 +52,14 @@ vim /etc/docker/daemon.json
 ```
 
 在该文件中输入如下内容：
+```yml
+{
+"registry-mirrors": ["https://docker.mirrors.ustc.edu.cn"]
+}
+```
+
+或阿里云的镜像加速（二选一）
+
 ```yml
 {
 "registry-mirrors": ["https://9cpn8tt6.mirror.aliyuncs.com"]
@@ -72,6 +84,8 @@ systemctl status docker
 # 开机启动docker
 systemctl enable docker
 ```
+
+{% link Docker的虚拟机常用命令, https://www.cnblogs.com/ghostdot/p/12652820.html %}
 
 ## :fire: Gitlab安装
 
@@ -99,7 +113,7 @@ mkdir -p /apps/Devops/gitlab/data
 运行成功后，此时会在上面我们创建的目录中生成一些文件，后面需要修改文件。
 ```shell
 docker run --detach \
---publish 8443:443 --publish 8090:80 --publish 2222:22 \
+--publish 8443:443 --publish 8090:8090 --publish 2222:22 \
 --name gitlab \
 --restart always \
 --volume /apps/Devops/gitlab/config:/etc/gitlab \
@@ -113,49 +127,568 @@ gitlab/gitlab-ce:latest
 
 ### :tada: 修改配置文件
 
-（1）修改 `/apps/Devops/gitlab/config/gitlab.rb`
+修改 `/apps/Devops/gitlab/config/gitlab.rb`
 ```shell
 进入文件后，把external_url改成部署机器的域名或者IP地址，并取消注释。
 
 vim /apps/Devops/gitlab/config/gitlab.rb
-external_url 'http://192.168.31.25'      #ip为部署机器的IP或域名
+external_url 'http://192.168.137.119:8090'      #ip为部署机器的IP或域名
 ```
 如图：
 
-![gitlab配置域名](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/gitlab配置域名.png)
+![gitlab配置访问](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/gitlab配置访问.png)
 
-（2）修改 `/apps/Devops/gitlab/data/gitlab-rails/etc/gitlab.yml`
+### :tada: 更改完配置文件运行以下命令重启容器
 ```shell
-vim /apps/Devops/gitlab/data/gitlab-rails/etc/gitlab.yml
-找到关键字 * ## Web server settings * 
-将host的值改成映射的外部主机ip地址和端口，这里会显示在gitlab克隆地址
+docker restart gitlab
 ```
-如图：
 
-![gitlab配置ip](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/gitlab配置ip.png)
-
-（3）执行以下几步，因为没有重启Docker可能导致报错(重要)
-1. 停止容器 `docker stop 容器id`
-2. 删除容器 `doeker rm 容器id`
-3. 重启Docker服务 `systemctl restart docker`
-4. 关闭防火墙 `systemctl stop firewalld`
-
-### :tada: 更改完配置文件运行以下命令再次启动容器
-```shell
-docker run --detach \
---publish 8443:443 --publish 8090:80 --publish 2222:22 \
---name gitlab \
---restart always \
---volume /apps/Devops/gitlab/config:/etc/gitlab \
---volume /apps/Devops/gitlab/logs:/var/log/gitlab \
---volume /apps/Devops/gitlab/data:/var/opt/gitlab \
-gitlab/gitlab-ce:latest
-```
 通过浏览器访问，默认账号root, 需要设置一个新密码。
+
 访问报502说明容器还没启动完成，等待片刻即可访问到如下页面。
 
-![gitlab登录页](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/gitlab登录页.png)
+![gitlab登录](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/gitlab登录.png)
 
 至此，Gitlab搭建完成。
 
-未完待续...
+## :fire: Jenkins安装
+
+### :tada: 拉取镜像
+
+```shell
+docker pull jenkins/jenkins:lts
+```
+
+### :tada: 创建目录
+
+由于防止jenkins中重要文件因为容器损毁或删除导致文件丢失，因此创建文件对外挂载。
+```shell
+mkdir -p /apps/Devops/jenkins
+```
+
+并且需要对目录开放docker进程操作的完全读写的权限
+```shell
+chmod 777 /apps/Devops/jenkins
+```
+
+### :tada: 启动容器
+
+```shell
+docker run -itd -p 9980:8080 -p 50000:50000  --restart always -v /apps/Devops/jenkins:/var/jenkins_home --name jenkins  jenkins/jenkins:lts
+```
+-p 端口映射：Jenkins是Java程序，默认端口是8080
+
+### :tada: 打开Jenkins管理页面
+
+访问地址：`http://192.168.137.119:9980/`
+
+![jenkins登录页](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/jenkins登录页.png)
+
+出现如上页面，代表jenkins启动成功。
+
+### :tada: 查看日志获取初始密码
+
+执行以下命令：
+```shell
+docker logs -f jenkins
+```
+
+复制下图中红框内的初始密码。
+
+当然，你也可以不通过日志查看，你可以进入黄色框中描述的文件查看初始密码也是一样的，二选一。
+
+![jenkins日志](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/jenkins日志.png)
+
+通过描述文件查看密码：
+```shell
+# 1. 进入运行的jenkins容器中。
+docker exec -it jenkins /bin/bash
+
+# 2. 进入容器中的/var/jenkins_home/secrets目录，初始密码就在initialAdminPassword文件中。
+cd /var/jenkins_home/secrets
+cat  initialAdminPassword
+
+# 3. 退出容器
+exit
+```
+
+将密码复制、粘贴到如下框框中，进入jenkins，需要等待数十秒（可能更久）！
+
+![jenkins密码输入](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/jenkins密码输入.png)
+
+如果出现下图情况，等很久，还没有进入：
+
+![jenkins登录加载中](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/jenkins登录加载中.png)
+
+解决方案：
+（1）进入我们前面挂载的Jenkins目录 `/apps/Devops/jenkins`，修改文件 `hudson.model.UpdateCenter.xml`。
+```shell
+cd /apps/Devops/jenkins
+vim hudson.model.UpdateCenter.xml
+```
+
+（2）将文件 `hudson.model.UpdateCenter.xml` 中 `https://updates.jenkins.io/update-center.json` 改成 `http://updates.jenkins.io/update-center.json`（把https改成http）。
+
+![https替换](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/https替换.png)
+
+（3）保存，重启Jenkins容器
+```shell
+docker restart jenkins
+```
+
+（4）重新进入Jenkins管理页面：`http://192.168.137.119:9980/`（稍等一会儿，就可以进入）
+
+### :tada: 安装推荐的插件
+
+如下图所示，左侧显示安装建议的插件。右侧选择自定义安装插件。
+
+先按照建议插件进行安装，点击左侧即可。
+
+![安装推荐插件](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装推荐插件.png)
+
+如果全部都能正确安装，更好。出现安装失败的插件，等待所有结束，下方会有Retry可以进行重试。
+
+最后重试后，依旧没有安装成功的，可以先continue,完成初始化的步骤。随后[参考这篇文章解决](https://www.cnblogs.com/sxdcgaq8080/p/10489326.html)。
+
+安装完成后会自动出现如下界面：
+
+![创建管理用户](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/创建管理用户.png)
+
+将信息输入对应输入框内，点击保存并完成，之后的步骤默认点击保存并完成即可。
+
+### :tada: 成功安装Jenkins
+
+出现下图代表成功安装Jenkins：
+
+![jenkins安装成功图](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/jenkins安装成功图.png)
+
+安装成功之后重启一下jenkins容器：
+```shell
+docker restart jenkins
+```
+
+## :fire: Jenkins配置
+
+### :tada: 设置Jenkins时区为北京时间
+
+点击 Manage Jenkins（系统管理） ——> Script Console（脚本命令行）
+
+![设置jenkins时区](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/设置jenkins时区.png)
+
+输入脚本并运行：
+```
+System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Shanghai')
+```
+
+如图显示Result表示成功：
+
+![设置jenkins时区成功](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/设置jenkins时区成功.png)
+
+### :tada: 安装自动化构建和部署所需的插件
+
+所需插件：`Maven Integration`、`Pipeline Maven Integration`、`Gitlab`、`Gitlab hook`、`SSH`、`Publish Over SSH`、`Docker`
+
+点击 Manage Jenkins（系统管理） ——> Manage Plugins（插件管理）
+
+![插件管理](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/插件管理.png)
+
+#### :whale: 安装Maven插件
+
+点击可选插件 ——> 过滤Maven Integration插件 ——> 勾选Maven Integration和Pipeline Maven Integration ——> 点击直接安装
+
+![安装Maven插件](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装Maven插件.png)
+
+如图开始安装插件：
+
+![安装Maven插件进行中](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装Maven插件进行中.png)
+
+安装完成后，即可在插件管理下的已安装选项卡下看到刚刚已经安装的插件。
+
+#### :whale: 安装Gitlab插件
+
+点击可选插件 ——> 过滤Gitlab插件 ——> 勾选Gitlab和Gitlab Hook ——> 点击直接安装
+
+![安装Gitlab插件](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装Gitlab插件.png)
+
+#### :whale: 安装SSH插件和Publish Over SSH插件
+
+安装Publish Over SSH插件的原因：因为本方式是使用docker启动jenkins服务，所以在jenkins后续执行构建任务时候，需要在build成功后，将服务的jar包（以spring boot）服务为例，需要将jar包拷贝到Dockerfile所在服务器的指定目录，进行微服务的启动；所以，此处需要配置SSH服务器的连接，意思就是在jenkins的任务结束后，去执行指定的服务器上的shell命令，做spring boot或cloud服务的镜像的构建，容器的运行，等一系列的事情。 
+
+点击可选插件 ——> 过滤SSH插件 ——> 勾选SSH和Publish Over SSH ——> 点击直接安装
+
+![安装SSH插件](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装SSH插件.png)
+
+#### :whale: 安装Docker插件
+
+点击可选插件 ——> 过滤Docker插件 ——> 勾选Docker ——> 点击直接安装
+
+![安装Docker插件](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装Docker插件.png)
+
+插件全部安装完成后，可以重启一下Jenkins。
+
+### :tada: 添加凭据
+
+点击 Manage Jenkins（系统管理） ——> Manage Credentials（凭据管理）
+
+![凭据管理](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/凭据管理.png)
+
+点击添加凭据 ——> 输入宿主机服务器的用户名和密码等信息并保存
+
+![凭据信息](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/凭据信息.png)
+
+### :tada: 配置SSH remote hosts
+
+这个配置是干什么的呢？配置SSH连接Dockerfile所在服务器的相关信息，并添加凭证，最后测试连接并保存，以备后面使用！！！
+
+点击 Manage Jenkins（系统管理） ——> 系统配置
+
+![配置SSH-remote-hosts](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/配置SSH-remote-hosts.png)
+
+找到配置 ——> 下拉选择SSH remote hosts
+
+![找到SSH-remote-hosts](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/找到SSH-remote-hosts.png)
+
+如下图，输入对应的信息，并校验是否连接成功！成功后，点击应用 ——> 点击保存
+
+![SSH-remote-hosts配置信息](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/SSH-remote-hosts配置信息.png)
+
+### :tada: 配置Publish over SSH
+
+找到配置 ——> 下拉选择SSH remote hosts
+
+进行相关配置即可。
+
+![Publish-over-SSH](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/Publish-over-SSH.png)
+
+### :tada: 全局工具配置
+
+由于我们要实现的是SpringBoot项目的自动化部署操作，所以需要安装JDK、Git、Maven、Docker。
+
+![全局工具配置](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/全局工具配置.png)
+
+#### :whale: 安装JDK
+
+可以安装多个，根据项目JDK版本需求。
+
+输入自定义JDK名称 ——> 勾选自动安装 ——> 输入Oracle账户、密码 ——> 选择JDK版本 ——> 勾选同意协议
+
+![安装JDK](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装JDK.png)
+
+#### :whale: 安装Git
+
+输入自定义Git名称 ——> 勾选自动安装
+
+![安装Git](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装Git.png)
+
+#### :whale: 安装Maven
+
+输入自定义名称 ——> 勾选自动安装 ——> 选择版本
+
+![安装Maven](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装Maven.png)
+
+#### :whale: 安装Docker
+
+输入自定义名称 ——> 勾选自动安装
+
+![安装Docker](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装Docker.png)
+
+最后，点击应用 ——> 点击保存即可。
+
+## :fire: 新建Jenkins任务
+
+### :tada: 点击新建任务，输入名称
+
+注意：本名称一般和项目名称一致，因为本名称会在jenkins工作空间下生成目录，类似于IDEA或Eclipse的工作空间的概念。所以，一般情况下，保证本名称=项目名称=docker镜像名称=docker容器名称 这样能尽可能的减轻jenkins配置的shell命令的复杂性！（空间命名要小写：因为镜像名不允许存在大写字母）
+
+选择构建一个Maven项目（因为是Spring Boot的服务）
+
+![构建Maven项目](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/构建Maven项目.png)
+
+### :tada: 源码管理
+
+输入描述信息，源码管理选择Git，从gitlab复制克隆地址粘贴到Repository URL中，没有报错就表示OK的，（注意，这里我是克隆HTTP方式的地址，如果你是克隆SSH方式的地址，你需要添加Credentials，配置一下就可以了）
+
+![源码管理](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/源码管理.png)
+
+### :tada: 构建触发器
+
+接下来将会生成供gitlab配置webhook使用的URL和Token，请记录下来，后面会使用。
+
+![触发构建URL](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/触发构建URL.png)
+
+点击高级，拉下来找到Generate并点击，生成一串Secret Token。
+
+![触发构建Token](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/触发构建Token.png)
+
+### :tada: 添加webhook
+
+前往gitlab，进入要构建的项目，在setting中选择Webhooks，输入URL和Secret Token 这两在上面图中已经给你标注了，去掉Enable SSL verification的勾选。
+
+![gitlab-webhook配置](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/gitlab-webhook配置.png)
+
+点击Add webhook，如图表示成功添加了webhook：
+
+![webhook配置成功](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/webhook配置成功.png)
+
+如果添加不成功解决方案请参考：[解决 Url is blocked: Requests to the local network are not allowed](https://www.cnblogs.com/zhongyuanzhao000/p/11379098.html)
+
+### :tada: 构建环境
+
+勾选Add timestamps to the Console Output，等下可以看到控制台打印的信息，这个根据自己的需求勾选。
+
+![构建环境](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/构建环境.png)
+
+### :tada: Pre Steps(构建之前的步骤)
+
+配置前一步需要做的事情是：清理本项目在jenkins的workspace中的历史文件夹。
+
+你可以不用知道WORKSPACE具体的地址在哪里，因为下方有链接可以查看到当前jenkins中有哪些可用的变量供你使用。
+
+默认WORKSPACE地址：`/var/jenkins_home/workspace`（如果你jenkins是docker启动的，并且挂载了目录在宿主机，那你在宿主机也是可以看到的，即 `/apps/Devops/jenkins/workspace`）
+
+本处选择的是执行shell，则表示本处配置的shell命令，是默认在jenkins容器中执行的，而不是在宿主机上。
+
+下拉选择执行 shell：
+
+![执行构建前的操作](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/执行构建前的操作.png)
+
+在执行shell的命令中输入以下命令，设置全局变量：
+```shell
+SERVER_NAME_1=jenkins-docker-gitlab-springboot
+echo "=========================>>>>>>>工作空间WORKSPACE的地址：$WORKSPACE "
+cd $WORKSPACE
+echo "=========================>>>>>>>进入工作空间WORKSPACE，清除工作空间中原项目的工作空间$SERVER_NAME_1 "
+rm -rf $SERVER_NAME_1
+echo "=========================>>>>>>>清除工作空间中原项目的工作空间$SERVER_NAME_1 ......成功success"
+```
+
+注意：本处的SERVER_NAME_1=jenkins-docker-gitlab-springboot是配置项目的名称
+
+### :tada: Build(构建)
+
+我们是SpringBoot项目，所以用到maven，这里设置一下全局操作，clean项目，并打成jar包，所以这里输入：`clean package`
+
+![Build构建](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/Build构建.png)
+
+### :tada: Post Steps(执行任务)
+
+只在jenkins构建成功后，才执行这一步。
+
+因为最后的构建成功的maven项目的jar包是以docker启动服务为目的，所以最后的docker操作，一定是在jenkins容器以外的服务器上运行的，可能是本机宿主机，也可能是远程的服务器，这个根据自己的情况去配置。
+
+本处选择，在远程的SSH执行shell脚本。
+
+选中只有构建成功才执行这些命令，然后选择Execute shell script on remote host using ssh。
+
+![执行任务](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/执行任务.png)
+
+{% folding green, shell命令 %}
+```shell
+#=====================================================================================
+#=================================定义初始化变量======================================
+#=====================================================================================
+
+#操作/项目路径(Dockerfile存放的路劲)
+BASE_PATH=/apps/jenkins-docker-gitlab-springboot
+
+# jenkins构建好的源jar路径  
+SOURCE_PATH=/apps/Devops/jenkins/workspace
+
+#【docker 镜像】【docker容器】【Dockerfile同目录下的jar名字[用它build生成image的jar]】【jenkins的workspace下的项目名称】
+#这里都以这个命名[微服务的话，每个服务都以 ms-项目名 这种格式命名]
+#注意统一名称！！！！！
+SERVER_NAME=jenkins-docker-gitlab-springboot
+
+#容器id  [grep -w 全量匹配容器名] [awk 获取信息行的第一列，即容器ID]  [无论容器启动与否，都获取到]
+CID=$(docker ps -a | grep -w "$SERVER_NAME" | awk '{print $1}')
+
+#镜像id  [grep -w 全量匹配镜像名] [awk 获取信息行的第三列，即镜像ID]
+IID=$(docker images | grep -w "$SERVER_NAME" | awk '{print $3}')
+
+#源jar完整地址  [jenkins构建成功后，会在自己的workspace/项目/target 下生成maven构建成功的jar包，获取jar包名的完整路径]
+#例如：/apps/Devops/jenkins/workspace/jenkins-docker-gitlab-springboot/target/jenkins-docker-gitlab-springboot-0.0.1-SNAPSHOT.jar
+SOURCE_JAR_PATH=$(find "$SOURCE_PATH/$SERVER_NAME/target/"  -name "*$SERVER_NAME*.jar" )
+
+DATE=`date +%Y%m%d%H%M%S`
+
+
+#=====================================================================================
+#============================对原本已存在的jar进行备份================================
+#=====================================================================================
+
+
+
+# 备份
+function backup(){
+    if [ -f "$BASE_PATH/$SERVER_NAME.jar" ]; then
+        echo "=========================>>>>>>>$SERVER_NAME.jar 备份..."
+            mv $BASE_PATH/$SERVER_NAME.jar $BASE_PATH/backup/$SERVER_NAME-$DATE.jar
+        echo "=========================>>>>>>>备份老的 $SERVER_NAME.jar 完成"
+
+    else
+        echo "=========================>>>>>>>老的$BASE_PATH/$SERVER_NAME.jar不存在，跳过备份"
+    fi
+}
+
+
+
+#=====================================================================================
+#=========================移动最新源jar包到Dockerfile所在目录=========================
+#=====================================================================================
+
+
+ 
+# 查找源jar文件名，进行重命名，最后将源文件移动到Dockerfile文件所在目录
+function transfer(){
+       
+         
+    echo "=========================>>>>>>>源文件完整地址为 $SOURCE_JAR_PATH"
+
+        
+    echo "=========================>>>>>>>重命名源文件"
+        mv $SOURCE_JAR_PATH  $SOURCE_PATH/$SERVER_NAME/target/$SERVER_NAME.jar
+
+    echo "=========================>>>>>>>最新构建代码 $SOURCE_PATH/$SERVER_NAME/target/$SERVER_NAME.jar 迁移至 $BASE_PATH"
+        cp $SOURCE_PATH/$SERVER_NAME/target/$SERVER_NAME.jar $BASE_PATH 
+
+    echo "=========================>>>>>>>迁移完成Success"
+
+}
+ 
+
+
+#=====================================================================================
+#==================================构建最新镜像=======================================
+#=====================================================================================
+
+
+ 
+# 构建docker镜像
+function build(){
+    
+    #无论镜像存在与否，都停止原容器服务，并移除原容器服务
+    echo "=========================>>>>>>>停止$SERVER_NAME容器，CID=$CID"
+    docker stop $CID
+
+    echo "=========================>>>>>>>移除$SERVER_NAME容器，CID=$CID"
+    docker rm $CID
+
+    #无论如何，都去构建新的镜像
+    if [ -n "$IID" ]; then
+        echo "=========================>>>>>>>存在$SERVER_NAME镜像，IID=$IID"
+
+
+        echo "=========================>>>>>>>移除老的$SERVER_NAME镜像，IID=$IID"
+        docker rmi $IID
+
+        echo "=========================>>>>>>>构建新的$SERVER_NAME镜像，开始---->"
+        cd $BASE_PATH
+        docker build -t $SERVER_NAME .
+        echo "=========================>>>>>>>构建新的$SERVER_NAME镜像，完成---->"
+
+    else
+        echo "=========================>>>>>>>不存在$SERVER_NAME镜像，构建新的镜像，开始--->"
+
+
+        cd $BASE_PATH
+        docker build -t $SERVER_NAME .
+        echo "=========================>>>>>>>构建新的$SERVER_NAME镜像，结束--->"
+    fi
+}
+ 
+
+#=====================================================================================
+#==============================运行docker容器，启动服务===============================
+#=====================================================================================
+
+
+
+
+# 运行docker容器
+function run(){
+    backup
+    transfer
+    build
+
+    docker run --name $SERVER_NAME -itd --net=host -v /etc/localtime:/etc/localtime:ro  -v /etc/timezone:/etc/timezone:ro  $SERVER_NAME 
+
+}
+ 
+#入口
+run
+```
+{% endfolding %}
+
+![shell脚本命令](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/shell脚本命令.png)
+
+OK，到这里基本的任务已经新建成功，至于后续的两个步骤，根据自己的需求自行配置，没有难度的。
+
+点击应用，保存。
+
+### :tada: 测试
+
+测试push事件触发自动化构建和部署，点击test下拉选择push events，出现HTTP 200表示OK了。
+
+![测试webhook](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/测试webhook.png)
+
+回到Jenkins可以看到任务列表，查看构建信息等。
+
+![构建信息](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/构建信息.png)
+
+在服务器上执行命令：`docker ps`
+
+可以看到我们启动起来的 SpringBoot 容器：
+
+![docker启动的容器](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/docker启动的容器.png)
+
+在浏览器输入：`http://服务器ip:端口/` 即可访问刚自动部署的项目：
+
+![运行成功](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/运行成功.png)
+
+## :fire: 注意
+
+（1）shell脚本中需要的文件夹没有则自建（不用完全跟我一样）。
+
+（2）Dockerfile需和jar包放到同一目录下，附上我使用的Dockerfile文件内容：
+```shell
+FROM jdk1.8
+MAINTAINER xuxu
+COPY jenkins-docker-gitlab-springboot.jar jenkins-docker-gitlab-springboot.jar
+CMD ["java","-jar","jenkins-docker-gitlab-springboot.jar"]
+```
+
+（3）如果没有基础 JDK 镜像可参照 [这篇文章](https://www.cnblogs.com/ztone/p/10558803.html) 完成。
+
+（4）构建过程中可能提示没有权限操作文件夹，按照下面执行解决即可：
+```
+# 1. 查看所有容器
+docker ps -a
+
+# 2. 进入jenkins容器内部
+docker exec -it jenkins /bin/bash
+
+# 3. 查看当前操作用户是否是jenkins
+whoami
+
+# 4. 推出
+exit
+
+# 5. 以root用户进入jenkins容器内部
+docker exec -it -u root jenkins /bin/bash
+
+# 6. 切换到下面目录
+cd /var/jenkins_home
+
+# 7. 如果workspace可操作的用户不是jenkins用户需添加jenkins用户操作权限
+ls -all
+
+# 8. 添加jenkins用户操作权限
+chown -R jenkins workspace
+
+# 9. 添加目录操作权限
+chmod 777 workspace
+```
+
+## :fire: 总结
+
+经过我们多款软件的安装配置，我们逐步掌握了如何上床Spring Boot项目到Gitlab中，并使用Jenkins自动构建任务，另外依托于Docker，让这一切变得更加方便，希望大家都多多思考，让机器自动干活，减少我们IT从业人员的重复、繁琐的工作量。
