@@ -10,6 +10,13 @@ abbrlink: 3fe685e0
 date: 2020-09-13 16:26:48
 headimg: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-headimg/Jenkins自动部署.png
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/Jenkins.png
+references:
+    - title: SpringBoot+GitLab+Docker+Jenkins实现持续集成
+      url: https://www.bilibili.com/read/cv5758217/
+    - title: 基于Jenkins+Gitlab+Docker实现SpringBoot项目自动部署、持续集成、持续交付
+      url: https://blog.csdn.net/hunheidaode/article/details/104003270
+    - title: Jenkins+GitLab+docker+springboot 实现自动化部署
+      url: https://www.cnblogs.com/sxdcgaq8080/p/10569906.html
 description:
 ---
 
