@@ -113,9 +113,9 @@ const IssuesAPI = {
         let issues = dt[groupTitle];
         if (issues && issues.length > 0) {
           if (groupTitle.length > 0) {
-            $(el).append('<h3>' + groupTitle + '</h3>');
+            $(el).append('<h2>' + groupTitle + '</h2>');
           } else if (name == '' && groupTitles.length > 1) {
-            $(el).append('<h3>' + '未分组' + '</h3>');
+            $(el).append('<h2>' + '未分组' + '</h2>');
           }
           $(el).append('<div class="site-card-group ' + i + '"></div>');
           // layout items

@@ -1,12 +1,14 @@
 ---
 layout: page
-title: 小伙伴们
-top_meta: true
+seo_title: 小伙伴们
 bottom_meta: false
 sidebar: [blogger, category, tagcloud]
 sitemap: false
-thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/links-or-tools.png
 ---
+
+<div class="center" style="margin-top: 2.5rem;text-align: center">
+    <span class="milky">🎉小伙伴</span>
+</div>
 
 {% issues sites | api=https://gitee.com/api/v5/repos/XiaoXuxuy/blog_friends/issues?sort=created&direction=asc&labels=主题作者-主题文档,技术大佬,朋友们,虐狗博主&state=open&page=1&per_page=100 | group=group:主题作者 + 文档,技术大佬,朋友们,虐狗博主 %}
 
@@ -122,3 +124,9 @@ tags: [Java, 前端] # 标签
 <!-- endtab -->
 
 {% endtabs %}
+
+<style>
+    .issues-api h2:first-child{
+        margin-top: -50px;
+    }
+</style>

@@ -1,11 +1,15 @@
 ---
 layout: page
-title: 我的相册
-top_meta: false
+seo_title: 我的相册
 bottom_meta: false
 sidebar: []
 sitemap: false
 ---
+
+<div class="center" style="margin-top: 2.5rem;margin-bottom: 4rem;text-align: center">
+    <span class="milky">🎃我的相册</span>
+</div>
+
 {% tabs photos,1 %}
 
 <!-- tab &nbsp;美食 @drumstick-bite -->

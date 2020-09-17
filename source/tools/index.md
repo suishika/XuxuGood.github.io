@@ -1,13 +1,17 @@
 ---
 layout: page
-title: 实用工具
-top_meta: true
+seo_title: 实用工具
 bottom_meta: false
 sidebar: [blogger, category, tagcloud]
 sitemap: false
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/links-or-tools.png
 ---
-### <i class="fas fa-images"></i> 图片工具
+
+<div class="center" style="margin-top: 2.5rem;margin-bottom: 4rem;text-align: center">
+    <span class="milky">🍂实用工具</span>
+</div>
+
+## <i class="fas fa-images"></i> 图片工具
 
 {% sitegroup %}
 {% site TinyPNG, url=https://tinypng.com/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/tinypng-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/tinypng.png, description=在线图片压缩 %}
@@ -18,7 +22,7 @@ thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-th
 {% site JPG To PNG, url=https://jpg2png.com/zh/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/JPG-TO-PNG-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/JPG-TO-PNG.png, description=JPG格式图片转PNG格式图片 %}
 {% endsitegroup %}
 
-### <i class="fas fa-rocket"></i> Web 前端
+## <i class="fas fa-rocket"></i> Web 前端
 
 {% sitegroup %}
 {% site Iconfont, url=https://www.iconfont.cn/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/iconfont-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/iconfont.png, description=阿里巴巴矢量图标库 %}
@@ -28,27 +32,27 @@ thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-th
 {% site Itmeo, url=https://webgradients.com/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/itmeo-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/itmeo.png, description=渐变色网站 %}
 {% endsitegroup %}
 
-### <i class="fab fa-linux"></i> Linux 工具
+## <i class="fab fa-linux"></i> Linux 工具
 
 {% sitegroup %}
 {% site Man-Linux, url=https://man.cx/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/linux-english-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/linux.png, description=Linux命令行帮助查询，英文版 %}
 {% site Linux 命令搜索, url=http://www.atoolbox.net/Tool.php?Id=826, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/linux-chinese-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/linux.png, description=Linux命令行帮助查询，中文版 %}
 {% endsitegroup %}
 
-### <i class="fas fa-coffee"></i> 办公常用
+## <i class="fas fa-coffee"></i> 办公常用
 
 {% sitegroup %}
 {% site SmallPDF, url=https://smallpdf.com/cn, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/smallpdf-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/smallpdf.png, description=万能PDF工具集合 %}
 {% site Convertio, url=https://convertio.co/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/convertio-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/convertio.png, description=在线文件转换器 %}
 {% endsitegroup %}
 
-### <i class="fas fa-user-graduate"></i> 成长必备
+## <i class="fas fa-user-graduate"></i> 成长必备
 
 {% sitegroup %}
 {% site 力扣, url=https://leetcode-cn.com/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/力扣-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/力扣.png, description=程序猿学习必备 %}
 {% endsitegroup %}
 
-### <i class="fas fa-bookmark"></i> 其他工具
+## <i class="fas fa-bookmark"></i> 其他工具
 
 {% sitegroup %}
 {% site Google PageSpeed Insights, url=https://developers.google.com/speed/pagespeed/insights/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/google-speed-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/google-speed.png, description=网站访问速度测试 %}
@@ -58,15 +62,12 @@ thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-th
 {% endsitegroup %}
 
 
-
-
 <br/>
 
 >欢迎推荐你正在使用的「利器」!
 
 <style>
-    .md h3 {
-        margin-top: 28px;
-        color: #1bcdfc;
+    #i-class-fas-fa-images-i-图片工具 {
+        margin-top: -115px;
     }
 </style>

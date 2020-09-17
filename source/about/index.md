@@ -7,12 +7,16 @@ sitemap: false
 valine:
   placeholder: 有什么想对我说的呢？
 ---
-<br/>
+
+<div class="center" style="margin-top: 2.5rem;margin-bottom: 4rem;text-align: center">
+    <span class="milky">🍂关于我</span>
+</div>
+
 {# Botui聊天机器人样式 #}
 <link rel="stylesheet" href="/css/botui.min.css" />
 {# <link rel="stylesheet" href="/css/botui-theme-default.css" /> #}
 
-<div class="entry-content">
+<div>
     <div id="hello-xuxuy" class="pop-container">
         <p style="text-align: center;">真（ま）白（しろ）</p>
         <p style="text-align: center;">对话中...</p>
