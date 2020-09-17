@@ -1037,4 +1037,7 @@ tagsColor:
 # 樱花飘落特效
 sakura:
   enable: false
+# 鼠标移动特效
+fairyDustCursor:
+  enable: true
 ############################### 自定义主题 ############################### > end
