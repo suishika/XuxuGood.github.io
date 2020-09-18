@@ -4,7 +4,6 @@ seo_title: 实用工具
 bottom_meta: false
 sidebar: [blogger, category, tagcloud]
 sitemap: false
-thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/links-or-tools.png
 ---
 
 <div class="center" style="margin-top: 2.5rem;margin-bottom: 4rem;text-align: center">
