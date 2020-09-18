@@ -26,7 +26,7 @@ description:
 
 ## :fire: Docker安装
 
-本文中我们使用 Centos7.x 进行 Docker 安装，所以我们需要在 Vagrant 中先安装 Centos7，这一步请阅读者自行安装。
+本文中我们使用 Centos7.x 进行 Docker 安装，所以我们需要在虚拟中先安装 Centos7，这一步请阅读者自行安装。
 
 ### :tada: Docker安装步骤
 
