@@ -357,9 +357,14 @@
     filter: brightness(convert(hexo-config('color_scheme.dark.brightness'))) !important
   }
 
-  /* 页脚底部a标签样式 */
-  footer.footer a {
+  /* 页脚底部样式 */
+  #footer-content {
     color: var(--color-list)
+  }
+
+  /* 彩色Github条 */
+  .github-badge {
+    filter: brightness(convert(hexo-config('color_scheme.dark.brightness'))) !important
   }
 
   /* 关于页面打赏样式 */
