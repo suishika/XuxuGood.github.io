@@ -650,6 +650,146 @@ OK，到这里基本的任务已经新建成功，至于后续的两个步骤，
 
 ![运行成功](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/运行成功.png)
 
+## :fire: 配置邮件通知
+
+完成基于jenkins的持续集成部署后，任务构建执行完成，测试结果需要通知到相关人员（这个邮件通知根据自己需求选择添加，非必须）。
+
+### :tada: 安装邮件插件
+
+由于Jenkins自带的邮件功能比较鸡肋，因此这里推荐安装专门的邮件插件，不过下面也会顺带介绍如何配置Jenkins自带的邮件功能作用。
+
+点击系统管理  ——>  插件管理  ——> 可选插件：
+
+![安装邮件插件](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装邮件插件.png)
+
+选择Email Extension Plugin插件进行安装，安装好之后重启Jenkins。
+
+![邮件插件](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/邮件插件.png)
+
+### :tada: 系统设置
+
+点击系统管理  ——>  系统配置，进行邮件配置：
+
+![系统配置](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/系统配置.png)
+
+#### :whale: 设置Jenkins地址和管理员邮箱地址
+
+![jenkins-location配置](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/jenkins-location配置.png)
+
+#### :whale: 设置发件人等信息
+
+这里的发件人邮箱地址切记要和系统管理员邮件地址保持一致（当然，也可以设置专门的发件人邮箱，不过不影响使用，根据具体情况设置即可）
+
+![发件人信息](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/发件人信息.png)
+
+![SMTP邮件协议](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/SMTP邮件协议.png)
+
+#### :whale: 配置邮件内容模版
+
+![邮件模板](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/邮件模板.png)
+
+{% folding green, 邮箱内容模版（Default Content） %}
+```HTML
+<!DOCTYPE html>    
+<html>    
+<head>    
+<meta charset="UTF-8">    
+<title>${ENV, var="JOB_NAME"}-第${BUILD_NUMBER}次构建日志</title>    
+</head>    
+    
+<body leftmargin="8" marginwidth="0" topmargin="8" marginheight="4"    
+    offset="0">    
+    <table width="95%" cellpadding="0" cellspacing="0"  style="font-size: 11pt; font-family: Tahoma, Arial, Helvetica, sans-serif">    
+        <tr>    
+            本邮件由系统自动发出，无需回复！<br/>            
+            各位同事，大家好，以下为${PROJECT_NAME}项目构建信息</br> 
+            <td><font color="#CC0000">构建结果 - ${BUILD_STATUS}</font></td>   
+        </tr>    
+        <tr>    
+            <td><br />    
+            <b><font color="#0B610B">构建信息</font></b>    
+            <hr size="2" width="100%" align="center" /></td>    
+        </tr>    
+        <tr>    
+            <td>    
+                <ul>    
+                    <li>项目名称 ： ${PROJECT_NAME}</li>    
+                    <li>构建编号 ： 第${BUILD_NUMBER}次构建</li>    
+                    <li>触发原因： ${CAUSE}</li>    
+                    <li>构建状态： ${BUILD_STATUS}</li>    
+                    <li>构建日志： <a href="${BUILD_URL}console">${BUILD_URL}console</a></li>    
+                    <li>构建  Url ： <a href="${BUILD_URL}">${BUILD_URL}</a></li>    
+                    <li>工作目录 ： <a href="${PROJECT_URL}ws">${PROJECT_URL}ws</a></li>    
+                    <li>项目  Url ： <a href="${PROJECT_URL}">${PROJECT_URL}</a></li>    
+                </ul>    
+
+<h4><font color="#0B610B">失败用例</font></h4>
+<hr size="2" width="100%" />
+$FAILED_TESTS<br/>
+
+<h4><font color="#0B610B">最近提交(#$SVN_REVISION)</font></h4>
+<hr size="2" width="100%" />
+<ul>
+${CHANGES_SINCE_LAST_SUCCESS, reverse=true, format="%c", changesFormat="<li>%d [%a] %m</li>"}
+</ul>
+详细提交: <a href="${PROJECT_URL}changes">${PROJECT_URL}changes</a><br/>
+
+            </td>    
+        </tr>    
+    </table>    
+</body>    
+</html>
+```
+{% endfolding %}
+
+#### :whale: 设置邮件触发机制
+
+![邮件触发机制](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/邮件触发机制.png)
+
+上面的几步完成后，点击应用，保存即可。
+
+#### :whale: 配置Jenkins自带的邮件功能
+
+配置内容如下，和Email Extension Plugin插件同样的配置，可以通过勾选{% emp 通过发送测试邮件测试配置 %}按钮来测试配置是否成功发送邮件，如下图：
+
+![自带的邮件功能](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/自带的邮件功能.png)
+
+完成上面的系统设置后，点击应用保存即可。
+
+### :tada: 项目配置
+
+在完成系统设置后，还需要给需要构建的项目进行邮件配置。
+
+#### :whale: 进入项目配置界面
+
+进入新建的项目界面，点击配置按钮，进入系统配置页面。
+
+![进入项目配置](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/进入项目配置.png)
+
+#### :whale: 配置构建设置模块
+
+点击上方的{% emp 构建设置 %}选项，配置内容如下：
+
+![构建设置](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/构建设置.png)
+
+#### :whale: 配置构建后操作模块
+
+点击上方的{% emp 构建后操作 %}选项，添加构建后操作步骤 `Editable Email Notification`，配置内容如下：
+
+![构建后操作1](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/构建后操作1.png)
+
+接上图：
+
+![构建后操作2](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/构建后操作2.png)
+
+配置内容默认即可，邮件内容类型可以根据自己的配置选择，收件人列表可以从前面的系统设置中默认收件人选项配置。
+
+### :tada: 构建触发邮件测试
+
+如下图，为我收到的测试邮件，邮件内容可以通过系统设置里面进行个性化的配置，可参考我上面的模板，或者自定义即可。
+
+![构建触发邮件成功](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/构建触发邮件成功.png)
+
 ## :fire: 注意
 
 （1）shell脚本中需要的文件夹没有则自建（不用完全跟我一样）。
