@@ -20,7 +20,7 @@ references:
 description:
 ---
 
-本文主要介绍持续集成的搭建方式，采用 Docker 的方式去搭建 Jenkins 环境。（无废话版）
+本文主要介绍持续集成的搭建方式，采用 Docker 的方式去搭建 Jenkins 环境，篇幅有点长，请仔细阅读。（无废话版）
 
 <!-- more -->
 
