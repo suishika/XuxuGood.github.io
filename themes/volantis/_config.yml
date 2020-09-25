@@ -1040,5 +1040,5 @@ sakura:
   enable: false
 # 鼠标移动特效
 fairyDustCursor:
-  enable: true
+  enable: false
 ############################### 自定义主题 ############################### > end
