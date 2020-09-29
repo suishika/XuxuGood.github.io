@@ -58,7 +58,7 @@ sitemap: false
 {% site 在线工具, url=http://tool.oschina.net/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/oschina-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/oschina.png, description=免费各种在线工具 %}
 {% site Emojipedia, url=https://emojipedia.org/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/emojipedia-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/emojipedia.png, description=各种emoji表情库 %}
 {% site Valine表情, url=https://github.com/GamerNoTitle/ValineCDN, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/Valine表情-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/Valine表情.png, description=收集的各种表情 %}
-{% site Hutool, url=https://hutool.cn/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/hutool.png, avatar=https://cdn.jsdelivr.net/gh/looly/hutool-site/images/logo.jpg, description=Java常用工具类库 %}
+{% site Hutool, url=https://hutool.cn/, screenshot=https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/tools/hutool-screenshot.png, avatar=https://cdn.jsdelivr.net/gh/looly/hutool-site/images/logo.jpg, description=Java常用工具类库 %}
 {% endsitegroup %}
 
 
