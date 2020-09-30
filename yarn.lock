@@ -1804,10 +1804,10 @@ hexo-pagination@1.0.0:
   resolved "https://registry.npm.taobao.org/hexo-pagination/download/hexo-pagination-1.0.0.tgz#c9c0ca3665267b9e9d0a89fc3edcaf3276907dc1"
   integrity sha1-ycDKNmUme56dCon8PtyvMnaQfcE=
 
-hexo-related-popular-posts@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npm.taobao.org/hexo-related-popular-posts/download/hexo-related-popular-posts-5.0.0.tgz#49f44c19d232bd12bd8c1b69a9864efac5849bf1"
-  integrity sha1-SfRMGdIyvRK9jBtpqYZO+sWEm/E=
+hexo-related-popular-posts@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.npm.taobao.org/hexo-related-popular-posts/download/hexo-related-popular-posts-5.0.1.tgz#8dc61e7f8bc40058c5adef34213364e3a1472bb5"
+  integrity sha1-jcYef4vEAFjFre80ITNk46FHK7U=
   dependencies:
     cheerio "^1.0.0-rc.2"
     columnify "^1.5.4"
