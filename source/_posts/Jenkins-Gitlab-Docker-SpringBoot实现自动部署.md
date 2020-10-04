@@ -24,6 +24,8 @@ description:
 
 <!-- more -->
 
+推荐阅读本篇的注意事项篇节以后再进行搭建。
+
 ## :fire: Docker安装
 
 本文中我们使用 Centos7.x 进行 Docker 安装，所以我们需要在虚拟中先安装 Centos7，这一步请阅读者自行安装。
