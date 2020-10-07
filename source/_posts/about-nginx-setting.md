@@ -15,7 +15,6 @@ description: 关于 Nginx 的一些配置。
 配置文件内容如下：
 
 ```BASH
-
 #user  nobody;
 worker_processes  4; #允许生成的进程数，默认为1
 
@@ -123,7 +122,6 @@ http {
         }
     }
 }
-
 ```
 
 使用的时候最好将中文注释去掉。
