@@ -145,7 +145,9 @@ external_url 'http://192.168.137.119:8090'      #ip为部署机器的IP或域名
 ```
 如图：
 
+{% gallery %}
 ![gitlab配置访问](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/gitlab配置访问.png)
+{% endgallery %}
 
 ### :tada: 更改完配置文件运行以下命令重启容器
 ```shell
@@ -156,7 +158,9 @@ docker restart gitlab
 
 访问报502说明容器还没启动完成，等待片刻即可访问到如下页面。
 
+{% gallery %}
 ![gitlab登录](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/gitlab登录.png)
+{% endgallery %}
 
 至此，Gitlab搭建完成。
 
@@ -191,7 +195,9 @@ docker run -itd -p 9980:8080 -p 50000:50000  --restart always -v /apps/Devops/je
 
 访问地址：`http://192.168.137.119:9980/`
 
+{% gallery %}
 ![jenkins登录页](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/jenkins登录页.png)
+{% endgallery %}
 
 出现如上页面，代表jenkins启动成功。
 
@@ -206,7 +212,9 @@ docker logs -f jenkins
 
 当然，你也可以不通过日志查看，你可以进入黄色框中描述的文件查看初始密码也是一样的，二选一。
 
+{% gallery %}
 ![jenkins日志](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/jenkins日志.png)
+{% endgallery %}
 
 通过描述文件查看密码：
 ```shell
@@ -223,11 +231,15 @@ exit
 
 将密码复制、粘贴到如下框框中，进入jenkins，需要等待数十秒（可能更久）！
 
+{% gallery %}
 ![jenkins密码输入](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/jenkins密码输入.png)
+{% endgallery %}
 
 如果出现下图情况，等很久，还没有进入：
 
+{% gallery %}
 ![jenkins登录加载中](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/jenkins登录加载中.png)
+{% endgallery %}
 
 解决方案：
 （1）进入我们前面挂载的Jenkins目录 `/apps/Devops/jenkins`，修改文件 `hudson.model.UpdateCenter.xml`。
@@ -238,7 +250,9 @@ vim hudson.model.UpdateCenter.xml
 
 （2）将文件 `hudson.model.UpdateCenter.xml` 中 `https://updates.jenkins.io/update-center.json` 改成 `http://updates.jenkins.io/update-center.json`（把https改成http）。
 
+{% gallery %}
 ![https替换](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/https替换.png)
+{% endgallery %}
 
 （3）保存，重启Jenkins容器
 ```shell
@@ -253,7 +267,9 @@ docker restart jenkins
 
 先按照建议插件进行安装，点击左侧即可。
 
+{% gallery %}
 ![安装推荐插件](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装推荐插件.png)
+{% endgallery %}
 
 如果全部都能正确安装，更好。出现安装失败的插件，等待所有结束，下方会有Retry可以进行重试。
 
@@ -261,7 +277,9 @@ docker restart jenkins
 
 安装完成后会自动出现如下界面：
 
+{% gallery %}
 ![创建管理用户](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/创建管理用户.png)
+{% endgallery %}
 
 将信息输入对应输入框内，点击保存并完成，之后的步骤默认点击保存并完成即可。
 
@@ -269,7 +287,9 @@ docker restart jenkins
 
 出现下图代表成功安装Jenkins：
 
+{% gallery %}
 ![jenkins安装成功图](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/jenkins安装成功图.png)
+{% endgallery %}
 
 安装成功之后重启一下jenkins容器：
 ```shell
@@ -282,7 +302,9 @@ docker restart jenkins
 
 点击 Manage Jenkins（系统管理） ——> Script Console（脚本命令行）
 
+{% gallery %}
 ![设置jenkins时区](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/设置jenkins时区.png)
+{% endgallery %}
 
 输入脚本并运行：
 ```
@@ -291,7 +313,9 @@ System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Shanghai'
 
 如图显示Result表示成功：
 
+{% gallery %}
 ![设置jenkins时区成功](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/设置jenkins时区成功.png)
+{% endgallery %}
 
 ### :tada: 安装自动化构建和部署所需的插件
 
@@ -299,17 +323,23 @@ System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Shanghai'
 
 点击 Manage Jenkins（系统管理） ——> Manage Plugins（插件管理）
 
+{% gallery %}
 ![插件管理](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/插件管理.png)
+{% endgallery %}
 
 #### :whale: 安装Maven插件
 
 点击可选插件 ——> 过滤Maven Integration插件 ——> 勾选Maven Integration和Pipeline Maven Integration ——> 点击直接安装
 
+{% gallery %}
 ![安装Maven插件](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装Maven插件.png)
+{% endgallery %}
 
 如图开始安装插件：
 
+{% gallery %}
 ![安装Maven插件进行中](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装Maven插件进行中.png)
+{% endgallery %}
 
 安装完成后，即可在插件管理下的已安装选项卡下看到刚刚已经安装的插件。
 
@@ -317,7 +347,9 @@ System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Shanghai'
 
 点击可选插件 ——> 过滤Gitlab插件 ——> 勾选Gitlab和Gitlab Hook ——> 点击直接安装
 
+{% gallery %}
 ![安装Gitlab插件](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装Gitlab插件.png)
+{% endgallery %}
 
 #### :whale: 安装SSH插件和Publish Over SSH插件
 
@@ -325,13 +357,17 @@ System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Shanghai'
 
 点击可选插件 ——> 过滤SSH插件 ——> 勾选SSH和Publish Over SSH ——> 点击直接安装
 
+{% gallery %}
 ![安装SSH插件](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装SSH插件.png)
+{% endgallery %}
 
 #### :whale: 安装Docker插件
 
 点击可选插件 ——> 过滤Docker插件 ——> 勾选Docker ——> 点击直接安装
 
+{% gallery %}
 ![安装Docker插件](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装Docker插件.png)
+{% endgallery %}
 
 插件全部安装完成后，可以重启一下Jenkins。
 
@@ -339,11 +375,15 @@ System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Shanghai'
 
 点击 Manage Jenkins（系统管理） ——> Manage Credentials（凭据管理）
 
+{% gallery %}
 ![凭据管理](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/凭据管理.png)
+{% endgallery %}
 
 点击添加凭据 ——> 输入宿主机服务器的用户名和密码等信息并保存
 
+{% gallery %}
 ![凭据信息](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/凭据信息.png)
+{% endgallery %}
 
 ### :tada: 配置SSH remote hosts
 
@@ -351,15 +391,21 @@ System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Shanghai'
 
 点击 Manage Jenkins（系统管理） ——> 系统配置
 
+{% gallery %}
 ![配置SSH-remote-hosts](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/配置SSH-remote-hosts.png)
+{% endgallery %}
 
 找到配置 ——> 下拉选择SSH remote hosts
 
+{% gallery %}
 ![找到SSH-remote-hosts](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/找到SSH-remote-hosts.png)
+{% endgallery %}
 
 如下图，输入对应的信息，并校验是否连接成功！成功后，点击应用 ——> 点击保存
 
+{% gallery %}
 ![SSH-remote-hosts配置信息](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/SSH-remote-hosts配置信息.png)
+{% endgallery %}
 
 ### :tada: 配置Publish over SSH
 
@@ -367,13 +413,17 @@ System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Shanghai'
 
 进行相关配置即可。
 
+{% gallery %}
 ![Publish-over-SSH](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/Publish-over-SSH.png)
+{% endgallery %}
 
 ### :tada: 全局工具配置
 
 由于我们要实现的是SpringBoot项目的自动化部署操作，所以需要安装JDK、Git、Maven、Docker。
 
+{% gallery %}
 ![全局工具配置](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/全局工具配置.png)
+{% endgallery %}
 
 #### :whale: 安装JDK
 
@@ -381,25 +431,33 @@ System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Shanghai'
 
 输入自定义JDK名称 ——> 勾选自动安装 ——> 输入Oracle账户、密码 ——> 选择JDK版本 ——> 勾选同意协议
 
+{% gallery %}
 ![安装JDK](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装JDK.png)
+{% endgallery %}
 
 #### :whale: 安装Git
 
 输入自定义Git名称 ——> 勾选自动安装
 
+{% gallery %}
 ![安装Git](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装Git.png)
+{% endgallery %}
 
 #### :whale: 安装Maven
 
 输入自定义名称 ——> 勾选自动安装 ——> 选择版本
 
+{% gallery %}
 ![安装Maven](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装Maven.png)
+{% endgallery %}
 
 #### :whale: 安装Docker
 
 输入自定义名称 ——> 勾选自动安装
 
+{% gallery %}
 ![安装Docker](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装Docker.png)
+{% endgallery %}
 
 最后，点击应用 ——> 点击保存即可。
 
@@ -411,33 +469,45 @@ System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Shanghai'
 
 选择构建一个Maven项目（因为是Spring Boot的服务）
 
+{% gallery %}
 ![构建Maven项目](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/构建Maven项目.png)
+{% endgallery %}
 
 ### :tada: 源码管理
 
 输入描述信息，源码管理选择Git，从gitlab复制克隆地址粘贴到Repository URL中，没有报错就表示OK的，（注意，这里我是克隆HTTP方式的地址，如果你是克隆SSH方式的地址，你需要添加Credentials，配置一下就可以了）
 
+{% gallery %}
 ![源码管理](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/源码管理.png)
+{% endgallery %}
 
 ### :tada: 构建触发器
 
 接下来将会生成供gitlab配置webhook使用的URL和Token，请记录下来，后面会使用。
 
+{% gallery %}
 ![触发构建URL](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/触发构建URL.png)
+{% endgallery %}
 
 点击高级，拉下来找到Generate并点击，生成一串Secret Token。
 
+{% gallery %}
 ![触发构建Token](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/触发构建Token.png)
+{% endgallery %}
 
 ### :tada: 添加webhook
 
 前往gitlab，进入要构建的项目，在setting中选择Webhooks，输入URL和Secret Token 这两在上面图中已经给你标注了，去掉Enable SSL verification的勾选。
 
+{% gallery %}
 ![gitlab-webhook配置](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/gitlab-webhook配置.png)
+{% endgallery %}
 
 点击Add webhook，如图表示成功添加了webhook：
 
+{% gallery %}
 ![webhook配置成功](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/webhook配置成功.png)
+{% endgallery %}
 
 如果添加不成功解决方案请参考：[解决 Url is blocked: Requests to the local network are not allowed](https://www.cnblogs.com/zhongyuanzhao000/p/11379098.html)
 
@@ -445,7 +515,9 @@ System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Shanghai'
 
 勾选Add timestamps to the Console Output，等下可以看到控制台打印的信息，这个根据自己的需求勾选。
 
+{% gallery %}
 ![构建环境](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/构建环境.png)
+{% endgallery %}
 
 ### :tada: Pre Steps(构建之前的步骤)
 
@@ -459,7 +531,9 @@ System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Shanghai'
 
 下拉选择执行 shell：
 
+{% gallery %}
 ![执行构建前的操作](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/执行构建前的操作.png)
+{% endgallery %}
 
 在执行shell的命令中输入以下命令，设置全局变量：
 ```shell
@@ -477,7 +551,9 @@ echo "=========================>>>>>>>清除工作空间中原项目的工作空
 
 我们是SpringBoot项目，所以用到maven，这里设置一下全局操作，clean项目，并打成jar包，所以这里输入：`clean package`
 
+{% gallery %}
 ![Build构建](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/Build构建.png)
+{% endgallery %}
 
 ### :tada: Post Steps(执行任务)
 
@@ -489,7 +565,9 @@ echo "=========================>>>>>>>清除工作空间中原项目的工作空
 
 选中只有构建成功才执行这些命令，然后选择Execute shell script on remote host using ssh。
 
+{% gallery %}
 ![执行任务](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/执行任务.png)
+{% endgallery %}
 
 {% folding green, shell命令 %}
 ```shell
@@ -628,7 +706,9 @@ run
 ```
 {% endfolding %}
 
+{% gallery %}
 ![shell脚本命令](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/shell脚本命令.png)
+{% endgallery %}
 
 OK，到这里基本的任务已经新建成功，至于后续的两个步骤，根据自己的需求自行配置，没有难度的。
 
@@ -638,19 +718,27 @@ OK，到这里基本的任务已经新建成功，至于后续的两个步骤，
 
 测试push事件触发自动化构建和部署，点击test下拉选择push events，出现HTTP 200表示OK了。
 
+{% gallery %}
 ![测试webhook](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/测试webhook.png)
+{% endgallery %}
 
 回到Jenkins可以看到任务列表，查看构建信息等。
 
+{% gallery %}
 ![构建信息](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/构建信息.png)
+{% endgallery %}
 
 待Jenkins构建成功之后，在服务器上执行命令：`docker ps`，可以看到我们启动起来的 SpringBoot 容器：
 
+{% gallery %}
 ![docker启动的容器](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/docker启动的容器.png)
+{% endgallery %}
 
 在浏览器输入：`http://服务器ip:端口/` 即可访问刚自动部署的项目：
 
+{% gallery %}
 ![运行成功](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/运行成功.png)
+{% endgallery %}
 
 ## :fire: 配置邮件通知
 
@@ -662,33 +750,47 @@ OK，到这里基本的任务已经新建成功，至于后续的两个步骤，
 
 点击系统管理  ——>  插件管理  ——> 可选插件：
 
+{% gallery %}
 ![安装邮件插件](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/安装邮件插件.png)
+{% endgallery %}
 
 选择Email Extension Plugin插件进行安装，安装好之后重启Jenkins。
 
+{% gallery %}
 ![邮件插件](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/邮件插件.png)
+{% endgallery %}
 
 ### :tada: 系统设置
 
 点击系统管理  ——>  系统配置，进行邮件配置：
 
+{% gallery %}
 ![系统配置](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/系统配置.png)
+{% endgallery %}
 
 #### :whale: 设置Jenkins地址和管理员邮箱地址
 
+{% gallery %}
 ![jenkins-location配置](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/jenkins-location配置.png)
+{% endgallery %}
 
 #### :whale: 设置发件人等信息
 
 这里的发件人邮箱地址切记要和系统管理员邮件地址保持一致（当然，也可以设置专门的发件人邮箱，不过不影响使用，根据具体情况设置即可）
 
+{% gallery %}
 ![发件人信息](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/发件人信息.png)
+{% endgallery %}
 
+{% gallery %}
 ![SMTP邮件协议](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/SMTP邮件协议.png)
+{% endgallery %}
 
 #### :whale: 配置邮件内容模版
 
+{% gallery %}
 ![邮件模板](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/邮件模板.png)
+{% endgallery %}
 
 {% folding green, 邮箱内容模版（Default Content） %}
 ```HTML
@@ -746,7 +848,9 @@ ${CHANGES_SINCE_LAST_SUCCESS, reverse=true, format="%c", changesFormat="<li>%d [
 
 #### :whale: 设置邮件触发机制
 
+{% gallery %}
 ![邮件触发机制](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/邮件触发机制.png)
+{% endgallery %}
 
 上面的几步完成后，点击应用，保存即可。
 
@@ -754,7 +858,9 @@ ${CHANGES_SINCE_LAST_SUCCESS, reverse=true, format="%c", changesFormat="<li>%d [
 
 配置内容如下，和Email Extension Plugin插件同样的配置，可以通过勾选{% emp 通过发送测试邮件测试配置 %}按钮来测试配置是否成功发送邮件，如下图：
 
+{% gallery %}
 ![自带的邮件功能](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/自带的邮件功能.png)
+{% endgallery %}
 
 完成上面的系统设置后，点击应用保存即可。
 
@@ -766,23 +872,31 @@ ${CHANGES_SINCE_LAST_SUCCESS, reverse=true, format="%c", changesFormat="<li>%d [
 
 进入新建的项目界面，点击配置按钮，进入系统配置页面。
 
+{% gallery %}
 ![进入项目配置](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/进入项目配置.png)
+{% endgallery %}
 
 #### :whale: 配置构建设置模块
 
 点击上方的{% emp 构建设置 %}选项，配置内容如下：
 
+{% gallery %}
 ![构建设置](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/构建设置.png)
+{% endgallery %}
 
 #### :whale: 配置构建后操作模块
 
 点击上方的{% emp 构建后操作 %}选项，添加构建后操作步骤 `Editable Email Notification`，配置内容如下：
 
+{% gallery %}
 ![构建后操作1](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/构建后操作1.png)
+{% endgallery %}
 
 接上图：
 
+{% gallery %}
 ![构建后操作2](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/构建后操作2.png)
+{% endgallery %}
 
 配置内容默认即可，邮件内容类型可以根据自己的配置选择，收件人列表可以从前面的系统设置中默认收件人选项配置。
 
@@ -790,7 +904,9 @@ ${CHANGES_SINCE_LAST_SUCCESS, reverse=true, format="%c", changesFormat="<li>%d [
 
 如下图，为我收到的测试邮件，邮件内容可以通过系统设置里面进行个性化的配置，可参考我上面的模板，或者自定义即可。
 
+{% gallery %}
 ![构建触发邮件成功](https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article/abbrlink-3fe685e0/构建触发邮件成功.png)
+{% endgallery %}
 
 ## :fire: 注意
 
