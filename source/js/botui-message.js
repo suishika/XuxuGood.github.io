@@ -23,7 +23,7 @@ $(function () {
             content: "告辞了您嘞！"
         })
     }, secondPart = function () {
-        botui.message.add({delay: 1500, content: "现就职于亿达信息技术有限公司"}).then(function () {
+        botui.message.add({delay: 1500, content: "现就职于百度"}).then(function () {
             botui.message.add({delay: 1500, content: "一枚标准90后程序猿"}).then(function () {
                 botui.message.add({delay: 1200, content: "将敲代码看成一种快乐"}).then(function () {
                     botui.message.add({
