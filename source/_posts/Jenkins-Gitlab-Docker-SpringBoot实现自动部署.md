@@ -8,7 +8,7 @@ categories: [自动部署]
 keywords: [Jenkins,Gitlab,Docker,Spring Boot,自动部署]
 abbrlink: 3fe685e0
 date: 2020-09-13 16:26:48
-headimg: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-headimg/Jenkins自动部署.png
+headimg: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-headimg/jenkins.png
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/docker.png
 references:
     - title: SpringBoot+GitLab+Docker+Jenkins实现持续集成
