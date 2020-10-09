@@ -1,6 +1,6 @@
 ---
 title: FFmpeg + nginx-http-flv-module + flv.js 实现视频流播放
-pin: true
+pin: false
 toc: true
 icons: [fas fa-fire red]
 headimg: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-headimg/ffmpeg.png
