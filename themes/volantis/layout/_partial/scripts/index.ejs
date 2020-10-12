@@ -1,3 +1,4 @@
+<%- partial('loadfunction') %>
 <!-- required -->
 <%- js(theme.plugins.jquery) %>
 <%- partial('../../_third-party/fancybox/script') %>
@@ -51,10 +52,6 @@
   <%- partial('../../_third-party/comments/' + theme.comments.service + '/script') %>
 <% } %>
 
-<% if (theme.plugins.darkmodejs.enable) { %>
-  <%- partial('darkmode') %>
-<% } %>
-
 <% if (theme.analytics.busuanzi) { %>
   <script defer src="<%- theme.analytics.busuanzi %>" data-pjax></script>
 <% } %>
@@ -106,6 +103,14 @@
 <% if (theme.analytics && theme.analytics.leancloud && theme.analytics.leancloud.app_id) { %>
   <%- partial('counter') %>
 <% } %>
+
+<% if (theme.plugins.darkmodejs.enable) { %>
+    <%- partial('darkmode') %>
+<% } %>
+
+<%- partial('../../_third-party/analytics/script') %>
+
+<%- partial('toc') %>
 
 <!-- more -->
 <% if (config.import && config.import.script) { %>

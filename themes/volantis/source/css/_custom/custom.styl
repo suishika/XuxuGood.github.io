@@ -1,13 +1,13 @@
 /* 主页logo */
 .cover-wrapper .cover-body .logo {
   width: 700px;
-  max-height: 130px;
+  max-height: 140px;
 }
 
 /* 导航栏logo图片样式 */
-.l_header .wrapper .nav-main .title img {
-  margin-top: 4px;
-  height: 50px;
+#wrapper .nav-main .title img {
+  margin-top: 4px !important;
+  height: 50px !important;
 }
 
 /* 页面上自定义好看的title样式 */
@@ -26,11 +26,6 @@
 /* 解决定位valine评论位置问题 */
 .l_main .post {
   transform: none !important;
-}
-
-/* 文章code样式 */
-.article code:not([class]) {
-  word-break: break-all;
 }
 
 /* span,p 行内文本标签 */
@@ -244,12 +239,12 @@ if hexo-config('tagsColor.enable') {
 }
 
 /* 首页向下滚动图标颜色 */
-.cover-wrapper .scroll-down .scroll-down-effects {
+.cover-wrapper #scroll-down .scroll-down-effects {
   color: $color-scroll-down;
 }
 
 /* 向上滚动图标颜色 */
-.l_body .s-top {
+#l_body #s-top {
   color: $color-scroll-up;
 }
 
@@ -345,17 +340,17 @@ footer.footer a:hover {
 }
 
 /* 导航栏样式 */
-.l_header .wrapper .nav-main .title {
+#wrapper .nav-main .title {
   font-weight: bold;
   font-size: 1.5rem;
 }
 
-.l_header .wrapper .nav-sub .title {
+#wrapper .nav-sub .title {
   font-weight: bold;
 }
 
 @media screen and (min-width: 1280px) {
-  .l_header .m_search {
+  #l_header .m_search {
     width: 200px;
   }
 }
@@ -408,7 +403,7 @@ if hexo-config('widgetHeader.enable') {
   width: 17px;
   height: 17px;
   line-height: 16px;
-  margin: 0.42rem 0.42rem 0 0;
+  margin: 0.38rem 0.42rem 0 0;
   color: $color-card;
   font-size: 15px;
   font-weight: 500;
@@ -437,7 +432,7 @@ if hexo-config('widgetHeader.enable') {
 .md ul li:before {
   float: left;
   left: 0;
-  margin: 0.27rem 0.42rem 0 0;
+  margin: 0.25rem 0.42rem 0 0;
   width: 8px;
   height: 8px;
   border: .2rem solid $color-theme;
