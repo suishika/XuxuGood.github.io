@@ -2,7 +2,7 @@
 title: Jenkins + Gitlab + Docker + Spring Boot 实现自动部署
 pin: true
 toc: true
-icons: []
+icons: [fas fa-fire red]
 tags: [Jenkins,Gitlab,Docker]
 categories: [自动部署]
 keywords: [Jenkins,Gitlab,Docker,Spring Boot,自动部署]

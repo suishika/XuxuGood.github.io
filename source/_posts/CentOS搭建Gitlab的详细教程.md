@@ -2,6 +2,7 @@
 title: CentOS搭建Gitlab的详细教程
 pin: true
 toc: true
+icons: [fas fa-fire red]
 headimg: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-headimg/gitlab-black.png
 thumbnail: https://cdn.jsdelivr.net/gh/XuxuGood/cdn@master/blogImages/article-thumbnail/gitlab.png
 tags: [CentOS,Gitlab]
