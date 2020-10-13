@@ -5,7 +5,7 @@ bottom_meta: false
 sidebar: []
 sitemap: false
 ---
-<div class="center" style="margin-top: 2.5rem;text-align: center">
+<div style="margin-top: 2.5rem;text-align: center">
     <span class="milky">🍭留言板</span>
 </div>
 

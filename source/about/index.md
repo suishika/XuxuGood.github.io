@@ -8,7 +8,7 @@ valine:
   placeholder: 有什么想对我说的呢？
 ---
 
-<div class="center" style="margin-top: 2.5rem;margin-bottom: 4rem;text-align: center">
+<div style="margin-top: 2.5rem;margin-bottom: 4rem;text-align: center">
     <span class="milky">🍂关于我</span>
 </div>
 

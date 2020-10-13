@@ -6,7 +6,7 @@ sidebar: [blogger, category, tagcloud]
 sitemap: false
 ---
 
-<div class="center" style="margin-top: 2.5rem;margin-bottom: 4rem;text-align: center">
+<div style="margin-top: 2.5rem;margin-bottom: 4rem;text-align: center">
     <span class="milky">🍂实用工具</span>
 </div>
 
